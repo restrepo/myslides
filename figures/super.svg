@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="675.77344"
+   height="590.30933"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="New document 1">
+  <defs
+     id="defs4">
+    <marker
+       style="overflow:visible"
+       inkscape:stockid="InfiniteLineStart"
+       id="InfiniteLineStart"
+       refX="0"
+       refY="0"
+       orient="auto">
+      <g
+         id="g4313"
+         style="fill:#000000"
+         transform="translate(-13,0)">
+        <circle
+           d="M 3.8,0 C 3.8,0.44182781 3.4418278,0.80000001 3,0.80000001 2.5581722,0.80000001 2.2,0.44182781 2.2,0 c 0,-0.44182781 0.3581722,-0.80000001 0.8,-0.80000001 0.4418278,0 0.8,0.3581722 0.8,0.80000001 z"
+           id="circle4315"
+           r="0.80000001"
+           cy="0"
+           cx="3"
+           sodipodi:cx="3"
+           sodipodi:cy="0"
+           sodipodi:rx="0.80000001"
+           sodipodi:ry="0.80000001" />
+        <circle
+           d="M 7.3,0 C 7.3,0.44182781 6.9418278,0.80000001 6.5,0.80000001 6.0581722,0.80000001 5.7,0.44182781 5.7,0 c 0,-0.44182781 0.3581722,-0.80000001 0.8,-0.80000001 0.4418278,0 0.8,0.3581722 0.8,0.80000001 z"
+           id="circle4317"
+           r="0.80000001"
+           cy="0"
+           cx="6.5"
+           sodipodi:cx="6.5"
+           sodipodi:cy="0"
+           sodipodi:rx="0.80000001"
+           sodipodi:ry="0.80000001" />
+        <circle
+           d="M 10.8,0 C 10.8,0.44182781 10.441828,0.80000001 10,0.80000001 9.5581722,0.80000001 9.2,0.44182781 9.2,0 c 0,-0.44182781 0.3581722,-0.80000001 0.8,-0.80000001 0.441828,0 0.8,0.3581722 0.8,0.80000001 z"
+           id="circle4319"
+           r="0.80000001"
+           cy="0"
+           cx="10"
+           sodipodi:cx="10"
+           sodipodi:cy="0"
+           sodipodi:rx="0.80000001"
+           sodipodi:ry="0.80000001" />
+      </g>
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path4229"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.58431205"
+     inkscape:cx="504.80276"
+     inkscape:cy="277.59482"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer5"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="742"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-338.09479,-480.89343)"
+     style="display:none">
+    <image
+       y="459.64792"
+       x="454.28571"
+       id="image3047"
+       xlink:href="file:///home/restrepo/Downloads/superlogo.jpg"
+       height="342.47321"
+       width="443.69" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer"
+     style="display:inline"
+     transform="translate(-338.09479,-196.53125)">
+    <path
+       style="fill:#ff0000;stroke:#000000;stroke-width:6;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 546.98901,199.53079 -69.58378,69.28124 199.07011,229.929 199.07012,-229.929 -67.76855,-69.28124 z"
+       id="path3050"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer#1"
+     style="display:inline"
+     transform="translate(-338.09479,-196.53125)">
+    <path
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0"
+       id="path3055"
+       d="m 565.51865,217.32454 -59.62627,56.18429 170.58296,193.1007 170.58297,-193.1007 -58.0708,-56.18429 z"
+       style="fill:#ffff00;stroke:#000000;stroke-width:5.93993235;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <text
+       xml:space="preserve"
+       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Fira Sans;-inkscape-font-specification:Asana Math Bold"
+       x="531.86212"
+       y="342.63132"
+       id="text3826"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3828"
+         x="531.86212"
+         y="342.63132"
+         style="font-size:144px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#000000;font-family:Asana Math;-inkscape-font-specification:Asana Math Bold">U(1)</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3830"
+       y="337.80087"
+       x="543.32416"
+       style="font-size:16.75094604px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Fira Sans;-inkscape-font-specification:Asana Math Bold"
+       xml:space="preserve"><tspan
+         style="font-size:134.00756836px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;fill:#ff0000;font-family:Asana Math;-inkscape-font-specification:Asana Math Bold"
+         y="337.80087"
+         x="543.32416"
+         id="tspan3832"
+         sodipodi:role="line">U(1)</tspan></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3859"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Asana Math;-inkscape-font-specification:Asana Math Bold"><flowRegion
+         id="flowRegion3861"><rect
+           id="rect3863"
+           width="108.30866"
+           height="144.00816"
+           x="468.93417"
+           y="276.07294" /></flowRegion><flowPara
+         id="flowPara3865"></flowPara></flowRoot>  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer#2"
+     transform="translate(-338.09479,-196.53125)">
+    <text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;display:inline;font-family:Asana Math;-inkscape-font-specification:Asana Math Bold"
+       x="385.43362"
+       y="284.54401"
+       id="text3855"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3857"
+         x="385.43362"
+         y="284.54401"
+         style="font-style:normal;font-weight:bold;fill:#ff0000;-inkscape-font-specification:Asana Math Bold">PQ</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3867"
+       y="284.54401"
+       x="895.43359"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;display:inline;font-family:Asana Math;-inkscape-font-specification:Asana Math Bold"
+       xml:space="preserve"><tspan
+         style="font-style:italic;font-weight:bold;fill:#ff0000;-inkscape-font-specification:Asana Math Bold Italic"
+         y="284.54401"
+         x="895.43359"
+         id="tspan3869"
+         sodipodi:role="line">L</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none;display:inline;font-family:Asana Math;-inkscape-font-specification:Asana Math Bold"
+       x="605.68146"
+       y="539.88623"
+       id="text3871"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3873"
+         x="605.68146"
+         y="539.88623"><tspan
+   style="font-style:italic;fill:#ff0000;-inkscape-font-specification:Asana Math Bold Italic"
+   id="tspan3879">Z</tspan><tspan
+   style="font-size:65.00091553%;baseline-shift:sub;fill:#ff0000"
+   id="tspan3877">2</tspan>: (-1)<tspan
+   style="font-size:65.00091553%;font-style:italic;baseline-shift:super;fill:#ff0000;-inkscape-font-specification:Asana Math Bold Italic"
+   id="tspan3881">L</tspan></tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="Layer#3"
+     style="display:inline"
+     transform="translate(-338.09479,-196.53125)">
+    <path
+       style="fill:#ff0000;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#EmptyTriangleOutL);display:inline"
+       d="m 411.45191,303.47195 0,341.00515"
+       id="path3883"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path4888"
+       d="m 675.45191,557.47195 0,87.00515"
+       style="fill:#ff0000;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#EmptyTriangleOutL);display:inline" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path4905"
+       d="m 909.45191,303.47195 0,341.00515"
+       style="fill:#ff0000;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#EmptyTriangleOutL);display:inline" />
+    <text
+       xml:space="preserve"
+       style="font-size:48px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Asana Math;-inkscape-font-specification:Asana Math Bold"
+       x="338.09479"
+       y="696.12061"
+       id="text4907"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4909"
+         x="338.09479"
+         y="696.12061"
+         style="font-size:36px"> Axión  +   WIMP/FIMP/SIMP  +  radiative </tspan><tspan
+         sodipodi:role="line"
+         x="338.09479"
+         y="741.12061"
+         style="font-size:36px"
+         id="tspan4932">                                                            neutrino</tspan><tspan
+         sodipodi:role="line"
+         x="338.09479"
+         y="786.12061"
+         style="font-size:36px"
+         id="tspan4934">                                                            masses    </tspan></text>
+  </g>
+</svg>
