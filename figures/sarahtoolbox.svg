@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="768"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="sarahtoolbox.svg">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3831"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lstart"
+       style="overflow:visible">
+      <path
+         id="path3828"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-0"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3831-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lend-2"
+       style="overflow:visible">
+      <path
+         inkscape:connector-curvature="0"
+         id="path3831-5"
+         d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7109375"
+     inkscape:cx="512"
+     inkscape:cy="384"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="732"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-284.36218)"
+     style="display:inline">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="m 805.4066,407.63692 c 36.57142,3.98535 122.37362,37.50916 120.96703,68.21978 -5.62637,32.11721 -84.39561,40.32234 -120.96703,40.08791"
+       id="path3054"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Fira Sans;-inkscape-font-specification:Fira Sans"
+       x="59.076923"
+       y="63.296703"
+       id="text2985"
+       sodipodi:linespacing="125%"
+       transform="translate(0,284.36218)"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="59.076923"
+         y="63.296703" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Fira Sans;-inkscape-font-specification:Fira Sans"
+       x="101.27473"
+       y="57.67033"
+       id="text2989"
+       sodipodi:linespacing="125%"
+       transform="translate(0,284.36218)"><tspan
+         sodipodi:role="line"
+         id="tspan2991"
+         x="101.27473"
+         y="57.67033" /></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3030"
+       y="532.51599"
+       x="41.670326"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Fira Sans;-inkscape-font-specification:Fira Sans"
+       xml:space="preserve"><tspan
+         y="532.51599"
+         x="41.670326"
+         id="tspan3032"
+         sodipodi:role="line" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Fira Sans;-inkscape-font-specification:Fira Sans"
+       x="887.56049"
+       y="420.29623"
+       id="text4454"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4456"
+         x="887.56049"
+         y="420.29623"
+         style="font-size:20px">LesHouches.in</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Fira Sans;-inkscape-font-specification:Fira Sans"
+       x="762.4754"
+       y="456.41235"
+       id="text3034"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="762.4754"
+         y="456.41235"
+         id="tspan4644"></tspan><tspan
+         sodipodi:role="line"
+         x="762.4754"
+         y="506.41235"
+         id="tspan4648"></tspan><tspan
+         sodipodi:role="line"
+         x="762.4754"
+         y="556.41235"
+         id="tspan4650" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Fira Sans;-inkscape-font-specification:Fira Sans"
+       x="41.670326"
+       y="424.51602"
+       id="text2993-4-1"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2995-3-7"
+         x="41.670326"
+         y="424.51602">Lagrangian (math): SARAH           → Model</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="480.51501"
+         id="tspan4654-6-7">                                                    ⇓</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="524.51599"
+         id="tspan4707-1">Fortran:                    SPHENO       → Model                                                  </tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="580.51501"
+         id="tspan4886">                          ⋮                       ⋮</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="630.51501"
+         id="tspan4753-8" /><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="680.51501"
+         id="tspan4652-9-7" /><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="730.51501"
+         id="tspan4629-1-4" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer"
+     style="display:none">
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Fira Sans;-inkscape-font-specification:Fira Sans"
+       x="41.670326"
+       y="140.15384"
+       id="text2993-4"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2995-3"
+         x="41.670326"
+         y="140.15384">Lagrangian (math): SARAH           → Model</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="196.15283"
+         id="tspan4654-6">                                                    ⇓</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="240.15384"
+         id="tspan4656-4">Fortran:                    SPHENO       → Model</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="296.15283"
+         id="tspan4658-3">                                                    ⇓</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="340.15384"
+         id="tspan4660-1">CalcHEP mdl files:   MicrOMEGAS→ Model</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="396.15283"
+         id="tspan4703">                                                    ⇓</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="440.15384"
+         id="tspan4707">UFO files (Python):   MadGraph→ Model</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="496.15283"
+         id="tspan4768">                          ⋮                       ⋮</tspan><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="546.15283"
+         id="tspan4753" /><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="596.15283"
+         id="tspan4652-9" /><tspan
+         sodipodi:role="line"
+         x="41.670326"
+         y="646.15283"
+         id="tspan4629-1" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend);display:inline"
+       d="m 805.4066,225.27474 c 36.57142,3.98535 122.37362,37.50916 120.96703,68.21978 -5.62637,32.11721 -84.39561,40.32234 -120.96703,40.08791"
+       id="path3054-4"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Fira Sans;-inkscape-font-specification:Fira Sans"
+       x="887.56049"
+       y="237.93405"
+       id="text4454-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan4456-6"
+         x="887.56049"
+         y="237.93405"
+         style="font-size:20px">SPheno.spc</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Fira Sans;-inkscape-font-specification:Fira Sans"
+       x="726.40741"
+       y="542.72711"
+       id="text3038"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="726.40741"
+         y="542.72711"
+         id="tspan3044" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend);display:inline"
+       d="m 805.4066,225.27474 c 36.57142,3.98535 127.99999,137.37729 126.5934,168.08791 -5.62637,32.11721 -88.61539,30.47619 -125.18681,30.24176"
+       id="path3054-4-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
