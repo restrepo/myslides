@@ -40,11 +40,11 @@ Phenomenology Group}%
 {}%
 {mt}%
 {}
-\arxiv{arXiv:1803.08528}
-\collaborators{Mario Reig, Jose Valle (IFIC Valencia), Oscar Zapata (UdeA) }
+\arxiv{}
+\collaborators{Carlos Yaguna, Julian Calle, Mario Reig, Jose Valle (IFIC Valencia), Oscar Zapata (UdeA) }
 }
 
-\date{\tiny May 22, 2018 } % (optional) \today
+\date{\tiny July 30, 2018 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -151,14 +151,14 @@ where $B$ is the \emph{total baryon number}.
    $L$   & -1\\
    $H$   & 0\\
    $S$   & $s$\\
-   $\left( \psi_R \right)^{\dagger}_\alpha$ & $\color{Green}r_{\alpha}$\footnote{Weyl notation with only left-handed fields defined; $\color{Green}r_{\alpha}$ restricted by anomaly cancellation}\\
+   $\left( \psi_R \right)^{\dagger}_\alpha$ & $\color{red}r_{\alpha}$\footnote{Weyl notation with only left-handed fields defined; $\color{red}r_{\alpha}$ restricted by anomaly cancellation}\\
  \end{tabular}
 \end{center}
 
 \begin{block}{Massless Majorana fermions ($n=0,1$)}
   \begin{align*}
-    L \left[ \left( \psi_R \right)^{\dagger}_\alpha \left( \psi_R \right)^{\dagger}_\beta S^n \right]  \Longrightarrow& {\color{Green} r_{\alpha}+r_{\beta}+nS\ne 0}\,,
-   & &\text{example: $r\ne 1$, if $s=-2$}\,.
+    L \left[ \left( \psi_R \right)^{\dagger}_\alpha \left( \psi_R \right)^{\dagger}_\beta S^n \right]  \Longrightarrow& {\color{red} r_{\alpha}+r_{\beta}}+nS\ne 0\,,
+   & &\text{example: $\color{red}r\ne 1$, if $s=-2$}\,.
   \end{align*}
 \end{block}
 
@@ -170,7 +170,7 @@ where $B$ is the \emph{total baryon number}.
 \vspace{-0.8cm}
  \begin{align*}
 \text{ For $\alpha\le 2$: }   \left( \psi_R \right)^{\dagger}_\alpha\to &\left( \nu_R \right)^{\dagger}_\alpha&
-          \color{Green} r_{\alpha}\to & \color{Green} \nu_{\alpha}
+          \color{red} r_{\alpha}\to & \color{Green} \nu_{\alpha}
  \end{align*}
 
 
@@ -208,8 +208,6 @@ where $B$ is the \emph{total baryon number}.
    \mathcal{L}=i\, \left( \psi _L \right)^{\dagger}\overline{\sigma}^{\mu}\partial_{\mu}\psi_L -m \,\left( \psi _R \right)^{\dagger}\psi_L+\text{h.c}\,.
  \end{align}
 
- The required $\operatorname{U}(1)$ symmetry is
- identified with $B-L$
 
  \begin{center}
     \rowcolors{1}{RoyalBlue!20}{}
@@ -217,18 +215,201 @@ where $B$ is the \emph{total baryon number}.
    Field & $\operatorname{U}(1)_{B-L}$ \\ \hline
    $L$   & -1\\
    $H$   & 0\\
+      $S$   & $s$\\
    $\left( \nu_R \right)^{\dagger}_i$ & $\color{Green}\nu_i$\\
    $\left( \psi_R \right)^{\dagger}$ & $\color{red}r$\\
   $\psi_L$ & $\color{red}-r$\\ \hline
  \end{tabular}
  \end{center}
 
+If  $\left( \psi_R \right)^{\dagger}_{\alpha}$  can couple with $\left( \psi_R \right)^{\dagger}_{\beta} $, then  $\left( \psi_R \right)^{\dagger}_{\beta}\to {\psi_L}_{\alpha}$, 
+ 
 \end{frame}
 
 
 \begin{frame}
   \frametitle{
-    \only<1>{$\cancel{\text{tree-level}}$}%
+    \only<1>{${\text{tree-level}}$ $\color{red}r=1$,   $s\ne -2$ }%
+    \only<2>{$\nu\ne -1$}%
+    \only<3>{Radiative Dirac seesaw}%
+    \only<4>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
+     and vector-like Dirac fermion with $r\ne 1$}%
+   %\only<5>{The model: \textit{colored scotogenic}}%
+  }
+\def\pscale{0.6}
+\def\px{0}
+\def\py{140}
+\begin{picture}(320,250)
+\only<1>{\put(\px,\py){\includegraphics[scale=\pscale]{dma}}}%
+\only<2>{\put(\px,\py){\includegraphics[scale=\pscale]{dm2}}}%
+\only<3-4>{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
+    \begin{overpic}[scale=\pscale]{dm3}
+    \end{overpic}
+  }}%
+%\only<5>{\put(\px,\py){\includegraphics[scale=\pscale]{dm4}}}%
+%%% circle
+\only<1>{\put(80,50){  E. Ma, R. Srivastava arXiv:1411.5042 [PLB]}}
+\FPeval\vx{\px+52}%
+\FPeval\vy{\py+3}%
+\only<4>{\put(\vx,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\FPeval\vxr{\vx+73}%
+\only<4>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\FPeval\vxr{\vx+\vy}%
+\only<4>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\FPeval\vxr{\vx+73}%
+\FPeval\vyr{\vy+58}%
+\only<4>{\put(\vxr,\vyr){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\FPeval\sx{\px+270}%
+\FPeval\sy{\py+60}%
+\only<3->{\put(\sx,\sy){
+    \begin{minipage}{0.4\linewidth}
+      \begin{block}{Soft breaking term induced:}
+    \begin{align*}
+      \mathcal{L}\supset & \kappa  \sigma \eta^{\dagger} H\,,
+    \end{align*}
+    %\invisible<5>
+    {where $\kappa=\lambda \langle S \rangle\,.$}
+    
+      \end{block}
+  \end{minipage}
+  }}
+\only<4->{\put(0,80){
+    \begin{columns}
+      \begin{column}{0.55\textwidth}
+        \begin{align*}
+          -1+\eta=&-\color{red}r\\
+          -{\color{red}r}=&-\color{red}r\\
+          -{\color{red}r}=&-{\color{Green}\nu}+\sigma\\
+          \sigma=&\eta+s
+        \end{align*}
+        \begin{align*}
+          \only<4>{\boldsymbol{N}_c=\boldsymbol{1}\,.}%
+          %\only<5>{\color{red}\boldsymbol{N}_c=\boldsymbol{8}\,.}%
+        \end{align*}
+      \end{column}
+      \begin{column}{0.45\textwidth}
+
+        \rowcolors{1}{RoyalBlue!20}{}
+        \small
+  \begin{tabular}{|l|c|l|c|}
+\hline
+    Particles& $\operatorname{U}(1)_{B-L}$ & $\left(\operatorname{SU}(3)_c ,\operatorname{SU}(2)_L \right)_Y$\\\hline
+    $L_i$                           & $\color{blue}-1$ & $ \left(\mathbf{1},\mathbf{2}\right)_{-1/2}$  \\
+ $H$                           &          0  & $ \left(\mathbf{1},\mathbf{2}\right)_{1/2}$ \\     
+ $\left( \nu_{Ri} \right)^{\dagger}$ & $\color{Green}\nu$ & $ \left(\mathbf{1},\mathbf{1}\right)_0$ \\ 
+    \only<4>{$\psi_L$}%
+    %\only<5->{$\color{red}\mathcal{Q}_L$}
+             & $\color{red}-r$ &
+    $ \left(\only<4>{\mathbf{N}_c}
+            %\only<5>{{\color{red}\mathbf{N}_c}}
+            ,\mathbf{1}\right)_0$\\
+    \only<4>{$\left( \psi_R \right)^{\dagger}$}%
+    %\only<5->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}
+             & $\color{red}r$ &
+                                $ \left(\only<4>{\mathbf{N}_c}
+                                %\only<5>{{\color{red}\mathbf{N}_c}}
+                                ,\mathbf{1}\right)_0$ \\
+    $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   &
+                                                                                  $ \left(\only<4>{\mathbf{N}_c}
+                                                                                  %\only<5>{{\color{red}\mathbf{N}_c}}
+                                                                                  ,\mathbf{1}\right)_0$ \\
+    $\eta_a$                        &  $1-\color{red}r$   &
+                                                            $ \left(\only<4>{\mathbf{N}_c}
+                                                            %\only<5>{{\color{red}\mathbf{N}_c}}
+                                                            ,\mathbf{2}\right)_{1/2}$ \\
+    % \invisible<5>
+    {$S$}&
+    % \invisible<5>
+           { ${\color{Green}\nu}-1$ }  &
+    %\invisible<5>
+    { $\left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ }\\  
+  \end{tabular}
+
+        
+      \end{column}
+    \end{columns}
+  }}
+\end{picture}
+
+  
+\end{frame}
+
+
+
+\section{Systematic study}
+
+\begin{frame}
+  \frametitle{Dimension-5 operator}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+       \begin{block}{SM+Majorana neutrinos}
+        
+\begin{align*}
+  \mathcal{L}_5= \frac{y_{i\alpha}}{\Lambda}\epsilon_{ab} L_i^{a} H^b  \epsilon_{cd} L_i^{c} H^d +\text{h.c.} \,,
+\end{align*}
+
+\begin{itemize}
+\item Tree-level+one-loop+two-loops \alert{with DM}, three-loops\\
+  \quad
+  
+\item Dimension-7, Dimension-5 genuine topologies
+\end{itemize}
+     \end{block}      
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Dirac}
+        
+\begin{align*}
+  \mathcal{L}_5= \frac{y_{i\alpha}}{\Lambda}\epsilon_{ab} L_i^{a} H^b \left( \nu_R \right)^{\dagger}_{\alpha}S+\text{h.c.} \,,
+\end{align*}
+\begin{itemize}
+\item Three-level+One-loop with DM but extra $Z_2$ and $Z_2'$ for DM: Y., Chang-Yuan and D. Gui-Jun",
+     arXiv:1802.05231 [PRD]
+   \item \qquad\\
+     \qquad
+    
+\end{itemize}
+     \end{block}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{One-loop dimension-5 main Topologies}
+  \includegraphics[scale=0.33]{topologies}
+\end{frame}
+
+\begin{frame}
+  \frametitle{T3-1-A}
+    \includegraphics[scale=0.33]{T3-1-A-mathematica}
+\end{frame}
+
+\begin{frame}
+  \frametitle{T3-1-A}
+    \includegraphics[scale=0.35]{T1-3-A_sltns.png}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Zee Dirac}
+   
+
+\includegraphics[scale=0.6]{zee}
+
+
+\begin{tabular}{c|ccccccccc}\hline
+Model\hspace{1cm}&$\overline{\nu_{R_1}}$&$\overline{\nu_{R_2}}$&$\overline{\nu_{R_3}}$&$\sigma_1^-$&$\sigma_{2}^-$&$S$&${\sigma'_1}^-$&${\sigma'_2}^-$&$S'$\\\hline
+\small{Dirac~Zee}&$+4$& $+4$& $-5$ &$-2$&$-5$&$-3$&$\times$&$\times$&$\times$\\
+\small{Dirac~Zee}&$-6$& $+\dfrac{10}{3}$& $+\dfrac{17}{3}$ &$-2$&$+5$&$+7$&$-2$&$-\dfrac{13}{3}$&$-\dfrac{7}{3}$\\[5pt]  \hline
+\end{tabular}
+
+
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{
+    \only<1>{${\text{tree-level}}$ $\color{red}r=1$,   $s\ne -2$ }%
     \only<2>{$\nu\ne -1$}%
     \only<3>{Radiative Dirac seesaw}%
     \only<4>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
@@ -239,7 +420,7 @@ where $B$ is the \emph{total baryon number}.
 \def\px{0}
 \def\py{140}
 \begin{picture}(320,250)
-\only<1>{\put(\px,\py){\includegraphics[scale=\pscale]{dm1}}}%
+\only<1>{\put(\px,\py){\includegraphics[scale=\pscale]{dma}}}%
 \only<2>{\put(\px,\py){\includegraphics[scale=\pscale]{dm2}}}%
 \only<3-4>{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
     \begin{overpic}[scale=\pscale]{dm3}
@@ -247,8 +428,7 @@ where $B$ is the \emph{total baryon number}.
   }}%
 \only<5>{\put(\px,\py){\includegraphics[scale=\pscale]{dm4}}}%
 %%% circle
-\only<1>{\put(80,50){$\left( \psi_L \right)^{\dagger}\nu_R\sigma \to
-    \nu_R \nu_R \sigma  $ }}
+\only<1>{\put(80,50){  E. Ma, R. Srivastava arXiv:1411.5042 [PLB]}}
 \FPeval\vx{\px+52}%
 \FPeval\vy{\py+3}%
 \only<4>{\put(\vx,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
@@ -311,6 +491,8 @@ where $B$ is the \emph{total baryon number}.
 
   
 \end{frame}
+
+
 
 
 \begin{frame}
