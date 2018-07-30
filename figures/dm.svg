@@ -249,6 +249,19 @@
          style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1.00000003pt;stroke-opacity:1"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path5465-5"
+         inkscape:connector-curvature="0" /></marker><marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker5467-9-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:collect="always"><path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:#0000ff;stroke-width:1.00000003pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path5465-5-6"
          inkscape:connector-curvature="0" /></marker></defs><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -263,12 +276,12 @@
      id="namedview4"
      showgrid="false"
      inkscape:zoom="2.4334545"
-     inkscape:cx="291.7663"
-     inkscape:cy="139.5918"
+     inkscape:cx="336.08702"
+     inkscape:cy="137.94805"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer8"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -392,21 +405,6 @@
          y="242.99001"
          x="201.61626" /></text>
 <text
-       id="text4834-3"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';writing-mode:lr-tb;display:inline;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325;"
-       x="274.68277"
-       y="185.36926"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';stroke-width:1.33333325;fill:#ff0000;"
-         id="tspan4830-6"
-         y="185.36926"
-         x="274.68277"><tspan
-   style="-inkscape-font-specification:'Fira Sans Bold';font-family:'Fira Sans';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-   id="tspan5025">N</tspan><tspan
-   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64.99999762%;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';baseline-shift:sub;fill:#ff0000"
-   id="tspan5000">c</tspan>=<tspan
-   style="-inkscape-font-specification:'Fira Sans Bold';font-family:'Fira Sans';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-   id="tspan5028">8</tspan></tspan></text>
-<text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        x="255.39786"
@@ -419,18 +417,18 @@
 <text
        y="234.50856"
        x="284.13901"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.65553284px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Bold';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37008643;"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:19.65553284px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Bold';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.37008643"
        id="text5037"
        transform="scale(1.0275649,0.97317455)"><tspan
          x="284.13901"
          y="234.50856"
          id="tspan5033"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.66666698px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Bold';stroke-width:1.37008643;">x</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.66666698px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Bold';stroke-width:1.37008643">x</tspan></text>
 </g><g
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="tree-lvel label"
-     style="display:none"><text
+     style="display:inline"><text
        transform="translate(-2.8300736,32.10013)"
        y="246.66969"
        x="52.816265"
@@ -474,7 +472,7 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="pure tree-level"
-     style="display:none"><text
+     style="display:inline"><text
        id="text454-3"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
        x="416.72519"
@@ -488,16 +486,7 @@
        inkscape:connector-curvature="0"
        id="path15070-4"
        d="M 129.57322,258.80434 129.33301,74.80433"
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#marker15074-7-5)" /><text
-       y="88.868668"
-       x="734.72522"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
-       id="text17397"><tspan
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325"
-         x="458.40521"
-         y="85.188454"
-         id="tspan17395">σ</tspan></text>
-<path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#marker15074-7-5)" /><path
        style="display:inline;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:8, 8;stroke-dashoffset:0;stroke-opacity:1;marker-mid:url(#marker15074-7-5)"
        d="M 447.57322,258.80434 447.33301,74.80433"
        id="path17399"
@@ -512,16 +501,42 @@
          y="216.28439"
          id="tspan70-1-7"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';fill:#0000ff;stroke-width:1.28421605">-1</tspan></text>
-<path
+<text
+       y="88.868668"
+       x="744.72522"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
+       id="text197"><tspan
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325"
+         x="468.40521"
+         y="85.188454"
+         id="tspan195">S</tspan></text>
+</g><g
+     inkscape:groupmode="layer"
+     id="layer15"
+     inkscape:label="-2"
+     style="display:none"><path
        style="display:inline;fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#marker5467-9)"
        d="m 0,236.30235 h 50.87989 265.43994 214.71998 50.71997"
        id="path5463-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="ccccc" /></g><g
      inkscape:groupmode="layer"
+     id="layer14"
+     inkscape:label="Ma"><path
+       style="display:inline;fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#marker5467-9-3)"
+       d="m 0,236.30235 h 50.87989 265.43994 c 71.57333,0 113.61378,2.05469 113.27288,-71.09235 l -0.29109,-84.242381"
+       id="path5463-3-7"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" /><path
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0"
+       id="path242"
+       d="M 582.04254,236.30235 H 526.6026 c -71.57333,0 -65.61378,2.05469 -65.27288,-71.09235 l 2.29109,-84.242381"
+       style="display:inline;fill:none;stroke:#008000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#marker5467-9-3)" /></g><g
+     inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="effective"
-     style="display:inline"><text
+     style="display:none"><text
        id="text454"
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14.34619904px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';writing-mode:lr-tb;display:inline;fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.99999994"
        x="439.28894"
@@ -641,7 +656,7 @@
      inkscape:groupmode="layer"
      id="layer10"
      inkscape:label="pre-loop"
-     style="display:inline"><path
+     style="display:none"><path
        transform="translate(-9.78677,33.846071)"
        inkscape:connector-curvature="0"
        id="path4259"
@@ -674,7 +689,7 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="r"
-     style="display:inline"
+     style="display:none"
      transform="translate(-9.78677,33.846071)"><path
        style="fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#marker5430)"
        d="M 421.54655,202.45627 C 388.9541,151.69905 345.93611,123.24336 298.66666,121.70482 251.39721,120.16628 199.8763,145.54489 175.78677,202.45627"
@@ -703,7 +718,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="loop"
-     style="display:inline"
+     style="display:none"
      transform="translate(-9.78677,33.846071)"><path
        d="m 139.35999,224.95827 c 9.73734,-37.5156 31.92667,-70.6116 62.93334,-93.86626"
        style="fill:none;stroke:#231f20;stroke-width:1.33333325;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:12.79715968, 12.79715968;stroke-dashoffset:0;stroke-opacity:1"
@@ -754,7 +769,8 @@
        sodipodi:nodetypes="ccc" /></g><g
      inkscape:groupmode="layer"
      id="layer12"
-     inkscape:label="Q"><image
+     inkscape:label="Q"
+     style="display:none"><image
        y="259.26959"
        x="200.66498"
        id="image4906"
@@ -786,4 +802,19 @@
          y="278.76984"
          id="tspan4949"
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';stroke-width:1.33333325">L</tspan></text>
+<text
+       id="text4834-3"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.12826538px;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';writing-mode:lr-tb;display:inline;fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.33333325"
+       x="271.85269"
+       y="217.46939"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans';fill:#ff0000;stroke-width:1.33333325"
+         id="tspan4830-6"
+         y="217.46939"
+         x="271.85269"><tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Bold'"
+   id="tspan5025">N</tspan><tspan
+   style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:64.99999762%;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Italic';baseline-shift:sub;fill:#ff0000"
+   id="tspan5000">c</tspan> =<tspan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Fira Sans';-inkscape-font-specification:'Fira Sans Bold'"
+   id="tspan5028">8</tspan></tspan></text>
 </g></svg>
