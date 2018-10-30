@@ -3,7 +3,12 @@
 \usepackage{talk}
 %\usepackage{mycolors}
 \usepackage{fp}
-\widescreen
+%\widescreen
+
+%%%caption size
+\usepackage{caption}
+%\captionsetup{font=footnotesize,labelfont=footnotesize}
+
 
 \newenvironment<>{varblock}[2][.9\textwidth]{%
   \setlength{\textwidth}{#1}
@@ -23,8 +28,8 @@
 
 
 
-\title{Minimal $B-L$ models  }
-\subtitle{with total $L$ conservation}
+\title{Dark matter}
+\subtitle{Before and after reheating}
 
 
 %\subtitle
@@ -38,10 +43,10 @@ Universidad de Antioquia\\
 Phenomenology Group}%
 {http://gfif.udea.edu.co}%
 {}%
-{mt}%
+{gfif}%
 {}
-\arxiv{}
-\collaborators{Carlos Yaguna, Julian Calle, Mario Reig, Jose Valle (IFIC Valencia), Oscar Zapata (UdeA) }
+%\arxiv{}
+\collaborators{ Valentina Montoya }
 }
 
 \date{\tiny July 30, 2018 } % (optional) \today
@@ -87,58 +92,145 @@ Phenomenology Group}%
 
 \maketitle
 
+% \begin{frame}
+%   \frametitle{Table of Contents}
+% % %\small
+% % %\vspace{-0.5cm}
+%    \setbeamertemplate{section in toc}[sections numbered]
+%    \tableofcontents[hideallsubsections]
+% \end{frame}
+
+% \section{Motivation}
+
+% \begin{frame}
+%   \frametitle{We don't have a clue}
+%   \begin{itemize}
+%   \item  Evolution of the Universe only knowm after nucleosythesis.
+%   \item  Gravitational evidence of dark matter imprinted already in nucleoynthesis. 
+%   \item What happen before nucleosynthesis?
+%     \begin{itemize}
+%     \item Theremal or not thermal
+%     \item Before and after reheating
+%     \end{itemize}
+%   \end{itemize}
+% \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{evidence}
+%%%%%%%%%%
+
+
+\section{Dark matter interpretations}
+
 \begin{frame}
-  \frametitle{Table of Contents}
-% %\small
-% %\vspace{-0.5cm}
-   \setbeamertemplate{section in toc}[sections numbered]
-   \tableofcontents[hideallsubsections]
-\end{frame}
-
-\section{Motivation}
-
-\begin{frame}
-  \frametitle{Lepton number}
-  \begin{itemize}
-  \item   Lepton number ($L$) is an accidental discret or Abelian symmetry of the standard model (SM). 
-  \item  Without neutrino masses $L_e$, $L_{\mu}$, $L_{\tau}$ are also conserved.
-  \item The processes which violates individual $L$ are called Lepton flavor violation (LFV) processes.
-  \item All the neutrino mass models predict, to some extent, LFV processes
-  \item Only models with Majorana neutrinos predict processes of total $L=L_e+L_{\mu}+L_{\tau}$ violation, like \alert{neutrino less doublet beta decay} (NLDBD) or its collider equivalent at the LHC for example.
-  \item NLDBD is experimentally challenging, specially if there is a massless neutrino in the spectrum.
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \frametitle{NLDBD prospects for Majorana models with a massless
-    neutrino}
-  with M.Reig, J.W.F Vale, O. Zapata, arXiv:806.09977
-  \centering
-  %\includegraphics[scale=0.26]{mee}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Total lepton number conservation}
-  In the near future lepton number conservation could be established.
-
-  \begin{itemize}
-  \item   If $L$ is a conserved quantum number, it must be related to a gauge symmetry
-  \item   $Z'$ must be massive and consequently it must be an spontaneously broken gauge symmetry
-  \item   An accidental global symmetry for $L$ is left after symmetry breaking.
-  \end{itemize}
-  
-  \begin{block}{  What is the minimal model with Lepton number as a gauge symmetry?}
+   \frametitle{SM}
+   \begin{figure}
+     \centering
+     \includegraphics[scale=0.4]{smparticles}\\
+     \tiny{E. SIEGEL / BEYOND THE GALAXY}
     
-  \end{block}
-
-  \begin{align}
-    \text{SM} \times \operatorname{U}(1)_{B-L}
-    \underbrace{\longrightarrow}_{\left\langle S \right\rangle}
-    \text{SM + Total Lepton number conservation}
-  \end{align}
-
-where $B$ is the \emph{total baryon number}.
+   \end{figure}
 \end{frame}
+
+
+
+% \begin{frame}
+%   \frametitle{Some possibilitties}
+%   Strumia on SM DM
+% \end{frame}
+
+% \begin{frame}
+%   \frametitle{Too many DM candidates}
+  
+% \end{frame}
+
+
+
+\begin{frame}
+  \frametitle{$Z_2$ Singlet scalar dark matter}
+Minimal number of fields:
+  
+  SM (even)  + Real Scalar singlet (odd)
+
+  
+
+  \begin{align*}
+    \mathcal{L}=\mathcal{L}_{\text{SM}} \frac{1}{2}\partial_{\mu}S \partial^{\mu} S - {\color{red}\lambda_{HS}} H^{\dagger} H \,S^2
+    - {\color{red}M_S}^2\, S^2 - \lambda_{S} S^4 \,.
+  \end{align*}
+
+  $S$ is stable and a dark matter particle
+
+\end{frame}
+
+\subsection{Standard cosmology}
+
+\begin{frame}
+  \frametitle{WIMP}
+  At some high temperature after reheating the scalar dark matter particle is in thermal equilibrium with the standard model plasma. We rather high yield. We need the Higgs portal interaction to exponetial decrease the abundance until the correct relic density value. Freeze-out at $M_S/T\sim 20$
+
+  See \url{http://bit.ly/singletscalar}
+
+    requieres $\lambda_{HS}\sim 0.1$  (weak-like annihilation cross sections)
+\end{frame}
+
+\begin{frame}[plain]
+\begin{picture}(320,250)
+  \only<1>{\put(-30,-3){\includegraphics[width=\paperwidth]{wimp1}}}%
+  \only<2>{\put(-30,-3){\includegraphics[width=\paperwidth]{wimp2}}}%
+  \only<3>{\put(-30,-3){\includegraphics[width=\paperwidth]{wimp3}}}%
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Full wimp parameter space}
+  Restricted by direct detection cross section Xenon1T  (arXiv:1805.12562)
+
+  \includegraphics[scale=0.6]{thermalwimp}
+\end{frame}
+
+\begin{frame}
+  \frametitle{FIMP}
+  \scriptsize
+  At some high temperature after reheating the abundance of scalar dark matter particle is zero. A feebly interaction allows the Higgs to produce dark matter particles until $M_S/T\sim 1$ where the freeze-in is reached. See   C. Yaguna arXiv:1105.1654 [JHEP]
+  
+  \includegraphics[scale=0.5]{freezein}
+
+  $\lambda_{HS}=10^{-10}\,,\ 10^{-11}\,,\ 10^{-12}$. Not signals at all!
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{WIMP during reheating}
+  \scriptsize
+  
+  The freeze-out occurs at $M/T_{\text{RH}}\sim 10^{3}$. Very slow reheating for $M\sim 1 TeV$- After reheating the dark matter particle not longer termalize and the freeze out is kept. See C. Pallis hep-ph/0402033 [APP]
+
+  \includegraphics[scale=0.42]{rhwimp}
+
+  $M_{\phi}=10^6$ GeV, $M_{S}=350$ GeV $T_{\text{RH}}=5$ GeV $N_{S}^{i}=1.4\times 10^{-7}$. $\lambda_{HS}$ fixed to be compatible with direct dection constrains
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{FIMP during reheating}
+  Produced abundance can be an initial condition for the FIMP after reheating.
+
+  See poster session (Valentina Montoya)
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusions}
+  Even a simple model like the Singlet Sccarlar Dark matter model can span many orders the maginuted in mass and in the strength of the interactions (Higgs portal $\lambda_{HS}$, self-interaction $\lambda_S$ ) afert non-thermal and non-standard cosmology scenarios are considered
+
+  Mass: fev MeV to PeV
+  $\lambda_{SH}$: $10^{-16}$ to 10
+
+  May be the window to search for dark matter is too wide
+  
+\end{frame}
+
+\end{document}
 
 \section{Exotic $B-L$}
 
@@ -569,27 +661,6 @@ If $(\mu_\eta^{aa})^2\gg M_{\mathcal{Q}}^2$ one has
 % \end{frame}
 
 
-
-\begin{frame}
-\begin{picture}(320,250)
-\only<1>{\put(-24,-22){\begin{overpic}[scale=0.352]{zN}\end{overpic}}}%
-\end{picture}
-\end{frame}
-
-\begin{frame}
-  %\frametitle{The lightest is an stable particle}
-\begin{picture}(320,250)
-\only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
-\only<1->{\put(34,158.5){ \textbf{SM}  }}%
-\only<1->{\put(38,115){ {\large +}  }}%
-\only<1->{\put(30,100){ $\left( \nu_R \right)^{\dagger}_i$   }}%
-\only<1->{\put(18,115){\begin{overpic}[scale=0.118]{mice}\end{overpic}}}%
-%
-\only<1->{\put(310,180){\begin{overpic}[scale=0.15]{Q}\end{overpic}}}%
-\only<1->{\put(160,40){ \begin{overpic}[scale=0.15]{sigmas}\end{overpic}}}%
-\only<1->{\put(220,40){ \begin{overpic}[scale=0.15]{etas}\end{overpic}}}%
-\end{picture}
-\end{frame}
 
 
 \begin{frame}
@@ -1648,6 +1719,12 @@ TEMPLATES
 \end{frame}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.1]{}\\
+  {\tiny Credit: }
+\end{figure}
+
 
 2. Two columns
 \begin{columns}
@@ -1658,6 +1735,7 @@ TEMPLATES
     
   \end{column}
 \end{columns}
+
 
 
 
