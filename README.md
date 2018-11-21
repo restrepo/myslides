@@ -14,6 +14,10 @@ Run as
 ```bash
 xelatex master.tex
 ```
+or
+```bash
+latexmk -xelatex -pvc master.tex
+```
 
 <!-- figures/master.svg -->
 [![Image inheritance diagram](http://bit.ly/myslides2_svg)](http://bit.ly/2IwrqfU)

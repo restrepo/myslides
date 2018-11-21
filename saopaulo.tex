@@ -23,8 +23,8 @@
 
 
 
-\title{Minimal $B-L$ models  }
-\subtitle{with total $L$ conservation}
+\title{Dirac fermion dark matter  }
+\subtitle{with total Dirac neutrino masses}
 
 
 %\subtitle
@@ -44,7 +44,7 @@ Phenomenology Group}%
 \collaborators{Carlos Yaguna, Julian Calle, Mario Reig, Jose Valle (IFIC Valencia), Oscar Zapata (UdeA) }
 }
 
-\date{\tiny July 30, 2018 } % (optional) \today
+\date{\tiny Novemeber 22, 2018 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -95,8 +95,174 @@ Phenomenology Group}%
    \tableofcontents[hideallsubsections]
 \end{frame}
 
-\section{Motivation}
+First U(1)
+Design from other perspective.
 
+The stating point is Dirac fermion dark matter
+
+Fermion requires an U(1) symmetry
+
+U(1) must be dark
+
+Second U(1)
+
+If the SM conserve global lepton number, U(1) be must a sponatenouslt broken guuge symmetry.
+
+Neutrino masses must be also Dirac. His Diracnnes proteced by the new second U(1)
+
+
+Neutrino needs an explanation for his smallness and there is a natural dimension-5 operator which can be settled down there.
+
+At one loop the required Dirac fermions must be in hidden dark sector.
+
+
+
+\section{Motivitation 1}
+
+\begin{frame}
+  \frametitle{Lorentz transformation}
+  Lorentz\invisible<1>{+$U(1)$}:
+  \begin{align}
+    \mathcal{L}=\only<1>{-\tfrac{1}{4}\left( \partial^{\mu} A^{\nu}-\partial^{\nu} A^{\mu} \right) \left( \partial_{\mu} A_{\nu}-\partial_{\nu} A_{\mu} \right) \,.  }
+\only<2>{\partial_{\mu}\phi^{\color{red}*}\partial^{\mu}\phi-{\color{red}m^2} \phi^{\color{red}*}\phi-\lambda \left( \phi^{\color{red}*}\phi \right)^2\,.}
+  \end{align}
+  \begin{align*}
+   A^\mu(x)\to {A'}^\mu(x)=&{\Lambda^\mu}_\nu A^\nu(\Lambda^{-1}x)&&\text{Vector field}\nonumber\\
+   \phi(x)\to \phi'(x)=&\phi(\Lambda^{-1} x) && \text{Scalar field}\nonumber\\
+    \psi_\alpha(x)\to\psi'_\alpha(x)=&{\left[ S(\Lambda) \right]_\alpha}^\beta\psi_\beta(\Lambda^{-1}x)\,, &&\text{Left Weyl spinor}\nonumber\\
+\left(  \psi_\alpha(x) \right)^{\dagger}=\psi_{\dot{\alpha}}^{\dagger}(x)\to{\psi'}_{\dot{\alpha}}^{\dagger}(x)=&\psi_{\dot{\beta}}^{\dagger}(\Lambda^{-1}x) {\left[ S^\dagger (\Lambda)\right]^{\dot{\beta}}}_{\dot{\alpha}}  \,,&&\text{Right anti-Weyl spinor}
+\end{align*}
+With
+\begin{align*}
+  S(\Lambda)=
+\exp\left( \boldsymbol{\xi}\cdot \frac{\boldsymbol{\sigma}}{2}+i\boldsymbol{\theta}\cdot \frac{\boldsymbol{\sigma}}{2} \right)\,,
+\end{align*}
+where $\boldsymbol{\sigma}=(\sigma_1,\sigma_2,\sigma_3)$ are the Pauli matrices. $\overline{\boldsymbol{\sigma}}\equiv-\boldsymbol{\sigma}$, and $\sigma^0=\boldsymbol{1}_{2\times 2}\,.$
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Weyl spinor}
+  \begin{align}
+  \mathcal{L}=&i{\psi}^{\dagger}_{\dot{\alpha}}\overline{\sigma}^{\mu \dot{\alpha}\alpha}\partial_\mu\psi_{\alpha}-
+m \left( \psi^{\alpha}\psi_{\alpha}+\psi^{\dagger}_{\dot{\alpha}}\psi^{\dagger \dot{\alpha}} \right) \nonumber\\
+=&i{\psi}^{\dagger}\overline{\sigma}^\mu\partial_\mu\psi-
+m \left( \psi\psi+\psi^{\dagger}\psi^{\dagger} \right)\,.
+\end{align}
+
+
+Only if
+\begin{align*}
+  S^{\dagger}\overline{\sigma}^\nu S=&{\left(\Lambda\right)^\nu}_\rho \overline{\sigma}^\rho\,,
+\end{align*}
+
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Electron field: \emph{one in four}: Dreiner,... arXiv:0812.1594 (PR)}
+\vspace{-0.7cm}
+
+\begin{align*}
+\text{Scalar product:}\qquad  {{}^{\alpha}}\,{}_{\alpha}\qquad \text{and}\qquad {{}_{\dot{\alpha}}}\,{}^{\dot{\alpha}}\,.
+\end{align*}
+\rowcolors{1}{RoyalBlue!20}{}
+    \begin{tabular}{llll}
+    Name \hspace{4cm} & Symbol Name \hspace{1.5cm} & Lorentz Transf. \hspace{1.5cm} & $U(1)$\\\hline
+    $e_L$: left electron  & $\xi_{\alpha}$ & ${\left[ S \right]_{\alpha}}^{\beta}$ & $e^{i\theta}$\\
+   $\left( e_L \right)^{\dagger}=e^{\dagger}_R$: right positron    & $\left( \xi_{\alpha} \right)^{\dagger}=\xi^{\dagger}_{\dot{\alpha}}$ & ${\left[ S^\dagger (\Lambda)\right]^{\dot{\beta}}}_{\dot{\alpha}} $ & $e^{-i\theta}$\\
+   $e_R$: right electron    & $\left( \eta^{\alpha} \right)^{\dagger}=\eta^{\dagger\;\dot{\alpha}}$ & ${\left[ \left( S^{-1} \right)^* \right]_{\dot{\beta}}}^{\dot{\alpha}}$& $e^{i\theta}$\\
+   $\left( e_R \right)^{\dagger}=e^{\dagger}_L$: left positron&$\eta^{\alpha}$& ${\left[ \left( S^{-1} \right)^T \right]^{\alpha}}_{\beta}$ & $e^{-i\theta}$\\\hline
+  \end{tabular}
+
+\only<1>{
+\begin{align*}
+  \mathcal{L}=&i\xi^{\dagger}_{\dot{\alpha}}\overline{\sigma}^{\mu\;\dot{\alpha}\alpha}\partial_{\mu}\xi_{\alpha}+i\eta^{\alpha}\sigma^{\mu}_{\alpha\dot{\alpha}}\partial_{\mu}\eta^{\dagger\;\dot{\alpha}}
+-m \left(\eta^{\alpha} \xi_{\alpha}+\xi^{\dagger}_{\dot{\alpha}} \eta^{\dagger\;\dot{\alpha}}\right)\nonumber\\
+=&i\xi^{\dagger}\overline{\sigma}^{\mu}\partial_{\mu}\xi+i\eta\sigma^{\mu}\partial_{\mu}\eta^{\dagger}
+-m \left(\eta\xi+\xi^{\dagger}\eta^{\dagger} \right)+\,.
+\end{align*}
+}%
+\only<2>{
+  \begin{align*}
+\mathcal{L}=&
+i \begin{pmatrix}
+  \xi^{\dagger}_{\dot{\alpha}}& \eta^{\alpha}
+  \end{pmatrix}
+ \begin{pmatrix}
+    0           &\mathbf{1}\\
+    \mathbf{1} &0\\
+  \end{pmatrix}
+  \begin{pmatrix}
+    0           &\sigma^{\mu}_{\alpha\dot{\alpha}}\\
+    \overline{\sigma}^{\mu\;\dot{\alpha}\alpha} &0\\
+  \end{pmatrix} \partial_{\mu}\begin{pmatrix}
+   \xi_{\alpha}\\
+   \eta^{\dagger\;\dot{\alpha}}    
+  \end{pmatrix}-m \begin{pmatrix}
+  \xi^{\dagger}_{\dot{\alpha}}& \eta^{\alpha}
+  \end{pmatrix}
+  \begin{pmatrix}
+    0           &\mathbf{1}\\
+    \mathbf{1} &0\\
+  \end{pmatrix} \begin{pmatrix}
+   \xi_{\alpha}\\
+   \eta^{\dagger\;\dot{\alpha}}    
+  \end{pmatrix}
+  \end{align*}
+}
+\def\swd{1cm}
+\only<3>{
+  \begin{align*}
+\mathcal{L}=&
+i \Psi^\dagger\hspace{\swd}
+\gamma^0\hspace{\swd} \gamma^\mu \hspace{\swd} \partial_{\mu}  \Psi\hspace{\swd}-\hspace{\swd} m
+\Psi^\dagger\hspace{\swd}
+\gamma^0\hspace{\swd} \Psi\,.              
+  \end{align*}
+}
+\only<4>{
+  \begin{align*}
+\mathcal{L}=&
+i \overline{\Psi} \gamma^\mu \partial_{\mu}  \Psi-m
+\overline{\Psi} \Psi\,.              
+  \end{align*}
+}
+\centering
+\only<1>{\includegraphics[scale=0.13]{counting-1-to-4}}
+\only<2>{\qquad \vspace{1.5cm}}
+\only<3>{
+  \begin{align*}
+    \Psi=& \begin{pmatrix}
+   \xi_{\alpha}\\
+   \eta^{\dagger\;\dot{\alpha}}    
+ \end{pmatrix}
+    = \begin{pmatrix}
+      e_L\\
+      e_R
+    \end{pmatrix},&
+ \gamma^\mu =&
+  \begin{pmatrix}
+    0           &\sigma^{\mu}\\
+    \overline{\sigma}^{\mu} &0\\
+  \end{pmatrix}                                   
+  \end{align*}
+}
+\only<4>{\vspace{0.2cm}
+
+  $\overline{\Psi}=\Psi^\dagger \gamma^0$
+
+  \vspace{1cm}}
+\end{frame}
+
+
+
+
+
+\section{Motivation 2}
+%slide with sm dirac fermion explanation
 \begin{frame}
   \frametitle{Lepton number}
   \begin{itemize}
