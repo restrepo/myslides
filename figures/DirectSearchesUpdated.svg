@@ -31,7 +31,7 @@
      showgrid="false"
      inkscape:zoom="2.5916667"
      inkscape:cx="384.31982"
-     inkscape:cy="131.95265"
+     inkscape:cy="155.5285"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -12204,9 +12204,11 @@
          id="tspan10845"
          x="131.96141"
          y="-216.46303"
-         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke-width:0.75">n<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
-   id="tspan10849">=1/3</tspan></tspan></text>
+         style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic';stroke-width:0.75"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:sans-serif"
+           id="tspan10849"><tspan
+   style="-inkscape-font-specification:'sans-serif Italic';font-family:sans-serif;font-weight:normal;font-style:italic;font-stretch:normal;font-variant:normal"
+   id="tspan24403">r</tspan>=1/3</tspan></tspan></text>
 <flowRoot
        style="font-style:normal;font-weight:normal;font-size:26.66666603px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
        id="flowRoot17267"

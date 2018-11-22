@@ -24,7 +24,7 @@
 
 
 \title{Dirac fermion dark matter  }
-\subtitle{with total Dirac neutrino masses}
+\subtitle{with  Dirac neutrino masses}
 
 
 %\subtitle
@@ -40,8 +40,8 @@ Phenomenology Group}%
 {}%
 {mt}%
 {}
-\arxiv{}
-\collaborators{Carlos Yaguna, Julian Calle, Mario Reig, Jose Valle (IFIC Valencia), Oscar Zapata (UdeA) }
+\arxiv{1803.08528 [PRD], 1806.09977, 1808.03352}
+\collaborators{Nicolás Bernal (UAN),  Mario Reig, Jose Valle (IFIC), Carlos Yaguna (UPTC), Julian Calle, Oscar Zapata (UdeA) }
 }
 
 \date{\tiny Novemeber 22, 2018 } % (optional) \today
@@ -95,29 +95,29 @@ Phenomenology Group}%
    \tableofcontents[hideallsubsections]
 \end{frame}
 
-First U(1)
-Design from other perspective.
+% First U(1)
+% Design from other perspective.
 
-The stating point is Dirac fermion dark matter
+% The stating point is Dirac fermion dark matter
 
-Fermion requires an U(1) symmetry
+% Fermion requires an U(1) symmetry
 
-U(1) must be dark
+% U(1) must be dark
 
-Second U(1)
+% Second U(1)
 
-If the SM conserve global lepton number, U(1) be must a sponatenouslt broken guuge symmetry.
+% If the SM conserve global lepton number, U(1) be must a sponatenouslt broken guuge symmetry.
 
-Neutrino masses must be also Dirac. His Diracnnes proteced by the new second U(1)
-
-
-Neutrino needs an explanation for his smallness and there is a natural dimension-5 operator which can be settled down there.
-
-At one loop the required Dirac fermions must be in hidden dark sector.
+% Neutrino masses must be also Dirac. His Diracnnes proteced by the new second U(1)
 
 
+% Neutrino needs an explanation for his smallness and there is a natural dimension-5 operator which can be settled down there.
 
-\section{Motivitation 1}
+% At one loop the required Dirac fermions must be in hidden dark sector.
+
+
+
+\section{Dirac fermion dark matter}
 
 \begin{frame}
   \frametitle{Lorentz transformation}
@@ -286,8 +286,8 @@ i \overline{\Psi} \gamma^\mu \partial_{\mu}  \Psi-m
       $\left( \nu_{R_1} \right)^{\dagger}$ & $+1$ \\
       $\left( \nu_{R_2} \right)^{\dagger}$ & $+1$ \\
       $\left( \nu_{R_2} \right)^{\dagger}$ & $+1$ \\  
-      $\xi$ & $n$ \\
-      $\eta$ & $-n$ \\\hline
+      $\xi$ & $\only<1>{-n}\only<2>{-r}$ \\
+      $\eta$ & $\only<1>{n}\only<2>{r}$ \\\hline
       $\phi$ & $2$ \\
     \end{tabular}
 
@@ -300,11 +300,18 @@ i \overline{\Psi} \gamma^\mu \partial_{\mu}  \Psi-m
     \end{align*}
   \end{column}
   \begin{column}{0.72\textwidth}
-    \begin{figure}
+    \only<1>{    \begin{figure}
+      \centering
+      \includegraphics[scale=0.5]{scatteringMZp4TeV}\\
+      {\tiny Farinaldo et al: 1607.06468 [EPJC] }
+    \end{figure}
+  }
+  \only<2>{    \begin{figure}
       \centering
       \includegraphics[scale=0.7]{DirectSearchesUpdated}\\
       {\tiny Duerr et al: 1803.07462 [PRD] }
     \end{figure}
+}
   \end{column}
 \end{columns}
 \end{frame}
@@ -316,7 +323,7 @@ i \overline{\Psi} \gamma^\mu \partial_{\mu}  \Psi-m
   \begin{column}{0.28\textwidth}
 \rowcolors{1}{RoyalBlue!20}{}
     \begin{tabular}{ll}
-     Left Field &  $\operatorname{U}(1)_{B-L}$ \\\hline
+      Field &  $\operatorname{U}(1)_{B-L}$ \\\hline
       $\left( \nu_{R_1} \right)^{\dagger}$ & $+1$ \\
       $\left( \nu_{R_2} \right)^{\dagger}$ & $+1$ \\  
       $\xi_1$ & $10/7$ \\
@@ -347,16 +354,54 @@ i \overline{\Psi} \gamma^\mu \partial_{\mu}  \Psi-m
   %\includegraphics{}
 \end{frame}
 
+{
+ \usebackgroundtemplate{\includegraphics[width=\paperwidth]{explosion}}
 \begin{frame}
-  \frametitle{Colored dark matter}
+   \frametitle{Colored Dirac fermion dark matter}
+   \transdissolve
+    \setbeamercolor{block body}{use=structure,fg=black,bg=white}
+   \only<2>{   
+\begin{columns}
+  \begin{column}{0.28\textwidth}
 
-  
-  %\includegraphics{}
+    \begin{block}{\centering $\operatorname{SU}(3)_c=\boldsymbol{8}$}
+\rowcolors{1}{RoyalBlue!20}{}
+\begin{tabular}{ll}
+        Field &  $\operatorname{U}(1)_{\mathcal{Q}}$ \\\hline
+        $\xi$ & $\color{red}r$ \\
+      $\eta$ & $\color{red} -r$ \\\hline
+
+    \end{tabular}
+    \begin{align*}
+      \mathcal{Q}=&
+                    \begin{pmatrix}
+                      \xi\\
+                      \eta^{\dagger}\\
+                    \end{pmatrix}\\
+      \mathcal{L}=&i \overline{\mathcal{Q}}\gamma^{\mu} \mathcal{D}_{\mu} \mathcal{Q} -
+                    M_{\mathcal{Q}}\overline{\mathcal{Q}}\mathcal{Q}\,.\\
+      \chi=& | \mathcal{Q} \mathcal{Q}  \rangle
+    \end{align*}
+    \end{block}
+  \end{column}
+  \begin{column}{0.62\textwidth}
+
+    \begin{block}{$M_{\text{DM}}\approx 2 M_{\mathcal{Q}}$}
+          \begin{figure}
+      \centering
+      \includegraphics[scale=0.8]{DirectBounds}\\
+      {\tiny V. De Luca, \emph{et al}, 1801.01135 [PRD]]  }
+    \end{figure}
+    \end{block}
+    
+\end{column}
+\end{columns}
+}
 \end{frame}
+}
 
 
-
-\section{Motivation 2}
+\section{Dirac neutrino masses}
 %slide with sm dirac fermion explanation
 \begin{frame}
   \frametitle{Lepton number}
@@ -365,22 +410,27 @@ i \overline{\Psi} \gamma^\mu \partial_{\mu}  \Psi-m
   \item  Without neutrino masses $L_e$, $L_{\mu}$, $L_{\tau}$ are also conserved.
   \item The processes which violates individual $L$ are called Lepton flavor violation (LFV) processes.
   \item All the neutrino mass models predict, to some extent, LFV processes
-  \item Only models with Majorana neutrinos predict processes of total $L=L_e+L_{\mu}+L_{\tau}$ violation, like \alert{neutrino less doublet beta decay} (NLDBD) or its collider equivalent at the LHC for example.
+  \item Only models with Majorana neutrinos predict processes with total $L=L_e+L_{\mu}+L_{\tau}$ violation, like \alert{neutrino less doublet beta decay} (NLDBD).
   \item NLDBD is experimentally challenging, specially if there is a massless neutrino in the spectrum.
   \end{itemize}
 \end{frame}
 
+
 \begin{frame}
-  \frametitle{NLDBD prospects for Majorana models with a massless
-    neutrino}
-  with M.Reig, J.W.F Vale, O. Zapata, arXiv:806.09977
-  \centering
-  %\includegraphics[scale=0.26]{mee}
+  \frametitle{NLDBD prospects for a  model with a massless
+    neutrino \tiny (arXiv:1806.09977 with Reig, Valle and Zapata) }
+     \begin{figure}
+      \centering
+      \includegraphics[scale=0.25]{mee}\\
+      {\tiny  with M.Reig, J.W.F Valle, O. Zapata, arXiv:1806.09977  }
+    \end{figure}
+
+ 
 \end{frame}
 
 \begin{frame}
   \frametitle{Total lepton number conservation}
-  In the near future lepton number conservation could be established.
+  In the near future \alert{total} lepton number conservation could be established.
 
   \begin{itemize}
   \item   If $L$ is a conserved quantum number, it must be related to a gauge symmetry
@@ -401,45 +451,87 @@ i \overline{\Psi} \gamma^\mu \partial_{\mu}  \Psi-m
 where $B$ is the \emph{total baryon number}.
 \end{frame}
 
-\section{Exotic $B-L$}
+\begin{frame} 
+  \frametitle{Small Dirac neutrino masses}
+  \small
+  To explain the \alert{smallness} of Dirac neutrino masses, usually
+  \begin{itemize}
+  \item<1-> $Z_2$  to avoid tree-level mass (TL) term ( $Y(H)=+1/2$ )
+    \begin{align*}
+      \mathcal{L}_{\text{T.L}}=&h_{D}\epsilon_{ab} \left( \nu_R \right)^{\dagger} L^a H^b +\text{h.c}\\
+      =&h_D\left( \nu_R \right)^{\dagger} L H +\text{h.c}\\
+    \end{align*}
+  \item<2-> $Z_2'$ to forbid Majorana term: $\nu_R \nu_R$
+   \item<3-> (Local)  $\operatorname{U}(1)_{B-L}   \color{red}  \underbrace{\longrightarrow}_{\left\langle S \right\rangle}
+ Z_2''$, with $L(\nu_R)=-1$.
+   \item<4-> Realization of the 5-dimension operator which conserves lepton number in    $\operatorname{SU}(3)_c \times\operatorname{SU}(2)_L\times \operatorname{U}(1)_Y\times \operatorname{U}(1)_{B-L}$:
+     \begin{align*}
+       \mathcal{L}_{5-D}= \frac{h_\nu }{\Lambda}\left( \nu_R \right)^{\dagger} L H
+       {\color{red}S}+\text{h.c}\\
+     \end{align*}
+   \item<5> Prediction of extra relativistic degrees of freedom $N_{\text{eff}}$
+  \end{itemize}
 
-\begin{frame}
-  \frametitle{SM-like $B-L$ model}
- \begin{center}
-    \rowcolors{1}{RoyalBlue!20}{}
- \begin{tabular}{lr}
-   Field & $\operatorname{U}(1)_{B-L}$ \\ \hline
-   $L$   & -1\\
-   $H$   & 0\\
-   $S$   & $s$\\
-   $\left( \psi_R \right)^{\dagger}_\alpha$ & $\color{red}r_{\alpha}$\footnote{Weyl notation with only left-handed fields defined; $\color{red}r_{\alpha}$ restricted by anomaly cancellation}\\
- \end{tabular}
-\end{center}
-
-\begin{block}{Massless Majorana fermions ($n=0,1$)}
-  \begin{align*}
-    L \left[ \left( \psi_R \right)^{\dagger}_\alpha \left( \psi_R \right)^{\dagger}_\beta S^n \right]  \Longrightarrow& {\color{red} r_{\alpha}+r_{\beta}}+nS\ne 0\,,
-   & &\text{example: $\color{red}r\ne 1$, if $s=-2$}\,.
-  \end{align*}
-\end{block}
-
- \vspace{-0.5cm}
-\setbeamercolor{block title}{bg=yellow!30,fg=black}
- \begin{varblock}[\textwidth]{  $\operatorname{U}(1)_{B-L}$ with 3+$\alpha$ zero Majorana Masses $\iff$ SM with 3 zero Majorana masses }      
- \end{varblock}
-
-\vspace{-0.8cm}
- \begin{align*}
-\text{ For $\alpha\le 2$: }   \left( \psi_R \right)^{\dagger}_\alpha\to &\left( \nu_R \right)^{\dagger}_\alpha&
-          \color{red} r_{\alpha}\to & \color{Green} \nu_{\alpha}
- \end{align*}
-
-
- 
-
- 
 \end{frame}
 
+
+
+\section{One-loop realization of $\mathcal{L}_{5-D}$}
+\begin{frame}
+\begin{picture}(320,250)
+\only<1>{\put(-24,-21){\begin{overpic}[scale=0.352]{u11}\end{overpic}}}%
+\only<2>{\put(-24,-21){\begin{overpic}[scale=0.352]{u12}\end{overpic}}}%
+\only<3>{\put(-24,-21){\begin{overpic}[scale=0.352]{u13}\end{overpic}}}%
+\only<4>{\put(-24,-21){\begin{overpic}[scale=0.352]{u14}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{One loop topologies}
+\begin{picture}(320,250)
+  \only<1>{\put(40,20){\begin{overpic}[scale=0.22]{alltop}\end{overpic}}}%
+  \only<1->{\put(300,130){\tiny with J. Calle, C. Yaguna, and O. Zapata, arXiv:1811.XXXXX  }}%
+\end{picture}
+\end{frame}
+
+%\begin{frame}
+%   \frametitle{SM-like $B-L$ model}
+%  \begin{center}
+%     \rowcolors{1}{RoyalBlue!20}{}
+%  \begin{tabular}{lr}
+%    Field & $\operatorname{U}(1)_{B-L}$ \\ \hline
+%    $L$   & -1\\
+%    $H$   & 0\\
+%    $S$   & $s$\\
+%    $\left( \psi_R \right)^{\dagger}_\alpha$ & $\color{red}r_{\alpha}$\footnote{Weyl notation with only left-handed fields defined; $\color{red}r_{\alpha}$ restricted by anomaly cancellation}\\
+%  \end{tabular}
+% \end{center}
+
+% \begin{block}{Massless Majorana fermions ($n=0,1$)}
+%   \begin{align*}
+%     L \left[ \left( \psi_R \right)^{\dagger}_\alpha \left( \psi_R \right)^{\dagger}_\beta S^n \right]  \Longrightarrow& {\color{red} r_{\alpha}+r_{\beta}}+nS\ne 0\,,
+%    & &\text{example: $\color{red}r\ne 1$, if $s=-2$}\,.
+%   \end{align*}
+% \end{block}
+
+%  \vspace{-0.5cm}
+% \setbeamercolor{block title}{bg=yellow!30,fg=black}
+%  \begin{varblock}[\textwidth]{  $\operatorname{U}(1)_{B-L}$ with 3+$\alpha$ zero Majorana Masses $\iff$ SM with 3 zero Majorana masses }      
+%  \end{varblock}
+
+% \vspace{-0.8cm}
+%  \begin{align*}
+% \text{ For $\alpha\le 2$: }   \left( \psi_R \right)^{\dagger}_\alpha\to &\left( \nu_R \right)^{\dagger}_\alpha&
+%           \color{red} r_{\alpha}\to & \color{Green} \nu_{\alpha}
+%  \end{align*}
+
+
+ 
+
+ 
+% \end{frame}
+
+%\end{document}
 
 % \begin{frame}
 %   \frametitle{Majorana vs Dirac}
@@ -458,42 +550,40 @@ where $B$ is the \emph{total baryon number}.
 % \end{frame}
 
 
-\section{(Dirac) Neutrino masses}
+% \section{(Dirac) Neutrino masses}
 
 
-\begin{frame}
-  \frametitle{Seesaw mechanism}
+% \begin{frame}
+%   \frametitle{Seesaw mechanism}
 
- For Dirac neutrino masses: we require to introduce at least one SM-singlet heavy Dirac fermión (Weyl fermion notation)
- \begin{align}
-   \mathcal{L}=i\, \left( \psi _L \right)^{\dagger}\overline{\sigma}^{\mu}\partial_{\mu}\psi_L -m \,\left( \psi _R \right)^{\dagger}\psi_L+\text{h.c}\,.
- \end{align}
+%  For Dirac neutrino masses: we require to introduce at least one SM-singlet heavy Dirac fermión (Weyl fermion notation)
+%  \begin{align}
+%    \mathcal{L}=i\, \left( \psi _L \right)^{\dagger}\overline{\sigma}^{\mu}\partial_{\mu}\psi_L -m \,\left( \psi _R \right)^{\dagger}\psi_L+\text{h.c}\,.
+%  \end{align}
 
 
- \begin{center}
-    \rowcolors{1}{RoyalBlue!20}{}
- \begin{tabular}{lr}
-   Field & $\operatorname{U}(1)_{B-L}$ \\ \hline
-   $L$   & -1\\
-   $H$   & 0\\
-      $S$   & $s$\\
-   $\left( \nu_R \right)^{\dagger}_i$ & $\color{Green}\nu_i$\\
-   $\left( \psi_R \right)^{\dagger}$ & $\color{red}r$\\
-  $\psi_L$ & $\color{red}-r$\\ \hline
- \end{tabular}
- \end{center}
+%  \begin{center}
+%     \rowcolors{1}{RoyalBlue!20}{}
+%  \begin{tabular}{lr}
+%    Field & $\operatorname{U}(1)_{B-L}$ \\ \hline
+%    $L$   & -1\\
+%    $H$   & 0\\
+%       $S$   & $s$\\
+%    $\left( \nu_R \right)^{\dagger}_i$ & $\color{Green}\nu_i$\\
+%    $\left( \psi_R \right)^{\dagger}$ & $\color{red}r$\\
+%   $\psi_L$ & $\color{red}-r$\\ \hline
+%  \end{tabular}
+%  \end{center}
 
-If  $\left( \psi_R \right)^{\dagger}_{\alpha}$  can couple with $\left( \psi_R \right)^{\dagger}_{\beta} $, then  $\left( \psi_R \right)^{\dagger}_{\beta}\to {\psi_L}_{\alpha}$, 
+% If  $\left( \psi_R \right)^{\dagger}_{\alpha}$  can couple with $\left( \psi_R \right)^{\dagger}_{\beta} $, then  $\left( \psi_R \right)^{\dagger}_{\beta}\to {\psi_L}_{\alpha}$, 
  
-\end{frame}
+% \end{frame}
 
 
 \begin{frame}
   \frametitle{
-    \only<1>{${\text{tree-level}}$ $\color{red}r=1$,   $s\ne -2$ }%
-    \only<2>{$\nu\ne -1$}%
-    \only<3>{Radiative Dirac seesaw}%
-    \only<4>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
+    \only<1>{T3-1-A}%
+    \only<2>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
      and vector-like Dirac fermion with $r\ne 1$}%
    %\only<5>{The model: \textit{colored scotogenic}}%
   }
@@ -501,28 +591,25 @@ If  $\left( \psi_R \right)^{\dagger}_{\alpha}$  can couple with $\left( \psi_R \
 \def\px{0}
 \def\py{140}
 \begin{picture}(320,250)
-\only<1>{\put(\px,\py){\includegraphics[scale=\pscale]{dma}}}%
-\only<2>{\put(\px,\py){\includegraphics[scale=\pscale]{dm2}}}%
-\only<3-4>{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
+\only<1-2>{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
     \begin{overpic}[scale=\pscale]{dm3}
     \end{overpic}
   }}%
 %\only<5>{\put(\px,\py){\includegraphics[scale=\pscale]{dm4}}}%
 %%% circle
-\only<1>{\put(80,50){  E. Ma, R. Srivastava arXiv:1411.5042 [PLB]}}
 \FPeval\vx{\px+52}%
 \FPeval\vy{\py+3}%
-\only<4>{\put(\vx,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<2>{\put(\vx,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
 \FPeval\vxr{\vx+73}%
-\only<4>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<2>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
 \FPeval\vxr{\vx+\vy}%
-\only<4>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<2>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
 \FPeval\vxr{\vx+73}%
 \FPeval\vyr{\vy+58}%
-\only<4>{\put(\vxr,\vyr){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<2>{\put(\vxr,\vyr){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
 \FPeval\sx{\px+270}%
 \FPeval\sy{\py+60}%
-\only<3->{\put(\sx,\sy){
+\only<1->{\put(\sx,\sy){
     \begin{minipage}{0.4\linewidth}
       \begin{block}{Soft breaking term induced:}
     \begin{align*}
@@ -534,7 +621,7 @@ If  $\left( \psi_R \right)^{\dagger}_{\alpha}$  can couple with $\left( \psi_R \
       \end{block}
   \end{minipage}
   }}
-\only<4->{\put(0,80){
+\only<2->{\put(0,80){
     \begin{columns}
       \begin{column}{0.55\textwidth}
         \begin{align*}
@@ -544,7 +631,7 @@ If  $\left( \psi_R \right)^{\dagger}_{\alpha}$  can couple with $\left( \psi_R \
           \sigma=&\eta+s
         \end{align*}
         \begin{align*}
-          \only<4>{\boldsymbol{N}_c=\boldsymbol{1}\,.}%
+          \only<2>{\boldsymbol{N}_c=\boldsymbol{1}\,.}%
           %\only<5>{\color{red}\boldsymbol{N}_c=\boldsymbol{8}\,.}%
         \end{align*}
       \end{column}
@@ -558,24 +645,24 @@ If  $\left( \psi_R \right)^{\dagger}_{\alpha}$  can couple with $\left( \psi_R \
     $L_i$                           & $\color{blue}-1$ & $ \left(\mathbf{1},\mathbf{2}\right)_{-1/2}$  \\
  $H$                           &          0  & $ \left(\mathbf{1},\mathbf{2}\right)_{1/2}$ \\     
  $\left( \nu_{Ri} \right)^{\dagger}$ & $\color{Green}\nu$ & $ \left(\mathbf{1},\mathbf{1}\right)_0$ \\ 
-    \only<4>{$\psi_L$}%
+    \only<2>{$\psi_L$}%
     %\only<5->{$\color{red}\mathcal{Q}_L$}
              & $\color{red}-r$ &
-    $ \left(\only<4>{\mathbf{N}_c}
+    $ \left(\only<2>{\mathbf{N}_c}
             %\only<5>{{\color{red}\mathbf{N}_c}}
             ,\mathbf{1}\right)_0$\\
-    \only<4>{$\left( \psi_R \right)^{\dagger}$}%
+    \only<2>{$\left( \psi_R \right)^{\dagger}$}%
     %\only<5->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}
              & $\color{red}r$ &
-                                $ \left(\only<4>{\mathbf{N}_c}
+                                $ \left(\only<2>{\mathbf{N}_c}
                                 %\only<5>{{\color{red}\mathbf{N}_c}}
                                 ,\mathbf{1}\right)_0$ \\
     $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   &
-                                                                                  $ \left(\only<4>{\mathbf{N}_c}
+                                                                                  $ \left(\only<2>{\mathbf{N}_c}
                                                                                   %\only<5>{{\color{red}\mathbf{N}_c}}
                                                                                   ,\mathbf{1}\right)_0$ \\
     $\eta_a$                        &  $1-\color{red}r$   &
-                                                            $ \left(\only<4>{\mathbf{N}_c}
+                                                            $ \left(\only<2>{\mathbf{N}_c}
                                                             %\only<5>{{\color{red}\mathbf{N}_c}}
                                                             ,\mathbf{2}\right)_{1/2}$ \\
     % \invisible<5>
@@ -593,6 +680,56 @@ If  $\left( \psi_R \right)^{\dagger}_{\alpha}$  can couple with $\left( \psi_R \
 \end{picture}
 
   
+\end{frame}
+
+
+
+
+
+\begin{frame}
+  \frametitle{T3-1-A with only $U(1)_{B-L}$}
+  % 1805.02025 Han, Wang extra $Z_2$
+  
+  \begin{columns}
+  \begin{column}{0.28\textwidth}
+\rowcolors{1}{RoyalBlue!20}{}
+    \begin{tabular}{ll}
+      Field &  $\operatorname{U}(1)_{B-L}$ \\\hline
+      $\left( \nu_{R_i} \right)^{\dagger}$ & $+4$ \\
+      $\left( \nu_{R_j} \right)^{\dagger}$ & $+4$ \\
+      $\left( \nu_{R_k} \right)^{\dagger}$ & $-5$ \\  
+      $\color{red}\psi_L$ & $\color{red}-r$ \\
+      $\color{red}\left( \psi_R \right)^{\dagger}$ &\color{red} $r$ \\\hline
+      $\color{red}\eta_a$ &\color{red} $r{\color{black}-4}$ \\\hline
+      $\color{red}\sigma_a$ &\color{red} $r{\color{black}-1}$ \\
+      $S$ & $-3$ \\
+    \end{tabular}
+    \small 
+    $a=1,2$, $i\ne j\ne k$.\\
+    $m=0$: $\nu_{L_k}$, and $\nu_{R_k}\to N_{\text{eff}}$
+    \begin{align*}
+      F_1=
+      \begin{pmatrix}
+        \psi_L\\
+        \psi_R\\
+      \end{pmatrix}
+    \end{align*}
+  \end{column}
+  \begin{column}{0.62\textwidth}
+
+    \begin{figure}
+      \centering
+      \includegraphics[scale=0.5]{scansip1}\\
+      {\tiny with N. Bernal, C. Yaguna and C. Zapata, 1808.03352  }
+    \end{figure}
+
+    
+  \end{column}
+\end{columns}
+
+
+  
+  %\includegraphics{}
 \end{frame}
 
 
