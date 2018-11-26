@@ -38,7 +38,7 @@ Universidad de Antioquia\\
 Phenomenology Group}%
 {http://gfif.udea.edu.co}%
 {}%
-{mt}%
+{gfif}%
 {}
 \arxiv{1803.08528 [PRD], 1806.09977, 1808.03352}
 \collaborators{Nicolás Bernal (UAN),  Mario Reig, Jose Valle (IFIC), Carlos Yaguna (UPTC), Julian Calle, Oscar Zapata (UdeA) }
@@ -114,6 +114,88 @@ Phenomenology Group}%
 % Neutrino needs an explanation for his smallness and there is a natural dimension-5 operator which can be settled down there.
 
 % At one loop the required Dirac fermions must be in hidden dark sector.
+
+\section{$\Lambda$CDM paradigm (with baryonic effects)}
+
+\begin{frame}
+  \frametitle{Cosmic web}
+      Dark matter in the universe evolves through gravity to form a complex network
+of halos, filaments, sheets and voids, that is known as the cosmic web [arXiv:1801.09070]
+
+An excess of a gas is observed between Milky Way and Andromeda
+
+
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.2]{cosmic-web}\\
+    {\tiny Milenium simulation: \url{https://wwwmpa.mpa-garching.mpg.de/galform/virgo/millennium/}}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Cosmic Anatomy}
+  \def\sana{0.8cm}
+  \centering
+  { \tiny Baryons \hspace{\sana} Missing Baryons \hspace{\sana} Dark Matter}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{anatomy}\\
+  \end{figure}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{The muscles}
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.5]{muscles-anatomy-back}\\
+  {\tiny Credit: \url{http://sciencedrivennutrition.com}}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Direct observations of filaments}
+  \small
+  \textbf{Where are the Baryons?} (Cen, Ostriker, astro-ph/9806281 [AJ])
+  \begin{quote}
+   \scriptsize Thus, not only is the universe dominated by dark matter, but more than one half of the normal matter is yet to be detected. (the muscles)
+  \end{quote}
+
+  \vspace{-0.5cm}
+
+\begin{columns}
+  \begin{column}{0.48\textwidth}
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.24]{clusterboXtemp}\\
+  {\tiny Credit: Cen, arXiv:1112.4527 [AJ]}
+\end{figure}
+
+  \end{column}
+  \begin{column}{0.48\textwidth}
+    \scriptsize
+    Warm-hot intergalactic medium (WHIM)
+
+    Density-weighted temperature projection of a portion of the refinement box of the C run of size  $\left(18\,h^{-1}\text{Mpc} \right)^3$.
+
+    Low temperature WHIM confirmed by O VI line that peak at $T\sim 3\times 10^5\ \text{K}$
+  \end{column}
+\end{columns}
+
+\small   
+\includegraphics[scale=0.1]{new}Hotter phases of the WHIM: \textbf{  Observations of the missing baryons in the warm-hot intergalactic medium}
+  (Nicastro, \emph{et al.} arXiv:1806.08395 [Nature]). 
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{The skeleton}
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.5]{xray}\\
+  {\tiny Credit: \url{https://www.disnola.com}}
+\end{figure}
+\end{frame}
 
 
 
@@ -435,7 +517,7 @@ i \overline{\Psi} \gamma^\mu \partial_{\mu}  \Psi-m
   \begin{itemize}
   \item   If $L$ is a conserved quantum number, it must be related to a gauge symmetry
   \item   $Z'$ must be massive and consequently it must be an spontaneously broken gauge symmetry
-  \item   An accidental global symmetry for $L$ is left after symmetry breaking.
+  \item   An accidental symmetry for total $L$ is left after symmetry breaking.
   \end{itemize}
   
   \begin{block}{  What is the minimal model with Lepton number as a gauge symmetry?}
@@ -476,7 +558,7 @@ where $B$ is the \emph{total baryon number}.
 
 
 
-\section{One-loop realization of $\mathcal{L}_{5-D}$}
+\section{One-loop realization of $\mathcal{L}_{5-D}$ with total $L$}
 \begin{frame}
 \begin{picture}(320,250)
 \only<1>{\put(-24,-21){\begin{overpic}[scale=0.352]{u11}\end{overpic}}}%
@@ -685,6 +767,69 @@ where $B$ is the \emph{total baryon number}.
 
 
 
+\begin{frame}
+  \frametitle{Neutrino masses and mixings}
+  \begin{itemize}
+  \item<1->  $\nu_i$ are free parameter and could be fixed if we impose $\operatorname{U}(1)_{B-L}$ to be local
+  \begin{align*}
+   \color{red} r\ne&\color{red}1\,, & \sum_i   \color{Green} \nu_i =&3\,, & \sum_i \color{Green} \nu_i^3 =&3 
+  \end{align*}
+
+
+  \begin{center}
+      \rowcolors{1}{RoyalBlue!20}{}    
+  \begin{tabular}{rlll}
+    & $\left( \nu_R \right)^{\dagger}_1$ & $\left( \nu_R \right)^{\dagger}_2$ & $\left( \nu_R \right)^{\dagger}_3$ \\
+    $\operatorname{U}(1)_{B-L}$ &$+4$& $+4$& $-5$\\
+    $\operatorname{U}(1)_{B-L}$ &$-6$& $+\dfrac{10}{3}$& $+\dfrac{17}{3}$\\
+  \end{tabular}
+    \end{center}
+  
+  \item<2-> To have at least a rank 2 neutrino mass matrix we need either:
+  \begin{itemize}
+  \item At least two heavy Dirac fermions $\Psi_a$, $a=1,2,\ldots$
+  \item \only<2>{At least two sets of scalars $\eta_a$, $\sigma_a$}%
+    \only<3->{\color{red}At least two sets of scalars $\eta_a$, $\sigma_a$}%
+  \end{itemize}
+\item<4> 
+  \begin{align*}
+    \mathcal{L}\supset&\left[ {\color{red}  M_{\Psi}\, \left( \psi_R \right)^{\dagger} \psi_L}
+       + h^{a}_i   \left( \psi_R \right)^{\dagger} \widetilde{\eta}^\dagger_a L_i
+  +y^a_i    \overline{\nu_{Ri} }\  \sigma_a^{*} \psi_L  +\text{h.c}\right]
++\kappa^{ab}\, \sigma_a \eta_b^{\dagger} H+\ldots
+  \end{align*}
+  
+  \end{itemize}
+
+  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Neutrino masses and mixings {\tiny  (with M.Reig, J.W.F Valle, O. Zapata, arXiv:1806.09977 ) }}
+  %
+\begin{align}
+\left(\mathcal{M}_\nu\right)_{ij}=&N_c\frac{M_{\Psi}}{64\pi^2}\sum_{a=1}^2h_{i}^a y_{j}^a\frac{\sqrt{2}\kappa_{aa}v}{m^2_{S_{2R}^a}-m^2_{S_{1R}^a}}
+  \left[F\left(\frac{m^2_{S_{2R}^a}}{M_{\Psi}^2}\right)-F\left(\frac{m^2_{S_{1R}^a}}{M_{\Psi}^2}\right)\right]+(R\to  I)
+\end{align}
+%
+where
+$F(m_{S_\beta}^2/M_\Psi^2)=m_{S_\beta}^2\log(m_{S_\beta}^2/M_\Psi^2)/(m_{S_\beta}^2-M_\Psi^2)$. The four CP-even mass eigenstates are denoted as
+$S_{1R}^1,S_{2R}^1,S_{1R}^2,S_{2R}^2$, with a similar notation for the
+CP-odd ones.
+
+% If $(\mu_\eta^{aa})^2\gg M_{\Psi}^2$ one has
+% \begin{align}
+%  &\left(\mathcal{M}_\nu\right)_{ij}=N_c\frac{M_{\Psi}}{32\pi^2}\sqrt{2}v\sum_{a=1}^2\kappa^{aa}\frac{h_{i}^a y_{j}^a}{(\mu_\eta^{aa})^2}\\
+%  &\sim 0.03\,\mbox{eV}\left(\frac{M_{\Psi}}{12.5\, \mbox{TeV}}\right)\left(\frac{\kappa^{aa}}{1\, \mbox{GeV}}\right)\left(\frac{50\,\mbox{TeV}}{\mu_\eta^{aa}}\right)^2\left(\frac{h_{i}^a y_{j}^a}{10^{-6}}\right).\nonumber
+% %
+% \end{align}
+%
+
+
+\end{frame}
+
+
 
 \begin{frame}
   \frametitle{T3-1-A with only $U(1)_{B-L}$}
@@ -719,138 +864,48 @@ where $B$ is the \emph{total baryon number}.
 
     \begin{figure}
       \centering
-      \includegraphics[scale=0.5]{scansip1}\\
-      {\tiny with N. Bernal, C. Yaguna and C. Zapata, 1808.03352  }
+      \only<1>{\includegraphics[scale=0.8]{FgZ-2}}
+      \only<2>{\includegraphics[scale=0.8]{FDM}}\\
+      {\tiny Extra $Z_2$:   Han, Wang,  1808.03352 [EJPC]  }
     \end{figure}
+
 
     
   \end{column}
 \end{columns}
-
-
   
   %\includegraphics{}
 \end{frame}
 
 
-
-\section{Systematic study}
-
-\begin{frame}
-  \frametitle{Dimension-5 operator}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-       \begin{block}{SM+Majorana neutrinos}
-        
-\begin{align*}
-  \mathcal{L}_5= \frac{y_{i\alpha}}{\Lambda}\epsilon_{ab} L_i^{a} H^b  \epsilon_{cd} L_i^{c} H^d +\text{h.c.} \,,
-\end{align*}
-
-\begin{itemize}
-\item Tree-level+one-loop+two-loops \alert{with DM}, three-loops\\
-  \quad
-  
-\item Dimension-7, Dimension-5 genuine topologies
-\end{itemize}
-     \end{block}      
-    \end{column}
-    \begin{column}{0.5\textwidth}
-      \begin{block}{Dirac}
-        
-\begin{align*}
-  \mathcal{L}_5= \frac{y_{i\alpha}}{\Lambda}\epsilon_{ab} L_i^{a} H^b \left( \nu_R \right)^{\dagger}_{\alpha}S+\text{h.c.} \,,
-\end{align*}
-\begin{itemize}
-\item Three-level+One-loop with DM but extra $Z_2$ and $Z_2'$ for DM: Y., Chang-Yuan and D. Gui-Jun",
-     arXiv:1802.05231 [PRD]
-   \item \qquad\\
-     \qquad
-    
-\end{itemize}
-     \end{block}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-\begin{frame}
-  \frametitle{One-loop dimension-5 main Topologies}
-  \includegraphics[scale=0.33]{topologies}
-\end{frame}
-
-\begin{frame}
-  \frametitle{T3-1-A}
-    \includegraphics[scale=0.33]{T3-1-A-mathematica}
-\end{frame}
-
-\begin{frame}
-  \frametitle{T3-1-A}
-    \includegraphics[scale=0.35]{T1-3-A_sltns.png}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Zee Dirac}
-   
-
-\includegraphics[scale=0.6]{zee}
-
-
-\begin{tabular}{c|ccccccccc}\hline
-Model\hspace{1cm}&$\overline{\nu_{R_1}}$&$\overline{\nu_{R_2}}$&$\overline{\nu_{R_3}}$&$\sigma_1^-$&$\sigma_{2}^-$&$S$&${\sigma'_1}^-$&${\sigma'_2}^-$&$S'$\\\hline
-\small{Dirac~Zee}&$+4$& $+4$& $-5$ &$-2$&$-5$&$-3$&$\times$&$\times$&$\times$\\
-\small{Dirac~Zee}&$-6$& $+\dfrac{10}{3}$& $+\dfrac{17}{3}$ &$-2$&$+5$&$+7$&$-2$&$-\dfrac{13}{3}$&$-\dfrac{7}{3}$\\[5pt]  \hline
-\end{tabular}
-
-
-
-\end{frame}
-
-
 \begin{frame}
   \frametitle{
-    \only<1>{${\text{tree-level}}$ $\color{red}r=1$,   $s\ne -2$ }%
-    \only<2>{$\nu\ne -1$}%
-    \only<3>{Radiative Dirac seesaw}%
-    \only<4>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
-     and vector-like Dirac fermion with $r\ne 1$}%
-     \only<5>{The model: \textit{colored scotogenic}}%
+    % \only<1>{${\text{tree-level}}$ $\color{red}r=1$,   $s\ne -2$ }%
+    % \only<2>{$\nu\ne -1$}%
+    % \only<3>{Radiative Dirac seesaw}%
+    % \only<4>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
+    %  and vector-like Dirac fermion with $r\ne 1$}%
+     \only<1>{The model: \textit{colored scotogenic}}%
   }
 \def\pscale{0.6}
 \def\px{0}
 \def\py{140}
 \begin{picture}(320,250)
-\only<1>{\put(\px,\py){\includegraphics[scale=\pscale]{dma}}}%
-\only<2>{\put(\px,\py){\includegraphics[scale=\pscale]{dm2}}}%
-\only<3-4>{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
-    \begin{overpic}[scale=\pscale]{dm3}
-    \end{overpic}
-  }}%
-\only<5>{\put(\px,\py){\includegraphics[scale=\pscale]{dm4}}}%
-%%% circle
-\only<1>{\put(80,50){  E. Ma, R. Srivastava arXiv:1411.5042 [PLB]}}
-\FPeval\vx{\px+52}%
-\FPeval\vy{\py+3}%
-\only<4>{\put(\vx,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
-\FPeval\vxr{\vx+73}%
-\only<4>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
-\FPeval\vxr{\vx+\vy}%
-\only<4>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
-\FPeval\vxr{\vx+73}%
-\FPeval\vyr{\vy+58}%
-\only<4>{\put(\vxr,\vyr){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+\only<1>{\put(\px,\py){\includegraphics[scale=\pscale]{dm4}}}%
 \FPeval\sx{\px+270}%
 \FPeval\sy{\py+60}%
-\only<3->{\put(\sx,\sy){
+\only<1->{\put(\sx,\sy){
     \begin{minipage}{0.4\linewidth}
       \begin{block}{Soft breaking term induced:}
     \begin{align*}
       \mathcal{L}\supset & \kappa  \sigma \eta^{\dagger} H\,,
     \end{align*}
-    \invisible<5>{where $\kappa=\lambda \langle S \rangle\,.$}
+    \invisible<1>{where $\kappa=\lambda \langle S \rangle\,.$}
     
       \end{block}
   \end{minipage}
   }}
-\only<4->{\put(0,80){
+\only<1->{\put(0,80){
     \begin{columns}
       \begin{column}{0.55\textwidth}
         \begin{align*}
@@ -860,8 +915,7 @@ Model\hspace{1cm}&$\overline{\nu_{R_1}}$&$\overline{\nu_{R_2}}$&$\overline{\nu_{
           \sigma=&\eta+s
         \end{align*}
         \begin{align*}
-          \only<4>{\boldsymbol{N}_c=\boldsymbol{1}\,.}%
-          \only<5>{\color{red}\boldsymbol{N}_c=\boldsymbol{8}\,.}%
+          \only<1>{\color{red}\boldsymbol{N}_c=\boldsymbol{8}\,.}%
         \end{align*}
       \end{column}
       \begin{column}{0.45\textwidth}
@@ -874,11 +928,11 @@ Model\hspace{1cm}&$\overline{\nu_{R_1}}$&$\overline{\nu_{R_2}}$&$\overline{\nu_{
     $L_i$                           & $\color{blue}-1$ & $ \left(\mathbf{1},\mathbf{2}\right)_{-1/2}$  \\
  $H$                           &          0  & $ \left(\mathbf{1},\mathbf{2}\right)_{1/2}$ \\     
  $\left( \nu_{Ri} \right)^{\dagger}$ & $\color{Green}\nu$ & $ \left(\mathbf{1},\mathbf{1}\right)_0$ \\ 
-    \only<4>{$\psi_L$}\only<5->{$\color{red}\mathcal{Q}_L$}    & $\color{red}-r$ & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$\\
- \only<4>{$\left( \psi_R \right)^{\dagger}$}\only<5->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}   & $\color{red}r$ & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$ \\
-    $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$ \\
-    $\eta_a$                        &  $1-\color{red}r$   & $ \left(\only<4>{\mathbf{N}_c}\only<5>{{\color{red}\mathbf{N}_c}},\mathbf{2}\right)_{1/2}$ \\
-    \invisible<5>{$S$}                        &  \invisible<5>{ ${\color{Green}\nu}-1$ }  & $  \invisible<5>{ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ }\\  
+    \only<1->{$\color{red}\mathcal{Q}_L$}    & $\color{red}-r$ & $ \left(\only<1>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$\\
+ \only<1->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}   & $\color{red}r$ & $ \left(\only<1>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$ \\
+    $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   & $ \left(\only<1>{{\color{red}\mathbf{N}_c}},\mathbf{1}\right)_0$ \\
+    $\eta_a$                        &  $1-\color{red}r$   & $ \left(\only<1>{{\color{red}\mathbf{N}_c}},\mathbf{2}\right)_{1/2}$ \\
+    \invisible<1>{$S$}                        &  \invisible<1>{ ${\color{Green}\nu}-1$ }  & $  \invisible<1>{ \left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ }\\  
   \end{tabular}
 
         
@@ -891,71 +945,19 @@ Model\hspace{1cm}&$\overline{\nu_{R_1}}$&$\overline{\nu_{R_2}}$&$\overline{\nu_{
 \end{frame}
 
 
-
-
 \begin{frame}
-  \frametitle{Neutrino masses and mixings}
-  \begin{itemize}
-  \item<1->  $\nu_i$ are free parameter and could be fixed if we impose $\operatorname{U}(1)_{B-L}$ to be local
-  \begin{align*}
-   \color{red} r\ne&\color{red}1\,, & \sum_i   \color{Green} \nu_i =&3\,, & \sum_i \color{Green} \nu_i^3 =&3 
-  \end{align*}
-
-
-  \begin{center}
-      \rowcolors{1}{RoyalBlue!20}{}    
-  \begin{tabular}{rlll}
-    & $\left( \nu_R \right)^{\dagger}_1$ & $\left( \nu_R \right)^{\dagger}_2$ & $\left( \nu_R \right)^{\dagger}_3$ \\
-    $\operatorname{U}(1)_{B-L}$ &$+4$& $+4$& $-5$\\
-    $\operatorname{U}(1)_{B-L}$ &$-6$& $+\dfrac{10}{3}$& $+\dfrac{17}{3}$\\
-  \end{tabular}
-    \end{center}
-  
-  \item<2-> To have at least a rank 2 neutrino mass matrix we need either:
-  \begin{itemize}
-  \item At least two heavy Dirac fermions $\mathcal{Q}_a$, $a=1,2,\ldots$
-  \item \only<2>{At least two sets of scalars $\eta_a$, $\sigma_a$}%
-    \only<3->{\color{red}At least two sets of scalars $\eta_a$, $\sigma_a$}%
-  \end{itemize}
-\item<4> 
-  \begin{align*}
-    \mathcal{L}\supset&\left[ {\color{red}  M_{\mathcal{Q}}\, \left( \mathcal{Q}_R \right)^{\dagger} \mathcal{Q}_L}
-       + h^{a}_i   \left( \mathcal{Q}_R \right)^{\dagger} \widetilde{\eta}^\dagger_a L_i
-  +y^a_i    \overline{\nu_{Ri} }\  \sigma_a^{*} \mathcal{Q}_L  +\text{h.c}\right]
-+\kappa^{ab}\, \sigma_a \eta_b^{\dagger} H+\ldots
-  \end{align*}
-  
-  \end{itemize}
-
-  
-\end{frame}
-
-\begin{frame}
-  \frametitle{Neutrino masses and mixings}
-  %
-\begin{align}
-\left(\mathcal{M}_\nu\right)_{ij}=&N_c\frac{M_{\mathcal{Q}}}{64\pi^2}\sum_{a=1}^2h_{i}^a y_{j}^a\frac{\sqrt{2}\kappa_{aa}v}{m^2_{S_{2R}^a}-m^2_{S_{1R}^a}}
-  \left[F\left(\frac{m^2_{S_{2R}^a}}{M_{\mathcal{Q}}^2}\right)-F\left(\frac{m^2_{S_{1R}^a}}{M_{\mathcal{Q}}^2}\right)\right]+(R\to  I)
-\end{align}
-%
-where
-$F(m_{S_\beta}^2/M_Q^2)=m_{S_\beta}^2\log(m_{S_\beta}^2/M_Q^2)/(m_{S_\beta}^2-M_Q^2)$. The four CP-even mass eigenstates are denoted as
-$S_{1R}^1,S_{2R}^1,S_{1R}^2,S_{2R}^2$, with a similar notation for the
-CP-odd ones.
-
-If $(\mu_\eta^{aa})^2\gg M_{\mathcal{Q}}^2$ one has
+  If $(\mu_\eta^{aa})^2\gg M_{\mathcal{Q}}^2$ one has
 \begin{align}
  &\left(\mathcal{M}_\nu\right)_{ij}=N_c\frac{M_{\mathcal{Q}}}{32\pi^2}\sqrt{2}v\sum_{a=1}^2\kappa^{aa}\frac{h_{i}^a y_{j}^a}{(\mu_\eta^{aa})^2}\\
- &\sim 0.03\,\mbox{eV}\left(\frac{M_{\mathcal{Q}}}{9.5\, \mbox{TeV}}\right)\left(\frac{\kappa^{aa}}{1\, \mbox{GeV}}\right)\left(\frac{50\,\mbox{TeV}}{\mu_\eta^{aa}}\right)^2\left(\frac{h_{i}^a y_{j}^a}{10^{-6}}\right).\nonumber
+ &\sim 0.03\,\mbox{eV}\left(\frac{M_{\mathcal{Q}}}{12.5\, \mbox{TeV}}\right)\left(\frac{\kappa^{aa}}{1\, \mbox{GeV}}\right)\left(\frac{50\,\mbox{TeV}}{\mu_\eta^{aa}}\right)^2\left(\frac{h_{i}^a y_{j}^a}{10^{-6}}\right).\nonumber
 %
 \end{align}
 %
 
-
 \end{frame}
 
 
-\section{Dark matter}
+% \section{Dark matter}
 
 
 
@@ -968,26 +970,26 @@ If $(\mu_\eta^{aa})^2\gg M_{\mathcal{Q}}^2$ one has
 
 
 
-\begin{frame}
-\begin{picture}(320,250)
-\only<1>{\put(-24,-22){\begin{overpic}[scale=0.352]{zN}\end{overpic}}}%
-\end{picture}
-\end{frame}
+% \begin{frame}
+% \begin{picture}(320,250)
+% \only<1>{\put(-24,-22){\begin{overpic}[scale=0.352]{zN}\end{overpic}}}%
+% \end{picture}
+% \end{frame}
 
-\begin{frame}
-  %\frametitle{The lightest is an stable particle}
-\begin{picture}(320,250)
-\only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
-\only<1->{\put(34,158.5){ \textbf{SM}  }}%
-\only<1->{\put(38,115){ {\large +}  }}%
-\only<1->{\put(30,100){ $\left( \nu_R \right)^{\dagger}_i$   }}%
-\only<1->{\put(18,115){\begin{overpic}[scale=0.118]{mice}\end{overpic}}}%
-%
-\only<1->{\put(310,180){\begin{overpic}[scale=0.15]{Q}\end{overpic}}}%
-\only<1->{\put(160,40){ \begin{overpic}[scale=0.15]{sigmas}\end{overpic}}}%
-\only<1->{\put(220,40){ \begin{overpic}[scale=0.15]{etas}\end{overpic}}}%
-\end{picture}
-\end{frame}
+% \begin{frame}
+%   %\frametitle{The lightest is an stable particle}
+% \begin{picture}(320,250)
+% \only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
+% \only<1->{\put(34,158.5){ \textbf{SM}  }}%
+% \only<1->{\put(38,115){ {\large +}  }}%
+% \only<1->{\put(30,100){ $\left( \nu_R \right)^{\dagger}_i$   }}%
+% \only<1->{\put(18,115){\begin{overpic}[scale=0.118]{mice}\end{overpic}}}%
+% %
+% \only<1->{\put(310,180){\begin{overpic}[scale=0.15]{Q}\end{overpic}}}%
+% \only<1->{\put(160,40){ \begin{overpic}[scale=0.15]{sigmas}\end{overpic}}}%
+% \only<1->{\put(220,40){ \begin{overpic}[scale=0.15]{etas}\end{overpic}}}%
+% \end{picture}
+% \end{frame}
 
 
 \begin{frame}
@@ -1005,20 +1007,20 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
 \end{frame}
 
 
-\begin{frame}
-  \frametitle{Relic abundance. \footnotesize From: \url{http://bit.ly/Mitridate_53d_53rd_Rencontres_de_Moriond}  }
-  \includegraphics[scale=0.3]{relden} 
-\end{frame}
+% \begin{frame}
+%   \frametitle{Relic abundance. \footnotesize From: \url{http://bit.ly/Mitridate_53d_53rd_Rencontres_de_Moriond}  }
+%   \includegraphics[scale=0.3]{relden} 
+% \end{frame}
 
-\begin{frame}
-  \frametitle{Direct detection}
-  \includegraphics[scale=0.52]{sigmaSI}
-\end{frame}
+% \begin{frame}
+%   \frametitle{Direct detection}
+
+% \end{frame}
 
 %https://www.fodey.com/generators/newspaper/snippet.asp
 \begin{frame}
-  \frametitle{One year later$\cdots$}
-    \includegraphics[scale=0.52]{headline1}
+  \frametitle{Some years from now$\cdots$}
+    \includegraphics[scale=0.42]{headline1} \hspace{1cm}  \includegraphics[scale=0.82]{DirectBounds}
 \end{frame}
 
 
@@ -1037,23 +1039,23 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
         \end{align*}
       \end{block}
       \begin{align*}
-        \sqrt{s}=65\ \text{TeV needed to discover } M_{\mathcal{Q}}=9.5\ \text{TeV}\,.
+        \sqrt{s}=85\ \text{TeV needed to discover } M_{\mathcal{Q}}=12.5\ \text{TeV}\,.
       \end{align*}
     \end{column}
   \end{columns}
 \end{frame}
 
 {
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{explosion}}  
+%\usebackgroundtemplate{\includegraphics[width=\paperwidth]{explosion}}  
 \begin{frame}
   \frametitle{Conclusions}
 
-  Standard Model with right-handed neutrinos of exotic $B-L$ charges
-  \setbeamercolor{block body}{use=structure,fg=black,bg=white}
+  A single $U(1)$ symmetry to explain both the smallnes of Dirac neutrino masses and the stability of Dirac fermion dark matter
+  %\setbeamercolor{block body}{use=structure,fg=black,bg=white}
 
   \begin{block}<2>{Dirac neutrino masses and DM}
     \begin{itemize}
-    \item Spontaneously broken $U(1)_{B-L}$ generates a radiative Dirac Type-I seesaw.
+    \item Spontaneously broken $U(1)_{B-L}$ generates a radiative Dirac neutrino masses
   \item A remnant symmetry makes the lightest field circulating the loop stable and good dark matter candidate.
   \item If color is also circulating the loop, the colored dark matter scenario can be realized
     \begin{columns}
@@ -1062,7 +1064,7 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
       \end{column}
       \begin{column}{0.95\textwidth}
               \setbeamercolor{block title}{bg=red!30,fg=black}
-    \begin{varblock}[12cm]{DM is made of two color octets with mass around $9.5\ \text{TeV}$}      
+    \begin{varblock}[12cm]{DM is made of two color octets with mass around $12.5\ \text{TeV}$}      
       \end{varblock}
 
     \item For standard cosmology:
@@ -1079,6 +1081,7 @@ Because $\mathcal{Q}$ is a Dirac fermion, $\mathcal{Q} \mathcal{Q}$ is also stab
 \end{frame}
 }
 
+\plain{Thanks!}
 \end{document}
 
 \section{radiative seesaw}
@@ -1477,7 +1480,7 @@ $(e_R)^{\dagger} $  &   $ \mathbf{1} $  &  $ \mathbf{1} $  &  $ +1 $  &\only<1-2
 \end{frame}
 
 
-\plain{Thanks!}
+
 
 \end{document}
 
@@ -2202,6 +2205,6 @@ amarillo y contorno rojo}
 
 Custom width in block. See definition in preamble
 \begin{frame}
-      \begin{varblock}[12cm]{DM is made of two color octets with mass around $9.5\ \text{TeV}$}      
+      \begin{varblock}[12cm]{DM is made of two color octets with mass around $12.5\ \text{TeV}$}      
       \end{varblock}
 \end{frame}
