@@ -1,7 +1,7 @@
-# Talks
+	# Talks
 ## Basic design
 The simple template and examples is in master.
-Each repo have a commont sty file and example file but a unique LaTeX file
+Specific talks are in each branch. They have a common sty file and example file but a unique LaTeX file with the same name of the branch.
 
 
 * Install `texlive-fonts-extra`
