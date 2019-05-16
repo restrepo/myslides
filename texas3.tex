@@ -4,6 +4,7 @@
 \usepackage{soul}
 %\usepackage{mycolors}
 \usepackage{fp}
+\usepackage{multirow}
 \widescreen
 
 \newenvironment<>{varblock}[2][.9\textwidth]{%
@@ -187,7 +188,7 @@ Phenomenology Group}%
 % From now on we will also decouple the Z'
 % we end up with
 
-\section{Singlet-Doublet Dirac Dark matter Model}
+\section{Singlet-Doublet Dirac Dark matter Model (SD${}^{3}$M)}
 \begin{frame}
   \frametitle{ Singlet-Doublet Dirac Dark Matter
 By Carlos E. Yaguna.
@@ -375,7 +376,8 @@ M_{\text{diag}}=&
 \end{frame}
 
 \begin{frame}
-  \frametitle{One loop topologies}
+  \frametitle{\only<1-4>{One loop topologies}\only<5>{
+    SD${}^{3}$M+$\sigma_i$ ($i=1,2$)}}
 \begin{picture}(320,250)
   \only<1>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac1}\end{overpic}}}%
   \only<1>{\put(280,130){\tiny Chang-Yuan Yao and Gui-Jun Ding, arXiv:1802.05231 [PRD]  }}%
@@ -392,6 +394,17 @@ M_{\text{diag}}=&
         \end{minipage}
 }}%
 \only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
+\only<3-4>{\put(240,135){\tiny
+    \begin{minipage}{0.3\linewidth}
+      \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|cccccc}\hline
+ Fields  &  $\left( \nu_{Ri} \right)^{\dagger}$
+  &$\left( \nu_{Rj} \right)^{\dagger}$&$\left( \nu_{Rk} \right)^{\dagger}$&$\psi_L$&$\left( \psi_R \right)^{\dagger}$&$S$\\ \hline
+  (A)&$+4$&$+4$&$-5$& $-r$ & $r$ & $+3$\\
+    \invisible<3>{(B) &$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{2}{5}}$&$\displaystyle{\frac{7}{5}}$&$\displaystyle{-\frac{10}{5}}$&$\displaystyle{+\frac{3}{5}}$}\\
+  \end{tabular}
+        \end{minipage}
+}}%
  \only<4>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac4}\end{overpic}}}%
  \only<5>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac5}\end{overpic}}}%
 \end{picture}
