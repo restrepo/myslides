@@ -117,21 +117,6 @@ Phenomenology Group}%
 % At one loop the required Dirac fermions must be in hidden dark sector.
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-\include{evidencesila}
-%%%%%%%%%%
-
-
-\begin{frame}
-\begin{picture}(320,250)
-\only<1>{\put(-24,-21){\begin{overpic}[scale=0.352]{windows1}\end{overpic}}}%
-\only<2>{\put(-24,-21){\begin{overpic}[scale=0.352]{windows1a}\end{overpic}}}%
-\only<3>{\put(-24,-21){\begin{overpic}[scale=0.352]{windows2}\end{overpic}}}%
-\only<4>{\put(-24,-21){\begin{overpic}[scale=0.352]{windows3}\end{overpic}}}%
-\only<5>{\put(-24,-21){\begin{overpic}[scale=0.352]{windows4}\end{overpic}}}%
-\end{picture}
-\end{frame}
-
 
 
 \section{Dirac fermion dark matter}
@@ -197,90 +182,69 @@ Phenomenology Group}%
 \end{columns}
 \end{frame}
 
+
+% Now we introduce a vector like doublet
+% From now on we will also decouple the Z'
+% we end up with
+
+\section{Singlet-Doublet Dirac Dark matter Model}
 \begin{frame}
-  \frametitle{Double Dirac fermion dark matter model}
-
-  \begin{columns}
-  \begin{column}{0.28\textwidth}
-\rowcolors{1}{RoyalBlue!20}{}
-    \begin{tabular}{ll}
-      Field &  $\operatorname{U}(1)_{B-L}$ \\\hline
-      $\left( \nu_{R_1} \right)^{\dagger}$ & $+1$ \\
-      $\left( \nu_{R_2} \right)^{\dagger}$ & $+1$ \\  
-      $\xi_1$ & $10/7$ \\
-      $\eta_1$ & $4/7$ \\
-      $\xi_2$ & $-9/7$ \\
-      $\eta_2$ & $2/7$ \\\hline
-      $\phi_1$ & $2$ \\
-      $\phi_1$ & $1$ \\
-    \end{tabular}
-    \begin{align*}
-      \operatorname{U}(1)_{B-L}\to Z_7\,.
-    \end{align*}
-  \end{column}
-  \begin{column}{0.62\textwidth}
-
-    \begin{figure}
-      \centering
-      \includegraphics[scale=0.5]{scansip1}\\
-      {\tiny with N. Bernal, C. Yaguna and C. Zapata, 1808.03352  }
-    \end{figure}
-
-    
-  \end{column}
-\end{columns}
-
-
-  
-  %\includegraphics{}
-\end{frame}
-
-{
- \usebackgroundtemplate{\includegraphics[width=\paperwidth]{explosion}}
-\begin{frame}
-   \frametitle{Colored Dirac fermion dark matter}
-   \transdissolve
-    \setbeamercolor{block body}{use=structure,fg=black,bg=white}
-   \only<2>{   
-\begin{columns}
-  \begin{column}{0.28\textwidth}
-
-    \begin{block}{\centering $\operatorname{SU}(3)_c=\boldsymbol{8}$}
-\rowcolors{1}{RoyalBlue!20}{}
-\begin{tabular}{ll}
-        Field &  $\operatorname{U}(1)_{\mathcal{Q}}$ \\\hline
-        $\xi$ & $\color{red}r$ \\
-      $\eta$ & $\color{red} -r$ \\\hline
-
-    \end{tabular}
-    \begin{align*}
-      \mathcal{Q}=&
-                    \begin{pmatrix}
-                      \xi\\
-                      \eta^{\dagger}\\
-                    \end{pmatrix}\\
-      \mathcal{L}=&i \overline{\mathcal{Q}}\gamma^{\mu} \mathcal{D}_{\mu} \mathcal{Q} -
-                    M_{\mathcal{Q}}\overline{\mathcal{Q}}\mathcal{Q}\,.\\
-      \chi=& | \mathcal{Q} \mathcal{Q}  \rangle
-    \end{align*}
-    \end{block}
-  \end{column}
-  \begin{column}{0.62\textwidth}
-
-    \begin{block}{$M_{\text{DM}}\approx 2 M_{\mathcal{Q}}$}
-          \begin{figure}
-      \centering
-      \includegraphics[scale=0.8]{DirectBounds}\\
-      {\tiny V. De Luca, \emph{et al}, 1801.01135 [PRD]]  }
-    \end{figure}
-    \end{block}
-    
-\end{column}
-\end{columns}
-}
-\end{frame}
+  \frametitle{ Singlet-Doublet Dirac Dark Matter
+By Carlos E. Yaguna.
+arXiv:1510.06151 [PRD].
 }
 
+The model extends the standard model (SM) particle content with Dirac Fermions: from  $\operatorname{SU}(2)$ doublets of Weyl fermions: $\Psi_L=\left( \Psi_L^0,\, \Psi_L^-\right)^{\operatorname{T}}$, $\widetilde{\left( \Psi_R \right)}=\left( (\Psi_R^-)^\dagger,\, -(\Psi_R^0)^\dagger\right)^{\operatorname{T}}$  and singlet Weyl fermions $\psi_{LR}$ that interact among themselves and with the SM fields 
+\begin{align}
+  \mathcal{L}\supset& {\color{red} M_{\psi}}\left( \psi_R \right)^{\dagger}\psi_L
+%+ {\color{red}h_S} \left( \psi_R \right)^{\dagger} \psi_LS  %+\text{h.c}.
+%  \mathcal{L}_{\psi}+\mathcal{L}_{\sigma\psi}
++ %\left[
+{\color{red}M_{\Psi}}\widetilde{\left( \Psi_R \right)}\cdot  \Psi_L
+% +h_2^{ia} \widetilde{\left( \Psi_R \right)}\cdot L_i\, \sigma_a
++ {\color{red} y_1} \left( \psi_R \right)^{\dagger} \Psi_L \cdot H
++ {\color{red} y_2}  \widetilde{\left( \Psi_R \right)} \cdot \widetilde{H} \psi_L
+                      +\text{h.c} % \right]
+%+V(\sigma_a,S,H)\,,
+\end{align}
+Four free parameters:
+\begin{align}
+  {\color{red} M_{\psi}},{\color{red}M_{\Psi}}\ <& 2\text{ GeV}\,,&
+  {\color{red} y_1},\ {\color{red} y_2} > 10^{-6}
+\end{align}
+Tow neutral Dirac fermion eigenstates:
+\begin{align}
+  M=&
+  \begin{pmatrix}
+    {\color{red}M_{\psi}} & {\color{red}y_{2}} v/\sqrt{2} \\ {\color{red}y_{1}} v/\sqrt{2} & {\color{red} M_{D}}
+  \end{pmatrix},&
+M_{\text{diag}}=&
+\begin{pmatrix}
+{M_{\chi_{1}}} & {0} \\ {0} & {M_{\chi_{2}}}                    
+\end{pmatrix}
+=U_{L}^{\dagger} M U_{R}
+\end{align}
+
+
+\end{frame}
+
+
+\begin{frame}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[scale=0.28]{coannmass}
+
+    \hspace{2cm} Compressed spectra region
+   \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[scale=0.28]{ddsi}
+
+      \hspace{2cm}LUX - XENON1T - LZ
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
 
 \section{Neutrino masses}
 
@@ -413,10 +377,27 @@ Phenomenology Group}%
 \begin{frame}
   \frametitle{One loop topologies}
 \begin{picture}(320,250)
-  \only<1>{\put(40,20){\begin{overpic}[scale=0.22]{alltop}\end{overpic}}}%
-  \only<1->{\put(300,130){\tiny with J. Calle, C. Yaguna, and O. Zapata, arXiv:1811.XXXXX  }}%
+  \only<1>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac1}\end{overpic}}}%
+  \only<1>{\put(280,130){\tiny Chang-Yuan Yao and Gui-Jun Ding, arXiv:1802.05231 [PRD]  }}%
+  \only<2>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac2}\end{overpic}}}%
+  \only<2>{\put(280,130){\tiny with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }}%
+    \only<2-4>{\put(-50,130){\tiny
+        \begin{minipage}{0.3\linewidth}
+          \begin{align*}
+            \psi_{L,R}\to&\text{Singlet fermions}\\
+            \Psi_{L,R}\to&\text{Doublet fermions}\\
+            \sigma\to&\text{Singlet scalar}\\
+            \eta\to&\text{Doublet scalar}
+          \end{align*}
+        \end{minipage}
+}}%
+\only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
+ \only<4>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac4}\end{overpic}}}%
+ \only<5>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac5}\end{overpic}}}%
 \end{picture}
 \end{frame}
+
+
 
 %\begin{frame}
 %   \frametitle{SM-like $B-L$ model}
