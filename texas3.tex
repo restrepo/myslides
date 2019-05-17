@@ -24,7 +24,6 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-
 \title{Dirac fermion dark matter  }
 \subtitle{with  Dirac neutrino masses}
 
@@ -42,7 +41,7 @@ Phenomenology Group}%
 {}%
 {mt}%
 {}
-\arxiv{1812.05523 [PRD]}
+\arxiv{1812.05523 [PRD] and 1905.NNNNN}
 \collaborators{ Carlos Yaguna (UPTC), Julian Calle, Oscar Zapata, Andrés River (UdeA), Walter Tangarife (Loyola University Chicago)  }
 }
 
@@ -117,6 +116,10 @@ Phenomenology Group}%
 
 % At one loop the required Dirac fermions must be in hidden dark sector.
 
+\begin{frame}
+  \frametitle{Background: from William Balunas talk (Wednesday)}
+  \includegraphics[scale=0.3]{background}
+\end{frame}
 
 
 
@@ -213,7 +216,7 @@ Four free parameters:
   {\color{red} M_{\psi}},{\color{red}M_{\Psi}}\ <& 2\text{ GeV}\,,&
   {\color{red} y_1},\ {\color{red} y_2} > 10^{-6}
 \end{align}
-Tow neutral Dirac fermion eigenstates:
+Two neutral Dirac fermion eigenstates:
 \begin{align}
   M=&
   \begin{pmatrix}
@@ -233,18 +236,21 @@ M_{\text{diag}}=&
 \begin{frame}
     \begin{columns}
     \begin{column}{0.5\textwidth}
-      \includegraphics[scale=0.28]{coannmass}
+      \includegraphics[scale=0.24]{coannmass}
 
     \hspace{2cm} Compressed spectra region
    \end{column}
     \begin{column}{0.5\textwidth}
-      \includegraphics[scale=0.28]{ddsi}
+      \includegraphics[scale=0.24]{ddsi}
 
-      \hspace{2cm}LUX - XENON1T - LZ
+      \only<1-2>{\hspace{2cm}LUX - XENON1T - LZ}
     \end{column}
 
   \end{columns}
-
+  
+  \invisible<1>{\includegraphics[scale=0.2]{llcom}}
+  
+  
 \end{frame}
 
 \section{Neutrino masses}
@@ -376,7 +382,7 @@ M_{\text{diag}}=&
 \end{frame}
 
 \begin{frame}
-  \frametitle{\only<1-4>{One loop topologies}\only<5>{
+  \frametitle{\only<1>{One loop topologies $\operatorname{U}(1)_{B-L}\oplus Z_2 \oplus Z_2 $}\only<2-4>{One loop topologies $\operatorname{U}(1)_{B-L}$ only!}\only<5>{
     SD${}^{3}$M+$\sigma_i$ ($i=1,2$)}}
 \begin{picture}(320,250)
   \only<1>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac1}\end{overpic}}}%
@@ -394,6 +400,8 @@ M_{\text{diag}}=&
         \end{minipage}
 }}%
 \only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
+% 
+\only<3>{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: Shaikh Saad arXiv:1902.07259  }}%
 \only<3-4>{\put(240,135){\tiny
     \begin{minipage}{0.3\linewidth}
       \rowcolors{1}{RoyalBlue!20}{}
@@ -756,7 +764,8 @@ M_{\text{diag}}=&
     \begin{itemize}
     \item Spontaneously broken $U(1)_{B-L}$ generates a radiative Dirac neutrino masses
   \item A remnant symmetry makes the lightest field circulating the loop stable and good dark matter candidate.
-  \item If color is also circulating the loop, the colored dark matter scenario can be realized
+  \item For T1-2-A: Either Singet Doublet Dirac Dark Matter or Singlet Scalar Dark Matter with extra scalar and vector portal
+  \item With relaxed direct detection constraints
     \end{itemize}
   \end{block}
 \end{frame}
