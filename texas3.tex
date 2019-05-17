@@ -40,13 +40,13 @@ Universidad de Antioquia\\
 Phenomenology Group}%
 {http://gfif.udea.edu.co}%
 {}%
-{comhep}%
+{mt}%
 {}
-\arxiv{1803.08528 [PRD], 1806.09977, 1808.03352}
-\collaborators{Nicolás Bernal (UAN),  Mario Reig, Jose Valle (IFIC), Carlos Yaguna (UPTC), Julian Calle, Oscar Zapata (UdeA) }
+\arxiv{1812.05523 [PRD]}
+\collaborators{ Carlos Yaguna (UPTC), Julian Calle, Oscar Zapata, Andrés River (UdeA), Walter Tangarife (Loyola University Chicago)  }
 }
 
-\date{\tiny December 4, 2018 } % (optional) \today
+\date{\tiny May 17, 2019 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -89,13 +89,13 @@ Phenomenology Group}%
 
 \maketitle
 
-\begin{frame}
-  \frametitle{Table of Contents}
-% %\small
-% %\vspace{-0.5cm}
-   \setbeamertemplate{section in toc}[sections numbered]
-   \tableofcontents[hideallsubsections]
-\end{frame}
+% \begin{frame}
+%   \frametitle{Table of Contents}
+% % %\small
+% % %\vspace{-0.5cm}
+%    \setbeamertemplate{section in toc}[sections numbered]
+%    \tableofcontents[hideallsubsections]
+% \end{frame}
 
 % First U(1)
 % Design from other perspective.
@@ -427,13 +427,15 @@ M_{\text{diag}}=&
   \frametitle{SI}
   \begin{columns}
     \begin{column}{0.5\textwidth}
-\includegraphics[scale=0.5]{vector-SI}
-\includegraphics[scale=0.5]{scalar-SI}
+\includegraphics[scale=0.4]{vector-SI}
+\includegraphics[scale=0.4]{scalar-SI}
 
-      
+\scriptsize Decoupled $Z'$ limit
     \end{column}
     \begin{column}{0.5\textwidth}
-      
+\includegraphics[scale=0.4]{SI}
+
+\scriptsize Vector SI (blue points) and  scalar SI (green points)      
     \end{column}
   \end{columns}
 \end{frame}
@@ -524,246 +526,221 @@ M_{\text{diag}}=&
 % \end{frame}
 
 
-\begin{frame}
-  \frametitle{
-    \only<1>{T3-1-A}%
-    \only<2>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
-     and vector-like Dirac fermion with $r\ne 1$}%
-   %\only<5>{The model: \textit{colored scotogenic}}%
-  }
-\def\pscale{0.6}
-\def\px{0}
-\def\py{140}
-\begin{picture}(320,250)
-\only<1-2>{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
-    \begin{overpic}[scale=\pscale]{dm3}
-    \end{overpic}
-  }}%
-%\only<5>{\put(\px,\py){\includegraphics[scale=\pscale]{dm4}}}%
-%%% circle
-\FPeval\vx{\px+52}%
-\FPeval\vy{\py+3}%
-\only<2>{\put(\vx,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
-\FPeval\vxr{\vx+73}%
-\only<2>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
-\FPeval\vxr{\vx+\vy}%
-\only<2>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
-\FPeval\vxr{\vx+73}%
-\FPeval\vyr{\vy+58}%
-\only<2>{\put(\vxr,\vyr){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
-\FPeval\sx{\px+270}%
-\FPeval\sy{\py+60}%
-\only<1->{\put(\sx,\sy){
-    \begin{minipage}{0.4\linewidth}
-      \begin{block}{Soft breaking term induced:}
-    \begin{align*}
-      \mathcal{L}\supset & \kappa  \sigma \eta^{\dagger} H\,,
-    \end{align*}
-    %\invisible<5>
-    {where $\kappa=\lambda \langle S \rangle\,.$}
+% \begin{frame}
+%   \frametitle{
+%     \only<1>{T3-1-A}%
+%     \only<2>{Exotic $\left( \nu_R \right)^{\dagger}$ with $\nu\ne-1$,
+%      and vector-like Dirac fermion with $r\ne 1$}%
+%    %\only<5>{The model: \textit{colored scotogenic}}%
+%   }
+% \def\pscale{0.6}
+% \def\px{0}
+% \def\py{140}
+% \begin{picture}(320,250)
+% \only<1-2>{\put(\px,\py){%\includegraphics[scale=\pscale]{dm3}
+%     \begin{overpic}[scale=\pscale]{dm3}
+%     \end{overpic}
+%   }}%
+% %\only<5>{\put(\px,\py){\includegraphics[scale=\pscale]{dm4}}}%
+% %%% circle
+% \FPeval\vx{\px+52}%
+% \FPeval\vy{\py+3}%
+% \only<2>{\put(\vx,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+% \FPeval\vxr{\vx+73}%
+% \only<2>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+% \FPeval\vxr{\vx+\vy}%
+% \only<2>{\put(\vxr,\vy){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+% \FPeval\vxr{\vx+73}%
+% \FPeval\vyr{\vy+58}%
+% \only<2>{\put(\vxr,\vyr){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (0.5,0.5);} }
+% \FPeval\sx{\px+270}%
+% \FPeval\sy{\py+60}%
+% \only<1->{\put(\sx,\sy){
+%     \begin{minipage}{0.4\linewidth}
+%       \begin{block}{Soft breaking term induced:}
+%     \begin{align*}
+%       \mathcal{L}\supset & \kappa  \sigma \eta^{\dagger} H\,,
+%     \end{align*}
+%     %\invisible<5>
+%     {where $\kappa=\lambda \langle S \rangle\,.$}
     
-      \end{block}
-  \end{minipage}
-  }}
-\only<2->{\put(0,80){
-    \begin{columns}
-      \begin{column}{0.55\textwidth}
-        \begin{align*}
-          -1+\eta=&-\color{red}r\\
-          -{\color{red}r}=&-\color{red}r\\
-          -{\color{red}r}=&-{\color{Green}\nu}+\sigma\\
-          \sigma=&\eta+s
-        \end{align*}
-        \begin{align*}
-          \only<2>{\boldsymbol{N}_c=\boldsymbol{1}\,.}%
-          %\only<5>{\color{red}\boldsymbol{N}_c=\boldsymbol{8}\,.}%
-        \end{align*}
-      \end{column}
-      \begin{column}{0.45\textwidth}
+%       \end{block}
+%   \end{minipage}
+%   }}
+% \only<2->{\put(0,80){
+%     \begin{columns}
+%       \begin{column}{0.55\textwidth}
+%         \begin{align*}
+%           -1+\eta=&-\color{red}r\\
+%           -{\color{red}r}=&-\color{red}r\\
+%           -{\color{red}r}=&-{\color{Green}\nu}+\sigma\\
+%           \sigma=&\eta+s
+%         \end{align*}
+%         \begin{align*}
+%           \only<2>{\boldsymbol{N}_c=\boldsymbol{1}\,.}%
+%           %\only<5>{\color{red}\boldsymbol{N}_c=\boldsymbol{8}\,.}%
+%         \end{align*}
+%       \end{column}
+%       \begin{column}{0.45\textwidth}
 
-        \rowcolors{1}{RoyalBlue!20}{}
-        \small
-  \begin{tabular}{|l|c|l|c|}
-\hline
-    Particles& $\operatorname{U}(1)_{B-L}$ & $\left(\operatorname{SU}(3)_c ,\operatorname{SU}(2)_L \right)_Y$\\\hline
-    $L_i$                           & $\color{blue}-1$ & $ \left(\mathbf{1},\mathbf{2}\right)_{-1/2}$  \\
- $H$                           &          0  & $ \left(\mathbf{1},\mathbf{2}\right)_{1/2}$ \\     
- $\left( \nu_{Ri} \right)^{\dagger}$ & $\color{Green}\nu$ & $ \left(\mathbf{1},\mathbf{1}\right)_0$ \\ 
-    \only<2>{$\psi_L$}%
-    %\only<5->{$\color{red}\mathcal{Q}_L$}
-             & $\color{red}-r$ &
-    $ \left(\only<2>{\mathbf{N}_c}
-            %\only<5>{{\color{red}\mathbf{N}_c}}
-            ,\mathbf{1}\right)_0$\\
-    \only<2>{$\left( \psi_R \right)^{\dagger}$}%
-    %\only<5->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}
-             & $\color{red}r$ &
-                                $ \left(\only<2>{\mathbf{N}_c}
-                                %\only<5>{{\color{red}\mathbf{N}_c}}
-                                ,\mathbf{1}\right)_0$ \\
-    $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   &
-                                                                                  $ \left(\only<2>{\mathbf{N}_c}
-                                                                                  %\only<5>{{\color{red}\mathbf{N}_c}}
-                                                                                  ,\mathbf{1}\right)_0$ \\
-    $\eta_a$                        &  $1-\color{red}r$   &
-                                                            $ \left(\only<2>{\mathbf{N}_c}
-                                                            %\only<5>{{\color{red}\mathbf{N}_c}}
-                                                            ,\mathbf{2}\right)_{1/2}$ \\
-    % \invisible<5>
-    {$S$}&
-    % \invisible<5>
-           { ${\color{Green}\nu}-1$ }  &
-    %\invisible<5>
-    { $\left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ }\\  
-  \end{tabular}
+%         \rowcolors{1}{RoyalBlue!20}{}
+%         \small
+%   \begin{tabular}{|l|c|l|c|}
+% \hline
+%     Particles& $\operatorname{U}(1)_{B-L}$ & $\left(\operatorname{SU}(3)_c ,\operatorname{SU}(2)_L \right)_Y$\\\hline
+%     $L_i$                           & $\color{blue}-1$ & $ \left(\mathbf{1},\mathbf{2}\right)_{-1/2}$  \\
+%  $H$                           &          0  & $ \left(\mathbf{1},\mathbf{2}\right)_{1/2}$ \\     
+%  $\left( \nu_{Ri} \right)^{\dagger}$ & $\color{Green}\nu$ & $ \left(\mathbf{1},\mathbf{1}\right)_0$ \\ 
+%     \only<2>{$\psi_L$}%
+%     %\only<5->{$\color{red}\mathcal{Q}_L$}
+%              & $\color{red}-r$ &
+%     $ \left(\only<2>{\mathbf{N}_c}
+%             %\only<5>{{\color{red}\mathbf{N}_c}}
+%             ,\mathbf{1}\right)_0$\\
+%     \only<2>{$\left( \psi_R \right)^{\dagger}$}%
+%     %\only<5->{$\color{red}\left( \mathcal{Q}_R \right)^{\dagger}$}
+%              & $\color{red}r$ &
+%                                 $ \left(\only<2>{\mathbf{N}_c}
+%                                 %\only<5>{{\color{red}\mathbf{N}_c}}
+%                                 ,\mathbf{1}\right)_0$ \\
+%     $\sigma_a$                           &  ${\color{Green}\nu}-\color{red}r$   &
+%                                                                                   $ \left(\only<2>{\mathbf{N}_c}
+%                                                                                   %\only<5>{{\color{red}\mathbf{N}_c}}
+%                                                                                   ,\mathbf{1}\right)_0$ \\
+%     $\eta_a$                        &  $1-\color{red}r$   &
+%                                                             $ \left(\only<2>{\mathbf{N}_c}
+%                                                             %\only<5>{{\color{red}\mathbf{N}_c}}
+%                                                             ,\mathbf{2}\right)_{1/2}$ \\
+%     % \invisible<5>
+%     {$S$}&
+%     % \invisible<5>
+%            { ${\color{Green}\nu}-1$ }  &
+%     %\invisible<5>
+%     { $\left(\mathbf{N}_c,\mathbf{2}\right)_{1/2}$ }\\  
+%   \end{tabular}
 
         
-      \end{column}
-    \end{columns}
-  }}
-\end{picture}
+%       \end{column}
+%     \end{columns}
+%   }}
+% \end{picture}
 
   
-\end{frame}
+% \end{frame}
 
 
 
 
-\begin{frame}
-  \frametitle{Neutrino masses and mixings}
-  \begin{itemize}
-  \item<1->  $\nu_i$ are free parameter and could be fixed if we impose $\operatorname{U}(1)_{B-L}$ to be local
-  \begin{align*}
-   \color{red} r\ne&\color{red}1\,, & \sum_i   \color{Green} \nu_i =&3\,, & \sum_i \color{Green} \nu_i^3 =&3 
-  \end{align*}
+% \begin{frame}
+%   \frametitle{Neutrino masses and mixings}
+%   \begin{itemize}
+%   \item<1->  $\nu_i$ are free parameter and could be fixed if we impose $\operatorname{U}(1)_{B-L}$ to be local
+%   \begin{align*}
+%    \color{red} r\ne&\color{red}1\,, & \sum_i   \color{Green} \nu_i =&3\,, & \sum_i \color{Green} \nu_i^3 =&3 
+%   \end{align*}
 
 
-  \begin{center}
-      \rowcolors{1}{RoyalBlue!20}{}    
-  \begin{tabular}{rlll}
-    & $\left( \nu_R \right)^{\dagger}_1$ & $\left( \nu_R \right)^{\dagger}_2$ & $\left( \nu_R \right)^{\dagger}_3$ \\
-    $\operatorname{U}(1)_{B-L}$ &$+4$& $+4$& $-5$\\
-    $\operatorname{U}(1)_{B-L}$ &$-6$& $+\dfrac{10}{3}$& $+\dfrac{17}{3}$\\
-  \end{tabular}
-    \end{center}
+%   \begin{center}
+%       \rowcolors{1}{RoyalBlue!20}{}    
+%   \begin{tabular}{rlll}
+%     & $\left( \nu_R \right)^{\dagger}_1$ & $\left( \nu_R \right)^{\dagger}_2$ & $\left( \nu_R \right)^{\dagger}_3$ \\
+%     $\operatorname{U}(1)_{B-L}$ &$+4$& $+4$& $-5$\\
+%     $\operatorname{U}(1)_{B-L}$ &$-6$& $+\dfrac{10}{3}$& $+\dfrac{17}{3}$\\
+%   \end{tabular}
+%     \end{center}
   
-  \item<2-> To have at least a rank 2 neutrino mass matrix we need either:
-  \begin{itemize}
-  \item At least two heavy Dirac fermions $\Psi_a$, $a=1,2,\ldots$
-  \item \only<2>{At least two sets of scalars $\eta_a$, $\sigma_a$}%
-    \only<3->{\color{red}At least two sets of scalars $\eta_a$, $\sigma_a$}%
-  \end{itemize}
-\item<4> 
-  \begin{align*}
-    \mathcal{L}\supset&\left[ {\color{red}  M_{\Psi}\, \left( \psi_R \right)^{\dagger} \psi_L}
-       + h^{a}_i   \left( \psi_R \right)^{\dagger} \widetilde{\eta}^\dagger_a L_i
-  +y^a_i    \overline{\nu_{Ri} }\  \sigma_a^{*} \psi_L  +\text{h.c}\right]
-+\kappa^{ab}\, \sigma_a \eta_b^{\dagger} H+\ldots
-  \end{align*}
+%   \item<2-> To have at least a rank 2 neutrino mass matrix we need either:
+%   \begin{itemize}
+%   \item At least two heavy Dirac fermions $\Psi_a$, $a=1,2,\ldots$
+%   \item \only<2>{At least two sets of scalars $\eta_a$, $\sigma_a$}%
+%     \only<3->{\color{red}At least two sets of scalars $\eta_a$, $\sigma_a$}%
+%   \end{itemize}
+% \item<4> 
+%   \begin{align*}
+%     \mathcal{L}\supset&\left[ {\color{red}  M_{\Psi}\, \left( \psi_R \right)^{\dagger} \psi_L}
+%        + h^{a}_i   \left( \psi_R \right)^{\dagger} \widetilde{\eta}^\dagger_a L_i
+%   +y^a_i    \overline{\nu_{Ri} }\  \sigma_a^{*} \psi_L  +\text{h.c}\right]
+% +\kappa^{ab}\, \sigma_a \eta_b^{\dagger} H+\ldots
+%   \end{align*}
   
-  \end{itemize}
+%   \end{itemize}
 
   
-\end{frame}
+% \end{frame}
 
 
-\begin{frame}
-  \frametitle{Neutrino masses and mixings {\tiny  (with M.Reig, J.W.F Valle, O. Zapata, arXiv:1806.09977 ) }}
-  %
-\begin{align}
-\left(\mathcal{M}_\nu\right)_{ij}=&N_c\frac{M_{\Psi}}{64\pi^2}\sum_{a=1}^2h_{i}^a y_{j}^a\frac{\sqrt{2}\kappa_{aa}v}{m^2_{S_{2R}^a}-m^2_{S_{1R}^a}}
-  \left[F\left(\frac{m^2_{S_{2R}^a}}{M_{\Psi}^2}\right)-F\left(\frac{m^2_{S_{1R}^a}}{M_{\Psi}^2}\right)\right]+(R\to  I)
-\end{align}
-%
-where
-$F(m_{S_\beta}^2/M_\Psi^2)=m_{S_\beta}^2\log(m_{S_\beta}^2/M_\Psi^2)/(m_{S_\beta}^2-M_\Psi^2)$. The four CP-even mass eigenstates are denoted as
-$S_{1R}^1,S_{2R}^1,S_{1R}^2,S_{2R}^2$, with a similar notation for the
-CP-odd ones.
-
-% If $(\mu_\eta^{aa})^2\gg M_{\Psi}^2$ one has
+% \begin{frame}
+%   \frametitle{Neutrino masses and mixings {\tiny  (with M.Reig, J.W.F Valle, O. Zapata, arXiv:1806.09977 ) }}
+%   %
 % \begin{align}
-%  &\left(\mathcal{M}_\nu\right)_{ij}=N_c\frac{M_{\Psi}}{32\pi^2}\sqrt{2}v\sum_{a=1}^2\kappa^{aa}\frac{h_{i}^a y_{j}^a}{(\mu_\eta^{aa})^2}\\
-%  &\sim 0.03\,\mbox{eV}\left(\frac{M_{\Psi}}{12.5\, \mbox{TeV}}\right)\left(\frac{\kappa^{aa}}{1\, \mbox{GeV}}\right)\left(\frac{50\,\mbox{TeV}}{\mu_\eta^{aa}}\right)^2\left(\frac{h_{i}^a y_{j}^a}{10^{-6}}\right).\nonumber
-% %
+% \left(\mathcal{M}_\nu\right)_{ij}=&N_c\frac{M_{\Psi}}{64\pi^2}\sum_{a=1}^2h_{i}^a y_{j}^a\frac{\sqrt{2}\kappa_{aa}v}{m^2_{S_{2R}^a}-m^2_{S_{1R}^a}}
+%   \left[F\left(\frac{m^2_{S_{2R}^a}}{M_{\Psi}^2}\right)-F\left(\frac{m^2_{S_{1R}^a}}{M_{\Psi}^2}\right)\right]+(R\to  I)
 % \end{align}
-%
+% %
+% where
+% $F(m_{S_\beta}^2/M_\Psi^2)=m_{S_\beta}^2\log(m_{S_\beta}^2/M_\Psi^2)/(m_{S_\beta}^2-M_\Psi^2)$. The four CP-even mass eigenstates are denoted as
+% $S_{1R}^1,S_{2R}^1,S_{1R}^2,S_{2R}^2$, with a similar notation for the
+% CP-odd ones.
+
+% % If $(\mu_\eta^{aa})^2\gg M_{\Psi}^2$ one has
+% % \begin{align}
+% %  &\left(\mathcal{M}_\nu\right)_{ij}=N_c\frac{M_{\Psi}}{32\pi^2}\sqrt{2}v\sum_{a=1}^2\kappa^{aa}\frac{h_{i}^a y_{j}^a}{(\mu_\eta^{aa})^2}\\
+% %  &\sim 0.03\,\mbox{eV}\left(\frac{M_{\Psi}}{12.5\, \mbox{TeV}}\right)\left(\frac{\kappa^{aa}}{1\, \mbox{GeV}}\right)\left(\frac{50\,\mbox{TeV}}{\mu_\eta^{aa}}\right)^2\left(\frac{h_{i}^a y_{j}^a}{10^{-6}}\right).\nonumber
+% % %
+% % \end{align}
+% %
 
 
-\end{frame}
+% \end{frame}
 
 
 
-\begin{frame}
-  \frametitle{T3-1-A with only $U(1)_{B-L}$}
-  % 1805.02025 Han, Wang extra $Z_2$
+% \begin{frame}
+%   \frametitle{T3-1-A with only $U(1)_{B-L}$}
+%   % 1805.02025 Han, Wang extra $Z_2$
   
-  \begin{columns}
-  \begin{column}{0.28\textwidth}
-\rowcolors{1}{RoyalBlue!20}{}
-    \begin{tabular}{ll}
-      Field &  $\operatorname{U}(1)_{B-L}$ \\\hline
-      $\left( \nu_{R_i} \right)^{\dagger}$ & $+4$ \\
-      $\left( \nu_{R_j} \right)^{\dagger}$ & $+4$ \\
-      $\left( \nu_{R_k} \right)^{\dagger}$ & $-5$ \\  
-      $\color{red}\psi_L$ & $\color{red}-r$ \\
-      $\color{red}\left( \psi_R \right)^{\dagger}$ &\color{red} $r$ \\\hline
-      $\color{red}\eta_a$ &\color{red} $r{\color{black}-4}$ \\\hline
-      $\color{red}\sigma_a$ &\color{red} $r{\color{black}-1}$ \\
-      $S$ & $-3$ \\
-    \end{tabular}
-    \small 
-    $a=1,2$, $i\ne j\ne k$.\\
-    $m=0$: $\nu_{L_k}$, and $\nu_{R_k}\to N_{\text{eff}}$
-    \begin{align*}
-      F_1=
-      \begin{pmatrix}
-        \psi_L\\
-        \psi_R\\
-      \end{pmatrix}
-    \end{align*}
-  \end{column}
-  \begin{column}{0.62\textwidth}
+%   \begin{columns}
+%   \begin{column}{0.28\textwidth}
+% \rowcolors{1}{RoyalBlue!20}{}
+%     \begin{tabular}{ll}
+%       Field &  $\operatorname{U}(1)_{B-L}$ \\\hline
+%       $\left( \nu_{R_i} \right)^{\dagger}$ & $+4$ \\
+%       $\left( \nu_{R_j} \right)^{\dagger}$ & $+4$ \\
+%       $\left( \nu_{R_k} \right)^{\dagger}$ & $-5$ \\  
+%       $\color{red}\psi_L$ & $\color{red}-r$ \\
+%       $\color{red}\left( \psi_R \right)^{\dagger}$ &\color{red} $r$ \\\hline
+%       $\color{red}\eta_a$ &\color{red} $r{\color{black}-4}$ \\\hline
+%       $\color{red}\sigma_a$ &\color{red} $r{\color{black}-1}$ \\
+%       $S$ & $-3$ \\
+%     \end{tabular}
+%     \small 
+%     $a=1,2$, $i\ne j\ne k$.\\
+%     $m=0$: $\nu_{L_k}$, and $\nu_{R_k}\to N_{\text{eff}}$
+%     \begin{align*}
+%       F_1=
+%       \begin{pmatrix}
+%         \psi_L\\
+%         \psi_R\\
+%       \end{pmatrix}
+%     \end{align*}
+%   \end{column}
+%   \begin{column}{0.62\textwidth}
 
-    \begin{figure}
-      \centering
-      \only<1>{\includegraphics[scale=0.8]{FgZ-2}}
-      \only<2>{\includegraphics[scale=0.8]{FDM}}\\
-      {\tiny Extra $Z_2$:   Han, Wang,  1808.03352 [EJPC]  }
-    \end{figure}
+%     \begin{figure}
+%       \centering
+%       \only<1>{\includegraphics[scale=0.8]{FgZ-2}}
+%       \only<2>{\includegraphics[scale=0.8]{FDM}}\\
+%       {\tiny Extra $Z_2$:   Han, Wang,  1808.03352 [EJPC]  }
+%     \end{figure}
 
 
     
-  \end{column}
-\end{columns}
+%   \end{column}
+% \end{columns}
   
-  %\includegraphics{}
-\end{frame}
+%   %\includegraphics{}
+% \end{frame}
 
-
-\begin{frame}
-  \frametitle{Conclusions I}
-  
-  Only gravitational evidence of dark matter so far which is fully compatible with the $\Lambda$CDM-paradigm without simulation problems (\st{ cups vs core}, \st{etc})
-
-  Not convincing signal at all
-
-  \begin{itemize}
-  \item \st{Galatic center excess}
-  \item \st{KeV lines}
-  \item \st{Positron excess}
-  \item \st{DAMA oscillation signal}
-  \end{itemize}
-
-  Direct detection and LHC null results suggest to look
-  \begin{itemize}
-  \item Other (CDM) windows (Axion, FIMP, SIMP, $\ldots$ )
-  \item Non-standard cosmology
-  \item Other portals $\ldots$ 
-  \end{itemize}
-
-  
-  \alert{$Z'$-portal:} A single $U(1)$ symmetry to explain both the smallnes of Dirac neutrino masses and the stability of Dirac fermion dark matter
-\end{frame}
 
 
 
