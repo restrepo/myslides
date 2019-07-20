@@ -103,11 +103,11 @@ xcolor=dvipsnames,table%,pdftex%,
 \setlength{\textheight}{86 mm}
 }
 
-\widescreen
+%\widescreen
 
 
-\title{Title}
-\subtitle{Sibtitle  }
+\title{Reproducible research with HEP-Tools}
+\subtitle{Sarah Toolbox + Jupyter}
 
 
 %\subtitle
@@ -118,31 +118,26 @@ xcolor=dvipsnames,table%,pdftex%,
 %   affiliation.
 \institute{
   \begin{columns}
-    \begin{column}{0.3\textwidth}
+    \begin{column}{0.4\textwidth}
 Instituto de F\'\i sica\\
 Universidad de Antioquia\\
 Phenomenology Group\\
 \url{http://gfif.udea.edu.co}      
     \end{column}
-    \begin{column}{0.3\textwidth}
-      \hfill Image title\\
-      \hfill \includegraphics[scale=0.15]{imageicon}\\
-      \hfill \tiny{Image credits}
+    \begin{column}{0.4\textwidth}
+      %\hfill Image title\\
+      %\hfill \includegraphics[scale=0.35]{comhep}
+      %\hfill \tiny{Image credits}
     \end{column}
   \end{columns}
 \quad\\
 \quad\\
-{\tiny
-\alert{\textbf{Focus on}} \\
-arXiv:NNNN.NNNNN (Jrnl)\\
-\alert{In collaboration with}\\
-  N.~Name}
 %\centering
 }
 % - Use the \inst command only if there are several affiliations.
 % - Keep it simple, no one is interested in your street address.
 
-\date{\tiny November 15, 2016 } % (optional) \today
+\date{\tiny November 29, 2016 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -190,15 +185,167 @@ arXiv:NNNN.NNNNN (Jrnl)\\
 % %\vspace{-0.5cm}
    \setbeamertemplate{section in toc}[sections numbered]
    \tableofcontents[hideallsubsections]
-   \tableofcontents[hideallsubsections]
 \end{frame}
 
-\section{First section}
+\section{HEP Tools}
 
 \begin{frame}
-  \frametitle{First title}
-
+  \frametitle{HEP Tools}
+\begin{picture}(320,250)
+\only<1>{\put(-10,20){
+  \begin{overpic}[scale=0.4%,grid
+            ]{heptools1}
+  \end{overpic}
+}
+}%
+\only<2->{\put(-10,20){
+  \begin{overpic}[scale=0.4]{heptools2}
+  \end{overpic}
+}
+}
+%%%circle
+\end{picture}
 \end{frame}
+%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{SARAH Toolbox}
+\begin{picture}(320,250)
+\only<1>{\put(-10,20){
+  \begin{overpic}[scale=0.4]{sarahtoolbox1}
+  \end{overpic}
+}
+}%
+\only<2->{\put(-10,20){
+  \begin{overpic}[scale=0.4]{sarahtoolbox2}
+  \end{overpic}
+}
+}
+%%%circle
+\end{picture}
+\end{frame}
+
+\section{Problems}
+\begin{frame}
+  \frametitle{Problems}
+   When changing versions ...
+  \begin{itemize}
+  \item Broken HEP tools \only<2>{\alert{$\to$ Version control  + Testing}}
+  \item Broken models \only<2>{\alert{$\to$ Version control + Testing}}
+  \item Lack of reproducibility \only<2>{\alert{$\to$ Testing + Notebooks}}
+  \end{itemize}
+\end{frame}
+
+\section{Version control}
+
+\begin{frame}
+  \frametitle{Version control}
+\begin{picture}(320,250)
+\only<1>{\put(-10,20){
+  \begin{overpic}[scale=0.4]{git1}
+  \end{overpic}
+}
+}%
+\only<2>{\put(-10,20){
+  \begin{overpic}[scale=0.4]{git2}
+  \end{overpic}
+}
+}%
+\only<3>{\put(-10,20){
+  \begin{overpic}[scale=0.4]{git3}
+  \end{overpic}
+}
+}%
+\only<4>{\put(-10,20){
+  \begin{overpic}[scale=0.4]{git4}
+  \end{overpic}
+}
+}%
+\only<5>{\put(-10,20){
+  \begin{overpic}[scale=0.4]{git5}
+  \end{overpic}
+}
+}%
+\only<6>{\put(-10,20){
+  \begin{overpic}[scale=0.4]{git6}
+  \end{overpic}
+}
+}%
+\end{picture}
+\end{frame}
+
+
+\begin{frame}
+\begin{picture}(320,250)
+\only<1>{\put(-30,-20){
+  \begin{overpic}[scale=0.51]{testing0}
+  \end{overpic}
+}
+}%
+\only<2>{\put(-30,-20){
+  \begin{overpic}[scale=0.51]{github1}
+  \end{overpic}
+}
+}%
+\only<3>{\put(-30,-20){
+  \begin{overpic}[scale=0.51]{github2}
+  \end{overpic}
+}
+}%
+\end{picture}
+  
+\end{frame}
+
+\section{Testing}
+
+\begin{frame}
+\begin{picture}(320,250)
+\only<1>{\put(-30,-20){\begin{overpic}[scale=0.51]{testing}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+\begin{frame}
+\begin{picture}(320,250)
+\only<1>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm1}\end{overpic}}}%
+\only<2>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm2}\end{overpic}}}%
+\only<3>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm3}\end{overpic}}}%
+\only<4>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm4}\end{overpic}}}%
+\only<5>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm5}\end{overpic}}}%
+\only<6>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm6}\end{overpic}}}%
+\only<7>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm7}\end{overpic}}}%
+\only<8>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm8}\end{overpic}}}%
+\only<9>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm9}\end{overpic}}}%
+\only<10>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm10}\end{overpic}}}%
+\only<11>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm11}\end{overpic}}}%
+\only<12>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm12}\end{overpic}}}%
+\only<13>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm13}\end{overpic}}}%
+\only<14>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm14}\end{overpic}}}%
+\only<15>{\put(-30,-20){\begin{overpic}[scale=0.51]{idm15}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+\section{Reproducibility }
+\begin{frame}
+\begin{picture}(320,250)
+\only<1>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm1}\end{overpic}}}%
+\only<2>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm2}\end{overpic}}}%
+\only<3>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm3}\end{overpic}}}%
+\only<4>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm4}\end{overpic}}}%
+\only<5>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm5}\end{overpic}}}%
+\only<6>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm6}\end{overpic}}}%
+\only<7>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm7}\end{overpic}}}%
+\only<8>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm8}\end{overpic}}}%
+\only<9>{\put(-30,-20){\begin{overpic}[scale=0.51]{sssfdm9}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusion }
+  Sophisticated HEP tools require  high programming standars
+  
+  Check: CERN-Root development
+\end{frame}
+
+
 
 \end{document}
 
