@@ -1,8 +1,8 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.10.2)  20 JUL 2019 11:49
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/Debian) (preloaded format=xelatex 2018.10.2)  20 JUL 2019 12:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**ppc2019.tex
+**ppc2019
 (./ppc2019.tex
 LaTeX2e <2017/01/01> patch level 3
 Babel <3.9r> and hyphenation patterns for 6 language(s) loaded.
@@ -1549,33 +1549,72 @@ Overfull \vbox (15.63992pt too high) detected at line 89
 
 [1
 
+] [2
+
 ]
-File: figures/background.png Graphic file (type QTm)
- <use  "figures/background.png" >
-Overfull \hbox (0.4pt too wide) in paragraph at lines 122--122
-[][]  
+File: figures/z2_bkg.pdf Graphic file (type QTm)
+ <use  "figures/z2_bkg.pdf" >
+File: figures/mice.png Graphic file (type QTm)
+ <use  "figures/mice.png" >
+Overfull \vbox (9.31555pt too high) detected at line 146
  []
 
+[3
 
-Overfull \vbox (38.83505pt too high) detected at line 122
+]
+File: figures/z2_bkg.pdf Graphic file (type QTm)
+ <use  "figures/z2_bkg.pdf" >
+File: figures/mice.png Graphic file (type QTm)
+ <use  "figures/mice.png" >
+File: figures/brickY.pdf Graphic file (type QTm)
+
+<use  "figures/brickY.pdf" >
+File: figures/brickR.pdf Graphic file (type QTm)
+ <use  "figures/brickR.pdf" >
+File: figures/brickB.pdf Graphic file (type QTm)
+
+<use  "figures/brickB.pdf" >
+File: figures/brickG.pdf Graphic file (type QTm)
+ <use  "figures/brickG.pdf" >
+File: figures/brickW.pdf Graphic file (type QTm)
+
+<use  "figures/brickW.pdf" >
+File: figures/brickK.pdf Graphic file (type QTm)
+ <use  "figures/brickK.pdf" >
+File: figures/brickssY.pdf Graphic file (type QTm)
+
+<use  "figures/brickssY.pdf" >
+File: figures/brickssR.pdf Graphic file (type QTm)
+ <use  "figures/brickssR.pdf" >
+File: figures/brickssB.pdf Graphic file (type QTm)
+
+<use  "figures/brickssB.pdf" >
+File: figures/brickssG.pdf Graphic file (type QTm)
+ <use  "figures/brickssG.pdf" >
+File: figures/brickssW.pdf Graphic file (type QTm)
+
+<use  "figures/brickssW.pdf" >
+File: figures/brickssK.pdf Graphic file (type QTm)
+ <use  "figures/brickssK.pdf" >
+Overfull \vbox (9.31555pt too high) detected at line 146
  []
 
-[2
+[4
 
-] [3
+] [5
 
 ]
 File: figures/fdm.png Graphic file (type QTm)
  <use  "figures/fdm.png" >
-Overfull \hbox (0.4pt too wide) in paragraph at lines 144--144
+Overfull \hbox (0.4pt too wide) in paragraph at lines 169--169
 [][]  
  []
 
 
-Overfull \vbox (30.23917pt too high) detected at line 144
+Overfull \vbox (30.23917pt too high) detected at line 169
  []
 
-[4
+[6
 
 ]
 .................................................
@@ -1606,33 +1645,33 @@ Overfull \vbox (30.23917pt too high) detected at line 144
 .................................................
 File: figures/DirectSearchesUpdated.pdf Graphic file (type QTm)
  <use  "figures/DirectSearchesUpdated.pdf" >
-Overfull \hbox (0.4pt too wide) in paragraph at lines 187--187
-[][]  
- []
-
-[5
-
-]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 194.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 194.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 194.
-
-[6
-
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 233--233
+Overfull \hbox (0.4pt too wide) in paragraph at lines 212--212
 [][]  
  []
 
 [7
+
+]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 219.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 219.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 219.
+
+[8
+
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 258--258
+[][]  
+ []
+
+[9
 
 ]
 File: figures/coannmass.pdf Graphic file (type QTm)
@@ -1641,7 +1680,7 @@ File: figures/ddsi.pdf Graphic file (type QTm)
  <use  "figures/ddsi.pdf" >
 File: figures/llcom.png Graphic file (type QTm)
 
-<use  "figures/llcom.png" > [8
+<use  "figures/llcom.png" > [10
 
 ]
 File: figures/coannmass.pdf Graphic file (type QTm)
@@ -1650,241 +1689,241 @@ File: figures/ddsi.pdf Graphic file (type QTm)
 
 <use  "figures/ddsi.pdf" >
 File: figures/llcom.png Graphic file (type QTm)
- <use  "figures/llcom.png" > [9
+ <use  "figures/llcom.png" > [11
 
-] [10
-
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 269--269
-[][]  
- []
-
-[11
+] [12
 
 ]
-File: figures/mee.png Graphic file (type QTm)
- <use  "figures/mee.png" >
-Overfull \hbox (0.4pt too wide) in paragraph at lines 282--282
+Overfull \hbox (0.4pt too wide) in paragraph at lines 294--294
 [][]  
- []
-
-
-Overfull \vbox (35.43196pt too high) detected at line 282
- []
-
-[12
-
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 346--346
-[][]  
- []
-
-
-Overfull \vbox (36.55211pt too high) detected at line 346
  []
 
 [13
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 346--346
+File: figures/mee.png Graphic file (type QTm)
+ <use  "figures/mee.png" >
+Overfull \hbox (0.4pt too wide) in paragraph at lines 307--307
 [][]  
  []
 
 
-Overfull \vbox (36.55211pt too high) detected at line 346
+Overfull \vbox (35.43196pt too high) detected at line 307
  []
 
 [14
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 370--370
+Overfull \hbox (0.4pt too wide) in paragraph at lines 371--371
 [][]  
  []
 
 
-Overfull \vbox (4.6807pt too high) detected at line 370
+Overfull \vbox (36.55211pt too high) detected at line 371
  []
 
 [15
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 370--370
+Overfull \hbox (0.4pt too wide) in paragraph at lines 371--371
 [][]  
  []
 
 
-Overfull \vbox (4.6807pt too high) detected at line 370
+Overfull \vbox (36.55211pt too high) detected at line 371
  []
 
 [16
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 370--370
+Overfull \hbox (0.4pt too wide) in paragraph at lines 395--395
 [][]  
  []
 
 
-Overfull \vbox (4.6807pt too high) detected at line 370
+Overfull \vbox (4.6807pt too high) detected at line 395
  []
 
 [17
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 370--370
+Overfull \hbox (0.4pt too wide) in paragraph at lines 395--395
 [][]  
  []
 
 
-Overfull \vbox (4.6807pt too high) detected at line 370
+Overfull \vbox (4.6807pt too high) detected at line 395
  []
 
 [18
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 370--370
+Overfull \hbox (0.4pt too wide) in paragraph at lines 395--395
 [][]  
  []
 
 
-Overfull \vbox (23.4156pt too high) detected at line 370
+Overfull \vbox (4.6807pt too high) detected at line 395
  []
 
 [19
 
 ]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 374.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 374.
+Overfull \hbox (0.4pt too wide) in paragraph at lines 395--395
+[][]  
+ []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 374.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 374.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 374.
+Overfull \vbox (4.6807pt too high) detected at line 395
+ []
 
 [20
 
 ]
-File: figures/u11.pdf Graphic file (type QTm)
- <use  "figures/u11.pdf" >
-Overfull \vbox (9.31555pt too high) detected at line 382
+Overfull \hbox (0.4pt too wide) in paragraph at lines 395--395
+[][]  
+ []
+
+
+Overfull \vbox (23.4156pt too high) detected at line 395
  []
 
 [21
 
 ]
-File: figures/u12.pdf Graphic file (type QTm)
- <use  "figures/u12.pdf" >
-Overfull \vbox (9.31555pt too high) detected at line 382
- []
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 399.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 399.
 
 [22
 
 ]
-File: figures/u13.pdf Graphic file (type QTm)
- <use  "figures/u13.pdf" >
-Overfull \vbox (9.31555pt too high) detected at line 382
+File: figures/u11.pdf Graphic file (type QTm)
+ <use  "figures/u11.pdf" >
+Overfull \vbox (9.31555pt too high) detected at line 407
  []
 
 [23
 
 ]
-File: figures/u14.pdf Graphic file (type QTm)
- <use  "figures/u14.pdf" >
-Overfull \vbox (9.31555pt too high) detected at line 382
+File: figures/u12.pdf Graphic file (type QTm)
+ <use  "figures/u12.pdf" >
+Overfull \vbox (9.31555pt too high) detected at line 407
  []
 
 [24
 
 ]
-File: figures/radiativedirac1.pdf Graphic file (type QTm)
- <use  "figures/radiativedirac1.pdf" >
-Overfull \hbox (0.4pt too wide) in paragraph at lines 432--432
-[][]  
- []
-
-
-Overfull \vbox (42.51291pt too high) detected at line 432
+File: figures/u13.pdf Graphic file (type QTm)
+ <use  "figures/u13.pdf" >
+Overfull \vbox (9.31555pt too high) detected at line 407
  []
 
 [25
 
 ]
-File: figures/radiativedirac2.pdf Graphic file (type QTm)
- <use  "figures/radiativedirac2.pdf" >
-Overfull \hbox (0.4pt too wide) in paragraph at lines 432--432
-[][]  
- []
-
-
-Overfull \vbox (42.51291pt too high) detected at line 432
+File: figures/u14.pdf Graphic file (type QTm)
+ <use  "figures/u14.pdf" >
+Overfull \vbox (9.31555pt too high) detected at line 407
  []
 
 [26
 
 ]
-File: figures/radiativedirac3.pdf Graphic file (type QTm)
- <use  "figures/radiativedirac3.pdf" >
-Overfull \hbox (62.88504pt too wide) in paragraph at lines 432--432
-[][] 
- []
-
-
-Overfull \hbox (0.4pt too wide) in paragraph at lines 432--432
+File: figures/radiativedirac1.pdf Graphic file (type QTm)
+ <use  "figures/radiativedirac1.pdf" >
+Overfull \hbox (0.4pt too wide) in paragraph at lines 457--457
 [][]  
  []
 
 
-Overfull \vbox (42.51291pt too high) detected at line 432
+Overfull \vbox (42.51291pt too high) detected at line 457
  []
 
 [27
 
 ]
-Overfull \hbox (62.88504pt too wide) in paragraph at lines 432--432
-[][] 
- []
-
-File: figures/radiativedirac4.pdf Graphic file (type QTm)
-<use  "figures/radiativedirac4.pdf" >
-Overfull \hbox (0.4pt too wide) in paragraph at lines 432--432
+File: figures/radiativedirac2.pdf Graphic file (type QTm)
+ <use  "figures/radiativedirac2.pdf" >
+Overfull \hbox (0.4pt too wide) in paragraph at lines 457--457
 [][]  
  []
 
 
-Overfull \vbox (42.51291pt too high) detected at line 432
+Overfull \vbox (42.51291pt too high) detected at line 457
  []
 
 [28
 
 ]
+File: figures/radiativedirac3.pdf Graphic file (type QTm)
+ <use  "figures/radiativedirac3.pdf" >
+Overfull \hbox (62.88504pt too wide) in paragraph at lines 457--457
+[][] 
+ []
+
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 457--457
+[][]  
+ []
+
+
+Overfull \vbox (42.51291pt too high) detected at line 457
+ []
+
+[29
+
+]
+Overfull \hbox (62.88504pt too wide) in paragraph at lines 457--457
+[][] 
+ []
+
+File: figures/radiativedirac4.pdf Graphic file (type QTm)
+<use  "figures/radiativedirac4.pdf" >
+Overfull \hbox (0.4pt too wide) in paragraph at lines 457--457
+[][]  
+ []
+
+
+Overfull \vbox (42.51291pt too high) detected at line 457
+ []
+
+[30
+
+]
 File: figures/radiativedirac5.pdf Graphic file (type QTm)
  <use  "figures/radiativedirac5.pdf" >
-Overfull \hbox (151.82268pt too wide) in paragraph at lines 432--432
+Overfull \hbox (151.82268pt too wide) in paragraph at lines 457--457
 [] 
  []
 
 File: figures/sarah.pdf Graphic file (type QTm)
 <use  "figures/sarah.pdf" >
-Overfull \hbox (0.4pt too wide) in paragraph at lines 432--432
+Overfull \hbox (0.4pt too wide) in paragraph at lines 457--457
 [][]  
  []
 
 
-Overfull \vbox (42.51291pt too high) detected at line 432
+Overfull \vbox (42.51291pt too high) detected at line 457
  []
 
-[29
+[31
 
 ]
 File: figures/vector-SI.pdf Graphic file (type QTm)
@@ -1894,38 +1933,38 @@ File: figures/scalar-SI.pdf Graphic file (type QTm)
 File: figures/SI.pdf Graphic file (type QTm)
 
 <use  "figures/SI.pdf" >
-Overfull \hbox (16.44159pt too wide) in paragraph at lines 449--449
+Overfull \hbox (16.44159pt too wide) in paragraph at lines 474--474
 [][]  
  []
 
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 449--449
-[][]  
- []
-
-[30
-
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 771--771
-[][]  
- []
-
-[31
-
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 771--771
+Overfull \hbox (0.4pt too wide) in paragraph at lines 474--474
 [][]  
  []
 
 [32
 
 ]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 796--796
+[][]  
+ []
+
+[33
+
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 796--796
+[][]  
+ []
+
+[34
+
+]
 
 Package beamerthememetropolis Warning: The syntax `\plain' may be deprecated in
  a future version of Metropolis. Please use a frame with [standout] instead.  o
-n input line 774.
+n input line 799.
 
-[33
+[35
 
 ]
 \tf@nav=\write7
@@ -1937,19 +1976,19 @@ n input line 774.
 \tf@snm=\write9
 \openout9 = `ppc2019.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 775.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 775.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 800.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 800.
  (./ppc2019.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 775.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 775.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 800.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 800.
  ) 
 Here is how much of TeX's memory you used:
- 34757 strings out of 494984
- 714610 string characters out of 6177735
- 752238 words of memory out of 5000000
- 37846 multiletter control sequences out of 15000+600000
+ 34788 strings out of 494984
+ 715026 string characters out of 6177735
+ 752667 words of memory out of 5000000
+ 37864 multiletter control sequences out of 15000+600000
  16738 words of font info for 109 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
- 80i,25n,99p,10459b,890s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 80i,25n,99p,10455b,890s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ppc2019.pdf (33 pages).
+Output written on ppc2019.pdf (35 pages).

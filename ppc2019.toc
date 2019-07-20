@@ -1,4 +1,5 @@
-\beamer@sectionintoc {1}{Dirac fermion dark matter}{3}{0}{1}
-\beamer@sectionintoc {2}{Singlet-Doublet Dirac Dark matter Model (SD${}^{3}$M)}{6}{0}{2}
-\beamer@sectionintoc {3}{Neutrino masses}{10}{0}{3}
-\beamer@sectionintoc {4}{One-loop realization of $\mathcal {L}_{5-D}$ with total $L$}{20}{0}{4}
+\beamer@sectionintoc {1}{Hidden sectors}{2}{0}{1}
+\beamer@sectionintoc {2}{Dirac fermion dark matter}{5}{0}{2}
+\beamer@sectionintoc {3}{Singlet-Doublet Dirac Dark matter Model (SD${}^{3}$M)}{8}{0}{3}
+\beamer@sectionintoc {4}{Neutrino masses}{12}{0}{4}
+\beamer@sectionintoc {5}{One-loop realization of $\mathcal {L}_{5-D}$ with total $L$}{22}{0}{5}
