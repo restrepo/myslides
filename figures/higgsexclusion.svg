@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="768"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="higgsexclusion.svg">
+  <defs
+     id="defs4">
+    <pattern
+       inkscape:collect="always"
+       xlink:href="#Strips4_1"
+       id="pattern5152"
+       patternTransform="matrix(10,0,0,10,-171.43956,-455.12314)" />
+    <pattern
+       inkscape:stockid="Stripes 4:1"
+       id="Strips4_1"
+       patternTransform="translate(0,0) scale(10,10)"
+       height="1"
+       width="1.25"
+       patternUnits="userSpaceOnUse"
+       inkscape:collect="always">
+      <rect
+         id="rect4463"
+         height="2"
+         width="1"
+         y="-0.5"
+         x="0"
+         style="fill:black;stroke:none" />
+    </pattern>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2866"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <pattern
+       patternUnits="userSpaceOnUse"
+       width="46.815853"
+       height="417.42209"
+       patternTransform="translate(171.43956,455.12314)"
+       id="pattern5149">
+      <rect
+         style="opacity:0.69874477;fill:url(#pattern5152);fill-opacity:1;stroke:none"
+         id="rect2899"
+         width="46.815853"
+         height="417.42209"
+         x="0"
+         y="5.6843419e-14" />
+    </pattern>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1862562"
+     inkscape:cx="354.0955"
+     inkscape:cy="85.437517"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="768"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-284.36218)"
+     style="display:inline">
+    <image
+       y="393.91452"
+       x="43.054565"
+       id="image2868"
+       height="566"
+       width="825"
+       xlink:href="file:///home/restrepo/texfile/talks/LHC/figures/higgs_cms.png" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="previos"
+     style="display:inline">
+    <rect
+       transform="translate(0,-284.36218)"
+       style="fill:#2bfa4d;fill-opacity:0.71291863;stroke:#000000;stroke-width:1.0036298;stroke-opacity:1;display:inline"
+       width="51.027164"
+       height="420.49048"
+       x="330.68939"
+       y="453.58896"
+       id="rect5185" />
+    <rect
+       transform="translate(0,-284.36218)"
+       style="fill:#fffa4d;fill-opacity:0.71291863;stroke:#000000;stroke-opacity:1;display:inline"
+       width="45.972866"
+       height="419.10806"
+       x="171.43956"
+       y="455.12314"
+       id="rect5154" />
+    <rect
+       transform="translate(0,-284.36218)"
+       id="rect5183"
+       y="455.03424"
+       x="171.35065"
+       height="419.28589"
+       width="31.633665"
+       style="fill:#2bfa4d;fill-opacity:0.71291863;stroke:#000000;stroke-width:0.8221873;stroke-opacity:1;display:inline" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="exclusions"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="17.648108"
+       y="702.44989"
+       id="text2890"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan2892"
+         x="17.648108"
+         y="702.44989">Exclude masses: [145-216], [226,288], [310,405] GeV at 95% CL</tspan></text>
+    <rect
+       style="opacity:0.69874477;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       id="rect2887"
+       width="145.11987"
+       height="418.9581"
+       x="307.13556"
+       y="169.22495" />
+    <rect
+       transform="translate(0,-284.36218)"
+       y="453.51913"
+       x="469.68799"
+       height="419.09409"
+       width="88.807861"
+       id="rect2894"
+       style="opacity:0.69874477;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:3.86400771;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline" />
+    <rect
+       transform="translate(0,-284.36218)"
+       style="opacity:0.69874477;fill:#ff0000;fill-opacity:1;stroke:#ff0000;stroke-width:3.86400771;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       id="rect2896"
+       width="95.867607"
+       height="420.72327"
+       x="587.58801"
+       y="453.51913" />
+  </g>
+</svg>

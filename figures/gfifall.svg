@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.3.1 r9886"
+   width="1024"
+   height="768"
+   version="1.0"
+   sodipodi:docname="gfifall.svg"
+   style="display:inline"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/restrepo/burocracia/GFIF/Imagen/gfif.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs5">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective9" />
+    <inkscape:perspective
+       id="perspective3240"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="1024"
+     inkscape:window-width="1920"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="1.0911458"
+     inkscape:cx="511.08353"
+     inkscape:cy="384"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:current-layer="layer6"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-maximized="1"
+     width="1024px" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="original"
+     style="display:none"
+     transform="translate(-43.09375,678.5625)">
+    <image
+       sodipodi:absref="/home/restrepo/burocracia/GFIF/Imagen/higgs_decay_simulation.gif"
+       xlink:href="/home/restrepo/burocracia/GFIF/Imagen/higgs_decay_simulation.gif"
+       y="15.000001"
+       x="7.9731483"
+       id="image11"
+       height="80"
+       width="146.07509"
+       style="display:inline" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="sqaure"
+     style="display:inline"
+     transform="translate(-43.09375,678.5625)">
+    <rect
+       style="fill:#8cacbb;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3189"
+       width="103.64089"
+       height="89.870361"
+       x="110.06821"
+       y="-664.37317" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="linesdown"
+     transform="translate(-43.09375,678.5625)">
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:1.27340102px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 159.67256,-617.34416 c 13.43719,16.53666 28.40916,29.53155 44.03044,42.70352"
+       id="path3216"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path3218"
+       d="m 159.67256,-617.34416 c -5.9778,24.01581 -7.92243,28.92839 -11.82189,42.82415"
+       style="fill:none;stroke:#ff0000;stroke-width:1.27340102px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path3240"
+       d="m 159.67256,-617.34416 c 28.03359,-11.08792 41.67861,-25.35573 53.56032,-31.96729"
+       style="fill:none;stroke:#ffff00;stroke-width:1.27340102px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#0000ff;stroke-width:0.63670051;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 159.67256,-617.34416 c 28.03359,-11.08792 41.67861,-25.35573 53.56032,-31.96729"
+       id="path3242"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path3246"
+       d="m 159.67256,-617.34416 c 28.03359,-11.08792 41.67861,-25.35573 53.56032,-31.96729"
+       style="fill:none;stroke:#0000ff;stroke-width:0.63670051;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="cccc"
+       id="path3248"
+       d="m 159.67256,-617.34416 c -15.86656,-28.6806 -28.03462,-32.05394 -36.81663,-28.45026 -21.88255,13.68403 -11.16679,50.88503 8.23639,48.276 12.52283,0.91817 23.83255,-16.20223 27.8585,-19.3027"
+       style="fill:none;stroke:#ffff00;stroke-width:1.27340102px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#5e2691;stroke-width:0.63670051;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 159.67256,-617.34416 c -15.86656,-28.6806 -28.03462,-32.05394 -36.81663,-28.45026 -21.88255,13.68403 -11.16679,50.88503 8.23639,48.276 12.52283,0.91817 23.83255,-16.20223 27.8585,-19.3027"
+       id="path3250"
+       sodipodi:nodetypes="cccc"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ffff00;stroke-width:1.27340102;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 159.67256,-617.34416 c -17.68569,3.02595 -40.47135,1.06254 -49.2176,-6.27282"
+       id="path3281"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path3283"
+       d="m 159.67256,-617.34416 c -17.68569,3.02595 -40.47135,1.06254 -49.2176,-6.27282"
+       style="fill:none;stroke:#0000ff;stroke-width:0.63670051;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="gfif"
+     style="display:inline"
+     transform="translate(-43.09375,678.5625)">
+    <g
+       style="display:inline"
+       id="g3176"
+       transform="matrix(1.273401,0,0,1.273401,344.26612,-823.22112)">
+      <text
+         transform="scale(-1,1)"
+         sodipodi:linespacing="100%"
+         id="text2388"
+         y="191.9465"
+         x="108.43782"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Good Times;-inkscape-font-specification:Good Times"
+         xml:space="preserve"><tspan
+           y="191.9465"
+           x="108.43782"
+           id="tspan2390"
+           sodipodi:role="line">F</tspan></text>
+      <g
+         id="g3170">
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Good Times;-inkscape-font-specification:Good Times"
+           x="-178.00371"
+           y="191.14233"
+           id="text2384"
+           sodipodi:linespacing="100%"><tspan
+             sodipodi:role="line"
+             id="tspan2386"
+             x="-178.00371"
+             y="191.14233">FI</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Good Times;-inkscape-font-specification:Good Times"
+           x="126.19467"
+           y="158.02046"
+           id="text2392"
+           sodipodi:linespacing="100%"
+           transform="matrix(0,1,-1,0,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan2394"
+             x="126.19467"
+             y="158.02046">G</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="linesup"
+     style="display:inline"
+     transform="translate(-43.09375,678.5625)">
+    <path
+       sodipodi:nodetypes="cc"
+       id="path3258"
+       d="m 159.67256,-617.34416 c 13.8946,6.93111 18.65113,7.57601 36.25452,8.39799"
+       style="fill:none;stroke:#ffff00;stroke-width:1.27340102px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ffb600;stroke-width:0.63670051;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 159.67256,-617.34416 c 13.8946,6.93111 18.65113,7.57601 36.25452,8.39799"
+       id="path3262"
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="cc"
+       id="path3264"
+       d="m 159.67256,-617.34416 c 10.69275,-11.51764 15.29682,-30.99864 9.72491,-46.79578"
+       style="fill:none;stroke:#ffb600;stroke-width:0.63670051;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="label"
+     style="display:inline"
+     transform="translate(-43.09375,678.5625)">
+    <text
+       xml:space="preserve"
+       style="font-size:22.92121887px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Good Times;-inkscape-font-specification:Good Times"
+       x="230.36218"
+       y="-646.33124"
+       id="text3266"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3268"
+         x="230.36218"
+         y="-646.33124">GrUPO DE </tspan><tspan
+         sodipodi:role="line"
+         x="230.36218"
+         y="-623.41003"
+         id="tspan3273">fENOMENOLOGÍA DE iNTERACCIONES fUNDAMENTALES</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3014"
+       y="-578.83722"
+       x="462.03125"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Good Times;-inkscape-font-specification:Good Times"
+       xml:space="preserve"><tspan
+         id="tspan3018"
+         y="-578.83722"
+         x="462.03125"
+         sodipodi:role="line">SEMINARIOS</tspan></text>
+    <text
+       sodipodi:linespacing="100%"
+       id="text3022"
+       y="58.432484"
+       x="402.74734"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:Good Times;-inkscape-font-specification:Good Times"
+       xml:space="preserve"><tspan
+         y="58.432484"
+         x="402.74734"
+         id="tspan3024"
+         sodipodi:role="line"> </tspan><tspan
+         id="tspan3026"
+         y="78.43248"
+         x="402.74734"
+         sodipodi:role="line">http://gfif.udea.edu.co</tspan></text>
+  </g>
+</svg>

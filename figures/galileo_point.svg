@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="768"
+   id="svg2828"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="gp-gc.pdf"
+   style="display:inline">
+  <defs
+     id="defs2830">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-848.16716 : 1054.3401 : 1"
+       inkscape:vp_y="0 : 1014.9853 : 0"
+       inkscape:vp_z="5392.8985 : 845.54285 : 1"
+       inkscape:persp3d-origin="2293.2447 : 715.62485 : 1"
+       id="perspective2836" />
+    <inkscape:perspective
+       id="perspective3689"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3733"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3771"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3806"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3860"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2894"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.94140625"
+     inkscape:cx="389.3112"
+     inkscape:cy="384"
+     inkscape:current-layer="layer16"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="969"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2833">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Full Cube"
+     inkscape:groupmode="layer"
+     style="display:inline">
+    <g
+       sodipodi:type="inkscape:box3d"
+       style="fill:none;stroke:none"
+       id="g2963"
+       inkscape:perspectiveID="#perspective2836"
+       inkscape:corner0="2.19567 : -0.776528 : 0 : 1"
+       inkscape:corner7="1.5876491 : -2.0723555 : 0.31146101 : 1">
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2973"
+         style="fill:#afafde;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="13"
+         d="M 134.8542,477.85821 365.8351,657.42218 905.90919,578.46245 601.81017,428.5342 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2965"
+         style="fill:#353564;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="6"
+         d="m 134.8542,66.286972 0,411.571238 466.95597,-49.32401 0,-375.020455 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2975"
+         style="fill:#e9e9ff;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="11"
+         d="m 601.81017,53.513745 304.09902,71.276435 0,453.67227 L 601.81017,428.5342 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2967"
+         style="fill:#4d4d9f;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="5"
+         d="M 134.8542,66.286972 365.8351,149.14389 905.90919,124.79018 601.81017,53.513745 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2971"
+         style="fill:#d7d7ff;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="14"
+         d="m 365.8351,149.14389 0,508.27829 540.07409,-78.95973 0,-453.67227 z" />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2969"
+         style="fill:#8686bf;fill-rule:evenodd;stroke:none"
+         inkscape:box3dsidetype="3"
+         d="m 134.8542,66.286972 230.9809,82.856918 0,508.27829 -230.9809,-179.56397 z" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="Quantum Gravity"
+     style="display:inline">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:16, 16;stroke-dashoffset:0"
+       d="m 137.03603,477.72148 464.76404,-46.68362 0,-376.700121 -464.76404,12.871486 0,410.512255 z"
+       id="path2864"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path3638"
+       d="m 137.03603,477.72148 464.76404,-46.68362 0,-376.700121 -464.76404,12.871486 0,410.512255 z"
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:16, 16;stroke-dashoffset:0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:16, 16;stroke-dashoffset:0"
+       d="m 905.03603,578.63907 -303.23596,-147.60121 0,-376.700121 302.38072,71.027381 0.85524,453.27395 z"
+       id="path3640"
+       sodipodi:nodetypes="ccccc" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path2849"
+       d="M 366.96256,150.10356 134.4553,67.376709 601.80007,54.337739 904.18079,125.36512 366.96256,150.10356 z"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="point"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Andale Mono"
+       x="172.75725"
+       y="725.23828"
+       id="text3016"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3018"
+         x="172.75725"
+         y="725.23828">Punto de Galileo</tspan></text>
+    <path
+       sodipodi:type="arc"
+       id="path3036"
+       sodipodi:cx="364.75723"
+       sodipodi:cy="652.54346"
+       sodipodi:rx="18.387527"
+       sodipodi:ry="17.104677"
+       d="m 383.14476,652.54346 a 18.387527,17.104677 0 1 1 -36.77505,0 18.387527,17.104677 0 1 1 36.77505,0 z"
+       style="fill:#4d4d9f;fill-opacity:1;stroke:none;display:inline" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Gravitation"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Italic'"
+       x="918.52118"
+       y="608.92651"
+       id="text2995"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2997"
+         x="918.52118"
+         y="608.92651">G</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Italic'"
+       x="957.86194"
+       y="644.84631"
+       id="text2999"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3001"
+         x="957.86194"
+         y="644.84631" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Gravitation line"
+     style="display:inline">
+    <path
+       id="path3828"
+       d="M 367.10721,657.21617 905.82076,577.9297"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="M 367.10721,657.21617 905.82076,577.9297"
+       id="path3826" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer12"
+     inkscape:label="Gravitation title"
+     style="display:none">
+    <g
+       transform="translate(770.51663,92.709595)"
+       style="display:inline"
+       id="g3675-0">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path3623-6"
+         d="m 134.52408,481.9626 36.11618,50.98756 c 35.5362,2.75804 57.90597,-1.67186 67.9834,32.92944 12.85028,61.70304 -22.69485,71.85885 -105.16182,77.54358 C 56.865755,638.96161 6.3365746,626.42594 16.615385,568.00408 35.161813,525.3696 43.730295,525.50522 144.08426,531.88791 l -9.56018,-49.92531 z"
+         style="fill:#4d4d9f;fill-opacity:1;stroke:none;display:inline" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3669-3"
+         y="568.29877"
+         x="31.86722"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan3673-9"
+           y="568.29877"
+           x="31.86722"
+           sodipodi:role="line">Gravitación</tspan><tspan
+           y="618.29877"
+           x="31.86722"
+           sodipodi:role="line"
+           id="tspan3722">Newtoniana</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Special Relativity"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Italic'"
+       x="384.67542"
+       y="182.06664"
+       id="text3003"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3005"
+         x="384.67542"
+         y="182.06664">c</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="SR line"
+     style="display:inline">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 365.74875,149.72233 0,507.71224 540.07201,-79.50487"
+       id="path3846"
+       sodipodi:nodetypes="ccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="SR title"
+     style="display:none">
+    <g
+       transform="translate(356.14341,-279.07463)"
+       style="display:inline"
+       id="g3675-0-1">
+      <path
+         sodipodi:nodetypes="cccccccc"
+         id="path3623-6-8"
+         d="m 10.241922,433.09953 54.174272,91.3527 c 35.5362,2.75804 271.416346,-15.48098 287.867216,25.49376 6.95626,26.07143 -2.66941,69.23194 -28.65437,96.02762 -25.95352,26.76325 -99.00841,43.47027 -189.10496,47.37488 C 13.313888,697.38485 12.710019,658.29316 12.366422,597.74682 19.228203,554.0501 27.796685,547.81227 39.984675,525.51447 L 10.241922,433.09953 z"
+         style="fill:#4d4d9f;fill-opacity:1;stroke:none;display:inline" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3669-3-8"
+         y="568.29877"
+         x="31.86722"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan3673-9-7"
+           y="568.29877"
+           x="31.86722"
+           sodipodi:role="line">Electromagnetismo,,</tspan><tspan
+           y="618.29877"
+           x="31.86722"
+           sodipodi:role="line"
+           id="tspan3722-4">Relatividad </tspan><tspan
+           y="668.29877"
+           x="31.86722"
+           sodipodi:role="line"
+           id="tspan3832">Especial</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Quantum Mechanics"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:64px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Andale Mono Italic"
+       x="92.937759"
+       y="483.31949"
+       id="text2991"><tspan
+         sodipodi:role="line"
+         id="tspan2993"
+         x="92.937759"
+         y="483.31949">ħ</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="QM line"
+     style="display:inline">
+    <path
+       sodipodi:nodetypes="ccc"
+       id="path2842"
+       d="m 365.21423,149.72233 0,505.25344 -229.90729,-177.50121"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer14"
+     inkscape:label="QM title"
+     style="display:none">
+    <g
+       transform="translate(-0.67009503,-2.8920603)"
+       style="display:inline"
+       id="g3675">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path3623"
+         d="m 134.52408,481.9626 -32.92946,52.0498 c 67.40342,5.94476 135.44953,17.44847 130.6556,53.11201 -8.39454,51.08064 -33.31726,50.61404 -98.78838,56.29877 C 56.865755,638.96161 6.3365746,626.42594 16.615385,568.00408 22.414925,546.61441 25.672204,532.9409 78.225336,525.51447 L 134.52408,481.9626 z"
+         style="fill:#4d4d9f;fill-opacity:1;stroke:none;display:inline" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3669"
+         y="572.54773"
+         x="40.365147"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           id="tspan3673"
+           y="572.54773"
+           x="40.365147"
+           sodipodi:role="line">Mecánica</tspan><tspan
+           y="622.54773"
+           x="40.365147"
+           sodipodi:role="line"
+           id="tspan3718">cuántica</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer9"
+     inkscape:label="general-relativity"
+     style="display:inline">
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path2850"
+       d="M 904.542,577.66541 904.37734,126.23764 366.69412,150.5842 365.74875,657.43457 904.542,577.66541 z"
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer13"
+     inkscape:label="GR title"
+     style="display:inline">
+    <g
+       transform="translate(782.10191,-356.6182)"
+       style="display:inline"
+       id="g3675-0-7">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path3623-6-0"
+         d="m 122.83943,487.2738 47.80083,45.67636 c 35.5362,2.75804 57.90597,-1.67186 67.9834,32.92944 12.85028,61.70304 -22.69485,71.85885 -105.16182,77.54358 C 56.865755,638.96161 6.3365746,626.42594 16.615385,568.00408 35.161813,525.3696 37.356851,525.50522 137.71082,531.88791 L 122.83943,487.2738 z"
+         style="fill:#4d4d9f;fill-opacity:1;stroke:none;display:inline" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3669-3-3"
+         y="568.29877"
+         x="31.86722"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="568.29877"
+           x="31.86722"
+           sodipodi:role="line"
+           id="tspan3722-3">Relatividad</tspan><tspan
+           y="618.29877"
+           x="31.86722"
+           sodipodi:role="line"
+           id="tspan3761">General</tspan></text>
+    </g>
+  </g>
+  <g
+     style="display:inline"
+     inkscape:label="QFT"
+     id="g2859"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m 365.77061,150.35568 -0.6946,504.6049 -228.64092,-176.91686 0,-408.8531 229.3355,81.16506 2e-5,0 z"
+       id="path2861"
+       sodipodi:nodetypes="cccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer15"
+     inkscape:label="QFT title"
+     style="display:inline">
+    <g
+       transform="translate(16.226392,-416.6348)"
+       style="display:inline"
+       id="g3675-0-7-3">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path3623-6-0-9"
+         d="m 122.83943,487.2738 36.11618,42.48964 c 35.5362,2.75804 134.3873,-3.79634 144.46473,30.80496 12.85028,61.70304 -86.42929,71.85885 -168.89626,77.54358 C 57.927996,633.65041 -4.285832,622.17698 5.9929784,563.75512 24.539406,521.12064 33.107888,520.19402 133.46186,526.57671 L 122.83943,487.2738 z"
+         style="fill:#4d4d9f;fill-opacity:1;stroke:none;display:inline" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3669-3-3-8"
+         y="568.29877"
+         x="31.86722"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="568.29877"
+           x="31.86722"
+           sodipodi:role="line"
+           id="tspan3761-3">Teoría Cuántica</tspan><tspan
+           y="618.29877"
+           x="31.86722"
+           sodipodi:role="line"
+           id="tspan3888">de Campos</tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer16"
+     inkscape:label="QG title"
+     style="display:inline">
+    <g
+       transform="translate(765.10606,-502.67629)"
+       style="display:inline"
+       id="g3675-0-7-1">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path3623-6-0-0"
+         d="M -162.90331,557.38168 8.1174385,541.44808 C 29.84451,517.65011 36.28067,513.22021 93.096689,509.58085 257.84739,497.98928 248.85826,549.57248 234.3747,575.43978 201.33048,615.59232 203.91333,607.30561 140.89754,607.30698 73.402477,605.03765 38.419092,603.04879 1.7440152,561.63065 L -162.90331,557.38168 z"
+         style="fill:#4d4d9f;fill-opacity:1;stroke:none;display:inline" />
+      <text
+         sodipodi:linespacing="125%"
+         id="text3669-3-3-3"
+         y="544.54773"
+         x="50.871368"
+         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="544.54773"
+           x="50.871368"
+           sodipodi:role="line"
+           id="tspan3761-4">Gravedad </tspan><tspan
+           y="594.54773"
+           x="50.871368"
+           sodipodi:role="line"
+           id="tspan2923">cuántica</tspan></text>
+    </g>
+  </g>
+</svg>

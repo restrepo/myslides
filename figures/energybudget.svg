@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="366.6492"
+   height="552.06433"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="energybudget.svg"
+   style="display:inline">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 384 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1024 : 384 : 1"
+       inkscape:persp3d-origin="512 : 256 : 1"
+       id="perspective27" />
+    <inkscape:perspective
+       id="perspective2910"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective2997"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3084"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3104"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.81331101"
+     inkscape:cx="183.3246"
+     inkscape:cy="276.03217"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer7"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Universe"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-605.74002,-495.29294)"
+     style="display:inline">
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#fdfe00;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path6791"
+       sodipodi:cx="709.07416"
+       sodipodi:cy="117.85166"
+       sodipodi:rx="8.8388748"
+       sodipodi:ry="8.8388748"
+       d="m 717.91303,117.85166 c 0,4.88158 -3.9573,8.83888 -8.83887,8.83888 -4.88158,0 -8.83888,-3.9573 -8.83888,-8.83888 0,-4.88157 3.9573,-8.83887 8.83888,-8.83887 4.88157,0 8.83887,3.9573 8.83887,8.83887 z"
+       transform="matrix(0.79195601,0,0,0.79195601,163.67974,408.99685)" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman, Bold'"
+       x="744.42969"
+       y="508.83786"
+       id="text6793"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan6795"
+         x="744.42969"
+         y="508.83786">Stars</tspan><tspan
+         sodipodi:role="line"
+         x="744.42969"
+         y="528.83789"
+         id="tspan6797">Nonluminous</tspan><tspan
+         sodipodi:role="line"
+         x="744.42969"
+         y="548.83789"
+         id="tspan6799">Dark Matter</tspan><tspan
+         sodipodi:role="line"
+         x="744.42969"
+         y="568.83789"
+         id="tspan6803">Dark Energy</tspan><tspan
+         sodipodi:role="line"
+         x="744.42969"
+         y="588.83789"
+         id="tspan6801" /></text>
+    <path
+       transform="matrix(0.79195601,0,0,0.79195601,163.67974,428.86351)"
+       d="m 717.91303,117.85166 c 0,4.88158 -3.9573,8.83888 -8.83887,8.83888 -4.88158,0 -8.83888,-3.9573 -8.83888,-8.83888 0,-4.88157 3.9573,-8.83887 8.83888,-8.83887 4.88157,0 8.83887,3.9573 8.83887,8.83887 z"
+       sodipodi:ry="8.8388748"
+       sodipodi:rx="8.8388748"
+       sodipodi:cy="117.85166"
+       sodipodi:cx="709.07416"
+       id="path6805"
+       style="color:#000000;fill:#0000ff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="color:#000000;fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="path6807"
+       sodipodi:cx="709.07416"
+       sodipodi:cy="117.85166"
+       sodipodi:rx="8.8388748"
+       sodipodi:ry="8.8388748"
+       d="m 717.91303,117.85166 c 0,4.88158 -3.9573,8.83888 -8.83887,8.83888 -4.88158,0 -8.83888,-3.9573 -8.83888,-8.83888 0,-4.88157 3.9573,-8.83887 8.83888,-8.83887 4.88157,0 8.83887,3.9573 8.83887,8.83887 z"
+       transform="matrix(0.79195601,0,0,0.79195601,163.67974,448.73018)" />
+    <path
+       transform="matrix(0.79195601,0,0,0.79195601,163.67974,468.59685)"
+       d="m 717.91303,117.85166 c 0,4.88158 -3.9573,8.83888 -8.83887,8.83888 -4.88158,0 -8.83888,-3.9573 -8.83888,-8.83888 0,-4.88157 3.9573,-8.83887 8.83888,-8.83887 4.88157,0 8.83887,3.9573 8.83887,8.83887 z"
+       sodipodi:ry="8.8388748"
+       sodipodi:rx="8.8388748"
+       sodipodi:cy="117.85166"
+       sodipodi:cx="709.07416"
+       id="path6809"
+       style="color:#000000;fill:#666666;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       sodipodi:type="arc" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:Andale Mono"
+       x="725.67773"
+       y="1045.6307"
+       id="text6896"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan6898"
+         x="725.67773"
+         y="1045.6307"
+         style="font-size:8px">Adapted from Murayama, SUSY 2011</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="guide"
+     style="display:none"
+     transform="translate(-605.74002,-210.93076)">
+    <path
+       sodipodi:nodetypes="cc"
+       id="path3774"
+       d="m 775.49299,388.56387 c 0,0 3.31853,361.57974 1.39483,358.98133"
+       style="fill:none;stroke:#0000fa;stroke-width:1.00473094px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.63999999" />
+    <path
+       style="fill:none;stroke:#0000fa;stroke-width:1.00473094px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.63999999"
+       d="m 954.69757,589.56905 c 0,0 -359.1445,-42.0256 -356.32547,-43.60846"
+       id="path3789"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#0000fa;stroke-width:1.00473094px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.63999999"
+       d="m 786.76571,388.85544 c 0,0 -19.3918,361.07462 -21.14855,358.36055"
+       id="path6172"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#0000fa;stroke-width:1.00473094px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.63999999"
+       d="m 820.16357,393.95509 c 0,0 -86.70695,351.04533 -87.92402,348.05015"
+       id="path6174"
+       sodipodi:nodetypes="cc" />
+    <path
+       sodipodi:type="arc"
+       style="opacity:0.69874477;fill:#2b0000;fill-opacity:1;stroke:#460000;stroke-width:4;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline"
+       id="path2816"
+       sodipodi:cx="694.28571"
+       sodipodi:cy="428"
+       sodipodi:rx="200"
+       sodipodi:ry="211.42857"
+       d="m 894.28571,428 c 0,116.76878 -89.54305,211.42857 -200,211.42857 -110.45695,0 -200,-94.65979 -200,-211.42857 0,-116.76878 89.54305,-211.42857 200,-211.42857 110.45695,0 200,94.65979 200,211.42857 z"
+       transform="matrix(0.89133094,0,0,0.84315086,165.40031,207.37354)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="Dark Energy"
+     style="display:inline"
+     transform="translate(-605.74002,-210.93076)">
+    <path
+       sodipodi:nodetypes="ccscscscc"
+       id="path6748"
+       d="m 786.8906,559.64477 184.09551,24.3618 c -9.39581,51.88118 -28.83135,82.2495 -56.25411,107.728 -29.07648,27.01498 -67.13256,43.29557 -111.72154,46.81128 -49.11422,1.48309 -87.60695,-13.46149 -116.17335,-35.56728 -25.1075,-19.42916 -45.14265,-43.50796 -58.468,-77.58494 -21.90576,-56.47881 -14.04556,-114.21745 13.792,-158.48706 29.7808,-47.35991 78.55427,-79.50697 142.04446,-84.635 0,0 4.61156,179.97543 2.68503,177.3732 z"
+       style="fill:#1a1a1a;fill-opacity:1;stroke:none;display:inline" />
+    <path
+       style="fill:#666666;stroke:none;display:inline"
+       d="m 776.8906,567.54444 184.09551,24.3618 c -9.39581,51.88118 -28.83135,82.2495 -56.25411,107.728 -29.07648,27.01498 -67.13256,43.29557 -111.72154,46.81128 -49.11422,1.48309 -87.60695,-13.46149 -116.17335,-35.56728 -25.1075,-19.42916 -45.14265,-43.50796 -58.468,-77.58494 -21.90576,-56.47881 -14.04556,-114.21745 13.792,-158.48706 29.7808,-47.35991 78.55427,-79.50697 142.04446,-84.635 0,0 4.61156,179.97543 2.68503,177.3732 z"
+       id="path3819"
+       sodipodi:nodetypes="ccscscscc" />
+    <image
+       y="467.83533"
+       x="649.7193"
+       id="image3086"
+       height="100"
+       width="100"
+       xlink:href="file:///home/restrepo/texfile/talks/LHC/figures/Nobel_medal_small.png" />
+    <text
+       xml:space="preserve"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:100%;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,'"
+       x="777.87592"
+       y="637.58185"
+       id="text3090"
+       sodipodi:linespacing="100%"><tspan
+         sodipodi:role="line"
+         id="tspan3092"
+         x="781.87592"
+         y="637.58185"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,';fill:#ffffff">Nobel prize </tspan><tspan
+         sodipodi:role="line"
+         x="777.87592"
+         y="669.58185"
+         id="tspan3094"
+         style="font-size:32px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Times New Roman;-inkscape-font-specification:'Times New Roman,';fill:#ffffff">2011</tspan></text>
+    <image
+       style="display:inline"
+       y="265.90503"
+       x="861.62836"
+       id="image3086-8"
+       height="30"
+       width="30"
+       xlink:href="file:///home/restrepo/texfile/talks/LHC/figures/Nobel_medal_small.png" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Stars"
+     style="display:inline"
+     transform="translate(-605.74002,-210.93076)">
+    <path
+       id="path6209"
+       style="fill:#808000;fill-opacity:0.99607843;stroke:none;display:inline"
+       d="m 776.8906,567.54444 10,-8 c 1.92653,2.60223 8.29814,-177.53681 8.29814,-177.53681 -1.88552,-0.38071 -6.76751,0.0495 -9.58249,0.13361 l -10,8 1.28435,177.4032 z"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:#fdfe00;fill-opacity:1;stroke:none;display:inline"
+       d="m 776.8906,567.54444 -1.28435,-177.4032 c 2.81498,-0.0841 7.69697,-0.51432 9.58249,-0.13361 0,0 -6.37161,180.13904 -8.29814,177.53681 z"
+       id="path3706"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="baryons"
+     style="display:inline"
+     transform="translate(-605.74002,-210.93076)">
+    <path
+       id="path6742"
+       style="fill:#000080;fill-opacity:1;stroke:none;display:inline"
+       d="m 776.8906,567.54444 10,-8 c 1.92653,2.60223 43.73527,-173.90384 43.73527,-173.90384 -14.16528,-3.04981 -21.55038,-3.20228 -33.85817,-3.48204 l -10,8 -9.8771,177.38588 z"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:#0000ff;fill-opacity:1;stroke:none;display:inline"
+       d="m 776.8906,567.54444 9.8771,-177.38588 c 12.30779,0.27976 19.69289,0.43223 33.85817,3.48204 0,0 -41.80874,176.50607 -43.73527,173.90384 z"
+       id="path3772"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="DM"
+     style="display:inline"
+     transform="translate(-605.74002,-210.93076)">
+    <path
+       id="path6745"
+       style="fill:#800000;fill-opacity:1;stroke:none"
+       d="m 961.30711,590.37824 10,-8 C 982.23117,477.24627 908.62533,402.26438 832.7277,386.0761 l -10,8 -45.8371,173.46834 c 1.92653,2.60223 184.41651,22.8338 184.41651,22.8338 z"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       sodipodi:nodetypes="cccc"
+       id="path3781"
+       d="M 776.8906,567.54444 822.7277,394.0761 c 75.89763,16.18828 149.50347,91.17017 138.57941,196.30214 0,0 -182.48998,-20.23157 -184.41651,-22.8338 z"
+       style="fill:#ff0000;fill-opacity:1;stroke:none" />
+  </g>
+</svg>
