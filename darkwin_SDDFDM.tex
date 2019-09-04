@@ -116,32 +116,8 @@ Phenomenology Group}%
 
 % At one loop the required Dirac fermions must be in hidden dark sector.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-%\include{evidencesila}
-%%%%%%%%%%
-
-
 
 \section{Dark sectors}
-
-\begin{frame}[fragile,allowframebreaks]
-In the following discussion we use the following doublets in Weyl Notation
-\begin{align}
-  H=&
-  \begin{pmatrix}
-    H^+\\
-    H^0
-  \end{pmatrix},&
-  L_i=&
-  \begin{pmatrix}
-    \nu_{Li}\\
-    e_{Li}^{-}
-  \end{pmatrix}.
-\end{align}
-corresponding to the Higgs doublet and the lepton doublets respectively.
-\end{frame}
-
-
 
 \begin{frame}
 \begin{picture}(320,250)
@@ -331,7 +307,638 @@ corresponding to the Higgs doublet and the lepton doublets respectively.
 \end{frame}
 
 
-\end{document}
+\section{Dark matter and unification}
+
+
+
+
+\begin{frame}
+  \frametitle{Unification: $\operatorname{SO}(10)$}
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      \begin{small}
+  \begin{align*}
+   \includegraphics[scale=0.07]{mice}= \mathbf{16}_{F_{i}}=
+    \begin{pmatrix}
+      \color{green}\left(u_{R}\right)^{\dagger} \\
+      \color{blue}\left( u_{R}\right)^{\dagger} \\    
+      \color{red}\left(  u_{R}\right)^{\dagger}\\    
+      \color{green}u_{L}\\
+      \color{blue}u_{L}\\
+      \color{red}u_{L}\\
+      \color{green}\left(d_{R}\right)^{\dagger} \\    
+      \color{blue}\left( d_{R}\right)^{\dagger} \\    
+      \color{red} \left( d_{R}\right)^{\dagger} \\
+      \color{green}d_{L}\\
+      \color{blue}d_{L}\\
+      \color{red}d_{L}\\
+      \nu_L\\
+      e_L\\
+      \left( e_{R} \right)^{\dagger}\\
+      \only<1>{N}\only<2>{\left( \nu_R \right)^{\dagger}}\\
+    \end{pmatrix}_{i} \qquad\Rightarrow \mathcal{L}_{SM}\supset h\, \mathbf{16}_F\times\mathbf{16}_{F}\times \mathbf{10}_{S}+\text{h.c}
+  \end{align*}
+      \end{small}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+  \hfill\includegraphics[scale=0.2]{sym}      
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{$\operatorname{SO}(10)$ breakings}
+  \begin{align*}
+    \operatorname{SO}(10) \to
+  \begin{cases}
+    \operatorname{SU}(5)  \times \operatorname{U}(1)_X\, \text{\hspace{5cm}with }
+    \begin{cases}
+      \text{$Z_X$ at GUT: } \operatorname{U}(1)_X\to Z_N\\
+      \text{$Z_X$ at EW}
+    \end{cases}
+\\
+    \operatorname{SU}(3)_c \times \operatorname{SU}(2)_R\times \operatorname{SU}(2)_L \times \operatorname{U}(1)_Y \times \operatorname{U}(1)_{B-L}
+  \end{cases}
+  \end{align*}
+\end{frame}
+
+\section{Majorana neutrinos case}
+
+
+\begin{frame}
+\frametitle{Not-susy $\operatorname{SO}(10)\to SU(5)\to \operatorname{SU}(3)_C\times SU(2)_L \times \operatorname{U}(1)_Y \times Z_2 $}
+\begin{picture}(320,250)
+%\includegraphics[scale=0.2]{tocrs}
+ %   
+ % \only<1->{\put(-11,10){\includegraphics[scale=0.4]{tocrs}}}%
+ % 
+ \only<1->{\put(-10,250){
+  \begin{columns}[T,onlytextwidth]
+    \column{0.5\textwidth}
+      \metroset{block=fill}
+      \begin{block}{Standard Model: $Z_2$-even }
+        Fermions: $\boldsymbol{16}_F$
+
+        Scalars: $\boldsymbol{10}_H,\boldsymbol{45}_H\cdots$
+      \end{block}
+
+
+    \column{0.5\textwidth}
+
+      \metroset{block=fill}
+
+
+      \begin{alertblock}{New $Z_2$-odd particles}
+       \color{red}
+        $\boldsymbol{10}_F,\boldsymbol{45}_F,\cdots$
+       
+        $\boldsymbol{16}_H,\cdots$
+      \end{alertblock}
+  \end{columns}
+}
+}
+\only<1->{\put(-10,190){
+    \begin{minipage}[t]{1.0\textwidth}
+ \alert{Lightest Odd Particle (LOP)} may be  a suitable dark matter candidate, \alert{and can improve gauge coupling unification }
+    \end{minipage}
+}
+}
+\only<1>{\put(0,10){
+\includegraphics[scale=0.45]{smunif}
+}
+}
+\only<2->{\put(0,80){
+  \begin{overpic}[height=3cm%,grid
+            ]{table1}
+\put(16,0){\tikz \draw[red,thick,rounded corners,fill=orange,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}
+\put(62,0){\tikz \draw[red,thick,rounded corners,fill=orange,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}
+\put(38,-7){\tikz \draw[red,thick,rounded corners,fill=orange,fill opacity=0.2] (0,0) rectangle (1.,0.5);}
+\only<5>{\put(18,-7){\tikz \draw[red,thick,rounded corners,fill=orange,fill opacity=0.2] (0,0) rectangle (0.9,0.5);}}
+\only<3->{\put(16,6){\tikz \draw[green,thick,rounded corners,fill=green,fill opacity=0.2] (0,0) rectangle (1.,0.5);}}
+\only<3->{\put(50,6){\tikz \draw[green,thick,rounded corners,fill=green,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}}
+\only<3-4>{\put(16,13){\tikz \draw[blue,thick,rounded corners,fill=blue,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}}
+\only<3-4>{\put(55,13){\tikz \draw[blue,thick,rounded corners,fill=blue,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}}
+\only<5>{\put(16,13){\tikz \draw[orange,thick,rounded corners,fill=orange,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}}
+\only<4->{\put(30,5){\tikz \draw[black,thick,rounded corners,fill=black,fill opacity=0.2] (0,0) rectangle (1.,0.6);}}
+\only<4->{\put(32,8){\parbox[t]{2cm}{$\mathbf{2}_{1/2}^{S}$}}}
+  \end{overpic}
+  \begin{overpic}[height=3cm%,grid
+            ]{table2}
+\only<4->{\put(30,30){\tikz \draw[black,thick,rounded corners,fill=black,fill opacity=0.2] (0,0) rectangle (0.5,0.5);}}
+  \end{overpic}
+}
+}
+\only<2-5>{\put(0,70){
+  \begin{minipage}[t]{1.0\linewidth}
+    $SU(3)_{C}: \mathbf{3}\; (T),\ \mathbf{6},\ \mathbf{8}\;(\Lambda) $
+  \end{minipage}
+}
+%\put(40,38){\color{red}${}^{2}$}
+}
+\only<2>{\put(0,70){
+  \begin{minipage}[t]{1.0\linewidth}
+    \begin{align*}
+      m_{3_0}=2.7\ \text{TeV},\qquad m_{\Lambda}\sim 10^{10}\ \text{TeV},\qquad m_{\text{GUT}}\sim 10^{16}\ \text{GeV}\,.
+    \end{align*}
+    arXiv:0912.1545 [PRD] (Frigerio-Hambye) %check for second doublet
+  \end{minipage}
+}
+}
+\only<3>{\put(0,70){
+  \begin{minipage}[t]{1.0\linewidth}
+\centering
+     \alert{Split-SUSY like}
+
+    %uniftwo451E16
+    arXiv:1509.06313 [PRD] with C. Arbelaez, R. Longas, and O. Zapata.
+  \end{minipage}
+}
+}
+%%%circle
+\invisible<1-3>{\put(145,92){      \metroset{block=fill}
+    \begin{minipage}[t]{0.68\linewidth}
+      \begin{exampleblock}{\only<4>{Radiative hybrid seesaw (Parida {%\tiny 
+1106.4137}) or} 1509.06313}
+      \centering
+      \only<4>{Partial  Split-}SUSY-like spectrum: {\color{red}bino}-higgsino-{\color{red}wino}
+
+               \hfill             + $\color{red}\hspace{3cm}\downarrow$\hspace{3cm}    
+        
+         $\boldsymbol{10}'_H$ with fermion DM or, \hspace{0.5cm}  \color{red}
+         $\boldsymbol{16}_H,\cdots$ with scalar DM 
+        
+      \end{exampleblock}
+    \end{minipage}
+}
+}
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{{\color{red}Singlet-Doublet}-Triplet fermion dark-matter}
+The most general $\text{SO}(10)$ invariant Lagrangian contains the following Yukawa terms
+\begin{align*}
+-\mathcal{L} & \supset  Y{\bf 10}_F {\bf 45}_F {\bf 10}_H + M_{\mathbf{45}_F}{\bf 45}_F{\bf 45}_F + M_{\mathbf{10}_F}{\bf 10}_F{\bf 10}_F
+\invisible<1-2>{+{\mathcal{L}(\alert{\mathbf{10}_\Phi}\invisible<3>{\ \text{or}\   \mathbf{16}_\Phi})}.} 
+\end{align*}
+
+
+
+  \begin{columns}
+    \begin{column}{0.47\textwidth}
+Basis $\boldsymbol{\psi}^0=\left({\color{red}N},\Sigma^0,{\color{red}\psi_L^0},{\color{red}\left( \psi_R^0 \right)^{\dagger}}\right)^T$ 
+\tiny
+\begin{align*}
+  &\mathcal{M}_{\boldsymbol{\psi}^0}=\nonumber\\
+&\begin{pmatrix}
+{\color{red}M_N}          &   0       &{\color{red}-y\,c_\beta v/\sqrt{2}}&{\color{red}y\,s_\beta v/\sqrt{2}} \\
+0 & M_\Sigma &  f\,c_{\beta'}v/\sqrt{2} & -f\,s_{\beta'}v/\sqrt{2}\\
+{\color{red}-y\,c_\beta} v/\sqrt{2} &  f\,c_{\beta'}v/\sqrt{2}  & 0            & {\color{red}}-M_D\\
+{\color{red}y\,s_\beta v/\sqrt{2}}& -f\,s_{\beta'}v/\sqrt{2}&{\color{red}}  -M_D                &  0  \\
+\end{pmatrix},
+\end{align*}
+    \end{column}
+    \begin{column}{0.53\textwidth}
+      %\only<2>{\includegraphics[scale=0.38]{rumor}}
+      \invisible<1>{%
+      \only<1-2>{\includegraphics[scale=0.38]{GCE}}%\only<3>{\includegraphics[scale=0.38]{GCE2016}}%
+      \only<3>{\includegraphics[scale=0.53]{uniftwo451E16}} 
+      }%
+    \invisible<1>{\only<1-2>{\tiny  \quad \\ S. Horiuchi, O. Macias, DR, A. Rivera, O. Zapata, 1602.04788 (JCAP)}%
+                 \only<3>{\tiny \quad \\   (See previous  arXiv:1509.06313 [PRD]):  Split-SUSY:  like $\alert{M_{\Phi}}=2\ \text{TeV}$}%
+                 }
+    \end{column}
+  \end{columns}
+
+\vspace{-1.5cm}
+%  \invisible<2->
+{ $\mathbf{10}_F \to \psi_L,\left( \psi_R \right)^{\dagger}$\\
+                  $\mathbf{45}_F \to \Sigma,\Lambda$\\
+                  $\mathbf{45}'_F \to N$\\
+  \invisible<1->{\tiny arXiv:1511.06495 [PR], N. Arkani-Hamed, T. Han, M. Mangano, LT Wang: signals at a 100~TeV $p$-$p$ collider
+                  }
+}
+\end{frame}
+
+
+
+
+
+\begin{frame}
+  
+\frametitle{Not-susy $\operatorname{SO}(10)\to \operatorname{SU}(3)_c \times \operatorname{SU}(2)_R\times \operatorname{SU}(2)_L \times \operatorname{U}(1)_Y \times \operatorname{U}(1)_{B-L} $}
+
+\textsl{Fermionic triplet dark matter in an SO(10)-inspired left right model}, with 
+C. Arbeláez and M. Hirsch, arXiv:1703.08148 [PRD]
+
+\end{frame}
+
+
+
+% \section{Connect with Enrico work}
+% \begin{frame}
+%   \frametitle{Asymmetric}
+  
+% \end{frame}
+
+%\section{Triplets}
+
+\begin{frame}
+  \frametitle{\only<1>{Minimal Left-Right Symmetric Standard Model}\only<2>{Left-singlet  right-triplet DM}}
+  \begin{center}
+    \rowcolors{1}{RoyalBlue!20}{}
+      \begin{tabular}{c|c|c|c|c}
+\hline
+%From Slansky: See SO(10) -> SU(2)xSU(2)*SU(4) and SU(4)-> SU(3)xU(1)
+{Field} & Multiplicity & $3_{c}2_{L}2_{R}1_{B-L}$& Spin & $\text{SO}(10)$ origin\\
+\hline
+$Q$ & 3 & $(3,2,1,+\tfrac{1}{3})$ & 1/2 &16\\
+$Q^{c}$ & 3 & $(\bar 3,1,2,-\tfrac{1}{3})$ &1/2& 16\\
+$L$  & 3 & $(1,2,1,-1)$& 1/2& 16\\
+$L^{c}$& 3 & $(1,1,2,+1)$  & 1/2& 16\\
+\hline
+$\Phi$ & 1 & $(1,2,2,0)$ & 0& $10$\\
+$\Delta_R$ & 1 & $(1,1,3,-2)$ & 0& $126$\\ %DEBUG: check
+\hline 
+\invisible<1-2>{%
+$\Psi_{1130}$ & 1 & $(1,1,3,0)$ & 1/2& $45$\\
+}%
+\invisible<1>{%
+$\Psi_{1132}$ & 1 & $(1,1,3,2)$ & 1/2& $126$\\
+$\Psi_{113-2}$ & 1 & $(1,1,3,-2)$ & 1/2& $\overline{126}$\\
+\hline 
+}%
+\invisible<1-2>{%
+$\Psi_{1310}$ & 1 & $(1,3,1,0)$ & 1/2& $45$\\
+$\Psi_{8110}$ & 1 & $(1,1,8,0)$ & 1/2& $45$\\
+$\Psi_{321\frac{1}{3}}$ & 1 & $(3,2,1,1/3)$ & 1/2& $16$\\
+$\Psi_{321-\frac{1}{3}}$ & 1 & $(1,2,3,-1/3)$ & 1/2& $\overline{16}$\\
+\hline 
+}%
+\end{tabular}
+  \end{center}
+\invisible<2->{\phantom{aa}}
+\end{frame}
+
+\begin{frame}
+  \frametitle{$\Omega h^{2} = 0.1199 \pm 0.0027$ at $3\sigma$}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.9]{Fig5}  %  
+    \caption{Proper relic density scan: $0.5<v_R/\text{TeV}<50$}
+  \end{figure}
+
+   
+\end{frame}
+
+\begin{frame}
+  \frametitle{Mixed Left-singlet right-triplet  DM}
+  \begin{center}
+    \rowcolors{1}{RoyalBlue!20}{}
+      \begin{tabular}{c|c|c|c|c}
+\hline
+%From Slansky: See SO(10) -> SU(2)xSU(2)*SU(4) and SU(4)-> SU(3)xU(1)
+{Field} & Multiplicity & $3_{c}2_{L}2_{R}1_{B-L}$& Spin & $\text{SO}(10)$ origin\\
+\hline
+$Q$ & 3 & $(3,2,1,+\tfrac{1}{3})$ & 1/2 &16\\
+$Q^{c}$ & 3 & $(\bar 3,1,2,-\tfrac{1}{3})$ &1/2& 16\\
+$L$  & 3 & $(1,2,1,-1)$& 1/2& 16\\
+$L^{c}$& 3 & $(1,1,2,+1)$  & 1/2& 16\\
+\hline
+$\Phi$ & 1 & $(1,2,2,0)$ & 0& $10$\\
+$\Delta_R$ & 1 & $(1,1,3,-2)$ & 0& $126$\\ %DEBUG: check
+\hline 
+\invisible<0>{%
+$\Psi_{1130}$ & 1 & $(1,1,3,0)$ & 1/2& $45$\\
+}%
+\invisible<0>{%
+$\Psi_{1132}$ & 1 & $(1,1,3,2)$ & 1/2& $126$\\
+$\Psi_{113-2}$ & 1 & $(1,1,3,-2)$ & 1/2& $\overline{126}$\\
+\hline 
+}%
+\invisible<1-2>{%
+$\Psi_{1310}$ & 1 & $(1,3,1,0)$ & 1/2& $45$\\
+$\Psi_{8110}$ & 1 & $(1,1,8,0)$ & 1/2& $45$\\
+$\Psi_{321\frac{1}{3}}$ & 1 & $(3,2,1,1/3)$ & 1/2& $16$\\
+$\Psi_{321-\frac{1}{3}}$ & 1 & $(1,2,3,-1/3)$ & 1/2& $\overline{16}$\\
+\hline 
+}%
+\end{tabular}
+  \end{center}
+\invisible<2->{\phantom{aa}}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Setup}
+
+\begin{equation}
+\Psi_{1132} = 
+ \begin{pmatrix}
+  \Psi^{+}/\sqrt{2} & \Psi^{++}  \\
+  \Psi^{0} & -\Psi^{+}/\sqrt{2} \\
+ \end{pmatrix}, \hspace{0.8cm}
+{\bar\Psi}_{113-2} = 
+ \begin{pmatrix}
+  \Psi^{-}/\sqrt{2} & \overline{\Psi}^{0}  \\
+  \Psi^{--} & -\Psi^{-}/\sqrt{2} \\
+ \end{pmatrix}.
+\end{equation}
+
+
+  \begin{align}
+L\supset &\alert{M_{11}}\operatorname{Tr}(\Psi_{1130}\Psi_{1130})+\alert{M_{23}}\operatorname{Tr}(\Psi_{1132}{\bar\Psi}_{113-2})\nonumber\\
+&+{\color{blue}\lambda_{13}}\operatorname{Tr}({\color{blue}\Delta_{R}}{\bar\Psi}_{113-2}\Psi_{1130})
++{\color{blue}\lambda_{12}}\operatorname{Tr}(\Delta^{\dagger}_{R}\Psi_{1132} \Psi_{1130})\, ,
+\end{align}
+
+\begin{align}
+{\color{blue}\tan\gamma}=&\frac{\lambda_{13}}{\lambda_{12}}\,,& {\color{blue} \lambda}=&\sqrt{\lambda_{12}^2+\lambda_{13}^2}\,.
+\end{align}
+
+Blind spot at
+\begin{align}
+  M_{23}\sin2\gamma - M_{\text{DM}}=0
+\end{align}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Proper relic density scan}
+\def\fh{5cm}
+\begin{figure}
+  \centering
+  \includegraphics[height=\fh]{lambda}
+\includegraphics[height=\fh,width=4cm]{ssi_Mdm}
+  \caption{$M_{11}=50\ \text{TeV}$ $2.7<M_{23}/\text{TeV}<3.1$ \qquad  (Right:  $\tan\gamma>5$)}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{$\Omega h^{2} = 0.1199 \pm 0.0027$ at $3\sigma$}
+  \begin{figure}
+    \centering
+    %\only<1>{\includegraphics[scale=0.78]{Fig5}}%
+    \only<1>{\includegraphics[width=0.55\textwidth]{IIMDMvsMZRExa5}}
+    \caption{\invisible<1>{Proper relic density scan:  $v_{R}: [2, 50]$ TeV, $M_{23}:[0.2, 50]$ TeV, $M_{11}: 50$ TeV,  $\tan\gamma=-1$ and $\lambda=0.14$.}}
+  \end{figure}
+
+ \end{frame}
+ \begin{frame}
+    \frametitle{Direct detection cross section}
+    \begin{figure}
+      \centering
+      \includegraphics[width=0.53\textwidth]{MDMvsDDExa5} 
+\includegraphics[width=0.53\textwidth]{IIMZRvsDDExa5} 
+      \caption{ $v_{R}: [2, 50]$ TeV, $M_{23}:[0.2, 50]$ TeV, $M_{11}: 50$ TeV,  $\tan\gamma=-1$ and $\lambda=0.14$.}
+    \end{figure}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Unification}
+  \begin{center}
+    \rowcolors{1}{RoyalBlue!20}{}
+      \begin{tabular}{c|c|c|c|c}
+\hline
+%From Slansky: See SO(10) -> SU(2)xSU(2)*SU(4) and SU(4)-> SU(3)xU(1)
+{Field} & Multiplicity & $3_{c}2_{L}2_{R}1_{B-L}$& Spin & $\text{SO}(10)$ origin\\
+\hline
+$Q$ & 3 & $(3,2,1,+\tfrac{1}{3})$ & 1/2 &16\\
+$Q^{c}$ & 3 & $(\bar 3,1,2,-\tfrac{1}{3})$ &1/2& 16\\
+$L$  & 3 & $(1,2,1,-1)$& 1/2& 16\\
+$L^{c}$& 3 & $(1,1,2,+1)$  & 1/2& 16\\
+\hline
+$\Phi$ & 1 & $(1,2,2,0)$ & 0& $10$\\
+$\Delta_R$ & 1 & $(1,1,3,-2)$ & 0& $126$\\ %DEBUG: check
+\hline 
+\invisible<0>{%
+$\Psi_{1130}$ & 1 & $(1,1,3,0)$ & 1/2& $45$\\
+}%
+\invisible<0>{%
+$\Psi_{1132}$ & 1 & $(1,1,3,2)$ & 1/2& $126$\\
+$\Psi_{113-2}$ & 1 & $(1,1,3,-2)$ & 1/2& $\overline{126}$\\
+\hline 
+}%
+\invisible<1>{%
+$\Psi_{1310}$ & 1 & $(1,3,1,0)$ & 1/2& $45$\\
+$\Psi_{8110}$ & 1 & $(1,1,8,0)$ & 1/2& $45$\\
+$\Psi_{321\frac{1}{3}}$ & 1 & $(3,2,1,1/3)$ & 1/2& $16$\\
+$\Psi_{321-\frac{1}{3}}$ & 1 & $(1,2,3,-1/3)$ & 1/2& $\overline{16}$\\
+\hline 
+}%
+\end{tabular}
+  \end{center}
+\invisible<2->{\phantom{aa}}
+\end{frame}
+
+
+
+
+\begin{frame}
+  \frametitle{Unification quality}
+  \centering
+  \includegraphics[width=0.53\textwidth]{ParamSpaceI}
+
+  NP: $\Psi_{1310}$
+%\includegraphics[width=0.42\textwidth]{ParamSpaceII} 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Remarks}
+  In addition to accommodate usual simplified dark matter models,  Left-right symmetric standard models have additional DM portals:
+
+  New $\Delta_R$ portal for direct detection of left-singlet right-triplet mixed dark matter, in companion with left-singlets charged and doubly charged fermions.
+
+Next: Search for them in compressed spectra scenarios at the LHC
+%Excluidos por LEP?
+\end{frame}
+
+\section{Dirac neutrinos case: $\operatorname{SO}(10)\to \operatorname{SU}(5)\times U(1)_X $}
+
+
+
+
+
+
+\begin{frame}
+  \frametitle{From {\only<1>{\color{red}}1210.6350} and
+    {\only<2>{\color{red}}1805.02025}: $\Delta N_{\text{eff}}=3 \left( T_{\nu_R}/T_{\nu_L} \right)^4$    }
+  \begin{columns}
+    \begin{column}{0.55\textwidth}
+      \footnotesize
+      \begin{align*}
+{\color{blue} \Gamma_{\nu_R}(T)}&=n_{\nu_R}(T)\sum_f \langle \sigma_f(\nu_R \bar{\nu}_R\to f\bar{f})v \rangle \\ 
+&= \sum_f \frac{g_{\nu_R}^2}{n_{\nu_R}}\int \frac{d^3 p }{(2\pi)^3} \frac{d^3 q }{(2\pi)^3}
+f_{\nu_R}(p)f_{\nu_R}(q) \sigma_f(s) (1-\cos\theta),
+      \end{align*}
+      \begin{align*}
+        s=&2pq(1-\cos\theta),& f_{\nu_R}(k)=& 1/(e^{k/T}+1)\\
+        n_{\nu_R}(T)=&g_{\nu_R}\int \frac{d^3k}{(2\pi)^3}f_{\nu_R}(k),& \text{with } g_{\nu_R}=&2\\
+        \sigma_f(s)\simeq&\frac{ N_C^f ( { \only<1>{\color{black}}\only<2>{\color{red}}  Q_{BL}^f}   )^2 Q^2 s}{12\pi}\left(\frac{g'}{M_{Z'}}\right)^4,&
+       \text{In the limit } M^2_{Z'}\gg& s\,.
+      \end{align*}
+with three right-handed neutrinos, the Hubble parameter is 
+\begin{equation*}
+  {\color{blue}H(T)}=\sqrt{\frac{4\pi^3G_N \left[ {  \only<1>{\color{red}}\only<2>{\color{black}}  g(T)}+{21}/{4} \right]}{45}}\,T^2.
+\end{equation*}
+
+The right-handed neutrinos decouple when
+\begin{align*}
+  \color{blue}
+  \Gamma_{\nu_R}(T^{\nu_R}_\text{dec})=H(T^{\nu_R}_\text{dec}).
+\end{align*}
+
+    \end{column}
+    \begin{column}{0.45\textwidth}
+      \centering
+      \invisible<1>{\includegraphics[scale=0.15]{tree-level-dirac-seesaw}
+
+      {\small
+          \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{cccccc}\hline
+   $ \nu_{R3} $
+  &$\nu_{R2} $&$\nu_{R1}$&$\psi_L$&$ \psi_R  $&$S$\\ \hline
+  $\color{red}-4$&$\color{red}-4$&$\color{red}+5$& $\color{black}-1$ & $\color{black}-1$ & $+3$\\\hline
+  \end{tabular}
+
+  {\tiny E. Ma, R. Srivastava: arXiv:1411.5042 [PLB]}
+}}
+
+\only<1>{\includegraphics[height=4.1cm]{gT}
+
+  {\tiny A. Solaguren-Beascoa, M. C. Gonzalez-Garcia: arXiv:{\color{red}1210.6350} [PLB]
+
+\qquad
+  }
+}%
+\only<2>{\includegraphics[height=4.1cm]{DNv2}
+  
+  {\tiny Z.-L. Han, W. Wang: arXiv:{\color{red}1805.02025} [EJPC]
+
+    (also: Planck 1807.06209, Riess \emph{et al} 1903.07603 )
+  }
+}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\section{One-loop realization of $\mathcal{L}_{5-D}$ with total $L$}
+\begin{frame}
+\begin{picture}(320,250)
+\only<1>{\put(-24,-21){\begin{overpic}[scale=0.352]{u11}\end{overpic}}}%
+\only<2>{\put(-24,-21){\begin{overpic}[scale=0.352]{u12}\end{overpic}}}%
+\only<3>{\put(-24,-21){\begin{overpic}[scale=0.352]{u13}\end{overpic}}}%
+\only<4>{\put(-24,-21){\begin{overpic}[scale=0.352]{u14}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\only<1>{One loop topologies $\operatorname{U}(1)_{B-L}\oplus Z_2 \oplus Z_2 $}\only<2->{One loop topologies $\operatorname{U}(1)_{B-L}$ only!
+   \invisible<2>{\scriptsize with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  } }}
+\begin{picture}(320,250)
+  \only<1>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac1}\end{overpic}}}%
+  \only<1>{\put(280,130){\tiny Chang-Yuan Yao and Gui-Jun Ding, arXiv:1802.05231 [PRD]  }}%
+  \only<2>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac2}\end{overpic}}}%
+  \only<2>{\put(280,130){\tiny with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }}%
+    \only<2-4>{\put(-20,130){\tiny
+        \begin{minipage}{0.3\linewidth}
+          \begin{align*}
+            \psi_{L,R}\to&\text{Singlet fermions \only<3>{(vector-like)}\only<4>{(quiral)}  }\\
+            \invisible<3>{\Psi_{L,R}\to&\text{Vector-like doublet fermions}\invisible<2-4>{:\qquad {\color{red}10/5}}   }\\
+            \sigma\to&\text{Singlet scalar}\invisible<2-4>{:\qquad 15/5}   \\
+            %\invisible<5>{\eta\to&\text{Doublet scalar}   }
+          \end{align*}
+        \end{minipage}
+}}%
+\only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
+% 
+\only<3>{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: Shaikh Saad arXiv:1902.07259 [NPB]  }}%
+\only<3-4>{\put(240,135){\tiny
+    \begin{minipage}{0.3\linewidth}
+      \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|cccccc}\hline
+ Fields: $f_i$  &  $\left( \nu_{R3} \right)^{\dagger}$
+  &$\left( \nu_{R2} \right)^{\dagger}$&$\left( \nu_{R1} \right)^{\dagger}$&$\psi_L$&$\left( \psi_R \right)^{\dagger}$&$S$\\ \hline
+  (A)&$\color{Yellow}+4$&$\color{Yellow}+4$&$-5$& $\color{red}-r$ & $\color{red}r$ & $+3$\\
+    \invisible<3>{(B) &$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{2}{5}}$&$\displaystyle{\frac{7}{5}}$&$\color{red}\displaystyle{-\frac{10}{5}}$&$\color{blue}\displaystyle{+\frac{3}{5}}$}\\
+  \end{tabular}
+         \end{minipage}
+       }}%
+\only<3-4>{\put(300,55){\tiny
+    \begin{minipage}{0.3\linewidth}
+       \begin{center}
+         \textbf{Anomaly cancellation conditions}
+         \begin{align*}
+           \sum_i f_i=& 3 \\
+           \sum_i f_i^3=& 3 \\
+         \end{align*}
+  \end{center}
+      
+         \end{minipage}
+       }}%
+%  effective number of relativistic degrees of reedom Neff for neutrinos
+ \only<4>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac4}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{    Scotogenic Dirac from $\operatorname{SO}(10)$ E. Ma arXiv:1901.09091 [PLB]    }
+\begin{picture}(320,250)
+\only<1>{\put(-20,130){\tiny
+        \begin{minipage}{0.3\linewidth}
+          \begin{align*}
+            \psi_{L,R}\to&\text{Singlet fermions \only<1>{(quiral)}  }\\
+            \invisible<1>{\Psi_{L,R}\to&\text{Vector-like doublet fermions}   }\\
+            \sigma\to&\text{Singlet scalar}   \\
+            \only<1>{\eta\to&\text{Doublet scalar}   }
+          \end{align*}
+        \end{minipage}
+}}%
+\only<1>{\put(214,135){\tiny
+    \begin{minipage}{0.3\linewidth}
+      \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|cccccccc}\hline
+ Fields: $f_i$  &  $\left( \nu_{R3} \right)^{\dagger}$
+  &$\left( \nu_{R2} \right)^{\dagger}$&$\left( \nu_{R1} \right)^{\dagger}$&$\psi_L$&$\left( \psi_R \right)^{\dagger}$&$\sigma$&$\eta$&$S$\\ \hline
+  $\operatorname{U}(1)_{B-L}$&$\color{Yellow}+4$&$\color{Yellow}+4$&$-5$& $\color{red}-r$ & $\color{red}r$ &$4-\color{red}r$ & $1-\color{red}r$ & $+3$\\
+     $\operatorname{SO}(10)$ &$\displaystyle{16}$&$\displaystyle{16}$&$\displaystyle{16}$&$\displaystyle{126}$&$\color{red}\displaystyle{126^{*}}$&$\displaystyle{16}$&$144$&$\color{blue}672$\\
+  \end{tabular}
+         \end{minipage}
+       }}%
+\only<1>{\put(300,55){\tiny
+    \begin{minipage}{0.3\linewidth}
+       \begin{center}
+         \textbf{Anomaly cancellation conditions}
+         \begin{align*}
+           \sum_i f_i=& 3 \\
+           \sum_i f_i^3=& 3 \\
+         \end{align*}
+  \end{center}
+      
+         \end{minipage}
+       }}%
+%  effective number of relativistic degrees of reedom Neff for neutrinos
+% \only<4>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac4}\end{overpic}}}%
+ \only<1->{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac5-1}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+
+\begin{frame}
+  %\frametitle{The lightest is an stable particle}
+\begin{picture}(320,250)
+\only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
+\only<1->{\put(34,158.5){ \textbf{SM}  }}%
+\only<1->{\put(38,115){ {\large +}  }}%
+\only<1->{\put(30,100){ $\left( \nu_R \right)^{\dagger}_i$   }}%
+\only<1->{\put(18,115){\begin{overpic}[scale=0.118]{mice}\end{overpic}}}%
+%
+\only<1->{\put(310,180){\begin{overpic}[scale=0.15]{Q}\end{overpic}}}%
+\only<1->{\put(160,40){ \begin{overpic}[scale=0.15]{sigmas}\end{overpic}}}%
+\only<1->{\put(220,40){ \begin{overpic}[scale=0.15]{etas}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
 
 \begin{frame}
   \frametitle{\includegraphics[scale=0.1]{Q} \qquad Colored dark matter:
