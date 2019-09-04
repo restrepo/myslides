@@ -169,9 +169,169 @@ corresponding to the Higgs doublet and the lepton doublets respectively.
 \end{picture}
 \end{frame}
 
+\begin{frame}
+  \frametitle{U}
+  \begin{table}
+    \centering
+        \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|c|c|c}
+    \hline  
+    Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{X}$\\ \hline
+$L $    & $\boldsymbol{2}$& $-1/2$  &  $l$ \\
+$Q $    & $\boldsymbol{2}$& $-1/6$  &  $q$   \\
+$d_R $  & $\boldsymbol{1}$& $-1/2$  &  $d$ \\
+$u_R $  & $\boldsymbol{1}$& $+2/3$  &  $u$\\
+$e_R $  & $\boldsymbol{1}$& $-1$    &  $e$   \\
+$H $    & $\boldsymbol{2}$& $-1/2$  &  $h$   \\
+$\psi $ & $\boldsymbol{1}$& $0$     &  $\psi$   \\
+  \end{tabular}
+  \caption{The new scalars and fermions with their respective charges. The SM fields have the usual $U(1)_{B-L}$ assignment. Now $\alpha=1,2$}
+    \label{tab:partcont2}
+\end{table}
+
+
+\end{frame}
+
+\begin{frame}
+
+  \only<1>{  
+  \begin{align}
+  \left[\mathrm{SU}(3)_{c}\right]^{2} \mathrm{U}(1)_{X} :& &
+[3 u+3 d]-[3 \cdot 2 q]=&0 \nonumber\\
+\left[\mathrm{SU}(2)_{L}\right]^{2} \mathrm{U}(1)_{X} :&&
+-[2 l+3 \cdot 2 q]=&0 \nonumber\\
+\left[\mathrm{U}(1)_{Y}\right]^{2} \mathrm{U}(1)_{X} :&&
+{ \left[(-2)^{2} e+3\left(\tfrac{4}{3}\right)^{2} u+3\left(-\tfrac{2}{3}\right)^{2} d\right]-\left[2(-1)^{2} l+3 \cdot 2\left(\tfrac{1}{3}\right)^{2} q\right]}=&
+ 0
+  \end{align}}
+\only<2->{
+with solution 
+\begin{align}
+  u=&-e+\frac{2l}{3}\,,& d=& e-\frac{4l}{3}\,,& q=& -\frac{l}{3}\,.
+\end{align}}
+\invisible<1-2>{
+which satisfy
+\begin{align}
+\mathrm{U}(1)_{Y}\left[\mathrm{U}(1)_{X}\right]^{2} :&&  
+\left[(-2) e^{2}+3\left(\tfrac{4}{3}\right) u^{2}+3\left(-\tfrac{2}{3}\right) d^{2}\right]-\left[2(-1) l^{2}+3 \cdot 2\left(\tfrac{1}{3}\right) q^{2}\right]=&0
+\end{align}
+}
+\invisible<1-3>{
+The most general cancellation for $\left[\mathrm{U}(1)_{X}\right]^{3}$ and  $  \left[\mathrm{SO}(1,3)\right]^{2} \mathrm{U}(1)_{X} $ is between families
+\begin{align}
+\sum_{\alpha} \psi_{\alpha}^3+3 (e-2l)^3=&0\,, &     \sum_{\alpha} \psi_{\alpha}+3 (e-2l)=&0\,, &
+\end{align}
+with $\alpha=1,2,\cdots,N$ or $X=Y$. We study the set of solutions with $\color{blue}e-2l=1$, e.g
+\begin{align}
+  \sum_{\alpha} \psi_{\alpha}^3=&-3\,, & \sum_{\alpha} \psi_{\alpha}=&-3\,,
+\end{align}
+}
+\invisible<1-4>{
+We impose $N_R=\psi_N=\psi_{N-1}$, to have at most one massless neutrino.
+}
+\invisible<1-5>{}
+\end{frame}
+
+\begin{frame}
+\frametitle{  Known solutions with $\sum \psi_{\alpha}=-3$ and $\sum \psi_{\alpha}^3=-3$}
+
+\begin{table}
+  \centering
+  \renewcommand{\arraystretch}{1.4}
+      \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|c}\hline
+$\left(N_R,N_R,\psi_{N-2},\cdots\right)$     & Ref \\ \hline
+    $\left(-1,-1,-1\right)$&\cite{}\\
+    $\left(-4,-4,+5\right)$&\cite{Montero:2007cd}\\
+    $\left(-\dfrac{2}{3},-\dfrac{2}{3},-\dfrac{4}{3},-\dfrac{1}{3}\right)$&\cite{Patra:2016ofq}\\
+    $\left(-\dfrac{8}{5},-\dfrac{8}{5},-\dfrac{2}{5},-\dfrac{7}{5},+2\right)$&\cite{Calle:2018ovc}\\
+    $\left(-\dfrac{7}{3},-\dfrac{7}{3},+\dfrac{1}{3},-\dfrac{5}{3},+3\right)$&\cite{}\\
+    $\left(-\dfrac{7}{10},-\dfrac{7}{10},-\dfrac{13}{10},-\dfrac{1}{2},+\dfrac{1}{5}\right)$&\cite{}\\
+    $\color{red}\left( -1,-1,-\dfrac{10}{7},-\dfrac{4}{7},-\dfrac{2}{7},\dfrac{9}{7} \right)$ & \cite{Bernal:2018aon}\\
+    \hline
+   \end{tabular}
+      \caption{The possible solutions of the Dirac neutrino mass models with at least two repeated charges and until five chiral fermions.}
+      \label{tab:sltn5}
+\end{table}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile,allowframebreaks]
+        \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|c|c|c|c|c|c|c}
+    \hline  
+    Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{X}$& $\color{red}\operatorname{U}(1)_{B-L}$& $\operatorname{U}(1)_B$& $\operatorname{U}(1)_D$& $\operatorname{U}(1)_G$\\ \hline
+$L $  & $\boldsymbol{2}$& $-1/2$  &  $l$&  $\color{red}-1$&    $0$ &  $-3/2$&  $-1/2$ \\    
+$Q $  & $\boldsymbol{2}$& $-1/6$  &  $-l/3$& $\color{red}1/3$&    $0$&  $1/2$&  $1/6$ \\
+$d_R $  & $\boldsymbol{1}$& $-1/2$  &  $1+2l/3$&  $\color{red}1/3$&    $1$&  $0$&  $2/3$ \\
+$u_R $  & $\boldsymbol{1}$& $+2/3$  &  $-1-4l/3$&  $\color{red}1/3$&   $-1$&  $1$&  $-1/3$ \\
+$e_R $  & $\boldsymbol{1}$& $-1$  &  $1+2l$&  $\color{red}-1$&    $1$ &  $-2$&  $0$ \\
+$H $  & $\boldsymbol{2}$& $-1/2$  &  $-1-l$&  $\color{red}0$&    $-1$ &  $1/2$&  $-1/2$ \\\hline
+$S$ & $\boldsymbol{1}$ & $0$  & $ 2 \psi_N$& $\color{red}2 \psi_N$&  $2 \psi_N$ & $2 \psi_N$& $2 \psi_N$ \\
+
+ $\sum_\alpha \psi_{\alpha}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$\\
+ $\sum_\alpha \psi_{\alpha}^{3}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$\\
+  \end{tabular}
+
+
+\end{frame}
+
+
+\begin{frame}[fragile,allowframebreaks]
+
+  \begin{columns}
+    \begin{column}{0.3\textwidth}
+              \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|c}
+    \hline  
+    Fields     &  $\color{red}\operatorname{U}(1)_{B-L}$\\ \hline
+$L $  &  $\color{red}-1$ \\    
+$Q $    & $\color{red}1/3$     \\
+$d_R $  & $\color{red}1/3$      \\
+$u_R $  & $\color{red}1/3$      \\
+$e_R $  & $\color{red}-1$       \\
+$H $    & $\color{red}0$        \\\hline
+$S$     & $\color{red}-2 $  \\
+$N_{R1}$ & $\color{red}-1$ \\
+$N_{R2}$ & $\color{red}-1$ \\    
+$\psi_1\to \left( \xi_L \right)^{\dagger}$ & $\color{red}-10/7$ \\
+$\psi_2\to \eta_R$ & $\color{red}-4/7$ \\
+$\psi_3\to \zeta_R$ & $\color{red}-2/7$ \\
+$\psi_4\to \left( \chi_L \right)^{\dagger}$ & $\color{red}+9/7$ \\
+$S'$ & $\color{red}1$ \\        
+  \end{tabular}
+  
+    \end{column}
+  \begin{column}{0.7\textwidth}
+    \includegraphics[scale=0.5]{seesawm}
+
+\vspace{1cm}
+  
+\hspace{2cm}    \includegraphics[scale=0.6]{ddd1}
+
+\vspace{1cm}    
+
+\hspace{2cm}    \includegraphics[scale=0.6]{ddd2}
+  \end{column}
+    
+  \end{columns}
+  
+\end{frame}
+
 
 
 \section{Neutrino masses}
+
+
+\begin{frame}
+
+
+\end{frame}
+
+
+
 
 %slide with sm dirac fermion explanation
 \begin{frame}
