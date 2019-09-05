@@ -279,49 +279,132 @@ $S$ & $\boldsymbol{1}$ & $0$  & $ 2 \psi_N$& $\color{red}2 \psi_N$&  $2 \psi_N$ 
 \end{frame}
 
 
-\begin{frame}[fragile,allowframebreaks]
-
+\begin{frame}%[fragile,allowframebreaks]
+\small
   \begin{columns}
-    \begin{column}{0.3\textwidth}
+    \begin{column}{0.4\textwidth}
               \rowcolors{1}{RoyalBlue!20}{}
-  \begin{tabular}{c|c}
+  \begin{tabular}{c|c|c|c}
     \hline  
-    Fields     &  $\color{red}\operatorname{U}(1)_{B-L}$\\ \hline
-$L $  &  $\color{red}-1$ \\    
-$Q $    & $\color{red}1/3$     \\
-$d_R $  & $\color{red}1/3$      \\
-$u_R $  & $\color{red}1/3$      \\
-$e_R $  & $\color{red}-1$       \\
-$H $    & $\color{red}0$        \\\hline
-$S$     & $\color{red}-2 $  \\
-$N_{R1}$ & $\color{red}-1$ \\
-$N_{R2}$ & $\color{red}-1$ \\    
-$\psi_1\to \left( \xi_L \right)^{\dagger}$ & $\color{red}-10/7$ \\
-$\psi_2\to \eta_R$ & $\color{red}-4/7$ \\
-$\psi_3\to \zeta_R$ & $\color{red}-2/7$ \\
-$\psi_4\to \left( \chi_L \right)^{\dagger}$ & $\color{red}+9/7$ \\
-$S'$ & $\color{red}1$ \\        
+    Fields     &  $\color{red}\operatorname{U}(1)_{B-L}$& $Z^1_2$& $Z^1_2$\\ \hline
+    $L $  &  $\color{red}-1$ &$+$&$+$  \\    
+$Q $    & $\color{red}1/3$ &$+$&$+$    \\
+$d_R $  & $\color{red}1/3$ &$+$&$+$     \\
+$u_R $  & $\color{red}1/3$ &$+$&$+$     \\
+$e_R $  & $\color{red}-1$  &$+$&$+$     \\
+$H $    & $\color{red}0$   &$+$&$+$     \\\hline
+$S$     & $\color{red}-2 $ &$+$&$+$ \\
+$\color{red}N_{R1}$ & $\color{red}-1$ &$+$&$+$\\
+$\color{red}N_{R2}$ & $\color{red}-1$ &$+$&$+$\\    
+$\psi_1\to \color{Green}\left( \xi_L \right)^{\dagger}$ & $\color{red}-10/7$ &$\color{Green}\boldsymbol{-}$&$+$ \\
+$\psi_2\to \color{Green} \eta_R$ & $\color{red}-4/7$ &$\color{Green}\boldsymbol{-}$&$+$ \\
+$\psi_3\to \color{blue}\zeta_R$ & $\color{red}-2/7$ &$+$&$\color{blue}\boldsymbol{-}$\\
+$\psi_4\to \color{blue}\left( \chi_L \right)^{\dagger}$ & $\color{red}+9/7$ &$+$&$\color{blue}\boldsymbol{-}$ \\
+$S'$ & $\color{red}1$ &$+$&$+$\\        
   \end{tabular}
   
     \end{column}
-  \begin{column}{0.7\textwidth}
+  \begin{column}{0.6\textwidth}
     \includegraphics[scale=0.5]{seesawm}
 
-\vspace{1cm}
-  
-\hspace{2cm}    \includegraphics[scale=0.6]{ddd1}
 
-\vspace{1cm}    
+\hspace{2cm}   
+\only<1>{
+  \begin{center}
+    After integrating out heavy fermions, we obtain\\
+    \alert{light neutrino masses}
 
-\hspace{2cm}    \includegraphics[scale=0.6]{ddd2}
+    \includegraphics[scale=0.3]{shadedboxn}
+
+    With only two heavy fermions, \alert{one massless neutrino} is left
+  \end{center}
+}
+\only<2>{
+  \begin{center}
+    {\color{Green}Two} {\color{blue}component} Dirac fermion dark matter
+    \begin{align*}
+      &\includegraphics[scale=0.6]{ddd1} &  \includegraphics[scale=0.6]{ddd2}& \\
+      {\color{Green}\chi_1=}&{\color{Green}
+      \begin{pmatrix}
+        \xi_L \\ \eta_R        
+      \end{pmatrix}},&
+      {\color{blue}\chi_2=
+      \begin{pmatrix}
+        \chi_L \\ \zeta_R
+      \end{pmatrix}}&\\
+      \mathcal{L}=&{\color{Green}M_1 \overline{\chi_1} \chi_1}  &  +{\color{blue}M_2 \overline{\chi_2} \chi_2}&
+    \end{align*}
+  \end{center}
+}
   \end{column}
     
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{100\% $\color{Green}\chi_1$}
+  \begin{block}{Relic abundance}
+      $\Omega_{\mathrm{DM}} h^{2}=0.1198 \pm 0.0015$ \quad \text{Planck 2015}
+    \end{block}
+  \begin{block}{Boltzman equation}
+    $\dfrac{d Y}{d x}=-\dfrac{s\langle\sigma v\rangle}{x H\left(m_{\mathrm{DM}}\right)}\left(Y^{2}-Y_{\mathrm{EQ}}^{2}\right)$
+  \end{block}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \small
+      \begin{align*} s &=\frac{2 \pi^{2}}{45} g_{\star} \frac{m_{\mathrm{DM}}^{3}}{x^{3}} \\ H\left(m_{\mathrm{DM}}\right) &=\sqrt{\frac{4 \pi^{3}}{45} g_{\star}} \frac{m_{\mathrm{DM}}^{2}}{M_{\mathrm{Pl}}} \\ s Y_{\mathrm{EQ}} &=\frac{g_{\mathrm{DM}}}{2 \pi^{2}} \frac{m_{\mathrm{DM}}^{3}}{x} K_{2}(x) \end{align*}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+\small      
+\begin{align*}
+  \begin{array}{l}{x=m_{D M} / T} \\ {M_{P l}=1.22 \times 10^{19} \mathrm{GeV} : \text { the Planck mass }} \\ {g_{D M}=2 : \text { the number of DM d.o.f }} \\ {g_{*}=106.75 : \text { for the SM particles }} \\ {K_{2} : \text { the modified Bessel function }}\end{array}
+\end{align*}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{sigmav}
+  \begin{block}{sigmav}
+    \begin{align*}
+      \langle\sigma v\rangle=\frac{g_{D M}^{2}}{64 \pi^{4}}\left(\frac{m_{D M}}{x}\right) \frac{1}{n_{E Q}^{2}} \int_{4 m_{D M}^{2}}^{\infty} d s \hat{\sigma}(s) \sqrt{s} K_{1}\left(\frac{x \sqrt{s}}{m_{D M}}\right)
+    \end{align*}
+  \end{block}
+  
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{block}{where}
+    $n_{\text{EQ}} $: DM number density\\
+    $K_1 $: Modified Bessel function        
+      \end{block}
+
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{block}{Reduced cross section}
+        \begin{align*}
+          \hat{\sigma}(s)=2\left(s-4 m_{D M}^{2} {\sigma(s)}\right)
+        \end{align*}
+      \end{block}
+    \end{column}
   \end{columns}
   
 \end{frame}
 
+\begin{frame}
+\includegraphics[scale=0.48]{ok}
+  
+\end{frame}
 
 
+% numerical solution here
+
+% Resonance apply
+
+% Solution: use two dark matter candidates and extra scalar portal
+
+%Conclusions
 \section{Neutrino masses}
 
 
