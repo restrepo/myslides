@@ -297,7 +297,7 @@ $S$     & $\color{red}-2 $ &$+$&$+$ \\
 $\color{red}N_{R1}$ & $\color{red}-1$ &$+$&$+$\\
 $\color{red}N_{R2}$ & $\color{red}-1$ &$+$&$+$\\    
 $\psi_1\to \color{Green}\left( \xi_L \right)^{\dagger}$ & $\color{red}-10/7$ &$\color{Green}\boldsymbol{-}$&$+$ \\
-$\psi_2\to \color{Green} \eta_R$ & $\color{red}-4/7$ &$\color{Green}\boldsymbol{-}$&$+$ \\
+$\psi_2\to \color{Green} \eta_RX$ & $\color{red}-4/7$ &$\color{Green}\boldsymbol{-}$&$+$ \\
 $\psi_3\to \color{blue}\zeta_R$ & $\color{red}-2/7$ &$+$&$\color{blue}\boldsymbol{-}$\\
 $\psi_4\to \color{blue}\left( \chi_L \right)^{\dagger}$ & $\color{red}+9/7$ &$+$&$\color{blue}\boldsymbol{-}$ \\
 $S'$ & $\color{red}1$ &$+$&$+$\\        
@@ -342,6 +342,16 @@ $S'$ & $\color{red}1$ &$+$&$+$\\
 
 \end{frame}
 
+\begin{frame}[plain]
+\begin{picture}(320,250)
+  \only<1>{\put(-10,-12){\includegraphics[height=\paperheight]{paraspace1}}}%
+  \only<2>{\put(-10,-12){\includegraphics[height=\paperheight]{paraspace2}}}%
+  \only<3>{\put(-10,-12){\includegraphics[height=\paperheight]{paraspace3}}}%
+  \only<4>{\put(-10,-12){\includegraphics[height=\paperheight]{paraspace4}}}%
+\end{picture}
+\end{frame}
+
+
 
 \begin{frame}
   \frametitle{100\% $\color{Green}\chi_1$}
@@ -349,17 +359,17 @@ $S'$ & $\color{red}1$ &$+$&$+$\\
       $\Omega_{\mathrm{DM}} h^{2}=0.1198 \pm 0.0015$ \quad \text{Planck 2015}
     \end{block}
   \begin{block}{Boltzman equation}
-    $\dfrac{d Y}{d x}=-\dfrac{s\langle\sigma v\rangle}{x H\left(m_{\mathrm{DM}}\right)}\left(Y^{2}-Y_{\mathrm{EQ}}^{2}\right)$
+    $\dfrac{d Y}{d x}=-\dfrac{s\langle\sigma v\rangle}{x H\left(m_{\chi}\right)}\left(Y^{2}-Y_{\mathrm{EQ}}^{2}\right)$
   \end{block}
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \small
-      \begin{align*} s &=\frac{2 \pi^{2}}{45} g_{\star} \frac{m_{\mathrm{DM}}^{3}}{x^{3}} \\ H\left(m_{\mathrm{DM}}\right) &=\sqrt{\frac{4 \pi^{3}}{45} g_{\star}} \frac{m_{\mathrm{DM}}^{2}}{M_{\mathrm{Pl}}} \\ s Y_{\mathrm{EQ}} &=\frac{g_{\mathrm{DM}}}{2 \pi^{2}} \frac{m_{\mathrm{DM}}^{3}}{x} K_{2}(x) \end{align*}
+      \begin{align*} s &=\frac{2 \pi^{2}}{45} g_{\star} \frac{m_{\chi}^{3}}{x^{3}} \\ H\left(m_{\chi}\right) &=\sqrt{\frac{4 \pi^{3}}{45} g_{\star}} \frac{m_{\chi}^{2}}{M_{\mathrm{Pl}}} \\ s Y_{\mathrm{EQ}} &=\frac{g_{\chi}}{2 \pi^{2}} \frac{m_{\chi}^{3}}{x} K_{2}(x) \end{align*}
     \end{column}
     \begin{column}{0.5\textwidth}
 \small      
 \begin{align*}
-  \begin{array}{l}{x=m_{D M} / T} \\ {M_{P l}=1.22 \times 10^{19} \mathrm{GeV} : \text { the Planck mass }} \\ {g_{D M}=2 : \text { the number of DM d.o.f }} \\ {g_{*}=106.75 : \text { for the SM particles }} \\ {K_{2} : \text { the modified Bessel function }}\end{array}
+  \begin{array}{l}{x=m_{\chi} / T} \\ {M_{P l}=1.22 \times 10^{19} \mathrm{GeV} : \text { the Planck mass }} \\ {g_{\chi}=4 : \text { the number of DM d.o.f }} \\ {g_{*}=106.75 : \text { for the SM particles }} \\ {K_{2} : \text { the modified Bessel function }}\end{array}
 \end{align*}
     \end{column}
   \end{columns}
@@ -369,7 +379,7 @@ $S'$ & $\color{red}1$ &$+$&$+$\\
   \frametitle{sigmav}
   \begin{block}{sigmav}
     \begin{align*}
-      \langle\sigma v\rangle=\frac{g_{D M}^{2}}{64 \pi^{4}}\left(\frac{m_{D M}}{x}\right) \frac{1}{n_{E Q}^{2}} \int_{4 m_{D M}^{2}}^{\infty} d s \hat{\sigma}(s) \sqrt{s} K_{1}\left(\frac{x \sqrt{s}}{m_{D M}}\right)
+      \langle\sigma v\rangle=\frac{g_{\chi}^{2}}{64 \pi^{4}}\left(\frac{m_{\chi}}{x}\right) \frac{1}{n_{E Q}^{2}} \int_{4 m_{\chi}^{2}}^{\infty} d s \hat{\sigma}(s) \sqrt{s} K_{1}\left(\frac{x \sqrt{s}}{m_{\chi}}\right)
     \end{align*}
   \end{block}
   
@@ -384,7 +394,7 @@ $S'$ & $\color{red}1$ &$+$&$+$\\
     \begin{column}{0.5\textwidth}
       \begin{block}{Reduced cross section}
         \begin{align*}
-          \hat{\sigma}(s)=2\left(s-4 m_{D M}^{2} {\sigma(s)}\right)
+          \hat{\sigma}(s)=2\left(s-4 m_{\chi}^{2} {\sigma(s)}\right)
         \end{align*}
       \end{block}
     \end{column}
@@ -399,8 +409,74 @@ $S'$ & $\color{red}1$ &$+$&$+$\\
 
 
 % numerical solution here
+\begin{frame}[plain]
+\begin{picture}(320,250)
+  \only<1>{\put(-10,-12){\includegraphics[height=\paperheight]{wimp1}}}%
+  \only<2>{\put(-10,-12){\includegraphics[height=\paperheight]{wimp2}}}%
+  \only<3>{\put(-10,-12){\includegraphics[height=\paperheight]{wimp3}}}%
+  \only<1->{\put(90,250){\url{https://github.com/restrepo/WIMP}$\to$ \texttt{WIMP.ipynb} $\to$ \includegraphics[scale=0.6]{oic} }}%
+\end{picture}
+\end{frame}
+
 
 % Resonance apply
+\begin{frame}
+  \frametitle{Isosinglet dark matter candidate}
+  $\chi$ as a isosinglet Dirac dark matter fermion charged under a local $\operatorname{U}(1)_{B-L}$ (SM) cuples to a SM-singlet vector mediator
+  $Z'$ 
+
+    $\mathcal{L}_{\text{int}}= -g_{BL}\, \overline{\chi}  \gamma^{\mu}\chi\,, Z'_{\mu} -
+                           \sum_f g_{f}\, \overline{f} \gamma^{\mu}f\,, Z'_{\mu}\,,$
+
+  where $f$ are the Standard Model fermions: Resonances excluded!
+
+%  \only<1>{  \begin{figure}
+%          \includegraphics[scale=0.3]{fdm}\\
+%    {\tiny arXiv:1305.7008. Chua, Hsieh [PRD]}
+%  \end{figure}
+%}
+\only<1>{  \begin{figure}
+          \includegraphics[scale=0.25]{ddm}\\
+    {\tiny $g_{BL}/g_{\text{SM}}=10$. arXiv:1907.05893. C. Blanco, \textit{et al}. [PRD]}
+  \end{figure}
+}
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Two component Dirac fermion dark matter model}
+
+  \begin{columns}
+  \begin{column}{0.28\textwidth}
+\rowcolors{1}{RoyalBlue!20}{}
+    \begin{tabular}{ll}
+      Field &  $\operatorname{U}(1)_{B-L}$ \\\hline
+      $\color{red}N_{R1}$ & $\color{red}-1$ \\
+      $\color{red}N_{R2}$ & $\color{red}-1$ \\  
+      $\color{Green}\xi_L $ & $\color{Green}+10/7$ \\
+      $\color{Green} \eta_R$ & $\color{Green} -4/7$ \\
+      $\color{blue}\zeta_R$ & $\color{blue}-2/7$ \\
+      $\color{blue}\chi_L$ & $\color{blue}-9/7$ \\\hline
+      $S$ & $-2$ \\
+      $S'$ & $1$ \\
+    \end{tabular}
+    \begin{align*}
+      \operatorname{U}(1)_{B-L}\to Z_7\,.
+    \end{align*}
+  \end{column}
+  \begin{column}{0.62\textwidth}
+
+    \begin{figure}
+      \centering
+      \includegraphics[scale=0.5]{scansip1}\\
+      {\tiny with N. Bernal, C. Yaguna and C. Zapata, 1808.03352 [PRD] }
+    \end{figure}
+
+    
+  \end{column}
+\end{columns}
+\end{frame}
 
 % Solution: use two dark matter candidates and extra scalar portal
 
