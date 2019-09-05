@@ -457,10 +457,11 @@ $S'$ & $\color{red}1$ &$+$&$+$\\
 \only<2>{\includegraphics[scale=0.4]{omega32}}%
 \only<3>{\includegraphics[scale=0.4]{omega33}}%
 \only<4>{\includegraphics[scale=0.4]{omega34}}%
-\only<5>{\includegraphics[scale=0.4]{omega35}}%
+\only<5-6>{\includegraphics[scale=0.4]{omega35}}%
 \end{column}
     \begin{column}{0.5\textwidth}
-      
+\invisible<1-5>{\includegraphics[scale=0.4]{omega6}}%
+%\only<6>{\includegraphics[scale=0.4]{omega35}}%            
     \end{column}
   \end{columns}
 \end{frame}
@@ -470,21 +471,21 @@ $S'$ & $\color{red}1$ &$+$&$+$\\
 
   \begin{columns}
   \begin{column}{0.28\textwidth}
-\rowcolors{1}{RoyalBlue!20}{}
-    \begin{tabular}{ll}
-      Field &  $\operatorname{U}(1)_{B-L}$ \\\hline
-      $\color{red}N_{R1}$ & $\color{red}-1$ \\
-      $\color{red}N_{R2}$ & $\color{red}-1$ \\  
-      $\color{Green}\xi_L $ & $\color{Green}+10/7$ \\
-      $\color{Green} \eta_R$ & $\color{Green} -4/7$ \\
-      $\color{blue}\zeta_R$ & $\color{blue}-2/7$ \\
-      $\color{blue}\chi_L$ & $\color{blue}-9/7$ \\\hline
-      $S$ & $-2$ \\
-      $S'$ & $1$ \\
-    \end{tabular}
-    \begin{align*}
-      \operatorname{U}(1)_{B-L}\to Z_7\,.
-    \end{align*}
+    \rowcolors{1}{RoyalBlue!20}{}
+\begin{tabular}{|c||c|}
+\hline
+Parameter & Range\\
+\hline \hline
+$M_{Z'}$ & $(0.3,20)$ TeV\\
+$M_{1,\,2}$ & $(0.35, 0.65)~M_{Z'}$\\
+$g_{BL}$ & $(0.001,1)$\\
+$\sin\alpha$ & $(0.001,1)$\\
+$\tan\beta$ & $({0.03},30)$\\
+$M_{R1}$, $M_{R2}$ & $(0.2,10)$ TeV\\
+$M_{H1}$, $M_{H2}$, $M_A$ & $(0.2,10)$ TeV\\
+\hline
+\end{tabular}
+
   \end{column}
   \begin{column}{0.62\textwidth}
 
@@ -501,16 +502,29 @@ $S'$ & $\color{red}1$ &$+$&$+$\\
 
 % Solution: use two dark matter candidates and extra scalar portal
 
-%Conclusions
-\section{Neutrino masses}
-
+%Conclusionshttps://github.com/restrepo/BSM-Submodules/tree/B-L%2BDM/BSM/SARAH/Models/B-L/DM
 
 \begin{frame}
+\frametitle{Conclusions}
+  It makes sense to focus our attention on models tha can account for neutrino masses and dark matter (DM).
 
+In this extension of the SM by an $\operatorname{U}(1)_{B-L}$ gauge symmetry amomalies are are canceled partially by two right-handed neutrinos and partially by two component DM Dirac fermions. providing a connection between neutrinos and DM analogous to that one between leptons and quarks in the SM.
+
+
+The model predicts the existence of three scalar fields beyond the SM Higgs: $H_1$, $H_2$, $A$
+
+Model implemented in both LanHEP. Implemented also in SARAH~{\tiny \url{https://github.com/restrepo/BSM-Submodules/tree/B-L+DM/BSM/SARAH/Models/B-L/DM} (Tested with SARAH-4.14.1)} to analyse perturbativity and stability conditions and higher scales with two-loop RGEs.
+
+After imposing the current bounds from LHC and direct detection
+experiments, there are regions of this model which remains
+unconstrained.
+
+Easy to include an effective $Z_7$ breaking to get decaying dark matter.
 
 \end{frame}
 
-
+\plain{Thanks!}
+\end{document}
 
 
 %slide with sm dirac fermion explanation
