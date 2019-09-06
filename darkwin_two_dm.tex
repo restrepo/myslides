@@ -24,25 +24,30 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Dark matter from SM gauge extensions}
+\title{Two component Dark Matter}
 \subtitle{with neutrino masses}
 
 
 %\subtitle
 %{Reconstruction of the neutrino mass matrix} % (optional)
 
-\author{Diego Restrepo}
+\author{Diego Restrepo
+}
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
-\institute{\affiliation{\tiny Instituto de Física\\
+\institute{
+  \begin{picture}(100,2)
+\put(230,-110){ \includegraphics[scale=0.17]{natal}}
+\end{picture}
+  \affiliation{\tiny Instituto de Física\\
 Universidad de Antioquia\\
 Phenomenology Group}%
 {http://gfif.udea.edu.co}%
 {}%
-{ctg}%
+{pixel}% small image here, use pixel for nothing
 {}
-\arxiv{}
-\collaborators{ M. Hirsch (IFIC), C. Álvarez (UTFSM), A. Flórez (UniAndes), B. Dutta(Texas A\& M), C. Yaguna (UPTC), J. Calle, O. Zapata, A. Rivera (UdeA), W. Tangarife (Loyola University Chicago)  }
+\arxiv{arXiv:1811.11927 [PRD]}
+\collaborators{ N. Bernal (UAN), C. Yaguna (UPTC), Ó. Zapata, (UdeA) }
 }
 
 \date{\tiny July 23, 2019 - PPC2019 - Cartagena } % (optional) \today
@@ -88,36 +93,9 @@ Phenomenology Group}%
 
 \maketitle
 
-% \begin{frame}
-%   \frametitle{Table of Contents}
-% % %\small
-% % %\vspace{-0.5cm}
-%    \setbeamertemplate{section in toc}[sections numbered]
-%    \tableofcontents[hideallsubsections]
-% \end{frame}
-
-% First U(1)
-% Design from other perspective.
-
-% The stating point is Dirac fermion dark matter
-
-% Fermion requires an U(1) symmetry
-
-% U(1) must be dark
-
-% Second U(1)
-
-% If the SM conserve global lepton number, U(1) be must a sponatenouslt broken guuge symmetry.
-
-% Neutrino masses must be also Dirac. His Diracnnes proteced by the new second U(1)
-
-
-% Neutrino needs an explanation for his smallness and there is a natural dimension-5 operator which can be settled down there.
-
-% At one loop the required Dirac fermions must be in hidden dark sector.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-%\include{evidencesila}
+\include{evidencesila}
 %%%%%%%%%%
 
 
@@ -170,7 +148,7 @@ corresponding to the Higgs doublet and the lepton doublets respectively.
 \end{frame}
 
 \begin{frame}
-  \frametitle{U}
+  \frametitle{Standard model extended with $\operatorname{U}(1)_X$ gauge symmetry}
   \begin{table}
     \centering
         \rowcolors{1}{RoyalBlue!20}{}
@@ -185,7 +163,7 @@ $e_R $  & $\boldsymbol{1}$& $-1$    &  $e$   \\
 $H $    & $\boldsymbol{2}$& $-1/2$  &  $h$   \\
 $\psi $ & $\boldsymbol{1}$& $0$     &  $\psi$   \\
   \end{tabular}
-  \caption{The new scalars and fermions with their respective charges. The SM fields have the usual $U(1)_{B-L}$ assignment. Now $\alpha=1,2$}
+  \caption{The new  and fermions with their respective charges. }
     \label{tab:partcont2}
 \end{table}
 
@@ -239,18 +217,18 @@ We impose $N_R=\psi_N=\psi_{N-1}$, to have at most one massless neutrino.
   \centering
   \renewcommand{\arraystretch}{1.4}
       \rowcolors{1}{RoyalBlue!20}{}
-  \begin{tabular}{c|c}\hline
+  \begin{tabular}{c|l}\hline
 $\left(N_R,N_R,\psi_{N-2},\cdots\right)$     & Ref \\ \hline
-    $\left(-1,-1,-1\right)$&\cite{}\\
-    $\left(-4,-4,+5\right)$&\cite{Montero:2007cd}\\
-    $\left(-\dfrac{2}{3},-\dfrac{2}{3},-\dfrac{4}{3},-\dfrac{1}{3}\right)$&\cite{Patra:2016ofq}\\
-    $\left(-\dfrac{8}{5},-\dfrac{8}{5},-\dfrac{2}{5},-\dfrac{7}{5},+2\right)$&\cite{Calle:2018ovc}\\
-    $\left(-\dfrac{7}{3},-\dfrac{7}{3},+\dfrac{1}{3},-\dfrac{5}{3},+3\right)$&\cite{}\\
-    $\left(-\dfrac{7}{10},-\dfrac{7}{10},-\dfrac{13}{10},-\dfrac{1}{2},+\dfrac{1}{5}\right)$&\cite{}\\
-    $\color{red}\left( -1,-1,-\dfrac{10}{7},-\dfrac{4}{7},-\dfrac{2}{7},\dfrac{9}{7} \right)$ & \cite{Bernal:2018aon}\\
+    $\left(-1,-1,-1\right)$&\tiny hep-ph/0611205, S. Khalil  [JPG] \\
+    $\left(-4,-4,+5\right)$&\includegraphics[scale=0.03]{brazil}\tiny arXiv:0706.0473, Montero, V. Pleitez [PLB]\\
+    $\left(-\dfrac{2}{3},-\dfrac{2}{3},-\dfrac{4}{3},-\dfrac{1}{3}\right)$&\includegraphics[scale=0.03]{colombia}\tiny  arXiv:1607.04029, S. Patra , W. Rodejohann, C. Yaguna [JHEP] \\
+    $\left(-\dfrac{8}{5},-\dfrac{8}{5},-\dfrac{2}{5},-\dfrac{7}{5},+2\right)$&\includegraphics[scale=0.03]{colombia}\tiny arXiv:1812.05523, with J. Calle, C. Yaguna, Ó. Zapata [PRD]\\
+    %$\left(-\dfrac{7}{3},-\dfrac{7}{3},+\dfrac{1}{3},-\dfrac{5}{3},+3\right)$&\cite{}\\
+    %$\left(-\dfrac{7}{10},-\dfrac{7}{10},-\dfrac{13}{10},-\dfrac{1}{2},+\dfrac{1}{5}\right)$&\cite{}\\
+    $\color{red}\left( -1,-1,-\dfrac{10}{7},-\dfrac{4}{7},-\dfrac{2}{7},\dfrac{9}{7} \right)$ &\includegraphics[scale=0.03]{colombia}\color{red} \tiny 1811.11927, with N. Bernal, C. Yaguna, Ó. Zapata [PRD]\\
     \hline
    \end{tabular}
-      \caption{The possible solutions of the Dirac neutrino mass models with at least two repeated charges and until five chiral fermions.}
+      \caption{The possible solutions of the Dirac neutrino mass models with at least two repeated charges and until six chiral fermions.}
       \label{tab:sltn5}
 \end{table}
 
@@ -258,24 +236,29 @@ $\left(N_R,N_R,\psi_{N-2},\cdots\right)$     & Ref \\ \hline
 \end{frame}
 
 
-\begin{frame}[fragile,allowframebreaks]
+\begin{frame}
+  \frametitle{$\operatorname{U}(1)_X$ with two Majorana masses: $\psi_N$, $\psi_{N-1}$  }
         \rowcolors{1}{RoyalBlue!20}{}
   \begin{tabular}{c|c|c|c|c|c|c|c}
     \hline  
     Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{X}$& $\color{red}\operatorname{U}(1)_{B-L}$& $\operatorname{U}(1)_B$& $\operatorname{U}(1)_D$& $\operatorname{U}(1)_G$\\ \hline
-$L $  & $\boldsymbol{2}$& $-1/2$  &  $l$&  $\color{red}-1$&    $0$ &  $-3/2$&  $-1/2$ \\    
-$Q $  & $\boldsymbol{2}$& $-1/6$  &  $-l/3$& $\color{red}1/3$&    $0$&  $1/2$&  $1/6$ \\
-$d_R $  & $\boldsymbol{1}$& $-1/2$  &  $1+2l/3$&  $\color{red}1/3$&    $1$&  $0$&  $2/3$ \\
-$u_R $  & $\boldsymbol{1}$& $+2/3$  &  $-1-4l/3$&  $\color{red}1/3$&   $-1$&  $1$&  $-1/3$ \\
-$e_R $  & $\boldsymbol{1}$& $-1$  &  $1+2l$&  $\color{red}-1$&    $1$ &  $-2$&  $0$ \\
-$H $  & $\boldsymbol{2}$& $-1/2$  &  $-1-l$&  $\color{red}0$&    $-1$ &  $1/2$&  $-1/2$ \\\hline
+$L $  & $\boldsymbol{2}$& $-1/2$  &  ${\color{blue}l}$&  $\color{red}-1$&    $0$ &  $-3/2$&  $-1/2$ \\    
+$Q $  & $\boldsymbol{2}$& $-1/6$  &  $-{\color{blue}l}/3$& $\color{red}1/3$&    $0$&  $1/2$&  $1/6$ \\
+$d_R $  & $\boldsymbol{1}$& $-1/2$  &  $1+2{\color{blue}l}/3$&  $\color{red}1/3$&    $1$&  $0$&  $2/3$ \\
+$u_R $  & $\boldsymbol{1}$& $+2/3$  &  $-1-4{\color{blue}l}/3$&  $\color{red}1/3$&   $-1$&  $1$&  $-1/3$ \\
+$e_R $  & $\boldsymbol{1}$& $-1$  &  $1+2{\color{blue}l}$&  $\color{red}-1$&    $1$ &  $-2$&  $0$ \\
+$H $  & $\boldsymbol{2}$& $-1/2$  &  $-1-{\color{blue}l}$&  $\color{red}0$&    $-1$ &  $1/2$&  $-1/2$ \\\hline
 $S$ & $\boldsymbol{1}$ & $0$  & $ 2 \psi_N$& $\color{red}2 \psi_N$&  $2 \psi_N$ & $2 \psi_N$& $2 \psi_N$ \\
 
  $\sum_\alpha \psi_{\alpha}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$\\
- $\sum_\alpha \psi_{\alpha}^{3}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$\\
+ $\sum_\alpha \psi_{\alpha}^{3}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$\\ \hline
   \end{tabular}
 
+  Solutions in terms of a parameter: arXiv:1811.11927, N. Okada, \emph{et al} [PRD];
 
+  and some specific examples from: arXiv:1705.05388,  Farinaldo Queiroz,  \emph{et al} [JHEP]
+
+  \alert{All previous $\operatorname{U}(1)_{B-L}$ (radiative) neutrino solutions apply for $\operatorname{U}(1)_X$}
 \end{frame}
 
 
@@ -354,7 +337,7 @@ $S'$ & $\color{red}1$ &$+$&$+$\\
 
 
 \begin{frame}
-  \frametitle{100\% $\color{Green}\chi_1$}
+  \frametitle{100\% $\chi_1$ case }
   \begin{block}{Relic abundance}
       $\Omega_{\mathrm{DM}} h^{2}=0.1198 \pm 0.0015$ \quad \text{Planck 2015}
     \end{block}
@@ -376,8 +359,8 @@ $S'$ & $\color{red}1$ &$+$&$+$\\
 \end{frame}
 
 \begin{frame}
-  \frametitle{sigmav}
-  \begin{block}{sigmav}
+  \frametitle{velocity-averaged cross section $\langle\sigma v\rangle$ }
+  \begin{block}{$\langle\sigma v\rangle$}
     \begin{align*}
       \langle\sigma v\rangle=\frac{g_{\chi}^{2}}{64 \pi^{4}}\left(\frac{m_{\chi}}{x}\right) \frac{1}{n_{E Q}^{2}} \int_{4 m_{\chi}^{2}}^{\infty} d s \hat{\sigma}(s) \sqrt{s} K_{1}\left(\frac{x \sqrt{s}}{m_{\chi}}\right)
     \end{align*}
@@ -508,12 +491,12 @@ $M_{H1}$, $M_{H2}$, $M_A$ & $(0.2,10)$ TeV\\
 \frametitle{Conclusions}
   It makes sense to focus our attention on models tha can account for neutrino masses and dark matter (DM).
 
-In this extension of the SM by an $\operatorname{U}(1)_{B-L}$ gauge symmetry amomalies are are canceled partially by two right-handed neutrinos and partially by two component DM Dirac fermions. providing a connection between neutrinos and DM analogous to that one between leptons and quarks in the SM.
+In this extension of the SM by an $\operatorname{U}(1)_{B-L}$ gauge symmetry amomalies are canceled partially by two right-handed neutrinos and partially by two component DM Dirac fermions, providing a connection between neutrinos and DM analogous to that one between leptons and quarks in the SM.
 
 
 The model predicts the existence of three scalar fields beyond the SM Higgs: $H_1$, $H_2$, $A$
 
-Model implemented in both LanHEP. Implemented also in SARAH~{\tiny \url{https://github.com/restrepo/BSM-Submodules/tree/B-L+DM/BSM/SARAH/Models/B-L/DM} (Tested with SARAH-4.14.1)} to analyse perturbativity and stability conditions and higher scales with two-loop RGEs.
+Model implemented in LanHEP. Implemented also in SARAH~{\tiny \url{https://github.com/restrepo/BSM-Submodules/tree/B-L+DM/BSM/SARAH/Models/B-L/DM} (Tested with SARAH-4.14.1)} to analyse perturbativity and stability conditions and higher scales with two-loop RGEs.
 
 After imposing the current bounds from LHC and direct detection
 experiments, there are regions of this model which remains
