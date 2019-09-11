@@ -24,28 +24,33 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Dirac fermion dark matter  }
-\subtitle{with  Dirac neutrino masses}
+\title{Two component Dark Matter}
+\subtitle{with neutrino masses}
 
 
 %\subtitle
 %{Reconstruction of the neutrino mass matrix} % (optional)
 
-\author{Diego Restrepo}
+\author{Diego Restrepo
+}
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
-\institute{\affiliation{Instituto de Física\\
+\institute{
+  \begin{picture}(100,2)
+\put(230,-110){ \includegraphics[scale=0.17]{natal}}
+\end{picture}
+  \affiliation{\tiny Instituto de Física\\
 Universidad de Antioquia\\
 Phenomenology Group}%
 {http://gfif.udea.edu.co}%
 {}%
-{susycc}%
+{pixel}% small image here, use pixel for nothing
 {}
-\arxiv{1812.05523 [PRD] and 1905.NNNNN}
-\collaborators{ Carlos Yaguna (UPTC), Julian Calle, Oscar Zapata, Andrés River (UdeA), Walter Tangarife (Loyola University Chicago)  }
+\arxiv{arXiv:1811.11927 [PRD]}
+\collaborators{ N. Bernal (UAN), C. Yaguna (UPTC), Ó. Zapata, (UdeA) }
 }
 
-\date{\tiny May 21, 2019 - SUSY2019 - Corpus Christi } % (optional) \today
+\date{\tiny Sep 6, 2019 - Darkwin - Natal } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -88,6 +93,7 @@ Phenomenology Group}%
 
 \maketitle
 
+
 % \begin{frame}
 %   \frametitle{Table of Contents}
 % % %\small
@@ -116,75 +122,124 @@ Phenomenology Group}%
 
 % At one loop the required Dirac fermions must be in hidden dark sector.
 
+
+
+\section{Previously at tree level}
+
+
+
 \begin{frame}
-  \frametitle{Background: from William Balunas ATLAS talk at {\tiny Mitchell Conference on Collider, Dark Matter, and Neutrino Physics 2019 }}
-  \includegraphics[scale=0.3]{background}
+\begin{picture}(320,250)
+\only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
+\only<1>{\put(194,92){\begin{overpic}[scale=0.2]{infinity}\end{overpic}}}%
+\only<1->{\put(30,160.5){ $\invisible<1>{\langle}\mathbf{SM}\invisible<1>{\rangle}$  }}%
+\only<1->{\put(18,115){\begin{overpic}[scale=0.118]{mice}\end{overpic}}}%
+\only<2->{\put(38,115){ {\large +}  }}%
+\only<2->{\put(0,100){\Large  $m^{\nu}_{\text{Majorana}}=\dfrac{h_{\nu}}{\Lambda} L \cdot H L \cdot H\invisible<1>{\dfrac{\color{red}S}{\Lambda}}$ \invisible<1->{\color{red}(three-level)}   }}%
+\only<2->{\put(-32,80){ {\scriptsize Type-I arXiv:1808.03352 } }}%
+\only<2->{\put(-10,200){\Large $\mathcal{L}=y\left( N_R \right)^{\dagger}L \cdot \invisible<1>{\langle}H\invisible<1>{\rangle}+  \only<2->{y'{\color{red} \langle S\rangle}}  N_R N_R+\text{h.c} $   }}%
+\only<2->{\put(124,218.5){ \Huge \invisible<1>{{\color{red}Lo}{\color{Yellow}cal}} $U(1)_X \color{red} \to  Z_7 $  }}%
+\only<2>{\put(204,18){ \begin{overpic}[scale=0.2]{tcdm}\end{overpic}}}%
+\end{picture}
 \end{frame}
 
 
 
-\section{Dirac fermion dark matter}
-
-
 \begin{frame}
-  \frametitle{Isosinglet dark matter candidate}
-  $\psi$ as a isosinglet Dirac dark matter fermion charged under a local $\operatorname{U}(1)_{X}$ (SM) cuples to a SM-singlet vector mediator
-  $X$ as
-  \begin{align*}
-    \mathcal{L}_{\text{int}}=& -g_{\psi}\, \overline{\psi}  \gamma^{\mu}\psi X_{\mu} -
-                           \sum_f g_{f}\, \overline{f} \gamma^{\mu}f X_{\mu}\,,
-  \end{align*}
-  where $f$ are the Standard Model fermions
-
-  \begin{figure}
-          \includegraphics[scale=0.3]{fdm}\\
-    {\tiny 1305.7008. Chua, Hsieh}
-  \end{figure}
-
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Isosinglet Dirac fermion dark matter model and Seesaw scale}
-
+  \frametitle{Standard model extended with $\operatorname{U}(1)_X$ gauge symmetry}
   \begin{columns}
-  \begin{column}{0.28\textwidth}
-\rowcolors{1}{RoyalBlue!20}{}
-    \begin{tabular}{ll}
-     Left Field &  $\operatorname{U}(1)_{B-L}$ \\\hline
-      $\left( \nu_{R_1} \right)^{\dagger}$ & $+1$ \\
-      $\left( \nu_{R_2} \right)^{\dagger}$ & $+1$ \\
-      $\left( \nu_{R_2} \right)^{\dagger}$ & $+1$ \\  
-      $\color{red}\psi_L$ & $\color{red}-r$ \\
-      $\color{red}\left( \psi_R \right)^{\dagger}$ & $\color{red}{r}$ \\\hline
-      $\phi$ & $2$ \\
-    \end{tabular}
-
-    \begin{align*}
-      \chi=
-      \begin{pmatrix}
-        \color{red}
-        \psi_L\\
-        \color{red}\psi_R
-      \end{pmatrix}
-    \end{align*}
-  \end{column}
-  \begin{column}{0.72\textwidth}
-  %   \only<1>{    \begin{figure}
-  %     \centering
-  %     \includegraphics[scale=0.5]{scatteringMZp4TeV}\\
-  %     {\tiny Farinaldo et al: 1607.06468 [EPJC] }
-  %   \end{figure}
-  % }
-  \only<1>{    \begin{figure}
-      \centering
-      \includegraphics[scale=0.7]{DirectSearchesUpdated}\\
-      {\tiny Duerr et al: 1803.07462 [PRD] }
-    \end{figure}
+    \begin{column}{0.6\textwidth}
+  \rowcolors{1}{RoyalBlue!20}{}
+  \only<1-4>{  \begin{tabular}{c|c|c|c|l}
+    \hline  
+    Fields  & $\operatorname{SU}(3)_c$  & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{\only<1-4>{\color{blue}X}\only<5->{\color{red}B-L}}$\\ \hline
+    \only<1->{$L $}  &$\mathbf{1}$  & $\boldsymbol{2}$& $-1/2$  &  ${\color{blue}l}\invisible<1-4>{=\color{red}-1}$       \\
+$Q $  &$\mathbf{3}$  & $\boldsymbol{2}$& $-1/6$  &  $q\only<2>{=-{\color{blue}l}/{3}                   }\only<3-4>{=-{\color{blue}l}/3   }\only<5>{=\color{red}1/3}$      \\
+$d_R $&$\mathbf{3}$  & $\boldsymbol{1}$& $-1/2$  &  $d\only<2>{={\color{Green}e}-4{\color{blue}l}/{3}  }\only<3-4>{=1+2{\color{blue}l}/3 }\only<5>{=\color{red}1/3}$    \\
+$u_R $&$\mathbf{3}$  & $\boldsymbol{1}$& $+2/3$  &  $u\only<2>{={-\color{Green}e}+{2 \color{blue}l}/{3}}\only<3-4>{=-1-4{\color{blue}l}/3}\only<5>{=\color{red}1/3}$   \\
+$e_R $&$\mathbf{1}$  & $\boldsymbol{1}$& $-1$    &  ${\color{Green}e}\only<2>{                         }\only<3-4>{=1+2{\color{blue}l}   }\only<5>{=\color{red}-1 }$      \\
+$H $  &$\mathbf{1}$  & $\boldsymbol{2}$& $1/2$  &  $h\only<2>{=-{\color{Green}e}+{\color{blue}l}      }\only<3-4>{=-1-{\color{blue}l}   }\only<5>{=\color{red}0  }$      \\
+                 \invisible<1>{$\sum_{\alpha}\psi_{\alpha} $ } &\invisible<1>{$\mathbf{1}$}  & \invisible<1>{$\boldsymbol{1}$}& \invisible<1>{$0$}     &
+\only<1-2>{\invisible<1>{ $\sum_{\alpha} \psi_{\alpha}$}}\only<3->{\cellcolor{black!65}\color{white}$-3$}   \\
+  \end{tabular}
 }
-  \end{column}
-\end{columns}
+  \only<5->{  \begin{tabular}{c|c|c|c|l|c|c|c}
+    \hline  
+    Fields  & $\operatorname{SU}(3)_c$  & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{{\color{red}B-L}}$ &$\operatorname{U}(1)_R$& $\operatorname{U}(1)_D$& $\operatorname{U}(1)_G$\\ \hline
+$L $ &$\mathbf{1}$ &$\boldsymbol{2}$& $-1/2$&${\color{blue}l}{=\color{red}-1}$  &$0$  &$-3/2$&  $-1/2$     \\
+$Q $  &$\mathbf{3}$  & $\boldsymbol{2}$& $-1/6$  &  $\only<5>{q=\color{red}1/3}$&$0$  &$+1/2$ &  $+1/6$       \\
+$d_R $&$\mathbf{3}$  & $\boldsymbol{1}$& $-1/2$  &  $\only<5>{d=\color{red}1/3}$&$+1$ &$0$   &  $+2/3$       \\
+$u_R $&$\mathbf{3}$  & $\boldsymbol{1}$& $+2/3$  &  $\only<5>{u=\color{red}1/3}$&$-1$ &$+1$   &  $-1/3$      \\
+$e_R $&$\mathbf{1}$  & $\boldsymbol{1}$& $-1$    &  $\only<5>{e=\color{red}-1 }$&$+1$ &$-2$  &  $0$         \\
+$H $  &$\mathbf{1}$  & $\boldsymbol{2}$& $1/2$  &   $\only<5>{h=\color{red}0  }$&$-1$ &$+1/2$ &  $-1/2$      \\
+{$\sum_{\alpha}\psi_{\alpha} $ } &{$\mathbf{1}$}  & {$\boldsymbol{1}$}& \invisible<1>{$0$}     & \cellcolor{black!65}\color{white}$-3$ &\cellcolor{black!65}\color{white}$-3$&\cellcolor{black!65}\color{white}$-3$&\cellcolor{black!65}\color{white}$-3$  \\
+  \end{tabular}
+}
+  \only<1-2>{\invisible<1>{
+  \begin{block}{Linear anomaly cancellation conditions}    
+  \begin{align*}
+ &\left[\mathrm{SU}(3)_{c}\right]^{2} \mathrm{U}(1)_{X} &&
+ & \left[\mathrm{SU}(2)_{L}\right]^{2} \mathrm{U}(1)_{X} \\
+ &\left[\mathrm{U}(1)_{Y}\right]^{2} \mathrm{U}(1)_{X} &
+ &\to& \mathrm{U}(1)_{Y}\left[\mathrm{U}(1)_{X}\right]^{2}\,.
+  \end{align*}
+  \vspace{-0.1cm}
+  \end{block}
+}}
+\only<3->{
+  \tiny
+  \begin{block}{$\sum_{\alpha} \psi_{\alpha}^3=-3\,,\qquad  \sum_{\alpha} \psi_{\alpha}=-3$}
+  \renewcommand{\arraystretch}{1.4}
+      \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|l}\hline
+    $\left(\only<3>{N_R,N_R}\only<4->{{\color{red}\nu_R,\nu_R}},\psi_{N-2},\cdots\psi_1\right)$     & arXiv \\ \hline
+    $\left(-1,-1,-1\right)$&\tiny hep-ph/0611205,  Khalil\\
+    $\left(-\dfrac{2}{3},-\dfrac{2}{3},-\dfrac{4}{3},-\dfrac{1}{3}\right)$&\includegraphics[scale=0.015]{colombia}\tiny 1607.04029, Patra, Rodejohann, Yaguna [JHEP] \\
+    $\left( -1,-1,-\dfrac{10}{7},-\dfrac{4}{7},-\dfrac{2}{7},\dfrac{9}{7} \right)$ &\includegraphics[scale=0.015]{colombia} \tiny 1808.03352, with Bernal, Yaguna, Zapata [PRD]\\
+    \invisible<1-3>{$\color{red}\left(-4,-4,+5\right)$}&\invisible<1-3>{\includegraphics[scale=0.015]{brazil}\tiny \color{red} 0706.0473,  Montero, Pleitez [PLB]}\\
+    \invisible<1-3>{$\color{red}\left(-\dfrac{8}{5},-\dfrac{8}{5},-\dfrac{2}{5},-\dfrac{7}{5},\dfrac{10}{5}\right)$}&\invisible<1-3>{\includegraphics[scale=0.015]{colombia}\tiny \color{red} 1812.05523, with Calle, Yaguna, Zapata [PRD]}\\    
+    \hline
+  \end{tabular}
+    \end{block}
+}
+
+  
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \invisible<1-3>{
+        \invisible<5>{
+          % \begin{block}
+          {General cancellation for}
+  \begin{align*}
+    \left[\mathrm{U}(1)_{X}\right]^{3} &&  \left[\mathrm{SO}(1,3)\right]^{2} \mathrm{U}(1)_{X}:
+  \end{align*}
+\begin{align*}
+\sum_{\alpha} \psi_{\alpha}^3+3 ({\color{Green}e}-2{\color{blue}l})^3=&0\,, &     \sum_{\alpha} \psi_{\alpha}+3 ({\color{Green}e}-2{\color{blue}l})=&0\,, &
+\end{align*}
+with $\alpha=1,2,\cdots,N$.
+% \end{block}
+
+Set of solutions with
+\begin{align*}
+  {\color{Green}e}-2{\color{blue}l}=1
+\end{align*}}%
+\only<4>{\includegraphics[scale=0.38]{nomajo1}}%
+\only<5>{\includegraphics[scale=0.38]{nomajo}}
+}
+
+      
+    \end{column}
+  \end{columns}
+
 \end{frame}
+
+
+
+
+
+
+\section{Beyond Dirac fermion dark matter}
+
 
 
 % Now we introduce a vector like doublet
@@ -480,7 +535,9 @@ The right-handed neutrinos decouple when
 }}%
 \only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
 % 
-\only<3>{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: Shaikh Saad arXiv:1902.07259  }}%
+\only<3>{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: S. Saad arXiv:1902.07259 [NPB]  }}%
+\only<3>{\put(160,210){\tiny $\longmapsto$ generalization to $\operatorname{U(1)_R}$: \emph{et al}, S. Saad arXiv:1904.07407  }}%
+\only<3>{\put(180,180){\Huge $\uparrow$   }}%
 \only<3-5>{\put(240,135){\tiny
     \begin{minipage}{0.3\linewidth}
       \rowcolors{1}{RoyalBlue!20}{}
@@ -518,10 +575,44 @@ The right-handed neutrinos decouple when
           \end{align*}
         \end{minipage}
 }}%
-\only<6>{\put(0,130){\small with A.F Rivera, W. Tangarife,  arXiv:19nn.nnnnn   }}%
+\only<6>{\put(0,130){\small with A.F Rivera, W. Tangarife,  arXiv:1906.09685 [PRD]   }}%
 \only<6>{\put(220,60){\begin{overpic}[scale=0.6]{sarah}\end{overpic}}}%
 \end{picture}
 \end{frame}
+
+
+\begin{frame}
+  \frametitle{Dark matter relic density}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+\includegraphics[scale=0.3]{S-channel}
+\includegraphics[scale=0.3]{T-channel}
+\includegraphics[scale=0.3]{U-channel}
+
+\scriptsize Decoupled $Z'$ limit
+
+\begin{align*}
+\begin{pmatrix}
+h \\ \operatorname{Re}(S)
+\end{pmatrix} 
+ =
+\begin{pmatrix}
+\cos\alpha & \sin\alpha \\
+-\sin\alpha & \cos\alpha 
+\end{pmatrix}
+\begin{pmatrix}
+h_1 \\ h_2
+\end{pmatrix}\,.
+\end{align*}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+\includegraphics[scale=0.4]{MSvsMD}
+
+%\scriptsize Vector SI (blue points) and  scalar SI (green points)      
+    \end{column}
+  \end{columns}
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Spin independent (SI) direct detection cross section}
@@ -535,7 +626,7 @@ The right-handed neutrinos decouple when
     \begin{column}{0.5\textwidth}
 \includegraphics[scale=0.4]{SI}
 
-\scriptsize Vector SI (blue points) and  scalar SI (green points)      
+%\scriptsize Vector SI (blue points) and  scalar SI (green points)      
     \end{column}
   \end{columns}
 \end{frame}
