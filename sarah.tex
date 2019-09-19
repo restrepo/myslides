@@ -5,6 +5,37 @@
 %\usepackage{mycolors}
 \usepackage{fp}
 \usepackage{multirow}
+%
+%%%%%%%%%%%%%%%%%%%%listings%%%%%%%%%%%%%%%
+\usepackage{listings}
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%Code listing style named "mystyle"
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},   commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  %numbers=left,                    
+  %numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+%"mystyle" code listing set
+\lstset{style=mystyle}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \widescreen
 
 \newenvironment<>{varblock}[2][.9\textwidth]{%
@@ -139,6 +170,23 @@ Phenomenology Group}%
   \only<9>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{computertools9}}}%
   
 \end{picture}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{BSM-Submodules}
+
+    \begin{lstlisting}[language=Sh]
+    git clone 
+    \end{lstlisting}
+
+    \begin{lstlisting}[language=Mathematica]
+    git clone 
+    \end{lstlisting}
+
+    
+  \begin{lstlisting}[language=Python]%, caption=Python example]
+    import numpy as np
+    \end{lstlisting}
 \end{frame}
 
 
@@ -416,6 +464,7 @@ Easy to include an effective $Z_7$ breaking to get decaying dark matter.
 \end{columns}
 
 \end{frame}
+
 
 
 
@@ -2108,3 +2157,8 @@ Custom width in block. See definition in preamble
       \begin{varblock}[12cm]{DM is made of two color octets with mass around $12.5\ \text{TeV}$}      
       \end{varblock}
 \end{frame}
+
+listings example:
+  \begin{lstlisting}[language=Python, caption=Python example]
+    import numpy as np
+    \end{lstlisting}
