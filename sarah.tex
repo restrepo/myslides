@@ -56,8 +56,8 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Two component Dark Matter}
-\subtitle{with neutrino masses}
+\title{HEP computer tools}
+\subtitle{from SARAH and beyond}
 
 
 %\subtitle
@@ -82,7 +82,7 @@ Phenomenology Group}%
 \collaborators{ N. Bernal (UAN), C. Yaguna (UPTC), Ó. Zapata, (UdeA) }
 }
 
-\date{\tiny Sep 6, 2019 - IPP - Natal [PDF: \alert{\url{http://bit.ly/SARAHIIP}}] } % (optional) \today
+\date{\tiny Sep 20, 2019 - IPP - Natal [PDF: \alert{\url{http://bit.ly/SARAHIIP}}] } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -473,7 +473,8 @@ DEFINITION[EWSB][DiracSpinors]={
           \end{align*}
         \end{minipage}
       }
-\put(50,10){\includegraphics[scale=0.2]{cn}}
+      \put(50,10){\includegraphics[scale=0.2]{cn}}
+      \put(50,5){\tiny From A. Vicente}
     \end{picture}
 
     \end{column}
@@ -622,6 +623,34 @@ DefaultInputValues ={Lambda1IN -> 0.28, LamSHIN -> 0.01, LamSIN -> 0,
 \end{lstlisting}
 \end{frame}
 
+\begin{frame}[fragile]
+  \frametitle{Implicit files without editors}
+  \begin{lstlisting}[language=Sh, caption=Creates \texttt{kk.txt} file ]
+cat << EOF > kk.txt
+Hello world
+EOF
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Sh, caption=commands expecting input files ]
+math << EOF 
+2+2
+EOF
+\end{lstlisting}
+
+{
+    \lstset{basicstyle=\ttfamily\tiny}
+\begin{lstlisting}[language=Mathematica]
+Mathematica 11.0.0 for Linux x86 (64-bit)
+Copyright 1988-2016 Wolfram Research, Inc.
+
+In[1]:= 
+Out[1]= 4
+
+In[2]:=
+\end{lstlisting}
+}
+\end{frame}
 
 \begin{frame}[fragile]
   \frametitle{Check SARAH}
@@ -1019,6 +1048,8 @@ Block MASS  # Mass spectrum
 \begin{frame}
   \begin{center}
     \includegraphics[scale=0.3]{cnc}
+
+{\tiny From A. Vicente}
   \end{center}
 \end{frame}
 
