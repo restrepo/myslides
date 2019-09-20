@@ -949,7 +949,7 @@ Number of events in 10 - 50 KeV region=4.55E-04 /day/kg
 \end{frame}
 
 \begin{frame}[fragile]
-  \frametitle{SARAH implementation}
+  \frametitle{Dirac Zee}
   \begin{lstlisting}[language=Sh]
 cp -r BSM/SARAH/Models/B-L/ SARAH/Models/
 math << EOF
@@ -974,7 +974,7 @@ cd .. # Return to parent directory
 \end{lstlisting}
 
 \begin{lstlisting}[language=Sh]
-cp SPheno/SSDM/Input_Files/LesHouches.in.BLDZ .
+cp BSM/LesHouches.in.BLDZ .
 \end{lstlisting}
 
 \begin{lstlisting}[language=Sh]
@@ -982,6 +982,38 @@ SPheno/bin/SPhenoBLDZ  LesHouches.in.BLDZ
 \end{lstlisting}
 
 
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{\texttt{cat SPheno.spc.BLDZ}}
+{\lstset{basicstyle=\ttfamily\scriptsize,emph={Fv},
+  emphstyle=\color{red}}
+  \begin{lstlisting}[language=Sh]
+Block MASS  # Mass spectrum
+#   PDG code      mass          particle
+        25     1.24861947E+02  # hh_1
+        35     1.71464282E+03  # hh_2
+    900037     2.00000000E+03  # Hm_2
+    900038     3.00000000E+03  # Hm_3
+        22     0.00000000E+00  # VP
+        23     9.11887000E+01  # VZ
+        21     0.00000000E+00  # VG
+        24     7.96796394E+01  # VWm
+        31     2.57196423E+03  # VZp
+         1     5.00000000E-03  # Fd_1
+         .
+         .
+         .
+        15     1.77669000E+00  # Fe_3
+        12     0.00000000E+00  # Fv_1
+        14     1.61994502E-31  # Fv_2
+        16     4.42048291E-14  # Fv_3
+   8810012     4.42048291E-14  # Fv_4
+   8810014     2.08300541E-10  # Fv_5
+   8810016     2.08300541E-10  # Fv_6
+ \end{lstlisting}
+ }
 \end{frame}
 
 \begin{frame}
