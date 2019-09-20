@@ -667,9 +667,10 @@ The following steps are now necessary to implement the model in SPheno:
   \begin{lstlisting}[language=Sh]
     cp -r SARAH/Output/SSDM/EWSB/SPheno SPheno/SSDM
     cd SPheno
-    make Model=SPheno # Be sure that Makefile use gfortran!
+    make Model=SSDM # Be sure that Makefile use gfortran!
 \end{lstlisting}
-{\lstset{basicstyle=\ttfamily\tiny}
+{\lstset{basicstyle=\ttfamily\tiny,emph={SPhenoSSDM},
+  emphstyle=\color{red}}
   \begin{lstlisting}[language=Sh]
 cd SSDM ; make F90=gfortran version=400.00
 make[1]: Entering directory '****/BSM-Submodules/SPHENO/SSDM'
@@ -945,6 +946,42 @@ Number of events in 10 - 50 KeV region=4.55E-04 /day/kg
 %  effective number of relativistic degrees of reedom Neff for neutrinos
 %\only<6>{\put(220,60){\begin{overpic}[scale=0.6]{sarah}\end{overpic}}}%
 \end{picture}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{SARAH implementation}
+  \begin{lstlisting}[language=Sh]
+cp -r BSM/SARAH/Models/B-L/ SARAH/Models/
+math << EOF
+<<./SARAH/SARAH.m
+Start["B-L/DZ"]
+MakeSPheno[]
+EOF
+\end{lstlisting}
+
+\begin{lstlisting}[language=Sh]
+cp -r SARAH/Output/B-L-DZ/EWSB/SPheno SPheno/BLDZ
+cd SPheno
+make Model=BLDZ
+cd .. # Return to parent directory
+\end{lstlisting}
+
+\begin{lstlisting}[language=Sh]
+cp -r SARAH/Output/BLDZ/EWSB/SPheno SPheno/BLDZ
+cd SPheno
+make Model=BLDZ # Be sure that Makefile use gfortran!
+cd .. # Return to parent directory
+\end{lstlisting}
+
+\begin{lstlisting}[language=Sh]
+cp SPheno/SSDM/Input_Files/LesHouches.in.BLDZ .
+\end{lstlisting}
+
+\begin{lstlisting}[language=Sh]
+SPheno/bin/SPhenoBLDZ  LesHouches.in.BLDZ
+\end{lstlisting}
+
+
 \end{frame}
 
 \begin{frame}
