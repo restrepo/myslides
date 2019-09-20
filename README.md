@@ -1,7 +1,14 @@
 # Talks
 ## Basic design
 The simple template and examples is in master.
-Each repo have a commont sty file and example file but a unique LaTeX file
+Each talk is in a branch with a name starting with year and month (YYYY_MM).
+Each branch have a commont sty file and example file but a unique LaTeX file
+
+After clone the repo, to switch to an specific branch use (e.g BRANCH=2019_SARAH)
+```bash
+git checkout -B BRANCH # without origin_etc prefix
+git pull origin BRANCH
+```
 
 
 * Install `texlive-fonts-extra`
