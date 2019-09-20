@@ -198,7 +198,7 @@ Phenomenology Group}%
       \vspace{2.4cm}
         
       \begin{align*}
-        \operatorname{SU}(3)_c\times \operatorname{SU}(2)_L\times \operatorname{U}(1)_Y \times Z_2
+        \operatorname{SU}(3)_c\times \operatorname{SU}(2)_L\times \operatorname{U}(1)_Y \times {\color{red}Z_2}
       \end{align*}
       
       \begin{align*}
@@ -209,7 +209,7 @@ Phenomenology Group}%
     \end{column}
     \begin{column}{0.55\textwidth}
     {
-    \lstset{basicstyle=\ttfamily\scriptsize,emph={g1,g2,g3},
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={g1,g2,g3,Z2,Global},
   emphstyle=\color{red}}
     \begin{lstlisting}[language=Mathematica]
 Off[General::spell]
@@ -240,11 +240,46 @@ Gauge[[3]]={G,  SU[3], color,       g3,False,1};
 \begin{frame}[fragile]
   \begin{columns}
     \begin{column}{0.45\textwidth}
-      
+      \begin{picture}(160,250)
+        \put(-20,197){
+          {\footnotesize
+    \rowcolors{1}{RoyalBlue!20}{}            
+      \begin{tabular}{c|c|c|c|c|c|c}\hline
+              &${\color{Green}N_F}$&Lorentz&$Y$&$\operatorname{SU}(2)_L$&$\operatorname{SU}(3)_c$& $Z_2$\\\hline
+$Q$           &${\color{Green}3}$&$(u_L\ d_L)^{\text{T}}  $&$1/6$ &$\boldsymbol{2}$&$\boldsymbol{3}$&$+$\\ 
+$L$           &${\color{Green}3}$&$(\nu_L\ e_L)^{\text{T}}$&$-1/2$&$\boldsymbol{2}$&$\boldsymbol{1}$&$+$\\ 
+$d^c$         &${\color{Green}3}$&$(d_R)^{\dagger}$        &$1/3$ &$\boldsymbol{1}$&$\overline{\boldsymbol{3}}$&$+$\\        
+$u^c$         &${\color{Green}3}$&$(u_R)^{\dagger}$        &$-2/3$&$\boldsymbol{1}$&$\overline{\boldsymbol{3}}$&$+$\\ 
+$e^c$         &${\color{Green}3}$&$(e_R)^{\dagger}$        &$1$   &$\boldsymbol{1}$&$\boldsymbol{1}$&$+$\\ \hline
+$H$           &${\color{Green}1}$&$(H^+\ H^0)$           &$1/2$&$\boldsymbol{2}$&$\boldsymbol{1}$&$+$\\    
+$\color{red}S$&${\color{Green}1}$&$s$                    &$0$  &$\boldsymbol{1}$&$\boldsymbol{1}$&$-$\\\hline 
+      \end{tabular}
+      }
+    }
+    \put(-10,110){
+       \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            \mathcal{L}=&\left( \mathcal{L}_{C}+\text{h.c} \right)\\
+                        &+ \mathcal{L}_{R}\,,
+          \end{align*}
+        \end{minipage}
+      }
+      \put(-10,70){
+        \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            \mathcal{L}_{C}=&-{\color{red}Y_e}e^c\, \widetilde{H}\cdot L - {\color{red}Y_d}d^c\,\widetilde{H}\cdot Q
+                              - {\color{red}Y_u} u^c\, H\cdot Q\,,\\
+            \mathcal{L}_{R}=&-{\color{red}\mu^2}\widetilde{H}\cdot H-{\color{red}\lambda_1}( \widetilde{H}\cdot H )^2\\
+                            &-{\color{red}M_S^2}S^2 -{\color{red}\lambda_{SH}}S^2 \widetilde{H}\cdot H -{\color{red}\lambda_S}S^4\,. \\
+            & {\color{red}Y_e}\to {\color{Green}N_F}\times {\color{Green}N_F},\cdots
+          \end{align*}
+        \end{minipage}
+      }
+  \end{picture}
     \end{column}
     \begin{column}{0.55\textwidth}
     {
-    \lstset{basicstyle=\ttfamily\tiny,emph={g1,g2,g3},
+    \lstset{basicstyle=\ttfamily\tiny,emph={g1,g2,g3,mu2,MS2,Lambda1,LamSH,LamS,Yd,Ye,Yu},
   emphstyle=\color{red}}
     \begin{lstlisting}[language=Mathematica]
 (* Matter Fields *)
@@ -256,7 +291,7 @@ FermionFields[[4]] = {u, 3, conj[uR],    -2/3, 1, -3,1};
 FermionFields[[5]] = {e, 3, conj[eR],       1, 1,  1,1};
 
 ScalarFields[[1]] =  {H, 1, {Hp, H0},     1/2, 2,  1,1};
-ScalarFields[[2]] =  {S, 1, ss,     0, 1,  1, -1};
+ScalarFields[[2]] =  {S, 1, ss,             0, 1,  1,-1};
 RealScalars = {S};
         
 (*----------------------------------------------*)
@@ -273,8 +308,10 @@ DEFINITION[GaugeES][LagrangianInput]= {
 };
 
 
-LagNoHC = -(mu2 conj[H].H + Lambda1/2 conj[H].H.conj[H].H + MS2/2 S.S + LamSH S.S.conj[H].H  + LamS/2 S.S.S.S);
-LagHC =  -(Yd conj[H].d.q + Ye conj[H].e.l + Yu H.u.q);
+LagHC =   -(Ye e.conj[H].l + Yd d.conj[H].q + Yu u.H.q);
+
+LagNoHC = -(mu2 conj[H].H + Lambda1/2 conj[H].H.conj[H].H
+          + MS2/2 S.S + LamSH S.S.conj[H].H  + LamS/2 S.S.S.S);
 
     \end{lstlisting}
 }
@@ -282,14 +319,67 @@ LagHC =  -(Yd conj[H].d.q + Ye conj[H].e.l + Yu H.u.q);
   \end{columns}
 \end{frame}
 
-
+%%%%WARNING: Will be repeated
 \begin{frame}[fragile]
   \begin{columns}
     \begin{column}{0.45\textwidth}
+            \begin{picture}(160,250)
+    \put(-20,230){
+       \begin{minipage}[t]{1.0\linewidth}
+         \begin{align*}
+           \begin{pmatrix}
+             B^{\mu}\\
+             W^{\mu}_3\\
+           \end{pmatrix}={\color{red}Z^{\gamma Z}}
+           \begin{pmatrix}
+           A^{\mu}\\
+           Z^{\mu}
+           \end{pmatrix}
+             ={\color{red}
+               \begin{pmatrix}
+                 \cos\theta_W & \sin\theta_W\\
+                 -\sin\theta_W&\cos\theta_W
+               \end{pmatrix}
+}
+           \begin{pmatrix}
+            A^{\mu}\\
+           Z^{\mu}
+           \end{pmatrix}
+          \end{align*}
+        \end{minipage}
+      }
+      \put(-10,180){
+        \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            {H^0}=\frac{iA+(h+{\color{red}v})}{\sqrt{2}}\,.
+          \end{align*}
+        \end{minipage}
+      }
+    \put(-10,140){
+       \begin{minipage}[t]{1.0\linewidth}
+         \begin{align*}
+           \boldsymbol{d}_L=& {\color{red}V_d} \boldsymbol{D}_L\,,&
+           \left( \boldsymbol{d}_R \right)^{\dagger}=&  \boldsymbol{D}_R^c {\color{red}U_d}\,,\\
+           & {\color{red}V_d}\to {\color{Green}N_F}\times {\color{Green}N_F},\cdots &
+          \end{align*}
+        \end{minipage}
+      }
+      \put(-10,65){
+        \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            \Psi_d=\begin{pmatrix}
+              D_L\\
+              D_R
+            \end{pmatrix}
+          \end{align*}
+        \end{minipage}
+      }
+    \end{picture}
+
     \end{column}
     \begin{column}{0.55\textwidth}
     {
-    \lstset{basicstyle=\ttfamily\tiny,emph={g1,g2,g3},
+    \lstset{basicstyle=\ttfamily\tiny,emph={ZZ,ZW,Vd,Vu,Ve,Ud,Uu,Ue,v,EWSB},
   emphstyle=\color{red}}
     \begin{lstlisting}[language=Mathematica]
 (* Gauge Sector *)
@@ -326,29 +416,155 @@ DEFINITION[EWSB][DiracSpinors]={
   \end{columns}
 \end{frame}
 
+
+%%%% REPETITION
+%%%%WARNING: Will be repeated
 \begin{frame}[fragile]
-  \frametitle{SPheno.m}
+  \begin{columns}
+    \begin{column}{0.45\textwidth}
+            \begin{picture}(160,250)
+    \put(-20,230){
+       \begin{minipage}[t]{1.0\linewidth}
+         \begin{align*}
+           \begin{pmatrix}
+             B^{\mu}\\
+             W^{\mu}_3\\
+           \end{pmatrix}={\color{red}Z^{\gamma Z}}
+           \begin{pmatrix}
+           A^{\mu}\\
+           Z^{\mu}
+           \end{pmatrix}
+             ={\color{red}
+               \begin{pmatrix}
+                 \cos\theta_W & \sin\theta_W\\
+                 -\sin\theta_W&\cos\theta_W
+               \end{pmatrix}
+}
+           \begin{pmatrix}
+            A^{\mu}\\
+           Z^{\mu}
+           \end{pmatrix}
+          \end{align*}
+        \end{minipage}
+      }
+      \put(-10,180){
+        \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            {H^0}=\frac{iA+(h+{\color{red}v})}{\sqrt{2}}\,.
+          \end{align*}
+        \end{minipage}
+      }
+    \put(-10,140){
+       \begin{minipage}[t]{1.0\linewidth}
+         \begin{align*}
+           \boldsymbol{d}_L=& {\color{red}V_d} \boldsymbol{D}_L\,,&
+           \left( \boldsymbol{d}_R \right)^{\dagger}=&  \boldsymbol{D}_R^c {\color{red}U_d}\,,\\
+           & {\color{red}V_d}\to {\color{Green}N_F}\times {\color{Green}N_F},\cdots &
+          \end{align*}
+        \end{minipage}
+      }
+      \put(-10,65){
+        \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            \Psi_d=\begin{pmatrix}
+              D_L\\
+              D_R
+            \end{pmatrix}
+          \end{align*}
+        \end{minipage}
+      }
+\put(50,10){\includegraphics[scale=0.2]{cn}}
+    \end{picture}
+
+    \end{column}
+    \begin{column}{0.55\textwidth}
+    {
+    \lstset{basicstyle=\ttfamily\tiny,emph={ZZ,ZW,Vd,Vu,Ve,Ud,Uu,Ue,v,EWSB},
+  emphstyle=\color{red}}
+    \begin{lstlisting}[language=Mathematica]
+(* Gauge Sector *)
+
+DEFINITION[EWSB][GaugeSector] =
+{ 
+  {{VB,VWB[3]},{VP,VZ},ZZ},
+  {{VWB[1],VWB[2]},{VWp,conj[VWp]},ZW}
+};     
+
+(* ----- VEVs ---- *)
+
+DEFINITION[EWSB][VEVs]= 
+{{H0,{v,1/Sqrt[2]}, {Ah,\[ImaginaryI]/Sqrt[2]},{hh,1/Sqrt[2]}} };
+ 
+
+DEFINITION[EWSB][MatterSector]=   
+    {{{{dL}, {conj[dR]}}, {{DL,Vd}, {DR,Ud}}},
+     {{{uL}, {conj[uR]}}, {{UL,Vu}, {UR,Uu}}},
+     {{{eL}, {conj[eR]}}, {{EL,Ve}, {ER,Ue}}}};  
+
+(*------------------------------------------------------*)
+(* Dirac-Spinors *)
+(*------------------------------------------------------*)
+
+DEFINITION[EWSB][DiracSpinors]={
+ Fd ->{  DL, conj[DR]},
+ Fe ->{  EL, conj[ER]},
+ Fu ->{  UL, conj[UR]},
+ Fv ->{  vL, 0}};
+    \end{lstlisting}
+}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]
+  \frametitle{\url{./parameters.m}}
+  {
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={g1,g2,g3,v,ThetaW,ZZ},
+  emphstyle=\color{red}}
   \begin{lstlisting}[language=Mathematica]
-OnlyLowEnergySPheno = True;
+    ...
+{g1,        { Description -> "Hypercharge-Coupling"}},
+{g2,        { Description -> "Left-Coupling"}},
+{g3,        { Description -> "Strong-Coupling"}},
+...
+{v,          { Description -> "EW-VEV",
+               DependenceNum -> Sqrt[4*Mass[VWp]^2/(g2^2)],
+               DependenceSPheno -> None  }},
 
-MINPAR={{1,Lambda1IN},
-        {2,LamSHIN},
-        {3,LamSIN},
-        {4,MSinput}
-        };
- ...
-ListDecayParticles = {Fu,Fe,Fd,hh};
-ListDecayParticles3B = {{Fu,"Fu.f90"},{Fe,"Fe.f90"},{Fd,"Fd.f90"}};
+{ThetaW,    { Description -> "Weinberg-Angle",
+              DependenceNum -> ArcSin[Sqrt[1 - Mass[VWp]^2/Mass[VZ]^2]]}},
 
-....
+{ZZ, {Description -> "Photon-Z Mixing Matrix"}},
 
-DefaultInputValues ={Lambda1IN -> 0.28, LamSHIN -> 0.01, LamSIN -> 0, MSinput -> 200};
-        
-\end{lstlisting}
+    ...     
+   \end{lstlisting}
+   }
 \end{frame}
 
 \begin{frame}[fragile]
-  \frametitle{particles.m}
+  \frametitle{\url{../parameters.m}}
+  {
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={ZZ,ThetaW},
+  emphstyle=\color{red}}
+  \begin{lstlisting}[language=Mathematica]
+    ...
+{{Description -> "Photon-Z Mixing Matrix",
+       Dependence ->  {{Cos[ThetaW],-Sin[ThetaW]},                             
+                       {Sin[ThetaW],Cos[ThetaW]}},
+       Real ->True,
+       LaTeX -> "Z^{\\gamma Z}",
+       LesHouches -> None,
+       OutputName -> ZZ }},
+    ...     
+   \end{lstlisting}
+   }
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{\url{./particles.m}}
   {
     \lstset{basicstyle=\ttfamily\tiny,emph={g1,g2,g3},
   emphstyle=\color{red}}
@@ -382,48 +598,28 @@ DefaultInputValues ={Lambda1IN -> 0.28, LamSHIN -> 0.01, LamSIN -> 0, MSinput ->
    }
 \end{frame}
 
-\begin{frame}[fragile]
-  \frametitle{parameters.m}
-  {
-    \lstset{basicstyle=\ttfamily\scriptsize,emph={g1,g2,g3},
-  emphstyle=\color{red}}
-  \begin{lstlisting}[language=Mathematica]
-    ...
-{g1,        { Description -> "Hypercharge-Coupling"}},
-{g2,        { Description -> "Left-Coupling"}},
-{g3,        { Description -> "Strong-Coupling"}},
-...
-{v,          { Description -> "EW-VEV",
-               DependenceNum -> Sqrt[4*Mass[VWp]^2/(g2^2)],
-               DependenceSPheno -> None  }},
 
-{ThetaW,    { Description -> "Weinberg-Angle",
-              DependenceNum -> ArcSin[Sqrt[1 - Mass[VWp]^2/Mass[VZ]^2]]}},
-
-{ZZ, {Description -> "Photon-Z Mixing Matrix"}},
-
-    ...     
-   \end{lstlisting}
-   }
-\end{frame}
 
 \begin{frame}[fragile]
-  \frametitle{../parameters.m}
-  {
-    \lstset{basicstyle=\ttfamily\scriptsize,emph={g1,g2,g3},
-  emphstyle=\color{red}}
+  \frametitle{\url{./SPheno.m}}
   \begin{lstlisting}[language=Mathematica]
-    ...
-{{   Description -> "Hypercharge-Coupling", 
-             LaTeX -> "g_1",
-             DependenceOptional -> e/Cos[ThetaW], 
-             DependenceNum -> e/Cos[ThetaW], 
-             LesHouches -> {gauge,1},
-             GUTnormalization -> Sqrt[3/5],
-             OutputName-> g1 }},
-    ...     
-   \end{lstlisting}
-   }
+OnlyLowEnergySPheno = True;
+
+MINPAR={{1,Lambda1IN},
+        {2,LamSHIN},
+        {3,LamSIN},
+        {4,MSinput}
+        };
+ ...
+ListDecayParticles = {Fu,Fe,Fd,hh};
+ListDecayParticles3B = {{Fu,"Fu.f90"},{Fe,"Fe.f90"},{Fd,"Fd.f90"}};
+
+....
+
+DefaultInputValues ={Lambda1IN -> 0.28, LamSHIN -> 0.01, LamSIN -> 0,
+                     MSinput -> 200};
+        
+\end{lstlisting}
 \end{frame}
 
 
@@ -697,6 +893,66 @@ Number of events in 10 - 50 KeV region=4.55E-04 /day/kg
 }
 
 \end{frame}
+
+
+\section{Dirac neutrino masses}
+
+\begin{frame}
+  \frametitle{\only<1>{One loop topologies $\operatorname{U}(1)_{B-L}\oplus Z_2 \oplus Z_2 $}\only<2-3>{One loop topologies $\operatorname{U}(1)_{B-L}$ only!
+   \invisible<2>{\scriptsize with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  } }}
+\begin{picture}(320,250)
+  \only<1>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac1}\end{overpic}}}%
+  \only<1>{\put(280,130){\tiny Chang-Yuan Yao and Gui-Jun Ding, arXiv:1802.05231 [PRD]  }}%
+  \only<2>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac2}\end{overpic}}}%
+  \only<2>{\put(280,130){\tiny with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }}%
+    \only<2-3>{\put(-20,130){\tiny
+        \begin{minipage}{0.3\linewidth}
+          \begin{align*}
+            \psi_{L,R}\to&\text{Singlet fermions \only<3>{(vector-like)}  }\\
+            \invisible<3>{\Psi_{L,R}\to&\text{Vector-like doublet fermions}\invisible<2-3>{:\qquad {\color{red}10/5}}   }\\
+            \sigma\to&\text{Singlet scalar}\invisible<2-3>{:\qquad 15/5}   \\
+          \end{align*}
+        \end{minipage}
+}}%
+\only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
+% 
+\only<3>{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: S. Saad arXiv:1902.07259 [NPB]  }}%
+\only<3>{\put(160,210){\tiny $\longmapsto$ generalization to $\operatorname{U(1)_R}$: \emph{et al}, S. Saad arXiv:1904.07407  }}%
+\only<3>{\put(180,180){\Huge $\uparrow$   }}%
+\only<3>{\put(240,135){\tiny
+    \begin{minipage}{0.3\linewidth}
+      \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|cccccc}\hline
+ Fields: $f_i$  &  $\left( \nu_{R3} \right)^{\dagger}$
+  &$\left( \nu_{R2} \right)^{\dagger}$&$\left( \nu_{R1} \right)^{\dagger}$&$\psi_L$&$\left( \psi_R \right)^{\dagger}$&$S$\\ \hline
+  (A)&$\color{Yellow}+4$&$\color{Yellow}+4$&$-5$& $\color{red}-r$ & $\color{red}r$ & $+3$\\
+    \invisible<3>{(B) &$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{2}{5}}$&$\displaystyle{\frac{7}{5}}$&$\color{red}\displaystyle{-\frac{10}{5}}$&$\color{blue}\displaystyle{+\frac{3}{5}}$}\\
+  \end{tabular}
+         \end{minipage}
+       }}%
+\only<3>{\put(300,55){\tiny
+    \begin{minipage}{0.3\linewidth}
+       \begin{center}
+         \textbf{Anomaly cancellation conditions}
+         \begin{align*}
+           \sum_i f_i=& 3 \\
+           \sum_i f_i^3=& 3 \\
+         \end{align*}
+  \end{center}
+      
+         \end{minipage}
+       }}%
+%  effective number of relativistic degrees of reedom Neff for neutrinos
+%\only<6>{\put(220,60){\begin{overpic}[scale=0.6]{sarah}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[scale=0.3]{cnc}
+  \end{center}
+\end{frame}
+
 
 \end{document}
 
