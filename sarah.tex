@@ -6,7 +6,8 @@
 \usepackage{fp}
 \usepackage{multirow}
 %
-%%%%%%%%%%%%%%%%%%%%listings%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% listings%%%%%%%%%%%%%%%
+% BE SURE TO USE: \begin{frame}[fragile]
 \usepackage{listings}
 %New colors defined below
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -68,7 +69,7 @@
 %   affiliation.
 \institute{
   \begin{picture}(100,2)
-\put(230,-110){ \includegraphics[scale=0.17]{natal}}
+\put(230,-110){ \includegraphics[scale=0.17]{lagoa}}
 \end{picture}
   \affiliation{\tiny Instituto de Física\\
 Universidad de Antioquia\\
@@ -81,7 +82,7 @@ Phenomenology Group}%
 \collaborators{ N. Bernal (UAN), C. Yaguna (UPTC), Ó. Zapata, (UdeA) }
 }
 
-\date{\tiny Sep 6, 2019 - Darkwin - Natal [PDF: http://bit.ly/darkwin] } % (optional) \today
+\date{\tiny Sep 6, 2019 - IPP - Natal [PDF: \alert{\url{http://bit.ly/SARAHIIP}}] } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -172,31 +173,529 @@ Phenomenology Group}%
 \end{picture}
 \end{frame}
 
+\lstset{
+  emph={git,emacs,math,MakeSPheno,MakeCHep,MakeUFO,newProject,SPhenoSSDM,Omega,proton,neutron,SI,CalcOmega},
+  emphstyle=\color{red}
+  %otherkeywords={git },
+}
+
 \begin{frame}[fragile]
   \frametitle{BSM-Submodules}
 
     \begin{lstlisting}[language=Sh]
-    git clone 
+      git clone --recursive https://github.com/restrepo/BSM-Submodules.git
+      cd BSM-Submodules/
+      emacs SARAH/Models/SSDM/SSDM.m
     \end{lstlisting}
 
+\end{frame}
+
+\begin{frame}[fragile]
+  \begin{columns}
+    \begin{column}{0.45\textwidth}
+      \quad
+
+      \vspace{2.4cm}
+        
+      \begin{align*}
+        \operatorname{SU}(3)_c\times \operatorname{SU}(2)_L\times \operatorname{U}(1)_Y \times Z_2
+      \end{align*}
+      
+      \begin{align*}
+        \mathcal{D}_{\mu}=\partial_{\mu}&-i {\color{red}g_1} Y B_{\mu} \\
+        &-i {\color{red}g_2} T W_{\mu}^B\\
+        &  -i {\color{red}g_3} \Lambda G_{\mu}\,.
+      \end{align*}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+    {
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={g1,g2,g3},
+  emphstyle=\color{red}}
     \begin{lstlisting}[language=Mathematica]
-    git clone 
-    \end{lstlisting}
+Off[General::spell]
 
-    
-  \begin{lstlisting}[language=Python]%, caption=Python example]
-    import numpy as np
+Model`Name = "SSDM";
+Model`NameLaTeX ="Singlet scalar Dark Matter";
+Model`Authors = "Diego Restrepo ...";
+Model`Date = "2015-11-16";
+
+(* 2013-01-24: ...)
+
+(* Global Symmetries *)
+
+Global[[1]] = {Z[2], Z2};
+
+(* Gauge Groups *)
+
+Gauge[[1]]={B,   U[1], hypercharge, g1,False,1};
+Gauge[[2]]={WB, SU[2], left,        g2,True,1};
+Gauge[[3]]={G,  SU[3], color,       g3,False,1};
     \end{lstlisting}
+}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 
+\begin{frame}[fragile]
+  \begin{columns}
+    \begin{column}{0.45\textwidth}
+      
+    \end{column}
+    \begin{column}{0.55\textwidth}
+    {
+    \lstset{basicstyle=\ttfamily\tiny,emph={g1,g2,g3},
+  emphstyle=\color{red}}
+    \begin{lstlisting}[language=Mathematica]
+(* Matter Fields *)
+
+FermionFields[[1]] = {q, 3, {uL, dL},     1/6, 2,  3,1};  
+FermionFields[[2]] = {l, 3, {vL, eL},    -1/2, 2,  1,1};
+FermionFields[[3]] = {d, 3, conj[dR],     1/3, 1, -3,1};
+FermionFields[[4]] = {u, 3, conj[uR],    -2/3, 1, -3,1};
+FermionFields[[5]] = {e, 3, conj[eR],       1, 1,  1,1};
+
+ScalarFields[[1]] =  {H, 1, {Hp, H0},     1/2, 2,  1,1};
+ScalarFields[[2]] =  {S, 1, ss,     0, 1,  1, -1};
+RealScalars = {S};
+        
+(*----------------------------------------------*)
+(*   DEFINITION                                 *)
+(*----------------------------------------------*)
+
+NameOfStates={GaugeES, EWSB};
+
+(* ----- Before EWSB ----- *)
+
+DEFINITION[GaugeES][LagrangianInput]= {
+  {LagHC, {AddHC->True}},
+  {LagNoHC,{AddHC->False}}
+};
+
+
+LagNoHC = -(mu2 conj[H].H + Lambda1/2 conj[H].H.conj[H].H + MS2/2 S.S + LamSH S.S.conj[H].H  + LamS/2 S.S.S.S);
+LagHC =  -(Yd conj[H].d.q + Ye conj[H].e.l + Yu H.u.q);
+
+    \end{lstlisting}
+}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \begin{columns}
+    \begin{column}{0.45\textwidth}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+    {
+    \lstset{basicstyle=\ttfamily\tiny,emph={g1,g2,g3},
+  emphstyle=\color{red}}
+    \begin{lstlisting}[language=Mathematica]
+(* Gauge Sector *)
+
+DEFINITION[EWSB][GaugeSector] =
+{ 
+  {{VB,VWB[3]},{VP,VZ},ZZ},
+  {{VWB[1],VWB[2]},{VWp,conj[VWp]},ZW}
+};     
+
+(* ----- VEVs ---- *)
+
+DEFINITION[EWSB][VEVs]= 
+{{H0,{v,1/Sqrt[2]}, {Ah,\[ImaginaryI]/Sqrt[2]},{hh,1/Sqrt[2]}} };
+ 
+
+DEFINITION[EWSB][MatterSector]=   
+    {{{{dL}, {conj[dR]}}, {{DL,Vd}, {DR,Ud}}},
+     {{{uL}, {conj[uR]}}, {{UL,Vu}, {UR,Uu}}},
+     {{{eL}, {conj[eR]}}, {{EL,Ve}, {ER,Ue}}}};  
+
+(*------------------------------------------------------*)
+(* Dirac-Spinors *)
+(*------------------------------------------------------*)
+
+DEFINITION[EWSB][DiracSpinors]={
+ Fd ->{  DL, conj[DR]},
+ Fe ->{  EL, conj[ER]},
+ Fu ->{  UL, conj[UR]},
+ Fv ->{  vL, 0}};
+    \end{lstlisting}
+}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{SPheno.m}
+  \begin{lstlisting}[language=Mathematica]
+OnlyLowEnergySPheno = True;
+
+MINPAR={{1,Lambda1IN},
+        {2,LamSHIN},
+        {3,LamSIN},
+        {4,MSinput}
+        };
+ ...
+ListDecayParticles = {Fu,Fe,Fd,hh};
+ListDecayParticles3B = {{Fu,"Fu.f90"},{Fe,"Fe.f90"},{Fd,"Fd.f90"}};
+
+....
+
+DefaultInputValues ={Lambda1IN -> 0.28, LamSHIN -> 0.01, LamSIN -> 0, MSinput -> 200};
+        
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{particles.m}
+  {
+    \lstset{basicstyle=\ttfamily\tiny,emph={g1,g2,g3},
+  emphstyle=\color{red}}
+  \begin{lstlisting}[language=Mathematica]
+    ...
+  ParticleDefinitions[EWSB] = {
+      
+    {hh   ,  {  Description -> "Higgs",
+                PDG -> {25},
+                PDG.IX -> {101000001},
+                Mass -> LesHouches,
+                FeynArtsNr -> 1,
+                LaTeX -> "h",
+                ElectricCharge -> 0,
+                LHPC -> {1},
+                OutputName -> "h"  }}, 
+
+    {ss   , {  Description -> "Singlet",
+               PDG -> {6666635},
+               PDG.IX -> {101000002},
+               FeynArtsNr -> 10,
+               Mass -> LesHouches,               
+               LaTeX -> "S",
+               ElectricCharge -> 0,
+               LHPC -> {"gold"},
+               OutputName -> "Ss" }},
+           ...
+         }
+    ...     
+   \end{lstlisting}
+   }
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{parameters.m}
+  {
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={g1,g2,g3},
+  emphstyle=\color{red}}
+  \begin{lstlisting}[language=Mathematica]
+    ...
+{g1,        { Description -> "Hypercharge-Coupling"}},
+{g2,        { Description -> "Left-Coupling"}},
+{g3,        { Description -> "Strong-Coupling"}},
+...
+{v,          { Description -> "EW-VEV",
+               DependenceNum -> Sqrt[4*Mass[VWp]^2/(g2^2)],
+               DependenceSPheno -> None  }},
+
+{ThetaW,    { Description -> "Weinberg-Angle",
+              DependenceNum -> ArcSin[Sqrt[1 - Mass[VWp]^2/Mass[VZ]^2]]}},
+
+{ZZ, {Description -> "Photon-Z Mixing Matrix"}},
+
+    ...     
+   \end{lstlisting}
+   }
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{../parameters.m}
+  {
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={g1,g2,g3},
+  emphstyle=\color{red}}
+  \begin{lstlisting}[language=Mathematica]
+    ...
+{{   Description -> "Hypercharge-Coupling", 
+             LaTeX -> "g_1",
+             DependenceOptional -> e/Cos[ThetaW], 
+             DependenceNum -> e/Cos[ThetaW], 
+             LesHouches -> {gauge,1},
+             GUTnormalization -> Sqrt[3/5],
+             OutputName-> g1 }},
+    ...     
+   \end{lstlisting}
+   }
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{Check SARAH}
+  \begin{lstlisting}[language=Sh]
+  math << EOF
+  <<./SARAH/SARAH.m
+  Start["SSDM"]
+  MakeSPheno[]
+  EOF
+\end{lstlisting}
+
+    {
+    \lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Mathematica]
+Mathematica 11.0.0 for Linux x86 (64-bit)
+...
+In[1]:= SARAH 4.14.1
+by Florian Staub, 2018
+...
+In[2]:= Preparing arrays
+ ... 
+Model files loaded   
+  Model    : SSDM
+  Author(s): Diego Restrepo (based on SM model by F.Staub)
+  Date     : 2015-11-16
+******************************************************* 
+Loading Susyno functions for the handling of Lie Groups 
+Based on Susyno v.2.0 by Renato Fonseca (1106.5016)
+webpage: web.ist.utl.pt/renato.fonseca/susyno.html
+*******************************************************
+...
+Finished! SPheno code generated in 170.872s
+....
+The following steps are now necessary to implement the model in SPheno: 
+  \end{lstlisting}
+}
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Check SPheno}
+  \begin{lstlisting}[language=Sh]
+    cp -r SARAH/Output/SSDM/EWSB/SPheno SPheno/SSDM
+    cd SPheno
+    make Model=SPheno # Be sure that Makefile use gfortran!
+\end{lstlisting}
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Sh]
+cd SSDM ; make F90=gfortran version=400.00
+make[1]: Entering directory '****/BSM-Submodules/SPHENO/SSDM'
+.
+.
+.
+make[2]: Leaving directory '****/BSM-Submodules/SPHENO/SSDM'
+gfortran -o SPhenoSSDM -g   SPhenoSSDM.o ../lib/libSPhenoSSDM.a ../lib/libSPheno.a
+mv SPhenoSSDM ../bin
+rm SPhenoSSDM.o  
+make[1]: Leaving directory '****/BSM-Submodules/SPHENO/SSDM'
+\end{lstlisting}
+}
+
+\begin{lstlisting}[language=Sh]
+    # Return to parent directory: BSM-Submodules
+    cd ../ 
+\end{lstlisting}
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Check micrOMEGAs}
+  \begin{lstlisting}[language=Sh]
+    cd micromegas
+    make # Recompile everything!
+    make # twice
+\end{lstlisting}
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Sh]
+make -C CalcHEP_src  MICROMEGAS=MICROMEGAS    
+...
+#--------------------------------------------------------
+# CalcHEP has compiled successfuly and can be started.
+# The manual can be found on the CalcHEP website:
+#      http://theory.sinp.msu.ru/~pukhov/calchep.html
+# The next step is typically to run 
+#      ./mkWORKdir  <new_dir>
+# where <new_dir> is the new directory where you will do
+# your calculations.  After creating this directory, you
+# should cd into it and run calchep or calchep_batch.
+# Please see the manual for further details.
+#---------------------------------------------------------"
+...
+make[1]: Leaving directory '****/BSM-Submodules/micromegas/sources'
+\end{lstlisting}
+}
+
+Build micrOMEGAs model
+\begin{lstlisting}[language=Sh]
+  ./newProject SSDM
+  cd .. # return to parent directory
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Check micrOMEGAs II}
+  \begin{lstlisting}[language=Sh]
+  math << EOF
+  <<./SARAH/SARAH.m
+  Start["SSDM"]
+  MakeCHep[]
+  EOF
+\end{lstlisting}
+
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Mathematica]
+Mathematica 11.0.0 for Linux x86 (64-bit)
+...
+Write main file for MicrOmegas
+Done. Model files generated in 31.044s
+Output is saved in ****/BSM-Submodules/SARAH/Output/SSDM/EWSB/CHep/
+  \end{lstlisting}
+}
+
+\begin{lstlisting}[language=Sh]
+  cp SARAH/Output/SSDM/EWSB/CHep/* micromegas/SSDM/work/models/
+  cd micromegas/SSDM/
+  cp work/models/*.cpp .
+  # check your micrOMEGAs version
+  make main=CalcOmega_with_DDetection_MOv5.cpp 
+\end{lstlisting}
+
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Sh]
+make -C work    
+...
+g++     -g -fPIC  -o CalcOmega_with_DDetection_MOv5 CalcOmega_with_DDetection_MOv5.cpp ... -lpthread
+cd ../../ #Return to parent directory
+  \end{lstlisting}
+}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Check Madgraph}
+  \begin{lstlisting}[language=Sh]
+  math << EOF
+  <<./SARAH/SARAH.m
+  Start["SSDM"]
+  MakeUFO[]
+  EOF
+\end{lstlisting}
+
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Mathematica]
+Mathematica 11.0.0 for Linux x86 (64-bit)
+...
+Writing effective diphoton and digluon vertices
+
+Done. UFO files generated in 30.716s
+Output is saved in ****/BSM-Submodules/SARAH/Output/SSDM/EWSB/UFO/
+  \end{lstlisting}
+}
+
+\begin{lstlisting}[language=Python]
+cp -r SARAH/Output/SSDM/EWSB/UFO/ madgraph/models/SSDM 
+madgraph/bin/mg5_aMC << EOF 
+import model SSDM
+check u u~ > mu+ mu-
+EOF 
+\end{lstlisting}
+
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Sh]
+Process          Min element       Max element       Relative diff.    Result
+u u~ > mu+ mu-   4.9949890843e-03  4.9949890843e-03  5.2093911919e-15  Passed
+Summary: 1/1 passed, 0/1 failed
+  \end{lstlisting}
+}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Benchmark point}
+    \begin{lstlisting}[language=Sh]
+      cp SPheno/SSDM/Input_Files/LesHouches.in.SSDM .
+      emacs LesHouches.in.SSDM
+    \end{lstlisting}
+\end{frame}
+
 \begin{frame}[plain]
 \begin{picture}(320,250)
-  \only<1>{\put(-25,-12){\includegraphics[height=\paperheight]{paraspace1}}}%
-  \only<2>{\put(-25,-12){\includegraphics[height=\paperheight]{paraspace2}}}%
-  \only<3>{\put(-25,-12){\includegraphics[height=\paperheight]{paraspace3}}}%
-  \only<4>{\put(-25,-12){\includegraphics[height=\paperheight]{paraspace4}}}%
+  \only<1>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{leshouches1}}}%
+  \only<2>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{leshouches2}}}%
 \end{picture}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Run SPheno}
+    \begin{lstlisting}[language=Sh]
+ BSM-Submodules$ SPheno/bin/SPhenoSSDM  LesHouches.in.SSDM 
+ Calculating branching ratios and decay widths
+ Calculating one loop decays
+ Loop masses not calculated: tree-level masses used for kinematics
+ Loop masses not calculated: no U-factors are applied
+ Calculating one-loop decays of Fu 
+ Calculating one-loop decays of Fe 
+ Calculating one-loop decays of Fd 
+ Calculating one-loop decays of hh 
+ Calculating low energy constraints
+ Calculating unitarity constraints 
+ Writing output files
+ Finished!
+ BSM-Submodules$ emacs SPheno.spc.SSDM
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[plain]
+\begin{picture}(320,250)
+  \only<1>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc1}}}%
+  \only<2>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc2}}}%
+  \only<3>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc3}}}%
+  \only<4>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc4}}}%
+  \only<5>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc5}}}
+  \only<6>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc6}}}%
+  \only<7>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc7}}}%
+\end{picture}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Run micrOMEGAs}
+    \begin{lstlisting}[language=Sh]
+ micromegas/SSDM/CalcOmega_with_DDetection_MOv5 SPheno.spc.SSDM 
+\end{lstlisting}
+
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Sh]
+
+Masses of odd sector Particles:
+~Ss  : MSs   =    28.4 || 
+PROCESS: ~Ss,~Ss->AllEven,1*x{h,g,A,Z,Wp,Wm,nu1,Nu1,nu2,Nu2,nu3,Nu3,d1,D1,d2,D2,d3,D3,u1,U1,u2,U2,u3,U3,e1,E1,e2,E2,e3,E3
+Xf=1.64e+01 Omega h^2=2.28e+01
+
+# Channels which contribute to 1/(omega) more than 1%.
+# Relative contributions in % are displayed
+   85% ~Ss ~Ss ->d3 D3 
+    8% ~Ss ~Ss ->e3 E3 
+    4% ~Ss ~Ss ->u2 U2 
+    2% ~Ss ~Ss ->g g 
+
+==== Calculation of CDM-nucleons amplitudes  =====
+         TREE LEVEL
+PROCESS: QUARKS,~Ss->QUARKS,~Ss{d1,D1,d2,D2,d3,D3,u1,U1,u2,U2,u3,U3
+Delete diagrams with _S0_!=1,_V5_,A
+....
+CDM-nucleon cross sections[pb]:
+ proton  SI 2.407E-09  SD 0.000E+00
+ neutron SI 2.471E-09  SD 0.000E+00
+
+======== Direct Detection ========
+73Ge: Total number of events=1.29E-03 /day/kg
+Number of events in 10 - 50 KeV region=4.19E-04 /day/kg
+131Xe: Total number of events=2.66E-03 /day/kg
+Number of events in 10 - 50 KeV region=4.48E-04 /day/kg
+23Na: Total number of events=1.75E-04 /day/kg
+Number of events in 10 - 50 KeV region=7.57E-05 /day/kg
+I127: Total number of events=2.57E-03 /day/kg
+Number of events in 10 - 50 KeV region=4.55E-04 /day/kg
+  \end{lstlisting}
+}
+
 \end{frame}
 
 \end{document}
@@ -2162,3 +2661,24 @@ listings example:
   \begin{lstlisting}[language=Python, caption=Python example]
     import numpy as np
     \end{lstlisting}
+
+
+
+\begin{frame}[fragile]
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      
+    \end{column}
+    \begin{column}{0.5\textwidth}
+    {
+    \lstset{basicstyle=\ttfamily\tiny}
+    \begin{lstlisting}[language=Mathematica]
+
+    \begin{lstlisting}[language=Mathematica]
+
+    \end{lstlisting}
+    }
+    \end{column}
+  \end{columns}
+\end{frame}
+    
