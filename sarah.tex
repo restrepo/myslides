@@ -84,7 +84,7 @@ Phenomenology Group}%
 }
 
 \date{\tiny %Sep 20, 2019 - IIP-UFRN {\color{Yellow}\textbf{Natal}}: [PDF: \alert{\url{http://bit.ly/SARAHIIP}}]
-                     Oct 8, 2019 - IFGW-UNICAMP : [PDF: \alert{\url{http://bit.ly/SARAHIFGW}}]
+                     Oct 8, 2019 - UNICAMP-IFGW : [PDF: \alert{\url{http://bit.ly/SARAHIFGW}}]
 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
@@ -177,7 +177,7 @@ Phenomenology Group}%
 \end{frame}
 
 \lstset{
-  emph={git,emacs,math,MakeSPheno,MakeCHep,MakeUFO,newProject,SPhenoSSDM,Omega,proton,neutron,SI,CalcOmega},
+  emph={git,emacs,math,MakeSPheno,MakeCHep,MakeUFO,newProject,SPhenoSSDM,Omega,proton,neutron,SI,CalcOmega,Start},
   emphstyle=\color{red}
   %otherkeywords={git },
 }
@@ -237,6 +237,11 @@ Gauge[[3]]={G,  SU[3], color,       g3,False,1};
 }
     \end{column}
   \end{columns}
+
+
+  \begin{center}
+      $B\to B_{\mu},\ \widetilde{B}\qquad\Longrightarrow $\ \texttt{VB}\,,\ \texttt{FB}
+  \end{center}
 \end{frame}
 
 
@@ -259,6 +264,17 @@ $\color{red}S$&${\color{Green}1}$&$s$                    &$0$  &$\boldsymbol{1}$
       \end{tabular}
       }
     }
+    \put(-10,150){
+       \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+           \text{\texttt{conj[H]}}=  \widetilde{H}=
+            \begin{pmatrix}
+              H^{0*}\\
+              -H^-
+            \end{pmatrix}
+          \end{align*}
+        \end{minipage}
+      }
     \put(-10,110){
        \begin{minipage}[t]{1.0\linewidth}
           \begin{align*}
@@ -321,6 +337,7 @@ LagNoHC = -(mu2 conj[H].H + Lambda1/2 conj[H].H.conj[H].H
     \end{column}
   \end{columns}
 \end{frame}
+
 
 %%%%WARNING: Will be repeated
 \begin{frame}[fragile]
@@ -400,18 +417,18 @@ DEFINITION[EWSB][VEVs]=
  
 
 DEFINITION[EWSB][MatterSector]=   
-    {{{{dL}, {conj[dR]}}, {{DL,Vd}, {DR,Ud}}},
-     {{{uL}, {conj[uR]}}, {{UL,Vu}, {UR,Uu}}},
-     {{{eL}, {conj[eR]}}, {{EL,Ve}, {ER,Ue}}}};  
+    {{{{dL}, {conj[dR]}}, {{DL,Vd}, {DRc,Ud}}},
+     {{{uL}, {conj[uR]}}, {{UL,Vu}, {URc,Uu}}},
+     {{{eL}, {conj[eR]}}, {{EL,Ve}, {ERc,Ue}}}};  
 
 (*------------------------------------------------------*)
 (* Dirac-Spinors *)
 (*------------------------------------------------------*)
 
 DEFINITION[EWSB][DiracSpinors]={
- Fd ->{  DL, conj[DR]},
- Fe ->{  EL, conj[ER]},
- Fu ->{  UL, conj[UR]},
+ Fd ->{  DL, conj[DRc]},
+ Fe ->{  EL, conj[ERc]},
+ Fu ->{  UL, conj[URc]},
  Fv ->{  vL, 0}};
     \end{lstlisting}
 }
@@ -501,18 +518,18 @@ DEFINITION[EWSB][VEVs]=
  
 
 DEFINITION[EWSB][MatterSector]=   
-    {{{{dL}, {conj[dR]}}, {{DL,Vd}, {DR,Ud}}},
-     {{{uL}, {conj[uR]}}, {{UL,Vu}, {UR,Uu}}},
-     {{{eL}, {conj[eR]}}, {{EL,Ve}, {ER,Ue}}}};  
+    {{{{dL}, {conj[dR]}}, {{DL,Vd}, {DRc,Ud}}},
+     {{{uL}, {conj[uR]}}, {{UL,Vu}, {URc,Uu}}},
+     {{{eL}, {conj[eR]}}, {{EL,Ve}, {ERc,Ue}}}};  
 
 (*------------------------------------------------------*)
 (* Dirac-Spinors *)
 (*------------------------------------------------------*)
 
 DEFINITION[EWSB][DiracSpinors]={
- Fd ->{  DL, conj[DR]},
- Fe ->{  EL, conj[ER]},
- Fu ->{  UL, conj[UR]},
+ Fd ->{  DL, conj[DRc]},
+ Fe ->{  EL, conj[ERc]},
+ Fu ->{  UL, conj[URc]},
  Fv ->{  vL, 0}};
     \end{lstlisting}
 }
@@ -654,6 +671,53 @@ In[2]:=
 \end{lstlisting}
 }
 \end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Automatic index contraction}
+ \begin{block}{Verifying Index Contractions}
+   \begin{columns}
+     \begin{column}{0.4\textwidth}
+       \begin{align*}
+         u^c\cdot H\cdot q=&{\color{magenta}\delta_\alpha^\beta} {\color{blue}\epsilon_{ab}}\, u^{c}_{\color{magenta} \alpha}  H^{\color{blue}a} q^{{\color{magenta}\beta}{\color{blue}b}} \\
+         =&{\color{magenta}\overline{\mathbf{3}}\times \mathbf{3}}\otimes{\color{blue}\mathbf{2}\times \mathbf{2}}\,.
+       \end{align*}
+     \end{column}
+     \begin{column}{0.6\textwidth}
+         {
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={col1,col2,col3,lef1,lef2,lef3,Start,MakeIndexStructure},
+      emphstyle=\color{red}}
+    \begin{lstlisting}[language=Mathematica]
+math<<EOF
+<<./SARAH/SARAH.m
+Start["SSDM"]
+MakeIndexStructure[{u, H, q}] (* uc.H.q *)
+EOF      
+ ...
+Out[3]: Delta[col1, col3] epsTensor[lef2, lef3]
+\end{lstlisting}      
+    }
+       \end{column}
+   \end{columns}
+ \end{block}
+
+ \begin{block}{Explicit index contraction in \texttt{SSDM.m}}
+   {
+\lstset{basicstyle=\ttfamily,emph={col1,col2,col3,lef1,lef2,lef3},
+      emphstyle=\color{red}}     
+    \begin{lstlisting}[language=Mathematica]
+   Delta[col1, col3] epsTensor[lef2, lef3]  uc.H.q
+ \end{lstlisting}
+ }
+ \end{block}
+
+ { \tiny See \url{https://gitlab.in2p3.fr/goodsell/sarah/wikis/Automatic_index_contraction}}
+
+\end{frame}
+
+
+%%%%%%%%%%
+
+
 
 \begin{frame}[fragile]
   \frametitle{Check SARAH}
@@ -941,7 +1005,7 @@ Number of events in 10 - 50 KeV region=4.55E-04 /day/kg
     \only<2-4>{\put(-20,130){\tiny
         \begin{minipage}{0.3\linewidth}
           \begin{align*}
-            \psi_{L,R}\to&\text{Singlet fermions (vector-like)  }\\
+            \invisible<4>{\psi_{L,R}\to}&\invisible<4>{\text{Singlet fermions (vector-like)  }}\\
             %\invisible<3>{\Psi_{L,R}\to&\text{Vector-like doublet fermions}\invisible<2-3>{:\qquad {\color{red}10/5}}   }\\
             \sigma\to&\text{Singlet scalar}   \\
           \end{align*}
