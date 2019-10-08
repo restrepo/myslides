@@ -69,7 +69,8 @@
 %   affiliation.
 \institute{
   \begin{picture}(100,2)
-\put(230,-110){ \includegraphics[scale=0.17]{lagoa}}
+    \put(230,-110){ \includegraphics[scale=0.17]{%lagoa
+      campinas}}
 \end{picture}
   \affiliation{\tiny Instituto de Física\\
 Universidad de Antioquia\\
@@ -78,11 +79,13 @@ Phenomenology Group}%
 {}%
 {pixel}% small image here, use pixel for nothing
 {}
-\arxiv{}
-\collaborators{  }
+%\arxiv{}
+%\collaborators{  }
 }
 
-\date{\tiny Sep 20, 2019 - IIP-UFRN {\color{Yellow}\textbf{Natal}}: [PDF: \alert{\url{http://bit.ly/SARAHIIP}}] } % (optional) \today
+\date{\tiny %Sep 20, 2019 - IIP-UFRN {\color{Yellow}\textbf{Natal}}: [PDF: \alert{\url{http://bit.ly/SARAHIIP}}]
+                     Oct 8, 2019 - IFGW-UNICAMP : [PDF: \alert{\url{http://bit.ly/SARAHIFGW}}]
+} % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -1002,7 +1005,7 @@ cd .. # Return to parent directory
 \end{lstlisting}
 
 \begin{lstlisting}[language=Sh]
-cp BSM/LesHouches.in.BLDZ .
+cp BSM/Input_Files/LesHouches.in.BLDZ .
 \end{lstlisting}
 
 \begin{lstlisting}[language=Sh]
@@ -1010,6 +1013,19 @@ SPheno/bin/SPhenoBLDZ  LesHouches.in.BLDZ
 \end{lstlisting}
 
 
+\begin{picture}(320,50)
+  \put(-10,40){\only<1>{
+      \begin{minipage}{0.9\linewidth}
+
+\begin{block}{LesHouches.in.BLDZ: Fix options!}
+ \texttt{55 1\ \ \ \ \ \ \ \# Calculate loop corrected masses}\\
+ \texttt{50 0\ \ \ \ \ \ \ \# Majorana phases: use only positive masses}\\
+\texttt{520 0\ \ \ \ \ \ \# Write effective Higgs couplings}
+      \end{block}
+      \end{minipage}
+}}
+  \put(100,100){\only<2>{}}
+\end{picture}
 \end{frame}
 
 
@@ -1035,11 +1051,11 @@ Block MASS  # Mass spectrum
          .
         15     1.77669000E+00  # Fe_3
         12     0.00000000E+00  # Fv_1
-        14     1.61994502E-31  # Fv_2
+        14    -1.61994502E-31  # Fv_2
         16     4.42048291E-14  # Fv_3
-   8810012     4.42048291E-14  # Fv_4
+   8810012    -4.42048291E-14  # Fv_4
    8810014     2.08300541E-10  # Fv_5
-   8810016     2.08300541E-10  # Fv_6
+   8810016    -2.08300541E-10  # Fv_6
  \end{lstlisting}
  }
 \end{frame}
