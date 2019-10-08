@@ -928,47 +928,53 @@ Number of events in 10 - 50 KeV region=4.55E-04 /day/kg
 \section{Dirac neutrino masses}
 
 \begin{frame}
-  \frametitle{\only<1>{One loop topologies $\operatorname{U}(1)_{B-L}\oplus Z_2 \oplus Z_2 $}\only<2-3>{One loop topologies $\operatorname{U}(1)_{B-L}$ only!
+  \frametitle{\only<1>{One loop topologies $\operatorname{U}(1)_{B-L}\oplus Z_2 \oplus Z_2 $}\only<2-4>{One loop topologies $\operatorname{U}(1)_{B-L}$ only!
    \invisible<2>{\scriptsize with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  } }}
 \begin{picture}(320,250)
   \only<1>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac1}\end{overpic}}}%
   \only<1>{\put(280,130){\tiny Chang-Yuan Yao and Gui-Jun Ding, arXiv:1802.05231 [PRD]  }}%
   \only<2>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac2}\end{overpic}}}%
   \only<2>{\put(280,130){\tiny with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }}%
-    \only<2-3>{\put(-20,130){\tiny
+    \only<2-4>{\put(-20,130){\tiny
         \begin{minipage}{0.3\linewidth}
           \begin{align*}
-            \psi_{L,R}\to&\text{Singlet fermions \only<3>{(vector-like)}  }\\
-            \invisible<3>{\Psi_{L,R}\to&\text{Vector-like doublet fermions}\invisible<2-3>{:\qquad {\color{red}10/5}}   }\\
-            \sigma\to&\text{Singlet scalar}\invisible<2-3>{:\qquad 15/5}   \\
+            \psi_{L,R}\to&\text{Singlet fermions (vector-like)  }\\
+            %\invisible<3>{\Psi_{L,R}\to&\text{Vector-like doublet fermions}\invisible<2-3>{:\qquad {\color{red}10/5}}   }\\
+            \sigma\to&\text{Singlet scalar}   \\
           \end{align*}
         \end{minipage}
 }}%
 \only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
+\only<4>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3b}\end{overpic}}}%
 % 
-\only<3>{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: S. Saad arXiv:1902.07259 [NPB]  }}%
-\only<3>{\put(160,210){\tiny $\longmapsto$ generalization to $\operatorname{U(1)_R}$: \emph{et al}, S. Saad arXiv:1904.07407  }}%
-\only<3>{\put(180,180){\Huge $\uparrow$   }}%
-\only<3>{\put(240,135){\tiny
+\only<3->{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: S. Saad arXiv:1902.07259 [NPB]  }}%
+\only<3->{\put(160,210){\tiny $\longmapsto$ generalization to $\operatorname{U(1)_R}$: \emph{et al}, S. Saad arXiv:1904.07407  }}%
+\only<3->{\put(180,180){\Huge $\uparrow$   }}%
+\only<3->{\put(230,185){\tiny
     \begin{minipage}{0.3\linewidth}
       \rowcolors{1}{RoyalBlue!20}{}
-  \begin{tabular}{c|cccccc}\hline
- Fields: $f_i$  &  $\left( \nu_{R3} \right)^{\dagger}$
-  &$\left( \nu_{R2} \right)^{\dagger}$&$\left( \nu_{R1} \right)^{\dagger}$&$\psi_L$&$\left( \psi_R \right)^{\dagger}$&$S$\\ \hline
-  (A)&$\color{Yellow}+4$&$\color{Yellow}+4$&$-5$& $\color{red}-r$ & $\color{red}r$ & $+3$\\
-    \invisible<3>{(B) &$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{2}{5}}$&$\displaystyle{\frac{7}{5}}$&$\color{red}\displaystyle{-\frac{10}{5}}$&$\color{blue}\displaystyle{+\frac{3}{5}}$}\\
+  \begin{tabular}{c|c|ccccccc}\hline
+ Fields: $f_i$  & $L,e_R$& $\nu_{R3} $
+    &$ \nu_{R2}$&$ \nu_{R1}$&\invisible<3>{$\sigma_1^-}$&\invisible<3>{$\sigma_2^-$}&$S$&$H$\\ \hline
+  $\operatorname{U}(1)_{B-L}$&$-1$&$\color{Yellow}-4$&$\color{Yellow}-4$&$+5$&\invisible<3>{ $\color{red}-2$} & \invisible<3>{$\color{red}-5$} & $+3$&$0$\\ \hline
   \end{tabular}
          \end{minipage}
        }}%
-\only<3>{\put(300,55){\tiny
+\only<3->{\put(300,85){\tiny
     \begin{minipage}{0.3\linewidth}
-       \begin{center}
-         \textbf{Anomaly cancellation conditions}
+       \begin{block}{\tiny Anomaly cancellation conditions}
          \begin{align*}
-           \sum_i f_i=& 3 \\
-           \sum_i f_i^3=& 3 \\
+           \sum_i \nu_{Ri}=& -3 \\
+           \sum_i \nu_{Ri}^3=& -3 \\
          \end{align*}
-  \end{center}
+       \end{block}
+       \vspace{-1cm}
+         \begin{block}{\tiny Three-level cancellation conditions}
+         \begin{align*}
+        \cancel{ \nu_R\nu_R} \\
+           \cancel{\left( \nu_R \right)^{\dagger} L\cdot H } \\
+         \end{align*}
+  \end{block}
       
          \end{minipage}
        }}%
