@@ -35,8 +35,11 @@
 \begin{picture}(320,250)  
   % \def\sdm{0.4}
   \only<1>{\put(35,-22){\includegraphics[height=\paperheight]{soup}}}%
-  \only<2>{\put(35,-22){\includegraphics[height=\paperheight]{soup1}}}%
-  \only<1->{\put(235, -15){{\tiny Credit: Komatsu, ICTP Summer School on Cosmology 2018 {\tiny (Video avalaible)}}}}%  
+  %\only<2>{\put(35,-22){\includegraphics[height=\paperheight]{soup1}}}%
+  \only<2>{\put(35,-22){\includegraphics[height=\paperheight]{saosoup}}}%
+  \only<1>{\put(235, -15){{\tiny Credit: Komatsu, ICTP Summer School on Cosmology 2018 {\tiny (Video avalaible)}}}}%
+    \only<2>{\put(235, -15){{\tiny \color{white} Nobu São Paulo version}}}%  
+
 %    \only<1>{\includegraphics[scale=\sdm]{soup}}%
 %    \only<2>{\includegraphics[scale=\sdm]{soup1}}\\
 %    \only<1->
@@ -131,8 +134,8 @@
     
   \end{quote}
 
-\def\heifig{4.8cm}
-\includegraphics[height=\heifig]{building} \hspace{2cm}\only<1>{\includegraphics[height=\heifig]{lowweb}}\only<2>{\includegraphics[height=\heifig]{cosmic_web_simulation}}
+\def\heifig{3.8cm}
+\includegraphics[height=\heifig]{building} \hfill \only<1>{\includegraphics[height=\heifig]{lowweb}}\only<2>{\includegraphics[height=\heifig]{cosmic_web_simulation}}
 
   % \begin{figure}
   %   \centering
@@ -140,9 +143,16 @@
   %   {\tiny Milenium simulation: \url{https://wwwmpa.mpa-garching.mpg.de/galform/virgo/millennium/}}
   % \end{figure}
 
-\begin{block}{An excess of a gas is observed between Milky Way and Andromeda}
-  \scriptsize These great filaments are made largely of \alert{dark matter} located in the space between galaxies\\ and filled with $60\%$ of the \alert{primordial gas!} \hfill\only<1>{{[\url{https://hubblesite.org}]}}
-  \end{block}
+{  \scriptsize These great filaments are made largely of \alert{dark matter} located in the space between galaxies\\ and filled with $60\%$ of the \alert{primordial gas!} \hfill\only<1>{{[\url{https://hubblesite.org}]}}
+}
+
+%\vspace{-0.3cm}
+\begin{block}{\footnotesize An excess of a gas ($20\sigma$) is observed between Milky Way and Andromeda (M31): arXiv:1403.7528 [MNRAS] ${}^1$} 
+  \footnotesize Clouds of HI likeky embeded in a filament between M31 and M33: arXiv:1305.1631 [nature]\\ 
+\end{block}
+
+\vspace{-0.3cm}
+{\tiny $\overline{{}^1\ \ \ \ \ \ }$\!\!\!\!\!\!\!See also: arXiv:1603.05400 [A\&A]}
 \end{frame}
 
 
