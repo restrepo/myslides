@@ -24,7 +24,7 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Minimal Scotogenic (DM) models}
+\title{Minimal Scotogenic models}
 \subtitle{with (Dirac) neutrino masses}
 
 
@@ -50,14 +50,13 @@ Phenomenology Group}%
 \collaborators{ Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, Andrés Rivera (UdeA),\\ Walter Tangarife (Loyola University Chicago) }
 }
 
-\date{\tiny Oct 11, 2019 - USP  [PDF: http://bit.ly/darkusp] } % (optional) \today
+\date{\tiny Oct 14, 2019 - Cruzeiro do Sul U.  [PDF: http://bit.ly/darkcdsu] } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
 %\subject{Talks}
 % This is only inserted into the PDF information catalog. Can be left
 % out. 
-
 
 
 % If you have a file called "university-logo-filename.xxx", where xxx
@@ -106,18 +105,52 @@ Phenomenology Group}%
 prompting model builders to think more broadly about what dark matter can be and in
 the process consider other and more subtle ways to search for it.
 \end{quote}
+\end{block}
 
-\begin{align}
-  \mathcal{L}=-\frac{1}{4}V_{\mu\nu}V^{\mu\nu}+i \overline{X}i\cancel{\mathcal{D}} X-m \overline{X}X\,.
-\end{align}
-Relic abundance by $X\overline{X}\to \gamma_{\mathcal{D}}\gamma_{\Delta}$
-  \end{block}
 \end{frame}
 
 \section{Dark sectors}
 
-\begin{frame}[fragile,allowframebreaks]
-In the following discussion we use the following doublets 
+
+
+
+\begin{frame}
+\begin{picture}(320,250)
+\only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
+\only<1>{\put(194,92){\begin{overpic}[scale=0.2]{infinity}\end{overpic}}}%
+\only<1->{\put(30,160.5){ $\mathbf{SM}$  }}%
+\only<1->{\put(18,115){\begin{overpic}[scale=0.118]{mice}\end{overpic}}}%
+\only<2>{\put(204,158){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
+\only<2>{\put(224,195){ {\huge \only<2>{
+        \hspace{0.4cm}\begin{minipage}{3cm}
+                    Hidden \\
+          QED
+        \end{minipage}
+      }}  }}%
+\only<3->{\put(250,180){\Large $\color{red}\mathcal{L}=-\frac{1}{4}V_{\mu\nu}V^{\mu\nu}+i \overline{X}i\cancel{\mathcal{D}} X-m \overline{X}X\,. $   }}%
+\only<3->{\put(280,218.5){ \Huge {{\color{red}Lo}{\color{red}cal}} $\color{red}U(1)_{\mathcal{D}}$  }}%
+\only<3->{\put(280,150){
+    {\color{red}Relic abundance}
+    $\color{red} X\overline{X}\to \gamma_{\mathcal{D}}\gamma_{\mathcal{D}}$  
+  }}%
+\only<3->{\put(160,120){\Large $A_{\mu\nu}{\color{red}\ V^{\mu\nu}} $   }}%
+\only<3->{\put(204,0){ \begin{overpic}[scale=0.2]{tcdm1}\end{overpic}}}%
+
+\only<4->{\put(280,0){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
+\only<4->{\put(296,40){ {\huge 
+        \hspace{0.4cm}\begin{minipage}{3cm}
+          Too\\
+
+          \vspace{-1.4cm}
+          Restricted
+        \end{minipage}
+      }  }}%
+\end{picture}
+\end{frame}
+
+\begin{frame}%[fragile,allowframebreaks]
+\frametitle{Explain also small neutrino masses }
+  In the following discussion we use the following doublets 
 \begin{align}
   H=&
   \begin{pmatrix}
@@ -137,33 +170,6 @@ corresponding to the Higgs doublet and the lepton doublets (in Weyl Notation) re
 
 \end{frame}
 
-
-
-\begin{frame}
-\begin{picture}(320,250)
-\only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
-\only<1>{\put(194,92){\begin{overpic}[scale=0.2]{infinity}\end{overpic}}}%
-\only<1->{\put(30,160.5){ $\invisible<1-3>{\langle}\mathbf{SM}\invisible<1-3>{\rangle}$  }}%
-\only<1->{\put(18,115){\begin{overpic}[scale=0.118]{mice}\end{overpic}}}%
-\only<2->{\put(38,115){ {\large +}  }}%
-\only<2->{\put(0,100){\Large  $m^{\nu}_{\text{Majorana}}=\dfrac{h_{\nu}}{\Lambda} L \cdot H L \cdot H\invisible<1-3>{\dfrac{\color{red}S}{\Lambda}}$ \invisible<1,3->{\color{red}(three-level)}   }}%
-\only<2->{\put(-32,80){ {\scriptsize Type-I arXiv:1808.03352\only<2>{, II arXiv:1607.04029, III arXiv:1908.04308}\only<3>{, with N. Bernal, C. Yaguna, and Ó. Zapata [PRD]}\only<4->{
-        \begin{minipage}[t]{2.7cm}
-          \color{red}: Also new terms arise from spontaneous breakdown of a new gauge symmetry
-        \end{minipage}
-} } }}%
-\only<2-3>{\put(204,158){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
-\only<2-3>{\put(224,195){ {\huge \only<2>{\textbf{3 models}}\only<3->{
-        \hspace{0.4cm}\begin{minipage}{3cm}
-          Type-I\\
-          seesaw
-        \end{minipage}
-      }}  }}%
-\only<3->{\put(-10,200){\Large $\mathcal{L}=y\left( N_R \right)^{\dagger}L \cdot \invisible<1-3>{\langle}H\invisible<1-3>{\rangle}+  \only<3>{M_N}\only<4->{y'{\color{red} \langle S\rangle}}  N_R N_R+\text{h.c} $   }}%
-\only<4->{\put(124,218.5){ \Huge \invisible<4>{{\color{red}Lo}{\color{Yellow}cal}} $U(1)_X \color{red} \to  Z_7 $  }}%
-\only<5>{\put(204,18){ \begin{overpic}[scale=0.2]{tcdm}\end{overpic}}}%
-\end{picture}
-\end{frame}
 
 \begin{frame}
   \frametitle{Standard model extended with $\operatorname{U}(1)_X$ gauge symmetry}
@@ -236,24 +242,26 @@ We impose $\nu_{R1}=\psi_N$, $\nu_{R2}=\psi_{N-1}$, to have at most one massless
 \end{frame}
 
 
+
+
 \begin{frame}
   \frametitle{One parameter $\operatorname{U}(1)_X$ SM extension }
         \rowcolors{1}{RoyalBlue!20}{}
   \begin{tabular}{c|c|c|c|c|c|c|c||c}
     \hline  
     Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{X}$& $\color{red}\operatorname{U}(1)_{B-L}$& $\operatorname{U}(1)_R$& $\operatorname{U}(1)_D$& $\operatorname{U}(1)_G$ & $\operatorname{U}(1)_{\mathcal{D}}^{{\color{Yellow}*}}$\\ \hline
-$L $  & $\boldsymbol{2}$& $-1/2$  &  ${\color{blue}l}$&  $\color{red}-1$&    $0$ &  $-3/2$     &  $-1/2$&$0$ \\    
-$Q $  & $\boldsymbol{2}$& $-1/6$  &  $-{\color{blue}l}/3$& $\color{red}1/3$&    $0$&  $1/2$    &  $1/6 $&$0$ \\
-$d_R $& $\boldsymbol{1}$& $-1/2$  &  $1+2{\color{blue}l}/3$&  $\color{red}1/3$&    $1$&  $0$ &  $2/3 $&$0$ \\
+$L $  & $\boldsymbol{2}$& $-1/2$  &  ${\color{blue}l}      $&  $\color{red}-1$&    $0$ &  $-3/2$     &  $-1/2$&$0$ \\    
+$Q $  & $\boldsymbol{2}$& $-1/6$  &  $-{\color{blue}l}/3   $& $\color{red}1/3$&    $0$&  $1/2$    &  $1/6 $&$0$ \\
+$d_R $& $\boldsymbol{1}$& $-1/2$  &  $1+2{\color{blue}l}/3 $&  $\color{red}1/3$&    $1$&  $0$ &  $2/3 $&$0$ \\
 $u_R $& $\boldsymbol{1}$& $+2/3$  &  $-1-4{\color{blue}l}/3$&  $\color{red}1/3$&   $-1$&  $1$&  $-1/3$&$0$ \\
-$e_R $& $\boldsymbol{1}$& $-1$    &  $1+2{\color{blue}l}$&  $\color{red}-1$&    $1$ &  $-2$    &  $0   $&$0$ \\
-$H $  & $\boldsymbol{2}$& $1/2$  &  $-1-{\color{blue}l}$&  $\color{red}0$&    $-1$ &  $1/2$   &  $-1/2$&$0$ \\\hline
+$e_R $& $\boldsymbol{1}$& $-1$    &  $1+2{\color{blue}l}   $&  $\color{red}-1$&    $1$ &  $-2$    &  $0   $&$0$ \\
+$H $  & $\boldsymbol{2}$& $1/2$  &   $-1-{\color{blue}l}   $&  $\color{red}0$&    $-1$ &  $1/2$   &  $-1/2$&$0$ \\\hline
 %$S$ & $\boldsymbol{1}$ & $0$  & $ 2 \psi_N$& $\color{red}2 \psi_N$&  $2 \psi_N$ & $2 \psi_N$& $2 \psi_N$ &$0$ \\
  $\sum_\alpha n_{\alpha}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$&$0$\\
  $\sum_\alpha n_{\alpha}^{3}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$&$0$\\ \hline
   \end{tabular}
 
-  {\color{Yellow}*}  ${\color{Green}r}={\color{blue}l}=0$ ($n_{\alpha}\ne 0$)
+  {\color{Yellow}*} Use vector like fermions $\mathcal{D}(\psi_L)=\mathcal{D}(\psi_R)\to n-n=0$
   
   Solutions in terms of a parameter: arXiv:1811.11927, N. Okada, \emph{et al} [PRD];
 
@@ -263,7 +271,7 @@ $H $  & $\boldsymbol{2}$& $1/2$  &  $-1-{\color{blue}l}$&  $\color{red}0$&    $-
 \end{frame}
 
 \begin{frame}
-\frametitle{  Known solutions with $\sum n_{\alpha}=-3$ and $\sum n_{\alpha}^3=-3$}
+\frametitle{Or$\cdots$ combine known solutions with $\sum n_{\alpha}=-3$ and $\sum n_{\alpha}^3=-3$}
 \begin{columns}
   \begin{column}{0.6\textwidth}
     \begin{table}
@@ -281,9 +289,12 @@ $\left(\nu_{R1},\nu_{R2},\psi_{N-2},\cdots\right)$     & Ref \\ \hline
     $\color{red}\left( -1,-1,-\dfrac{10}{7},-\dfrac{4}{7},-\dfrac{2}{7},\dfrac{9}{7} \right)$ &\includegraphics[scale=0.03]{colombia}\color{red} \tiny 1808.03352, with N. Bernal, C. Yaguna, Ó. Zapata [PRD]\\
     \hline
    \end{tabular}
-      \caption{The possible solutions of the Dirac neutrino mass models with at least two repeated charges and until six chiral fermions.}
+   \caption{Possible solutions with at least two repeated charges and until six chiral fermions.
+
+     For general $\sum n_\alpha=0$ solutions: see {\tiny D.B Costa, \emph{et al}, 1905.13729}}
       \label{tab:sltn5}
 \end{table}
+
 
 \end{column}
 \begin{column}{0.4\textwidth}
@@ -298,69 +309,6 @@ $\left(\nu_{R1},\nu_{R2},\psi_{N-2},\cdots\right)$     & Ref \\ \hline
 \end{frame}
 
 
-
-\begin{frame}%[fragile,allowframebreaks]
-\small
-  \begin{columns}
-    \begin{column}{0.4\textwidth}
-              \rowcolors{1}{RoyalBlue!20}{}
-  \begin{tabular}{c|c|c|c}
-    \hline  
-    Fields     &  $\color{red}\operatorname{U}(1)_{B-L}$& $Z^1_2$& $Z^1_2$\\ \hline
-    $L $  &  $\color{red}-1$ &$+$&$+$  \\    
-$Q $    & $\color{red}1/3$ &$+$&$+$    \\
-$d_R $  & $\color{red}1/3$ &$+$&$+$     \\
-$u_R $  & $\color{red}1/3$ &$+$&$+$     \\
-$e_R $  & $\color{red}-1$  &$+$&$+$     \\
-$H $    & $\color{red}0$   &$+$&$+$     \\\hline
-$S$     & $\color{red}-2 $ &$+$&$+$ \\
-$\color{red}N_{R1}$ & $\color{red}-1$ &$+$&$+$\\
-$\color{red}N_{R2}$ & $\color{red}-1$ &$+$&$+$\\    
-$\psi_1\to \color{Green}\left( \xi_L \right)^{\dagger}$ & $\color{red}-10/7$ &$\color{Green}\boldsymbol{-}$&$+$ \\
-$\psi_2\to \color{Green} \eta_RX$ & $\color{red}-4/7$ &$\color{Green}\boldsymbol{-}$&$+$ \\
-$\psi_3\to \color{blue}\zeta_R$ & $\color{red}-2/7$ &$+$&$\color{blue}\boldsymbol{-}$\\
-$\psi_4\to \color{blue}\left( \chi_L \right)^{\dagger}$ & $\color{red}+9/7$ &$+$&$\color{blue}\boldsymbol{-}$ \\
-$S'$ & $\color{red}1$ &$+$&$+$\\        
-  \end{tabular}
-  
-    \end{column}
-  \begin{column}{0.6\textwidth}
-    \includegraphics[scale=0.5]{seesawm}
-
-
-\hspace{2cm}   
-\only<1>{
-  \begin{center}
-    After integrating out heavy fermions, we obtain\\
-    \alert{light neutrino masses}
-
-    \includegraphics[scale=0.3]{shadedboxn}
-
-    With only two heavy fermions, \alert{one massless neutrino} is left
-  \end{center}
-}
-\only<2>{
-  \begin{center}
-    {\color{Green}Two} {\color{blue}component} Dirac fermion dark matter
-    \begin{align*}
-      &\includegraphics[scale=0.6]{ddd1} &  \includegraphics[scale=0.6]{ddd2}& \\
-      {\color{Green}\chi_1=}&{\color{Green}
-      \begin{pmatrix}
-        \xi_L \\ \eta_R        
-      \end{pmatrix}},&
-      {\color{blue}\chi_2=
-      \begin{pmatrix}
-        \chi_L \\ \zeta_R
-      \end{pmatrix}}&\\
-      \mathcal{L}=&{\color{Green}M_1 \overline{\chi_1} \chi_1}  &  +{\color{blue}M_2 \overline{\chi_2} \chi_2}&
-    \end{align*}
-  \end{center}
-}
-  \end{column}
-    
-\end{columns}
-
-\end{frame}
 
 
 \section{(One-loop) Dirac neutrino masses}
@@ -557,134 +505,6 @@ The right-handed neutrinos decouple when
   \end{columns}
 \end{frame}
 
-\section{One-loop realization of $\mathcal{L}_{5-D}$ with total $L$}
-\begin{frame}
-\begin{picture}(320,250)
-\only<1>{\put(-24,-21){\begin{overpic}[scale=0.352]{u11}\end{overpic}}}%
-\only<2>{\put(-24,-21){\begin{overpic}[scale=0.352]{u12}\end{overpic}}}%
-\only<3>{\put(-24,-21){\begin{overpic}[scale=0.352]{u13}\end{overpic}}}%
-\only<4>{\put(-24,-21){\begin{overpic}[scale=0.352]{u14}\end{overpic}}}%
-\end{picture}
-\end{frame}
-
-\begin{frame}
-  \frametitle{\only<1>{One loop topologies $\operatorname{U}(1)_{B-L}\oplus Z_2 \oplus Z_2 $}\only<2-4>{One loop topologies $\operatorname{U}(1)_{B-L}$ only!
-   \invisible<2>{\scriptsize with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  } }\only<5-6>{
-    SD${}^{3}$M+SSDM: $\sigma_a$ ($a=1,2$)     \invisible<6>{\scriptsize with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }  }}
-\begin{picture}(320,250)
-  \only<1>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac1}\end{overpic}}}%
-  \only<1>{\put(280,130){\tiny Chang-Yuan Yao and Gui-Jun Ding, arXiv:1802.05231 [PRD]  }}%
-  \only<2>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac2}\end{overpic}}}%
-  \only<2>{\put(280,130){\tiny with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }}%
-    \only<2-5>{\put(-20,130){\tiny
-        \begin{minipage}{0.3\linewidth}
-          \begin{align*}
-            \psi_{L,R}\to&\text{Singlet fermions \only<3>{(vector-like)}\only<4-5>{(quiral)}  }\\
-            \invisible<3>{\Psi_{L,R}\to&\text{Vector-like doublet fermions}\invisible<2-4>{:\qquad {\color{red}10/5}}   }\\
-            \sigma\to&\text{Singlet scalar}\invisible<2-4>{:\qquad 15/5}   \\
-            \invisible<5>{\eta\to&\text{Doublet scalar}   }
-          \end{align*}
-        \end{minipage}
-}}%
-\only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
-% 
-\only<3>{\put(160,230){\tiny $\longmapsto$ ${\color{Green}\sigma_1}={\color{red}-2}$\,,\qquad
-                             ${\color{red}\sigma_2}={\color{Yellow}-5}$\,,\qquad }}%
-\only<3>{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: S. Saad arXiv:1902.07259 [NPB]  }}%
-\only<3>{\put(160,210){\tiny $\longmapsto$ generalization to $\operatorname{U(1)_R}$: \emph{et al}, S. Saad arXiv:1904.07407  }}%
-\only<3>{\put(180,180){\Huge $\uparrow$   }}%
-\only<3-5>{\put(240,135){\tiny
-    \begin{minipage}{0.3\linewidth}
-      \rowcolors{1}{RoyalBlue!20}{}
-  \begin{tabular}{c|cccccc}\hline
- Fields: $f_i$  &  $\left( \nu_{R3} \right)^{\dagger}$
-  &$\left( \nu_{R2} \right)^{\dagger}$&$\left( \nu_{R1} \right)^{\dagger}$&$\psi_L$&$\left( \psi_R \right)^{\dagger}$&$S$\\ \hline
-  (A)&$\color{Yellow}+4$&$\color{Yellow}+4$&$-5$& $\color{red}-r$ & $\color{red}r$ & $+3$\\
-    \invisible<3>{(B) &$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{2}{5}}$&$\displaystyle{\frac{7}{5}}$&$\color{red}\displaystyle{-\frac{10}{5}}$&$\color{blue}\displaystyle{+\frac{3}{5}}$}\\
-  \end{tabular}
-         \end{minipage}
-       }}%
-\only<3-5>{\put(300,55){\tiny
-    \begin{minipage}{0.3\linewidth}
-       \begin{center}
-         \textbf{Anomaly cancellation conditions}
-         \begin{align*}
-           \sum_i f_i=& 3 \\
-           \sum_i f_i^3=& 3 \\
-         \end{align*}
-  \end{center}
-      
-         \end{minipage}
-       }}%
-%  effective number of relativistic degrees of reedom Neff for neutrinos
- \only<4>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac4}\end{overpic}}}%
- \only<5-6>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac5}\end{overpic}}}%
- \only<6>{\put(20,200){
-     \begin{minipage}{0.3\linewidth}
-       $M_\psi=h_1 \left\langle S \right\rangle$, $\color{red}y_2=0$:
-          \begin{align*}
-            \mathcal{L}={\color{red}\mathcal{L}_{\text{SD${}^3$M}}}
-            +{\color{Green} h_3^{ia} \widetilde{\left( \Psi_R \right)}\cdot L_i\, \sigma_a}+
-      {\color{blue}      h_2^{\beta a} \left( \nu_{R\beta} \right)^{\dagger} \psi_L\, \sigma^{*}_a}
-            -V(\sigma_a,S,H)\,.
-          \end{align*}
-        \end{minipage}
-}}%
-\only<6>{\put(0,130){\small with A.F Rivera, W. Tangarife,  arXiv:1906.09685 [PRD]   }}%
-\only<6>{\put(220,60){\begin{overpic}[scale=0.6]{sarah}\end{overpic}}}%
-\end{picture}
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Dark matter relic density}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-\includegraphics[scale=0.3]{S-channel}
-\includegraphics[scale=0.3]{T-channel}
-\includegraphics[scale=0.3]{U-channel}
-
-\scriptsize Decoupled $Z'$ limit
-
-\begin{align*}
-\begin{pmatrix}
-h \\ \operatorname{Re}(S)
-\end{pmatrix} 
- =
-\begin{pmatrix}
-\cos\alpha & \sin\alpha \\
--\sin\alpha & \cos\alpha 
-\end{pmatrix}
-\begin{pmatrix}
-h_1 \\ h_2
-\end{pmatrix}\,.
-\end{align*}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-\includegraphics[scale=0.4]{MSvsMD}
-
-%\scriptsize Vector SI (blue points) and  scalar SI (green points)      
-    \end{column}
-  \end{columns}
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Spin independent (SI) direct detection cross section}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-\includegraphics[scale=0.4]{vector-SI}
-\includegraphics[scale=0.4]{scalar-SI}
-
-\scriptsize Decoupled $Z'$ limit
-    \end{column}
-    \begin{column}{0.5\textwidth}
-\includegraphics[scale=0.4]{SI}
-
-%\scriptsize Vector SI (blue points) and  scalar SI (green points)      
-    \end{column}
-  \end{columns}
-\end{frame}
 
 \section{Dark symmetry}
 
@@ -695,30 +515,32 @@ h_1 \\ h_2
       \def\rssc{0.26}
       \only<1>{\includegraphics[scale=\rssc]{radiativeseesaw1}}
       \only<2>{\includegraphics[scale=\rssc]{radiativeseesaw2}}
+      \only<3>{\includegraphics[scale=\rssc]{diracradiativeseesawmajo1}}
+      \only<4->{\includegraphics[scale=\rssc]{diracradiativeseesawmajo2}}
     \end{column}
     \begin{column}{0.35\textwidth}
-      \invisible<1>{
+      \invisible<1-2>{
         \small
         \rowcolors{1}{RoyalBlue!20}{}
   \begin{tabular}{c|c|c|c}
     \hline  
-    Fields   & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $  & $\operatorname{U}(1)_{\mathcal{D}}^{{\color{Yellow}*}}$\\ \hline
-$L $  & $\boldsymbol{2}$& $-1/2$&$0$ \\    
-$Q $  & $\boldsymbol{2}$& $-1/6$&$0$ \\
-$d_R $& $\boldsymbol{1}$& $-1/2$&$0$ \\
-$u_R $& $\boldsymbol{1}$& $+2/3$&$0$ \\
-$e_R $& $\boldsymbol{1}$& $-1$  &$0$ \\
-$H $  & $\boldsymbol{2}$& $1/2$&  $0$ \\\hline
-$\eta$ & $\boldsymbol{2}$& $1/2$  &$1$ \\
-$S$ & $\boldsymbol{1}$& $0$ &$2$ \\    
-$\sigma$ & $\boldsymbol{1}$& $0$ &$3$ \\\hline        
-$\nu_{R1}$& $\boldsymbol{1}$& $0$ & $4$\\
-$\nu_{R2}$& $\boldsymbol{1}$& $0$ & $4$\\
-$\nu_{R3}$& $\boldsymbol{1}$& $0$ & $-5$\\
-$\psi_{R1}$& $\boldsymbol{1}$& $0$ & $-1$\\
-$\psi_{R2}$& $\boldsymbol{1}$& $0$ & $-1$\\
-$\psi_{R3}$& $\boldsymbol{1}$& $0$ & $-1$\\\hline\hline
-TOTAL & & & $0$ \\
+    Fields   & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $  & $\operatorname{U}(1)_{  \only<3>{\mathcal{D}}\only<4->{X}   }$\\ \hline
+$L $  & $\boldsymbol{2}$& $-1/2$&$\only<1-3>{0}\only<4>{{\color{blue}l}      }$ \\    
+$Q $  & $\boldsymbol{2}$& $-1/6$&$\only<1-3>{0}\only<4>{-{\color{blue}l}/3   }$ \\
+$d_R $& $\boldsymbol{1}$& $-1/2$&$\only<1-3>{0}\only<4>{1+2{\color{blue}l}/3 }$ \\
+$u_R $& $\boldsymbol{1}$& $+2/3$&$\only<1-3>{0}\only<4>{-1-4{\color{blue}l}/3}$ \\
+$e_R $& $\boldsymbol{1}$& $-1$  &$\only<1-3>{0}\only<4>{1+2{\color{blue}l}   }$ \\
+$H $  & $\boldsymbol{2}$& $1/2$& $\only<1-3>{0}\only<4>{-1-{\color{blue}l}   }$\\\hline
+$\eta$ & $\boldsymbol{2}$& $1/2$  &$\only<1-3>{1}\only<4>{3/4-\color{blue}l} $ \\
+$S$ & $\boldsymbol{1}$& $0$ &$\only<1-3>{2}\only<4>{3/2}$ \\    
+$\sigma$ & $\boldsymbol{1}$& $0$ &$\only<1-3>{3}\only<4>{13/4}$ \\\hline        
+    $\nu_{R1}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{+}\only<4->{-}4$\\
+$\nu_{R2}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{+}\only<4->{-}4$\\
+$\nu_{R3}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{-}\only<4->{+}5$\\
+$\psi_{R1}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{-1}\only<4->{3/4}$\\
+$\psi_{R2}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{-1}\only<4->{3/4}$\\
+$\psi_{R3}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{-1}\only<4->{3/4}$\\\hline\hline
+\only<1-3>{TOTAL}\only<4->{$\xi_{L\alpha}$} &\only<4->{$\boldsymbol{1}$} &\only<4->{$0$}& $\only<1-3>{0}\only<4->{3/4}$ \\
   \end{tabular}
       }
     \end{column}
@@ -726,18 +548,17 @@ TOTAL & & & $0$ \\
 \end{frame}
 
 \begin{frame}
+  \frametitle{Same constraints as before}
+  \includegraphics[height=8cm]{u1blc}
+
+  {\tiny with J. Calle and Ó. Zapata, arXiv:1909.09574
+  }
+\end{frame}
+
+\begin{frame}
 \frametitle{Conclusions}
   It makes sense to focus our attention on models tha can account for neutrino masses and dark matter (DM) \alert{without adhoc symmetries}
-  \only<1>{
-  \begin{block}{Tree-level type-I-II-III seesaws}
-    Type-I seesaw: \alert{Multicomponent dark matter}:   In this extension of the SM by an $\operatorname{U}(1)_{B-L}$ gauge symmetry amomalies are canceled partially by two right-handed neutrinos and partially by two component DM Dirac fermions, providing a connection between neutrinos and DM analogous to that one between leptons and quarks in the SM.
-
-    The model predicts the existence of three scalar fields beyond the SM Higgs: $H_1$, $H_2$, $A$
-
-{ \tiny Model implemented in LanHEP. Implemented also in SARAH~{\tiny \url{https://github.com/restrepo/BSM-Submodules/tree/B-L+DM/BSM/SARAH/Models/B-L/DM} (Tested with SARAH-4.14.1)} to analyse perturbativity and stability conditions and higher scales with two-loop RGEs. }
-\end{block}
-}%
-\only<2>{
+\only<1>{
   \begin{block}{One-loop Dirac neutrino masses}
       A single $U(1)_X$ gauge symmetry to explain both the smallnes of Dirac neutrino masses and the stability of Dirac fermion dark matter
   %\setbeamercolor{block body}{use=structure,fg=black,bg=white}
@@ -753,20 +574,14 @@ TOTAL & & & $0$ \\
 \end{frame}
 
 
-{
-%\usebackgroundtemplate{\includegraphics[width=\paperwidth]{explosion}}  
-\begin{frame}
-  \frametitle{Conclusions}
-
-
-\end{frame}
-}
 
 
 
 
-
-\plain{Thanks!}
+\plain{
+  \includegraphics[scale=0.23]{pano}
+  
+  Thanks!}
 \end{document}
 
 
