@@ -25,7 +25,7 @@
 
 
 \title{Minimal Scotogenic models}
-\subtitle{with (Dirac) neutrino masses}
+\subtitle{with Dirac neutrino masses}
 
 
 %\subtitle
@@ -37,7 +37,7 @@
 %   affiliation.
 \institute{
   \begin{picture}(100,2)
-\put(230,-110){ \includegraphics[scale=0.17]{sao2}}
+\put(230,-110){ \includegraphics[scale=0.17]{paul}}
 \end{picture}
   \affiliation{\tiny Instituto de Física\\
 Universidad de Antioquia\\
@@ -50,7 +50,7 @@ Phenomenology Group}%
 \collaborators{ Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, Andrés Rivera (UdeA),\\ Walter Tangarife (Loyola University Chicago) }
 }
 
-\date{\tiny Oct 14, 2019 - Cruzeiro do Sul U.  [PDF: http://bit.ly/darkcdsu] } % (optional) \today
+\date{\tiny Oct 16, 2019 - ICTP-SAIFR Program on Particle Physics  [PDF: http://bit.ly/darkictp] } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -123,21 +123,28 @@ the process consider other and more subtle ways to search for it.
 \only<2>{\put(204,158){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
 \only<2>{\put(224,195){ {\huge \only<2>{
         \hspace{0.4cm}\begin{minipage}{3cm}
-                    Hidden \\
-          QED
+                    Dark \\
+         \small interaction
         \end{minipage}
       }}  }}%
-\only<3->{\put(250,180){\Large $\color{red}\mathcal{L}=-\frac{1}{4}V_{\mu\nu}V^{\mu\nu}+i \overline{X}i\cancel{\mathcal{D}} X-m \overline{X}X\,. $   }}%
-\only<3->{\put(280,218.5){ \Huge {{\color{red}Lo}{\color{red}cal}} $\color{red}U(1)_{\mathcal{D}}$  }}%
-\only<3->{\put(280,150){
-    {\color{red}Relic abundance}
-    $\color{red} X\overline{X}\to \gamma_{\mathcal{D}}\gamma_{\mathcal{D}}$  
+\only<3->{\put(250,180){\Large $\color{red}\mathcal{L}=-\frac{1}{4}X_{\mu\nu}X^{\mu\nu}+i\overline{\psi}\cancel{\mathcal{D}} \psi-m \overline{\psi}\psi\,. $   }}%
+\only<3->{\put(280,218.5){ \Huge {{\color{red}Local}} $\color{red}U(1)_{X}$  }}%
+\only<3->{\put(220,150){
+    {\color{red}
+    ${\cal D}_\mu=Z_\mu+ig' Z'_\mu:\quad \text{Relic abundance: } \color{red} Z'$ portal}  
   }}%
-\only<3->{\put(160,120){\Large $F_{\mu\nu}{\color{red}\ V^{\mu\nu}} $   }}%
+\only<3->{\put(163,120){\Large  $\overline{f}\cancel{\mathcal{D}} f\ {\color{red}\overline{\psi}\cancel{\mathcal{D}} \psi} $   }}%
 \only<3->{\put(204,0){ \begin{overpic}[scale=0.2]{tcdm1}\end{overpic}}}%
 
-\only<4->{\put(280,0){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
-\only<4->{\put(296,40){ {\huge 
+\only<4->{ \put(296,60){
+     \begin{minipage}{5cm}
+           \includegraphics[scale=0.25]{ddm}\\
+     {\tiny $g_{BL}/g_{\text{SM}}=10$. arXiv:1907.05893. C. Blanco, \textit{et al}. [PRD]}
+   \end{minipage}
+   }
+ }
+\only<5->{\put(280,0){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
+\only<5->{\put(296,40){ {\huge 
         \hspace{0.4cm}\begin{minipage}{3cm}
           Too\\
 
@@ -247,21 +254,21 @@ We impose $\nu_{R1}=\psi_N$, $\nu_{R2}=\psi_{N-1}$, to have at most one massless
 \begin{frame}
   \frametitle{One parameter $\operatorname{U}(1)_X$ SM extension }
         \rowcolors{1}{RoyalBlue!20}{}
-  \begin{tabular}{c|c|c|c|c|c|c|c||c}
+  \begin{tabular}{c|c|c|c|c|c|c|c}
     \hline  
-    Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{X}$& $\color{red}\operatorname{U}(1)_{B-L}$& $\operatorname{U}(1)_R$& $\operatorname{U}(1)_D$& $\operatorname{U}(1)_G$ & $\operatorname{U}(1)_{\mathcal{D}}^{{\color{Yellow}*}}$\\ \hline
-$L $  & $\boldsymbol{2}$& $-1/2$  &  ${\color{blue}l}      $&  $\color{red}-1$&    $0$ &  $-3/2$     &  $-1/2$&$0$ \\    
-$Q $  & $\boldsymbol{2}$& $-1/6$  &  $-{\color{blue}l}/3   $& $\color{red}1/3$&    $0$&  $1/2$    &  $1/6 $&$0$ \\
-$d_R $& $\boldsymbol{1}$& $-1/2$  &  $1+2{\color{blue}l}/3 $&  $\color{red}1/3$&    $1$&  $0$ &  $2/3 $&$0$ \\
-$u_R $& $\boldsymbol{1}$& $+2/3$  &  $-1-4{\color{blue}l}/3$&  $\color{red}1/3$&   $-1$&  $1$&  $-1/3$&$0$ \\
-$e_R $& $\boldsymbol{1}$& $-1$    &  $1+2{\color{blue}l}   $&  $\color{red}-1$&    $1$ &  $-2$    &  $0   $&$0$ \\
-$H $  & $\boldsymbol{2}$& $1/2$  &   $-1-{\color{blue}l}   $&  $\color{red}0$&    $-1$ &  $1/2$   &  $-1/2$&$0$ \\\hline
-%$S$ & $\boldsymbol{1}$ & $0$  & $ 2 \psi_N$& $\color{red}2 \psi_N$&  $2 \psi_N$ & $2 \psi_N$& $2 \psi_N$ &$0$ \\
- $\sum_\alpha n_{\alpha}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$&$0$\\
- $\sum_\alpha n_{\alpha}^{3}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$&$0$\\ \hline
+    Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{X}$& $\color{red}\operatorname{U}(1)_{B-L}$& $\operatorname{U}(1)_R$& $\operatorname{U}(1)_D$& $\operatorname{U}(1)_G$ \\ \hline
+$L $  & $\boldsymbol{2}$& $-1/2$  &  ${\color{blue}l}      $&  $\color{red}-1$&    $0$ &  $-3/2$&  $-1/2$ \\    
+$Q $  & $\boldsymbol{2}$& $-1/6$  &  $-{\color{blue}l}/3   $& $\color{red}1/3$&    $0$&  $1/2$  &  $1/6 $ \\
+$d_R $& $\boldsymbol{1}$& $-1/2$  &  $1+2{\color{blue}l}/3 $&  $\color{red}1/3$&    $1$&  $0$   &  $2/3 $ \\
+$u_R $& $\boldsymbol{1}$& $+2/3$  &  $-1-4{\color{blue}l}/3$&  $\color{red}1/3$&   $-1$&  $1$   &  $-1/3$ \\
+$e_R $& $\boldsymbol{1}$& $-1$    &  $1+2{\color{blue}l}   $&  $\color{red}-1$&    $1$ &  $-2$  &  $0   $ \\
+$H $  & $\boldsymbol{2}$& $1/2$  &   $-1-{\color{blue}l}   $&  $\color{red}0$&    $-1$ &  $1/2$ &  $-1/2$ \\\hline
+%$S$ & $\boldsymbol{1}$ & $0$  & $ 2 \psi_N$& $\color{red}2 \psi_N$&  $2 \psi_N$ & $2 \psi_N$& $2 \psi_N$  \\
+ $\sum_\alpha n_{\alpha}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$\\
+ $\sum_\alpha n_{\alpha}^{3}$ & $\boldsymbol{1}$ & $0$ & $-3$& $\color{red}-3$&  $-3$ & $-3$& $-3$\\ \hline
   \end{tabular}
 
-  {\color{Yellow}*} Use vector like fermions $\mathcal{D}(\psi_L)=\mathcal{D}(\psi_R)\to n-n=0$
+ % {\color{Yellow}*} Use vector like fermions $\mathcal{D}(\psi_L)=\mathcal{D}(\psi_R)\to n-n=0$
   
   Solutions in terms of a parameter: arXiv:1811.11927, N. Okada, \emph{et al} [PRD];
 
@@ -271,9 +278,9 @@ $H $  & $\boldsymbol{2}$& $1/2$  &   $-1-{\color{blue}l}   $&  $\color{red}0$&  
 \end{frame}
 
 \begin{frame}
-\frametitle{Or$\cdots$ combine known solutions with $\sum n_{\alpha}=-3$ and $\sum n_{\alpha}^3=-3$}
+\frametitle{Known solutions with $\sum n_{\alpha}=-3$ and $\sum n_{\alpha}^3=-3$}
 \begin{columns}
-  \begin{column}{0.6\textwidth}
+  \begin{column}{0.52\textwidth}
     \begin{table}
   \centering
   \renewcommand{\arraystretch}{1.4}
@@ -281,12 +288,12 @@ $H $  & $\boldsymbol{2}$& $1/2$  &   $-1-{\color{blue}l}   $&  $\color{red}0$&  
   \begin{tabular}{c|l}\hline
 $\left(\nu_{R1},\nu_{R2},\psi_{N-2},\cdots\right)$     & Ref \\ \hline
     $\left(-1,-1,-1\right)$&\tiny hep-ph/0611205, S. Khalil  [JPG] \\
-    $\left(-4,-4,+5\right)$&\includegraphics[scale=0.03]{brazil}\tiny arXiv:0706.0473, Montero, V. Pleitez [PLB]\\
-    $\left(-\dfrac{2}{3},-\dfrac{2}{3},-\dfrac{4}{3},-\dfrac{1}{3}\right)$&\includegraphics[scale=0.03]{colombia}\tiny  arXiv:1607.04029, S. Patra , W. Rodejohann, C. Yaguna [JHEP] \\
+    $\color{red}\left(-4,-4,+5\right)$&\includegraphics[scale=0.03]{brazil}\tiny arXiv:0706.0473, Montero, V. Pleitez [PLB]\\
+    $\color{red}\left(-\dfrac{2}{3},-\dfrac{2}{3},-\dfrac{4}{3},-\dfrac{1}{3}\right)$&\includegraphics[scale=0.03]{colombia}\tiny  arXiv:1607.04029, S. Patra , W. Rodejohann, C. Yaguna [JHEP] \\
     $\left(-\dfrac{8}{5},-\dfrac{8}{5},-\dfrac{2}{5},-\dfrac{7}{5},+2\right)$&\includegraphics[scale=0.03]{colombia}\tiny arXiv:1812.05523, with J. Calle, C. Yaguna, Ó. Zapata [PRD]\\
     %$\left(-\dfrac{7}{3},-\dfrac{7}{3},+\dfrac{1}{3},-\dfrac{5}{3},+3\right)$&\cite{}\\
     %$\left(-\dfrac{7}{10},-\dfrac{7}{10},-\dfrac{13}{10},-\dfrac{1}{2},+\dfrac{1}{5}\right)$&\cite{}\\
-    $\color{red}\left( -1,-1,-\dfrac{10}{7},-\dfrac{4}{7},-\dfrac{2}{7},\dfrac{9}{7} \right)$ &\includegraphics[scale=0.03]{colombia}\color{red} \tiny 1808.03352, with N. Bernal, C. Yaguna, Ó. Zapata [PRD]\\
+    $\left( -1,-1,-\dfrac{10}{7},-\dfrac{4}{7},-\dfrac{2}{7},\dfrac{9}{7} \right)$ &\includegraphics[scale=0.03]{colombia}\color{red} \tiny 1808.03352, with N. Bernal, C. Yaguna, Ó. Zapata [PRD]\\
     \hline
    \end{tabular}
    \caption{Possible solutions with at least two repeated charges and until six chiral fermions.
@@ -297,9 +304,11 @@ $\left(\nu_{R1},\nu_{R2},\psi_{N-2},\cdots\right)$     & Ref \\ \hline
 
 
 \end{column}
-\begin{column}{0.4\textwidth}
-  \only<2>{\includegraphics[scale=0.34]{nomajo1}}%
-  \only<3>{\includegraphics[scale=0.34]{nomajo}}%
+\begin{column}{0.48\textwidth}
+  \only<2>{\includegraphics[scale=0.41]{nomajo1}}%
+  \only<3>{\includegraphics[scale=0.41]{nomajo}}%
+
+  \qquad
 
   \vspace{2.5cm}
   \qquad
@@ -442,16 +451,17 @@ $\left(\nu_{R1},\nu_{R2},\psi_{N-2},\cdots\right)$     & Ref \\ \hline
 \end{frame}
 
 \begin{frame}
-  \frametitle{From {\only<1>{\color{red}}1210.6350} and
-    {\only<2>{\color{red}}1805.02025}: $\Delta N_{\text{eff}}=3 \left( T_{\nu_R}/T_{\nu_L} \right)^4$    }
+  \frametitle{From {1210.6350} and
+    {1805.02025}: $\Delta N_{\text{eff}}=3 \left( T_{\nu_R}/T_{\nu_L} \right)^4$    }
   \begin{columns}
-    \begin{column}{0.55\textwidth}
+    \begin{column}{0.5\textwidth}
       \footnotesize
       \begin{align*}
 {\color{blue} \Gamma_{\nu_R}(T)}&=n_{\nu_R}(T)\sum_f \langle \sigma_f(\nu_R \bar{\nu}_R\to f\bar{f})v \rangle \\ 
 &= \sum_f \frac{g_{\nu_R}^2}{n_{\nu_R}}\int \frac{d^3 p }{(2\pi)^3} \frac{d^3 q }{(2\pi)^3}
 f_{\nu_R}(p)f_{\nu_R}(q) \sigma_f(s) (1-\cos\theta),
       \end{align*}
+\vspace{-0.5cm}      
       \begin{align*}
         s=&2pq(1-\cos\theta),& f_{\nu_R}(k)=& 1/(e^{k/T}+1)\\
         n_{\nu_R}(T)=&g_{\nu_R}\int \frac{d^3k}{(2\pi)^3}f_{\nu_R}(k),& \text{with } g_{\nu_R}=&2\\
@@ -470,11 +480,11 @@ The right-handed neutrinos decouple when
 \end{align*}
 
     \end{column}
-    \begin{column}{0.45\textwidth}
+    \begin{column}{0.5\textwidth}
       \centering
-      \invisible<1>{\includegraphics[scale=0.15]{tree-level-dirac-seesaw}
+      \invisible<1>{\includegraphics[scale=0.14]{tree-level-dirac-seesaw}
 
-      {\small
+      {\scriptsize
           \rowcolors{1}{RoyalBlue!20}{}
   \begin{tabular}{cccccc}\hline
    $ \nu_{R3} $
@@ -484,8 +494,8 @@ The right-handed neutrinos decouple when
 
   {\tiny E. Ma, R. Srivastava: arXiv:1411.5042 [PLB]}
 }}
-
-\only<1>{\includegraphics[height=4.1cm]{gT}
+\def\scf{4.9cm}
+\only<1>{\includegraphics[height=4.5cm]{gT}
 
   {\tiny A. Solaguren-Beascoa, M. C. Gonzalez-Garcia: arXiv:{\color{red}1210.6350} [PLB]
 
@@ -493,8 +503,8 @@ The right-handed neutrinos decouple when
   }
 }%
 \only<2->{%
-\only<2>{ \includegraphics[height=4.1cm]{D_Neff}}%
-\only<3->{\includegraphics[height=4.1cm]{u1blc}}
+\only<2>{ \includegraphics[height=\scf]{D_Neff}}%
+\only<3->{\includegraphics[height=\scf]{u1blc}}
 
   {\tiny with J. Calle and Ó. Zapata, arXiv:1909.09574
 
@@ -505,55 +515,201 @@ The right-handed neutrinos decouple when
   \end{columns}
 \end{frame}
 
-
-\section{Dark symmetry}
+\section{One-loop realization of $\mathcal{L}_{5-D}$ with total $L$}
+\begin{frame}
+\begin{picture}(320,250)
+\only<1>{\put(-24,-21){\begin{overpic}[scale=0.352]{u11}\end{overpic}}}%
+\only<2>{\put(-24,-21){\begin{overpic}[scale=0.352]{u12}\end{overpic}}}%
+\only<3>{\put(-24,-21){\begin{overpic}[scale=0.352]{u13}\end{overpic}}}%
+\only<4>{\put(-24,-21){\begin{overpic}[scale=0.352]{u14}\end{overpic}}}%
+\end{picture}
+\end{frame}
 
 \begin{frame}
-  \frametitle{Radiative Type-I seesaw \only<2>{with J. Calle and Ó. Zapata, arXiv:1909.09574}}
-  \begin{columns}
-    \begin{column}{0.65\textwidth}
-      \def\rssc{0.26}
-      \only<1>{\includegraphics[scale=\rssc]{radiativeseesaw1}}
-      \only<2>{\includegraphics[scale=\rssc]{radiativeseesaw2}}
-      \only<3>{\includegraphics[scale=\rssc]{diracradiativeseesawmajo1}}
-      \only<4->{\includegraphics[scale=\rssc]{diracradiativeseesawmajo2}}
-    \end{column}
-    \begin{column}{0.35\textwidth}
-      \invisible<1-2>{
-        \small
-        \rowcolors{1}{RoyalBlue!20}{}
-  \begin{tabular}{c|c|c|c}
-    \hline  
-    Fields   & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $  & $\operatorname{U}(1)_{  \only<3>{\mathcal{D}}\only<4->{X}   }$\\ \hline
-$L $  & $\boldsymbol{2}$& $-1/2$&$\only<1-3>{0}\only<4>{{\color{blue}l}      }$ \\    
-$Q $  & $\boldsymbol{2}$& $-1/6$&$\only<1-3>{0}\only<4>{-{\color{blue}l}/3   }$ \\
-$d_R $& $\boldsymbol{1}$& $-1/2$&$\only<1-3>{0}\only<4>{1+2{\color{blue}l}/3 }$ \\
-$u_R $& $\boldsymbol{1}$& $+2/3$&$\only<1-3>{0}\only<4>{-1-4{\color{blue}l}/3}$ \\
-$e_R $& $\boldsymbol{1}$& $-1$  &$\only<1-3>{0}\only<4>{1+2{\color{blue}l}   }$ \\
-$H $  & $\boldsymbol{2}$& $1/2$& $\only<1-3>{0}\only<4>{-1-{\color{blue}l}   }$\\\hline
-$\eta$ & $\boldsymbol{2}$& $1/2$  &$\only<1-3>{1}\only<4>{3/4-\color{blue}l} $ \\
-$S$ & $\boldsymbol{1}$& $0$ &$\only<1-3>{2}\only<4>{3/2}$ \\    
-$\sigma$ & $\boldsymbol{1}$& $0$ &$\only<1-3>{3}\only<4>{13/4}$ \\\hline        
-    $\nu_{R1}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{+}\only<4->{-}4$\\
-$\nu_{R2}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{+}\only<4->{-}4$\\
-$\nu_{R3}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{-}\only<4->{+}5$\\
-$\psi_{R1}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{-1}\only<4->{3/4}$\\
-$\psi_{R2}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{-1}\only<4->{3/4}$\\
-$\psi_{R3}$& $\boldsymbol{1}$& $0$ & $\only<1-3>{-1}\only<4->{3/4}$\\\hline\hline
-\only<1-3>{TOTAL}\only<4->{$\xi_{L\alpha}$} &\only<4->{$\boldsymbol{1}$} &\only<4->{$0$}& $\only<1-3>{0}\only<4->{3/4}$ \\
+  \frametitle{\only<1>{One-loop topologies $\operatorname{U}(1)_{B-L}\oplus Z_2 \oplus Z_2 $}\only<2-4>{One-loop topologies $\operatorname{U}(1)_{B-L}$ only!
+   \invisible<2>{\scriptsize with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  } }\only<5-6>{
+    SD${}^{3}$M+SSDM: $\sigma_a$ ($a=1,2$)     \invisible<6>{\scriptsize with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }  }}
+\begin{picture}(320,250)
+  \only<1>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac1}\end{overpic}}}%
+  \only<1>{\put(280,130){\tiny Chang-Yuan Yao and Gui-Jun Ding, arXiv:1802.05231 [PRD]  }}%
+  \only<2>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac2}\end{overpic}}}%
+  \only<2>{\put(280,130){\tiny with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }}%
+    \only<2-5>{\put(-20,130){\tiny
+        \begin{minipage}{0.3\linewidth}
+          \begin{align*}
+            \psi_{L,R}\to&\text{Singlet fermions \only<3>{(vector-like)}\only<4-5>{(quiral)}  }\\
+            \invisible<3>{\Psi_{L,R}\to&\text{Vector-like doublet fermions}\invisible<2-4>{:\qquad {\color{red}10/5}}   }\\
+            \sigma\to&\text{Singlet scalar}\invisible<2-4>{:\qquad 15/5}   \\
+            \invisible<5>{\eta\to&\text{Doublet scalar}   }
+          \end{align*}
+        \end{minipage}
+}}%
+\only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
+% 
+\only<3>{\put(160,230){\tiny $\longmapsto$ ${\color{Green}\sigma_1}={\color{red}-2}$\,,\qquad
+                             ${\color{red}\sigma_2}={\color{Yellow}-5}$\,,\qquad }}%
+\only<3>{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: S. Saad arXiv:1902.07259 [NPB]  }}%
+\only<3>{\put(160,210){\tiny $\longmapsto$ generalization to $\operatorname{U(1)_R}$: \emph{et al}, S. Saad arXiv:1904.07407  }}%
+\only<3>{\put(180,180){\Huge $\uparrow$   }}%
+\only<3-5>{\put(240,135){\tiny
+    \begin{minipage}{0.3\linewidth}
+      \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|cccccc}\hline
+ Fields: $f_i$  &  $\left( \nu_{R3} \right)^{\dagger}$
+  &$\left( \nu_{R2} \right)^{\dagger}$&$\left( \nu_{R1} \right)^{\dagger}$&$\psi_L$&$\left( \psi_R \right)^{\dagger}$&$S$\\ \hline
+  (A)&$\color{Yellow}+4$&$\color{Yellow}+4$&$-5$& $\color{red}-r$ & $\color{red}r$ & $+3$\\
+    \invisible<3>{(B) &$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{2}{5}}$&$\displaystyle{\frac{7}{5}}$&$\color{red}\displaystyle{-\frac{10}{5}}$&$\color{blue}\displaystyle{+\frac{3}{5}}$}\\
   \end{tabular}
-      }
+         \end{minipage}
+       }}%
+\only<3-5>{\put(300,55){\tiny
+    \begin{minipage}{0.3\linewidth}
+       \begin{center}
+         \textbf{Anomaly cancellation conditions}
+         \begin{align*}
+           \sum_i f_i=& 3 \\
+           \sum_i f_i^3=& 3 \\
+         \end{align*}
+  \end{center}
+      
+         \end{minipage}
+       }}%
+%  effective number of relativistic degrees of reedom Neff for neutrinos
+ \only<4>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac4}\end{overpic}}}%
+ \only<5-6>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac5}\end{overpic}}}%
+ \only<6>{\put(20,200){
+     \begin{minipage}{0.3\linewidth}
+       $M_\psi=h_1 \left\langle S \right\rangle$, $\color{red}y_2=0$:
+          \begin{align*}
+            \mathcal{L}={\color{red}\mathcal{L}_{\text{SD${}^3$M}}}
+            +{\color{Green} h_3^{ia} \widetilde{\left( \Psi_R \right)}\cdot L_i\, \sigma_a}+
+      {\color{blue}      h_2^{\beta a} \left( \nu_{R\beta} \right)^{\dagger} \psi_L\, \sigma^{*}_a}
+            -V(\sigma_a,S,H)\,.
+          \end{align*}
+        \end{minipage}
+}}%
+\only<6>{\put(0,130){\small with A.F Rivera, W. Tangarife,  arXiv:1906.09685 [PRD]   }}%
+\only<6>{\put(220,60){\begin{overpic}[scale=0.6]{sarah}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+\section{Singlet-Doublet Dirac Dark matter Model (SD${}^{3}$M)}
+\begin{frame}
+  \frametitle{ Singlet-Doublet Dirac Dark Matter (SD${}^{3}$M)
+By Carlos E. Yaguna.
+arXiv:1510.06151 [PRD].
+}
+
+The model extends the standard model (SM) particle content with Dirac Fermions: from  $\operatorname{SU}(2)$ doublets of Weyl fermions: $\Psi_L=\left( \Psi_L^0,\, \Psi_L^-\right)^{\operatorname{T}}$, $\widetilde{\left( \Psi_R \right)}=\left( (\Psi_R^-)^\dagger,\, -(\Psi_R^0)^\dagger\right)^{\operatorname{T}}$  and singlet Weyl fermions $\psi_{LR}$ that interact among themselves and with the SM fields 
+\begin{align}
+  \mathcal{L}\supset& {\color{red} M_{\psi}}\left( \psi_R \right)^{\dagger}\psi_L
+%+ {\color{red}h_S} \left( \psi_R \right)^{\dagger} \psi_LS  %+\text{h.c}.
+%  \mathcal{L}_{\psi}+\mathcal{L}_{\sigma\psi}
++ %\left[
+{\color{red}M_{\Psi}}\widetilde{\left( \Psi_R \right)}\cdot  \Psi_L
+% +h_2^{ia} \widetilde{\left( \Psi_R \right)}\cdot L_i\, \sigma_a
++ {\color{red} y_1} \left( \psi_R \right)^{\dagger} \Psi_L \cdot H
++ {\color{red} y_2}  \widetilde{\left( \Psi_R \right)} \cdot \widetilde{H} \psi_L
+                      +\text{h.c} % \right]
+%+V(\sigma_a,S,H)\,,
+\end{align}
+Four free parameters:
+\begin{align}
+  {\color{red} M_{\psi}},{\color{red}M_{\Psi}}\ <& 2\text{ GeV}\,,&
+  {\color{red} y_1},\ {\color{red} y_2} > 10^{-6}
+\end{align}
+Two neutral Dirac fermion eigenstates:
+\begin{align}
+  M=&
+  \begin{pmatrix}
+    {\color{red}M_{\psi}} & {\color{red}y_{2}} v/\sqrt{2} \\ {\color{red}y_{1}} v/\sqrt{2} & {\color{red} M_{D}}
+  \end{pmatrix},&
+M_{\text{diag}}=&
+\begin{pmatrix}
+{M_{\chi_{1}}} & {0} \\ {0} & {M_{\chi_{2}}}                    
+\end{pmatrix}
+=U_{L}^{\dagger} M U_{R}
+\end{align}
+
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{ SD${}^{3}$M
+By Carlos E. Yaguna.
+arXiv:1510.06151 [PRD].
+}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[scale=0.24]{coannmass}
+
+    \hspace{2cm} Compressed spectra region
+   \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[scale=0.24]{ddsi}
+
+      \only<1-2>{\hspace{2cm}LUX - XENON1T - LZ}
+    \end{column}
+
+  \end{columns}
+  
+  \invisible<1>{\includegraphics[scale=0.2]{llcom}}
+  
+  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Dark matter relic density}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+\includegraphics[scale=0.3]{S-channel}
+\includegraphics[scale=0.3]{T-channel}
+\includegraphics[scale=0.3]{U-channel}
+
+\scriptsize Decoupled $Z'$ limit
+
+\begin{align*}
+\begin{pmatrix}
+h \\ \operatorname{Re}(S)
+\end{pmatrix} 
+ =
+\begin{pmatrix}
+\cos\alpha & \sin\alpha \\
+-\sin\alpha & \cos\alpha 
+\end{pmatrix}
+\begin{pmatrix}
+h_1 \\ h_2
+\end{pmatrix}\,.
+\end{align*}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+\includegraphics[scale=0.4]{MSvsMD}
+
+%\scriptsize Vector SI (blue points) and  scalar SI (green points)      
     \end{column}
   \end{columns}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Same constraints as before}
-  \includegraphics[height=8cm]{u1blc}
 
-  {\tiny with J. Calle and Ó. Zapata, arXiv:1909.09574
-  }
+\begin{frame}
+  \frametitle{Spin independent (SI) direct detection cross section}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+\includegraphics[scale=0.4]{vector-SI}
+\includegraphics[scale=0.4]{scalar-SI}
+
+\scriptsize Decoupled $Z'$ limit
+    \end{column}
+    \begin{column}{0.5\textwidth}
+\includegraphics[scale=0.4]{SI}
+
+%\scriptsize Vector SI (blue points) and  scalar SI (green points)      
+    \end{column}
+  \end{columns}
 \end{frame}
+
 
 \begin{frame}
 \frametitle{Conclusions}
