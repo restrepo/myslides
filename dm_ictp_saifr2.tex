@@ -25,8 +25,8 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Minimal Scotogenic models}
-\subtitle{with Dirac neutrino masses}
+\title{Dirac neutrino masses}
+\subtitle{with dark Majorana mediatiors}
 
 
 %\subtitle
@@ -38,7 +38,7 @@
 %   affiliation.
 \institute{
   \begin{picture}(100,2)
-\put(230,-110){ \includegraphics[scale=0.17]{paul}}
+\put(230,-110){ \includegraphics[scale=0.17]{teatromunicipal}}
 \end{picture}
   \affiliation{\tiny Instituto de Física\\
 Universidad de Antioquia\\
@@ -47,13 +47,13 @@ Phenomenology Group}%
 {}%
 {pixel}% small image here, use pixel for nothing
 {}
-\arxiv{arXiv:1811.11927 [PRD], arXiv:1906.09685 [PRD] and arXiv:1909.09574 }
+\arxiv{arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574 }
 \collaborators{ Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, Andrés Rivera (UdeA),\\ Walter Tangarife (Loyola University Chicago) }
 }
 
-\date{\tiny Oct 16, 2019 - ICTP-SAIFR Program on Particle Physics
+\date{\tiny Oct 24, 2019 - Dark Universe Workshop
 
-  [PDF: \url{http://bit.ly/darkictp}] } % (optional) \today
+  [PDF: \url{http://bit.ly/darkuniverse}] } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -97,7 +97,56 @@ Phenomenology Group}%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\include{evidencesila}
+% \include{evidencesila}
+\begin{frame}
+\begin{columns}
+  \begin{column}{0.3\textwidth}
+    \begin{block}{{\color{magenta}$\Lambda$}CDM: $\Omega=1$, $\color{magenta}w=-1{}^{\dagger}$}
+     \rowcolors{1}{RoyalBlue!20}{}
+      \begin{tabular}{l|c}
+              Symbol& Value\\ \hline
+      \color{Yellow}$\Omega_b h^2$ & \color{Yellow} $0.022\,30(14)$ \\
+     \color{blue} $\Omega_{\text{CDM}} h^2$ &\color{blue} $0.1188(10)$ \\
+        $t_0$ & $13.799(21)\times 10^9\, \text{years}$ \\
+        $n_s$ & $0.9667(40)$\\
+        $\Delta_R^2$ &$2.441\times 10^{-9}$\\
+        $\tau$ & $0.066(12)$ \\
+      \end{tabular}
+        {\color{magenta}${}^{\dagger}${\tiny Cosmological constant}}
+    \end{block}
+  \end{column}
+  \begin{column}{0.7\textwidth}
+          \begin{figure}
+    \centering
+    \only<1>{\includegraphics[scale=0.6]{cmbsoup2}}%
+    \only<2>{\includegraphics[scale=0.6]{cmbsoup3}}%
+    % \tiny{Credit: Planck 2018}
+  \end{figure}
+  \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Three-dimensional pictures of Ly$\alpha$ filaments}
+  \begin{columns}
+  \begin{column}{0.5\textwidth}
+  \includegraphics[scale=0.3]{fila}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+  The 3D distribution of
+  Ly$\alpha$ filaments shown with
+
+  \fcolorbox{magenta}{magenta}{signal-to-noise ratio (SNR) > 5}
+  
+  \fcolorbox{cyan}{cyan}{signal-to-noise ratio (SNR) > 2}
+
+
+    {\tiny H. Umehata \emph{et al}, Science  \textbf{366}, 97, \alert{4 Oct 2019}}
+
+  \end{column}
+  \end{columns}
+
+\end{frame}
 %%%%%%%%%%
 
 \begin{frame}
@@ -113,10 +162,6 @@ the process consider other and more subtle ways to search for it.
 \end{block}
 
 \end{frame}
-
-\section{Dark sectors}
-
-
 
 
 \section{Dark sectors}
@@ -232,9 +277,6 @@ $H $  & $\boldsymbol{2}$& $1/2$  &   $-1-{\color{blue}l}   $&  $\color{red}0$&  
   % \alert{All known $\operatorname{U}(1)_{B-L}$ (radiative) neutrino solutions apply for $\operatorname{U}(1)_X$}:
 \end{frame}
 
-\begin{frame}
-  \frametitle{solutions with $\sum n_{\alpha}=0 $ and $\sum n_{\alpha}^3=0 $}
-\end{frame}
 
 \begin{frame}
   \frametitle{\invisible<1>{Or$\cdots$ combine known} solutions \only<1>{with $\sum n_{\alpha}=-3$ and $\sum n_{\alpha}^3=-3$}\only<2>{with $\sum n_{\alpha}=0$ and $\sum n_{\alpha}^3=0$}}
@@ -280,10 +322,10 @@ $\left(\nu_{R1},\nu_{R2},\psi_{N-2},\cdots\right)$     & Ref \\ \hline
 
 
 \begin{frame}
-  \frametitle{Radiative Type-I seesaw \only<2>{with J. Calle and Ó. Zapata, arXiv:1909.09574}}
+  \frametitle{\invisible<1>{Dirac }Radiative Type-I seesaw \only<1>{$\to$Local: only $\operatorname{U}(1)_{B-L}$! {\tiny arXiv:1812.05523, with J. Calle, C. Yaguna, Ó. Zapata [PRD]}} \only<2->{{with Majorana mediators }{\tiny with J. Calle and Ó. Zapata, arXiv:1909.09574}}}
   \begin{columns}
     \begin{column}{0.65\textwidth}
-      \def\rssc{0.26}
+      \def\rssc{0.26}%
       \only<1>{\includegraphics[scale=\rssc]{radiativeseesaw1}}%
       \only<2>{\includegraphics[scale=\rssc]{radiativeseesaw2}}%
       \only<3>{\includegraphics[scale=\rssc]{diracradiativeseesawmajo1}}%
@@ -297,7 +339,28 @@ $\left(\nu_{R1},\nu_{R2},\psi_{N-2},\cdots\right)$     & Ref \\ \hline
       }
     \end{column}
     \begin{column}{0.35\textwidth}
-      \invisible<1-2>{
+      \only<1>{ {\small For radiative Dirac models with only $\operatorname{U}(1)_{X}$ see also: }
+
+        \begin{tiny}
+          arXiv:1812.01599, 1901.06402, 1902.07259, 1903.01477, 1904.07407, 1907.08630,
+          1907.11557, 1910.09537
+        \end{tiny}
+
+        $\mathcal{O}(100)$ new models $\color{red}\sim(-4,-4,5)$
+        
+        Example: \includegraphics[scale=0.1]{new} $\operatorname{U}(1)_{B-L}$
+
+        \includegraphics[scale=0.6]{T1-2-A}
+
+        {\small Pheno analysis with}
+
+        {\tiny A. Rivera, W. Tangarife,  arXiv:1906.09685 [PRD]}
+
+        \vspace{0.47cm}
+
+        \qquad
+        }%
+      \only<2->{\invisible<2>{
         \small
         \rowcolors{1}{RoyalBlue!20}{}
   \begin{tabular}{c|c|c|c}
@@ -320,7 +383,7 @@ $N_{R2}$& $\boldsymbol{1}$& $0$ & $\only<1-4>{1}\only<5->{3/4}$\\
 $N_{R3}$& $\boldsymbol{1}$& $0$ & $\only<1-4>{1}\only<5->{3/4}$\\\hline\hline
 \only<1-4>{TOTAL}\only<5->{$\xi_{L\alpha}$} &\only<5->{$\boldsymbol{1}$} &\only<5->{$0$}& $\only<1-4>{0}\only<5->{3/4}$ \\
   \end{tabular}
-      }
+}}%
     \end{column}
   \end{columns}
 \end{frame}
@@ -381,101 +444,102 @@ where $F(x) =x \log x/(x-1)$.
 \only<3>{\put(-24,-30){\begin{overpic}[scale=0.352]{limits3}\end{overpic}}}%    
 \only<4>{\put(-24,-30){\begin{overpic}[scale=0.352]{limits4}\end{overpic}}}%    
 \only<5>{\put(-24,-30){\begin{overpic}[scale=0.352]{limits5}\end{overpic}}}%    
-\only<6>{\put(-24,-30){\begin{overpic}[scale=0.352]{limits6}\end{overpic}}}%    
+\only<6>{\put(-24,-30){\begin{overpic}[scale=0.352]{limits6}\end{overpic}}}%
+\only<7>{\put(-24,-30){\begin{overpic}[scale=0.352]{limits7}\end{overpic}}}%    
 \end{picture}
 \end{frame}
 
 \section{(One-loop) Dirac neutrino masses}
 
-%slide with sm dirac fermion explanation
-\begin{frame}
-  \frametitle{Lepton number}
-  \begin{itemize}
-  \item   Lepton number ($L$) is an accidental discret or Abelian symmetry of the standard model (SM). 
-  \item  Without neutrino masses $L_e$, $L_{\mu}$, $L_{\tau}$ are also conserved.
-  \item The processes which violates individual $L$ are called Lepton flavor violation (LFV) processes.
-  \item All the neutrino mass models predict, to some extent, LFV processes
-  \item Only models with Majorana neutrinos predict processes with total $L=L_e+L_{\mu}+L_{\tau}$ violation, like \alert{neutrino less doublet beta decay} (NLDBD).
-  \item NLDBD is experimentally challenging, specially if there is a massless neutrino in the spectrum.
-  \end{itemize}
-\end{frame}
+% %slide with sm dirac fermion explanation
+% \begin{frame}
+%   \frametitle{Lepton number}
+%   \begin{itemize}
+%   \item   Lepton number ($L$) is an accidental discret or Abelian symmetry of the standard model (SM). 
+%   \item  Without neutrino masses $L_e$, $L_{\mu}$, $L_{\tau}$ are also conserved.
+%   \item The processes which violates individual $L$ are called Lepton flavor violation (LFV) processes.
+%   \item All the neutrino mass models predict, to some extent, LFV processes
+%   \item Only models with Majorana neutrinos predict processes with total $L=L_e+L_{\mu}+L_{\tau}$ violation, like \alert{neutrino less doublet beta decay} (NLDBD).
+%   \item NLDBD is experimentally challenging, specially if there is a massless neutrino in the spectrum.
+%   \end{itemize}
+% \end{frame}
 
 
-\begin{frame}
-  \frametitle{NLDBD prospects for a  model with \alert{a massless
-    neutrino} \tiny (arXiv:1806.09977 [PLB] with Reig, Valle and Zapata) }
-     \begin{figure}
-      \centering
-      \includegraphics[scale=0.25]{mee}\\
-      {\tiny  with M.Reig, J.W.F Valle, O. Zapata, arXiv:1806.09977  }
-    \end{figure}
+% \begin{frame}
+%   \frametitle{NLDBD prospects for a  model with \alert{a massless
+%     neutrino} \tiny (arXiv:1806.09977 [PLB] with Reig, Valle and Zapata) }
+%      \begin{figure}
+%       \centering
+%       \includegraphics[scale=0.25]{mee}\\
+%       {\tiny  with M.Reig, J.W.F Valle, O. Zapata, arXiv:1806.09977  }
+%     \end{figure}
 
  
-\end{frame}
+% \end{frame}
 
 
-\begin{frame}
-  \frametitle{Total lepton number: $L=L_e+L_{\mu}+L_{\tau}$}
-  \begin{columns}
-    \begin{column}{0.48\textwidth}
-      \begin{block}{\centering Majorana $\cancel{\operatorname{U}(1)_L}$}
-              \centering
-    \rowcolors{1}{RoyalBlue!20}{}
-\begin{tabular}{cc}
-  Field &  $Z_2\ (\omega^2=1)$ \\\hline
-  SM & $1$\\
-  $L$& $\omega$ \\
-     $ \left( e_R \right)^{\dagger}  $& $\omega$ \\
-    $\left( \nu_R \right)^{\dagger}$ & $\omega$ \\\hline
-    \end{tabular}
+% \begin{frame}
+%   \frametitle{Total lepton number: $L=L_e+L_{\mu}+L_{\tau}$}
+%   \begin{columns}
+%     \begin{column}{0.48\textwidth}
+%       \begin{block}{\centering Majorana $\cancel{\operatorname{U}(1)_L}$}
+%               \centering
+%     \rowcolors{1}{RoyalBlue!20}{}
+% \begin{tabular}{cc}
+%   Field &  $Z_2\ (\omega^2=1)$ \\\hline
+%   SM & $1$\\
+%   $L$& $\omega$ \\
+%      $ \left( e_R \right)^{\dagger}  $& $\omega$ \\
+%     $\left( \nu_R \right)^{\dagger}$ & $\omega$ \\\hline
+%     \end{tabular}
 
-    \begin{align*}
-      \mathcal{L}_{\nu}=h_D \left( \nu_R \right)^{\dagger}L \cdot H +
-{\color{red}M_R\,\nu_R \nu_R}
-      +\text{h.c}\,.
-    \end{align*}
-    \begin{align*}
-      h_D \sim  \mathcal{O}(1) 
-    \end{align*}
-    \invisible<1->{Explain smallness ala Peccei-Quinn:
-    \vspace{-0.5cm}
-    \begin{align*}
-      \operatorname{U}(1)_{B-L}\to Z_N\,,\quad N\ge 3\,.
-    \end{align*}}    
+%     \begin{align*}
+%       \mathcal{L}_{\nu}=h_D \left( \nu_R \right)^{\dagger}L \cdot H +
+% {\color{red}M_R\,\nu_R \nu_R}
+%       +\text{h.c}\,.
+%     \end{align*}
+%     \begin{align*}
+%       h_D \sim  \mathcal{O}(1) 
+%     \end{align*}
+%     \invisible<1->{Explain smallness ala Peccei-Quinn:
+%     \vspace{-0.5cm}
+%     \begin{align*}
+%       \operatorname{U}(1)_{B-L}\to Z_N\,,\quad N\ge 3\,.
+%     \end{align*}}    
 
-      \end{block}
-    \end{column}
-  \begin{column}{0.48\textwidth}
-    \begin{block}{\centering Dirac $\only<1>{\operatorname{U}(1)_L}
-        \only<2>{\operatorname{U}(1)_{B-L}}$}
-              \centering
-    \rowcolors{1}{RoyalBlue!20}{}
-\begin{tabular}{cc}
-  Field &  $Z_3\ (\omega^3=1)$ \\\hline
-  SM & $1$\\
-  $L$& $\omega$ \\
-       $ \left( e_R \right)^{\dagger}  $& $\omega^2$ \\
-    $\left( \nu_R \right)^{\dagger}$ & $\omega^2$ \\\hline
-    \end{tabular}
+%       \end{block}
+%     \end{column}
+%   \begin{column}{0.48\textwidth}
+%     \begin{block}{\centering Dirac $\only<1>{\operatorname{U}(1)_L}
+%         \only<2>{\operatorname{U}(1)_{B-L}}$}
+%               \centering
+%     \rowcolors{1}{RoyalBlue!20}{}
+% \begin{tabular}{cc}
+%   Field &  $Z_3\ (\omega^3=1)$ \\\hline
+%   SM & $1$\\
+%   $L$& $\omega$ \\
+%        $ \left( e_R \right)^{\dagger}  $& $\omega^2$ \\
+%     $\left( \nu_R \right)^{\dagger}$ & $\omega^2$ \\\hline
+%     \end{tabular}
 
-    \begin{align*}
-      \mathcal{L}_{\nu}=h_D \left( \nu_R \right)^{\dagger}L \cdot H 
-      +\text{h.c}\,.
-    \end{align*}
-    \begin{align*}
-      h_D \sim \mathcal{O}(10^{-11}) 
-    \end{align*}
-    \invisible<1>{Explain smallness ala Peccei-Quinn:
-      \vspace{-0.5cm}
-    \begin{align*}
-      \operatorname{U}(1)_{B-L} \underbrace{\longrightarrow}_{\color{red}\left\langle S \right\rangle} Z_N\,,\quad N\ge 3\,.
-    \end{align*}}    
-      \end{block}
+%     \begin{align*}
+%       \mathcal{L}_{\nu}=h_D \left( \nu_R \right)^{\dagger}L \cdot H 
+%       +\text{h.c}\,.
+%     \end{align*}
+%     \begin{align*}
+%       h_D \sim \mathcal{O}(10^{-11}) 
+%     \end{align*}
+%     \invisible<1>{Explain smallness ala Peccei-Quinn:
+%       \vspace{-0.5cm}
+%     \begin{align*}
+%       \operatorname{U}(1)_{B-L} \underbrace{\longrightarrow}_{\color{red}\left\langle S \right\rangle} Z_N\,,\quad N\ge 3\,.
+%     \end{align*}}    
+%       \end{block}
     
-  \end{column}
-\end{columns}
+%   \end{column}
+% \end{columns}
 
-\end{frame}
+% \end{frame}
 
 
 
@@ -487,7 +551,7 @@ where $F(x) =x \log x/(x-1)$.
       
       \vspace{0.2cm}
       
-  To explain the \alert{smallness} of Dirac neutrino masses choose $\operatorname{U}(1)_{B-L} $ which:
+  To explain the \alert{smallness} of Dirac neutrino masses choose $\operatorname{U}(1)_{X} $ which:
   \begin{itemize}
   \item<1-> Forbids tree-level mass (TL) term ( $Y(H)=+1/2$ )
     \begin{align*}
@@ -611,220 +675,13 @@ The right-handed neutrinos decouple when
 \end{frame}
 
 
-
-
-\section{One-loop realization of $\mathcal{L}_{5-D}$ with total $L$}
-\begin{frame}
-\begin{picture}(320,250)
-\only<1>{\put(-24,-21){\begin{overpic}[scale=0.352]{u11}\end{overpic}}}%
-\only<2>{\put(-24,-21){\begin{overpic}[scale=0.352]{u12}\end{overpic}}}%
-\only<3>{\put(-24,-21){\begin{overpic}[scale=0.352]{u13}\end{overpic}}}%
-\only<4>{\put(-24,-21){\begin{overpic}[scale=0.352]{u14}\end{overpic}}}%
-\end{picture}
-\end{frame}
-
-\begin{frame}
-  \frametitle{\only<1>{One-loop topologies $\operatorname{U}(1)_{B-L}\oplus Z_2 \oplus Z_2 $}\only<2-4>{One-loop topologies $\operatorname{U}(1)_{B-L}$ only!
-   \invisible<2>{\scriptsize with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  } }\only<5-6>{
-    SD${}^{3}$M+SSDM: $\sigma_a$ ($a=1,2$)     \invisible<6>{\scriptsize with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }  }}
-\begin{picture}(320,250)
-  \only<1>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac1}\end{overpic}}}%
-  \only<1>{\put(280,130){\tiny Chang-Yuan Yao and Gui-Jun Ding, arXiv:1802.05231 [PRD]  }}%
-  \only<2>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac2}\end{overpic}}}%
-  \only<2>{\put(280,130){\tiny with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }}%
-    \only<2-5>{\put(-20,130){\tiny
-        \begin{minipage}{0.3\linewidth}
-          \begin{align*}
-            \psi_{L,R}\to&\text{Singlet fermions \only<3>{(vector-like)}\only<4-5>{(quiral)}  }\\
-            \invisible<3>{\Psi_{L,R}\to&\text{Vector-like doublet fermions}\invisible<2-4>{:\qquad {\color{red}10/5}}   }\\
-            \sigma\to&\text{Singlet scalar}\invisible<2-4>{:\qquad 15/5}   \\
-            \invisible<5>{\eta\to&\text{Doublet scalar}   }
-          \end{align*}
-        \end{minipage}
-}}%
-\only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
-% 
-\only<3>{\put(160,230){\tiny $\longmapsto$ ${\color{Green}\sigma_1}={\color{red}-2}$\,,\qquad
-                             ${\color{red}\sigma_2}={\color{Yellow}-5}$\,,\qquad }}%
-\only<3>{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: S. Saad arXiv:1902.07259 [NPB]  }}%
-\only<3>{\put(160,210){\tiny $\longmapsto$ generalization to $\operatorname{U(1)_R}$: \emph{et al}, S. Saad arXiv:1904.07407  }}%
-\only<3>{\put(180,180){\Huge $\uparrow$   }}%
-\only<3-5>{\put(240,135){\tiny
-    \begin{minipage}{0.3\linewidth}
-      \rowcolors{1}{RoyalBlue!20}{}
-  \begin{tabular}{c|cccccc}\hline
- Fields: $f_i$  &  $\left( \nu_{R3} \right)^{\dagger}$
-  &$\left( \nu_{R2} \right)^{\dagger}$&$\left( \nu_{R1} \right)^{\dagger}$&$\psi_L$&$\left( \psi_R \right)^{\dagger}$&$S$\\ \hline
-  (A)&$\color{Yellow}+4$&$\color{Yellow}+4$&$-5$& $\color{red}-r$ & $\color{red}r$ & $+3$\\
-    \invisible<3>{(B) &$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{8}{5}}$&$\displaystyle{+\frac{2}{5}}$&$\displaystyle{\frac{7}{5}}$&$\color{red}\displaystyle{-\frac{10}{5}}$&$\color{blue}\displaystyle{+\frac{3}{5}}$}\\
-  \end{tabular}
-         \end{minipage}
-       }}%
-\only<3-5>{\put(300,55){\tiny
-    \begin{minipage}{0.3\linewidth}
-       \begin{center}
-         \textbf{Anomaly cancellation conditions}
-         \begin{align*}
-           \sum_i f_i=& 3 \\
-           \sum_i f_i^3=& 3 \\
-         \end{align*}
-  \end{center}
-      
-         \end{minipage}
-       }}%
-%  effective number of relativistic degrees of reedom Neff for neutrinos
- \only<4>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac4}\end{overpic}}}%
- \only<5-6>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac5}\end{overpic}}}%
- \only<6>{\put(20,200){
-     \begin{minipage}{0.3\linewidth}
-       $M_\psi=h_1 \left\langle S \right\rangle$, $\color{red}y_2=0$:
-          \begin{align*}
-            \mathcal{L}={\color{red}\mathcal{L}_{\text{SD${}^3$M}}}
-            +{\color{Green} h_3^{ia} \widetilde{\left( \Psi_R \right)}\cdot L_i\, \sigma_a}+
-      {\color{blue}      h_2^{\beta a} \left( \nu_{R\beta} \right)^{\dagger} \psi_L\, \sigma^{*}_a}
-            -V(\sigma_a,S,H)\,.
-          \end{align*}
-        \end{minipage}
-}}%
-\only<6>{\put(0,130){\small with A.F Rivera, W. Tangarife,  arXiv:1906.09685 [PRD]   }}%
-\only<6>{\put(220,60){\begin{overpic}[scale=0.6]{sarah}\end{overpic}}}%
-\end{picture}
-\end{frame}
-
-\section{Singlet-Doublet Dirac Dark matter Model (SD${}^{3}$M)}
-\begin{frame}
-  \frametitle{ Singlet-Doublet Dirac Dark Matter (SD${}^{3}$M)
-By Carlos E. Yaguna.
-arXiv:1510.06151 [PRD].
-}
-
-The model extends the standard model (SM) particle content with Dirac Fermions: from  $\operatorname{SU}(2)$ doublets of Weyl fermions: $\Psi_L=\left( \Psi_L^0,\, \Psi_L^-\right)^{\operatorname{T}}$, $\widetilde{\left( \Psi_R \right)}=\left( (\Psi_R^-)^\dagger,\, -(\Psi_R^0)^\dagger\right)^{\operatorname{T}}$  and singlet Weyl fermions $\psi_{LR}$ that interact among themselves and with the SM fields 
-\begin{align}
-  \mathcal{L}\supset& {\color{red} M_{\psi}}\left( \psi_R \right)^{\dagger}\psi_L
-%+ {\color{red}h_S} \left( \psi_R \right)^{\dagger} \psi_LS  %+\text{h.c}.
-%  \mathcal{L}_{\psi}+\mathcal{L}_{\sigma\psi}
-+ %\left[
-{\color{red}M_{\Psi}}\widetilde{\left( \Psi_R \right)}\cdot  \Psi_L
-% +h_2^{ia} \widetilde{\left( \Psi_R \right)}\cdot L_i\, \sigma_a
-+ {\color{red} y_1} \left( \psi_R \right)^{\dagger} \Psi_L \cdot H
-+ {\color{red} y_2}  \widetilde{\left( \Psi_R \right)} \cdot \widetilde{H} \psi_L
-                      +\text{h.c} % \right]
-%+V(\sigma_a,S,H)\,,
-\end{align}
-Four free parameters:
-\begin{align}
-  {\color{red} M_{\psi}},{\color{red}M_{\Psi}}\ <& 2\text{ GeV}\,,&
-  {\color{red} y_1},\ {\color{red} y_2} > 10^{-6}
-\end{align}
-Two neutral Dirac fermion eigenstates:
-\begin{align}
-  M=&
-  \begin{pmatrix}
-    {\color{red}M_{\psi}} & {\color{red}y_{2}} v/\sqrt{2} \\ {\color{red}y_{1}} v/\sqrt{2} & {\color{red} M_{D}}
-  \end{pmatrix},&
-M_{\text{diag}}=&
-\begin{pmatrix}
-{M_{\chi_{1}}} & {0} \\ {0} & {M_{\chi_{2}}}                    
-\end{pmatrix}
-=U_{L}^{\dagger} M U_{R}
-\end{align}
-
-
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{ SD${}^{3}$M
-By Carlos E. Yaguna.
-arXiv:1510.06151 [PRD].
-}
-    \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \includegraphics[scale=0.24]{coannmass}
-
-    \hspace{2cm} Compressed spectra region
-   \end{column}
-    \begin{column}{0.5\textwidth}
-      \includegraphics[scale=0.24]{ddsi}
-
-      \only<1-2>{\hspace{2cm}LUX - XENON1T - LZ}
-    \end{column}
-
-  \end{columns}
+{
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{latam}}    
+  \plain{
+  \only<2>{\includegraphics[scale=1]{arvi}}
   
-  \invisible<1>{\includegraphics[scale=0.2]{llcom}}
-  
-  
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Dark matter relic density}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-\includegraphics[scale=0.3]{S-channel}
-\includegraphics[scale=0.3]{T-channel}
-\includegraphics[scale=0.3]{U-channel}
-
-\scriptsize Decoupled $Z'$ limit
-
-\begin{align*}
-\begin{pmatrix}
-h \\ \operatorname{Re}(S)
-\end{pmatrix} 
- =
-\begin{pmatrix}
-\cos\alpha & \sin\alpha \\
--\sin\alpha & \cos\alpha 
-\end{pmatrix}
-\begin{pmatrix}
-h_1 \\ h_2
-\end{pmatrix}\,.
-\end{align*}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-\includegraphics[scale=0.4]{MSvsMD}
-
-%\scriptsize Vector SI (blue points) and  scalar SI (green points)      
-    \end{column}
-  \end{columns}
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Spin independent (SI) direct detection cross section}
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-\includegraphics[scale=0.4]{vector-SI}
-\includegraphics[scale=0.4]{scalar-SI}
-
-\scriptsize Decoupled $Z'$ limit
-    \end{column}
-    \begin{column}{0.5\textwidth}
-\includegraphics[scale=0.4]{SI}
-
-%\scriptsize Vector SI (blue points) and  scalar SI (green points)      
-    \end{column}
-  \end{columns}
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Conclusions}
-  It makes sense to focus our attention on models tha can account for neutrino masses and dark matter (DM) \alert{without adhoc symmetries}
-\only<1>{
-  \begin{block}{One-loop Dirac neutrino masses}
-      A single $U(1)_X$ gauge symmetry to explain both the smallnes of Dirac neutrino masses and the stability of Dirac fermion dark matter
-  %\setbeamercolor{block body}{use=structure,fg=black,bg=white}
-    \begin{itemize}
-    \item Spontaneously broken $U(1)_{X}$ generates a radiative Dirac neutrino masses
-  \item A remnant symmetry makes the lightest field circulating the loop stable and good dark matter candidate.
-  \item For T1-2-A: Either Singet Doublet Dirac Dark Matter or Singlet Scalar Dark Matter with extra scalar and vector portal
-    \end{itemize}
-  \end{block}
+  \only<2>{\small {\color{red}\hfill\url{https://lawphysics.wordpress.com} \qquad lawphysics@gmail.com}}}
 }
-
-\end{frame}
 
 
 
