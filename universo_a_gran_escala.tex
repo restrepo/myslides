@@ -1,0 +1,440 @@
+\documentclass[xcolor=dvipsnames,table]{beamer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{talk}
+\usepackage{soul}
+%\usepackage{mycolors}
+\usepackage{fp}
+\usepackage{multirow}
+\newcommand{\arXiv}[1]{\href{https://arxiv.org/abs/#1}{arXiv:#1}}
+\widescreen
+
+\newenvironment<>{varblock}[2][.9\textwidth]{%
+  \setlength{\textwidth}{#1}
+  \begin{actionenv}#3%
+    \def\insertblocktitle{#2}%
+    \par%
+    \usebeamertemplate{block begin}}
+  {\par%
+    \usebeamertemplate{block end}%
+  \end{actionenv}}
+
+
+% set block transparency: https://tex.stackexchange.com/a/44716/59580
+\addtobeamertemplate{block begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
+\addtobeamertemplate{block alerted begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
+\addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
+
+
+\title{Universo}
+\subtitle{a gran escala}
+
+
+%\subtitle
+%{Reconstruction of the neutrino mass matrix} % (optional)
+
+\author{Diego Restrepo
+}
+% - Use the \inst{?} command only if the authors have different
+%   affiliation.
+\institute{
+  \begin{picture}(100,2)
+\put(230,-110){ \includegraphics[scale=0.17]{temple}}
+\end{picture}
+  \affiliation{\tiny Instituto de Física\\
+Universidad de Antioquia\\
+Phenomenology Group}%
+{http://gfif.udea.edu.co}%
+{}%
+{pixel}% small image here, use pixel for nothing
+{}
+\arxiv{}
+\collaborators{ }
+}
+
+\date{\tiny Junio 4, 2020 - 
+
+  [PDF: \url{http://bit.ly/granuniverso}] } % (optional) \today
+%{\includegraphics[scale=0.3]{udea}}
+\titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
+
+%\subject{Talks}
+% This is only inserted into the PDF information catalog. Can be left
+% out. 
+
+
+% If you have a file called "university-logo-filename.xxx", where xxx
+% is a graphic format that can be processed by latex or pdflatex,
+% resp., then you can add a logo as follows:
+
+% \pgfdeclareimage[height=0.5cm]{university-logo}{university-logo-filename}
+% \logo{\pgfuseimage{university-logo}}
+
+
+
+% Delete this, if you do not want the table of contents to pop up at
+% the beginning of each subsection:
+%\AtBeginSubsection[]
+%{
+%  \begin{frame}<beamer>
+%    \frametitle{Outline}
+%    \tableofcontents[currentsection,currentsubsection]
+%  \end{frame}
+%}
+\setbeamercolor{block title}{bg=black!90,fg=white}
+
+\newcommand{\chml}[2]{$\underline{\text{#1\hspace{#2}}}$}
+\begin{document}
+
+
+%=============== 
+\begin{comentar}
+%===============  
+%=============
+\end{comentar}
+%=============
+
+\maketitle
+
+
+\section{$\Lambda$CDM concordance model (with baryonic effects)}
+
+
+
+\begin{frame}
+  \frametitle{Cosmic Microwave Background temperature: $T=2.726\,\text{K}$  with $\Delta T/T\sim 10^{-6}$}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.3]{cmb2019}\\
+     \tiny{The Cosmic Microwave Background - as seen by Planck. Credit: ESA and the Planck Collaboration}
+  \end{figure}
+
+% \small 
+%   Why was the temperature of the CMB the same in all directions? \\
+%   What was the origin of the small temperature fluctions?
+  
+\end{frame}
+
+
+\begin{frame}
+      \begin{figure}
+    \centering
+    \includegraphics[scale=1]{planck2019}\\
+     \tiny{Planck's power spectrum of temperature fluctuations, $\Delta T$, in the Cosmic Microwave Background. Credit: ESA and the Planck Collaboration}
+  \end{figure}
+
+% \small 
+%   Why was the temperature of the CMB the same in all directions? \\
+%   What was the origin of the small temperature fluctions?
+  
+\end{frame}
+
+
+
+\begin{frame}
+\begin{columns}
+  \begin{column}{0.3\textwidth}
+    \begin{block}{{\color{magenta}$\Lambda$}CDM: $\Omega=1$, $\color{magenta}w=-1{}^{\dagger}$}
+     \rowcolors{1}{RoyalBlue!20}{}
+      \begin{tabular}{l|c}
+              Symbol& Value\\ \hline
+      \color{Yellow}$\Omega_b h^2$ & \color{Yellow} $0.022\,30(14)$ \\
+     \color{blue} $\Omega_{\text{CDM}} h^2$ &\color{blue} $0.1188(10)$ \\
+        $t_0$ & $13.799(21)\times 10^9\, \text{years}$ \\
+        $n_s$ & $0.9667(40)$\\
+        $\Delta_R^2$ &$2.441\times 10^{-9}$\\
+        $\tau$ & $0.066(12)$ \\
+      \end{tabular}
+        {\color{magenta}${}^{\dagger}${\tiny Cosmological constant}}
+    \end{block}
+  \end{column}
+  \begin{column}{0.7\textwidth}
+          \begin{figure}
+    \centering
+    \only<1>{\includegraphics[scale=0.6]{cmbsoup0}}%
+    \only<2>{\includegraphics[scale=0.6]{cmbsoup1}}\\
+    % \tiny{Credit: Planck 2018}
+  \end{figure}
+  \end{column}
+\end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{frame}
+  \frametitle{Cosmic web}
+  \begin{quote}
+    Dark matter connects clusters of galaxies with massive tendrils, forming a cosmic web that serves as an unseen skeleton for the universe.
+
+\vspace{-0.3cm}    
+    {\tiny \url{https://phys.org/news/2018-06-years-scientists-account-universe.html}}
+
+    
+  \end{quote}
+
+\def\heifig{3.8cm}
+\includegraphics[height=\heifig]{building} \hfill \only<1-2>{\includegraphics[height=\heifig]{lowweb}}\only<3>{\includegraphics[height=\heifig]{cosmic_web_simulation}}
+
+  % \begin{figure}
+  %   \centering
+  %   \includegraphics[scale=0.2]{cosmic-web}\\
+  %   {\tiny Milenium simulation: \url{https://wwwmpa.mpa-garching.mpg.de/galform/virgo/millennium/}}
+  % \end{figure}
+\only<1-3>{
+\invisible<1-2>{
+{  \scriptsize These great filaments are made largely of \alert{dark matter} located in the space between galaxies\\ and filled with $60\%$ of the \alert{primordial gas!} \hfill\only<1>{{[\url{https://hubblesite.org}]}}
+}
+
+%\vspace{-0.3cm}
+\begin{block}{\footnotesize An excess of a gas ($20\sigma$) is observed between Milky Way and Andromeda (M31): arXiv:1403.7528 [MNRAS] ${}^1$} 
+  \footnotesize Clouds of HI likeky embeded in a filament between M31 and M33: arXiv:1305.1631 [nature]\\ 
+\end{block}
+
+\vspace{-0.3cm}
+{\tiny $\overline{{}^1\ \ \ \ \ \ }$\!\!\!\!\!\!\!See also: arXiv:1603.05400 [A\&A]}
+}
+}
+\begin{picture}(320,10)
+  \only<2>{ \put(30,80){\includegraphics[scale=0.3]{fig1_lowres}} }
+  \only<2>{ \put(-60,70){{\tiny Galaxy redshift surveys vs large scale structure formation simulations: V. Springel, \emph{et al} \texttt{astro-ph/0604561} [Nature]}} }
+\end{picture}
+\end{frame}
+
+
+
+
+
+%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{Three-dimensional pictures of Ly$\alpha$ filaments}
+  \begin{columns}
+  \begin{column}{0.5\textwidth}
+  \includegraphics[scale=0.3]{fila}
+  \end{column}
+  \begin{column}{0.5\textwidth}
+  The 3D distribution of
+  Ly$\alpha$ filaments shown with
+
+  \fcolorbox{magenta}{magenta}{signal-to-noise ratio (SNR) > 5}
+  
+  \fcolorbox{cyan}{cyan}{signal-to-noise ratio (SNR) > 2}
+
+
+    {\tiny H. Umehata \emph{et al}, Science  \textbf{366}, 97, \alert{4 Oct 2019}}
+
+  \end{column}
+  \end{columns}
+
+\end{frame}
+%%%%%%%%%%
+
+\begin{frame}
+  
+  \begin{block}{Dark matter properties}
+      \begin{quote}
+    Apart from its manifold gravitational influences, (\alert{particle}) dark matter has so far eluded detection,
+prompting model builders to think more broadly about what dark matter can be and in
+the process consider other and more subtle ways to search for it.
+
+\hfill{\tiny Agrawal, \emph{et al}, \arXiv{1610.04611} [JCAP]}
+\end{quote}
+\end{block}
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{evidencesila}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{frame}
+  \frametitle{Conclusions}
+  In addition to accommodate usual simplified dark matter models,  Left-right symmetric standard models have additional DM portals:
+
+  New $\Delta_R$ portal for direct detection of left-singlet right-triplet mixed dark matter, in companion with left-singlets charged and doubly charged fermions.
+
+Next: Search for them in compressed spectra scenarios at the LHC
+%Excluidos por LEP?
+\end{frame}
+
+\plain{Thanks!}
+\end{document}
+
+
+
+
+TEMPLATES
+
+1. Background image slide
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{file}}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamercovered{invisible}
+\begin{frame}[plain]
+\end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+2. Two columns
+\begin{columns}
+  \begin{column}{0.48\textwidth}
+    
+  \end{column}
+  \begin{column}{0.48\textwidth}
+    
+  \end{column}
+\end{columns}
+
+
+
+
+\begin{columns}
+  \column{.48\textwidth}
+  \begin{block}<2->{}
+  \end{block}
+  \column{.48\textwidth}
+  \begin{block}<2->{}
+  \end{block}
+\end{columns}
+
+%%%%%%%%%%%%%%%%%%%%%
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{file}}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamercovered{invisible}
+\begin{frame}[plain]
+  \begin{block}{}
+    Name
+  \end{block}
+\end{frame}
+}
+%%%%
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{file}}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamercovered{invisible}
+\begin{frame}[plain]
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+}
+
+
+%Trick to put stuff in specfic places of an slide:
+\begin{frame}
+\begin{picture}(320,250)
+\put(-25,190){D.R. \emph{et al}: arXiv:1006.5075 [PRD]\qquad\qquad arXiv:1206.3605 [PRD]}
+\put(-37,20){\includegraphics[scale=0.35]{atmcorrelationm}}
+\put(143,20){\includegraphics[scale=0.35]{LoverWlZnu_Dm23_500_500_randomm}}
+\put(0,160){Only depend in \alert{$\Lambda_i$}}
+\end{picture}
+\end{frame}
+%%%%%
+Background like
+%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[plain]
+\begin{picture}(320,250)
+\only<1>{\put(-30,-15){\includegraphics[width=\paperwidth]{brpv1}}}%
+\only<2>{\put(-30,-15){\includegraphics[width=\paperwidth]{brpv2}}}%    
+\only<2>{\put(-30,-15){\includegraphics[width=\paperwidth]{brpv3}}}%    
+\end{picture}
+\end{frame}
+
+
+%%%
+Post it
+
+\setbeamercolor{postit}{fg=black,bg=yellow}
+\begin{beamercolorbox}[sep=1em,wd=5cm]{postit}
+Place me somewhere!
+\end{beamercolorbox}
+
+%%%combine with textblock
+\begin{textblock*}{297mm}(0mm,0mm)%
+\begin{beamercolorbox}[sep=0.1em,wd=4cm,center,rounded=true,shadow=true]{cite}
+\scriptsize Akhmedov, hep-ph/0001264
+\end{beamercolorbox}
+\end{textblock*}
+
+%%More colorboxes
+\setlength{\fboxrule}{3 pt}
+\fcolorbox{red}{yellow}{caja de fondo
+amarillo y contorno rojo}\\
+\setlength{\fboxsep}{5pt}
+\fcolorbox{red}{yellow}{caja de fondo
+amarillo y contorno rojo}
+
+\only<11>{\put(-20,80){
+\begin{minipage}[t]{1.0\linewidth}
+%\metroset{block=fill}
+\begin{block}{SM particles}
+     Gauge invariance+Lorentz Invariance$\to$Lagrangian (interactions)   
+\end{block}
+    \end{minipage}
+}}
+
+
+\begin{frame}
+\begin{picture}(320,250)
+\only<1->{\put(0,100){
+  \begin{overpic}[scale=0.4,grid
+            ]{table1}
+\put(40,38){\tikz \draw[red,thick,rounded corners] (0,0) rectangle (2,0.5);}
+  \end{overpic}
+}
+\only<1->{\put(34,158.5){ some text  }}%
+\only<1->{\put(-20,140){\includegraphics[scale=0.8]{T3}}}%
+}
+  \only<2->{\put(-10,70){
+      \begin{minipage}[t]{1.0\linewidth}
+      \begin{block}{ \includegraphics[scale=0.1]{new} Globall symmetries safe for high multiplets:}
+     Catà, Ibarra, Ingenhütt arXiv:1611.00725 (PRD), arXiv:1707.08480 (JCAP)    
+      \end{block}
+      \end{minipage}
+%
+  }}
+%%%circle
+\end{picture}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Is the glass half empty or half full?}
+   Tree-level SM-portal could be fully excluded in the near future
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+      \item Singlet scalar dark matter
+      \item Inert doublet model
+      \item Tree-level SM-portal dark matter $\cdots$
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+
+      \only<1>{\includegraphics[scale=0.2]{x1t} }%
+      \only<2->{\includegraphics[scale=0.3,angle=180]{halffill} }
+
+    %\hfill  \tiny{\url{Dreamstime.com}}  
+    \end{column}
+
+  \end{columns}
+
+  In this talk we explore
+  \begin{itemize}
+  \item<2-> Recover SM-portals in LR models 
+  \item<3-> New portals in LR models 
+  \end{itemize}
+
+\end{frame}
+
+
+Custom width in block. See definition in preamble
+\begin{frame}
+      \begin{varblock}[12cm]{DM is made of two color octets with mass around $12.5\ \text{TeV}$}      
+      \end{varblock}
+\end{frame}
