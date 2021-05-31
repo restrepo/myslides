@@ -84,7 +84,7 @@ Phenomenology Group}%
 }
 
 \date{\tiny %Sep 20, 2019 - IIP-UFRN {\color{Yellow}\textbf{Natal}}: [PDF: \alert{\url{http://bit.ly/SARAHIIP}}]
-                     Oct 8, 2019 - UNICAMP-IFGW : [PDF: \alert{\url{http://bit.ly/SARAHIFGW}}]
+                     May 19 2021 - UNICAMP-IFGW : [PDF: \alert{\url{http://bit.ly/SARAHIFGW}}]
 } % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
@@ -247,18 +247,18 @@ Gauge[[3]]={G,  SU[3], color,       g3,False,1};
 
 \begin{frame}[fragile]
   \begin{columns}
-    \begin{column}{0.45\textwidth}
+    \begin{column}{0.5\textwidth}
       \begin{picture}(160,250)
         \put(-20,197){
           {\footnotesize
     \rowcolors{1}{RoyalBlue!20}{}            
       \begin{tabular}{c|c|c|c|c|c|c}\hline
               &${\color{Green}N_F}$&Lorentz&$Y$&$\operatorname{SU}(2)_L$&$\operatorname{SU}(3)_c$& $Z_2$\\\hline
-$Q$           &${\color{Green}3}$&$(u_L\ d_L)^{\text{T}}  $&$1/6$ &$\boldsymbol{2}$&$\boldsymbol{3}$&$+$\\ 
-$L$           &${\color{Green}3}$&$(\nu_L\ e_L)^{\text{T}}$&$-1/2$&$\boldsymbol{2}$&$\boldsymbol{1}$&$+$\\ 
-$d^c$         &${\color{Green}3}$&$(d_R)^{\dagger}$        &$1/3$ &$\boldsymbol{1}$&$\overline{\boldsymbol{3}}$&$+$\\        
-$u^c$         &${\color{Green}3}$&$(u_R)^{\dagger}$        &$-2/3$&$\boldsymbol{1}$&$\overline{\boldsymbol{3}}$&$+$\\ 
-$e^c$         &${\color{Green}3}$&$(e_R)^{\dagger}$        &$1$   &$\boldsymbol{1}$&$\boldsymbol{1}$&$+$\\ \hline
+$Q$           &${\color{Green}3}$&$\xi_{1\alpha}: (u_L\ d_L)^{\text{T}}  $&$1/6$ &$\boldsymbol{2}$&$\boldsymbol{3}$&$+$\\ 
+$L$           &${\color{Green}3}$&$\xi_{2\alpha}: (\nu_L\ e_L)^{\text{T}}$&$-1/2$&$\boldsymbol{2}$&$\boldsymbol{1}$&$+$\\ 
+$d^c$         &${\color{Green}3}$&$\eta_{1}^\alpha: (d_R)^{\dagger}$        &$1/3$ &$\boldsymbol{1}$&$\overline{\boldsymbol{3}}$&$+$\\        
+$u^c$         &${\color{Green}3}$&$\eta_{2}^\alpha: (u_R)^{\dagger}$        &$-2/3$&$\boldsymbol{1}$&$\overline{\boldsymbol{3}}$&$+$\\ 
+$e^c$         &${\color{Green}3}$&$\eta_{3}^\alpha (e_R)^{\dagger}$        &$1$   &$\boldsymbol{1}$&$\boldsymbol{1}$&$+$\\ \hline
 $H$           &${\color{Green}1}$&$(H^+\ H^0)$           &$1/2$&$\boldsymbol{2}$&$\boldsymbol{1}$&$+$\\    
 $\color{red}S$&${\color{Green}1}$&$s$                    &$0$  &$\boldsymbol{1}$&$\boldsymbol{1}$&$-$\\\hline 
       \end{tabular}
@@ -342,7 +342,7 @@ LagNoHC = -(mu2 conj[H].H + Lambda1/2 conj[H].H.conj[H].H
 %%%%WARNING: Will be repeated
 \begin{frame}[fragile]
   \begin{columns}
-    \begin{column}{0.45\textwidth}
+    \begin{column}{0.5\textwidth}
             \begin{picture}(160,250)
     \put(-20,230){
        \begin{minipage}[t]{1.0\linewidth}
@@ -388,6 +388,9 @@ LagNoHC = -(mu2 conj[H].H + Lambda1/2 conj[H].H.conj[H].H
         \begin{minipage}[t]{1.0\linewidth}
           \begin{align*}
             \Psi_d=\begin{pmatrix}
+              \xi_{1\alpha}\\
+              \left( \eta_1^{\alpha} \right)^{\dagger}
+            \end{pmatrix}=\begin{pmatrix}
               D_L\\
               D_R
             \end{pmatrix}
@@ -991,6 +994,38 @@ Number of events in 10 - 50 KeV region=4.55E-04 /day/kg
 
 \end{frame}
 
+\section{Automatic generation of scotogenic models }
+\begin{frame}[fragile]
+  \frametitle{Python program: \texttt{minimal-lagrangians}}
+ Simon May, \url{https://arxiv.org/pdf/2003.08037} [CPC]
+
+
+\begin{lstlisting}[language=Sh]
+  pip install minimal-lagrangians
+    \end{lstlisting}
+
+ 
+
+\begin{itemize}
+\item As the program was originally written for the study of minimal darkmatter models with radiative neutrino masses: D. Restrepo, O. Zapata, C. E. Yaguna, Models with radiative neutrinomasses and viable dark matter candidates, arXiv:1308.3655 [JHEP]
+\item  Lagrangians for the individual models.
+\item Model files for SARAH can be constructed automaticallyfrom the specified field content, which can be tedious if done manually
+\end{itemize}
+
+Thus, minimal-lagrangians enables rapid phenomenological studies using \texttt{SARAH} and, successively, further tools like \texttt{SPheno}, and \texttt{micrOMEGAs} $\to$ Sec. 8: Outlook
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \begin{lstlisting}[language=Python]
+    BSMModel('T1-3-B', (
+    FermionField("Ψ",  1, Y= 0),
+    FermionField("Ψ'", 2, Y= 1),
+    ScalarField ("phi",  3, Y= 0),
+    FermionField("Ψ'",  2, Y=-1),6), (0, 2)), #α= -2 is equivalent toα= 2
+  \end{lstlisting}
+  
+\end{frame}
 
 \section{Dirac neutrino masses}
 
