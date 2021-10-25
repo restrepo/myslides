@@ -26,7 +26,7 @@ xelatex master.tex
 [![Image inheritance diagram](http://interactive.blockdiag.com/image?compression=deflate&encoding=base64&src=eJxNjs0KgzAQhO8-RfDupdCTWOhzlCJrsmpokpW4Qmnpu9eNv6fMfjOzm8aRfhkLnfpmSlG0GBjYUlCVGihyBMvl7BhsYXJctxR4tB-c7avwu3o4aNBVuYeRMebPMku4uKmGOmIot3FkCAaiKTwZdDuFCL1klvTRqzX5HofDWoEkGN8wipPEqeNJw6khY8pbnhzE1Fik0GXfRegqhc6v7q1DwZveb6Zw-vKxoMx-f4I3Z3A)](http://interactive.blockdiag.com/?compression=deflate&src=eJxNjs0KgzAQhO8-RfDupdCTWOhzlCJrsmpokpW4Qmnpu9eNv6fMfjOzm8aRfhkLnfpmSlG0GBjYUlCVGihyBMvl7BhsYXJctxR4tB-c7avwu3o4aNBVuYeRMebPMku4uKmGOmIot3FkCAaiKTwZdDuFCL1klvTRqzX5HofDWoEkGN8wipPEqeNJw6khY8pbnhzE1Fik0GXfRegqhc6v7q1DwZveb6Zw-vKxoMx-f4I3Z3A)
 
 
-# Official Metroplis READM starts here
+# Official Metroplis README starts here
 ## Metropolis
 Really installled as a git repo in:
 /usr/share/texlive/texmf-dist/tex/latex/mtheme
