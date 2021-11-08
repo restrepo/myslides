@@ -2,6 +2,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{talk}
 \usepackage{soul}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array}   % for \newcolumntype macro
+\newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
+\newcolumntype{R}{>{$}r<{$}} % math-mode version of "r" column type
+\newcolumntype{C}{>{$}c<{$}} % math-mode version of "c" column type
+\usepackage{booktabs}
+%%%%%%%%%%%%%%%%%%%%%%
 %\usepackage{mycolors}
 \usepackage{fp}
 \usepackage{multirow}
@@ -196,7 +203,7 @@ $\psi_\alpha $ & $\boldsymbol{1}$& $0$     &  $n_\alpha$   \\
 \begin{frame}
 
   \only<1>{  
-  \begin{align}
+  \begin{align*}
   \left[\mathrm{SU}(3)_{c}\right]^{2} \mathrm{U}(1)_{X} :& &
 [3 u+3 d]-[3 \cdot 2 q]=&0 \nonumber\\
 \left[\mathrm{SU}(2)_{L}\right]^{2} \mathrm{U}(1)_{X} :&&
@@ -204,33 +211,234 @@ $\psi_\alpha $ & $\boldsymbol{1}$& $0$     &  $n_\alpha$   \\
 \left[\mathrm{U}(1)_{Y}\right]^{2} \mathrm{U}(1)_{X} :&&
 { \left[(-2)^{2} e+3\left(\tfrac{4}{3}\right)^{2} u+3\left(-\tfrac{2}{3}\right)^{2} d\right]-\left[2(+1)^{2} {\color{blue}l}+3 \cdot 2\left(-\tfrac{1}{3}\right)^{2} q\right]}=&
  0
-  \end{align}}
+  \end{align*}}
 \only<2->{
 with solution 
-\begin{align}
+\begin{align*}
   u=&\only<2-4>{-e-\frac{2{\color{blue}l}}{3}}\only<5->{-\only<5->{{\color{Green}m}}+\frac{4{\color{blue}l}}{3}}\,,& d=& \only<2-4>{e+\frac{4{\color{blue}l}}{3}}\only<5->{\only<5->{{\color{Green}m}}-\frac{2{\color{blue}l}}{3}}\,,& q=& -\frac{{\color{blue}l}}{3}\,,
   &\invisible<2-4>{e=}&\invisible<2-4>{\only<5->{{\color{Green}m}}-2{\color{blue}l}\,,}
-\end{align}}
+\end{align*}}
 \invisible<1-2>{
 which satisfy
-\begin{align}
+\begin{align*}
 \mathrm{U}(1)_{Y}\left[\mathrm{U}(1)_{X}\right]^{2} :&&  
 \left[(-2) e^{2}+3\left(\tfrac{4}{3}\right) u^{2}+3\left(-\tfrac{2}{3}\right) d^{2}\right]-\left[2(+1) {\color{blue}l}^2+3 \cdot 2\left(-\tfrac{1}{3}\right) q^{2}\right]=&0
-\end{align}
+\end{align*}
 }
 \invisible<1-3>{
   For $N$ extra quiral fields $\psi_\alpha$ ($\alpha=1,\ldots,N'$) with $\mathcal{X}$-charges $n_\alpha$:
   \invisible<4>{${\color{Green}m}\equiv e-2{\color{blue}l}$}
-\begin{align*}
-  \left[\mathrm{SO}(1,3)\right]^{2} \mathrm{U}(1)_{X}:&&  \sum_{\alpha} n_{\alpha}+3 \only<4>{(e-2{\color{blue}l})}\only<5->{{\color{Green}m}}=&0\,,\\
-  \left[\mathrm{U}(1)_{X}\right]^{3}\,,&&\sum_{\alpha} n_{\alpha}^3+3 \only<4>{(e-2{\color{blue}l})^3}\only<5->{{\color{Green}m^3}}=&0\,    
-\end{align*}
+  \begin{align}
+    \label{eq:x}
+  \left[\mathrm{SO}(1,3)\right]^{2} \mathrm{U}(1)_{\mathcal{X}}:&&  \sum_{\alpha} n_{\alpha}+3 \only<4>{(e-2{\color{blue}l})}\only<5->{{\color{Green}m}}=&0\,,\\
+    \label{eq:x3}
+    \left[\mathrm{U}(1)_{\mathcal{X}}\right]^{3}\,,&&\sum_{\alpha} n_{\alpha}^3+3 \only<4>{(e-2{\color{blue}l})^3}\only<5->{{\color{Green}m^3}}=&0\,    
+\end{align}
 }
+%
+\invisible<1-5>{\only<6->{
+    Any set of integers of integers $(n_1,n_2,\ldots n_N)$ which satisfy \eqref{eq:x} and \eqref{eq:x3} can be interpreted as $\mathcal{X}\to D$ symmetry with $N$  chiral fields.
 
+    If one integer is repetead 3 times can be interpreted as $\mathcal{X}\to X$ symmetry with $N'=N-3$  chiral fields.
+}
+}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%
+
+{
+\usebackgroundtemplate{\includegraphics[width=0.8\paperwidth]{ano1}}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamercovered{invisible}
+\begin{frame}[plain]
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+}
+{
+\usebackgroundtemplate{\includegraphics[width=0.8\paperwidth]{ano2}}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamercovered{invisible}
+\begin{frame}[plain]
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+}
+{
+\usebackgroundtemplate{\includegraphics[width=0.8\paperwidth]{ano3}}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamercovered{invisible}
+\begin{frame}[plain]
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+}
+{
+\usebackgroundtemplate{\includegraphics[width=0.8\paperwidth]{ano4}}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamercovered{invisible}
+\begin{frame}[plain]
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+}
+
+
+\begin{frame}
+  \frametitle{Effective Dirac neutrino mass operator}
+\begin{align*} 
+    \mathcal{L}_{\text{eff}} = h_{\nu}^{\alpha i} \, \left( \nu_{R\alpha}\right)^{\dagger} \, \epsilon_{ab} \, L_i^a \, H^b \left(\frac{S^*}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i=1,2,3$}\,,
+\end{align*}
+and $\delta = 1,2,\ldots$ for dimension 5 (D-5) or 6 (D-6)   operators, etc.
+Here $h_{\nu}^{\alpha i}$ correspond to dimensionless induced couplings, $\nu_{R\alpha}$ are at least two RHNs ($\alpha=1,2,\ldots$) with the same $D$ or $X$-charge $\nu$, $L_{i}$ are the lepton doublets with $X$-charge $-L$, $H$ is the SM Higgs doublet with $X$-charge $h=L-m$, $S$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry with $D$ or $X$-charge 
+\begin{align*}
+    s=-(\nu+m)/\delta\,,
+\end{align*}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Diracness of non-zero DM and Dirac neutrinos masses from $U(1)_{\mathcal{X}}$}
+
+  Starting from the extended dataset with the solutions with $N$ integers to the Diophantine equations~\eqref{eq:NN3}, we apply the following steps
+\begin{itemize}
+    \item Check that the solution has two (three) repeated integers to be identified as $\nu$ and fix $N_\nu=2$  ($N_\nu=3$).
+    \item For $\delta=1,2,\ldots$ and all the possible combinations for $m$ and $\nu$ in the solution, including $m=0$, find the $s$ value compatible with the effective Dirac neutrino mass operator of D-$4+\delta$ according to eq.~\eqref{eq:effcon}.
+    \item Interpret the integers in the solution which are different from $m$ and $\nu$ as the $D$-charges for $m=0$ or $X$-charges for $m\ne 0$ of a set of singlet chiral fermions: $\psi_i$, $i=1,\ldots, N_{\text{chiral}}-N_{\nu}$.  Then select the solutions for which the condition 
+    \begin{align}
+        |n_i+n_j|=|s|
+    \end{align}
+    which guarantees that all the singlet chiral fermions, $\psi_i$, acquire masses after the spontaneous symmetry breaking of the gauge Abelian symmetry through $\langle S\rangle$.
+\end{itemize}
+  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Unconditional stability}
+
+Concerning the solutions with multi-component DM, we also explore the cases which feature at least two DM candidates with \emph{unconditional} stability~\cite{Yaguna:2019cvp}. This happens when there are two remnant symmetries such that $\mathbb{Z}_{|s|}\cong \mathbb{Z}_p\otimes\mathbb{Z}_q$ with  $p$ and $q$ coprimes and $|s|=pq$, which guarantee the stability of each lightest state under $\mathbb{Z}_p$ and $\mathbb{Z}_q$ respectively, without imposing any kinematical restriction. For the two DM candidates associated to the set of chiral fields $\psi_i$ and $\chi_j$, we consider below the following two possibilities for $|s|$~\cite{Yaguna:2019cvp,Bernal:2021ppq}
+\begin{itemize}
+    \item $\mathbb{Z}_{6}\cong \mathbb{Z}_2\otimes\mathbb{Z}_3$: solutions with at least a set of chiral fields with $\psi_i \sim\left[\omega_{6}^{2} \vee \omega_{6}^{4}\right]$ under $\mathbb{Z}_{6}$, and at least a set of chiral fields with $\chi_i \sim \omega_{6}^3$ under $\mathbb{Z}_{6}$,
+%
+    \item $\mathbb{Z}_{14}\cong \mathbb{Z}_2\otimes\mathbb{Z}_7$: solutions with at least a set of chiral fields with $\psi_i \sim\left[\omega_{14}^{2}  \vee \omega_{14}^{6} \vee \omega_{14}^{8} \vee \omega_{14}^{10} \vee \omega_{14}^{12}\right]$ under $\mathbb{Z}_{14}$ and at least a set of chiral fields with $\chi_i \sim \omega_{14}^7$ under $\mathbb{Z}_{14}$,
+\end{itemize}
+where $\omega_{|s|}=\operatorname{e}^{i\, 2\pi/|s|}$.  
+\end{frame}
+
+\begin{frame}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{solutions}
+     \caption{Distribution of solutions with $N$ integers to the Diophantine equations~\eqref{eq:NN3} which allow the effective Dirac neutrino operator at D-$4+\delta$ for at least two right-handed neutrinos and have non-vanishing Dirac o Majorana masses for the other singlet chiral fermions in the solution.}
+    \label{fig:solutions}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{48 type of representative solutions}
+%  \begin{table}
+%    \centering
+{
+  \begin{tiny}
+  \begin{tabular}{L|RC|RRR|R|RRRR}
+\toprule
+                                           \text{Solution} & N &N_{\text{chiral}} &   m & \nu & \delta &                s  & N_D & N_M & G_D & G_M \\
+\midrule
+                              (1, -2, -3, 5, 5, -6) &  6 &  6 &   0 &   5 &      1 &               -5 &   2 &   0 &   1 &   0 \\
+                           (3, 3, 3, -5, -5, -7, 8) &  7 &  4 &   3 &  -5 &      2 &                1 &   1 &   0 &   1 &   0 \\
+                    (1, -2, 3, 4, 6, -7, -7, -7, 9) &  9 &  9 &   0 &  -7 &      1 &                7 &   3 &   0 &   1 &   0 \\
+                  (1, 1, -4, -5, 9, 9, 9, -10, -10) &  9 &  9 &   0 &   9 &      1 &               -9 &   3 &   0 &   2 &   0 \\
+                   (1, 2, -6, -6, -6, 8, 9, 9, -11) &  9 &  6 &  -6 &   9 &      1 &               -3 &   2 &   0 &   1 &   0 \\
+                (1, -3, 8, 8, 8, -12, -12, -17, 19) &  9 &  6 &   8 & -12 &      2 &                2 &   2 &   1 &   1 &   1 \\
+              (8, 8, 8, -12, -12, 15, -17, -23, 25) &  9 &  6 &   8 & -12 &      2 &                2 &   2 &   0 &   1 &   0 \\
+                (1, -2, -2, 3, 3, -4, -4, 6, 6, -7) & 10 & 10 &   0 &   6 &      1 &               -6 &   3 &   2 &   2 &   2 \\
+                (1, -2, -2, 3, 4, -5, -5, 7, 7, -8) & 10 & 10 &   0 &  -5 &      1 &   \boldsymbol{5} &   4 &   0 &   2 &   0 \\
+                (1, -2, -2, 3, 5, -6, -6, 8, 8, -9) & 10 & 10 &   0 &  -6 &      1 &                6 &   4 &   0 &   2 &   0 \\
+                 (2, 2, 3, 4, 4, -5, -6, -6, -7, 9) & 10 & 10 &   0 &   2 &      1 &  \boldsymbol{-2} &   4 &   2 &   2 &   2 \\
+                (1, 1, 5, 5, 5, -6, -6, -6, -9, 10) & 10 & 10 &   0 &   1 &      1 &               -1 &   4 &   0 &   3 &   0 \\
+               (2, 2, 4, 4, -7, -7, -9, -9, 10, 10) & 10 & 10 &   0 &  10 &      2 &               -5 &   3 &   0 &   2 &   0 \\
+                (1, 2, 2, -3, 6, 6, -8, -8, -9, 11) & 10 & 10 &   0 &  -8 &      1 &                8 &   4 &   1 &   2 &   1 \\
+             (1, -2, -3, 5, 6, -8, -9, 11, 11, -12) & 10 & 10 &   0 &  11 &      1 &              -11 &   4 &   0 &   1 &   0 \\
+              (1, 1, -3, 4, 4, -7, 8, -10, -10, 12) & 10 & 10 &   0 & -10 &      2 &                5 &   4 &   0 &   2 &   0 \\
+            (1, 1, -2, -2, -4, 6, -10, 11, 12, -13) & 10 & 10 &   0 &  -2 &      1 &                2 &   3 &   2 &   1 &   2 \\
+               (3, 4, 4, 4, 4, -5, -8, -8, -11, 13) & 10 & 10 &   0 &  -8 &      1 &                8 &   2 &   4 &   1 &   4 \\
+             (4, 4, 5, 6, 6, -9, -10, -10, -11, 15) & 10 & 10 &   0 &   6 &      1 &               -6 &   4 &   0 &   2 &   0 \\
+           (1, -2, -4, 7, 7, -10, -12, 14, 14, -15) & 10 & 10 &   0 &  14 &      1 & \boldsymbol{-14} &   3 &   2 &   1 &   2 \\
+             (1, 2, 2, -3, 4, -6, 12, -13, -14, 15) & 10 & 10 &   0 &   2 &      1 &  \boldsymbol{-2} &   4 &   1 &   1 &   1 \\
+              (1, 4, 4, -7, 8, 8, -9, -12, -12, 15) & 10 & 10 &   0 &   8 &      1 &               -8 &   4 &   2 &   2 &   2 \\
+            (1, 2, 2, -9, -9, 16, 16, 17, -18, -18) & 10 & 10 &   0 & -18 &      1 &               18 &   3 &   2 &   2 &   2 \\
+          (1, -3, -6, 7, -10, 11, -16, 18, 18, -20) & 10 & 10 &   0 &  18 &      2 &               -9 &   4 &   0 &   1 &   0 \\
+\bottomrule  
+\end{tabular}
+\end{tiny}
+}
+% \caption{
+% %   Set of charges satisfying the Diophantine equations together with the conditions enumerated in the text, for solutions with $N_{\textbf{chiral}}$ massive fermions, including 
+% % the Dirac neutrinos masses allowed by the effective operator of power $\delta$,
+% %  the solution with unconditional stability through $\mathbb{Z}_{|s|}$ is highlighted with a bold font for the charge of $|s|=\boldsymbol{6},\boldsymbol{14}$. $N_D$ and $N_M$ are the number of massive Dirac and Majorana singlet fermions in each solution, while $G_D$ and $G_M$ are the corresponding number of maximum generations in the set.
+% }
+% \label{tab:sltns}
+% \end{table}
+\end{frame}
+
+\begin{frame}
+  \frametitle{48 type of representative solutions}
+%  \begin{table}
+%    \centering
+{
+  \begin{tiny}
+  \begin{tabular}{L|RC|RRR|R|RRRR}
+\toprule
+                                           \text{Solution} & N &N_{\text{chiral}} &   m & \nu & \delta &                s  & N_D & N_M & G_D & G_M \\
+\midrule
+           (1, -4, 5, -6, -6, 10, -14, 15, 20, -21) & 10 & 10 &   0 &  -6 &      1 &                6 &   4 &   0 &   1 &   0 \\
+          (2, -3, -6, 7, 12, -14, -14, 17, 20, -21) & 10 & 10 &   0 & -14 &      1 &  \boldsymbol{14} &   4 &   1 &   1 &   1 \\
+             (3, 6, 6, -7, 8, 8, -14, -14, -17, 21) & 10 & 10 &   0 & -14 &      1 &  \boldsymbol{14} &   4 &   1 &   2 &   1 \\
+          (8, 8, 9, 10, 10, -13, -18, -18, -27, 31) & 10 & 10 &   0 & -18 &      1 &  \boldsymbol{18} &   4 &   1 &   2 &   1 \\
+             (1, 1, 1, -2, -2, -5, -5, 6, 6, 7, -8) & 11 &  8 &   1 &  -2 &      1 &                1 &   3 &   0 &   2 &   0 \\
+            (1, -2, -2, -2, -3, 4, 4, -5, 6, 7, -8) & 11 &  8 &  -2 &   4 &      1 &               -2 &   3 &   1 &   1 &   1 \\
+             (1, 1, 2, 2, 2, -4, -4, 7, -8, -9, 10) & 11 &  8 &   2 &  -4 &      1 &                2 &   2 &   2 &   1 &   2 \\
+           (2, 2, 2, -4, -4, -5, 7, -8, 9, 10, -11) & 11 &  8 &   2 &  -4 &      1 &                2 &   3 &   0 &   1 &   0 \\
+          (1, -2, -3, -3, -3, 5, 5, -7, 8, 10, -11) & 11 &  8 &  -3 &   5 &      2 &               -1 &   3 &   0 &   1 &   0 \\
+            (3, 3, 3, -4, -4, 7, 7, -8, -9, -9, 11) & 11 &  8 &   3 &  -9 &      2 &                3 &   3 &   0 &   2 &   0 \\
+          (1, 3, 5, -6, -6, -6, 8, -9, 12, 12, -14) & 11 &  8 &  -6 &  12 &      1 &               -6 &   3 &   1 &   1 &   1 \\
+          (1, -2, 6, 6, 6, -7, 8, -9, -12, -12, 15) & 11 &  8 &   6 & -12 &      1 &   \boldsymbol{6} &   3 &   0 &   1 &   0 \\
+          (1, 3, 3, 6, 6, 6, -7, -10, -12, -12, 16) & 11 &  8 &   6 & -12 &      1 &   \boldsymbol{6} &   2 &   2 &   1 &   2 \\
+         (1, -2, -2, -2, 3, 3, 4, 4, -5, -5, -5, 6) & 12 &  9 &  -5 &  -2 &      1 &   \boldsymbol{7} &   3 &   0 &   2 &   0 \\
+         (1, 1, -3, 4, 5, 5, 5, -6, -7, -7, -8, 10) & 12 &  9 &   5 &  -7 &      1 &                2 &   3 &   2 &   1 &   2 \\
+         (1, 1, 1, -2, 4, -7, -7, -7, 8, 9, 9, -10) & 12 &  9 &  -7 &   9 &      1 &               -2 &   2 &   3 &   1 &   3 \\
+        (1, 1, -3, -3, -5, -5, -5, 7, 7, 7, 9, -11) & 12 &  9 &  -5 &   7 &      1 &               -2 &   3 &   2 &   2 &   2 \\
+     (1, -3, -3, -3, 4, 6, 7, 9, -10, -10, -10, 12) & 12 &  9 &  -3 & -10 &      1 &               13 &   3 &   0 &   1 &   0 \\
+       (1, 1, 1, 3, 3, -5, 7, 7, -11, -11, -11, 15) & 12 &  9 &   1 & -11 &      1 &               10 &   3 &   1 &   2 &   1 \\
+         (1, 1, 1, 3, 5, 5, -5, 5, -9, -9, -13, 15) & 12 &  9 &   5 &  -9 &      2 &                2 &   2 &   3 &   1 &   3 \\
+  (1, -2, -2, 3, 6, -10, -10, -10, 13, 14, 14, -17) & 12 &  9 & -10 &  14 &      1 &               -4 &   4 &   2 &   2 &   2 \\
+(1, -3, 9, -11, -13, -13, -13, 15, 15, 15, 21, -23) & 12 &  9 & -13 &  15 &      1 &               -2 &   3 &   1 &   1 &   1 \\
+\bottomrule  
+\end{tabular}
+\end{tiny}
+}
+% \caption{
+% %   Set of charges satisfying the Diophantine equations together with the conditions enumerated in the text, for solutions with $N_{\textbf{chiral}}$ massive fermions, including 
+% % the Dirac neutrinos masses allowed by the effective operator of power $\delta$,
+% %  the solution with unconditional stability through $\mathbb{Z}_{|s|}$ is highlighted with a bold font for the charge of $|s|=\boldsymbol{6},\boldsymbol{14}$. $N_D$ and $N_M$ are the number of massive Dirac and Majorana singlet fermions in each solution, while $G_D$ and $G_M$ are the corresponding number of maximum generations in the set.
+% }
+% \label{tab:sltns}
+% \end{table}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Multi-component dark matter I}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Multi-component dark matter II}
+\end{frame}
+
+
+
+
+
+
+
 
 
 
