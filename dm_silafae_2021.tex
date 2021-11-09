@@ -32,8 +32,8 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Dark sectors}
-\subtitle{from (Dirac radiative) neutrino masses}
+\title{ Effective Dirac neutrino masses }
+\subtitle{with multi-coponent fermionic dark matter}
 
 
 %\subtitle
@@ -45,7 +45,8 @@
 %   affiliation.
 \institute{
   \begin{picture}(100,2)
-\put(230,-110){ \includegraphics[scale=0.17]{temple}}
+    \put(230,-110){ %\includegraphics[scale=0.17]{temple}
+    }
 \end{picture}
   \affiliation{\tiny Instituto de Física\\
 Universidad de Antioquia\\
@@ -54,13 +55,18 @@ Phenomenology Group}%
 {}%
 {pixel}% small image here, use pixel for nothing
 {}
-\arxiv{arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574 }
-\collaborators{ Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, Andrés Rivera (UdeA),\\ Walter Tangarife (Loyola University Chicago) }
+\arxiv{ arXiv:2108.05907
+%  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
+}
+\collaborators{ Nicolás Bernal
+%  Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, Andrés Rivera (UdeA),\\ Walter Tangarife (Loyola University Chicago)
+}
 }
 
-\date{\tiny December 3, 2019 - COMHEP
+\date{\tiny %December 3, 2019 - COMHEP
 
-  [PDF: \url{http://bit.ly/comhep2019}] } % (optional) \today
+  %[PDF: \url{http://bit.ly/comhep2019}]
+} % (optional) \today
 %{\includegraphics[scale=0.3]{udea}}
 \titlegraphic{\hfill\includegraphics[height=1.5cm]{udea}}
 
@@ -427,18 +433,58 @@ where $\omega_{|s|}=\operatorname{e}^{i\, 2\pi/|s|}$.
 
 \begin{frame}
   \frametitle{Multi-component dark matter I}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{number}
+     \caption{Number of massive Dirac and Majorana fermions in each type of the 48 types of solutions of the full set of solutions in Fig.~\ref{fig:solutions}. The discs magenta and cyan (yellow and green) are for dark (active) symmetries which allows the effective Dirac neutrino mass operator for at leas two right-handed neutrinos for D-$4+\delta$, with $\delta=1,2$ respectively. Similarly, the blue and red  points are the type of solutions which satisfy the unconditional stability conditions for at least two DM candidates. }
+    \label{fig:number}
+\end{figure}
 \end{frame}
 
 \begin{frame}
   \frametitle{Multi-component dark matter II}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{generation}
+    \caption{Same as Fig.~\ref{fig:number} 
+    but for number generations of massive Dirac and Majorana fermions in each type of the 48 types of solutions of the full set of solutions in Fig.~\ref{fig:solutions}. 
+    }
+    \label{fig:generation}
+\end{figure}  
 \end{frame}
 
 
 
+\begin{frame}
+  \frametitle{Solution: $(3, 3, 3, -5, -5, -7, 8)$}
+\begin{table}
+  \centering
+  \begin{tabular}{l|c|c|c|c                                  }\hline
+    Field            &$SU(2)_L$     & $\operatorname{U}(1)_Y$ &$\operatorname{U}(1)_X$ &$ \operatorname{U}(1)_{B-L}$ \\ \hline
+    $L_i$            & $\mathbf{2}$ & $-1/2$   & $-L$ & $-1$     \\ %-3/3
+    $e_{Ri}$         & $\mathbf{1}$ & $-2$   & $3-2L$ & $-1$     \\ %-3/3
+    $\nu_{R \alpha}$ & $\mathbf{1}$ & $0$      & $-5$ & $-5/3$     \\ %-5/3
+    $\psi_1$         & $\mathbf{1}$ & $0$      & $-7 $ & $-7/3 $  \\ 
+    $\psi_2$         & $\mathbf{1}$ & $0$      & $8$ & $8/3$    \\
+    $H$              & $\mathbf{2}$ & $1/2$    &  $L-3 $ &$0$  \\        
+    $S$              & $\mathbf{1}$ & $0$      &  $1$ & $1/3$   \\\hline 
+    $\sigma_1^+$     & $\mathbf{1}$ & $+2$    &  $2L $ & $2$  \\ %6/3       
+    $\sigma_2^+$     & $\mathbf{1}$ & $+2$    &  $-(2-2L) $ & $4/3$  \\\hline   %2L+2-2L=2     
+  \end{tabular}
+  \caption{Charges for last solution. $i=1,2,3$, $\alpha=1,2,3$. Note that $\left( \omega_n^d \right)^{*}=\omega_n^{-d}=\omega_n^{n-d}$.}
+  \label{tab:pickedsltn}
+\end{table}
+
+Neutrino phenomenology with J. Calle and O. Zapata: arXiv:2103.15328  [PRD]
+
+DM Phenomenology: arXiv:1506.05107
+\end{frame}
 
 
-
-
+\begin{frame}
+  \frametitle{Conclusions}
+  In general, we can see that multi-component and multi-generation DM candidates are the trend for gauge Abelian extensions of the SM with massive singlet chiral fermions compatible with the effective Dirac neutrino mass operator of dimension
+\end{frame}
 
 
 
