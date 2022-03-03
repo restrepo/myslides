@@ -184,7 +184,15 @@ Phenomenology Group}%
 
 \begin{frame}[fragile]
   \frametitle{BSM-Submodules}
+  
+  Install compilers:
+  
+    \begin{lstlisting}[language=Sh]
+      sudo apt install build-essential gfortran feynmf
+    \end{lstlisting}
 
+ Download all the HEP-tools in one step:
+    
     \begin{lstlisting}[language=Sh]
       git clone --recursive https://github.com/restrepo/BSM-Submodules.git
       cd BSM-Submodules/
