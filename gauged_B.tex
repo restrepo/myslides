@@ -131,6 +131,12 @@ Phenomenology Group \\
 \end{itemize}
   
 \end{frame}
+
+\begin{frame}
+  \only<1>{\includegraphics[scale=0.8]{triangle1}}
+  \only<2>{\includegraphics[scale=0.8]{triangle2}}
+\end{frame}
+
 \section{Dark sectors}
 %A model of electroweak baryogenesis requiring no fine
 %tuning and consistent to scales far above 1 TeV is
@@ -151,21 +157,23 @@ Phenomenology Group \\
 %           QED
 %         \end{minipage}
 %       }}  }}%
-\only<3->{\put(250,180){\Large $\color{red}\mathcal{L}=-\frac{1}{4}V_{\mu\nu}V^{\mu\nu}+i \overline{\Psi}\cancel{\mathcal{D}} \Psi- h \overline{\Psi}\Psi S $   }}%
+\only<3->{\put(260,200){\Large $\color{red}\mathcal{L}=-\frac{1}{4}V_{\mu\nu}V^{\mu\nu}+\color{blue}i \sum_i{\chi_i}^\dagger\cancel{\mathcal{D}} \chi_i$   }}%
+\only<3->{\put(280,180){\Large $\color{blue} - \only<3-5>{h}\only<6->{y} \left(\chi_1\chi_2 \only<3-5>{\Phi}\only<6>{S} + \text{h.c} \right) $   }}%
 \only<3->{\put(280,218.5){ \Huge {{\color{red}Local}} $\color{red}U(1)_{\mathcal{X}}$  }}%
 \only<3->{\put(240,125){
     \begin{minipage}{0.4\linewidth}
-     Diracness protected chiral fermion dark matter $\color{red}m_{\Psi}=h\langle S \rangle$
+      Anomalons: SM-singlet Dirac fermion\\
+      \only<3-5>{dark matter $\color{red}m_{\Psi}=h\langle \Phi \rangle$}\only<6>{$CP$ violation Yukawa $\color{blue}y$}
       
-          {\color{red}Relic abundance: }
+          {\color{red}LHC production: }
           \begin{align*}
-            \text{Active Symmetry: $\color{red}\mathcal{X}\to X$: }&\color{red} \Psi\overline{\Psi}\to \text{SM}\,\text{SM} \\
-            \text{Dark Symmetry: $\color{red}\mathcal{X}\to D$: }&\color{red} \Psi\overline{\Psi}\to \gamma_{\mathcal{D}}\gamma_{\mathcal{D}}             
+            \text{Gauged Symmetry: $\color{red}\mathcal{X}\to B$: }&\color{red} q\overline{q}\to Z'\to \text{jets} \\
+            \text{Gauged Symmetry: $\color{blue}\mathcal{X}\to L$: }&
           \end{align*}
     \end{minipage}
   }}%
 \only<3->{\put(160,120){\Large $F_{\mu\nu}{\color{red}\ V^{\mu\nu}} $   }}%
-\only<3->{\put(120,-10){$\color{red}\overline{\Psi}\Psi=\color{blue}\psi_1\psi_2+\psi_1^\dagger\psi_2^\dagger\to \psi_\alpha\,,\qquad \alpha=1,\ldots N'\to N'>4 $}}
+\only<3->{\put(120,-10){$\color{red}\overline{\Psi}\Psi=\color{blue}\chi_1\chi_2+\chi_1^\dagger\chi_2^\dagger\to \chi_\alpha\chi_\beta \Phi^{(*)}\,,\qquad \alpha=1,\ldots N'\to N'>4 $}}
 \only<3->{\put(204,0){ \begin{overpic}[scale=0.2]{tcdm1}\end{overpic}}}%
 
 \only<4->{\put(280,0){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
@@ -182,57 +190,109 @@ Phenomenology Group \\
 
 \begin{frame}
   \frametitle{Standard model extended with $\operatorname{U}(1)_{\mathcal{X}}$ gauge symmetry}
+  \small
   \begin{table}
     \centering
         \rowcolors{1}{RoyalBlue!20}{}
   \begin{tabular}{c|c|c|c}
     \hline  
-    Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{\mathcal{X}}$\\ \hline
-$L^\dagger $    & $\boldsymbol{2}$& $+1/2$  &  $\color{blue}l$ \\
-$Q^\dagger $    & $\boldsymbol{2}$& $-1/6$  &  $q$   \\
-$d_R $  & $\boldsymbol{1}$& $-1/2$  &  $d$ \\
-$u_R $  & $\boldsymbol{1}$& $+2/3$  &  $u$\\
-$e_R $  & $\boldsymbol{1}$& $-1$    &  $e$   \\
-$H $    & $\boldsymbol{2}$& $-1/2$  &  $h$   \\
-$\psi_\alpha $ & $\boldsymbol{1}$& $0$     &  $n_\alpha$   \\
+    Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{\mathcal{X}={\color{red}B}\text{ or } {\color{blue}L}}$\\ \hline
+$Q^\dagger_i $    & $\boldsymbol{2}$& $-1/6$  &  $\color{red}Q$   \\
+$d_{Ri} $  & $\boldsymbol{1}$& $-1/2$  &  $\color{red}d$ \\
+ $u_{Ri} $  & $\boldsymbol{1}$& $+2/3$  &  $\color{red}u$\\
+$L^\dagger_i $    & $\boldsymbol{2}$& $+1/2$  &  $\color{blue}L$ \\    
+$e_{Ri} $  & $\boldsymbol{1}$& $-1$    &  $\color{blue} e$   \\
+$H $    & $\boldsymbol{2}$& $1/2$  &  $h=0$   \\\hline
+$\chi_\alpha $ & $\boldsymbol{1}$& $0$     &  $z_\alpha$   \\\hline
+ $\left(L'_L\right)^\dagger$      & $\mathbf{2}$ & $1/2$   & $-x'$   \\ 
+$L''_R$      & $\mathbf{2}$ & $-1/2$   & $x''$   \\ 
+$e'_R$      & $\mathbf{1}$ & $-1$   & $x'$   \\ 
+$\left(e''_L\right)^\dagger$      & $\mathbf{1}$ & $1$   & $-x''$   \\\hline
+$\Phi$      & $\mathbf{1}$ & $0$   & $\phi$\\
+$S$      & $\mathbf{1}$ & $0$   & $s$\\
   \end{tabular}
-  \caption{$q=l=u=d=e=0$ for $\mathcal{X}=D$ }
+  \caption{$\color{blue}L=e=0$ for $\mathcal{X}=\color{red}B$. Or $\color{red}Q=u=d=0$ for $\mathcal{X}=\color{blue}L$. $i=1,2,3$, $\alpha=1,2,\ldots,N'$  }
     \label{tab:partcont2}
 \end{table}
-
-
 \end{frame}
 
-
-%%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Dark symmetry: $q=l=u=d=e=0$}
-
-  Diophantine equations
-  
-\begin{align} \label{eq:NN3}
- \sum_{\rho=1}^{N}n_{\rho}=0 \qquad \text{and} \qquad \sum_{\rho=1}^{N}n_{\rho}^3=0\,.
+  \frametitle{Effective Dirac neutrino mass operator}
+\begin{align}
+    \chi_1\to \nu_{R1},\cdots, \chi_{N_\nu}\to \nu_{R\, N_\nu},\qquad 2\le N_\nu\le 3\,,
 \end{align}
+
+  \begin{align*} 
+    \mathcal{L}_{\text{eff}} = h_{\nu}^{\alpha i} \, \left( \nu_{R\alpha}\right)^{\dagger} \, \epsilon_{ab} \, {\color{blue} L_i^a }\, H^b \left(\frac{\Phi^*}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i=1,2,3$}\,,
+\end{align*}
+$S$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry with $D$ or $X$-charge 
+\begin{align}
+     \label{eq:effcon}
+    \phi=-(\nu+{\color{blue}L})/\delta\,,
+\end{align}
+
 \end{frame}
+
+
+
+\begin{frame}
+  \frametitle{Anomaly cancellation I}
+The anomaly-cancellation conditions on $\left[\operatorname{SU}(3)_c\right]^{2}  \operatorname{U}(1)_{X}$, $\left[\operatorname{SU}(2)_{L}\right]^{2} \operatorname{U}(1)_{X}$, $\left[\operatorname{U}(1)_{Y}\right]^{2} \operatorname{U}(1)_{X}$,  allow us to express three of the $X$-charges in terms of the others
+\begin{align}\label{eq:sol0}
+  \color{red}u=&-{\color{blue}e}-\frac23 {\color{blue}L}-\frac19\left(x'-x''\right)\,,& 
+\color{red}  d=& {\color{blue}e}+\frac43 {\color{blue}L}-\frac19\left(x'-x''\right)\,,& 
+\color{red}  Q=& -\frac13 {\color{blue}L}+\frac19\left(x'-x''\right)\,,
+\end{align}
+ while the $\left[\operatorname{U}(1)_{X}\right]^{2} \operatorname{U}(1)_{Y}$ anomaly condition reduces to
+ \begin{align}
+     {\color{blue}(e+L)}(x'-x'')=0\,.
+ \end{align}
+ \vspace{-1cm}
+ \begin{itemize}
+ \item Previously: $x'=x''$
+ \item We choose instead ($h=0$):
+\begin{align}
+\label{eq:emL}
+    \color{blue}e=-L\,,
+\end{align}
+ \end{itemize}
+
+so that ($\color{blue}L$ is still a {\color{blue}free parameter}) 
+\begin{align}
+\label{eq:Q}
+    {\color{red}Q=-u=-d}=-\frac13 {\color{blue}L}+\frac19\left(x'-x''\right).
+\end{align}
+If $\color{blue}L=0$ $\to \operatorname{U}(1)_{\color{red}B}$
+\end{frame}
+
+
 
 %%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Active symmetry}
-  If the set of integers has one integer, $m$, repeated three times, the extra gauge Abelian symmetry can be identified as one \emph{active} symmetry, $\operatorname{U}(1)_X$, with $N_{\text{chiral}}=N-3$ right-handed singlet chiral fermions with $X$-charges $n_1,n_2,\ldots n_{N_{\text{chiral}}}$.
-
-They SM $X$-charges be written in terms of $m$ and a free parameter that we choose to be the $X$-charge of the conjugate of the SM lepton doublet, $L$  
-\begin{align*}
-  u=&\frac{4 L}{3}-m\,,& d=m-\frac{2 L}{3}& \,,& Q=& -\frac{L}{3}\,,& e=& m-2 L\,,&
-    h =& L-m\,,
-\end{align*}
-
-Ejemplo:
-\begin{align*}
-  (-1,-1,-1,1,1,1) \to& (-m,-m,-m,m,m,m) \\
-  (1,1,1,-4,-4,5) \to & m=1
-\end{align*}
+  \frametitle{Anomaly cancellation II}
+The gravitational anomaly, $\left[\operatorname{SO}(1,3)\right]^2\operatorname{U}(1)_Y$, and the cubic anomaly, $\left[\operatorname{U}(1)_X\right]^3$,
+can be written as the following system of Diophantine equations, respectively,
+\begin{align}
+    \label{eq:Dcoond}
+    \sum_{\alpha=1}^N z_\alpha=&0\,,&
+    \sum_{\alpha=1}^N z_\alpha^3=&0\,,
+\end{align}
+%
+where $N=N'+5$ and
+\begin{align}
+\label{eq:Nalpha}
+    z_{N'+1}=&-x'\,, &&& z_{N'+2}=&x''\,,\nonumber\\
+   & &\color{blue}z_{N'+2+i}&\color{blue}=L\,,\quad i=1,2,3&&
+\end{align}
+$\to$
+\begin{align}
+\label{eq:Qzero}
+    9Q=-\sum_{\alpha=N'+1}^{N'+5}z_\alpha=-x'+x''\color{blue}+L+L+L\,,
+\end{align}
+If $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 \end{frame}
 
+%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%
 
@@ -265,26 +325,45 @@ Ejemplo:
 \setbeamertemplate{blocks}[rounded][shadow=false]
 \setbeamercovered{invisible}
 \begin{frame}[plain]
+\begin{picture}(320,250)  
+  \put(0,-7){\includegraphics[scale=0.1]{encircle}}
+\end{picture}
 \end{frame}
 %%%%%%%%%%%%%%%%%%
 }
 
-
 \begin{frame}
-  \frametitle{Effective Dirac neutrino mass operator}
-\begin{align*} 
-    \mathcal{L}_{\text{eff}} = h_{\nu}^{\alpha i} \, \left( \nu_{R\alpha}\right)^{\dagger} \, \epsilon_{ab} \, L_i^a \, H^b \left(\frac{S^*}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i=1,2,3$}\,,
-\end{align*}
-$S$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry with $D$ or $X$-charge 
-\begin{align}
-     \label{eq:effcon}
-    s=-(\nu+m)/\delta\,,
-\end{align}
+    \frametitle{$\operatorname{U}(1)_{\color{red}B}$ selection}
 
-\end{frame}
+      \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+      \item<1-> $\color{blue}L=0$
+      \item<2-> Effective neutrino mass $\only<2>{\color{red}}\phi=\nu=-5$
+      \item<3-> $\only<3>{\color{red}}\left(L_L'\right)^\dagger L_R''\Phi^*\to x'=-1,\ x''=6$
+      \item<4-> $\only<4>{\color{red}}\left(\chi_L\right)^\dagger \chi_R''\Phi^*\to z_3=-3,\ z_4=-2$
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \vspace{1cm}
+      
+      \Large $({\only<1->{\color{black}}\only<2>{\color{red}}5, 5},
+      {\only<1->{\color{black}}\only<4>{\color{red}}-3, -2},
+      {\only<1->{\color{black}}\only<3>{\color{red}}1, -6})$
 
+
+    %\hfill  \tiny{\url{Dreamstime.com}}  
+    \end{column}
+
+  \end{columns}
+
+  \invisible<1-3>{959 solutions from $\sim 400,000$}
+
+  \end{frame}
+
+\end{document}
 \begin{frame}
-  \frametitle{Diracness of non-zero DM and Dirac neutrinos masses from $U(1)_{\mathcal{X}}$}
+  \frametitle{$\operatorname{U}(1)_{\color{red}B}$ selection}
 
   Starting from the extended dataset with the solutions with $N$ integers to the Diophantine equations~\eqref{eq:NN3} we apply the following steps
 \begin{itemize}
@@ -299,18 +378,8 @@ $S$ is the complex singlet scalar responsible for the SSB of the anomaly-free ga
   
 \end{frame}
 
+\end{document}
 
-\begin{frame}
-  \frametitle{Unconditional stability}
-
-Two DM candidates with \emph{unconditional} stability. This happens when there are two remnant symmetries such that $\mathbb{Z}_{|s|}\cong \mathbb{Z}_p\otimes\mathbb{Z}_q$ with  $p$ and $q$ coprimes and $|s|=pq$, which guarantee the stability of each lightest state under $\mathbb{Z}_p$ and $\mathbb{Z}_q$ respectively, without imposing any kinematical restriction. For the two DM candidates associated to the set of chiral fields $\psi_i$ and $\chi_j$, we consider below the following two possibilities for $|s|$
-\begin{itemize}
-    \item $\mathbb{Z}_{6}\cong \mathbb{Z}_2\otimes\mathbb{Z}_3$: solutions with at least a set of chiral fields with $\psi_i \sim\left[\omega_{6}^{2} \vee \omega_{6}^{4}\right]$ under $\mathbb{Z}_{6}$, and at least a set of chiral fields with $\chi_i \sim \omega_{6}^3$ under $\mathbb{Z}_{6}$,
-%
-    \item $\mathbb{Z}_{14}\cong \mathbb{Z}_2\otimes\mathbb{Z}_7$: solutions with at least a set of chiral fields with $\psi_i \sim\left[\omega_{14}^{2}  \vee \omega_{14}^{6} \vee \omega_{14}^{8} \vee \omega_{14}^{10} \vee \omega_{14}^{12}\right]$ under $\mathbb{Z}_{14}$ and at least a set of chiral fields with $\chi_i \sim \omega_{14}^7$ under $\mathbb{Z}_{14}$,
-\end{itemize}
-where $\omega_{|s|}=\operatorname{e}^{i\, 2\pi/|s|}$.  
-\end{frame}
 
 \begin{frame}
   \begin{figure}
