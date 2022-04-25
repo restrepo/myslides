@@ -189,7 +189,7 @@ Phenomenology Group \\
 \end{frame}
 
 \begin{frame}
-  \frametitle{Standard model extended with $\operatorname{U}(1)_{\mathcal{X}}$ gauge symmetry}
+  \frametitle{Standard model extended with $\operatorname{U}(1)_{\mathcal{X}={\color{blue}L}\text{~or~}\color{red}B}$ gauge symmetry}
   \small
   \begin{table}
     \centering
@@ -211,7 +211,8 @@ $\left(e''_L\right)^\dagger$      & $\mathbf{1}$ & $1$   & $-x''$   \\\hline
 $\Phi$      & $\mathbf{1}$ & $0$   & $\phi$\\
 $S$      & $\mathbf{1}$ & $0$   & $s$\\
   \end{tabular}
-  \caption{$\color{blue}L=e=0$ for $\mathcal{X}=\color{red}B$. Or $\color{red}Q=u=d=0$ for $\mathcal{X}=\color{blue}L$. $i=1,2,3$, $\alpha=1,2,\ldots,N'$  }
+  \caption{ A minimal set of
+new fermion content: $\color{blue}L=e=0$ for $\mathcal{X}=\color{red}B$. Or $\color{red}Q=u=d=0$ for $\mathcal{X}=\color{blue}L$. $i=1,2,3$, $\alpha=1,2,\ldots,N'$  }
     \label{tab:partcont2}
 \end{table}
 \end{frame}
@@ -289,7 +290,7 @@ $\to$
 \label{eq:Qzero}
     9Q=-\sum_{\alpha=N'+1}^{N'+5}z_\alpha=-x'+x''\color{blue}+L+L+L\,,
 \end{align}
-If $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
+$\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 \end{frame}
 
 %%%%%%%%%%%%%%%
@@ -336,15 +337,15 @@ If $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
     \frametitle{$\operatorname{U}(1)_{\color{red}B}$ selection}
 
       \begin{columns}
-    \begin{column}{0.5\textwidth}
+    \begin{column}{0.7\textwidth}
       \begin{itemize}
       \item<1-> $\color{blue}L=0$
-      \item<2-> Effective neutrino mass $\only<2>{\color{red}}\phi=\nu=-5$
-      \item<3-> $\only<3>{\color{red}}\left(L_L'\right)^\dagger L_R''\Phi^*\to x'=-1,\ x''=6$
-      \item<4-> $\only<4>{\color{red}}\left(\chi_L\right)^\dagger \chi_R''\Phi^*\to z_3=-3,\ z_4=-2$
+      \item<2-> Effective neutrino mass: $\only<2>{\color{red}}\phi=-\nu=-5$
+      \item<3-> Electroweak-scale vector-like fermions: $\only<3>{\color{red}}\left(L_L'\right)^\dagger L_R''\Phi^*\to x'=-1,\ x''=6$
+      \item<4-> Dirac-fermionic DM: $\only<4>{\color{red}}\left(\chi_L\right)^\dagger \chi_R''\Phi^*\to z_3=-3,\ z_4=-2$
       \end{itemize}
     \end{column}
-    \begin{column}{0.5\textwidth}
+    \begin{column}{0.3\textwidth}
       \vspace{1cm}
       
       \Large $({\only<1->{\color{black}}\only<2>{\color{red}}5, 5},
@@ -357,11 +358,198 @@ If $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 
   \end{columns}
 
-  \invisible<1-3>{959 solutions from $\sim 400,000$}
+  \invisible<1-4>{\only<5>{{\color{red}959} solutions from $\sim 400,000$}}
+
+  \invisible<1-4>{
+    \begin{minipage}[t]{3.0\linewidth}
+      \includegraphics[scale=0.45]{number}\hspace{0.5cm}\includegraphics[scale=0.45]{generation}
+    \end{minipage}
+  }
 
   \end{frame}
 
-\end{document}
+\begin{frame}
+  \frametitle{Scotogenic realization}
+  Any realization which does not affect anomaly cancellation is allowed
+
+  \includegraphics[scale=0.7]{zee}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Full $\operatorname{U}(1)_{\color{red}B}$ model}
+\scriptsize
+  \begin{table}
+  \centering
+  \begin{tabular}{l|c|c|c}\hline
+    Field&$SU(2)_L$ & $U(1)_Y$&$U(1)_B$\\\hline
+     $u_{Ri}$      & $\mathbf{1}$ & $2/3$   & $\color{red}u=-5/9$   \\ 
+     $d_{Ri}$      & $\mathbf{1}$ & $-1/3$   & $\color{red}d=-5/9$   \\ 
+     $\left(Q_i\right)^\dagger$      & $\mathbf{2}$ & $-1/6$   & $\color{red}Q=5/9$   \\ 
+     $\left(L_i\right)^\dagger$      & $\mathbf{2}$ & $1/2$   & $\color{blue}L=0$   \\ 
+     $e_R$      & $\mathbf{1}$ & $-1$   & $\color{blue}e=0$   \\\hline 
+     $\left(L'_L\right)^\dagger$      & $\mathbf{2}$ & $1/2$   & $-x'=1$   \\ 
+     $e'_R$      & $\mathbf{1}$ & $-1$   & $x'=-1$   \\ 
+     $L''_R$      & $\mathbf{2}$ & $-1/2$   & $x''=-6$   \\ 
+     $\left(e''_L\right)^\dagger$      & $\mathbf{1}$ & $1$   & $-x''=6$   \\\hline
+     $\nu_{R,1}$   & $\mathbf{1}$ & $0$   & $5$   \\
+     $\nu_{R,2}$   & $\mathbf{1}$ & $0$   & $5$   \\\hline
+     $\chi_{R}$      & $\mathbf{1}$ & $0$   & $-2$   \\
+     $\left(\chi_{L}\right)^\dagger$      & $\mathbf{1}$ & $0$   & $-3$   \\ \hline
+     $H$      & $\mathbf{2}$ & $1/2$   & $0$   \\
+     $S$      & $\mathbf{1}$ & $0$   & $-5$   \\
+     $\Phi$      & $\mathbf{1}$ & $0$   & $-5$   \\
+     ${\sigma}^-_\alpha$      & $\mathbf{1}$ & $1$   & $-1$   \\
+     ${\sigma'}^-_\alpha$      & $\mathbf{1}$ & $-1$   & $4$   \\
+     \hline
+  \end{tabular}
+  \caption{Fermion (top) and scalar (bottom) content and its quantum numbers, $i=1,2,3$, $\alpha=1,2$.}
+  \label{tab:implementationU1B}
+\end{table}
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Baryogenesis}
+  CP violation occurs in the dark sector and is transmited to SM sector by the new $Z'$ gauge boson.
+
+  \begin{itemize}
+  \item   High scale fields:
+  $
+  \Phi\,,\qquad  \left( \langle\Phi\rangle \to L'_L, L''_R,e'_L,e''_R\text{:~ vector-like anomalons}\right) 
+  $
+  
+  
+\item Electroweak scale fields:
+  \fcolorbox{red}{yellow}{ $ Z'_\mu, S, \chi_L,\chi_R $}
+\item $CP$-violation
+    \begin{align*}
+      \mathcal{L}_{\text{Dirac DM}}=&h \left(\chi_L\right)^\dagger \chi_R \Phi^* + y \left(\chi_L\right)^\dagger \chi_R S^*+\text{h.c}\,,& y\in&\mathbb{C}\\
+      \supset& \left( m_{\chi} + |y| \operatorname{e}^{i\theta}|S| \right)\left(\chi_L\right)^\dagger \chi_R+\text{h.c}\,.&&
+  \end{align*}
+  \item $CP$-violation Portal
+    \begin{align*}
+\mathcal{L}_{\text{anomalous}} \supset g^{\prime} Z_{\mu}^{\prime}\left[3 \bar{\chi}_{L} \gamma^{\mu} \chi_{L}-2\bar{\chi}_{R} \gamma^{\mu} \chi_{R}+\bar{L}_{i} \gamma^{\mu} L_{i}+\bar{\ell}_{Ri} \gamma^{\mu} \ell_{Ri}\right]
+    \end{align*}
+  \item Strong electroweak phase transition (EWPT) portal
+    \begin{align*}
+      \mathcal{L}_{\text{first order EWPT}}\supset -\lambda_{S H} H^{\dagger}H\, S^{*}S\,.
+    \end{align*}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile,allowframebreaks]
+  \frametitle{First-order phase transition}
+  $T=0$: $h=H/\sqrt{2}$, $s=|S|$
+  \begin{align}
+    V(h,s)\,=\,\frac{\lambda_H}{4}\left(h^2- v^2\right)^2 +\frac{\lambda_S}{4}\left(s^2-w^2\right)^2 + \frac{\lambda_{SH}}{2}h^2 s^2\,,
+  \end{align}
+  $v=v_\text{EW}$ and $w=0$ if
+\begin{align}
+    \lambda_{SH}>0, \quad \lambda_H \lambda_S -\frac{1}{4} \lambda_{SH}^2 < - \frac{\lambda_{SH} m_s^2}{2 v^2}\,.
+\end{align} 
+
+$T\ne 0$:
+\begin{align}
+   V_T(h,s)\,=\,& \frac{\lambda_H v_c^4}{4}\left(\frac{h^2}{v_c^2} +\frac{s^2}{w_c^2} -1\right)^2 + \frac{\lambda_H v_c^2}{m_{s,c}^2 w_{c}^4}h^2 s^2 
+     + (T^2-T_c^2)(c_h h^2 +c_s s^2)\,, %+ {\color{red} \frac{1}{12}T^2 \lambda\, m_\chi\, } S,
+\end{align}
+where
+\begin{align}
+    c_h\,=\,&\frac{1}{48} \left(9g_2^2+ 3g_1^2 +12 y_t^2 +24 \lambda_H +\lambda_{HS}\right)\, ,\quad
+    c_s\,=\,  \frac{1}{12} \left (3 \lambda_S + 2 \lambda_{HS} \right)\,. 
+\end{align} 
+An additional condition, to ensure that the global minimum for this potential is the broken one when $T=0$, is 
+\begin{equation}
+    \frac{c_h}{c_s} > \sqrt{\frac{\lambda_h}{\lambda_s}}.
+  \end{equation}
+  
+  $T\gg T_c$: $v(T)=0$ and $w(T)\ne 0$
+
+  $T = T_c$: $v(T_c)=v_c$ and $w(T_c)=w_c=v_c$
+
+ Using the thin wall approximantion for the nucleation bubbles,
+  we use the ansatz in which the space dependence of the fields is given by 
+\begin{equation}
+    h(z) \,=\, \frac{1}{2}v(T_n) \left(1- \tanh \left(z/L_w \right) \right)\,,\qquad
+    s(z) \,=\, \frac{1}{2}s_0 \left(1+ \tanh \left(z/L_w \right) \right)\,, 
+\end{equation}  
+where $z$ is the direction normal to the wall and $L_w$ is the wall width.
+
+The nucleation temperature, $T_n$, is defined by the condition~\cite{Cline:2017qpe}
+\begin{equation}
+    \exp \left (-S_3 /T_n \right) \,=\, \frac{3}{4\pi}\left(\frac{H(T_n)}{T_n} \right)^4 \left(\frac{2\pi\,T_n}{S_3}\right)^{\frac{3}{2}} \,,
+\end{equation}
+ where $S_3$ is the Euclidean action of the bubble and $H(T)$ is the Hubble rate.
+\end{frame}
+
+The $CP$ violating phase, $\theta$ from
+\begin{align}
+M_\chi=  m_{\chi} + |y| \operatorname{e}^{i\theta}|S|\,, 
+\end{align}
+will lead to opposite signs in the perturbations of particles and antiparticles, resulting in a net asymmetry in the interior of the bubble. Imposing the condition $v(T_n)/T_n > 1$ avoids the asymmetry washout inside the bubble.
+
+The evolution of the particle and anti-particle distribution functions is obtained from the Boltzmann equations, which are recast as the diffusion equation for the rescaled chemical potential, $\xi_i(z)\,\equiv\,{\mu_i(z)}/{T} \,=\,{6}\left(n_i - \overline{n}_{i} \right)/{T^3}$,
+\begin{equation}
+- D_L \xi''_{\chi_L} -v_w\xi'_{\chi_L} +\Gamma_L(\xi_{\chi_L}-\xi_{\chi_R})\,=\,S_{\cancel{CP}}\,,
+\end{equation}
+where $D_L$ is the diffusion constant for $\chi_L$, which is related to the scattering rate $\Gamma_L$ by $D_L=\langle v_{p_z}^2\rangle/3\Gamma_L$. Here, $\langle\,\rangle$ means thermal average. $S_{\cancel{CP}}$ is $CP$-violating source that results from the variation of $\theta$~\cite{Cline:2000nw},
+\begin{eqnarray}
+S_{\cancel{CP}}\,=\,-\frac{\lambda}{2}\frac{v_w D_h}{\langle v_{p_z}^2  \rangle T} \left\langle \frac{|p_z|}{\omega^2}  \right\rangle \left(M_\chi^2\, \theta' \right)''\,,
+\end{eqnarray}
+where
+\begin{align}
+& \quad \langle v_{p_z}^2  \rangle \,=\, \frac{3x+2}{x^2 +3x+2}\,, \quad \left\langle \frac{|p_z|}{\omega^2}  \right\rangle \,=\,\frac{(1-x)e^{-x} + x^2 E_1(x) }{4m_\chi^2 K_2(x)}\, ,\quad x\equiv m_\chi /T\,,  \nonumber \\
+&  \left(M_\chi^2 \theta' \right)''\,=\, \frac{m_\chi s_0 |y| \left(-2+\cosh \left(\frac{2z}{L_w} \right) \right)\sin \theta}{L_w^3 \cosh^4 \left(\frac{z}{L_w} \right)}\, .
+\end{align}
+
+
+The chiral particle give rise to a non-zero $\operatorname{U}(1)_B$ charge density in the proximity of the wall. This results in a $Z'$ background that couples to the SM fields with $\operatorname{U}(1)_B$ charge,
+\begin{equation}
+    \langle Z'_0 \rangle \,=\, \frac{ g_B\,(q_{\chi_L}-q_{\chi_R})T_n^3}{6 M_{Z'}} \int_{-\infty}^\infty \operatorname{d}z_1\, \xi_{\chi_L}(z')\, e^{-M_{Z'}|z-z'|}\, , 
+\end{equation} which generates a chemical potential for the SM quarks, 
+\begin{equation}
+\mu_{Q}(z)\,=\, \mu_{d_R,u_R}(z)\,=\, 3 \times \frac{5}{9} \times g_B \langle Z'_0 (z) \rangle. 
+\end{equation} 
+This chemical potential sources a thermal-equilibrium asymmetry in the quarks~\cite{Carena:2019xrr}, $ \Delta n_{Q}^{\rm EQ} (z) \,\sim \, T_n^2 \, \mu_{Q}(z)$. 
+
+Finally, the baryon-number asymmetry is then given by 
+\begin{equation}
+\label{eq:nB}
+  n_B\,=\,  \frac{\Gamma_{\rm sph}}{v_w} \int_0^{\infty}\operatorname{d}z\, n_{Q}^{\rm EQ} (z)\, \exp\left(-\frac{\Gamma_{\rm sph}}{v_w}\,z\right)\,,
+\end{equation} 
+where $\Gamma_{\rm sph}$ is the sphaleron rate. The baryon-to-photon-number ratio is then obtained by
+\begin{equation}
+ \eta_B \,=\, \frac{n_B}{s(T_n)},\quad s (T) \,\equiv\,\frac{2\pi^2}{45} g_{*S}(T)\, T^3\,, 
+\end{equation} where $g_{*S}(T)$ is the effective number of relativistic degrees of freedom.
+
+\begin{frame}
+  \frametitle{Results}
+  We vary the typical Dirac-fermion DM parameter space and for each point that satisfy neutrino oscillation data, relic density and DM direct detection constraints. For each point  we ... 
+  
+  \begin{table}[t]
+\centering
+\begin{tabular}{c|c} 
+\hline
+Parameter & Range\\
+\hline
+$\theta$ & $(-\pi/2 \,, \pi/2)$  \\
+$s_0/{\rm GeV} $ &  $100-500$\\
+$T_n/{\rm GeV}$ &  $100-200$\\
+$L_w /{\rm GeV^{-1}}$ &  $1/T_n - 10/T_n$\\
+$v_w$ &  $0.05 - 0.5$\\
+\hline
+\end{tabular}
+\caption{Scan ranges for the free parameters that are involved in the baryogenesis mechanism.}
+\label{tab:scan-baryogenesis}
+\end{table}
+\end{frame}
+
+\begin{frame}
+  \includegraphics{}
+\end{frame}
+
+\end{document}  
 \begin{frame}
   \frametitle{$\operatorname{U}(1)_{\color{red}B}$ selection}
 
@@ -378,7 +566,6 @@ If $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
   
 \end{frame}
 
-\end{document}
 
 
 \begin{frame}
@@ -2948,4 +3135,9 @@ Custom width in block. See definition in preamble
 \begin{frame}
       \begin{varblock}[12cm]{DM is made of two color octets with mass around $12.5\ \text{TeV}$}      
       \end{varblock}
+\end{frame}
+
+Several pages frame
+\begin{frame}[fragile,allowframebreaks]
+  
 \end{frame}
