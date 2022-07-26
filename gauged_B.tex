@@ -56,7 +56,7 @@ Phenomenology Group %\\
 }%
 {http://gfif.udea.edu.co}%
 {}%
-{baldias}% small image here, use pixel for nothing
+{moca}% small image here, use pixel for nothing
 {}
 \arxiv{ arXiv:2205.05762
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
@@ -484,7 +484,7 @@ where
   we use the ansatz in which the space dependence of the fields is given by 
 \begin{equation*}
     h(z) \,=\, \frac{1}{2}v(T_n) \left(1- \tanh \left(z/L_w \right) \right)\,,\qquad
-    s(z) \,=\, \frac{1}{2}s_0 \left(1+ \tanh \left(z/L_w \right) \right)\,, 
+    s(z) \,=\, \frac{1}{2}w_0(T_n) \left(1+ \tanh \left(z/L_w \right) \right)\,, 
 \end{equation*}  
 where $z$ is the direction normal to the wall and $L_w$ is the wall width.
 
@@ -509,15 +509,16 @@ M_\chi(z)=  m_{\chi}(z) + |y| \operatorname{e}^{i\theta}|S(z)|\,,
 \begin{equation*}
 - D_L \xi''_{\chi_L} -v_w\xi'_{\chi_L} +\Gamma_L(\xi_{\chi_L}-\xi_{\chi_R})\,=\,S_{\cancel{CP}}\,,
 \end{equation*}
-where $D_L$ is the diffusion constant for $\chi_L$, which is related to the scattering rate $\Gamma_L$ by $D_L=\langle v_{p_z}^2\rangle/3\Gamma_L$. Here, $\langle\,\rangle$ means thermal average. $S_{\cancel{CP}}$ is $CP$-violating source that results from the variation of $\theta$
-\begin{eqnarray}
-S_{\cancel{CP}}\,=\,-\frac{\lambda}{2}\frac{v_w D_h}{\langle v_{p_z}^2  \rangle T} \left\langle \frac{|p_z|}{\omega^2}  \right\rangle \left(M_\chi^2\, \theta' \right)''\,,
-\end{eqnarray}
-where $v_w$ is the wall's velocity and 
-\begin{align*}
-& \quad \langle v_{p_z}^2  \rangle \,=\, \frac{3x+2}{x^2 +3x+2}\,, \quad \left\langle \frac{|p_z|}{\omega^2}  \right\rangle \,=\,\frac{(1-x)e^{-x} + x^2 E_1(x) }{4m_\chi^2 K_2(x)}\, ,\quad x\equiv m_\chi /T\,,  \nonumber \\
-&  \left(M_\chi^2 \theta' \right)''\,=\, \frac{m_\chi s_0 \lambda \left(-2+\cosh \left(\frac{2z}{L_w} \right) \right)\sin \theta}{L_w^3 \cosh^4 \left(\frac{z}{L_w} \right)}\, .
-\end{align*}
+where $D_L$ is the diffusion constant for $\chi_L$, which is related to the scattering rate $\Gamma_L$ by
+\begin{align}
+  D_L= \frac{3x+2}{x^2 +3x+2}\frac{1}{3\Gamma_L}, \qquad\qquad x\equiv m_\chi /T\,
+\end{align}
+ and
+\begin{align}
+  S_{\cancel{CP}}\,=\,-\frac{\lambda}{2}\frac{v_w D_L}{\frac{3x+2}{x^2 +3x+2} T} \frac{(1-x)e^{-x} + x^2 E_1(x) }{4m_\chi^2 K_2(x)}
+  \frac{m_\chi w_0(T_n) \lambda \left(-2+\cosh \left(\frac{2z}{L_w} \right) \right)\sin \theta}{L_w^3 \cosh^4 \left(\frac{z}{L_w} \right)}\,,
+\end{align}
+where $v_w$ is the wall's velocity 
 $E_1(x)$ is the error function and $K_2(x)$ is the modified Bessel function of the second kind.
 
 \end{frame}
@@ -527,12 +528,12 @@ $E_1(x)$ is the error function and $K_2(x)$ is the modified Bessel function of t
 \frametitle{Transfer DM assymetry to SM quarks}
 The chiral particle give rise to a non-zero $\operatorname{U}(1)_B$ charge density in the proximity of the wall. This results in a $Z'$ background that couples to the SM fields with $\operatorname{U}(1)_B$ charge,
 \begin{equation*}
-    \langle Z'_0 \rangle \,=\, \frac{ g_B\,(q_{\chi_L}-q_{\chi_R})T_n^3}{6 M_{Z'}} \int_{-\infty}^\infty \operatorname{d}z_1\, \xi_{\chi_L}(z')\, e^{-M_{Z'}|z-z'|}\, , 
+    \langle Z'_0(z) \rangle \,=\, \frac{ g_B\,(q_{\chi_L}-q_{\chi_R})T_n^3}{6 M_{Z'}} \int_{-\infty}^\infty \operatorname{d}z_1\, \xi_{\chi_L}(z_1)\, e^{-M_{Z'}|z-z_1|}\, , 
 \end{equation*} which generates a chemical potential for the SM quarks, 
 \begin{equation*}
 \mu_{Q}(z)\,=\, \mu_{d_R,u_R}(z)\,=\, 3 \times \frac{5}{9} \times g_B \langle Z'_0 (z) \rangle. 
 \end{equation*} 
-This chemical potential sources a thermal-equilibrium asymmetry in the quarks~\cite{Carena:2019xrr}, $ \Delta n_{Q}^{\rm EQ} (z) \,\sim \, T_n^2 \, \mu_{Q}(z)$. 
+This chemical potential sources a thermal-equilibrium asymmetry in the quarks, $ \Delta n_{Q}^{\rm EQ} (z) \,\sim \, T_n^2 \, \mu_{Q}(z)$. 
 
 From [1]
 \begin{quote}
@@ -554,6 +555,13 @@ where $\Gamma_{\rm sph}$ is the sphaleron rate. The baryon-to-photon-number rati
 \begin{equation*}
  \eta_B \,=\, \frac{n_B}{s(T_n)},\quad s (T) \,\equiv\,\frac{2\pi^2}{45} g_{*S}(T)\, T^3\,, 
 \end{equation*} where $g_{*S}(T)$ is the effective number of relativistic degrees of freedom.
+
+Our goal is to find what regions of the parameter space yield
+%
+\begin{align}
+\label{eq:eta-value}
+0.82\times 10^{-10} < \eta_B < 0.92\times 10^{-10}\,.
+\end{align}
 
 
 \end{frame}
@@ -595,7 +603,7 @@ Combined with software repositories and open source licensing, notebooks are pow
 Parameter & Range\\
 \hline
 $\theta$ & $(-\pi/2 \,, \pi/2)$  \\
-$s_0/{\rm GeV} $ &  $100-500$\\
+$w_0(T_n)/{\rm GeV} $ &  $100-500$\\
 $T_n/{\rm GeV}$ &  $100-200$\\
 $L_w /{\rm GeV^{-1}}$ &  $1/T_n - 10/T_n$\\
 $v_w$ &  $0.05 - 0.5$\\
