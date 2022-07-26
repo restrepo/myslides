@@ -33,8 +33,8 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{ Effective Dirac neutrino masses and baryogenesis }
-\subtitle{with gauged Baryon number}
+\title{ Radiative seesaw and baryogenesis }
+\subtitle{with gauged Lepton number}
 
 
 %\subtitle
@@ -56,12 +56,12 @@ Phenomenology Group %\\
 }%
 {http://gfif.udea.edu.co}%
 {}%
-{moca}% small image here, use pixel for nothing
+{hedwig}% small image here, use pixel for nothing
 {}
-\arxiv{ arXiv:2205.05762
+\arxiv{ arXiv:xxxx.xxxxx
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
 }
-\collaborators{ Andrés Rivera (UdeA), Walter Tangarife (Loyola University Chicago)
+\collaborators{ W. Novelo, L. Leite, O. Peres (UNICAMP)
 %  Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, David Suárez
 }
 }
@@ -263,7 +263,7 @@ so that ($\color{blue}L$ is still a {\color{blue}free parameter})
 \label{eq:Q}
     {\color{red}Q=-u=-d}=-\frac13 {\color{blue}L}+\frac19\left(x'-x''\right).
 \end{align}
-If $\color{blue}L=0$ $\to \operatorname{U}(1)_{\color{red}B}$
+If $\color{red}B=0$ $\to \operatorname{U}(1)_{\color{blue}L}$
 \end{frame}
 
 
@@ -334,38 +334,38 @@ $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 }
 
 \begin{frame}
-    \frametitle{$\operatorname{U}(1)_{\color{red}B}$ selection}
+    \frametitle{$\operatorname{U}(1)_{\color{blue}L}$ selection}
 
       \begin{columns}
-    \begin{column}{0.7\textwidth}
+    \begin{column}{0.5\textwidth}
       \begin{itemize}
-      \item<1-> $\color{blue}L=0$
-      \item<2-> Effective neutrino mass: $\only<2>{\color{red}}\phi=-\nu=-5$
-      \item<3-> Electroweak-scale vector-like fermions: $\only<3>{\color{red}}\left(L_L'\right)^\dagger L_R''\Phi^*\to x'=-1,\ x''=6$
-      \item<4-> Dirac-fermionic DM: $\only<4>{\color{red}}\left(\chi_L\right)^\dagger \chi_R''\Phi^*\to z_3=-3,\ z_4=-2$
+      \item<1-> $\color{red}B=0$  $\to\color{blue}L=-3$ 
+      \item<2-> Effective neutrino mass $\color{blue}\nu=-6$: $\only<2>{\color{blue}}\phi=-(\nu+L)=9$
+      \item<3-> Electroweak-scale vector-like fermions: $\only<3>{\color{blue}}\left(L_L'\right)^\dagger L_R''\Phi^*\to x'=-2,\ x''=7$
+      \item<4-> At least two generations of heavy Dirac-fermionic DM: $\only<4>{\color{blue}}\left(\chi_{Li}\right)^\dagger \chi_{Ri}''\Phi^*\to z_3=4,\ z_4=5$        
       \end{itemize}
     \end{column}
-    \begin{column}{0.3\textwidth}
+    \begin{column}{0.5\textwidth}
       \vspace{1cm}
-      
-      \Large $({\only<1->{\color{black}}\only<2>{\color{red}}5, 5},
-      {\only<1->{\color{black}}\only<4>{\color{red}}-3, -2},
-      {\only<1->{\color{black}}\only<3>{\color{red}}1, -6})$
 
-
+      %(-6, -6, -6, -3, -3, -3,4, 4, 5, 5, 2, 7, 
+      \Large $({\only<1>{\color{blue}}\only<2->{\color{black}}-3, -3, -3},
+      {\only<1->{\color{black}}\only<2>{\color{blue}}-6, -6, -6},
+      {\only<1->{\color{black}}\only<3>{\color{blue}}2, 7},
+      {\only<1->{\color{black}}\only<4>{\color{blue}}4, 4,5,5})$
     %\hfill  \tiny{\url{Dreamstime.com}}  
     \end{column}
 
   \end{columns}
 
-  \invisible<1-4>{\only<5>{{\color{red}959} solutions from $\sim 400,000$}}
-
-  \invisible<1-4>{
+  \invisible<1-3>{
     \begin{minipage}[t]{3.0\linewidth}
       \includegraphics[scale=0.45]{number}\hspace{0.5cm}\includegraphics[scale=0.45]{generation}
     \end{minipage}
   }
 
+    \invisible<1-4>{\only<5>{{\color{red}959} solutions from $\sim 400,000$}}
+  
   \end{frame}
 
 \begin{frame}
