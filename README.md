@@ -1,7 +1,13 @@
 	# Talks
 ## Basic design
 The simple template and examples is in master.
-Specific talks are in each branch. They have a common sty file and example file but a unique LaTeX file with the same name of the branch.
+Specific talks are in each branch.
+```
+git checkout -t origin/2022-07-Gauged_Lepton_Number
+```
+
+
+They have a common sty file and example file but a unique LaTeX file with the same name of the branch.
 
 
 * Install `texlive-fonts-extra`
