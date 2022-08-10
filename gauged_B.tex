@@ -33,8 +33,8 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{ Radiative seesaw and baryogenesis }
-\subtitle{with gauged Lepton number}
+\title{ Scotogenic seesaw and baryogenesis }
+\subtitle{with gauged Baryon number}
 
 
 %\subtitle
@@ -56,12 +56,12 @@ Phenomenology Group %\\
 }%
 {http://gfif.udea.edu.co}%
 {}%
-{hedwig}% small image here, use pixel for nothing
+{ufsm}% small image here, use pixel for nothing
 {}
-\arxiv{ arXiv:xxxx.xxxxx
+\arxiv{ arXiv:2205.05762
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
 }
-\collaborators{ W. Novelo, L. Leite, O. Peres (UNICAMP)
+\collaborators{ Andrés Rivera (UdeA), Walter Tangarife (Loyola University Chicago)
 %  Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, David Suárez
 }
 }
@@ -114,7 +114,7 @@ Phenomenology Group %\\
 \section{Model building}
 
 \begin{frame}
-  \frametitle{Grupos de Lie}
+  \frametitle{Lie groups}
 
 
   \begin{center} 
@@ -163,7 +163,7 @@ Under a general Lorentz transformation we have.
   A^\mu(x)\to A^{\prime \mu}(x)={\Lambda^\mu}_{\nu}A^\nu(\Lambda^{-1}x).
 \end{equation}
 
-A pure underscript 4-vector iso
+A pure underscript 4-vector is
 \begin{align}
    \partial_\mu=\frac{\partial}{\partial x^\mu}=&\left(
     \frac{\partial}{\partial t},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}
@@ -252,13 +252,13 @@ Scalar products
     $\left(e_R^{-}\right)^{\dagger}$ & $\eta_3^\alpha$  & $\mathbf{1}$            & $\mathbf{1}$            & $1$              \\
      $H$                   & -       &  $\color{red}\mathbf{1}$ & $\color{red}\mathbf{2}$ &$\color{red}1/2$\\\hline
   \end{tabular}\hspace{1cm} 
-  \caption{Standar Model fundamental fields}
+  \caption{Standard Model fundamental fields}
   \label{tab:smflds}
 \end{table}
 
-como por ejemplo,
+like for example,
 \begin{align}
-    \left( u_R \right)^{\dagger} Q\cdot H\,,
+   \eta_1^\alpha \xi^1_\alpha\cdot H= \left( u_R \right)^{\dagger} Q\cdot H\,,
 \end{align}
 which can be represented by the ``Kircchoff Law'':
 
@@ -512,11 +512,12 @@ $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 
   \begin{columns}
     \begin{column}{0.6\textwidth}
-\only<1-2>{  \includegraphics[scale=0.6]{zee}      }
-    \end{column}
+\only<1>{  \includegraphics[scale=0.6]{zee1}      }%
+\only<2-3>{  \includegraphics[scale=0.6]{zee2}      }%
+\end{column}
     \begin{column}{0.4\textwidth}
       % \hfill  \tiny{\url{Dreamstime.com}}
-      \invisible<1>{
+      \invisible<1-2>{
         \centering
         \scriptsize
         \rowcolors{1}{RoyalBlue!20}{}
@@ -606,10 +607,10 @@ $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
   
 \item Electroweak scale (EW) fields:
   \fcolorbox{red}{yellow}{ $ Z'_\mu, S, \chi_L,\chi_R $}
-\item $CP$-violation
+\item $CP$-violation 
     \begin{align*}
-      \mathcal{L}_{\text{Dirac DM}}=&h \left(\chi_L\right)^\dagger \chi_R \Phi^* + y \left(\chi_L\right)^\dagger \chi_R S^*+\text{h.c}\,,& y\in&\mathbb{C}\\
-      \supset& \left( m_{\chi} + |y| \operatorname{e}^{i\theta}|S| \right)\left(\chi_L\right)^\dagger \chi_R+\text{h.c}\,.&&
+      \mathcal{L}_{\text{Dirac DM}}=&h \left(\chi_L\right)^\dagger \chi_R \Phi^* + {\color{red} y \left(\chi_L\right)^\dagger \chi_R S^*}+\text{h.c}\,,& {\color{red}y}\in&\mathbb{C}\\
+      \supset& \left( m_{\chi} + {\color{red}|y| \operatorname{e}^{i\theta}|S|} \right)\left(\chi_L\right)^\dagger \chi_R+\text{h.c}\,.&&
   \end{align*}
   \item $CP$-violation Portal
     \begin{align*}
@@ -663,7 +664,7 @@ where
 \end{equation*}  
 where $z$ is the direction normal to the wall and $L_w$ is the wall width.
 
-\newpage{}
+%\newpage{}
 The nucleation temperature, $T_n$, is defined by the condition
 \begin{equation*}
     \exp \left (-S_3 /T_n \right) \,=\, \frac{3}{4\pi}\left(\frac{H(T_n)}{T_n} \right)^4 \left(\frac{2\pi\,T_n}{S_3}\right)^{\frac{3}{2}} \,,
@@ -671,10 +672,6 @@ The nucleation temperature, $T_n$, is defined by the condition
  where $S_3$ is the Euclidean action of the bubble and $H(T)$ is the Hubble rate.
 
 
-The $CP$ violating phase, $\theta$, from 
-\begin{align}
-M_\chi(z)=  m_{\chi}(z) + |y| \operatorname{e}^{i\theta}|S(z)|\,, 
-\end{align}
 
 \end{frame}
 
@@ -694,7 +691,7 @@ where $D_L$ is the diffusion constant for $\chi_L$, which is related to the scat
   \frac{m_\chi w_0(T_n) \lambda \left(-2+\cosh \left(\frac{2z}{L_w} \right) \right)\sin \theta}{L_w^3 \cosh^4 \left(\frac{z}{L_w} \right)}\,,
 \end{align}
 where $v_w$ is the wall's velocity 
-$E_1(x)$ is the error function and $K_2(x)$ is the modified Bessel function of the second kind.
+$E_1(x)$ is the error function and $K_2(x)$ is the modified Bessel function of the second kind. ${\color{red}y}=\lambda\operatorname{e}^{i\theta -i\pi/2}$
 
 \end{frame}
 
