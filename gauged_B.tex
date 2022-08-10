@@ -113,14 +113,23 @@ Phenomenology Group %\\
 
 \section{Model building}
 
-\begin{frame}[fragile,allowframebreaks]
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.45]{sunson}
-  \caption{Grupos de Lie}
-  \label{fig:sunson}
-\end{figure}
+\begin{frame}
+  \frametitle{Grupos de Lie}
+
+
+  \begin{center} 
+  \includegraphics[scale=0.4]{sunson}
+  \end{center}  
+
+\vspace{-1cm}
+
+
+\begin{align}
+  U=\exp \left( i \sum_j T_j \theta^{j} \right),
+\end{align}
+donde $\theta^j$ son los parámetros del grupo y $T_j$ los generadores.
 \end{frame}
+
 
 
 \subsection{$\operatorname{SO}(1)$}
@@ -129,7 +138,7 @@ Considere el generador $1\times1$
 \begin{align}
   K=-i\,,
 \end{align}
-que genera el elemento del grupo dilaton, $\operatorname{SO}(1)$,~\cite{Schwichtenberg:2019fjh} $R(\xi)$
+que genera el elemento del grupo dilaton, $\operatorname{SO}(1)$, $R(\xi)$
 \begin{align}
   \lambda(\xi)=\operatorname{e^{\xi}}\,,
 \end{align}
@@ -284,7 +293,7 @@ de modo que la transformación de Lorentz para $\partial_\mu=\partial/\partial x
 
 De esta manera, un producto escalar invariante entre la cuadriderivada y un cuadrivector de Lorentz $A^\mu(x)$ es
 \begin{align}
-  \partial_\mu A^\mu\to   \partial'_\mu A^{\prime \mu}\t= \partial_\mu A^\mu\,.
+  \partial_\mu A^\mu\to   \partial'_\mu A^{\prime \mu}= \partial_\mu A^\mu\,.
 \end{align}
 
 
@@ -372,6 +381,7 @@ Que se puede representar con la  Ley De Kircchoff:
 
 
 \end{frame}
+
 
 
 
@@ -684,7 +694,40 @@ $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 %%missing here
 
 
+\begin{frame}
+    \frametitle{$\operatorname{U}(1)_{\color{red}B}$ selection}
 
+      \begin{columns}
+    \begin{column}{0.7\textwidth}
+      \begin{itemize}
+      \item<1-> $\color{blue}L=0$
+      \item<2-> Effective neutrino mass: $\only<2>{\color{red}}\phi=-\nu=-5$
+      \item<3-> Electroweak-scale vector-like fermions: $\only<3>{\color{red}}\left(L_L'\right)^\dagger L_R''\Phi^*\to x'=-1,\ x''=6$
+      \item<4-> Dirac-fermionic DM: $\only<4>{\color{red}}\left(\chi_L\right)^\dagger \chi_R''\Phi^*\to z_3=-3,\ z_4=-2$
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \vspace{1cm}
+      
+      \Large $({\only<1->{\color{black}}\only<2>{\color{red}}5, 5},
+      {\only<1->{\color{black}}\only<4>{\color{red}}-3, -2},
+      {\only<1->{\color{black}}\only<3>{\color{red}}1, -6})$
+
+
+    %\hfill  \tiny{\url{Dreamstime.com}}  
+    \end{column}
+
+  \end{columns}
+
+  \invisible<1-4>{\only<5>{{\color{red}959} solutions from $\sim 400,000$}}
+
+  \invisible<1-4>{
+    \begin{minipage}[t]{3.0\linewidth}
+      \includegraphics[scale=0.45]{number}\hspace{0.5cm}\includegraphics[scale=0.45]{generation}
+    \end{minipage}
+  }
+
+  \end{frame}
 
 
 \begin{frame}
