@@ -225,14 +225,49 @@ La transformación de una coordenada temporaloide y otra espacialoide ($c=1$)
       \end{column}
   \end{columns}
 \end{block}
+\centering {\color{red}Noether's paradigm}
 \end{frame}
 
 \begin{frame}
   \frametitle{$\operatorname{U}(1)$: From special $\theta$ to general $\theta(t,\boldsymbol{x})$}
 
-\large{What is a \st{particle} \emph{wavicle}? } \tiny{\url{https://www.quantamagazine.org/what-is-a-particle-20201112/}}
+   \begin{center}
+     \includegraphics[scale=0.2]{hydrogen}
+   \end{center}
+
   
+  \large{What is a \st{particle} \emph{wavicle}? } \tiny{\url{https://www.quantamagazine.org/what-is-a-particle-20201112/}}
   
+  \begin{minipage}[t]{0.5\linewidth}
+   %\metroset{block=fill}
+    \begin{block}{Is a ``Quantum Excitation of a Field''}
+      \includegraphics[scale=0.7]{wavicle}
+    \end{block}
+   \end{minipage}
+
+
+   
+   \begin{flushright}
+       \begin{minipage}[t]{0.6\linewidth}
+   %\metroset{block=fill}
+    \begin{block}{Is a ``Irreducible
+Representation of a Group''}
+      \includegraphics[scale=0.7]{repre}
+    \end{block}
+   \end{minipage}
+   \end{flushright}
+
+   
+  
+\end{frame}
+
+
+\begin{frame}
+\begin{picture}(320,250)
+\only<1->{\put(-24,-22){\begin{overpic}[scale=0.5]{qedhydrogen1}\end{overpic}}}%
+\only<2->{\put(-24,-22){\begin{overpic}[scale=0.5]{qedhydrogen2}\end{overpic}}}%
+\only<3->{\put(-24,-22){\begin{overpic}[scale=0.5]{qedhydrogen3}\end{overpic}}}%
+\end{picture}
 \end{frame}
 
 
@@ -292,8 +327,9 @@ In this way, the invariant scalar product between the 4-vector field and the fou
 }
   \label{tab:fermionlr}
 \end{table}
+\end{frame}
 
-
+\begin{frame}%[fragile,allowframebreaks]
 \begin{table}
   \centering
   \begin{tabular}{llll}
@@ -308,18 +344,50 @@ In this way, the invariant scalar product between the 4-vector field and the fou
 \end{table}
 
 
-
-Scalar products
+\begin{block}{Scalar products}
 \begin{itemize}
-\item Majorana scalars: $\xi^{\alpha}\xi_{\alpha}+\xi^{\dagger}_{ \dot{\alpha}}\xi^{\dagger \dot{\alpha}}$, $\eta^{\alpha}\eta_{\alpha}+\eta^{\dagger}_{ \dot{\alpha}}\eta^{\dagger \dot{\alpha}}$.
+\item $\cancel{\operatorname{U}(1)}$ Majorana scalars: $\xi^{\alpha}\xi_{\alpha}+\xi^{\dagger}_{ \dot{\alpha}}\xi^{\dagger \dot{\alpha}}$, $\eta^{\alpha}\eta_{\alpha}+\eta^{\dagger}_{ \dot{\alpha}}\eta^{\dagger \dot{\alpha}}$.
 \item Dirac scalar: $\eta^{\alpha}\xi_{\alpha}+ \xi^{\dagger}_{\dot{\alpha}}\eta^{\dagger\;\dot{\alpha  }} $.
 
 
  \item Scalar under subgroup $\operatorname{SL}(2,C)$ but vector under $\operatorname{SO}(1,3)$: $ S^\dagger\overline{\sigma}^\mu S={\Lambda^\mu}_\nu\overline{\sigma}^\nu$
 \end{itemize}
-
+\end{block}
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}%[fragile,allowframebreaks]
+\begin{table}
+  \centering
+  \begin{tabular}{llll}
+    Name & Symbol & Lorentz & $U(1)$\\\hline
+    $e_L$: electron {\color{red}left} & $\xi_{\color{red}\alpha}$ & ${S_{\color{red}\alpha}}^{\color{red}\beta}\xi_{\color{red}\beta}$ & $e^{i\theta}\xi_{\color{red}\alpha}$\\
+   $\left( e_L \right)^{\dagger}$: positron {\color{blue}right}   & $\left( \xi_{\color{red}\alpha} \right)^{\dagger}=\xi^{\dagger}_{\color{blue}\dot{\alpha}}$ & $\xi^{\dagger}_{\color{blue}\dot{\beta}}{\left[{S^{\dagger}}\right]^{\color{blue}\dot{\beta}}}_{\color{blue}\dot{\alpha}}$ & $\xi^{\dagger}_{\color{blue}\dot{\alpha}}e^{-i\theta}$\\
+   $e_R$: electron {\color{blue}right}   & $\left( \eta^{\color{red}\alpha} \right)^{\dagger}=\eta^{\dagger\;\color{blue}\dot{\alpha}}$ & ${\left[ \left( S^{-1} \right)^\dagger \right]^{\color{blue}\dot{\alpha}}}_{\color{blue}\dot{\beta}}\eta^{\dagger\;\color{blue}\dot{\beta}}$& $e^{i\theta}\eta^{\dagger\;\color{blue}\dot{\alpha}}$\\
+   $\left( e_R \right)^{\dagger}$: positron {\color{red}left}&$\eta^{\color{red}\alpha}$& $\eta^{\color{red}\beta}{\left[ S^{-1}  \right]_{\color{red}\beta}}^{\color{red}\alpha}$ & $e^{-i\theta}\eta^{\color{red}\alpha}$\\\hline
+  \end{tabular}
+  \caption{electron components}
+  \label{tab:electron}
+\end{table}
+
+
+\begin{block}{General theory: QED}
+
+\begin{align*}
+  \xi\to\xi'=&e^{i\theta}\xi &   \eta\to\eta'=&e^{-i\theta}\eta 
+\end{align*}
+como
+\begin{align*}
+  \mathcal{L}=&i\xi^{\dagger}_{\dot{\alpha}}\overline{\sigma}^{\mu\;\dot{\alpha}\alpha}\partial_{\mu}\xi_{\alpha}+i\eta^{\alpha}\sigma^{\mu}_{\alpha\dot{\alpha}}\partial_{\mu}\eta^{\dagger\;\dot{\alpha}}
+-m \left(\eta^{\alpha} \xi_{\alpha}+\xi^{\dagger}_{\dot{\alpha}} \eta^{\dagger\;\dot{\alpha}}\right)\nonumber\\
+\end{align*}
+\end{block}
+
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 
 \begin{frame}[fragile,allowframebreaks]
 \begin{table}
