@@ -154,6 +154,66 @@ We can defin the invariant scalar product just as the division of real numbers, 
 \end{frame}
 
 
+\subsection{$\operatorname{SO}(1,1)$}
+\begin{frame}[fragile,allowframebreaks]
+Queremos obtener una representación $2\times2$ del álgebra
+\begin{align}
+  K^2=-\boldsymbol{1}\,,
+\end{align}
+donde $K$ es el único generador. Para hallar una representación de esta álgebra en términos de matrices $2\times2$ considere el generador
+\begin{align}
+  K=&  \begin{pmatrix}
+   0 &-i\\
+   -i &0\\ 
+  \end{pmatrix}. 
+\end{align}
+que genera un elemento del grupo $\operatorname{SO}(1,1)$ con parámetro $\xi$
+\begin{align}
+  \Lambda=\exp \left( i \xi K \right)
+  =\begin{pmatrix}
+    \cosh\xi & \sinh\xi\\
+     \sinh\xi& \cosh\xi \\
+  \end{pmatrix},\,.
+\end{align}
+
+
+La transformación de una coordenada temporaloide y otra espacialoide ($c=1$)
+  
+\begin{align*}
+  \begin{pmatrix}
+  t\\
+  x\\
+  \end{pmatrix}=  \begin{pmatrix}
+      x^0\\
+  x^1\\
+  \end{pmatrix}\to  
+  \begin{pmatrix}
+      x^{\,\prime 0}\\
+  x^{\,\prime 1}\\
+\end{pmatrix}
+\begin{pmatrix}
+    \cosh\xi & \sinh\xi\\
+     \sinh\xi& \cosh\xi \\
+   \end{pmatrix}
+    \begin{pmatrix}
+      x^0\\
+  x^1\\
+  \end{pmatrix}
+\end{align*}
+
+\end{frame}
+
+
+\begin{align*}
+\cosh\xi=\gamma= \frac{1}{\sqrt{1-v^2}}  
+\end{align*}
+
+\begin{frame}[fragile,allowframebreaks]
+\textbf{Special}: parameter $\xi$ or $v$ is constant, e.g, inertial system invariance: \emph{\color{red}Global} conservation of $E$ and $\boldsymbol{p}$
+
+\textbf{General}: parameter $\xi(t,\boldsymbol{x})$ or $v\x(t,\boldsymbol{x})$ is constant, e.g, accelerated  system invariance: Local conservation of $E$ and $\boldsymbol{p}$
+\end{frame}
+
 
 \begin{frame}[fragile,allowframebreaks]
 
