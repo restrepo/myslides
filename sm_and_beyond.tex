@@ -415,9 +415,9 @@ In this way, the invariant scalar product between the 4-vector field and the fou
 
 
 \begin{columns}
-  \begin{column}{0.8\textwidth}
+  \begin{column}{0.73\textwidth}
     \begin{block}{\only<1-3>{Not mass, }\only<1>{not charge}\only<2-3>{\color{cyan}hypercharge, }\only<3>{\color{magenta} not Dirac}%
-        \only<4-5>{Higgs mechanism with tachyonic mass ($\color{red}\mu^2<0$) and condensate}%
+        \only<4-5>{Higgs mechanism: tachyonic mass $\color{red}\mu^{2}<0$, and condensate}%
         \only<6>{$Z$ and $W$ phenomenology and discovery}%
         \only<7>{Hierarchy problem}%
         \only<8->{Higgs discovery!}%
@@ -430,8 +430,8 @@ In this way, the invariant scalar product between the 4-vector field and the fou
                   $
         L=
           \begin{pmatrix}
-          \nu_L\\
-          e_L\\
+         \color{Green} \nu_L\\
+         \color{red} e_L\\
           \end{pmatrix}
        $
                   & $\xi_{\alpha}$ & $\boldsymbol{2}$ & $\invisible<1>{-{1}/{2}}$\\
@@ -445,7 +445,34 @@ In this way, the invariant scalar product between the 4-vector field and the fou
        =\left[ \frac{H(x)+v}{\sqrt{2}} \right]\exp \left[ i\tfrac{\tau^i}{2} G_i(x) \right]$}
                   & \invisible<1-3>{-} & \invisible<1-3>{$\boldsymbol{2}$} & \invisible<1-3>{$\invisible<1>{{1}/{2}}$}\\
 
-                \end{tabular}%
+                \end{tabular}%                
+    \end{block}
+\end{column}
+\begin{column}{0.28\textwidth}
+  \begin{block}{\only<1-3>{Denial}\only<4-5>{Contempt}\only<6>{Bargaining }\only<7>{Depression}\only<8>{Acceptance}}
+    \only<1-3>{\includegraphics[scale=0.5]{Wi}}%
+    \only<4>{\includegraphics[scale=0.2]{mexicanhat}}%
+    \only<5>{
+      \tiny
+      \begin{align*}
+  \begin{pmatrix}
+    W^3_\mu\\
+    B_\mu
+  \end{pmatrix}=\color{cyan}\begin{pmatrix}
+    \cos\theta_W & \sin\theta_W\\
+    -\sin\theta_W& \cos\theta_W
+  \end{pmatrix}
+  \begin{pmatrix}
+    Z_\mu\\
+    A_\mu
+  \end{pmatrix},
+\end{align*}
+}
+  \end{block}
+\end{column}
+\end{columns}
+
+
                 {                  \small
                 \begin{align*}
                   \mathcal{L}=i \left( L \right)^{\dagger}\overline{\sigma}^{\mu}D_{\mu}L-\tfrac{1}{4}W_{\mu\nu}^iW^{\mu\nu}_{i}
@@ -455,34 +482,24 @@ In this way, the invariant scalar product between the 4-vector field and the fou
   -\left( D^{\mu}\Phi \right)^{\dagger} D_{\mu}\Phi-{\color{red}\mu^2} \Phi^{\dagger}\Phi -\lambda \left( \Phi^{\dagger}\Phi  \right)^{2}}
 \end{align*}
 }%
-\vspace{-1.cm}
+\vspace{-0.5cm}
      \invisible<1-4>{
                 \begin{align*}
                   \Phi\to \Phi'=\exp \left[ i\tfrac{\tau^i}{2} \theta_i(x) \right]\Phi=\tfrac{1}{\sqrt{2}}[H(x)+v]
                 \end{align*}
               }%
-\vspace{-1cm}              
+\vspace{-0.5cm}              
          \invisible<1-4>{                  \small
                 \begin{align*}
-                  \mathcal{L}=
+                  \mathcal{L}=&
 i\overline{\psi}\gamma^{\mu}\partial\psi -m_{e}\overline{\psi}\psi
                   -{i \left( \nu_L \right)^{\dagger}\overline{\sigma}^{\mu}\partial_{\mu}\nu_L }
-                  -\left( D^{\mu}\Phi \right)^{\dagger} D_{\mu}\Phi-{\color{red}\mu^2} \Phi^{\dagger}\Phi -\lambda \left( \Phi^{\dagger}\Phi  \right)^{2}
-{\color{blue}- \mathcal{L}_{\text{gauge}}+Z\nu \nu+  m_{e}\overline{\psi}\psi H}
++\tfrac{1}{2}\partial^\mu H\partial_\mu H +{\color{cyan}\frac{e}{\cos\theta_W\sin\theta_W}\overline{\nu_{L}}\nu_L Z_\mu}+\cdots\\
+&\color{red}-\frac{1}{2}m_H^2H^2\left(1+\frac{H}{v}+\frac{H^2}{4v^2}\right)+\left(m_W^2{W^\mu}^-W_\mu^++\frac{1}{2}m_Z^2Z^\mu Z_\mu\right)\left(1+2\frac{H}{v}+\frac{H^2}{v^2}\right)
++\frac{m_e}{v}\overline{\psi}\psi H
 \end{align*}
 }
 
-                
-    \end{block}
-\end{column}
-\begin{column}{0.2\textwidth}
-  \begin{block}{\only<1-3>{Denial}\only<4-5>{Contempt}\only<6>{Bargaining }\only<7>{Depression}\only<8>{Acceptance}}
-    \quad\\
-    \quad\\
-    \quad\\
-  \end{block}
-\end{column}
-\end{columns}
 
 \end{frame}
 
