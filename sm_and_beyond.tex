@@ -111,8 +111,14 @@ Phenomenology Group %\\
 
 \maketitle
 
-\section{Model building}
-
+\section{Least Action}
+\begin{frame}
+  \frametitle{$\operatorname{SO}(3)$ {\color{magenta} scalar product}}
+\Large
+  \begin{align*}
+  L=\frac{1}{2}m{\color{magenta} v^2}-V(|\boldsymbol{r}|)=\frac{1}{2}m {\color{magenta}\boldsymbol{v}\cdot\boldsymbol{v}}-V(|\boldsymbol{r}|)
+\end{align*}
+\end{frame}
 \begin{frame}
   \frametitle{Lie groups}
 
@@ -411,7 +417,8 @@ In this way, the invariant scalar product between the 4-vector field and the fou
 \end{frame}
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{$\operatorname{SU}(2)_L\invisible<1>{\times\color{cyan}\operatorname{U}(1)_Y}$ 17 years later... (stages of grief $\to$ \only<1-5>{1967}\only<6>{1971}\only<7>{1982}\only<8->{2012})}
+  \frametitle{$\operatorname{SU}(2)_L\invisible<1>{\times{\color{cyan}\operatorname{U}(1)_Y}}\to D_{\mu}=\boldsymbol{1}\partial_{\mu}-ig_2 \frac{\tau_{i}}{2}W_{\mu}^i
+    \invisible<1>{{\color{cyan}-ig_1B_{\mu}}}:$ \only<1-5>{17}\only<6>{21}\only<7>{32}\only<8>{62} years later... (stages of grief $\to$ \only<1-5>{1967}\only<6>{1971}\only<7>{1982}\only<8->{2012})}
 
 
 \begin{columns}
@@ -468,6 +475,11 @@ In this way, the invariant scalar product between the 4-vector field and the fou
   \end{pmatrix},
 \end{align*}
 }
+\only<6>{\includegraphics[scale=0.08]{saprince}}%
+\only<7>{\includegraphics[scale=0.12]{susy}\\
+  \tiny{credit: quantumdiaries.org}
+}%
+\only<8>{\includegraphics[scale=0.17]{4l}}%
   \end{block}
 \end{column}
 \end{columns}
@@ -483,7 +495,8 @@ In this way, the invariant scalar product between the 4-vector field and the fou
 \end{align*}
 }%
 \vspace{-0.5cm}
-     \invisible<1-4>{
+\only<1-4>{\centering\includegraphics[scale=0.38]{mudecay}}%
+     \only<5->{
                 \begin{align*}
                   \Phi\to \Phi'=\exp \left[ i\tfrac{\tau^i}{2} \theta_i(x) \right]\Phi=\tfrac{1}{\sqrt{2}}[H(x)+v]
                 \end{align*}
@@ -495,7 +508,7 @@ In this way, the invariant scalar product between the 4-vector field and the fou
 i\overline{\psi}\gamma^{\mu}\partial\psi -m_{e}\overline{\psi}\psi
                   -{i \left( \nu_L \right)^{\dagger}\overline{\sigma}^{\mu}\partial_{\mu}\nu_L }
 +\tfrac{1}{2}\partial^\mu H\partial_\mu H +{\color{cyan}\frac{e}{\cos\theta_W\sin\theta_W}\overline{\nu_{L}}\nu_L Z_\mu}+\cdots\\
-&\color{red}-\frac{1}{2}m_H^2H^2\left(1+\frac{H}{v}+\frac{H^2}{4v^2}\right)+\left(m_W^2{W^\mu}^-W_\mu^++\frac{1}{2}m_Z^2Z^\mu Z_\mu\right)\left(1+2\frac{H}{v}+\frac{H^2}{v^2}\right)
+&\color{red}-\frac{1}{2}m_H^2H^2\left(1+{\color{blue}\frac{H}{v}+\frac{H^2}{4v^2}}\right)+\left(m_W^2{W^\mu}^-W_\mu^++\frac{1}{2}m_Z^2Z^\mu Z_\mu\right)\left(1+{\only<8>{\color{magenta}}2\frac{H}{v}}+\frac{H^2}{v^2}\right)
 +\frac{m_e}{v}\overline{\psi}\psi H
 \end{align*}
 }
