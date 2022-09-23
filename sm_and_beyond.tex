@@ -2,6 +2,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{talk}
 \usepackage{soul}
+\usepackage{bbold}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{array}   % for \newcolumntype macro
 \newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
@@ -192,7 +193,7 @@ La transformación de una coordenada temporaloide y otra espacialoide ($c=1$)
   \begin{pmatrix}
       x^{\,\prime 0}\\
   x^{\,\prime 1}\\
-\end{pmatrix}=
+\end{pmatrix}=&
 \begin{pmatrix}
     \cosh{\color{red}\xi} & \sinh{\color{red}\xi}\\
      \sinh{\color{red}\xi}& \cosh{\color{red}\xi} \\
@@ -200,7 +201,8 @@ La transformación de una coordenada temporaloide y otra espacialoide ($c=1$)
     \begin{pmatrix}
       x^0\\
   x^1\\
-  \end{pmatrix}
+\end{pmatrix}\\
+  x^{\,\prime \mu}=&{\Lambda^{\mu}}_{\nu}x^{\nu}\,,\qquad \mu=0,1\,.
 \end{align*}
 
 \end{frame}
@@ -282,10 +284,9 @@ Representation of a Group''}
 Under a general Lorentz transformation we have for a {\color{red}pure upperscript} 4-vector
 \begin{equation}
   \label{eq:xx5}
-  A^\mu(x)\to A^{\prime \mu}(x)={\Lambda^\mu}_{\nu}A^\nu(\Lambda^{-1}x).
+  A^\mu(x)\to A^{\prime \mu}(x)={\Lambda^\mu}_{\nu}A^\nu(\Lambda^{-1}x),
 \end{equation}
-
-A {\color{red}pure underscript} 4-vector is
+where $\mu=0,1,2,3$. A {\color{red}pure underscript} 4-vector is
 \begin{align}
    \partial_\mu=\frac{\partial}{\partial x^\mu}=&\left(
     \frac{\partial}{\partial t},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}
@@ -293,7 +294,7 @@ A {\color{red}pure underscript} 4-vector is
   =(\partial_0,\boldsymbol{\nabla}).
 \end{align}
 
-From
+From $x^{\,\prime \mu}={\Lambda^{\mu}}_{\nu}x^{\nu}$
 \begin{align}
   \label{eq:183qft}
     \frac{1}{{x'}^\mu}= {\left(\Lambda^{-1}\right)^\nu}_\mu\frac{1}{x^\nu}\,,
@@ -356,8 +357,8 @@ In this way, the invariant scalar product between the 4-vector field and the fou
    $e_R$: electron {\color{blue}right}   & $\left( \eta^{\color{red}\alpha} \right)^{\dagger}=\eta^{\dagger\;\color{blue}\dot{\alpha}}$ & ${\left[ \left( S^{-1} \right)^\dagger \right]^{\color{blue}\dot{\alpha}}}_{\color{blue}\dot{\beta}}\eta^{\dagger\;\color{blue}\dot{\beta}}$& $e^{i\theta}\eta^{\dagger\;\color{blue}\dot{\alpha}}$\\
    $\left( e_R \right)^{\dagger}$: positron {\color{red}left}&$\eta^{\color{red}\alpha}$& $\eta^{\color{red}\beta}{\left[ S^{-1}  \right]_{\color{red}\beta}}^{\color{red}\alpha}$ & $e^{-i\theta}\eta^{\color{red}\alpha}$\\\hline
   \end{tabular}
-  \caption{electron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$
-and positron {\color{red}left}: $\operatorname{SL}(2,C)^{*}\times U(1)$
+  \caption{electron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ inferior
+and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
   }
   \label{tab:electron}
 \end{table}
@@ -372,7 +373,7 @@ and positron {\color{red}left}: $\operatorname{SL}(2,C)^{*}\times U(1)$
  \item Tensor under subgroup $\operatorname{SL}(2,C)$ but vector under $\operatorname{SO}(1,3)$: $ {S^{\dagger\color{blue}\dot{\alpha}}}_{\color{blue}\dot{\beta}}\overline{\sigma}^{\mu\,\color{blue}\dot{\beta} \color{red}\beta} {S_{\color{red}\beta}}^{\color{red}\alpha}={\Lambda^\mu}_\nu\overline{\sigma}^{\nu\,\color{blue}\dot{\alpha}\color{red}\alpha}$
 \end{itemize}
 \begin{align*}
-  \overline{\sigma}^{\mu}=&(\sigma^0,-\boldsymbol{\sigma}) &
+\sigma^0=&\mathbb{1}\,,&  \overline{\sigma}^{\mu}=&(\sigma^0,-\boldsymbol{\sigma}), &
   {\sigma}^{\mu}=&(\sigma^0,\boldsymbol{\sigma}).
 \end{align*}
 \end{block}
@@ -384,14 +385,14 @@ and positron {\color{red}left}: $\operatorname{SL}(2,C)^{*}\times U(1)$
 \begin{table}
   \centering
   \begin{tabular}{llll}
-    Name & Symbol & $\operatorname{SL}(2,C)$ & $U(1)$\\\hline
+    Name & Symbol & $\operatorname{SL}(2,C)$ & $U(1)_Q$\\\hline
     $e_L$: electron {\color{red}left} & $\xi_{\color{red}\alpha}$ & ${S_{\color{red}\alpha}}^{\color{red}\beta}\xi_{\color{red}\beta}$ & $e^{i\theta}\xi_{\color{red}\alpha}$\\
    $\left( e_L \right)^{\dagger}$: positron {\color{blue}right}   & $\left( \xi_{\color{red}\alpha} \right)^{\dagger}=\xi^{\dagger}_{\color{blue}\dot{\alpha}}$ & $\xi^{\dagger}_{\color{blue}\dot{\beta}}{\left[{S^{\dagger}}\right]^{\color{blue}\dot{\beta}}}_{\color{blue}\dot{\alpha}}$ & $\xi^{\dagger}_{\color{blue}\dot{\alpha}}e^{-i\theta}$\\
    $e_R$: electron {\color{blue}right}   & $\left( \eta^{\color{red}\alpha} \right)^{\dagger}=\eta^{\dagger\;\color{blue}\dot{\alpha}}$ & ${\left[ \left( S^{-1} \right)^\dagger \right]^{\color{blue}\dot{\alpha}}}_{\color{blue}\dot{\beta}}\eta^{\dagger\;\color{blue}\dot{\beta}}$& $e^{i\theta}\eta^{\dagger\;\color{blue}\dot{\alpha}}$\\
    $\left( e_R \right)^{\dagger}$: positron {\color{red}left}&$\eta^{\color{red}\alpha}$& $\eta^{\color{red}\beta}{\left[ S^{-1}  \right]_{\color{red}\beta}}^{\color{red}\alpha}$ & $e^{-i\theta}\eta^{\color{red}\alpha}$\\\hline
   \end{tabular}
-  \caption{electron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$
-and positron {\color{red}left}: $\operatorname{SL}(2,C)^{*}\times U(1)$
+  \caption{electron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ inferior
+and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
   }
   \label{tab:electron}
 \end{table}
@@ -598,6 +599,19 @@ i\overline{\psi}\gamma^{\mu}\partial\psi -m_{e}\overline{\psi}\psi
 \end{picture}
 \end{frame}
 
+\begin{frame}
+\begin{picture}(320,250)
+  \only<1->{\put(-24,-22){\begin{overpic}[scale=0.5]{rcf}\end{overpic}}}%
+  %edit at: https://docs.google.com/presentation/d/1y3F7x2BMEsmRggJH6bOw57EjcNjZuaP6X6aMYCFaJdA/edit?usp=sharing
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Conclusiones}
+  La consolidación experimental del modelo estándar abre nuevos retos a la enseñanza de la física contemporánea en los pregrados, donde se debería hacer más énfasis en las propiedades generales de las teorías clásicas de campos a la luz de los teoremas de Noether.
+
+  \centering \includegraphics[scale=0.7]{fs}
+\end{frame}
 
 \end{document}
 
