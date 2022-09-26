@@ -33,8 +33,8 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{ Scotogenic seesaw and baryogenesis }
-\subtitle{with gauged Baryon number}
+\title{ Dirac dark matter, neutrino masses,}
+\subtitle{and dark baryogenesis}
 
 
 %\subtitle
@@ -56,7 +56,7 @@ Phenomenology Group %\\
 }%
 {http://gfif.udea.edu.co}%
 {}%
-{ufsm}% small image here, use pixel for nothing
+{encontro}% small image here, use pixel for nothing
 {}
 \arxiv{ arXiv:2205.05762
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
@@ -112,6 +112,338 @@ Phenomenology Group %\\
 \maketitle
 
 \section{Model building}
+
+\begin{frame}
+  \frametitle{$\operatorname{SO}(3)$ {\color{magenta} scalar product}}
+\Large
+  \begin{align*}
+  L=\frac{1}{2}m{\color{magenta} v^2}-V(|\boldsymbol{r}|)=\frac{1}{2}m {\color{magenta}\boldsymbol{v}\cdot\boldsymbol{v}}-V(|\boldsymbol{r}|)\only<2>{.}
+\end{align*}
+
+
+\end{frame}
+\begin{frame}
+  \frametitle{Lie groups}
+
+
+  \begin{center} 
+  \includegraphics[scale=0.4]{sunson}
+  \end{center}  
+
+\vspace{-1cm}
+
+
+\begin{align}
+  U=\exp \left( i \sum_j T_j {\color{red}\theta^{j}} \right),
+\end{align}
+where $\color{red}\theta^j$ are the parameters of the transformation and  $T_j$ are the generators.
+\end{frame}
+
+
+
+
+\begin{frame}%[fragile,allowframebreaks]
+  \frametitle{$\operatorname{SO}(1)$}
+Consider the $1\times1$
+\begin{align}
+  K=-i\,,
+\end{align}
+which generates an element of dilaton group , $\operatorname{SO}(1)$, $R({\color{red}\xi})$
+\begin{align}
+  \lambda({\color{red}\xi})=\operatorname{e^{{\color{red}\xi}}}\,,
+\end{align}
+which are just the group of the real exponentials. Such a number can be transformed as
+\begin{align}
+  x\to x'=\operatorname{e^{{\color{red}\xi}}}x\,,
+\end{align}
+that corresponds to a boost by $\operatorname{e^{{\color{red}\xi}}}$.
+We can define the invariant scalar product just as the division of real numbers, such that
+\begin{align}
+  x\cdot y \to x'\cdot y'\equiv \frac{x'}{y'}= \frac{\operatorname{e}^{{\color{red}\xi}}x}{\operatorname{e}^{{\color{red}\xi}}y}=\frac{x}{y}=x\cdot y\,.
+\end{align}
+\end{frame}
+
+\begin{frame}%[fragile,allowframebreaks]
+\frametitle{$\operatorname{SO}(1,1)$}  
+Queremos obtener una representación $2\times2$ del álgebra
+\begin{align}
+  K=&  \begin{pmatrix}
+   0 &-i\\
+   -i &0\\ 
+  \end{pmatrix} \to  K^2=-\boldsymbol{1}\,,
+\end{align}
+que genera un elemento del grupo $\operatorname{SO}(1,1)$ con \emph{\color{red}parámetro} ${\color{red}\xi}$ 
+\begin{align}
+  \Lambda=\exp \left( i {\color{red}\xi} K \right)
+  =\begin{pmatrix}
+    \cosh{\color{red}\xi} & \sinh{\color{red}\xi}\\
+     \sinh{\color{red}\xi}& \cosh{\color{red}\xi} \\
+  \end{pmatrix},\,.
+\end{align}
+
+
+La transformación de una coordenada temporaloide y otra espacialoide ($c=1$)
+  
+\begin{align*}
+  \begin{pmatrix}
+  t\\
+  x\\
+  \end{pmatrix}=  \begin{pmatrix}
+      x^0\\
+  x^1\\
+  \end{pmatrix}\to  
+  \begin{pmatrix}
+      x^{\,\prime 0}\\
+  x^{\,\prime 1}\\
+\end{pmatrix}=&
+\begin{pmatrix}
+    \cosh{\color{red}\xi} & \sinh{\color{red}\xi}\\
+     \sinh{\color{red}\xi}& \cosh{\color{red}\xi} \\
+   \end{pmatrix}
+    \begin{pmatrix}
+      x^0\\
+  x^1\\
+\end{pmatrix}\\
+  x^{\,\prime \mu}=&{\Lambda^{\mu}}_{\nu}x^{\nu}\,,\qquad \mu=0,1\,.
+\end{align*}
+
+\end{frame}
+
+
+
+\begin{frame}%[fragile,allowframebreaks]
+\begin{align*}
+\cosh{\color{red}\xi}=\gamma= \frac{1}{\sqrt{1-{\color{red}v^2}}}  
+\end{align*}
+  
+\textbf{Special}: parameter ${\color{red}\xi}$ or $\color{red}v$ is constant, e.g, inertial system invariance: \emph{\color{red}Global} conservation of $E$ and $\boldsymbol{p}$ (still action at a distance!)
+
+\textbf{General}: parameter ${\color{red}\xi}(t,\boldsymbol{x})$ or ${\color{red}v}\x(t,\boldsymbol{x})$ is constant, e.g, accelerated  system invariance: \emph{\color{red}Local} conservation of $E$ and $\boldsymbol{p}$
+
+\begin{block}{Inestability of binary particle systems}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+        \hspace{1cm}\includegraphics[scale=0.14]{ligo} 
+      \end{column}
+      \begin{column}{0.5\textwidth}
+        Gravitational wave discovery by LIGO\\
+        \vspace{1cm}        
+        %\includegraphics[scale=0.1]{new}\hspace{1cm} \includegraphics[scale=0.08]{co} \hspace{1cm} \includegraphics[scale=0.14]{udea}\\
+
+        \vspace{1cm}        
+        \tiny{credits: science.org}
+      \end{column}
+  \end{columns}
+\end{block}
+\centering {\color{red}Noether's paradigm} $\to$ Lagrangian formulation of classical field theory
+\end{frame}
+
+\begin{frame}
+  \frametitle{$\operatorname{U}(1)$: From special $\theta$ to general $\theta(t,\boldsymbol{x})$}
+
+   \begin{center}
+     \includegraphics[scale=0.2]{hydrogen}
+   \end{center}
+
+  
+  \large{What is a \st{particle} \emph{wavicle}? } \tiny{\url{https://www.quantamagazine.org/what-is-a-particle-20201112/}}
+  
+  \begin{minipage}[t]{0.5\linewidth}
+   %\metroset{block=fill}
+    \begin{block}{Is a ``Quantum Excitation of a Field''}
+      \includegraphics[scale=0.7]{wavicle}
+    \end{block}
+   \end{minipage}
+
+
+   
+   \begin{flushright}
+       \begin{minipage}[t]{0.6\linewidth}
+   %\metroset{block=fill}
+    \begin{block}{Is a ``Irreducible
+Representation of a Group''}
+      \includegraphics[scale=0.7]{repre}
+    \end{block}
+   \end{minipage}
+   \end{flushright}
+
+   
+  
+\end{frame}
+
+
+\begin{frame}
+\begin{picture}(320,250)
+\only<1->{\put(-24,-22){\begin{overpic}[scale=0.5]{qedhydrogen1}\end{overpic}}}%
+\only<2->{\put(-24,-22){\begin{overpic}[scale=0.5]{qedhydrogen2}\end{overpic}}}%
+\only<3->{\put(-24,-22){\begin{overpic}[scale=0.5]{qedhydrogen3}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+
+\begin{frame}[fragile,allowframebreaks]
+
+Under a general Lorentz transformation we have for a {\color{red}pure upperscript} 4-vector
+\begin{equation}
+  \label{eq:xx5}
+  A^\mu(x)\to A^{\prime \mu}(x)={\Lambda^\mu}_{\nu}A^\nu(\Lambda^{-1}x),
+\end{equation}
+where $\mu=0,1,2,3$. A {\color{red}pure underscript} 4-vector is
+\begin{align}
+   \partial_\mu=\frac{\partial}{\partial x^\mu}=&\left(
+    \frac{\partial}{\partial t},\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}
+  \right)
+  =(\partial_0,\boldsymbol{\nabla}).
+\end{align}
+
+From $x^{\,\prime \mu}={\Lambda^{\mu}}_{\nu}x^{\nu}$
+\begin{align}
+  \label{eq:183qft}
+    \frac{1}{{x'}^\mu}= {\left(\Lambda^{-1}\right)^\nu}_\mu\frac{1}{x^\nu}\,,
+\end{align}
+the tranformation properties for a $\partial_\mu=\partial/\partial x^\mu$, are
+\begin{align}
+  \label{eq:dmulrtran}
+   {\partial\,}'_\mu=& \partial_\nu{\left(\Lambda^{-1}\right)^\nu}_\mu\,.
+\end{align}
+
+In this way, the invariant scalar product between the 4-vector field and the four-gradient is just
+\begin{align}
+  \partial_\mu A^\mu\to   \partial'_\mu A^{\prime \mu}= \partial_\mu A^\mu\,.
+\end{align}
+
+
+\end{frame}
+
+
+\begin{frame}%[fragile,allowframebreaks]
+\frametitle{\small {\color{magenta}Photon}: \only<1>{Representation of the Poincaré Group}\only<2>{$\hat{\boldsymbol{p}}\oplus\operatorname{SO}(1,3)=i\,\partial^{\mu}\oplus$}\only<1>{which transform as a vector under }$\operatorname{SO}(1,3)$\only<2>{ $\to i\,D^{\mu}\oplus\operatorname{SO}(1,3)$   }}
+  
+\begin{table}
+  \centering
+   \begin{tabular}{lll}
+    Name & Symbol & $\operatorname{SO}(1,3)$ \\\hline
+    {\color{magenta}Photon} & ${\color{magenta}{A}^\mu}$ & ${\Lambda^\mu}_\nu {\color{magenta}{A}^\nu}$ \\
+    4-gradient & $\partial_\mu$ & $\partial_\nu {\left(\Lambda^{-1}\right)^\nu}_\mu$ \\\hline
+  \end{tabular}
+  \caption{
+       Scalar products: 
+       $\partial_\mu {\color{magenta}{A}^\mu}\,,\quad {\color{magenta}{A}^\nu} {\color{magenta}{A}_\nu} \,,\quad \partial_\mu  \partial^\mu$
+}
+  \label{tab:fermionlr}
+\end{table}
+
+\begin{table}
+  \centering
+   \begin{tabular}{lll}
+    Name & Symbol & $\operatorname{SU(N)}$ \\\hline
+    scalar $N$-plet  & $\Psi$ & $U \Psi$ \\
+    scalar anti-$N$-plet  & $\Psi^\dagger $ & $\Psi^\dagger U^\dagger $ \\\hline
+    \end{tabular}\hspace{3cm}
+  \caption{
+       Scalar products: $\Psi^\dagger \Psi$
+}
+  \label{tab:fermionlr}
+\end{table}
+
+
+\end{frame}
+
+\begin{frame}%[fragile,allowframebreaks]
+\begin{table}
+  \centering
+  \begin{tabular}{llll}
+    Name & Symbol & $\operatorname{SL}(2,C)$ & $U(1)_{Q}$\\\hline
+    $e_L$: electron {\color{red}left} & $\xi_{\color{red}\alpha}$ & ${S_{\color{red}\alpha}}^{\color{red}\beta}\xi_{\color{red}\beta}$ & $e^{i\theta}\xi_{\color{red}\alpha}$\\
+   $\left( e_L \right)^{\dagger}$: positron {\color{blue}right}   & $\left( \xi_{\color{red}\alpha} \right)^{\dagger}=\xi^{\dagger}_{\color{blue}\dot{\alpha}}$ & $\xi^{\dagger}_{\color{blue}\dot{\beta}}{\left[{S^{\dagger}}\right]^{\color{blue}\dot{\beta}}}_{\color{blue}\dot{\alpha}}$ & $\xi^{\dagger}_{\color{blue}\dot{\alpha}}e^{-i\theta}$\\
+   $e_R$: electron {\color{blue}right}   & $\left( \eta^{\color{red}\alpha} \right)^{\dagger}=\eta^{\dagger\;\color{blue}\dot{\alpha}}$ & ${\left[ \left( S^{-1} \right)^\dagger \right]^{\color{blue}\dot{\alpha}}}_{\color{blue}\dot{\beta}}\eta^{\dagger\;\color{blue}\dot{\beta}}$& $e^{i\theta}\eta^{\dagger\;\color{blue}\dot{\alpha}}$\\
+   $\left( e_R \right)^{\dagger}$: positron {\color{red}left}&$\eta^{\color{red}\alpha}$& $\eta^{\color{red}\beta}{\left[ S^{-1}  \right]_{\color{red}\beta}}^{\color{red}\alpha}$ & $e^{-i\theta}\eta^{\color{red}\alpha}$\\\hline
+  \end{tabular}
+  \caption{electron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ inferior
+and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
+  }
+  \label{tab:electron}
+\end{table}
+
+
+\begin{block}{Scalar products}
+\begin{itemize}
+\item $\cancel{\operatorname{U}(1)}$ Majorana scalars: $\xi^{\color{red}\alpha}\xi_{\color{red}\alpha}+\xi^{\dagger}_{\color{blue} \dot{\alpha}}\xi^{\dagger \color{blue} \dot{\alpha}}$, $\eta^{\color{red}\alpha}\eta_{\color{red}\alpha}+\eta^{\dagger}_{\color{blue} \dot{\alpha}}\eta^{\dagger \color{blue} \dot{\alpha}}$.
+\item Dirac scalar: $\eta^{\color{red}\alpha}\xi_{\color{red}\alpha}+ \xi^{\dagger}_{\color{blue}\dot{\alpha}}\eta^{\dagger\;\color{blue}\dot{\alpha  }} $.
+
+
+ \item Tensor under subgroup $\operatorname{SL}(2,C)$ but vector under $\operatorname{SO}(1,3)$: $ {S^{\dagger\color{blue}\dot{\alpha}}}_{\color{blue}\dot{\beta}}\overline{\sigma}^{\mu\,\color{blue}\dot{\beta} \color{red}\beta} {S_{\color{red}\beta}}^{\color{red}\alpha}={\Lambda^\mu}_\nu\overline{\sigma}^{\nu\,\color{blue}\dot{\alpha}\color{red}\alpha}$
+\end{itemize}
+\begin{align*}
+\sigma^0=&\mathbb{1}\,,&  \overline{\sigma}^{\mu}=&(\sigma^0,-\boldsymbol{\sigma}), &
+  {\sigma}^{\mu}=&(\sigma^0,\boldsymbol{\sigma}).
+\end{align*}
+\end{block}
+
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}%[fragile,allowframebreaks]
+\begin{table}
+  \centering
+  \begin{tabular}{llll}
+    Name & Symbol & $\operatorname{SL}(2,C)$ & $U(1)_Q$\\\hline
+    $e_L$: electron {\color{red}left} & $\xi_{\color{red}\alpha}$ & ${S_{\color{red}\alpha}}^{\color{red}\beta}\xi_{\color{red}\beta}$ & $e^{i\theta}\xi_{\color{red}\alpha}$\\
+   $\left( e_L \right)^{\dagger}$: positron {\color{blue}right}   & $\left( \xi_{\color{red}\alpha} \right)^{\dagger}=\xi^{\dagger}_{\color{blue}\dot{\alpha}}$ & $\xi^{\dagger}_{\color{blue}\dot{\beta}}{\left[{S^{\dagger}}\right]^{\color{blue}\dot{\beta}}}_{\color{blue}\dot{\alpha}}$ & $\xi^{\dagger}_{\color{blue}\dot{\alpha}}e^{-i\theta}$\\
+   $e_R$: electron {\color{blue}right}   & $\left( \eta^{\color{red}\alpha} \right)^{\dagger}=\eta^{\dagger\;\color{blue}\dot{\alpha}}$ & ${\left[ \left( S^{-1} \right)^\dagger \right]^{\color{blue}\dot{\alpha}}}_{\color{blue}\dot{\beta}}\eta^{\dagger\;\color{blue}\dot{\beta}}$& $e^{i\theta}\eta^{\dagger\;\color{blue}\dot{\alpha}}$\\
+   $\left( e_R \right)^{\dagger}$: positron {\color{red}left}&$\eta^{\color{red}\alpha}$& $\eta^{\color{red}\beta}{\left[ S^{-1}  \right]_{\color{red}\beta}}^{\color{red}\alpha}$ & $e^{-i\theta}\eta^{\color{red}\alpha}$\\\hline
+  \end{tabular}
+  \caption{electron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ inferior
+and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
+  }
+  \label{tab:electron}
+\end{table}
+
+\begin{columns}
+  \begin{column}{0.8\textwidth}
+  \begin{block}{General theory: QED $\to {\color{magenta}D_\mu}=i\partial_\mu-i e {\color{magenta}A_\mu}$, ${\color{magenta}F_{\mu\nu}}=\partial_{\mu}{\color{magenta}A_\nu}-
+    \partial_{\nu}{\color{magenta}A_\mu}$\only<2>{.}}
+
+\begin{align*}
+  \xi^{\color{red}\alpha}\to\xi^{\,\prime {\color{red}\alpha} }=&e^{i\theta(x)}\xi^{\color{red}\alpha} &   \eta_{\color{red}\alpha}\to\eta'_{\color{red}\alpha}=&e^{-i\theta(x)}\eta_{\color{red}\alpha} \\
+   {\color{magenta}D_\mu} \xi^{\color{red}\alpha}\to\left( {\color{magenta}D_\mu}\xi^{ {\color{red}\alpha} }\right)'=&e^{i\theta(x)}{\color{magenta}D_\mu}\xi^{\color{red}\alpha} &  {\color{magenta}D_\mu} \eta_{\color{red}\alpha}\to \left( {\color{magenta}D_\mu}\eta_{\color{red}\alpha} \right)'=&e^{-i\theta(x)}{\color{magenta}D_\mu}\eta_{\color{red}\alpha} \\
+\end{align*}
+\vspace{-1.5cm}
+\begin{align*}
+  \mathcal{L}=&i\xi^{\dagger}_{\color{blue}\dot{\alpha}}\overline{\sigma}^{\mu\;\color{blue}\dot{\alpha}\color{red}\alpha}{\color{magenta}D_\mu}\xi_{\color{red}\alpha}+i\eta^{\color{red}\alpha}\sigma^{\mu}_{\color{red}\alpha\color{blue}\dot{\alpha}}{\color{magenta}D_\mu}\eta^{\dagger\;\color{blue}\dot{\alpha}}
+                -m \left(\eta^{\color{red}\alpha} \xi_{\color{red}\alpha}+\xi^{\dagger}_{\color{blue}\dot{\alpha}} \eta^{\dagger\;\color{blue}\dot{\alpha}}\right)-\tfrac{1}{4}{\color{magenta}F^{\mu\nu}}{\color{magenta}F_{\mu\nu}}\\
+\invisible<1>{  \mathcal{L}=}&\invisible<1>{i\overline{\psi}\gamma^{\mu}{\color{magenta}D_\mu}\psi -m\overline{\psi}\psi-\tfrac{1}{4}{\color{magenta}F^{\mu\nu}}{\color{magenta}F_{\mu\nu}}\,.}\only<3->{\to e\overline{\psi}\gamma^{\mu}\psi\,{\color{magenta}A_{\mu}}}
+\end{align*}
+\end{block}
+\end{column}
+\begin{column}{0.2\textwidth}
+  \begin{block}{\invisible<1>{Dirac spinor}}
+    \invisible<1>{\only<1-2>{
+        \small
+    \begin{align*}
+      \psi=&
+      \begin{pmatrix}
+        e_L\\
+        e_R
+      \end{pmatrix}\\
+      \gamma^{\mu}=&
+\begin{pmatrix}
+    0           &\sigma^{\mu}\\
+    \overline{\sigma}^{\mu} &0\\
+  \end{pmatrix}\\
+    \overline{\psi}=&\psi^{\dagger}\gamma^{0}\,.
+    \end{align*}
+  }
+  \only<3>{\includegraphics[scale=0.35]{feynmanruleqed}}%
+  \only<4>{
+    non-bare\\
+    \includegraphics[scale=0.35]{5loop}}%
+  }
+  \end{block}
+\end{column}
+\end{columns}
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Lie groups}
