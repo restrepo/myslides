@@ -153,7 +153,7 @@ Phenomenology Group %\\
     \end{minipage}
   }}%
 \only<3->{\put(160,120){\Large $F_{\mu\nu}{\color{red}\ V^{\mu\nu}} $   }}%
-\only<3->{\put(120,-10){$\color{red}\overline{\Psi}\Psi=\color{blue}\chi_1\chi_2+\chi_1^\dagger\chi_2^\dagger\to \chi_\alpha\chi_\beta \Phi^{(*)}\,,\qquad \alpha=1,\ldots N'\to N'>4 $}}
+\only<3->{\put(120,-10){$\color{red}\overline{\Psi}\Psi=\color{blue}\chi_1\chi_2+\chi_1^\dagger\chi_2^\dagger\to \chi_\alpha\chi_\beta \Phi^{(*)}\,,\qquad \alpha=1,\ldots N\to N>4 $}}
 \only<3->{\put(204,0){ \begin{overpic}[scale=0.2]{tcdm1}\end{overpic}}}%
 
 \only<4->{\put(280,0){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
@@ -212,7 +212,7 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
     9261 \to {\color{blue}3} & N=5 \invisible<1-3>{\to{\color{blue}[1, 5, -7, -8, 9]}}\\
     194841 \to {\color{blue}38}& N=6\\
     \vdots & \vdots\\
-    1.6\times 10^{13}\to {\color{blue}65910} & N=12\\
+    1.6\times 10^{13}\to {\color{blue}65910} & N=12\,, \text{\qquad instead $10^{19}$ }\\
   \end{cases}
 \end{align}
 }
@@ -224,14 +224,16 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
 \begin{frame}
   \frametitle{Simplest secluded model with SM-singlet massive chiral fermions from SSB}
 \begin{align}
-  \mathcal{L}=i \psi_{i}\overline{\sigma}^{\mu}\mathcal{D}_{\mu}\psi_{i}-\frac{1}{4}F'_{\mu\nu} F^{\prime \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c}
+  \mathcal{L}=i \psi_{i}^{\dagger}\cancel{\mathcal{D}}\psi_{i}-\frac{1}{4}V_{\mu\nu} V^{\prime \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c}
 \end{align}
-{\color{blue} 96\,153 $\to$ 5\,196 multi-component DM ($N=8,12$) $\to$ 28 with two Dirac-fermion DM}
+{\color{blue} 96\,153 $\to$ 5\,196 multi-component DM ($N=8,12$) $\to$ 28 with two Dirac-fermion DM} \only<2-3>{}
 
+\invisible<1>{
 \begin{align}
   \boldsymbol{z}=[1, 2, 2, 4, -5, -5, -7, 8] \to \phi=3 \to [{\color{blue} (1, 2), (2, -5), (-5, 8)},{\color{red}(4, -7)}] 
 \end{align}
 
+\invisible<1-2>{
 \vspace{-1cm}
 \begin{align}
   \mathcal{L}\subset
@@ -246,6 +248,8 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
   }\Psi \phi^{(*)}
   }+{\color{red}h_{(4,-7)}\psi_4\psi_{-7}\phi^{*}}
 \end{align}
+}
+}
 \end{frame}
 
 \begin{frame}
