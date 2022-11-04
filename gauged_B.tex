@@ -12,7 +12,8 @@
 %\usepackage{mycolors}
 \usepackage{fp}
 \usepackage{multirow}
-%\usepackage{coloremoji}
+\usepackage{kbordermatrix}
+% \usepackage{coloremoji}
 \newcommand{\arXiv}[1]{\href{https://arxiv.org/abs/#1}{arXiv:#1}}
 \widescreen
 
@@ -56,9 +57,9 @@ Phenomenology Group %\\
 }%
 {http://gfif.udea.edu.co}%
 {}%
-{encontro}% small image here, use pixel for nothing
+{pppia}% small image here, use pixel for nothing
 {}
-\arxiv{ arXiv:2205.05762
+\arxiv{ arXiv:2205.05762 [PRD]
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
 }
 \collaborators{ Andrés Rivera (UdeA), Walter Tangarife (Loyola University Chicago)
@@ -184,7 +185,7 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
   \frametitle{Methology based on: {\color{cyan}Costa-Dobrescu-Fox arXiv:1905.13729 [PRL]}  }
 
 \begin{itemize}
-\item From a list of $N-2$ integers,  e.g., for $N$ even
+\item<1-> From a list of $N-2$ integers,  e.g., for $N$ even
   \begin{align}
     \boldsymbol{q}=\left[l_1,l_2,\cdots,l_{n},k_1,k_2,\cdots,k_{n}\right],\qquad n=(N-2)/2\,.
   \end{align}
@@ -195,19 +196,20 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
                      \right] &
         \boldsymbol{y}=& \left[0,0,{\color{blue}l_1},\cdots {\color{red}l_n},-{\color{blue}l_1},\cdots -{\color{red}l_n}  \right]
   \end{align}
-\item Obtain a (some times) {\color{blue}non vector-like} solution with $z_{\text{max}}=2m$ 
+\item<2-> Obtain a (some times) {\color{blue}non vector-like} solution with $z_{\text{max}}=2m$ 
   \begin{align}
     \boldsymbol{z}=\boldsymbol{x}\oplus\boldsymbol{y}=\left( \sum_{i=1}^Nx_iy_i^2 \right)\boldsymbol{x}
     +\left( \sum_{i=1}^Nx_i^2y_i \right)\boldsymbol{y}\,,
   \end{align}
 \end{itemize}
 
-{\small
-  The parameter space to be explored with $z_{\text{max}}=20$ ($m=10$) has {\color{blue} 96\,153 non vector-like} solutions\only<2>{}
+\vspace{-0.5cm}
+\invisible<1-2>{\small
+  The parameter space to be explored with $z_{\text{max}}=20$ ($m=10$) has {\color{blue} 96\,153 non vector-like} solutions\only<4>{}
 \begin{align}
 \text{  \# of $\boldsymbol{q}$ lists} =(2m+1)^{N-2}=
   \begin{cases}
-    9261 \to {\color{blue}3} & N=5 \invisible<1>{\to{\color{blue}[1, 5, -7, -8, 9]}}\\
+    9261 \to {\color{blue}3} & N=5 \invisible<1-3>{\to{\color{blue}[1, 5, -7, -8, 9]}}\\
     194841 \to {\color{blue}38}& N=6\\
     \vdots & \vdots\\
     1.6\times 10^{13}\to {\color{blue}65910} & N=12\\
@@ -216,6 +218,34 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
 }
 
   
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Simplest secluded model with SM-singlet massive chiral fermions from SSB}
+\begin{align}
+  \mathcal{L}=i \psi_{i}\overline{\sigma}^{\mu}\mathcal{D}_{\mu}\psi_{i}-\frac{1}{4}F'_{\mu\nu} F^{\prime \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c}
+\end{align}
+{\color{blue} 96\,153 $\to$ 5\,196 multi-component DM ($N=8,12$) $\to$ 28 with two Dirac-fermion DM}
+
+\begin{align}
+  \boldsymbol{z}=[1, 2, 2, 4, -5, -5, -7, 8] \to \phi=3 \to [{\color{blue} (1, 2), (2, -5), (-5, 8)},{\color{red}(4, -7)}] 
+\end{align}
+
+\vspace{-1cm}
+\begin{align}
+  \mathcal{L}\subset
+{\color{blue}  \Psi^{\operatorname{T}}\kbordermatrix{
+     & 1 & 2 & 2 & -5 & -5& 8  \\
+   1 & 0 & h_{(1,2)} & h_{(1,2)} & 0  & 0 & 0 \\
+   2 & h_{(1,2)} & 0 & 0 & h_{(2,-5)}  & h_{(2,-5)} & 0 \\
+   2 & h_{(1,2)} & 0 & 0 & 0  & 0 & 0 \\
+  -5 & 0 & h_{(2,-5)} & 0 & 0  & 0 & h_{(-5,8)} \\
+  -5 & 0 & h_{(2,-5)} & 0 & 0  & 0 & h_{(-5,8)} \\
+   8 & 0 & 0 & 0 & h_{(-5,8)}  & h_{(-5,8)} & 0 \\
+  }\Psi \phi^{(*)}
+  }+{\color{red}h_{(4,-7)}\psi_4\psi_{-7}\phi^{*}}
+\end{align}
 \end{frame}
 
 \begin{frame}
