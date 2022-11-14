@@ -137,8 +137,8 @@ Phenomenology Group %\\
 %           QED
 %         \end{minipage}
 %       }}  }}%
-\only<3->{\put(260,200){\Large $\color{red}\mathcal{L}=-\frac{1}{4}V_{\mu\nu}V^{\mu\nu}+\color{blue}i \sum_i{\chi_i}^\dagger\cancel{\mathcal{D}} \chi_i$   }}%
-\only<3->{\put(280,180){\Large $\color{blue} - \only<3-5>{h}\only<6->{y} \left(\chi_1\chi_2 \only<3-5>{\Phi}\only<6>{S} + \text{h.c} \right) $   }}%
+\only<3->{\put(260,200){\Large $\color{red}\mathcal{L}=-\frac{1}{4}V_{\mu\nu}V^{\mu\nu}+\color{blue}i \sum_i{\psi_i}^\dagger\cancel{\mathcal{D}} \psi_i$   }}%
+\only<3->{\put(280,180){\Large $\color{blue} - \only<3-5>{h}\only<6->{y} \left(\psi_1\psi_2 \only<3-5>{\Phi}\only<6>{S} + \text{h.c} \right) $   }}%
 \only<3->{\put(280,218.5){ \Huge {{\color{red}Local}} $\color{red}U(1)_{\mathcal{X}}$  }}%
 \only<3->{\put(240,125){
     \begin{minipage}{0.4\linewidth}
@@ -153,7 +153,7 @@ Phenomenology Group %\\
     \end{minipage}
   }}%
 \only<3->{\put(160,120){\Large $F_{\mu\nu}{\color{red}\ V^{\mu\nu}} $   }}%
-\only<3->{\put(120,-10){$\color{red}\overline{\Psi}\Psi=\color{blue}\chi_1\chi_2+\chi_1^\dagger\chi_2^\dagger\to \chi_\alpha\chi_\beta \Phi^{(*)}\,,\qquad \alpha=1,\ldots N\to N>4 $}}
+\only<3->{\put(120,-10){$\color{red}\overline{\Psi}\Psi=\color{blue}\psi_1\psi_2+\psi_1^\dagger\psi_2^\dagger\to \psi_\alpha\psi_\beta \Phi^{(*)}\,,\qquad \alpha=1,\ldots N\to N>4 $}}
 \only<3->{\put(204,0){ \begin{overpic}[scale=0.2]{tcdm1}\end{overpic}}}%
 
 \only<4->{\put(280,0){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
@@ -239,18 +239,43 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
   \mathcal{L}\subset
 {\color{blue}  \Psi^{\operatorname{T}}\kbordermatrix{
      & 1 & 2 & 2 & -5 & -5& 8  \\
-   1 & 0 & h_{(1,2)} & h_{(1,2)} & 0  & 0 & 0 \\
+   1 & 0 & h_{(1,2)} & h'_{(1,2)} & 0  & 0 & 0 \\
    2 & h_{(1,2)} & 0 & 0 & h_{(2,-5)}  & h_{(2,-5)} & 0 \\
-   2 & h_{(1,2)} & 0 & 0 & 0  & 0 & 0 \\
+   2 & h'_{(1,2)} & 0 & 0 & 0  & 0 & 0 \\
   -5 & 0 & h_{(2,-5)} & 0 & 0  & 0 & h_{(-5,8)} \\
-  -5 & 0 & h_{(2,-5)} & 0 & 0  & 0 & h_{(-5,8)} \\
-   8 & 0 & 0 & 0 & h_{(-5,8)}  & h_{(-5,8)} & 0 \\
+  -5 & 0 & h_{(2,-5)} & 0 & 0  & 0 & h'_{(-5,8)} \\
+   8 & 0 & 0 & 0 & h_{(-5,8)}  & h'_{(-5,8)} & 0 \\
   }\Psi \phi^{(*)}
   }+{\color{red}h_{(4,-7)}\psi_4\psi_{-7}\phi^{*}}
 \end{align}
 }
 }
 \end{frame}
+
+\begin{frame}
+  \frametitle{Effective Dirac neutrino mass operator}
+Deacrese the number of charges to be assigned to dark matter particles, $\psi_i$ below
+  \begin{align*}
+    &\left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]&\\
+    \text{Secluded case} && \text{Active case}\\
+    \left[{\color{red}\nu,\nu, (\nu)}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]&
+    &\left[{\color{red}\nu,\nu, (\nu)},{\color{blue}m,m,m}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]
+  \end{align*}
+\begin{align}
+  { \color{red}  \chi_1\to \nu_{R1},\cdots, \chi_{N_\nu}\to \nu_{R\, N_\nu},\qquad 2\le N_\nu\le 3\,,}&&
+   X(L_{i})=-L\,\ X(\Phi)=\phi \to m=-(L+\phi)\\
+\end{align}
+  \begin{align*} 
+    \mathcal{L}_{\text{eff}} = h_{\nu}^{\alpha i} \, \left( \nu_{R\alpha}\right)^{\dagger} \, \epsilon_{ab} \, {\color{blue} L_i^a }\, H^b \left(\frac{\color{blue}\Phi^*}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i=1,2,3$}\,,
+\end{align*}
+$\color{blue}\Phi$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry with $D$ or $X$-charge 
+\begin{align}
+     \label{eq:effcon}
+    \phi=-(\nu+{\color{blue}L})/\delta\,,
+\end{align}
+
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Standard model extended with $\operatorname{U}(1)_{\mathcal{X}={\color{cyan}L}\text{~or~}\color{red}B}$ gauge symmetry}
@@ -280,24 +305,6 @@ new fermion content: $\color{blue}L=e=0$ for $\mathcal{X}=\color{red}B$. Or $\co
     \label{tab:partcont2}
 \end{table}
 \end{frame}
-
-\begin{frame}
-  \frametitle{Effective Dirac neutrino mass operator}
-\begin{align}
-    \chi_1\to \nu_{R1},\cdots, \chi_{N_\nu}\to \nu_{R\, N_\nu},\qquad 2\le N_\nu\le 3\,,
-\end{align}
-
-  \begin{align*} 
-    \mathcal{L}_{\text{eff}} = h_{\nu}^{\alpha i} \, \left( \nu_{R\alpha}\right)^{\dagger} \, \epsilon_{ab} \, {\color{blue} L_i^a }\, H^b \left(\frac{\Phi^*}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i=1,2,3$}\,,
-\end{align*}
-$S$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry with $D$ or $X$-charge 
-\begin{align}
-     \label{eq:effcon}
-    \phi=-(\nu+{\color{blue}L})/\delta\,,
-\end{align}
-
-\end{frame}
-
 
 
 \begin{frame}
