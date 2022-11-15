@@ -254,24 +254,24 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
 
 \begin{frame}
   \frametitle{Effective Dirac neutrino mass operator}
-Deacrese the number of charges to be assigned to dark matter particles, $\psi_i$ below
+Deacrese the number of charges to be assigned to dark matter particles, $\psi_i$ below\only<2>{}
   \begin{align*}
     &\left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]&\\
-    \text{Secluded case} && \text{Active case}\\
+    \text{Secluded case} && \invisible<1>{\text{Active case}}\\
     \left[{\color{red}\nu,\nu, (\nu)}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]&
-    &\left[{\color{red}\nu,\nu, (\nu)},{\color{blue}m,m,m}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]
+    &\invisible<1>{\left[{\color{red}\nu,\nu, (\nu)},{\color{blue}m,m,m}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]}
   \end{align*}
 \begin{align}
   { \color{red}  \chi_1\to \nu_{R1},\cdots, \chi_{N_\nu}\to \nu_{R\, N_\nu},\qquad 2\le N_\nu\le 3\,,}&&
-   X(L_{i})=-L\,\ X(\Phi)=\phi \to m=-(L+\phi)\\
+\invisible<1>{   \color{blue}X(L_{i})=-L\,,\ X(H)=h\qquad \to m=L-h }%-h=m-L → h=L-m
 \end{align}
   \begin{align*} 
-    \mathcal{L}_{\text{eff}} = h_{\nu}^{\alpha i} \, \left( \nu_{R\alpha}\right)^{\dagger} \, \epsilon_{ab} \, {\color{blue} L_i^a }\, H^b \left(\frac{\color{blue}\Phi^*}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i=1,2,3$}\,,
+    \mathcal{L}_{\text{eff}} = h_{\nu}^{\alpha i} \, {\color{red}\left( \nu_{R\alpha}\right)^{\dagger}} \, \epsilon_{ab} \, {\color{blue} L_i^a }\,\only<1>{H^{b}}{\only<2>{\color{blue}H^b}} \left(\frac{{\color{Green}\Phi^*}}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i=1,2,3$}\,,
 \end{align*}
-$\color{blue}\Phi$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry with $D$ or $X$-charge 
+$\Phi$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry with \only<1>{$D$}\only<2>{$X$}-charge 
 \begin{align}
      \label{eq:effcon}
-    \phi=-(\nu+{\color{blue}L})/\delta\,,
+   {\color{Green} \phi}=-({\color{red}\nu}+{\color{blue}\only<1>{L}\only<2>{m}})/\delta\,, %-\nu-L+h-\delta \phi=0 → \delta \phi= -\nu -L+L-m=-\nu-m
 \end{align}
 
 \end{frame}
