@@ -271,40 +271,98 @@ Deacrese the number of charges to be assigned to dark matter particles, $\psi_i$
 $\Phi$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry with \only<1>{$D$}\only<2>{$X$}-charge 
 \begin{align}
      \label{eq:effcon}
-   {\color{Green} \phi}=-({\color{red}\nu}+{\color{blue}\only<1>{L}\only<2>{m}})/\delta\,, %-\nu-L+h-\delta \phi=0 → \delta \phi= -\nu -L+L-m=-\nu-m
+   \invisible<2>{\delta}{\color{Green} \phi}=-\invisible<1>{(}{\color{red}\nu}\invisible<1>{+{\color{blue}m})/\delta}\,, %-\nu-L+h-\delta \phi=0 → \delta \phi= -\nu -L+L-m=-\nu-m
 \end{align}
 
 \end{frame}
 
 
 \begin{frame}
-  \frametitle{Standard model extended with $\operatorname{U}(1)_{\mathcal{X}={\color{cyan}L}\text{~or~}\color{red}B}$ gauge symmetry}
+  \frametitle{Standard model extended with $\operatorname{U}(1)_{\mathcal{X}={\color{cyan}\only<1>{X}\only<2>{L}}\text{~or~}\color{red}\only<1>{D}\only<2>{B}}$ gauge symmetry}
   \small
   \begin{table}
     \centering
         \rowcolors{1}{RoyalBlue!20}{}
   \begin{tabular}{c|c|c|c}
     \hline  
-    Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{\mathcal{X}={\color{red}B}\text{ or } {\color{blue}L}}$\\ \hline
+    Fields     & $\operatorname{SU}(2)_L$ & $\operatorname{U}(1)_Y $ & $\operatorname{U}(1)_{\mathcal{X}={\color{red}\only<1>{D}\only<2>{B}}\text{ or } {\color{blue}\only<1>{X}\only<2>{L}}}$\\ \hline
 $Q^\dagger_i $    & $\boldsymbol{2}$& $-1/6$  &  $\color{red}Q$   \\
 $d_{Ri} $  & $\boldsymbol{1}$& $-1/2$  &  $\color{red}d$ \\
  $u_{Ri} $  & $\boldsymbol{1}$& $+2/3$  &  $\color{red}u$\\
 $L^\dagger_i $    & $\boldsymbol{2}$& $+1/2$  &  $\color{blue}L$ \\    
 $e_{Ri} $  & $\boldsymbol{1}$& $-1$    &  $\color{blue} e$   \\
-$H $    & $\boldsymbol{2}$& $1/2$  &  $h=0$   \\\hline
+$H $    & $\boldsymbol{2}$& $1/2$  &  $h\invisible<1>{=0}$   \\\hline
 $\chi_\alpha $ & $\boldsymbol{1}$& $0$     &  $z_\alpha$   \\\hline
- $\left(L'_L\right)^\dagger$      & $\mathbf{2}$ & $1/2$   & $-x'$   \\ 
+\invisible<1>{ $\left(L'_L\right)^\dagger$      & $\mathbf{2}$ & $1/2$   & $-x'$   \\ 
 $L''_R$      & $\mathbf{2}$ & $-1/2$   & $x''$   \\ 
 $e'_R$      & $\mathbf{1}$ & $-1$   & $x'$   \\ 
-$\left(e''_L\right)^\dagger$      & $\mathbf{1}$ & $1$   & $-x''$   \\\hline
+$\left(e''_L\right)^\dagger$      & $\mathbf{1}$ & $1$   & $-x''$ }  \\\hline
 $\Phi$      & $\mathbf{1}$ & $0$   & $\phi$\\
-$S$      & $\mathbf{1}$ & $0$   & $s$\\
+\invisible<1>{$S$      & $\mathbf{1}$ & $0$   & $s$}\\ 
   \end{tabular}
-  \caption{ A minimal set of
-new fermion content: $\color{blue}L=e=0$ for $\mathcal{X}=\color{red}B$. Or $\color{red}Q=u=d=0$ for $\mathcal{X}=\color{blue}L$. $i=1,2,3$, $\alpha=1,2,\ldots,N'$  }
+  \caption{ \invisible<1>{minimal set of
+new fermion content: $\color{blue}L=e=0$ for $\mathcal{X}=\color{red}B$. Or $\color{red}Q=u=d=0$ for $\mathcal{X}=\color{blue}L$.} $i=1,2,3$, $\alpha=1,2,\ldots,N'$  }
     \label{tab:partcont2}
 \end{table}
 \end{frame}
+
+\begin{frame}
+  \frametitle{Anomaly cancellation: $\mathcal{X}=\color{cyan}X$}
+The anomaly-cancellation conditions on $\left[\operatorname{SU}(3)_c\right]^{2}  \operatorname{U}(1)_{X}$, $\left[\operatorname{SU}(2)_{L}\right]^{2} \operatorname{U}(1)_{X}$, $\left[\operatorname{U}(1)_{Y}\right]^{2} \operatorname{U}(1)_{X}$,  allow us to express three of the $X$-charges in terms of the others\only<2-3>{}
+\begin{align}\label{eq:sol0}
+  \color{red}u=&-{\color{blue}e}-\frac23 {\color{blue}L}-\frac19\left(x'-x''\right)\,,& 
+\color{red}  d=& {\color{blue}e}+\frac43 {\color{blue}L}-\frac19\left(x'-x''\right)\,,& 
+\color{red}  Q=& -\frac13 {\color{blue}L}+\frac19\left(x'-x''\right)\,,
+\end{align}
+ while the $\left[\operatorname{U}(1)_{X}\right]^{2} \operatorname{U}(1)_{Y}$ anomaly condition reduces to
+ \begin{align}
+     {\color{blue}(e+L)}(x'-x'')=0\,.
+ \end{align}
+ \vspace{-1cm}
+   \invisible<1>{   
+ \begin{itemize}
+ \item If: $x'=x''$ or $x'=x''=0$ 
+ \item We need $\color{blue}h=-e-L=L-m$:
+ \end{itemize}
+\begin{align*}
+  {\color{red}u}=&\frac{4 {\color{blue}L}}{3}-m\,,& {\color{red}d}=m-\frac{2 {\color{blue}L}}{3}& \,,& {\color{red}Q}=& -\frac{{\color{blue}L}}{3}\invisible<1-2>{\ne 0}\,,& {\color{blue}e}=& m-2 {\color{blue}L}\,,&
+    h =& {\color{blue}L}-m\,,
+\end{align*}
+
+ 
+    }
+\end{frame}
+
+\begin{frame}
+  \centering
+  \includegraphics[scale=0.58]{effsols}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Multi-generational dark matter}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{generation}
+    \caption{ 
+    }
+    \label{fig:generation}
+\end{figure}  
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Multi-component dark matter}
+  \begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{number}
+     \caption{ }
+    \label{fig:number}
+\end{figure}
+\end{frame}
+
+
+
+
 
 
 \begin{frame}
