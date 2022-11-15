@@ -59,10 +59,10 @@ Phenomenology Group %\\
 {}%
 {pppia}% small image here, use pixel for nothing
 {}
-\arxiv{ arXiv:2205.05762 [PRD]
+\arxiv{ arXiv:2112.09524 [Frontiers in Physics]  arXiv:2205.05762 [PRD]
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
 }
-\collaborators{ Andrés Rivera (UdeA), Walter Tangarife (Loyola University Chicago)
+\collaborators{ Andrés Rivera (UdeA), David Suárez (UdeA), Walter Tangarife (Loyola University Chicago)
 %  Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, David Suárez
 }
 }
@@ -333,6 +333,19 @@ The anomaly-cancellation conditions on $\left[\operatorname{SU}(3)_c\right]^{2} 
     }
 \end{frame}
 
+{
+\usebackgroundtemplate{\includegraphics[width=0.8\paperwidth]{ano4}}
+\setbeamertemplate{blocks}[rounded][shadow=false]
+\setbeamercovered{invisible}
+\begin{frame}[plain]
+\begin{picture}(320,250)  
+  \put(0,-7){\includegraphics[scale=0.1]{encircle}}
+\end{picture}
+\end{frame}
+%%%%%%%%%%%%%%%%%%
+}
+
+
 \begin{frame}
   \centering
   \includegraphics[scale=0.58]{effsols}
@@ -360,13 +373,49 @@ The anomaly-cancellation conditions on $\left[\operatorname{SU}(3)_c\right]^{2} 
 \end{figure}
 \end{frame}
 
+\begin{frame}
+    \frametitle{$\operatorname{U}(1)_{\color{blue}X}$ selection}
+
+      \begin{columns}
+    \begin{column}{0.7\textwidth}
+      \begin{itemize}
+      \item<1-> Active symmetry $m=3$
+      \item<2-> Effective neutrino mass $\delta=2\to$ $\nu=-5$: 
+      \item<3-> Active symmetry: $m=3\to$  $\only<2>{\color{red}}\phi=-(\nu+m)/\delta=1$
+      \item<4-> Dirac-fermionic DM: $\only<4>{\color{red}}\left(\psi_L\right)^\dagger \psi_R''\Phi^*\to z_6=-7,\ z_7=8$
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.3\textwidth}
+      \vspace{1cm}
+      %(3, 3, 3, −5, −5, −7, 8)
+      \Large $(
+      {\only<1->{\color{black}}\only<2>{\color{red}}-5, -5},
+      {\only<1->{\color{black}}\only<3>{\color{red}}3,3,3},
+      {\only<1->{\color{black}}\only<4>{\color{red}}-7,8})$
+
+
+    %\hfill  \tiny{\url{Dreamstime.com}}  
+    \end{column}
+
+  \end{columns}
+  \invisible<1-4>{\only<5>{{\color{red}$1\,122$} solutions from $\sim 400,000$}
+
+\includegraphics[scale=0.45]{dmz}    \includegraphics[height=4.5cm]{u1blc5}
+
+
+
+  }
+
+
+  \end{frame}
+
 
 
 
 
 
 \begin{frame}
-  \frametitle{Anomaly cancellation I}
+  \frametitle{Anomaly cancellation: $\mathcal{X}={\color{cyan}L}$ or ${\color{magenta}B}$}
 The anomaly-cancellation conditions on $\left[\operatorname{SU}(3)_c\right]^{2}  \operatorname{U}(1)_{X}$, $\left[\operatorname{SU}(2)_{L}\right]^{2} \operatorname{U}(1)_{X}$, $\left[\operatorname{U}(1)_{Y}\right]^{2} \operatorname{U}(1)_{X}$,  allow us to express three of the $X$-charges in terms of the others
 \begin{align}\label{eq:sol0}
   \color{red}u=&-{\color{blue}e}-\frac23 {\color{blue}L}-\frac19\left(x'-x''\right)\,,& 
@@ -399,7 +448,7 @@ If $\color{red}B=0$ $\to \operatorname{U}(1)_{\color{blue}L}$
 
 %%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Anomaly cancellation II}
+  \frametitle{Anomaly cancellation: $\mathcal{X}={\color{magenta}B}$ }
 The gravitational anomaly, $\left[\operatorname{SO}(1,3)\right]^2\operatorname{U}(1)_Y$, and the cubic anomaly, $\left[\operatorname{U}(1)_X\right]^3$,
 can be written as the following system of Diophantine equations, respectively,
 \begin{align}
@@ -417,9 +466,9 @@ where $N=N'+5$ and
 $\to$
 \begin{align}
 \label{eq:Qzero}
-    9Q=-\sum_{\alpha=N'+1}^{N'+5}z_\alpha=-x'+x''\color{blue}+L+L+L\,,
+    9{\color{red}Q}=-\sum_{\alpha=N'+1}^{N'+5}z_\alpha=-x'+x''\color{blue}+L+L+L\,,
 \end{align}
-$\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
+$\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 \end{frame}
 
 %%%%%%%%%%%%%%%
@@ -450,17 +499,6 @@ $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 
 % \end{frame}
 
-{
-\usebackgroundtemplate{\includegraphics[width=0.8\paperwidth]{ano4}}
-\setbeamertemplate{blocks}[rounded][shadow=false]
-\setbeamercovered{invisible}
-\begin{frame}[plain]
-\begin{picture}(320,250)  
-  \put(0,-7){\includegraphics[scale=0.1]{encircle}}
-\end{picture}
-\end{frame}
-%%%%%%%%%%%%%%%%%%
-}
 
 
 \begin{frame}
@@ -488,7 +526,7 @@ $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 
   \end{columns}
 
-  \invisible<1-4>{\only<5>{{\color{red}959} solutions from $\sim 400,000$}}
+  \invisible<1-4>{\only<5>{{\color{red}959} solutions from $\sim 400,000$}  (as in $\operatorname{U}(1)_{\color{red}D}$)   }
 
   \invisible<1-4>{
     \begin{minipage}[t]{3.0\linewidth}
@@ -545,194 +583,11 @@ $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 \end{frame}
 
 
-% \section{Baryogenesis}
-\section{Electroweak baryogenesis}
-\begin{frame}
-  \frametitle{Problems}
-  \begin{itemize}
-%check: coloremoji/emoji_images/hires/
-\item Standard model (SM)  $m_h\sim 40\text{~GeV}$. \includegraphics{1F61E}
-\item Beyond the SM: Source of CP contains fields charged under SM\\ $\to$ too large electric dipole moments \includegraphics{1F629}
-\end{itemize}
-\end{frame}
 
 
 \begin{frame}
-  \frametitle{Dark sectors}
-\begin{itemize}
-\item Inert SM-singlet complex scalar field which acquires vev with temperature to have strong electroweak phase transition \includegraphics{1F60A}
-\item CP violation (CPV) triggered in dark sectors through SM gauge singlets\\
-  $\to$ CPV Yukawa between SM-singlet complex scalar and SM-singlet quiral fermions \includegraphics{1F600}
-\end{itemize}
-  
-\end{frame}
-
-\begin{frame}
-  \only<1>{\includegraphics[scale=0.8]{triangle1}}
-  \only<2>{\includegraphics[scale=0.8]{triangle2}}
-\end{frame}
-  
-
-%%missing here
-
-
-
-
-\begin{frame}
-  \frametitle{Dark sector baryogenesis}
-  \includegraphics[scale=0.55]{new-baryogenesis}
-
-  \begin{flushright}
-      \tiny{from: [1] Carena, \emph{et al}, arXiv:1908.04818 [PRD] (see also: arXiv:1811.09719 [PRL]) }
-  \end{flushright}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Baryogenesis}
-  CP violation occurs in the dark sector and is transmited to SM sector by the new $Z'$ gauge boson.
-
-  \begin{itemize}
-  \item   High scale fields:
-  $
-  \Phi\,,\qquad  \left( \langle\Phi\rangle \to L'_L, L''_R,e'_L,e''_R\text{:~ EW-scale vector-like anomalons}\right) 
-  $
-  
-  
-\item Electroweak scale (EW) fields:
-  \fcolorbox{red}{yellow}{ $ Z'_\mu, S, \chi_L,\chi_R $}
-\item $CP$-violation 
-    \begin{align*}
-      \mathcal{L}_{\text{Dirac DM}}=&h \left(\chi_L\right)^\dagger \chi_R \Phi^* + {\color{red} y \left(\chi_L\right)^\dagger \chi_R S^*}+\text{h.c}\,,& {\color{red}y}\in&\mathbb{C}\\
-      \supset& \left( m_{\chi} + {\color{red}|y| \operatorname{e}^{i\theta}|S|} \right)\left(\chi_L\right)^\dagger \chi_R+\text{h.c}\,.&&
-  \end{align*}
-  \item $CP$-violation Portal
-    \begin{align*}
-\mathcal{L}_{\text{anomalous}} \supset g^{\prime} Z_{\mu}^{\prime}\left[3 \bar{\chi}_{L} \gamma^{\mu} \chi_{L}-2\bar{\chi}_{R} \gamma^{\mu} \chi_{R}+\bar{Q}_{i} \gamma^{\mu} Q_{i}+\bar{q}_{Ri} \gamma^{\mu} q_{Ri}\right]
-    \end{align*}
-  \item Strong electroweak phase transition (EWPT) portal
-    \begin{align*}
-      \mathcal{L}_{\text{first order EWPT}}\supset -\lambda_{S H} H^{\dagger}H\, S^{*}S\,.
-    \end{align*}
-  \end{itemize}
-
-\end{frame}
-
-\begin{frame}
-  \frametitle{First-order phase transition: Effective potential ($T\ne 0$)}
-\fcolorbox{red}{yellow}{  $h=H/\sqrt{2}$, $s=|S|$ } with vevs: $v(T)$ and $w(T)$ such that $v(T_c)=w(T_c)$
-\begin{align}
-   V_T(h,s)\,=\,& \frac{\lambda_H v_c^4}{4}\left(\frac{h^2}{v_c^2} +\frac{s^2}{w_c^2} -1\right)^2 + \frac{\lambda_H v_c^2}{m_{s,c}^2 w_{0,c}^4}h^2 s^2 
-     + (T^2-T_c^2)(c_h h^2 +c_s s^2)\,, %+ {\color{red} \frac{1}{12}T^2 \lambda\, m_\chi\, } S,
-\end{align}
-where
-\begin{align}
-    c_h\,=\,&\frac{1}{48} \left(9g_2^2+ 3g_1^2 +12 y_t^2 +24 \lambda_H +\lambda_{HS}\right)\, ,\quad
-    c_s\,=\,  \frac{1}{12} \left (3 \lambda_S + 2 \lambda_{HS} \right)\,. 
-\end{align} 
-\vspace{-0.4cm}
-\begin{columns}
-  \begin{column}{0.5\textwidth}
-\includegraphics[scale=0.6]{bubble}    
-  \end{column}
-  \begin{column}{0.5\textwidth}
-\invisible<1>{\tiny arXiv: Sec.~4.1 arXiv:1107.5451 }
-\invisible<1>{\only<2>{\includegraphics[scale=0.5]{v1}}%
-\only<3>{\includegraphics[scale=0.5]{v2}}%
-\only<4>{\includegraphics[scale=0.5]{v3}}%
-      }
-  \end{column}
-\end{columns}
-
-
-\end{frame}
-\begin{frame}[fragile,allowframebreaks]
-\frametitle{$CP$ assymetry generation}
-
-
- Using the thin wall approximantion for the nucleation bubbles,
-  we use the ansatz in which the space dependence of the fields is given by 
-\begin{equation*}
-    h(z) \,=\, \frac{1}{2}v(T_n) \left(1- \tanh \left(z/L_w \right) \right)\,,\qquad
-    s(z) \,=\, \frac{1}{2}w_0(T_n) \left(1+ \tanh \left(z/L_w \right) \right)\,, 
-\end{equation*}  
-where $z$ is the direction normal to the wall and $L_w$ is the wall width.
-
-%\newpage{}
-The nucleation temperature, $T_n$, is defined by the condition
-\begin{equation*}
-    \exp \left (-S_3 /T_n \right) \,=\, \frac{3}{4\pi}\left(\frac{H(T_n)}{T_n} \right)^4 \left(\frac{2\pi\,T_n}{S_3}\right)^{\frac{3}{2}} \,,
-\end{equation*}
- where $S_3$ is the Euclidean action of the bubble and $H(T)$ is the Hubble rate.
-
-
-
-\end{frame}
-
-\begin{frame}[fragile,allowframebreaks]
-\frametitle{Boltzmann equation}
- $\xi_i(z)\,\equiv\,{\mu_i(z)}/{T} \,=\,{6}\left(n_i - \overline{n}_{i} \right)/{T^3}$,
-\begin{equation*}
-- D_L \xi''_{\chi_L} -v_w\xi'_{\chi_L} +\Gamma_L(\xi_{\chi_L}-\xi_{\chi_R})\,=\,S_{\cancel{CP}}\,,
-\end{equation*}
-where $D_L$ is the diffusion constant for $\chi_L$, which is related to the scattering rate $\Gamma_L$ by
-\begin{align}
-  D_L= \frac{3x+2}{x^2 +3x+2}\frac{1}{3\Gamma_L}, \qquad\qquad x\equiv m_\chi /T\,
-\end{align}
- and
-\begin{align}
-  S_{\cancel{CP}}\,=\,-\frac{\lambda}{2}\frac{v_w D_L}{\frac{3x+2}{x^2 +3x+2} T} \frac{(1-x)e^{-x} + x^2 E_1(x) }{4m_\chi^2 K_2(x)}
-  \frac{m_\chi w_0(T_n) \lambda \left(-2+\cosh \left(\frac{2z}{L_w} \right) \right)\sin \theta}{L_w^3 \cosh^4 \left(\frac{z}{L_w} \right)}\,,
-\end{align}
-where $v_w$ is the wall's velocity 
-$E_1(x)$ is the error function and $K_2(x)$ is the modified Bessel function of the second kind. ${\color{red}y}=\lambda\operatorname{e}^{i\theta -i\pi/2}$
-
-\end{frame}
-
-
-\begin{frame}
-\frametitle{Transfer DM assymetry to SM quarks}
-The chiral particle give rise to a non-zero $\operatorname{U}(1)_B$ charge density in the proximity of the wall. This results in a $Z'$ background that couples to the SM fields with $\operatorname{U}(1)_B$ charge,
-\begin{equation*}
-    \langle Z'_0(z) \rangle \,=\, \frac{ g_B\,(q_{\chi_L}-q_{\chi_R})T_n^3}{6 M_{Z'}} \int_{-\infty}^\infty \operatorname{d}z_1\, \xi_{\chi_L}(z_1)\, e^{-M_{Z'}|z-z_1|}\, , 
-\end{equation*} which generates a chemical potential for the SM quarks, 
-\begin{equation*}
-\mu_{Q}(z)\,=\, \mu_{d_R,u_R}(z)\,=\, 3 \times \frac{5}{9} \times g_B \langle Z'_0 (z) \rangle. 
-\end{equation*} 
-This chemical potential sources a thermal-equilibrium asymmetry in the quarks, $ \Delta n_{Q}^{\rm EQ} (z) \,\sim \, T_n^2 \, \mu_{Q}(z)$. 
-
-From [1]
-\begin{quote}
-\fcolorbox{red}{yellow}{If the $Z'$ is sufficiently
-light, it mediates a long range force that extends into the region }
-\fcolorbox{red}{yellow}{ outside the bubble wall with
-unbroken electroweak symmetry. }
-
-\end{quote}
-
-\end{frame}
-\begin{frame}
-  \frametitle{Finally, the baryon-number asymmetry is then given by}
-
-\begin{equation*}
-  n_B\,=\,  \frac{\Gamma_{\rm sph}}{v_w} \int_0^{\infty}\operatorname{d}z\, n_{Q}^{\rm EQ} (z)\, \exp\left(-\frac{\Gamma_{\rm sph}}{v_w}\,z\right)\,,
-\end{equation*} 
-where $\Gamma_{\rm sph}$ is the sphaleron rate. The baryon-to-photon-number ratio is then obtained by
-\begin{equation*}
- \eta_B \,=\, \frac{n_B}{s(T_n)},\quad s (T) \,\equiv\,\frac{2\pi^2}{45} g_{*S}(T)\, T^3\,, 
-\end{equation*} where $g_{*S}(T)$ is the effective number of relativistic degrees of freedom.
-
-Our goal is to find what regions of the parameter space yield
-%
-\begin{align}
-\label{eq:eta-value}
-0.82\times 10^{-10} < \eta_B < 0.92\times 10^{-10}\,.
-\end{align}
-
-
-\end{frame}
-
-\begin{frame}
-  \frametitle{https://github.com/anferivera/DarkBariogenesis}
+  \frametitle{arXiv:2205.05762 [PRD]
+    \url{https://github.com/anferivera/DarkBariogenesis}}
 
   \begin{itemize}
   \item   SARAH$\to$SPheno$\to$MicroMegas
@@ -741,43 +596,12 @@ Our goal is to find what regions of the parameter space yield
   \item Python notebook with the scan 
   \end{itemize}
 
-  \begin{block}{arXiv:1810.08055}
-\textbf{Ten Simple Rules for Reproducible Research in Jupyter Notebook}
-Fernando Pérez,\emph{et al} 
-
-[...] In this paper, we address several questions about reproducibility
-[...]
-Combined with software repositories and open source licensing, notebooks are powerful tools for transparent, collaborative, reproducible, and reusable data analyses.
-  \end{block}
-
-
   
 \end{frame}
 
 
 
 
-\begin{frame}
-  \frametitle{Results}
-  We vary the typical Dirac-fermion DM parameter space and for each point that satisfy neutrino oscillation data, relic density and DM direct detection constraints. For each point  we ... 
-  
-  \begin{table}[t]
-\centering
-\begin{tabular}{c|c} 
-\hline
-Parameter & Range\\
-\hline
-$\theta$ & $(-\pi/2 \,, \pi/2)$  \\
-$w_0(T_n)/{\rm GeV} $ &  $100-500$\\
-$T_n/{\rm GeV}$ &  $100-200$\\
-$L_w /{\rm GeV^{-1}}$ &  $1/T_n - 10/T_n$\\
-$v_w$ &  $0.05 - 0.5$\\
-\hline
-\end{tabular}
-\caption{Scan ranges for the free parameters that are involved in the baryogenesis mechanism.}
-\label{tab:scan-baryogenesis}
-\end{table}
-\end{frame}
 
 \begin{frame}
   \frametitle{Black points: Dirac neutrinos with proper DM and baryon assymetry}
@@ -786,12 +610,17 @@ $v_w$ &  $0.05 - 0.5$\\
  
 \begin{frame}
   \frametitle{Conclusions}
-  A $\operatorname{U}(1)_B$ is presented as an example of models where all new fermions required to cancel out the anomalies are used to solve phenomenological problems of the standard model (SM):
-  \begin{itemize}
-  \item   EW-scale fermion vector-like doublets and iso-singlet charged singlets, in conjunction with right-handed neutrinos with repeated Abelian charges, participate in the generation of small neutrino masses through the Dirac-dark Zee mechanism
-  \item The other SM-singlets are used to explain the dark matter in the universe, while their coupling to an inert singlet scalar is the source of the $CP$ violation.
-  \end{itemize}
-In the presence of a strong first-order electroweak phase transition, this ``dark'' $CP$ violation allows for successful electroweak baryogenesis by using long range force mediated by a sufficiently light $Z'$ which transfers the assymmetry from the Dark sector into the SM.
+  A systematic way to find all the \emph{universal} Abelian extensions of the standard model is formulated
+
+  All of them can be reformulated as the solution of
+  \begin{align*}
+    \sum_{\alpha=1}^N z_\alpha=&0\,,&
+    \sum_{\alpha=1}^N z_\alpha^3=&0\,,
+\end{align*}
+which we fully scan until $N=12$ and $\left| z_{\text{max}} \right|=20$
+
+Once the physical conditions are stablished, the full set of self-consistent model are found from a simple data-analysis procedure
+
 \end{frame}
 
 \end{document}  
