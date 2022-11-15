@@ -34,8 +34,8 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{ Dirac dark matter, neutrino masses,}
-\subtitle{and dark baryogenesis}
+\title{Effective Dirac neutrino masses in local Abelian symmetries}
+\subtitle{with \emph{dark} matter and \emph{dark} baryogenesis}
 
 
 %\subtitle
@@ -57,7 +57,7 @@ Phenomenology Group %\\
 }%
 {http://gfif.udea.edu.co}%
 {}%
-{pppia}% small image here, use pixel for nothing
+{china}% small image here, use pixel for nothing
 {}
 \arxiv{ arXiv:2112.09524 [Frontiers in Physics]  arXiv:2205.05762 [PRD]
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
@@ -147,8 +147,8 @@ Phenomenology Group %\\
       
           {\color{red}LHC production: }
           \begin{align*}
-            \text{Gauged Symmetry: $\color{red}\mathcal{X}\to B$: }&\color{red} q\overline{q}\to Z'\to \text{jets} \\
-            \text{Gauged Symmetry: $\color{blue}\mathcal{X}\to L$: }&
+            \text{Gauged Symmetry: $\color{red}\mathcal{X}\to \only<3>{D}\only<4->{B}$: }&\invisible<3>{\color{red} q\overline{q}\to Z'\to \text{jets}} \\
+            \text{Gauged Symmetry: $\color{blue}\mathcal{X}\to \only<3>{X}\only<4->{L}$: }&
           \end{align*}
     \end{minipage}
   }}%
@@ -156,8 +156,8 @@ Phenomenology Group %\\
 \only<3->{\put(120,-10){$\color{red}\overline{\Psi}\Psi=\color{blue}\psi_1\psi_2+\psi_1^\dagger\psi_2^\dagger\to \psi_\alpha\psi_\beta \Phi^{(*)}\,,\qquad \alpha=1,\ldots N\to N>4 $}}
 \only<3->{\put(204,0){ \begin{overpic}[scale=0.2]{tcdm1}\end{overpic}}}%
 
-\only<4->{\put(280,0){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
-\only<4->{\put(296,40){ {\huge 
+\only<5->{\put(280,0){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
+\only<5->{\put(296,40){ {\huge 
         \hspace{0.4cm}\begin{minipage}{3cm}
           \small multi-component\\
 
@@ -222,7 +222,7 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
 
 
 \begin{frame}
-  \frametitle{Simplest secluded model with SM-singlet massive chiral fermions from SSB}
+  \frametitle{Simplest secluded model with SM-singlet massive chiral fermions from SSB: $\operatorname{U}(1)_{\color{magenta}D}$}
 \begin{align}
   \mathcal{L}=i \psi_{i}^{\dagger}\cancel{\mathcal{D}}\psi_{i}-\frac{1}{4}V_{\mu\nu} V^{\prime \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c}
 \end{align}
@@ -254,10 +254,10 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
 
 \begin{frame}
   \frametitle{Effective Dirac neutrino mass operator}
-Deacrese the number of charges to be assigned to dark matter particles, $\psi_i$ below\only<2>{}
+Decrease the number of charges to be assigned to dark matter particles, $\psi_i$ below\only<2>{}
   \begin{align*}
     &\left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]&\\
-    \text{Secluded case} && \invisible<1>{\text{Active case}}\\
+    \text{Secluded case: $\color{red}$} && \invisible<1>{\text{Active case: $\color{blue}$}}\\
     \left[{\color{red}\nu,\nu, (\nu)}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]&
     &\invisible<1>{\left[{\color{red}\nu,\nu, (\nu)},{\color{blue}m,m,m}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]}
   \end{align*}
@@ -374,7 +374,7 @@ The anomaly-cancellation conditions on $\left[\operatorname{SU}(3)_c\right]^{2} 
 \end{frame}
 
 \begin{frame}
-    \frametitle{$\operatorname{U}(1)_{\color{blue}X}$ selection}
+    \frametitle{$\operatorname{U}(1)_{\color{cyan}X}$ selection}
 
       \begin{columns}
     \begin{column}{0.7\textwidth}
@@ -502,7 +502,7 @@ $\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q
 
 
 \begin{frame}
-    \frametitle{$\operatorname{U}(1)_{\color{red}B}$ selection}
+    \frametitle{$\operatorname{U}(1)_{\color{magenta}B}$ selection}
 
       \begin{columns}
     \begin{column}{0.7\textwidth}
@@ -610,16 +610,16 @@ $\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q
  
 \begin{frame}
   \frametitle{Conclusions}
-  A systematic way to find all the \emph{universal} Abelian extensions of the standard model is formulated
+  A methodology to find all the \emph{universal} Abelian extensions of the standard model is designed
 
-  All of them can be reformulated as the solution of
+  All of the extensions can be reformulated as the solution of
   \begin{align*}
     \sum_{\alpha=1}^N z_\alpha=&0\,,&
     \sum_{\alpha=1}^N z_\alpha^3=&0\,,
 \end{align*}
 which we fully scan until $N=12$ and $\left| z_{\text{max}} \right|=20$
 
-Once the physical conditions are stablished, the full set of self-consistent model are found from a simple data-analysis procedure
+Once the physical conditions are stablished, the full set of self-consistent models are found from a simple data-analysis procedure
 
 \end{frame}
 
