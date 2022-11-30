@@ -34,7 +34,7 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Effective Dirac neutrino masses in local Abelian symmetries}
+\title{Gauged Lepton number}
 \subtitle{with \emph{dark} matter and \emph{dark} baryogenesis}
 
 
@@ -57,12 +57,12 @@ Phenomenology Group %\\
 }%
 {http://gfif.udea.edu.co}%
 {}%
-{china}% small image here, use pixel for nothing
+{comhep_small}% small image here, use pixel for nothing
 {}
-\arxiv{ arXiv:2112.09524 [Frontiers in Physics]  arXiv:2205.05762 [PRD]
+\arxiv{ ... %arXiv:2112.09524 [Frontiers in Physics]  arXiv:2205.05762 [PRD]
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
 }
-\collaborators{ Andrés Rivera (UdeA), David Suárez (UdeA), Walter Tangarife (Loyola University Chicago)
+\collaborators{Leonardo Leite, Orlando Peres, William Novelo (UNICAMP), David Suárez (UdeA)
 %  Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, David Suárez
 }
 }
@@ -187,16 +187,21 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
 \begin{itemize}
 \item<1-> From a list of $N-2$ integers,  e.g., for $N$ even
   \begin{align}
-    \boldsymbol{q}=\left[l_1,l_2,\cdots,l_{n},k_1,k_2,\cdots,k_{n}\right],\qquad n=(N-2)/2\,.
+    \boldsymbol{q}=\only<1-3>{\left[l_1,l_2,\cdots,l_{n},k_1,k_2,\cdots,k_{n}\right],\qquad n=(N-2)/2\,.}%
+                   \only<4->{\left[2,3,-1,-3\right],\qquad n=6\,.}
   \end{align}
-  in the range $[-m,m]$, build two vector-like solutions of $N$ integers,
+  in the range $\only<1-3>{[-m,m]}\only<4->{[-3,3]}$, build two vector-like solutions of $\only<1-3>{N}\only<4->{6}$ integers,
   \begin{align}
-    \boldsymbol{x}=&\left[{\color{blue}l_1},{\color{red}k_1},\cdots {\color{Green}k_n},
+    \boldsymbol{x}=&\only<1-3>{\left[{\color{blue}l_1},{\color{red}k_1},\cdots {\color{Green}k_n},
                      -{\color{blue}l_1},-{\color{red}k_1},\cdots -{\color{Green}k_n},
-                     \right] &
-        \boldsymbol{y}=& \left[0,0,{\color{blue}l_1},\cdots {\color{red}l_n},-{\color{blue}l_1},\cdots -{\color{red}l_n}  \right]
+                     \right]}%
+                    \only<4->{\left[{\color{blue}2},{\color{red}-1},{\color{Green}-3},
+                     -{\color{blue}2},{\color{red}1},{\color{Green}3},
+                     \right]}&
+     \boldsymbol{y}=& \only<1-3>{\left[0,0,{\color{blue}l_1},\cdots {\color{red}l_n},-{\color{blue}l_1},\cdots -{\color{red}l_n}  \right]}%
+                      \only<4->{\left[0,0,{\color{blue}2},\cdots {\color{red}3},-{\color{blue}2},\cdots -{\color{red}3}  \right]}
   \end{align}
-\item<2-> Obtain a (some times) {\color{blue}non vector-like} solution with $z_{\text{max}}=2m$ 
+\item<2-> Obtain a (some times) {\color{blue}non vector-like} solution with $z_{\text{max}}=\only<1-3>{2m}\only<4>{2\times 3=6}$ 
   \begin{align}
     \boldsymbol{z}=\boldsymbol{x}\oplus\boldsymbol{y}=\left( \sum_{i=1}^Nx_iy_i^2 \right)\boldsymbol{x}
     +\left( \sum_{i=1}^Nx_i^2y_i \right)\boldsymbol{y}\,,
@@ -209,7 +214,7 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
 \begin{align}
 \text{  \# of $\boldsymbol{q}$ lists} =(2m+1)^{N-2}=
   \begin{cases}
-    9261 \to {\color{blue}3} & N=5 \invisible<1-3>{\to{\color{blue}[1, 5, -7, -8, 9]}}\\
+    9261 \to {\color{blue}3} & N=5 \invisible<1-3>{\to{\color{blue}[1, -2, -3, 5, 5, -6]}}\\
     194841 \to {\color{blue}38}& N=6\\
     \vdots & \vdots\\
     1.6\times 10^{13}\to {\color{blue}65910} & N=12\,, \text{\qquad instead $10^{19}$ }\\
@@ -220,11 +225,41 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
   
 \end{frame}
 
+\begin{frame}
+  \frametitle{\url{https://pypi.org/project/anomalies/}}
+\begin{picture}(320,250)  
+  \put(0,15){\includegraphics[scale=0.45]{anomalies}}
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\url{https://restrepo.github.io/Advanced_Computation}}
+\begin{picture}(320,250)  
+  \put(0,15){\includegraphics[scale=0.45]{book}}
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\url{ https://doi.org/10.5281/zenodo.7380817}}
+\begin{picture}(320,250)  
+  \put(0,15){\includegraphics[scale=0.45]{zenodo2}}
+  \put(28,10){\includegraphics[scale=0.1]{encircle}}
+\end{picture}
+\end{frame}
+
+\begin{frame}
+  \frametitle{\url{https://pypi.org/project/yukawa/}}
+\begin{picture}(320,250)  
+  \put(0,15){\includegraphics[scale=0.45]{yukawa}}
+\end{picture}
+\end{frame}
+
+
 
 \begin{frame}
   \frametitle{Simplest secluded model with SM-singlet massive chiral fermions from SSB: $\operatorname{U}(1)_{\color{magenta}D}$}
 \begin{align}
-  \mathcal{L}=i \psi_{i}^{\dagger}\cancel{\mathcal{D}}\psi_{i}-\frac{1}{4}V_{\mu\nu} V^{\prime \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c}
+  \mathcal{L}=i \psi_{i}^{\dagger}\cancel{\mathcal{D}}\psi_{i}-\frac{1}{4}V_{\mu\nu} V^{ \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c}
 \end{align}
 {\color{blue} 96\,153 $\to$ 5\,196 multi-component DM ($N=8,12$) $\to$ 28 with two Dirac-fermion DM} \only<2-3>{}
 
@@ -252,29 +287,8 @@ Any local Abelian extension of the Standard Model can be reduced to a set of int
 }
 \end{frame}
 
-\begin{frame}
-  \frametitle{Effective Dirac neutrino mass operator}
-Decrease the number of charges to be assigned to dark matter particles, $\psi_i$ below\only<2>{}
-  \begin{align*}
-    &\left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]&\\
-    \text{Secluded case: $\color{red}$} && \invisible<1>{\text{Active case: $\color{blue}$}}\\
-    \left[{\color{red}\nu,\nu, (\nu)}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]&
-    &\invisible<1>{\left[{\color{red}\nu,\nu, (\nu)},{\color{blue}m,m,m}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]}
-  \end{align*}
-\begin{align}
-  { \color{red}  \chi_1\to \nu_{R1},\cdots, \chi_{N_\nu}\to \nu_{R\, N_\nu},\qquad 2\le N_\nu\le 3\,,}&&
-\invisible<1>{   \color{blue}X(L_{i})=-L\,,\ X(H)=h\qquad \to m=L-h }%-h=m-L → h=L-m
-\end{align}
-  \begin{align*} 
-    \mathcal{L}_{\text{eff}} = h_{\nu}^{\alpha i} \, {\color{red}\left( \nu_{R\alpha}\right)^{\dagger}} \, \epsilon_{ab} \, {\color{blue} L_i^a }\,\only<1>{H^{b}}{\only<2>{\color{blue}H^b}} \left(\frac{{\color{Green}\Phi^*}}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i=1,2,3$}\,,
-\end{align*}
-$\Phi$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry with \only<1>{$D$}\only<2>{$X$}-charge 
-\begin{align}
-     \label{eq:effcon}
-   \invisible<2>{\delta}{\color{Green} \phi}=-\invisible<1>{(}{\color{red}\nu}\invisible<1>{+{\color{blue}m})/\delta}\,, %-\nu-L+h-\delta \phi=0 → \delta \phi= -\nu -L+L-m=-\nu-m
-\end{align}
 
-\end{frame}
+
 
 
 \begin{frame}
@@ -305,113 +319,6 @@ new fermion content: $\color{blue}L=e=0$ for $\mathcal{X}=\color{red}B$. Or $\co
     \label{tab:partcont2}
 \end{table}
 \end{frame}
-
-\begin{frame}
-  \frametitle{Anomaly cancellation: $\mathcal{X}=\color{cyan}X$}
-The anomaly-cancellation conditions on $\left[\operatorname{SU}(3)_c\right]^{2}  \operatorname{U}(1)_{X}$, $\left[\operatorname{SU}(2)_{L}\right]^{2} \operatorname{U}(1)_{X}$, $\left[\operatorname{U}(1)_{Y}\right]^{2} \operatorname{U}(1)_{X}$,  allow us to express three of the $X$-charges in terms of the others\only<2-3>{}
-\begin{align}\label{eq:sol0}
-  \color{red}u=&-{\color{blue}e}-\frac23 {\color{blue}L}-\frac19\left(x'-x''\right)\,,& 
-\color{red}  d=& {\color{blue}e}+\frac43 {\color{blue}L}-\frac19\left(x'-x''\right)\,,& 
-\color{red}  Q=& -\frac13 {\color{blue}L}+\frac19\left(x'-x''\right)\,,
-\end{align}
- while the $\left[\operatorname{U}(1)_{X}\right]^{2} \operatorname{U}(1)_{Y}$ anomaly condition reduces to
- \begin{align}
-     {\color{blue}(e+L)}(x'-x'')=0\,.
- \end{align}
- \vspace{-1cm}
-   \invisible<1>{   
- \begin{itemize}
- \item If: $x'=x''$ or $x'=x''=0$ 
- \item We need $\color{blue}h=-e-L=L-m$:
- \end{itemize}
-\begin{align*}
-  {\color{red}u}=&\frac{4 {\color{blue}L}}{3}-m\,,& {\color{red}d}=m-\frac{2 {\color{blue}L}}{3}& \,,& {\color{red}Q}=& -\frac{{\color{blue}L}}{3}\invisible<1-2>{\ne 0}\,,& {\color{blue}e}=& m-2 {\color{blue}L}\,,&
-    h =& {\color{blue}L}-m\,,
-\end{align*}
-
- 
-    }
-\end{frame}
-
-{
-\usebackgroundtemplate{\includegraphics[width=0.8\paperwidth]{ano4}}
-\setbeamertemplate{blocks}[rounded][shadow=false]
-\setbeamercovered{invisible}
-\begin{frame}[plain]
-\begin{picture}(320,250)  
-  \put(0,-7){\includegraphics[scale=0.1]{encircle}}
-\end{picture}
-\end{frame}
-%%%%%%%%%%%%%%%%%%
-}
-
-
-\begin{frame}
-  \centering
-  \includegraphics[scale=0.58]{effsols}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Multi-generational dark matter}
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.7]{generationall}
-    \caption{ 
-    }
-    \label{fig:generation}
-\end{figure}  
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Multi-component dark matter}
-  \begin{figure}
-    \centering
-    \includegraphics[scale=0.7]{numberall}
-     \caption{ }
-    \label{fig:number}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-    \frametitle{$\operatorname{U}(1)_{\color{cyan}X}$ selection}
-
-      \begin{columns}
-    \begin{column}{0.7\textwidth}
-      \begin{itemize}
-      \item<1-> Active symmetry $m=3$
-      \item<2-> Effective neutrino mass $\delta=2\to$ $\nu=-5$: 
-      \item<3-> Active symmetry: $m=3\to$  $\only<2>{\color{red}}\phi=-(\nu+m)/\delta=1$
-      \item<4-> Dirac-fermionic DM: $\only<4>{\color{red}}\left(\psi_L\right)^\dagger \psi_R''\Phi^*\to z_6=-7,\ z_7=8$
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.3\textwidth}
-      \vspace{1cm}
-      %(3, 3, 3, −5, −5, −7, 8)
-      \Large $(
-      {\only<1->{\color{black}}\only<2>{\color{red}}-5, -5},
-      {\only<1->{\color{black}}\only<3>{\color{red}}3,3,3},
-      {\only<1->{\color{black}}\only<4>{\color{red}}-7,8})$
-
-
-    %\hfill  \tiny{\url{Dreamstime.com}}  
-    \end{column}
-
-  \end{columns}
-  \invisible<1-4>{\only<5>{{\color{red}$1\,122$} solutions from $\sim 400,000$}
-
-\includegraphics[scale=0.45]{dmz}    \includegraphics[height=4.5cm]{u1blc5}
-
-
-
-  }
-
-
-  \end{frame}
-
-
-
-
 
 
 \begin{frame}
@@ -448,7 +355,7 @@ If $\color{red}B=0$ $\to \operatorname{U}(1)_{\color{blue}L}$
 
 %%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Anomaly cancellation: $\mathcal{X}={\color{magenta}B}$ }
+  \frametitle{Anomaly cancellation: $\mathcal{X}={\color{cyan}L}$ }
 The gravitational anomaly, $\left[\operatorname{SO}(1,3)\right]^2\operatorname{U}(1)_Y$, and the cubic anomaly, $\left[\operatorname{U}(1)_X\right]^3$,
 can be written as the following system of Diophantine equations, respectively,
 \begin{align}
@@ -457,16 +364,16 @@ can be written as the following system of Diophantine equations, respectively,
     \sum_{\alpha=1}^N z_\alpha^3=&0\,,
 \end{align}
 %
-where $N=N'+5$ and
+where 
 \begin{align}
 \label{eq:Nalpha}
-    z_{N'+1}=&-x'\,, &&& z_{N'+2}=&x''\,,\nonumber\\
-   & &\color{blue}z_{N'+2+i}&\color{blue}=L\,,\quad i=1,2,3&&
+    z_{1}=&-x'\,, &&& z_{2}=&x''\,,\nonumber\\
+   & &\color{blue}z_{2+i}&\color{blue}=L\,,\quad i=1,2,3&&
 \end{align}
 $\to$
 \begin{align}
 \label{eq:Qzero}
-    9{\color{red}Q}=-\sum_{\alpha=N'+1}^{N'+5}z_\alpha=-x'+x''\color{blue}+L+L+L\,,
+    9{\color{red}Q}=-\sum_{\alpha=1}^{5}z_\alpha=-x'+x''\color{blue}+L+L+L\,,
 \end{align}
 $\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q=0$ $\cancel{\to}$ $\operatorname{U(1)}_{\color{blue}L}$
 \end{frame}
@@ -502,23 +409,26 @@ $\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q
 
 
 \begin{frame}
-    \frametitle{$\operatorname{U}(1)_{\color{magenta}B}$ selection}
+    \frametitle{$\operatorname{U}(1)_{\color{cyan}L}$ selection}
 
       \begin{columns}
-    \begin{column}{0.7\textwidth}
+    \begin{column}{0.6\textwidth}
       \begin{itemize}
-      \item<1-> $\color{blue}L=0$
-      \item<2-> Effective neutrino mass: $\only<2>{\color{red}}\phi=-\nu=-5$
-      \item<3-> Electroweak-scale vector-like fermions: $\only<3>{\color{red}}\left(L_L'\right)^\dagger L_R''\Phi^*\to x'=-1,\ x''=6$
-      \item<4-> Dirac-fermionic DM: $\only<4>{\color{red}}\left(\chi_L\right)^\dagger \chi_R''\Phi^*\to z_3=-3,\ z_4=-2$
+      \item<1-> $\color{red}B=0$ with $\color{blue}L=6$
+      \item<2-> Electroweak-scale vector-like fermions with $\Phi=18$: $\only<2>{\color{red}}\left(L_L'\right)^\dagger L_R''\Phi\to x'=8,\ x''=-10$
+      \item<3-> $\color{blue}L+L+L\color{red}-x'+x''=0$ 
+      \item<4-> Dirac-fermionic DM: $\only<4>{\color{Green}}\left(\chi_L\right)^\dagger \chi_R'\Phi^*\to z_3=5,\ z_4=13$
+      \item<5-> (Two generations) Majorana-fermionic DM: $\only<4>{\color{Green}}\left(\chi''_i\right)^\dagger \chi''_j\Phi\to z_5=-9,\ z_6=-9$        
       \end{itemize}
     \end{column}
-    \begin{column}{0.3\textwidth}
+    \begin{column}{0.4\textwidth}
       \vspace{1cm}
       
-      \Large $({\only<1->{\color{black}}\only<2>{\color{red}}5, 5},
-      {\only<1->{\color{black}}\only<4>{\color{red}}-3, -2},
-      {\only<1->{\color{black}}\only<3>{\color{red}}1, -6})$
+      \Large $({\only<1->{\color{blue}}6, 6, 6},
+      {\only<1->{\color{black}}\only<2-3>{\color{red}}-8, -10},
+      {\only<1->{\color{black}}\only<4>{\color{Green}}5, 13},
+      {\only<1->{\color{black}}\only<5>{\color{Green}}-9, -9}
+      )$
 
 
     %\hfill  \tiny{\url{Dreamstime.com}}  
@@ -526,20 +436,36 @@ $\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q
 
   \end{columns}
 
-  \invisible<1-4>{\only<5>{{\color{red}959} solutions from $\sim 400,000$}  (as in $\operatorname{U}(1)_{\color{red}D}$)   }
+  \invisible<1-5>{\only<6>{Only {\color{red}4} solutions from $96\,153$}    }
 
-  \invisible<1-4>{
+  \invisible<1-5>{
     \begin{minipage}[t]{3.0\linewidth}
-      \includegraphics[scale=0.45]{number}\hspace{0.5cm}\includegraphics[scale=0.45]{generation}
+      \includegraphics[scale=0.7]{foursltns}
     \end{minipage}
   }
 
   \end{frame}
 
+\begin{frame}
+  \frametitle{Dark sector baryogenesis}
+  \includegraphics[scale=0.55]{new-baryogenesis}
+
+  \begin{flushright}
+      \tiny{from: [1] Carena, \emph{et al}, arXiv:1908.04818 [PRD] (see also: arXiv:1811.09719 [PRL]) }
+  \end{flushright}
+\end{frame}
+
 
 \begin{frame}
-  \frametitle{Scotogenic realization}
-  Any realization which does not affect anomaly cancellation is allowed
+  \only<1>{\includegraphics[scale=0.8]{triangle1}}
+  \only<2>{\includegraphics[scale=0.8]{triangle2}}
+\end{frame}
+  
+
+
+\begin{frame}
+  \frametitle{Gauge Baryon number scotogenic realization: arXiv:2205.05762 [PRD]}
+   with Andrés Rivera (UdeA) and Walter Tangarife (Loyola U.)%Any realization which does not affect anomaly cancellation is allowed
 
   \begin{columns}
     \begin{column}{0.6\textwidth}
