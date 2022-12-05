@@ -3,7 +3,41 @@
 \usepackage{talk}
 \usepackage{soul}
 \usepackage{bbold}
+\usepackage{multirow}
+%%%%%%%%%%%%%%%%%%%% listings%%%%%%%%%%%%%%%
+% BE SURE TO USE: \begin{frame}[fragile]
+\usepackage{listings}
+%New colors defined below
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+%Code listing style named "mystyle"
+\lstdefinestyle{mystyle}{
+  backgroundcolor=\color{backcolour},
+  commentstyle=\color{codegreen},
+  keywordstyle=\color{magenta},
+  numberstyle=\tiny\color{codegray},
+  stringstyle=\color{codepurple},
+  basicstyle=\ttfamily\footnotesize,
+  breakatwhitespace=false,         
+  breaklines=true,                 
+  captionpos=b,                    
+  keepspaces=true,                 
+  %numbers=left,                    
+  %numbersep=5pt,                  
+  showspaces=false,                
+  showstringspaces=false,
+  showtabs=false,                  
+  tabsize=2
+}
+
+%"mystyle" code listing set
+\lstset{style=mystyle}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \usepackage{array}   % for \newcolumntype macro
 \newcolumntype{L}{>{$}l<{$}} % math-mode version of "l" column type
 \newcolumntype{R}{>{$}r<{$}} % math-mode version of "r" column type
@@ -32,6 +66,10 @@
 \addtobeamertemplate{block begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 \addtobeamertemplate{block alerted begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
+
+\def\ypos{-11.7}
+\def\xpos{-28.3}
+
 
 
 \title{HEP computer tools}
@@ -546,82 +584,1056 @@ i\overline{\psi}\gamma^{\mu}\partial\psi -m_{e}\overline{\psi}\psi
 
 \end{frame}
 
-\begin{frame}
-\begin{picture}(320,250)
-\only<1->{\put(-24,-22){\begin{overpic}[scale=0.5]{dinoton1}\end{overpic}}}%
-\only<2->{\put(-24,-22){\begin{overpic}[scale=0.5]{dinoton2}\end{overpic}}}%
-\only<3->{\put(-24,-22){\begin{overpic}[scale=0.5]{dinoton3}\end{overpic}}}%
-\only<4->{\put(-24,-22){\begin{overpic}[scale=0.5]{du1}\end{overpic}}}%
-\only<5->{\put(-24,-22){\begin{overpic}[scale=0.5]{du2}\end{overpic}}}%  
-\end{picture}
+
+
+
+
+
+
+
+\lstset{
+  emph={git,emacs,math,MakeSPheno,MakeCHep,MakeUFO,newProject,SPhenoSSDM,Omega,proton,neutron,SI,CalcOmega,Start},
+  emphstyle=\color{red}
+  %otherkeywords={git },
+}
+
+\begin{frame}[fragile]
+  \frametitle{BSM-Submodules}
+  
+  Install compilers:
+  
+    \begin{lstlisting}[language=Sh]
+      sudo apt install build-essential gfortran feynmf
+    \end{lstlisting}
+
+ Download all the HEP-tools in one step:
+    
+    \begin{lstlisting}[language=Sh]
+      git clone --recursive https://github.com/restrepo/BSM-Submodules.git
+      cd BSM-Submodules/
+      emacs SARAH/Models/SSDM/SSDM.m
+    \end{lstlisting}
+
 \end{frame}
 
-
-\begin{frame}
-  \frametitle{Particle physics without hep-ex in Colombia in lens.org}
-  \vspace{-0.3cm}
-\centering  \includegraphics[scale=0.45]{lens}
-\end{frame}
-
-
-
-\begin{frame}
-  \frametitle{High energy physics in Colombia from inspirehep.org}
+\begin{frame}[fragile]
   \begin{columns}
-    \begin{column}{0.4\textwidth}
-      \tiny
-    \begin{itemize}
-    \item Andes U., Bogota (2016) (D0,CMS)
-    \item Antonio Narino U. (1304) (ATLAS)
-    \item Colombia, U. Natl. (949) (LHCb)
-    \item {\color{blue}Antioquia U. (596)} (CMS,DUNE,LIGO)
-    \item Valle U., Cali (146) 
-    \item Santander Industrial U. (144) (AUGER)
-    \item U. Atlantico, Barranquilla (62) (NOVA,DUNE)
-    \item {\color{blue}Narino U. (44)}
-    \item Natl. U. of Columbia, Medellin (43)  
-    \item Medellin U. (43) (AUGER,DUNE)
-    \item {\color{blue}UPTC, Tunja (36)}
-    \item {\color{blue}Santiago de Cali U. (30)}
-    \item Tolima U. (29)
-    \item Escuela de Ingenieria de Antioquia (27) (DUNE)
-    \item Pereira Tech. U. (25)      
-    \item {\color{blue}Inst. Tech. Metro., Medellin (19)}
-    \item {\color{blue}Pamplona U. (16)}
-    \item Distrital U., Bogota (16)
-    \item Bolivar Tech. U. (15) (NOVA,DUNE)
-    \item U. Sergio Arboleda, Bogota (14)
-    \end{itemize}
-    \url{https://inspirehep.net/institutions?q=colombia}
-  \end{column}
-  \begin{column}{0.6\textwidth}
-    \vspace{-0.2cm}
-    \includegraphics[scale=0.45]{conheps}
-  %edit at: https://docs.google.com/presentation/d/1y3F7x2BMEsmRggJH6bOw57EjcNjZuaP6X6aMYCFaJdA/edit?usp=sharing    
-  \end{column}
-\end{columns}
+    \begin{column}{0.45\textwidth}
+      \quad
+
+      \vspace{2.4cm}
+        
+      \begin{align*}
+        \operatorname{SU}(3)_c\times \operatorname{SU}(2)_L\times \operatorname{U}(1)_Y \times {\color{red}Z_2}
+      \end{align*}
+      
+      \begin{align*}
+        \mathcal{D}_{\mu}=\partial_{\mu}&-i {\color{red}g_1} Y B_{\mu} \\
+        &-i {\color{red}g_2} T W_{\mu}^B\\
+        &  -i {\color{red}g_3} \Lambda G_{\mu}\,.
+      \end{align*}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+    {
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={g1,g2,g3,Z2,Global},
+  emphstyle=\color{red}}
+    \begin{lstlisting}[language=Mathematica]
+Off[General::spell]
+
+Model`Name = "SSDM";
+Model`NameLaTeX ="Singlet scalar Dark Matter";
+Model`Authors = "Diego Restrepo ...";
+Model`Date = "2015-11-16";
+
+(* 2013-01-24: ...)
+
+(* Global Symmetries *)
+
+Global[[1]] = {Z[2], Z2};
+
+(* Gauge Groups *)
+
+Gauge[[1]]={B,   U[1], hypercharge, g1,False,1};
+Gauge[[2]]={WB, SU[2], left,        g2,True,1};
+Gauge[[3]]={G,  SU[3], color,       g3,False,1};
+    \end{lstlisting}
+}
+    \end{column}
+  \end{columns}
+
+
+  \begin{center}
+      $B\to B_{\mu},\ \widetilde{B}\qquad\Longrightarrow $\ \texttt{VB}\,,\ \texttt{FB}
+  \end{center}
 \end{frame}
 
-\begin{frame}
+
+\begin{frame}[fragile]
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{picture}(160,250)
+        \put(-20,197){
+          {\footnotesize
+    \rowcolors{1}{RoyalBlue!20}{}            
+      \begin{tabular}{c|c|c|c|c|c|c}\hline
+              &${\color{Green}N_F}$&Lorentz&$Y$&$\operatorname{SU}(2)_L$&$\operatorname{SU}(3)_c$& $Z_2$\\\hline
+$Q$           &${\color{Green}3}$&$\xi_{1\alpha}: (u_L\ d_L)^{\text{T}}  $&$1/6$ &$\boldsymbol{2}$&$\boldsymbol{3}$&$+$\\ 
+$L$           &${\color{Green}3}$&$\xi_{2\alpha}: (\nu_L\ e_L)^{\text{T}}$&$-1/2$&$\boldsymbol{2}$&$\boldsymbol{1}$&$+$\\ 
+$d^c$         &${\color{Green}3}$&$\eta_{1}^\alpha: (d_R)^{\dagger}$        &$1/3$ &$\boldsymbol{1}$&$\overline{\boldsymbol{3}}$&$+$\\        
+$u^c$         &${\color{Green}3}$&$\eta_{2}^\alpha: (u_R)^{\dagger}$        &$-2/3$&$\boldsymbol{1}$&$\overline{\boldsymbol{3}}$&$+$\\ 
+$e^c$         &${\color{Green}3}$&$\eta_{3}^\alpha (e_R)^{\dagger}$        &$1$   &$\boldsymbol{1}$&$\boldsymbol{1}$&$+$\\ \hline
+$H$           &${\color{Green}1}$&$(H^+\ H^0)$           &$1/2$&$\boldsymbol{2}$&$\boldsymbol{1}$&$+$\\    
+$\color{red}S$&${\color{Green}1}$&$s$                    &$0$  &$\boldsymbol{1}$&$\boldsymbol{1}$&$-$\\\hline 
+      \end{tabular}
+      }
+    }
+    \put(-10,150){
+       \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+           \text{\texttt{conj[H]}}=  \widetilde{H}=
+            \begin{pmatrix}
+              H^{0*}\\
+              -H^-
+            \end{pmatrix}
+          \end{align*}
+        \end{minipage}
+      }
+    \put(-10,110){
+       \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            \mathcal{L}=&\left( \mathcal{L}_{C}+\text{h.c} \right)\\
+                        &+ \mathcal{L}_{R}\,,
+          \end{align*}
+        \end{minipage}
+      }
+      \put(-10,70){
+        \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            \mathcal{L}_{C}=&-{\color{red}Y_e}e^c\, \widetilde{H}\cdot L - {\color{red}Y_d}d^c\,\widetilde{H}\cdot Q
+                              - {\color{red}Y_u} u^c\, H\cdot Q\,,\\
+            \mathcal{L}_{R}=&-{\color{red}\mu^2}\widetilde{H}\cdot H-{\color{red}\lambda_1}( \widetilde{H}\cdot H )^2\\
+                            &-{\color{red}M_S^2}S^2 -{\color{red}\lambda_{SH}}S^2 \widetilde{H}\cdot H -{\color{red}\lambda_S}S^4\,. \\
+            & {\color{red}Y_e}\to {\color{Green}N_F}\times {\color{Green}N_F},\cdots
+          \end{align*}
+        \end{minipage}
+      }
+  \end{picture}
+    \end{column}
+    \begin{column}{0.55\textwidth}
+    {
+    \lstset{basicstyle=\ttfamily\tiny,emph={g1,g2,g3,mu2,MS2,Lambda1,LamSH,LamS,Yd,Ye,Yu},
+  emphstyle=\color{red}}
+    \begin{lstlisting}[language=Mathematica]
+(* Matter Fields *)
+
+FermionFields[[1]] = {q, 3, {uL, dL},     1/6, 2,  3,1};  
+FermionFields[[2]] = {l, 3, {vL, eL},    -1/2, 2,  1,1};
+FermionFields[[3]] = {dc, 3, conj[dR],     1/3, 1, -3,1};
+FermionFields[[4]] = {uc, 3, conj[uR],    -2/3, 1, -3,1};
+FermionFields[[5]] = {ec, 3, conj[eR],       1, 1,  1,1};
+
+ScalarFields[[1]] =  {H, 1, {Hp, H0},     1/2, 2,  1,1};
+ScalarFields[[2]] =  {S, 1, ss,             0, 1,  1,-1};
+RealScalars = {S};
+        
+(*----------------------------------------------*)
+(*   DEFINITION                                 *)
+(*----------------------------------------------*)
+
+NameOfStates={GaugeES, EWSB};
+
+(* ----- Before EWSB ----- *)
+
+DEFINITION[GaugeES][LagrangianInput]= {
+  {LagHC, {AddHC->True}},
+  {LagNoHC,{AddHC->False}}
+};
+
+
+LagHC =   -(Ye ec.conj[H].l + Yd dc.conj[H].q + Yu uc.H.q);
+
+LagNoHC = -(mu2 conj[H].H + Lambda1/2 conj[H].H.conj[H].H
+          + MS2/2 S.S + LamSH S.S.conj[H].H  + LamS/2 S.S.S.S);
+
+    \end{lstlisting}
+}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+%%%%WARNING: Will be repeated
+\begin{frame}[fragile]
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+            \begin{picture}(160,250)
+    \put(-20,230){
+       \begin{minipage}[t]{1.0\linewidth}
+         \begin{align*}
+           \begin{pmatrix}
+             B^{\mu}\\
+             W^{\mu}_3\\
+           \end{pmatrix}={\color{red}Z^{\gamma Z}}
+           \begin{pmatrix}
+           A^{\mu}\\
+           Z^{\mu}
+           \end{pmatrix}
+             ={\color{red}
+               \begin{pmatrix}
+                 \cos\theta_W & \sin\theta_W\\
+                 -\sin\theta_W&\cos\theta_W
+               \end{pmatrix}
+}
+           \begin{pmatrix}
+            A^{\mu}\\
+           Z^{\mu}
+           \end{pmatrix}
+          \end{align*}
+        \end{minipage}
+      }
+      \put(-10,180){
+        \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            {H^0}=\frac{iA+(h+{\color{red}v})}{\sqrt{2}}\,.
+          \end{align*}
+        \end{minipage}
+      }
+    \put(-10,140){
+       \begin{minipage}[t]{1.0\linewidth}
+         \begin{align*}
+           \boldsymbol{d}_L=& {\color{red}V_d} \boldsymbol{D}_L\,,&
+           \left( \boldsymbol{d}_R \right)^{\dagger}=&  \boldsymbol{D}_R^c {\color{red}U_d}\,,\\
+           & {\color{red}V_d}\to {\color{Green}N_F}\times {\color{Green}N_F},\cdots &
+          \end{align*}
+        \end{minipage}
+      }
+      \put(-10,65){
+        \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            \Psi_d=\begin{pmatrix}
+              \xi_{1\alpha}\\
+              \left( \eta_1^{\alpha} \right)^{\dagger}
+            \end{pmatrix}=\begin{pmatrix}
+              D_L\\
+              D_R
+            \end{pmatrix}
+          \end{align*}
+        \end{minipage}
+      }
+    \end{picture}
+
+    \end{column}
+    \begin{column}{0.55\textwidth}
+    {
+    \lstset{basicstyle=\ttfamily\tiny,emph={ZZ,ZW,Vd,Vu,Ve,Ud,Uu,Ue,v,EWSB},
+  emphstyle=\color{red}}
+    \begin{lstlisting}[language=Mathematica]
+(* Gauge Sector *)
+
+DEFINITION[EWSB][GaugeSector] =
+{ 
+  {{VB,VWB[3]},{VP,VZ},ZZ},
+  {{VWB[1],VWB[2]},{VWp,conj[VWp]},ZW}
+};     
+
+(* ----- VEVs ---- *)
+
+DEFINITION[EWSB][VEVs]= 
+{{H0,{v,1/Sqrt[2]}, {Ah,\[ImaginaryI]/Sqrt[2]},{hh,1/Sqrt[2]}} };
+ 
+
+DEFINITION[EWSB][MatterSector]=   
+    {{{{dL}, {conj[dR]}}, {{DL,Vd}, {DRc,Ud}}},
+     {{{uL}, {conj[uR]}}, {{UL,Vu}, {URc,Uu}}},
+     {{{eL}, {conj[eR]}}, {{EL,Ve}, {ERc,Ue}}}};  
+
+(*------------------------------------------------------*)
+(* Dirac-Spinors *)
+(*------------------------------------------------------*)
+
+DEFINITION[EWSB][DiracSpinors]={
+ Fd ->{  DL, conj[DRc]},
+ Fe ->{  EL, conj[ERc]},
+ Fu ->{  UL, conj[URc]},
+ Fv ->{  vL, 0}};
+    \end{lstlisting}
+}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+%%%% REPETITION
+%%%%WARNING: Will be repeated
+\begin{frame}[fragile]
+  \begin{columns}
+    \begin{column}{0.45\textwidth}
+            \begin{picture}(160,250)
+    \put(-20,230){
+       \begin{minipage}[t]{1.0\linewidth}
+         \begin{align*}
+           \begin{pmatrix}
+             B^{\mu}\\
+             W^{\mu}_3\\
+           \end{pmatrix}={\color{red}Z^{\gamma Z}}
+           \begin{pmatrix}
+           A^{\mu}\\
+           Z^{\mu}
+           \end{pmatrix}
+             ={\color{red}
+               \begin{pmatrix}
+                 \cos\theta_W & \sin\theta_W\\
+                 -\sin\theta_W&\cos\theta_W
+               \end{pmatrix}
+}
+           \begin{pmatrix}
+            A^{\mu}\\
+           Z^{\mu}
+           \end{pmatrix}
+          \end{align*}
+        \end{minipage}
+      }
+      \put(-10,180){
+        \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            {H^0}=\frac{iA+(h+{\color{red}v})}{\sqrt{2}}\,.
+          \end{align*}
+        \end{minipage}
+      }
+    \put(-10,140){
+       \begin{minipage}[t]{1.0\linewidth}
+         \begin{align*}
+           \boldsymbol{d}_L=& {\color{red}V_d} \boldsymbol{D}_L\,,&
+           \left( \boldsymbol{d}_R \right)^{\dagger}=&  \boldsymbol{D}_R^c {\color{red}U_d}\,,\\
+           & {\color{red}V_d}\to {\color{Green}N_F}\times {\color{Green}N_F},\cdots &
+          \end{align*}
+        \end{minipage}
+      }
+      \put(-10,65){
+        \begin{minipage}[t]{1.0\linewidth}
+          \begin{align*}
+            \Psi_d=\begin{pmatrix}
+              D_L\\
+              D_R
+            \end{pmatrix}
+          \end{align*}
+        \end{minipage}
+      }
+      \put(50,10){\includegraphics[scale=0.2]{cn}}
+      \put(50,5){\tiny From A. Vicente}
+    \end{picture}
+
+    \end{column}
+    \begin{column}{0.55\textwidth}
+    {
+    \lstset{basicstyle=\ttfamily\tiny,emph={ZZ,ZW,Vd,Vu,Ve,Ud,Uu,Ue,v,EWSB},
+  emphstyle=\color{red}}
+    \begin{lstlisting}[language=Mathematica]
+(* Gauge Sector *)
+
+DEFINITION[EWSB][GaugeSector] =
+{ 
+  {{VB,VWB[3]},{VP,VZ},ZZ},
+  {{VWB[1],VWB[2]},{VWp,conj[VWp]},ZW}
+};     
+
+(* ----- VEVs ---- *)
+
+DEFINITION[EWSB][VEVs]= 
+{{H0,{v,1/Sqrt[2]}, {Ah,\[ImaginaryI]/Sqrt[2]},{hh,1/Sqrt[2]}} };
+ 
+
+DEFINITION[EWSB][MatterSector]=   
+    {{{{dL}, {conj[dR]}}, {{DL,Vd}, {DRc,Ud}}},
+     {{{uL}, {conj[uR]}}, {{UL,Vu}, {URc,Uu}}},
+     {{{eL}, {conj[eR]}}, {{EL,Ve}, {ERc,Ue}}}};  
+
+(*------------------------------------------------------*)
+(* Dirac-Spinors *)
+(*------------------------------------------------------*)
+
+DEFINITION[EWSB][DiracSpinors]={
+ Fd ->{  DL, conj[DRc]},
+ Fe ->{  EL, conj[ERc]},
+ Fu ->{  UL, conj[URc]},
+ Fv ->{  vL, 0}};
+    \end{lstlisting}
+}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}[fragile]
+  \frametitle{\url{./parameters.m}}
+  {
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={g1,g2,g3,v,ThetaW,ZZ},
+  emphstyle=\color{red}}
+  \begin{lstlisting}[language=Mathematica]
+    ...
+{g1,        { Description -> "Hypercharge-Coupling"}},
+{g2,        { Description -> "Left-Coupling"}},
+{g3,        { Description -> "Strong-Coupling"}},
+...
+{v,          { Description -> "EW-VEV",
+               DependenceNum -> Sqrt[4*Mass[VWp]^2/(g2^2)],
+               DependenceSPheno -> None  }},
+
+{ThetaW,    { Description -> "Weinberg-Angle",
+              DependenceNum -> ArcSin[Sqrt[1 - Mass[VWp]^2/Mass[VZ]^2]]}},
+
+{ZZ, {Description -> "Photon-Z Mixing Matrix"}},
+
+    ...     
+   \end{lstlisting}
+   }
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{\url{../parameters.m}}
+  {
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={ZZ,ThetaW},
+  emphstyle=\color{red}}
+  \begin{lstlisting}[language=Mathematica]
+    ...
+{{Description -> "Photon-Z Mixing Matrix",
+       Dependence ->  {{Cos[ThetaW],-Sin[ThetaW]},                             
+                       {Sin[ThetaW],Cos[ThetaW]}},
+       Real ->True,
+       LaTeX -> "Z^{\\gamma Z}",
+       LesHouches -> None,
+       OutputName -> ZZ }},
+    ...     
+   \end{lstlisting}
+   }
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{\url{./particles.m}}
+  {
+    \lstset{basicstyle=\ttfamily\tiny,emph={g1,g2,g3},
+  emphstyle=\color{red}}
+  \begin{lstlisting}[language=Mathematica]
+    ...
+  ParticleDefinitions[EWSB] = {
+      
+    {hh   ,  {  Description -> "Higgs",
+                PDG -> {25},
+                PDG.IX -> {101000001},
+                Mass -> LesHouches,
+                FeynArtsNr -> 1,
+                LaTeX -> "h",
+                ElectricCharge -> 0,
+                LHPC -> {1},
+                OutputName -> "h"  }}, 
+
+    {ss   , {  Description -> "Singlet",
+               PDG -> {6666635},
+               PDG.IX -> {101000002},
+               FeynArtsNr -> 10,
+               Mass -> LesHouches,               
+               LaTeX -> "S",
+               ElectricCharge -> 0,
+               LHPC -> {"gold"},
+               OutputName -> "Ss" }},
+           ...
+         }
+    ...     
+   \end{lstlisting}
+   }
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+  \frametitle{\url{./SPheno.m}}
+  \begin{lstlisting}[language=Mathematica]
+OnlyLowEnergySPheno = True;
+
+MINPAR={{1,Lambda1IN},
+        {2,LamSHIN},
+        {3,LamSIN},
+        {4,MSinput}
+        };
+ ...
+ListDecayParticles = {Fu,Fe,Fd,hh};
+ListDecayParticles3B = {{Fu,"Fu.f90"},{Fe,"Fe.f90"},{Fd,"Fd.f90"}};
+
+....
+
+DefaultInputValues ={Lambda1IN -> 0.28, LamSHIN -> 0.01, LamSIN -> 0,
+                     MSinput -> 200};
+        
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Implicit files without editors}
+  \begin{lstlisting}[language=Sh, caption=Creates \texttt{kk.txt} file ]
+cat << EOF > kk.txt
+Hello world
+EOF
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Sh, caption=commands expecting input files ]
+math << EOF 
+2+2
+EOF
+\end{lstlisting}
+
+{
+    \lstset{basicstyle=\ttfamily\tiny}
+\begin{lstlisting}[language=Mathematica]
+Mathematica 11.0.0 for Linux x86 (64-bit)
+Copyright 1988-2016 Wolfram Research, Inc.
+
+In[1]:= 
+Out[1]= 4
+
+In[2]:=
+\end{lstlisting}
+}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Automatic index contraction}
+ \begin{block}{Verifying Index Contractions}
+   \begin{columns}
+     \begin{column}{0.4\textwidth}
+       \begin{align*}
+         u^c\cdot H\cdot q=&{\color{magenta}\delta_\alpha^\beta} {\color{blue}\epsilon_{ab}}\, u^{c}_{\color{magenta} \alpha}  H^{\color{blue}a} q^{{\color{magenta}\beta}{\color{blue}b}} \\
+         =&{\color{magenta}\overline{\mathbf{3}}\times \mathbf{3}}\otimes{\color{blue}\mathbf{2}\times \mathbf{2}}\,.
+       \end{align*}
+     \end{column}
+     \begin{column}{0.6\textwidth}
+         {
+    \lstset{basicstyle=\ttfamily\scriptsize,emph={col1,col2,col3,lef1,lef2,lef3,Start,MakeIndexStructure},
+      emphstyle=\color{red}}
+    \begin{lstlisting}[language=Mathematica]
+math<<EOF
+<<./SARAH/SARAH.m
+Start["SSDM"]
+MakeIndexStructure[{u, H, q}] (* uc.H.q *)
+EOF      
+ ...
+Out[3]: Delta[col1, col3] epsTensor[lef2, lef3]
+\end{lstlisting}      
+    }
+       \end{column}
+   \end{columns}
+ \end{block}
+
+ \begin{block}{Explicit index contraction in \texttt{SSDM.m}}
+   {
+\lstset{basicstyle=\ttfamily,emph={col1,col2,col3,lef1,lef2,lef3},
+      emphstyle=\color{red}}     
+    \begin{lstlisting}[language=Mathematica]
+   Delta[col1, col3] epsTensor[lef2, lef3]  uc.H.q
+ \end{lstlisting}
+ }
+ \end{block}
+
+ { \tiny See \url{https://gitlab.in2p3.fr/goodsell/sarah/wikis/Automatic_index_contraction}}
+
+\end{frame}
+
+
+%%%%%%%%%%
+
+
+
+\begin{frame}[fragile]
+  \frametitle{Check SARAH}
+  \begin{lstlisting}[language=Sh]
+  math << EOF
+  <<./SARAH/SARAH.m
+  Start["SSDM"]
+  MakeSPheno[]
+  EOF
+\end{lstlisting}
+
+    {
+    \lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Mathematica]
+Mathematica 11.0.0 for Linux x86 (64-bit)
+...
+In[1]:= SARAH 4.14.1
+by Florian Staub, 2018
+...
+In[2]:= Preparing arrays
+ ... 
+Model files loaded   
+  Model    : SSDM
+  Author(s): Diego Restrepo (based on SM model by F.Staub)
+  Date     : 2015-11-16
+******************************************************* 
+Loading Susyno functions for the handling of Lie Groups 
+Based on Susyno v.2.0 by Renato Fonseca (1106.5016)
+webpage: web.ist.utl.pt/renato.fonseca/susyno.html
+*******************************************************
+...
+Finished! SPheno code generated in 170.872s
+....
+The following steps are now necessary to implement the model in SPheno: 
+  \end{lstlisting}
+}
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Check SPheno}
+  \begin{lstlisting}[language=Sh]
+    cp -r SARAH/Output/SSDM/EWSB/SPheno SPheno/SSDM
+    cd SPheno
+    make Model=SSDM # Be sure that Makefile use gfortran!
+\end{lstlisting}
+{\lstset{basicstyle=\ttfamily\tiny,emph={SPhenoSSDM},
+  emphstyle=\color{red}}
+  \begin{lstlisting}[language=Sh]
+cd SSDM ; make F90=gfortran version=400.00
+make[1]: Entering directory '****/BSM-Submodules/SPHENO/SSDM'
+.
+.
+.
+make[2]: Leaving directory '****/BSM-Submodules/SPHENO/SSDM'
+gfortran -o SPhenoSSDM -g   SPhenoSSDM.o ../lib/libSPhenoSSDM.a ../lib/libSPheno.a
+mv SPhenoSSDM ../bin
+rm SPhenoSSDM.o  
+make[1]: Leaving directory '****/BSM-Submodules/SPHENO/SSDM'
+\end{lstlisting}
+}
+
+\begin{lstlisting}[language=Sh]
+    # Return to parent directory: BSM-Submodules
+    cd ../ 
+\end{lstlisting}
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Check micrOMEGAs}
+  \begin{lstlisting}[language=Sh]
+    cd micromegas
+    make # Recompile everything!
+    make # twice
+\end{lstlisting}
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Sh]
+make -C CalcHEP_src  MICROMEGAS=MICROMEGAS    
+...
+#--------------------------------------------------------
+# CalcHEP has compiled successfuly and can be started.
+# The manual can be found on the CalcHEP website:
+#      http://theory.sinp.msu.ru/~pukhov/calchep.html
+# The next step is typically to run 
+#      ./mkWORKdir  <new_dir>
+# where <new_dir> is the new directory where you will do
+# your calculations.  After creating this directory, you
+# should cd into it and run calchep or calchep_batch.
+# Please see the manual for further details.
+#---------------------------------------------------------"
+...
+make[1]: Leaving directory '****/BSM-Submodules/micromegas/sources'
+\end{lstlisting}
+}
+
+Build micrOMEGAs model
+\begin{lstlisting}[language=Sh]
+  ./newProject SSDM
+  cd .. # return to parent directory
+\end{lstlisting}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Check micrOMEGAs II}
+  \begin{lstlisting}[language=Sh]
+  math << EOF
+  <<./SARAH/SARAH.m
+  Start["SSDM"]
+  MakeCHep[]
+  EOF
+\end{lstlisting}
+
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Mathematica]
+Mathematica 11.0.0 for Linux x86 (64-bit)
+...
+Write main file for MicrOmegas
+Done. Model files generated in 31.044s
+Output is saved in ****/BSM-Submodules/SARAH/Output/SSDM/EWSB/CHep/
+  \end{lstlisting}
+}
+
+\begin{lstlisting}[language=Sh]
+  cp SARAH/Output/SSDM/EWSB/CHep/* micromegas/SSDM/work/models/
+  cd micromegas/SSDM/
+  cp work/models/*.cpp .
+  # check your micrOMEGAs version
+  make main=CalcOmega_with_DDetection_MOv5.cpp 
+\end{lstlisting}
+
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Sh]
+make -C work    
+...
+g++     -g -fPIC  -o CalcOmega_with_DDetection_MOv5 CalcOmega_with_DDetection_MOv5.cpp ... -lpthread
+cd ../../ #Return to parent directory
+  \end{lstlisting}
+}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Check Madgraph}
+  \begin{lstlisting}[language=Sh]
+  math << EOF
+  <<./SARAH/SARAH.m
+  Start["SSDM"]
+  MakeUFO[]
+  EOF
+\end{lstlisting}
+
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Mathematica]
+Mathematica 11.0.0 for Linux x86 (64-bit)
+...
+Writing effective diphoton and digluon vertices
+
+Done. UFO files generated in 30.716s
+Output is saved in ****/BSM-Submodules/SARAH/Output/SSDM/EWSB/UFO/
+  \end{lstlisting}
+}
+
+\begin{lstlisting}[language=Python]
+cp -r SARAH/Output/SSDM/EWSB/UFO/ madgraph/models/SSDM 
+madgraph/bin/mg5_aMC << EOF 
+import model SSDM
+check u u~ > mu+ mu-
+EOF 
+\end{lstlisting}
+
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Sh]
+Process          Min element       Max element       Relative diff.    Result
+u u~ > mu+ mu-   4.9949890843e-03  4.9949890843e-03  5.2093911919e-15  Passed
+Summary: 1/1 passed, 0/1 failed
+  \end{lstlisting}
+}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Benchmark point}
+    \begin{lstlisting}[language=Sh]
+      cp SPheno/SSDM/Input_Files/LesHouches.in.SSDM .
+      emacs LesHouches.in.SSDM
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[plain]
 \begin{picture}(320,250)
-  \only<1->{\put(-24,-22){\begin{overpic}[scale=0.5]{lapag}\end{overpic}}}%
-  %edit at: https://docs.google.com/presentation/d/1y3F7x2BMEsmRggJH6bOw57EjcNjZuaP6X6aMYCFaJdA/edit?usp=sharing
+  \only<1>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{leshouches1}}}%
+  \only<2>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{leshouches2}}}%
 \end{picture}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[fragile]
+  \frametitle{Run SPheno}
+    \begin{lstlisting}[language=Sh]
+ BSM-Submodules$ SPheno/bin/SPhenoSSDM  LesHouches.in.SSDM 
+ Calculating branching ratios and decay widths
+ Calculating one loop decays
+ Loop masses not calculated: tree-level masses used for kinematics
+ Loop masses not calculated: no U-factors are applied
+ Calculating one-loop decays of Fu 
+ Calculating one-loop decays of Fe 
+ Calculating one-loop decays of Fd 
+ Calculating one-loop decays of hh 
+ Calculating low energy constraints
+ Calculating unitarity constraints 
+ Writing output files
+ Finished!
+ BSM-Submodules$ emacs SPheno.spc.SSDM
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[plain]
 \begin{picture}(320,250)
-  \only<1->{\put(-24,-22){\begin{overpic}[scale=0.5]{rcf}\end{overpic}}}%
-  %edit at: https://docs.google.com/presentation/d/1y3F7x2BMEsmRggJH6bOw57EjcNjZuaP6X6aMYCFaJdA/edit?usp=sharing
+  \only<1>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc1}}}%
+  \only<2>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc2}}}%
+  \only<3>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc3}}}%
+  \only<4>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc4}}}%
+  \only<5>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc5}}}
+  \only<6>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc6}}}%
+  \only<7>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{sphenospc7}}}%
 \end{picture}
 \end{frame}
 
-\begin{frame}
-  \frametitle{Conclusiones}
-  La consolidación experimental del modelo estándar abre nuevos retos a la enseñanza de la física contemporánea en los pregrados, donde se debería hacer más énfasis en las propiedades generales de las teorías clásicas de campos a la luz de los teoremas de Noether.
+\begin{frame}[fragile]
+  \frametitle{Run micrOMEGAs}
+    \begin{lstlisting}[language=Sh]
+ micromegas/SSDM/CalcOmega_with_DDetection_MOv5 SPheno.spc.SSDM 
+\end{lstlisting}
 
-  \centering \includegraphics[scale=0.7]{fs}
+{\lstset{basicstyle=\ttfamily\tiny}
+  \begin{lstlisting}[language=Sh]
+
+Masses of odd sector Particles:
+~Ss  : MSs   =    28.4 || 
+PROCESS: ~Ss,~Ss->AllEven,1*x{h,g,A,Z,Wp,Wm,nu1,Nu1,nu2,Nu2,nu3,Nu3,d1,D1,d2,D2,d3,D3,u1,U1,u2,U2,u3,U3,e1,E1,e2,E2,e3,E3
+Xf=1.64e+01 Omega h^2=2.28e+01
+
+# Channels which contribute to 1/(omega) more than 1%.
+# Relative contributions in % are displayed
+   85% ~Ss ~Ss ->d3 D3 
+    8% ~Ss ~Ss ->e3 E3 
+    4% ~Ss ~Ss ->u2 U2 
+    2% ~Ss ~Ss ->g g 
+
+==== Calculation of CDM-nucleons amplitudes  =====
+         TREE LEVEL
+PROCESS: QUARKS,~Ss->QUARKS,~Ss{d1,D1,d2,D2,d3,D3,u1,U1,u2,U2,u3,U3
+Delete diagrams with _S0_!=1,_V5_,A
+....
+CDM-nucleon cross sections[pb]:
+ proton  SI 2.407E-09  SD 0.000E+00
+ neutron SI 2.471E-09  SD 0.000E+00
+
+======== Direct Detection ========
+73Ge: Total number of events=1.29E-03 /day/kg
+Number of events in 10 - 50 KeV region=4.19E-04 /day/kg
+131Xe: Total number of events=2.66E-03 /day/kg
+Number of events in 10 - 50 KeV region=4.48E-04 /day/kg
+23Na: Total number of events=1.75E-04 /day/kg
+Number of events in 10 - 50 KeV region=7.57E-05 /day/kg
+I127: Total number of events=2.57E-03 /day/kg
+Number of events in 10 - 50 KeV region=4.55E-04 /day/kg
+  \end{lstlisting}
+}
+
 \end{frame}
+
+\section{Automatic generation of scotogenic models }
+\begin{frame}[fragile]
+  \frametitle{Python program: \texttt{minimal-lagrangians}}
+ Simon May, \url{https://arxiv.org/pdf/2003.08037} [CPC]
+
+
+\begin{lstlisting}[language=Sh]
+  pip install minimal-lagrangians
+    \end{lstlisting}
+
+ 
+
+\begin{itemize}
+\item As the program was originally written for the study of minimal darkmatter models with radiative neutrino masses: D. Restrepo, O. Zapata, C. E. Yaguna, Models with radiative neutrinomasses and viable dark matter candidates, arXiv:1308.3655 [JHEP]
+\item  Lagrangians for the individual models.
+\item Model files for SARAH can be constructed automaticallyfrom the specified field content, which can be tedious if done manually
+\end{itemize}
+
+Thus, minimal-lagrangians enables rapid phenomenological studies using \texttt{SARAH} and, successively, further tools like \texttt{SPheno}, and \texttt{micrOMEGAs} $\to$ Sec. 8: Outlook
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \begin{lstlisting}[language=Python]
+    BSMModel('T1-3-B', (
+    FermionField("Ψ",  1, Y= 0),
+    FermionField("Ψ'", 2, Y= 1),
+    ScalarField ("phi",  3, Y= 0),
+    FermionField("Ψ'",  2, Y=-1),6), (0, 2)), #α= -2 is equivalent toα= 2
+  \end{lstlisting}
+  
+\end{frame}
+
+\section{Dirac neutrino masses}
+
+\begin{frame}
+  \frametitle{\only<1>{One loop topologies $\operatorname{U}(1)_{B-L}\oplus Z_2 \oplus Z_2 $}\only<2-4>{One loop topologies $\operatorname{U}(1)_{B-L}$ only!
+   \invisible<2>{\scriptsize with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  } }}
+\begin{picture}(320,250)
+  \only<1>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac1}\end{overpic}}}%
+  \only<1>{\put(280,130){\tiny Chang-Yuan Yao and Gui-Jun Ding, arXiv:1802.05231 [PRD]  }}%
+  \only<2>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac2}\end{overpic}}}%
+  \only<2>{\put(280,130){\tiny with J. Calle, C. Yaguna, and O. Zapata, arXiv:1812.05523 [PRD]  }}%
+    \only<2-4>{\put(-20,130){\tiny
+        \begin{minipage}{0.3\linewidth}
+          \begin{align*}
+            \invisible<4>{\psi_{L,R}\to}&\invisible<4>{\text{Singlet fermions (vector-like)  }}\\
+            %\invisible<3>{\Psi_{L,R}\to&\text{Vector-like doublet fermions}\invisible<2-3>{:\qquad {\color{red}10/5}}   }\\
+            \sigma\to&\text{Singlet scalar}   \\
+          \end{align*}
+        \end{minipage}
+}}%
+\only<3>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3}\end{overpic}}}%
+\only<4>{\put(40,20){\begin{overpic}[scale=0.6]{radiativedirac3b}\end{overpic}}}%
+% 
+\only<3->{\put(160,220){\tiny $\longmapsto$ generalization to two and three loops: S. Saad arXiv:1902.07259 [NPB]  }}%
+\only<3->{\put(160,210){\tiny $\longmapsto$ generalization to $\operatorname{U(1)_R}$: \emph{et al}, S. Saad arXiv:1904.07407  }}%
+\only<3->{\put(180,180){\Huge $\uparrow$   }}%
+\only<3->{\put(230,185){\tiny
+    \begin{minipage}{0.3\linewidth}
+      \rowcolors{1}{RoyalBlue!20}{}
+  \begin{tabular}{c|c|ccccccc}\hline
+ Fields: $f_i$  & $L,e_R$& $\nu_{R3} $
+    &$ \nu_{R2}$&$ \nu_{R1}$&\invisible<3>{$\sigma_1^-}$&\invisible<3>{$\sigma_2^-$}&$S$&$H$\\ \hline
+  $\operatorname{U}(1)_{B-L}$&$-1$&$\color{Yellow}-4$&$\color{Yellow}-4$&$+5$&\invisible<3>{ $\color{red}-2$} & \invisible<3>{$\color{red}-5$} & $+3$&$0$\\ \hline
+  \end{tabular}
+         \end{minipage}
+       }}%
+\only<3->{\put(300,85){\tiny
+    \begin{minipage}{0.3\linewidth}
+       \begin{block}{\tiny Anomaly cancellation conditions}
+         \begin{align*}
+           \sum_i \nu_{Ri}=& -3 \\
+           \sum_i \nu_{Ri}^3=& -3 \\
+         \end{align*}
+       \end{block}
+       \vspace{-1cm}
+         \begin{block}{\tiny Three-level cancellation conditions}
+         \begin{align*}
+        \cancel{ \nu_R\nu_R} \\
+           \cancel{\left( \nu_R \right)^{\dagger} L\cdot H } \\
+         \end{align*}
+  \end{block}
+      
+         \end{minipage}
+       }}%
+%  effective number of relativistic degrees of reedom Neff for neutrinos
+%\only<6>{\put(220,60){\begin{overpic}[scale=0.6]{sarah}\end{overpic}}}%
+\end{picture}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Dirac Zee}
+  \begin{lstlisting}[language=Sh]
+cp -r BSM/SARAH/Models/B-L/ SARAH/Models/
+math << EOF
+<<./SARAH/SARAH.m
+Start["B-L/DZ"]
+MakeSPheno[]
+EOF
+\end{lstlisting}
+
+\begin{lstlisting}[language=Sh]
+cp -r SARAH/Output/B-L-DZ/EWSB/SPheno SPheno/BLDZ
+cd SPheno
+make Model=BLDZ
+cd .. # Return to parent directory
+\end{lstlisting}
+
+\begin{lstlisting}[language=Sh]
+cp BSM/Input_Files/LesHouches.in.BLDZ .
+\end{lstlisting}
+
+\begin{lstlisting}[language=Sh]
+SPheno/bin/SPhenoBLDZ  LesHouches.in.BLDZ
+\end{lstlisting}
+
+
+\begin{picture}(320,50)
+  \put(-10,40){\only<1>{
+      \begin{minipage}{0.9\linewidth}
+
+\begin{block}{LesHouches.in.BLDZ: Fix options!}
+ \texttt{55 1\ \ \ \ \ \ \ \# Calculate loop corrected masses}\\
+ \texttt{50 0\ \ \ \ \ \ \ \# Majorana phases: use only positive masses}\\
+\texttt{520 0\ \ \ \ \ \ \# Write effective Higgs couplings}
+      \end{block}
+      \end{minipage}
+}}
+  \put(100,100){\only<2>{}}
+\end{picture}
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{\texttt{cat SPheno.spc.BLDZ}}
+{\lstset{basicstyle=\ttfamily\scriptsize,emph={Fv},
+  emphstyle=\color{red}}
+  \begin{lstlisting}[language=Sh]
+Block MASS  # Mass spectrum
+#   PDG code      mass          particle
+        25     1.24861947E+02  # hh_1
+        35     1.71464282E+03  # hh_2
+    900037     2.00000000E+03  # Hm_2
+    900038     3.00000000E+03  # Hm_3
+        22     0.00000000E+00  # VP
+        23     9.11887000E+01  # VZ
+        21     0.00000000E+00  # VG
+        24     7.96796394E+01  # VWm
+        31     2.57196423E+03  # VZp
+         1     5.00000000E-03  # Fd_1
+         .
+         .
+         .
+        15     1.77669000E+00  # Fe_3
+        12     0.00000000E+00  # Fv_1
+        14    -1.61994502E-31  # Fv_2
+        16     4.42048291E-14  # Fv_3
+   8810012    -4.42048291E-14  # Fv_4
+   8810014     2.08300541E-10  # Fv_5
+   8810016    -2.08300541E-10  # Fv_6
+ \end{lstlisting}
+ }
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    \includegraphics[scale=0.3]{cnc}
+
+{\tiny From A. Vicente}
+  \end{center}
+\end{frame}
+
+\section{Backup slides}
+%http://ific.uv.es/~montesin/computer_tools.html
+\section{Preliminars}
+\def\ypos{-11.7}
+\def\xpos{-28.3}
+\def\rgeref{
+        \begin{minipage}[t]{0.6\linewidth}
+        \tiny
+        % \hfill
+        \hspace{5.5cm}{\color{red}\href{https://arxiv.org/pdf/1507.06349}{[PDF]}}
+        \\
+        \\
+        For two-loops RGEs see also:
+        
+        \hspace{0.5cm} {\color{red} \textit{``Exploring new models in all detail with SARAH''}, Florian Staub, arXiv:1503.04200 \href{https://arxiv.org/pdf/1503.04200.pdf}{[PDF]}}
+        \\
+        \\
+        SARAH:
+
+        \hspace{0.5cm} {\color{red} \textit{``SARAH 4: A tool for (not only SUSY) model builders''}, Florian Staub, arXiv:1309.7223 \href{https://arxiv.org/pdf/1309.7223.pdf}{[PDF]}}     
+      \end{minipage}
+  }
+\begin{frame}[plain]
+\begin{picture}(320,250)
+  \only<1>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{computertools1}}}%
+  \only<1>{\put(125,252){{\tiny \url{http://ific.uv.es/~montesin/computer_tools.html}}}}%
+  \only<1>{\put(15,100){\rgeref }}%
+  \only<2>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{computertools2}}}%
+  \only<2>{\put(125,252){{\tiny \url{http://ific.uv.es/~montesin/computer_tools.html}}}}%
+  \only<2>{\put(15,100){\rgeref }}%
+  \only<3>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{computertools3}}}%
+  \only<3>{\put(125,252){{\tiny \url{http://ific.uv.es/~montesin//ific2017.html}}}}%
+  \only<4>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{computertools4}}}%
+  \only<5>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{computertools5}}}%
+  \only<6>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{computertools6}}}%
+  \only<6>{\put(125,252){{\tiny \url{http://ific.uv.es/~montesin//ific2017.html}}}}%
+  \only<7>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{computertools7}}}%
+  \only<8>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{computertools8}}}%
+  \only<9>{\put(\xpos,\ypos){\includegraphics[height=\paperheight]{computertools9}}}%
+  
+\end{picture}
+\end{frame}
+
+
 
 \end{document}
 
