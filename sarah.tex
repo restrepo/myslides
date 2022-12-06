@@ -486,7 +486,7 @@ and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)_Q$ (superscri
 %%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
   \frametitle{$\operatorname{SU}(2)_L\invisible<1>{\times{\color{cyan}\operatorname{U}(1)_Y}}\to D_{\mu}=\boldsymbol{1}\partial_{\mu}-ig_2 \frac{\tau_{i}}{2}W_{\mu}^i
-    \invisible<1>{{\color{cyan}-ig_1B_{\mu}}}:$ \only<1-5>{17}\only<6>{21}\only<7>{32}\only<8>{62} years later... (stages of grief $\to$ \only<1-5>{1967}\only<6>{1971}\only<7>{1982}\only<8->{2012})}
+    \invisible<1>{{\color{cyan}-ig_1B_{\mu}}}:$ \only<1-5>{17}\only<6>{21}\only<7>{32}\only<8>{62} years later... (stages of grief $\only<1-3>{<}\only<4>{>}\only<5->{\to}$ \only<1-5>{1967}\only<6>{1971}\only<7>{1982}\only<8->{2012})}
 
 
   
@@ -591,9 +591,57 @@ i\overline{\psi}\gamma^{\mu}\partial\psi -m_{e}\overline{\psi}\psi
 \end{frame}
 
 
+\begin{frame}
+  \begin{table}
+    \frametitle{First generation of Standard Model (SM)}
+    \centering
+            \rowcolors{1}{RoyalBlue!20}{}
+    \begin{tabular}{|l|c|c|c|l|}\hline
+      Field               &Lorentz   & SU(3)$_{C}$            & SU(2)$_{L}$           & U(1)$_Y$          \\\hline
+    $Q   $                 & $\xi_{\alpha}^1$ & $\mathbf{3}$           & $\mathbf{2}$          & $1/6$          \\      
+    $\color{blue}L   $                 & $\xi_{\alpha}^2$ & $\mathbf{1}$           & $\mathbf{2}$          & $-1/2$          \\
+    $\left(u_R^{-}\right)^{\dagger}$ & $\eta_1^\alpha$  & $\overline{\mathbf{3}}$ & $\mathbf{1}$           & $-2/3$              \\
+    $\left(d_R^{-}\right)^{\dagger}$ & $\eta_2^\alpha$  & $\overline{\mathbf{3}}$ & $\mathbf{1}$           & $1/3$              \\            
+    $\color{Green}\left(e_R^{-}\right)^{\dagger}$ & $\eta_3^\alpha$  & $\mathbf{1}$            & $\mathbf{1}$            & $1$              \\
+     $\color{red}\Phi$                   & -       &  $\color{red}\mathbf{1}$ & $\color{red}\mathbf{2}$ &$\color{red}1/2$\\\hline
+  \end{tabular}\hspace{1cm} 
+  \caption{Fundamental Fields of SM }
+  \label{tab:smflds}
+\end{table}
+\end{frame}
 
 
+\begin{frame}
+\frametitle{Kircchoff's law}
+\begin{align}
+\color{red}  \widetilde{\Phi}=&\color{red}i\sigma_2 \Phi^{*}=
+  \begin{pmatrix}
+    {\phi^0}^{*} & -\phi^{-}
+  \end{pmatrix}^{\operatorname{T}}
+  &\,
+   \color{blue} L=&\color{blue}  \begin{pmatrix}
+    \nu_L & e_L
+  \end{pmatrix}^{\operatorname{T}}\,
+\end{align}
+\begin{align}
+ \invisible<2->{ {\color{Green}\left( e_R \right)^{\dagger}}{\color{red} \Phi^{\dagger}}{\color{blue}L}=    {\color{Green}\left( e_R \right)^{\dagger}}{\color{red} \Phi^{\dagger}}{\color{blue}L}=}
+  \only<1>{{\color{Green}\left( e_R \right)^{\dagger}}\epsilon_{\color{red}a\color{blue}b}{\color{red} \widetilde{\Phi}^{a}}{\color{blue}L^{b}}}
+  \only<2->{{\color{Green}\left( e_R \right)^{\dagger}}{\color{red} \widetilde{\Phi}}\cdot {\color{blue}L}}\,,
+\end{align}
+\invisible<1>{Which can be represented as the Kircchoff's law:}\only<2>{}
+\begin{columns}
+\begin{column}{0.4\textwidth} 
+\invisible<1>{\includegraphics[scale=0.5]{eRHL} \hspace{1cm}}
+\end{column}
+\begin{column}{0.6\textwidth} 
+  \begin{align*}
+-{\color{Green}Y_R}-{\color{red}Y_\Phi}+{\color{blue}Y_L}=&0\\
+\invisible<1>{    {\color{blue}Y_L}=& {\color{red}Y_\Phi}+ {\color{Green}Y_R}}
+  \end{align*}
+\end{column}
+\end{columns}
 
+\end{frame}
 
 
 
