@@ -79,7 +79,8 @@
 %\subtitle
 %{Reconstruction of the neutrino mass matrix} % (optional)
 
-\author{Diego Restrepo
+\author{Diego Restrepo\\
+  \scriptsize{\color{gray}VII \color{YellowGreen}Uniandes \color{yellow}Particle \color{orange} Physics \color{cyan}School}
 }
 % - Use the \inst{?} command only if the authors have different
 %   affiliation.
@@ -95,7 +96,7 @@ Phenomenology Group %\\
 }%
 {http://gfif.udea.edu.co}%
 {}%
-{cnf}% small image here, use pixel for nothing
+{uniandes}% small image here, use pixel for nothing
 {}
 %\arxiv{}
 %\collaborators{  }
@@ -146,20 +147,15 @@ Phenomenology Group %\\
 
 \maketitle
 
-\section{Least Action}
+
+%\section{Least Action}
 \begin{frame}
   \frametitle{$\operatorname{SO}(3)$ {\color{magenta} scalar product}}
 \Large
   \begin{align*}
-  L=\frac{1}{2}m{\color{magenta} v^2}-V(|\boldsymbol{r}|)=\frac{1}{2}m {\color{magenta}\boldsymbol{v}\cdot\boldsymbol{v}}-V(|\boldsymbol{r}|)\only<2>{.}
+  L=\frac{1}{2}m {\color{magenta}\boldsymbol{v}\cdot\boldsymbol{v}}-V({\color{magenta}|\boldsymbol{r}|}).
 \end{align*}
 
-\invisible<1>{
-\vspace{3cm}
-\begin{flushright}
-  \includegraphics[scale=0.3]{men}
-\end{flushright}
-}
 
 \end{frame}
 \begin{frame}
@@ -205,14 +201,14 @@ We can define the invariant scalar product just as the division of real numbers,
 
 \begin{frame}%[fragile,allowframebreaks]
 \frametitle{$\operatorname{SO}(1,1)$}  
-Queremos obtener una representación $2\times2$ del álgebra
+We want to obtain a $2\times2$ representation of the algebra
 \begin{align}
   K=&  \begin{pmatrix}
    0 &-i\\
    -i &0\\ 
   \end{pmatrix} \to  K^2=-\boldsymbol{1}\,,
 \end{align}
-que genera un elemento del grupo $\operatorname{SO}(1,1)$ con \emph{\color{red}parámetro} ${\color{red}\xi}$ 
+which can generates an element of the group $\operatorname{SO}(1,1)$ with \emph{\color{red}parameter} ${\color{red}\xi}$ 
 \begin{align}
   \Lambda=\exp \left( i {\color{red}\xi} K \right)
   =\begin{pmatrix}
@@ -221,8 +217,8 @@ que genera un elemento del grupo $\operatorname{SO}(1,1)$ con \emph{\color{red}p
   \end{pmatrix},\,.
 \end{align}
 
-
-La transformación de una coordenada temporaloide y otra espacialoide ($c=1$)
+The transformation of a timelike and a spacelike coordiantes, are
+($c=1$)
   
 \begin{align*}
   \begin{pmatrix}
@@ -258,7 +254,7 @@ La transformación de una coordenada temporaloide y otra espacialoide ($c=1$)
   
 \textbf{Special}: parameter ${\color{red}\xi}$ or $\color{red}v$ is constant, e.g, inertial system invariance: \emph{\color{red}Global} conservation of $E$ and $\boldsymbol{p}$ (still action at a distance!)
 
-\textbf{General}: parameter ${\color{red}\xi}(t,\boldsymbol{x})$ or ${\color{red}v}\xi(t,\boldsymbol{x})$ is constant, e.g, accelerated  system invariance: \emph{\color{red}Local} conservation of $E$ and $\boldsymbol{p}$
+\textbf{General}: parameter ${\color{red}\xi}(t,\boldsymbol{x})$ or ${\color{red}v}(t,\boldsymbol{x})$ is local, e.g, accelerated  system invariance: \emph{\color{red}Local} conservation of $E$ and $\boldsymbol{p}$
 
 \begin{block}{Inestability of binary particle systems}
   \begin{columns}
@@ -489,6 +485,7 @@ and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
     \invisible<1>{{\color{cyan}-ig_1B_{\mu}}}:$ \only<1-5>{17}\only<6>{21}\only<7>{32}\only<8>{62} years later... (stages of grief $\to$ \only<1-5>{1967}\only<6>{1971}\only<7>{1982}\only<8->{2012})}
 
 
+  
 \begin{columns}
   \begin{column}{0.73\textwidth}
     \begin{block}{\only<1-3>{Not mass, }\only<1>{not charge}\only<2-3>{\color{cyan}hypercharge, }\only<3>{\color{magenta} not Dirac}%
@@ -555,13 +552,18 @@ and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
 
                 {                  \small
                 \begin{align*}
-                 \hspace{-0.3cm} \mathcal{L}=i \left( L \right)^{\dagger}\overline{\sigma}^{\mu}D_{\mu}L-\tfrac{1}{4}W_{\mu\nu}^iW^{\mu\nu}_{i}
+                 \hspace{-0.7cm} \mathcal{L}=i \left( L \right)^{\dagger}\overline{\sigma}^{\mu}D_{\mu}L-\tfrac{1}{4}W_{\mu\nu}^iW^{\mu\nu}_{i}
    \invisible<1>{ -{\color{cyan}\tfrac{1}{4}B_{\mu\nu}B^{\mu\nu}}}
  \invisible<1-2>{ -{\color{magenta} i \left( e_R \right)^{\dagger}{\sigma}^{\mu}D_{\mu}e_R }}
  \invisible<1-3>{ + h\left( e_R \right)^{\dagger} \Phi^{\dagger} L
   -\left( D^{\mu}\Phi \right)^{\dagger} D_{\mu}\Phi-{\color{red}\mu^2} \Phi^{\dagger}\Phi -\lambda \left( \Phi^{\dagger}\Phi  \right)^{2}}
 \end{align*}
 }%
+%
+\begin{picture}(320,10)  
+  \invisible<1-7>{\put(235,8){\includegraphics[scale=0.1]{encircle}}}%
+  \invisible<1-7>{\put(355,0){\includegraphics[scale=0.15]{encircle}}}%
+\end{picture}
 \vspace{-0.5cm}
 \only<1-4>{\centering\includegraphics[scale=0.38]{mudecay}}%
      \only<5->{
