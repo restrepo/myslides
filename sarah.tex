@@ -395,8 +395,8 @@ In this way, the invariant scalar product between the 4-vector field and the fou
    $e_R$: electron {\color{blue}right}   & $\left( \eta^{\color{red}\alpha} \right)^{\dagger}=\eta^{\dagger\;\color{blue}\dot{\alpha}}$ & ${\left[ \left( S^{-1} \right)^\dagger \right]^{\color{blue}\dot{\alpha}}}_{\color{blue}\dot{\beta}}\eta^{\dagger\;\color{blue}\dot{\beta}}$& $e^{i\theta}\eta^{\dagger\;\color{blue}\dot{\alpha}}$\\
    $\left( e_R \right)^{\dagger}$: positron {\color{red}left}&$\eta^{\color{red}\alpha}$& $\eta^{\color{red}\beta}{\left[ S^{-1}  \right]_{\color{red}\beta}}^{\color{red}\alpha}$ & $e^{-i\theta}\eta^{\color{red}\alpha}$\\\hline
   \end{tabular}
-  \caption{electron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ inferior
-and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
+  \caption{electron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)_Q$ (subscript)
+and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)_Q$ (superscript)
   }
   \label{tab:electron}
 \end{table}
@@ -429,8 +429,8 @@ and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
    $e_R$: electron {\color{blue}right}   & $\left( \eta^{\color{red}\alpha} \right)^{\dagger}=\eta^{\dagger\;\color{blue}\dot{\alpha}}$ & ${\left[ \left( S^{-1} \right)^\dagger \right]^{\color{blue}\dot{\alpha}}}_{\color{blue}\dot{\beta}}\eta^{\dagger\;\color{blue}\dot{\beta}}$& $e^{i\theta}\eta^{\dagger\;\color{blue}\dot{\alpha}}$\\
    $\left( e_R \right)^{\dagger}$: positron {\color{red}left}&$\eta^{\color{red}\alpha}$& $\eta^{\color{red}\beta}{\left[ S^{-1}  \right]_{\color{red}\beta}}^{\color{red}\alpha}$ & $e^{-i\theta}\eta^{\color{red}\alpha}$\\\hline
   \end{tabular}
-  \caption{electron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ inferior
-and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
+  \caption{electron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)_Q$ (subscript)
+and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)_Q$ (superscript)
   }
   \label{tab:electron}
 \end{table}
@@ -446,8 +446,9 @@ and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
 \end{align*}
 \vspace{-1.5cm}
 \begin{align*}
-  \mathcal{L}=&i\xi^{\dagger}_{\color{blue}\dot{\alpha}}\overline{\sigma}^{\mu\;\color{blue}\dot{\alpha}\color{red}\alpha}{\color{magenta}D_\mu}\xi_{\color{red}\alpha}+i\eta^{\color{red}\alpha}\sigma^{\mu}_{\color{red}\alpha\color{blue}\dot{\alpha}}{\color{magenta}D_\mu}\eta^{\dagger\;\color{blue}\dot{\alpha}}
-                -m \left(\eta^{\color{red}\alpha} \xi_{\color{red}\alpha}+\xi^{\dagger}_{\color{blue}\dot{\alpha}} \eta^{\dagger\;\color{blue}\dot{\alpha}}\right)-\tfrac{1}{4}{\color{magenta}F^{\mu\nu}}{\color{magenta}F_{\mu\nu}}\\
+  \mathcal{L}=&i\only<1-2>{\xi^{\dagger}_{\invisible<2->{\color{blue}\dot{\alpha}}}}\only<3->{\left( e_L \right)^{\dagger}}\overline{\sigma}^{\invisible<2->{\mu\;\color{blue}\dot{\alpha}\color{red}\alpha}}{\color{magenta}D_\mu}
+\only<1-2>{\xi_{\invisible<2->{\color{red}\alpha}}}\only<3->{e_L}+i\only<1-2>{\eta^{\invisible<2->{\color{red}\alpha}}}\only<3->{\left( e_R \right)^{\dagger}}\sigma^{\mu}_{\invisible<2->{\color{red}\alpha\color{blue}\dot{\alpha}}}{\color{magenta}D_\mu}\only<1-2>{\eta^{\dagger\invisible<2->{\;\color{blue}\dot{\alpha}}}}\only<3->{e_R}
+                -m \left[\only<1-2>{\eta^{\invisible<2->{\color{red}\alpha}}}\only<3->{\left( e_R \right)^{\dagger}} \only<1-2>{\xi_{\invisible<2->{\color{red}\alpha}}}\only<3->{e_L}+\only<1-2>{\xi^{\dagger}_{\invisible<2->{\color{blue}\dot{\alpha}}}}\only<3->{\left( e_L \right)^{\dagger}} \only<1-2>{\eta^{\dagger\;\invisible<2->{\color{blue}\dot{\alpha}}}}\only<3->{e_R}\right]-\tfrac{1}{4}{\color{magenta}F^{\mu\nu}}{\color{magenta}F_{\mu\nu}}\\
 \invisible<1>{  \mathcal{L}=}&\invisible<1>{i\overline{\psi}\gamma^{\mu}{\color{magenta}D_\mu}\psi -m\overline{\psi}\psi-\tfrac{1}{4}{\color{magenta}F^{\mu\nu}}{\color{magenta}F_{\mu\nu}}\,.}\only<3->{\to e\overline{\psi}\gamma^{\mu}\psi\,{\color{magenta}A_{\mu}}}
 \end{align*}
 \end{block}
@@ -461,6 +462,9 @@ and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
       \begin{pmatrix}
         e_L\\
         e_R
+      \end{pmatrix}=      \begin{pmatrix}
+        \xi\\
+        \eta^\dagger
       \end{pmatrix}\\
       \gamma^{\mu}=&
 \begin{pmatrix}
@@ -488,7 +492,7 @@ and positron {\color{red}left}: $\operatorname{SL}(2,C)\times U(1)$ superior
   
 \begin{columns}
   \begin{column}{0.73\textwidth}
-    \begin{block}{\only<1-3>{Not mass, }\only<1>{not charge}\only<2-3>{\color{cyan}hypercharge, }\only<3>{\color{magenta} not Dirac}%
+    \begin{block}{\only<1-3>{Not mass, }\only<1>{}\only<2-3>{\color{cyan}hypercharge, }\only<3>{\color{magenta} not Dirac}%
         \only<4-5>{Higgs mechanism: tachyonic mass $\color{red}\mu^{2}<0$, and condensate}%
         \only<6>{$Z$ and $W$ phenomenology and discovery}%
         \only<7>{Hierarchy problem}%
