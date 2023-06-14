@@ -255,7 +255,7 @@ Any \emph{universal} local Abelian extension of the Standard Model can be reduce
 % \end{frame}
 
 \begin{frame}
-  \frametitle{Minimal secluded model with SM-singlet massive chiral fermions from SSB: $\operatorname{U}(1)_{\color{magenta}D}$}
+  \frametitle{Minimal secluded model with SM-singlet massive chiral fermions from SSB: $\operatorname{U}(1)_{\color{cyan}D}$}
 \begin{align}
   \mathcal{L}=i \psi_{i}^{\dagger}\cancel{\mathcal{D}}\psi_{i}-\frac{1}{4}V_{\mu\nu} V^{ \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c}
 \end{align}
@@ -321,6 +321,42 @@ Any \emph{universal} local Abelian extension of the Standard Model can be reduce
 }
 }
 \end{frame}
+
+
+\section{Additional conditions to reduce multiplicity}
+%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Effective Dirac neutrino mass operator}
+Decrease the number of charges to be assigned to dark matter particles, $\psi_i$ below\only<2>{}
+  \begin{align*}
+    &\left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]&\\
+    \text{\color{cyan} Secluded case: } && \invisible<1>{\text{\color{magenta}Active case:}}\\
+    \left[{\color{red}\nu,\nu, (\nu)}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]&
+    &\invisible<1>{\left[{\color{red}\nu,\nu, (\nu)},{\color{blue}m,m,m}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]}
+  \end{align*}
+\begin{align}
+  { \color{red}  \chi_1\to \nu_{R1},\cdots, \chi_{N_\nu}\to \nu_{R\, N_\nu},\qquad 2\le N_\nu\le 3\,,}&&
+\invisible<1>{   \color{blue}X(L_{i})=-L\,,\ X(H)=h\qquad \to m=L-h }%-h=m-L → h=L-m
+\end{align}
+  \begin{align*} 
+    \mathcal{L}_{\text{eff}} = h_{\nu}^{\alpha i} \, {\color{red}\left( \nu_{R\alpha}\right)^{\dagger}} \, \epsilon_{ab} \, {\color{blue} L_i^a }\,\only<1>{H^{b}}{\only<2>{\color{blue}H^b}} \left(\frac{{\color{Green}\Phi^*}}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i=1,2,3$}\,,
+\end{align*}
+$\color{Green}\Phi$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry and
+\setlength{\fboxrule}{3 pt}
+\fcolorbox{red}{yellow}{give mass to \emph{all} $\psi_i$}
+\invisible<1>{$\to$
+$\cancel{[{\color{red}-4,-4},{\color{blue}1,1,1},5]}$}
+\begin{align}
+     \label{eq:effcon}
+   {\color{Green} \phi}=-\frac{\invisible<1>{(}{\color{red}\nu}\invisible<1>{+{\color{blue}m})}}{\delta}\,, %-\nu-L+h-\delta \phi=0 → \delta \phi= -\nu -L+L-m=-\nu-m
+\end{align}
+
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%
 
 
 
