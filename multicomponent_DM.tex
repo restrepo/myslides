@@ -117,56 +117,12 @@ Phenomenology Group %\\
 
 
 
-\section{Dark sectors}
+\section{Local Abelian extensions of the SM}
 %A model of electroweak baryogenesis requiring no fine
 %tuning and consistent to scales far above 1 TeV is
 %demonstrated, in which dark matter plays the leading
 %role in creating a CP asymmetry that is the source of
 %the baryon asymmetry.
-
-\begin{frame}
-\begin{picture}(320,250)
-\only<1->{\put(-24,-22){\begin{overpic}[scale=0.352]{z2_bkg}\end{overpic}}}%
-\only<1>{\put(194,92){\begin{overpic}[scale=0.2]{infinity}\end{overpic}}}%
-\only<1->{\put(30,160.5){ $\mathbf{SM}$  }}%
-\only<1->{\put(18,115){\begin{overpic}[scale=0.118]{smfp}\end{overpic}}}%
-\only<2>{\put(204,158){ \begin{overpic}[scale=0.27]{dfdz}\end{overpic}}}%
-% \only<2>{\put(224,195){ {\huge \only<2>{
-%         \hspace{0.4cm}\begin{minipage}{3cm}
-%                     Hidden \\
-%           QED
-%         \end{minipage}
-%       }}  }}%
-\only<3->{\put(260,200){\Large $\color{red}\mathcal{L}=-\frac{1}{4}V_{\mu\nu}V^{\mu\nu}+\color{blue}i \sum_i{\psi_i}^\dagger\cancel{\mathcal{D}} \psi_i$   }}%
-\only<3->{\put(280,180){\Large $\color{blue} - \only<3-5>{h}\only<6->{y} \left(\psi_1\psi_2 \only<3-5>{\Phi}\only<6>{S} + \text{h.c} \right) $   }}%
-\only<3->{\put(280,218.5){ \Huge {{\color{red}Local}} $\color{red}U(1)_{\mathcal{X}}$  }}%
-\only<3->{\put(240,125){
-    \begin{minipage}{0.4\linewidth}
-      SSB: SM-singlet Dirac fermion\\
-      \only<3-5>{dark matter $\color{red}m_{\Psi}=h\langle \Phi \rangle$}\only<6>{$CP$ violation Yukawa $\color{blue}y$}
-      
-          {\color{red}LHC production: }
-          \begin{align*}
-            \text{Gauged Symmetry: $\color{red}\mathcal{X}\to \only<3>{D}\only<4->{B}$: }&\invisible<3>{\color{red} q\overline{q}\to Z'\to \text{jets}} \\
-            \text{Gauged Symmetry: $\color{blue}\mathcal{X}\to \only<3>{X}\only<4->{L}$: }&
-          \end{align*}
-    \end{minipage}
-  }}%
-\only<3->{\put(160,120){\Large $F_{\mu\nu}{\color{red}\ V^{\mu\nu}} $   }}%
-\only<3->{\put(120,-10){$\color{red}\overline{\Psi}\Psi=\color{blue}\psi_1\psi_2+\psi_1^\dagger\psi_2^\dagger\to \psi_\alpha\psi_\beta \Phi^{(*)}\,,\qquad \alpha=1,\ldots N\to N>4 $}}
-\only<3->{\put(204,0){ \begin{overpic}[scale=0.2]{tcdm1}\end{overpic}}}%
-
-\only<5->{\put(280,0){ \begin{overpic}[scale=0.27]{alert}\end{overpic}}}%
-\only<5->{\put(296,40){ {\huge 
-        \hspace{0.4cm}\begin{minipage}{3cm}
-          \small multi-component\\
-
-          \vspace{-0.4cm}
-          dark matter
-        \end{minipage}
-      }  }}%
-\end{picture}
-\end{frame}
 
 %%%%%%%%%%%%%%%
 \begin{frame}
@@ -188,7 +144,7 @@ Any \emph{universal} local Abelian extension of the Standard Model can be reduce
 \item<1-> From a list of $N-2$ integers,  e.g., for $N$ even
   \begin{align}
     \boldsymbol{q}=\only<1-3>{\left[l_1,l_2,\cdots,l_{n},k_1,k_2,\cdots,k_{n}\right],\qquad n=(N-2)/2\,.}%
-                   \only<4->{\left[2,3,-1,-3\right],\qquad n=6\,.}
+                   \only<4->{\left[l_1=2,l_2=3,k_1=-1,k_2=-3\right],\qquad n=2\,.}
   \end{align}
   in the range $\only<1-3>{[-m,m]}\only<4->{[-3,3]}$, build two vector-like solutions of $\only<1-3>{N}\only<4->{6}$ integers,
   \begin{align}
@@ -439,19 +395,19 @@ $\cancel{[{\color{red}-4,-4},{\color{blue}1,1,1},5]}$}
     \end{column}
 
   \end{columns}
-  \invisible<1-4>{\only<5>{{\color{red}$1\,122$} solutions from $\sim 400,000$}
-
-%\includegraphics[scale=0.45]{dmz}    \includegraphics[height=4.5cm]{u1blc5}
 
 
+\invisible<1-3>{\includegraphics[scale=0.45]{dmz}}\only<3-4>{\includegraphics[height=4.5cm]{zeedelta2}}\only<5>{\includegraphics[height=4.5cm]{u1blc5}}
 
-  }
+
+
+  
 
 
   \end{frame}
 
 
-
+\section{Half active symmetries: gauged $B$ or $L$}
 
 
 
@@ -486,7 +442,7 @@ $\left(e''_L\right)^\dagger$      & $\mathbf{1}$ & $1$   & $-x''$ }  \\\hline
 $\Phi$      & $\mathbf{1}$ & $0$   & $\phi$\\
 \invisible<1>{$S$      & $\mathbf{1}$ & $0$   & $s$}\\ 
   \end{tabular}
-  \caption{ \invisible<1>{minimal set of
+  \caption{ \only<1>{LHC: hadronic production and dileptonic decay}\invisible<1>{minimal set of
 new fermion content: $\color{blue}L=e=0$ for $\mathcal{X}=\color{red}B$. Or $\color{red}Q=u=d=0$ for $\mathcal{X}=\color{blue}L$.} $i=1,2,3$, $\alpha=1,2,\ldots,N'$  }
     \label{tab:partcont2}
 \end{table}
@@ -494,7 +450,7 @@ new fermion content: $\color{blue}L=e=0$ for $\mathcal{X}=\color{red}B$. Or $\co
 
 
 \begin{frame}
-  \frametitle{Anomaly cancellation: $\mathcal{X}={\color{cyan}L}$ or ${\color{magenta}B}$}
+  \frametitle{Anomaly cancellation: $\mathcal{X}={\color{cyan}L}$ or ${\color{magenta}B}$: beyond SM-singlet fermions}
 The anomaly-cancellation conditions on $\left[\operatorname{SU}(3)_c\right]^{2}  \operatorname{U}(1)_{X}$, $\left[\operatorname{SU}(2)_{L}\right]^{2} \operatorname{U}(1)_{X}$, $\left[\operatorname{U}(1)_{Y}\right]^{2} \operatorname{U}(1)_{X}$,  allow us to express three of the $X$-charges in terms of the others
 \begin{align}\label{eq:sol0}
   \color{red}u=&-{\color{blue}e}-\frac23 {\color{blue}L}-\frac19\left(x'-x''\right)\,,& 
@@ -628,10 +584,10 @@ $\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q
 \end{frame}
 
 
-\begin{frame}
-  \only<1>{\includegraphics[scale=0.8]{triangle1}}
-  \only<2>{\includegraphics[scale=0.8]{triangle2}}
-\end{frame}
+% \begin{frame}
+%   \only<1>{\includegraphics[scale=0.8]{triangle1}}
+%   \only<2>{\includegraphics[scale=0.8]{triangle2}}
+% \end{frame}
   
 
 
