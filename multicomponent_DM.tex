@@ -34,8 +34,8 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Gauged Lepton number}
-\subtitle{with \emph{dark} matter and \emph{dark} baryogenesis}
+\title{Multicomponent fermionic dark matter and dark baryogenesis}
+\subtitle{}
 
 
 %\subtitle
@@ -47,7 +47,7 @@
 %   affiliation.
 \institute{
   \begin{picture}(100,2)
-    \put(230,-110){ %\includegraphics[scale=0.17]{temple}
+    \put(230,-90){ \includegraphics[scale=0.17]{albufera}
     }
 \end{picture}
   \affiliation{\tiny Instituto de Física\\
@@ -57,14 +57,14 @@ Phenomenology Group %\\
 }%
 {http://gfif.udea.edu.co}%
 {}%
-{comhep_small}% small image here, use pixel for nothing
+{pixel}% small image here, use pixel for nothing
 {}
-\arxiv{ ... %arXiv:2112.09524 [Frontiers in Physics]  arXiv:2205.05762 [PRD]
+%\arxiv{ ... %arXiv:2112.09524 [Frontiers in Physics]  arXiv:2205.05762 [PRD]
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
-}
-\collaborators{Leonardo Leite, Orlando Peres, William Novelo (UNICAMP), David Suárez (UdeA)
+%}
+%\collaborators{%Leonardo Leite, Orlando Peres, William Novelo (UNICAMP), David Suárez (UdeA)
 %  Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, David Suárez
-}
+%}
 }
 
 \date{\tiny %December 3, 2019 - COMHEP
@@ -126,7 +126,7 @@ Phenomenology Group %\\
 
 %%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Anomaly cancellation}
+  \frametitle{Anomaly cancellation of a gauge $U(1)_{\color{cyan}x}$ extension}
 Any \emph{universal} local Abelian extension of the Standard Model can be reduced to a set of integers which must satisfy the gravitational anomaly, $\left[\operatorname{SO}(1,3)\right]^2\operatorname{U}(1)_Y$, and the cubic anomaly, $\left[\operatorname{U}(1)_X\right]^3$ conditions:
 \begin{align}
     \label{eq:Dcoond}
@@ -279,25 +279,26 @@ Any \emph{universal} local Abelian extension of the Standard Model can be reduce
 \end{frame}
 
 \begin{frame}
-  \frametitle{\invisible<1>{Majorana} neutrino masses and mixings}
+  \frametitle{\invisible<1>{Scotogenic} Majorana neutrino masses and mixings}
 
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \begin{align*}
-       \frac{y}{\Lambda} LLHH \to \frac{y}{\Lambda}LLHH{{\color{red}\frac{\Phi}{\Lambda} \frac{\Phi^*}{\Lambda}}}
+        \frac{y}{\Lambda} LLHH \invisible<1>{
+        \to \frac{y}{\Lambda}LLHH{{\color{red}\frac{\Phi}{\Lambda} \frac{\Phi^*}{\Lambda}}}}
       \end{align*}      
     \end{column}
     \begin{column}{0.5\textwidth}
       \vspace{0.3cm}
-      \only<1>{\includegraphics[scale=0.6]{darkscoto}}%
-      \only<2>{\includegraphics[scale=0.6]{darkscotomaj}}
+      \only<2>{\includegraphics[scale=0.6]{darkscoto}}%
+      \only<3>{\includegraphics[scale=0.6]{darkscotomaj}}
     \end{column}
   \end{columns}
 
 
 
-  \invisible<1>{
-Already found in arXiv:2008.08573 ($N\le 9$ and $z_{\text{max}} \le 10$)
+  \invisible<1-2>{
+Already found by Chi-Fong Wong in arXiv:2008.08573  (subset with $N\le 9$ and $z_{\text{max}} \le 10$)
 
 \begin{align}
   \boldsymbol{z}=[\underbrace{1, 1}_{\displaystyle{\psi}}, 2, 3, -4, -4, -5, 6] \to \phi=2 \to [\;(1,1)_a ,{\color{blue} (2, -4), (4, -6)},{\color{red}(4, -7)}] 
@@ -311,7 +312,7 @@ Already found in arXiv:2008.08573 ($N\le 9$ and $z_{\text{max}} \le 10$)
 \section{Additional conditions to reduce multiplicity}
 %%%%%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Effective Dirac neutrino mass operator $\to$ arXiv:2112.09524}
+  \frametitle{Effective Dirac neutrino mass operator \hfill \tiny{arXiv:2112.09524}}
 Decrease the number of charges to be assigned to dark matter particles, $\psi_i$ below\only<2>{}
   \begin{align*}
     &\left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]&\\
@@ -371,7 +372,7 @@ $\cancel{[{\color{red}-4,-4},{\color{blue}1,1,1},5]}$}
 
 
 \begin{frame}
-    \frametitle{$\operatorname{U}(1)_{\color{cyan}X}$ selection \invisible<1-2>{\hfill \tiny{arXiv: 2103.15328}}}
+    \frametitle{$\operatorname{U}(1)_{\color{cyan}X}$ selection with Dirac-fermionic DM \invisible<1-2>{\hfill \tiny{arXiv: 2103.15328}}}
 
       \begin{columns}
     \begin{column}{0.7\textwidth}
@@ -397,7 +398,7 @@ $\cancel{[{\color{red}-4,-4},{\color{blue}1,1,1},5]}$}
   \end{columns}
 
 
-\invisible<1-3>{\includegraphics[scale=0.45]{dmz}}\only<3-4>{\includegraphics[height=4.5cm]{zeedelta2}}\only<5>{\includegraphics[height=4.5cm]{u1blc5}}
+\invisible<1-2>{\only<1-3>{\includegraphics[height=4.5cm]{GNI}}}\only<4-5>{\includegraphics[scale=0.45]{dmz}}\only<3>{\includegraphics[height=4.5cm]{zeedelta2}}\only<4-5>{\includegraphics[height=4.5cm]{u1blc5}}
 
 
 
@@ -407,7 +408,25 @@ $\cancel{[{\color{red}-4,-4},{\color{blue}1,1,1},5]}$}
   \end{frame}
 
 
-\section{Half active symmetries: gauged $B$ or $L$}
+  \begin{frame}
+    \frametitle{$\operatorname{U}(1)_{\color{cyan}D}$: 2 dark matter candidates\hfill \tiny{in progress...} }
+
+\includegraphics[scale=1]{relic_abundance_dark_symmetry_graph02}
+\hspace{1cm}\includegraphics[scale=1]{relic_abundance_dark_symmetry_graph01}
+\hspace{1cm}\includegraphics[scale=1]{dark_matter_conversion_graph}
+
+\vspace{-0.5cm}
+
+$M_{Z_D}<200\,,\text{GeV}$
+\includegraphics[scale=0.5]{parameter_space20} $M_2$ [GeV] (xBit scan)
+
+
+
+
+\end{frame}
+
+
+\section{Beyond SM-fermion singlets}
 
 
 
@@ -476,14 +495,14 @@ so that ($\color{blue}L$ is still a {\color{blue}free parameter})
 \label{eq:Q}
     {\color{red}Q=-u=-d}=-\frac13 {\color{blue}L}+\frac19\left(x'-x''\right).
 \end{align}
-If $\color{red}B=0$ $\to \operatorname{U}(1)_{\color{blue}L}$
+
 \end{frame}
 
 
 
 %%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Anomaly cancellation: $\mathcal{X}={\color{cyan}L}$ }
+  \frametitle{Anomaly cancellation: $\mathcal{X}={\color{cyan}L}$  or ${\color{magenta}B}$}
 The gravitational anomaly, $\left[\operatorname{SO}(1,3)\right]^2\operatorname{U}(1)_Y$, and the cubic anomaly, $\left[\operatorname{U}(1)_X\right]^3$,
 can be written as the following system of Diophantine equations, respectively,
 \begin{align}
@@ -536,13 +555,13 @@ $\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q
 
 
 \begin{frame}
-    \frametitle{$\operatorname{U}(1)_{\color{magenta}B}$ selection}
+    \frametitle{$\operatorname{U}(1)_{\color{magenta}B}$ selection: Neutrinos, dark matter and baryogenesis}
 
       \begin{columns}
     \begin{column}{0.7\textwidth}
       \begin{itemize}
       \item<1-> $\color{blue}L=0$
-      \item<2-> Effective neutrino mass: $\only<2>{\color{red}}\phi=-\nu=-5$
+      \item<2-> Effective Dirac neutrino masses: $\only<2>{\color{red}}\phi=-\nu=-5$
       \item<3-> Electroweak-scale vector-like fermions: $\only<3>{\color{red}}\left(L_L'\right)^\dagger L_R''\Phi^*\to x'=-1,\ x''=6$
       \item<4-> Dirac-fermionic DM: $\only<4>{\color{red}}\left(\chi_L\right)^\dagger \chi_R''\Phi^*\to z_3=-3,\ z_4=-2$
       \end{itemize}
@@ -560,13 +579,13 @@ $\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q
 
   \end{columns}
 
-  \invisible<1-4>{\only<5>{{\color{red}959} solutions from $\sim 400,000$}  (as in $\operatorname{U}(1)_{\color{red}D}$)   }
+  \invisible<1-4>{\only<5>{{\color{red}959} solutions }    }
 
-  \invisible<1-4>{
-    \begin{minipage}[t]{3.0\linewidth}
-      \includegraphics[scale=0.45]{number}\hspace{0.5cm}\includegraphics[scale=0.45]{generation}
-    \end{minipage}
-  }
+  % \invisible<1-4>{
+  %   \begin{minipage}[t]{3.0\linewidth}
+  %     \includegraphics[scale=0.45]{number}\hspace{0.5cm}\includegraphics[scale=0.45]{generation}
+  %   \end{minipage}
+  %}
 
   \end{frame}
 
@@ -665,7 +684,7 @@ $\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q
  
 \begin{frame}
   \frametitle{Conclusions}
-  A methodology to find all the \emph{universal} Abelian extensions of the standard model is designed
+  A methodology to find all the \emph{universal} gauge Abelian extensions of the standard model is designed.
 
   All of the extensions can be reformulated as the solution of
   \begin{align*}
@@ -674,7 +693,7 @@ $\color{blue}L=0$ ${\to}$ $\operatorname{U(1)}_{\color{red}B}$ but $\color{red}Q
 \end{align*}
 which we fully scan until $N=12$ and $\left| z_{\text{max}} \right|=20$
 
-Once the physical conditions are stablished, the full set of self-consistent models are found from a simple data-analysis procedure
+Once the physical conditions are stablished, the full set of self-consistent models are found from a simple data-analysis procedure. With enough freedom to solve several phenomenological problems.
 
 \end{frame}
 
