@@ -261,7 +261,7 @@ Any \emph{universal} local Abelian extension of the Standard Model can be reduce
 
 \invisible<1-2>{
 \vspace{-1cm}
-\begin{align}
+\begin{align*}
   \mathcal{L}\subset
 {\color{blue}  \Psi^{\operatorname{T}}\kbordermatrix{
      & 1 & 2 & 2 & -5 & -5& 8  \\
@@ -273,10 +273,28 @@ Any \emph{universal} local Abelian extension of the Standard Model can be reduce
    8 & 0 & 0 & 0 & h_{(-5,8)}  & h'_{(-5,8)} & 0 \\
   }\Psi \phi^{(*)}
   }+{\color{red}h_{(4,-7)}\psi_4\psi_{-7}\phi^{*}}
-\end{align}
+\end{align*}
 }
 }
 \end{frame}
+
+  \begin{frame}
+    \frametitle{$\operatorname{U}(1)_{\color{cyan}D}$: two dark matter candidates\hfill \tiny{in progress...} }
+
+\includegraphics[scale=1]{relic_abundance_dark_symmetry_graph02}
+\hspace{1cm}\includegraphics[scale=1]{relic_abundance_dark_symmetry_graph01}
+\hspace{1cm}\includegraphics[scale=1]{dark_matter_conversion_graph}
+
+\vspace{-0.5cm}
+
+$M_{Z_D}<200\,,\text{GeV}$
+\includegraphics[scale=0.5]{parameter_space20} $M_2$ [GeV] \hfill (xBit scan)
+
+
+
+
+\end{frame}
+
 
 \begin{frame}
   \frametitle{\invisible<1>{Scotogenic} Majorana neutrino masses and mixings}
@@ -408,22 +426,6 @@ $\cancel{[{\color{red}-4,-4},{\color{blue}1,1,1},5]}$}
   \end{frame}
 
 
-  \begin{frame}
-    \frametitle{$\operatorname{U}(1)_{\color{cyan}D}$: 2 dark matter candidates\hfill \tiny{in progress...} }
-
-\includegraphics[scale=1]{relic_abundance_dark_symmetry_graph02}
-\hspace{1cm}\includegraphics[scale=1]{relic_abundance_dark_symmetry_graph01}
-\hspace{1cm}\includegraphics[scale=1]{dark_matter_conversion_graph}
-
-\vspace{-0.5cm}
-
-$M_{Z_D}<200\,,\text{GeV}$
-\includegraphics[scale=0.5]{parameter_space20} $M_2$ [GeV] (xBit scan)
-
-
-
-
-\end{frame}
 
 
 \section{Beyond SM-fermion singlets}
@@ -696,6 +698,158 @@ which we fully scan until $N=12$ and $\left| z_{\text{max}} \right|=20$
 Once the physical conditions are stablished, the full set of self-consistent models are found from a simple data-analysis procedure. With enough freedom to solve several phenomenological problems.
 
 \end{frame}
+
+%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{Baryogenesis}
+  CP violation occurs in the dark sector and is transmited to SM sector by the new $Z'$ gauge boson.
+
+  \begin{itemize}
+  \item   High scale fields:
+  $
+  \Phi\,,\qquad  \left( \langle\Phi\rangle \to L'_L, L''_R,e'_L,e''_R\text{:~ EW-scale vector-like anomalons}\right) 
+  $
+  
+  
+\item Electroweak scale (EW) fields:
+  \fcolorbox{red}{yellow}{ $ Z'_\mu, S, \chi_L,\chi_R $}
+\item $CP$-violation 
+    \begin{align*}
+      \mathcal{L}_{\text{Dirac DM}}=&h \left(\chi_L\right)^\dagger \chi_R \Phi^* + {\color{red} y \left(\chi_L\right)^\dagger \chi_R S^*}+\text{h.c}\,,& {\color{red}y}\in&\mathbb{C}\\
+      \supset& \left( m_{\chi} + {\color{red}|y| \operatorname{e}^{i\theta}|S|} \right)\left(\chi_L\right)^\dagger \chi_R+\text{h.c}\,.&&
+  \end{align*}
+  \item $CP$-violation Portal
+    \begin{align*}
+\mathcal{L}_{\text{anomalous}} \supset g^{\prime} Z_{\mu}^{\prime}\left[3 \bar{\chi}_{L} \gamma^{\mu} \chi_{L}-2\bar{\chi}_{R} \gamma^{\mu} \chi_{R}+\bar{Q}_{i} \gamma^{\mu} Q_{i}+\bar{q}_{Ri} \gamma^{\mu} q_{Ri}\right]
+    \end{align*}
+  \item Strong electroweak phase transition (EWPT) portal
+    \begin{align*}
+      \mathcal{L}_{\text{first order EWPT}}\supset -\lambda_{S H} H^{\dagger}H\, S^{*}S\,.
+    \end{align*}
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{First-order phase transition: Effective potential ($T\ne 0$)}
+\fcolorbox{red}{yellow}{  $h=H/\sqrt{2}$, $s=|S|$ } with vevs: $v(T)$ and $w(T)$ such that $v(T_c)=w(T_c)$
+\begin{align}
+   V_T(h,s)\,=\,& \frac{\lambda_H v_c^4}{4}\left(\frac{h^2}{v_c^2} +\frac{s^2}{w_c^2} -1\right)^2 + \frac{\lambda_H v_c^2}{m_{s,c}^2 w_{0,c}^4}h^2 s^2 
+     + (T^2-T_c^2)(c_h h^2 +c_s s^2)\,, %+ {\color{red} \frac{1}{12}T^2 \lambda\, m_\chi\, } S,
+\end{align}
+where
+\begin{align}
+    c_h\,=\,&\frac{1}{48} \left(9g_2^2+ 3g_1^2 +12 y_t^2 +24 \lambda_H +\lambda_{HS}\right)\, ,\quad
+    c_s\,=\,  \frac{1}{12} \left (3 \lambda_S + 2 \lambda_{HS} \right)\,. 
+\end{align} 
+\vspace{-0.4cm}
+\begin{columns}
+  \begin{column}{0.5\textwidth}
+\includegraphics[scale=0.6]{bubble}    
+  \end{column}
+  \begin{column}{0.5\textwidth}
+\invisible<1>{\tiny arXiv: Sec.~4.1 arXiv:1107.5451 }
+\invisible<1>{\only<2>{\includegraphics[scale=0.5]{v1}}%
+\only<3>{\includegraphics[scale=0.5]{v2}}%
+\only<4>{\includegraphics[scale=0.5]{v3}}%
+      }
+  \end{column}
+\end{columns}
+
+
+\end{frame}
+\begin{frame}[fragile,allowframebreaks]
+\frametitle{$CP$ assymetry generation}
+
+
+ Using the thin wall approximantion for the nucleation bubbles,
+  we use the ansatz in which the space dependence of the fields is given by 
+\begin{equation*}
+    h(z) \,=\, \frac{1}{2}v(T_n) \left(1- \tanh \left(z/L_w \right) \right)\,,\qquad
+    s(z) \,=\, \frac{1}{2}w_0(T_n) \left(1+ \tanh \left(z/L_w \right) \right)\,, 
+\end{equation*}  
+where $z$ is the direction normal to the wall and $L_w$ is the wall width.
+
+%\newpage{}
+The nucleation temperature, $T_n$, is defined by the condition
+\begin{equation*}
+    \exp \left (-S_3 /T_n \right) \,=\, \frac{3}{4\pi}\left(\frac{H(T_n)}{T_n} \right)^4 \left(\frac{2\pi\,T_n}{S_3}\right)^{\frac{3}{2}} \,,
+\end{equation*}
+ where $S_3$ is the Euclidean action of the bubble and $H(T)$ is the Hubble rate.
+
+
+
+\end{frame}
+
+\begin{frame}[fragile,allowframebreaks]
+\frametitle{Boltzmann equation}
+ $\xi_i(z)\,\equiv\,{\mu_i(z)}/{T} \,=\,{6}\left(n_i - \overline{n}_{i} \right)/{T^3}$,
+\begin{equation*}
+- D_L \xi''_{\chi_L} -v_w\xi'_{\chi_L} +\Gamma_L(\xi_{\chi_L}-\xi_{\chi_R})\,=\,S_{\cancel{CP}}\,,
+\end{equation*}
+where $D_L$ is the diffusion constant for $\chi_L$, which is related to the scattering rate $\Gamma_L$ by
+\begin{align}
+  D_L= \frac{3x+2}{x^2 +3x+2}\frac{1}{3\Gamma_L}, \qquad\qquad x\equiv m_\chi /T\,
+\end{align}
+ and
+\begin{align}
+  S_{\cancel{CP}}\,=\,-\frac{\lambda}{2}\frac{v_w D_L}{\frac{3x+2}{x^2 +3x+2} T} \frac{(1-x)e^{-x} + x^2 E_1(x) }{4m_\chi^2 K_2(x)}
+  \frac{m_\chi w_0(T_n) \lambda \left(-2+\cosh \left(\frac{2z}{L_w} \right) \right)\sin \theta}{L_w^3 \cosh^4 \left(\frac{z}{L_w} \right)}\,,
+\end{align}
+where $v_w$ is the wall's velocity 
+$E_1(x)$ is the error function and $K_2(x)$ is the modified Bessel function of the second kind. ${\color{red}y}=\lambda\operatorname{e}^{i\theta -i\pi/2}$
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Transfer DM assymetry to SM quarks}
+The chiral particle give rise to a non-zero $\operatorname{U}(1)_B$ charge density in the proximity of the wall. This results in a $Z'$ background that couples to the SM fields with $\operatorname{U}(1)_B$ charge,
+\begin{equation*}
+    \langle Z'_0(z) \rangle \,=\, \frac{ g_B\,(q_{\chi_L}-q_{\chi_R})T_n^3}{6 M_{Z'}} \int_{-\infty}^\infty \operatorname{d}z_1\, \xi_{\chi_L}(z_1)\, e^{-M_{Z'}|z-z_1|}\, , 
+\end{equation*} which generates a chemical potential for the SM quarks, 
+\begin{equation*}
+\mu_{Q}(z)\,=\, \mu_{d_R,u_R}(z)\,=\, 3 \times \frac{5}{9} \times g_B \langle Z'_0 (z) \rangle. 
+\end{equation*} 
+This chemical potential sources a thermal-equilibrium asymmetry in the quarks, $ \Delta n_{Q}^{\rm EQ} (z) \,\sim \, T_n^2 \, \mu_{Q}(z)$. 
+
+From [1]
+\begin{quote}
+\fcolorbox{red}{yellow}{If the $Z'$ is sufficiently
+light, it mediates a long range force that extends into the region }
+\fcolorbox{red}{yellow}{ outside the bubble wall with
+unbroken electroweak symmetry. }
+
+\end{quote}
+
+\end{frame}
+\begin{frame}
+  \frametitle{Finally, the baryon-number asymmetry is then given by}
+
+\begin{equation*}
+  n_B\,=\,  \frac{\Gamma_{\rm sph}}{v_w} \int_0^{\infty}\operatorname{d}z\, n_{Q}^{\rm EQ} (z)\, \exp\left(-\frac{\Gamma_{\rm sph}}{v_w}\,z\right)\,,
+\end{equation*} 
+where $\Gamma_{\rm sph}$ is the sphaleron rate. The baryon-to-photon-number ratio is then obtained by
+\begin{equation*}
+ \eta_B \,=\, \frac{n_B}{s(T_n)},\quad s (T) \,\equiv\,\frac{2\pi^2}{45} g_{*S}(T)\, T^3\,, 
+\end{equation*} where $g_{*S}(T)$ is the effective number of relativistic degrees of freedom.
+
+Our goal is to find what regions of the parameter space yield
+%
+\begin{align}
+\label{eq:eta-value}
+0.82\times 10^{-10} < \eta_B < 0.92\times 10^{-10}\,.
+\end{align}
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%
+
+
+
 
 \end{document}  
 \begin{frame}
