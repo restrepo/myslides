@@ -34,7 +34,7 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Multicomponent fermionic dark matter and dark baryogenesis}
+\title{Abelian gauge extensions with Higgs mixing}
 \subtitle{}
 
 
@@ -47,7 +47,7 @@
 %   affiliation.
 \institute{
   \begin{picture}(100,2)
-    \put(230,-90){ \includegraphics[scale=0.17]{albufera}
+    \put(230,-90){ \includegraphics[scale=0.17]{dulima}
     }
 \end{picture}
   \affiliation{\tiny Instituto de Física\\
@@ -62,9 +62,9 @@ Phenomenology Group %\\
 %\arxiv{ ... %arXiv:2112.09524 [Frontiers in Physics]  arXiv:2205.05762 [PRD]
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
 %}
-%\collaborators{%Leonardo Leite, Orlando Peres, William Novelo (UNICAMP), David Suárez (UdeA)
-%  Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, David Suárez
-%}
+ \collaborators{%Leonardo Leite, Orlando Peres, William Novelo (UNICAMP), David Suárez (UdeA)
+   Farinaldo S. Queiroz (IIP), Clarissa Siqueira(São Paulo University)\\ and Carlos Yaguna (UPTC) [\emph{In progress...}]
+ }
 }
 
 \date{\tiny %December 3, 2019 - COMHEP
@@ -126,17 +126,133 @@ Phenomenology Group %\\
 
 %%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Anomaly cancellation of a gauge $U(1)_{\color{cyan}x}$ extension}
-Any \emph{universal} local Abelian extension of the Standard Model can be reduced to a set of integers which must satisfy the gravitational anomaly, $\left[\operatorname{SO}(1,3)\right]^2\operatorname{U}(1)_Y$, and the cubic anomaly, $\left[\operatorname{U}(1)_X\right]^3$ conditions:
+  \frametitle{Anomaly cancellation of a gauge $U(1)_{X}$ extension}
+
+  It is known that if we extend the SM by a local $U(1)_X$ and a set of $\alpha$ singlet chiral fields, $N_{\alpha}$, the cubic and mixed gauge anomalies can be written in terms of two $U(1)_X$ charge, e.g, $\color{red}u$ and $\color{red}d$, where $\color{red}u$ and $\color{red}d$ represent the charges of the right-handed up and down quarks, respectively 
 \begin{align}
-    \label{eq:Dcoond}
-    \sum_{\alpha=1}^{N} z_\alpha=&0\,,&
-    \sum_{\alpha=1}^{N} z_\alpha^3=&0\,,
+  \label{eq:al0}
+  \sum_{\alpha}n^3_{\alpha}&=-   3(2{\color{red}d+u})^3\nonumber\\
+   \sum_{\alpha} n_{\alpha}&=-3 (2{\color{red}d+u})\,.
 \end{align}
+where $n_\alpha$ is the $U(1)_X$-charge of $N_\alpha$.
+\end{frame}
+
+\begin{frame}
+  \frametitle{$\alpha=3$}
+  If the set of $N_\alpha$ is just the set of heavy singlet chiral fields of the type-I seesaw
+  \begin{align}
+  \sum_{\alpha}n^3_{\alpha}&=-3\nonumber\\
+  \sum_{\alpha} n_{\alpha}&=-3\,, \nonumber
+  \end{align}
+  such that 
+\begin{equation}
+ 2{\color{red}d+u}=1, \rightarrow {\color{red}u}=1-2{\color{red}d}\,.  
+\end{equation}
+In this way, we can write the solution in terms of just one parameter: $\color{red}d$
+\end{frame}
+
+\begin{frame}
+  \frametitle{Examples of $\color{magenta}d$ with vector-like Dirac fermionic dark matter and {\color{cyan}mass mixing}}
+For a vector-like fermionic dark matter candidate $\color{blue}\chi$, $U(1)_X$ can guarantee the stability
+
+  \begin{table}
+    \centering
+        \rowcolors{1}{RoyalBlue!20}{}
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+    \hline  
+    Fields     & ${SU}(2)_L$ & ${U}(1)_Y $ & ${U}(1)_{X}$& ${U}(1)_{B-L}$& ${U}(1)_R$& ${U}(1)_{\cancel{D}}$& ${U}(1)_{\cancel{U}}$\\ \hline
+${\color{red}d}_R $  & $\boldsymbol{1}$& $-1/3$  &  ${\color{red}d}$&  $1/3$&    $1$&  $0$&  $1/2$          \\    
+$u_R $  & $\boldsymbol{1}$& $+2/3$  &  $1-2{\color{red}d}$&  $1/3$&   $-1$&  $1$&  $0$      \\
+$Q $  & $\boldsymbol{2}$& $1/6$  &  $1/2-{\color{red}d}/2$& $1/3$&    $0$&  $1/2$&  $1/6$     \\\hline
+$L $  & $\boldsymbol{2}$& $-1/2$  &  $-3/2+3{\color{red}d}/2$&  $-1$&    $0$ &  $-3/2$&  $-3/4$\\    
+ $e_R $  & $\boldsymbol{1}$& $-1$  &  $-2+3{\color{red}d}$&  $-1$&    $1$ &  $-2$&  $-1/2$         \\    
+  \hline
+ $N_R$& $\boldsymbol{1}$ & $0$ & $-1$& $-1$&  $-1$& $-1$& $-1$\\
+ \hline
+ $H$& $\boldsymbol{2}$ & $1/2$ & $1/2-3{\color{red}d}/2$& $0$&  $\color{cyan}-1$& $\color{cyan}1/2$& $\color{cyan}-1/4$\\
+ $\Phi_s$ & $\boldsymbol{1}$ & $0$ & $2$& $2$& $2$& $2$&$2$\\\hline
+ $\color{blue}\chi_L$& $\boldsymbol{1}$ & 0& $1/5$& $1/5$&$1/5$ &$1/5$ &$1/5$\\
+ $\color{blue}\chi_R$& $\boldsymbol{1}$ & 0& $1/5$& $1/5$&$1/5$ &$1/5$ &$1/5$\\\hline
+  \end{tabular}
+\caption{ $\color{red}d$ will be a continuos variable reconverted to rational whenever necessary $\to$ {\color{cyan}mass mixing!}  }
+    \label{tab:partcont2}
+\end{table}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Gauged Type-I seesaw with $\color{cyan}\chi$ and {\color{cyan}mass mixing }}
+
+  \begin{equation}
+\begin{split}
+\label{2hdmtipoI}
+\mathcal{L} \supset& y_2 ^d \bar{Q} H d_R + y_2 ^u \bar{Q} \widetilde{H}  u_R + y_2 ^e \bar{L} H e_R + y^{D} \bar{L} \widetilde{H} N_R + Y^{M} \overline{(N_R)^{c}}\Phi_{s}N_R + \text{h.c.}\\
+&+i {\color{blue}\bar{\chi}} \gamma_\mu \left(\partial_\mu -ig_{X} \chi {\color{cyan}Z'_\mu}\right) {\color{blue}\chi} - m_{\text{DM}} {\color{blue}\bar{ \chi}} \chi +{\left( \mathcal{D}_\mu{\color{cyan}H} \right)}^{\dagger}\mathcal{D}^\mu {\color{cyan}H}
+  +\left( \mathcal{D}_\mu{\Phi_s} \right)^*  \mathcal{D}_\mu{\Phi_s} -V\; ,
+\end{split}
+\end{equation}
+and the scalar potential is,
+\begin{equation}
+\begin{split}
+V =&  \mu^2 H ^\dagger H  + \frac{\lambda}{2} \left( H ^\dagger H \right) ^2  
++ m_s ^2 \Phi _s ^\dagger \Phi _s + \frac{\lambda _s}{2} \left( \Phi _s ^\dagger \Phi _s \right) ^2+ \lambda _{sH} H ^\dagger H \Phi _s ^\dagger \Phi _s 
+\end{split}
+\label{pot_2hdm_U1}
+\end{equation}
+where
+
+\begin{equation}
+H=\left(
+\begin{array}{c}
+    G^+  \\
+    (v+H^0 + i\, G^0)/\sqrt{2}
+\end{array}\right)
+\end{equation}
+and,
 %
+\begin{equation}
+    \Phi_s= \left( S +v_s + i G^{\prime 0}\right)/\sqrt{2}.
+\end{equation}
+for any $\psi$
+\begin{equation}
+\mathcal{L}\supset -\frac{g_X}{4}\left[ (X_R +X_L)\psi \gamma_\mu \psi + (X_R -X_L) \psi \gamma_\mu \gamma_5 \psi\right]{\color{cyan} Z^{\prime \mu}},
+\end{equation}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Neutrino Masses}
+Neutrino masses are generated via the last two terms of Eq.\eqref{2hdmtipoI}. They induce the presence of Dirac and Majorana mass terms, which consequently lead to the mass matrix,
+
+\begin{equation}
+\begin{pmatrix}
+\nu & N_R
+\end{pmatrix}
+\begin{pmatrix}
+       0  &  m_D \\
+        m_D^T & M_R 
+\end{pmatrix}
+\begin{pmatrix}\nu\\ N_R\end{pmatrix}
+\end{equation}
+where $m_D=y^D v_2/(2 \sqrt{2})$ and $M_R=y^M v_s/(s \sqrt{2})$. From the diagonalization procedure, we conclude that,
+\begin{equation}
+    m_\nu = m_D^T m_D/M_R, \,\, m_N = M_R,
+\end{equation}for $M_R \gg m_D$.
+
+Therefore, it is clear that our model naturally account for neutrino masses via the type-I seesaw mechanism, and usual can reproduce neutrino oscillation data
+  
+\end{frame}
+
+\begin{frame}
+  \frametitle{}
 \end{frame}
 
 
+
+\begin{frame}
+  \frametitle{}
+\end{frame}
+
+\end{document}
 \begin{frame}
   \frametitle{Methology based on: {\color{cyan}Costa-Dobrescu-Fox arXiv:1905.13729 [PRL]}  }
 
