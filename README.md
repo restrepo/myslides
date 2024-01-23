@@ -1,14 +1,13 @@
-# Talks
+	# Talks
 ## Basic design
 The simple template and examples is in master.
-Each talk is in a branch with a name starting with year and month (YYYY_MM).
-Each branch have a commont sty file and example file but a unique LaTeX file
-
-After clone the repo, to switch to an specific branch use (e.g BRANCH=2019_SARAH)
-```bash
-git checkout -B BRANCH # without origin_etc prefix
-git pull origin BRANCH
+Specific talks are in each branch.
 ```
+git checkout -t origin/2022-07-Gauged_Lepton_Number
+```
+
+
+They have a common sty file and example file but a unique LaTeX file with the same name of the branch.
 
 
 * Install `texlive-fonts-extra`
@@ -21,12 +20,16 @@ Run as
 ```bash
 xelatex master.tex
 ```
+or
+```bash
+latexmk -xelatex -pvc master.tex
+```
 
 <!-- figures/master.svg -->
 [![Image inheritance diagram](http://interactive.blockdiag.com/image?compression=deflate&encoding=base64&src=eJxNjs0KgzAQhO8-RfDupdCTWOhzlCJrsmpokpW4Qmnpu9eNv6fMfjOzm8aRfhkLnfpmSlG0GBjYUlCVGihyBMvl7BhsYXJctxR4tB-c7avwu3o4aNBVuYeRMebPMku4uKmGOmIot3FkCAaiKTwZdDuFCL1klvTRqzX5HofDWoEkGN8wipPEqeNJw6khY8pbnhzE1Fik0GXfRegqhc6v7q1DwZveb6Zw-vKxoMx-f4I3Z3A)](http://interactive.blockdiag.com/?compression=deflate&src=eJxNjs0KgzAQhO8-RfDupdCTWOhzlCJrsmpokpW4Qmnpu9eNv6fMfjOzm8aRfhkLnfpmSlG0GBjYUlCVGihyBMvl7BhsYXJctxR4tB-c7avwu3o4aNBVuYeRMebPMku4uKmGOmIot3FkCAaiKTwZdDuFCL1klvTRqzX5HofDWoEkGN8wipPEqeNJw6khY8pbnhzE1Fik0GXfRegqhc6v7q1DwZveb6Zw-vKxoMx-f4I3Z3A)
 
 
-# Official Metroplis README starts here
+# Official Metroplis READM starts here
 ## Metropolis
 Really installled as a git repo in:
 /usr/share/texlive/texmf-dist/tex/latex/mtheme
