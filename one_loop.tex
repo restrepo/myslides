@@ -34,7 +34,7 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Abelian gauge extensions with Higgs mixing}
+\title{1-loop}
 \subtitle{}
 
 
@@ -47,7 +47,7 @@
 %   affiliation.
 \institute{
   \begin{picture}(100,2)
-    \put(230,-90){ \includegraphics[scale=0.17]{dulima}
+    \put(230,-90){ \includegraphics[scale=0.12]{rodizio}
     }
 \end{picture}
   \affiliation{\tiny Instituto de Física\\
@@ -62,9 +62,9 @@ Phenomenology Group %\\
 %\arxiv{ ... %arXiv:2112.09524 [Frontiers in Physics]  arXiv:2205.05762 [PRD]
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
 %}
- \collaborators{%Leonardo Leite, Orlando Peres, William Novelo (UNICAMP), David Suárez (UdeA)
-   Farinaldo S. Queiroz (IIP), Clarissa Siqueira(São Paulo University)\\ and Carlos Yaguna (UPTC) [\emph{In progress...}]
- }
+ %\collaborators{%Leonardo Leite, Orlando Peres, William Novelo (UNICAMP), David Suárez (UdeA)
+ %  Farinaldo S. Queiroz (IIP), Clarissa Siqueira(São Paulo University)\\ and Carlos Yaguna (UPTC) [\emph{In progress...}]
+% }
 }
 
 \date{\tiny %December 3, 2019 - COMHEP
@@ -189,19 +189,71 @@ model with scalar singlets}
 \includegraphics[scale=0.4]{t13amassbasisloop}
     \end{column}
     \begin{column}{0.5\textwidth}
+      \only<2>{\includegraphics[scale=0.4]{t13acancelation}}%
+      \only<3>{SPHENO
+
+        \includegraphics[scale=0.4]{t13aspheno}}
+      \only<4>{MicroMEGAS
+
+        \includegraphics[scale=0.4]{t13amicromegas}}
+      \only<5>{MadGraph
+
+        \includegraphics[scale=0.4]{t13amagraph}}
+
+
     \end{column}
   \end{columns}
 
+\end{frame}
+
+\begin{frame}
+  \includegraphics[scale=0.55]{minimallagrangian}
+  
+  \includegraphics[scale=0.5]{minimallagrangianpip}
+
+  \includegraphics[scale=0.3]{minimallagrangiansarah}
+
+  All {\color{red}35 models} implemented
+\end{frame}
+
+\begin{frame}
+\frametitle{  \includegraphics[scale=0.55]{all1loop}}
+
+\includegraphics[scale=0.42]{fig2scotostable}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{  \includegraphics[scale=0.55]{all1loop}}
+
+  \begin{table}
+    \centering
+        \rowcolors{1}{RoyalBlue!20}{}
+        \begin{tabular}{c|c|c|c}
+          \multicolumn{2}{c|}{Exit models} & \multicolumn{2}{c}{Dark matter models}\\
+          SM field in the loop   & Only fields beyond the SM & Stabilizing symmetry & Accidentally stable \\\hline
+          38 & 368 & 115 & 203\\
+          \multicolumn{2}{c|}{406} & \multicolumn{2}{c}{318}\\
+                  \multicolumn{4}{c}{724}
+        \end{tabular}
+        \caption{ (i)
+use only scalars and fermions as BSM fields; and (ii) avoid stable charged relics. “Exits” as particles that can decay into
+standard model fields}
+\end{table}
 
 
 \end{frame}
 
 
+\begin{frame}
+  \frametitle{1-loop Dirac neutrinos case}
+  \includegraphics[scale=0.55]{diraccase}
 
-  \begin{frame}
-    \frametitle{Conclusion}
-    The mass mixing must be taking into account to calculate the dark matter-nucleon scattering cross-section
-  \end{frame}
+  \includegraphics[scale=0.55]{diracminimal}
+
+      \includegraphics[scale=0.55]{diracall.png}
+\end{frame}
+
 
 %\end{frame}
 %\begin{frame}[fragile]
@@ -1494,7 +1546,7 @@ where $F(x) =x \log x/(x-1)$.
 \end{picture}
 \end{frame}
 
-\section{(One-loop) Dirac neutrino masses}
+\section{(1-loop) Dirac neutrino masses}
 
 % %slide with sm dirac fermion explanation
 % \begin{frame}
@@ -1706,7 +1758,7 @@ The right-handed neutrinos decouple when
 \frametitle{Conclusions}
   It makes sense to focus our attention on models tha can account for neutrino masses and dark matter (DM) \alert{without adhoc symmetries}
 \only<1>{
-  \begin{block}{One-loop Dirac neutrino masses}
+  \begin{block}{1-loop Dirac neutrino masses}
       A single $U(1)_X$ gauge symmetry to explain both the smallnes of Dirac neutrino masses and the stability of Dirac fermion dark matter
   %\setbeamercolor{block body}{use=structure,fg=black,bg=white}
     \begin{itemize}
@@ -2500,7 +2552,7 @@ H=\begin{pmatrix}
 
 
 \begin{frame}
-\frametitle{Weinberg operator at one-loop}
+\frametitle{Weinberg operator at 1-loop}
 \begin{picture}(320,250)
 \only<1->{\put(-20,140){\includegraphics[scale=0.8]{T3}}}%
 \only<1->{\put(160,140){\includegraphics[scale=0.8]{T1-2}}}%
