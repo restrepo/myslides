@@ -127,7 +127,13 @@ Phenomenology Group %\\
 %%%%%%%%%%%%%%%
 \begin{frame}
   \frametitle{Anomaly cancellation of a gauge $U(1)_{\color{cyan}x}$ extension}
-Any \emph{universal} local Abelian extension of the Standard Model can be reduced to a set of integers which must satisfy the gravitational anomaly, $\left[\operatorname{SO}(1,3)\right]^2\operatorname{U}(1)_Y$, and the cubic anomaly, $\left[\operatorname{U}(1)_X\right]^3$ conditions:
+  Any \emph{universal} local Abelian extension of the Standard Model can be reduced to a set of integers
+\begin{align*}
+  \boldsymbol{{\color{blue}S}} = \left[z_1,z_2,\cdots,z_N\right]\,,
+\end{align*}
+which must satisfy the gravitational anomaly, $\left[\operatorname{SO}(1,3)\right]^2\operatorname{U}(1)_Y$, and the cubic anomaly, $\left[\operatorname{U}(1)_X\right]^3$ conditions:
+
+
 \begin{align}
     \label{eq:Dcoond}
     \sum_{\alpha=1}^{N} z_\alpha=&0\,,&
@@ -136,65 +142,6 @@ Any \emph{universal} local Abelian extension of the Standard Model can be reduce
 %
 \end{frame}
 
-
-\begin{frame}
-  \frametitle{Methology based on: {\color{cyan}Costa-Dobrescu-Fox arXiv:1905.13729 [PRL]}  }
-
-\begin{itemize}
-\item<1-> From a list of $N-2$ integers,  e.g., for $N$ even
-  \begin{align}
-    \boldsymbol{q}=\only<1-3>{\left[l_1,l_2,\cdots,l_{n},k_1,k_2,\cdots,k_{n}\right],\qquad n=(N-2)/2\,.}%
-                   \only<4->{\left[l_1=2,l_2=3,k_1=-1,k_2=-3\right],\qquad n=2\,.}
-  \end{align}
-  in the range $\only<1-3>{[-m,m]}\only<4->{[-3,3]}$, build two vector-like solutions of $\only<1-3>{N}\only<4->{6}$ integers,
-  \begin{align}
-    \boldsymbol{x}=&\only<1-3>{\left[{\color{blue}l_1},{\color{red}k_1},\cdots {\color{Green}k_n},
-                     -{\color{blue}l_1},-{\color{red}k_1},\cdots -{\color{Green}k_n},
-                     \right]}%
-                    \only<4->{\left[{\color{blue}2},{\color{red}-1},{\color{Green}-3},
-                     -{\color{blue}2},{\color{red}1},{\color{Green}3},
-                     \right]}&
-     \boldsymbol{y}=& \only<1-3>{\left[0,0,{\color{blue}l_1},\cdots {\color{red}l_n},-{\color{blue}l_1},\cdots -{\color{red}l_n}  \right]}%
-                      \only<4->{\left[0,0,{\color{blue}2},\cdots {\color{red}3},-{\color{blue}2},\cdots -{\color{red}3}  \right]}
-  \end{align}
-\item<2-> Obtain a (some times) {\color{blue}non vector-like} solution with $z_{\text{max}}=\only<1-3>{2m}\only<4>{2\times 3=6}$ 
-  \begin{align}
-    \boldsymbol{z}=\boldsymbol{x}\oplus\boldsymbol{y}=\left( \sum_{i=1}^Nx_iy_i^2 \right)\boldsymbol{x}
-    +\left( \sum_{i=1}^Nx_i^2y_i \right)\boldsymbol{y}\,,
-  \end{align}
-\end{itemize}
-
-\vspace{-0.5cm}
-\invisible<1-2>{\small
-  The parameter space to be explored with $z_{\text{max}}=20$ ($m=10$) has {\color{blue} 96\,153 non vector-like} solutions\only<4>{}
-\begin{align}
-\text{  \# of $\boldsymbol{q}$ lists} =(2m+1)^{N-2}=
-  \begin{cases}
-    9261 \to {\color{blue}3} & N=5 \\
-    194841 \to {\color{blue}38}& N=6 \invisible<1-3>{\to{\color{blue}[1, -2, -3, 5, 5, -6]}}\\
-    \vdots & \vdots\\
-    1.6\times 10^{13}\to {\color{blue}65910} & N=12\,, \text{\qquad instead $10^{19}$ }\\
-  \end{cases}
-\end{align}
-}
-
-  
-\end{frame}
-
-\begin{frame}
-  \frametitle{\url{https://pypi.org/project/anomalies/}}
-\begin{picture}(320,250)  
-  \put(0,15){\includegraphics[scale=0.45]{anomalies}}
-\end{picture}
-\end{frame}
-
-% \begin{frame}
-%   \frametitle{\url{https://restrepo.github.io/Advanced_Computation}}
-% \begin{picture}(320,250)  
-%   \put(0,15){\includegraphics[scale=0.45]{book}}
-% \end{picture}
-% \end{frame}
-
 \begin{frame}
   \frametitle{\url{ https://doi.org/10.5281/zenodo.7380817}}
 \begin{picture}(320,250)  
@@ -202,6 +149,61 @@ Any \emph{universal} local Abelian extension of the Standard Model can be reduce
   \put(28,10){\includegraphics[scale=0.1]{encircle}}
 \end{picture}
 \end{frame}
+
+
+\begin{frame}
+   \frametitle{Secluded gauge $U(1)_{\color{magenta}D}$  without vector-like fermions:   }
+   \begin{align*}
+   \boldsymbol{{\color{blue}S}} =     \left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]
+   \end{align*}
+   \begin{itemize}%[4,4,-5,-1,-1,-1] like with a massles protected fermion which does not thermalize
+     \item \emph{\color{red}Higgs mechanism}: Singlet scalar $\color{Green}\phi$ acquires a vev and give mass to the dark photon
+       \begin{align}
+  \mathcal{L}=i \psi_{a}^{\dagger}\overline{\sigma^\mu}\left(\partial_\mu -i g_D A'_\mu \right)\psi_{a}-\frac{1}{4}V_{\mu\nu} V^{ \mu\nu }+\color{blue} \sum_{a<b}h_{ab} \psi_{a}\psi_b {\color{Green}\phi^{(*)}} +\text{h.c} {\color{Green}-V(\phi)}\,.
+       \end{align}
+
+   \item  $z_\alpha$  are the charges of SM-singlet left-handed chiral fermions with $N\ge 5$
+     \begin{itemize}
+
+     \item $\chi_i$ \emph{\color{red}massless fermions} with $i=1,\cdots, N'$ with $N'\le N$ 
+     \item $\psi_a$ \emph{\color{red}multi-component dark matter}: massive after
+       the spontaneous symmetry breaking of $U(1)_{\color{magenta}D}$
+       with $a=N'+1,\cdots, N$
+     \end{itemize}
+   \item \emph{\color{red}Larger parameter space}:  Dark photon exclusions instead of $Z'$ 
+   \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Effective Dirac neutrino mass operator \hfill \tiny{arXiv:2112.09524}}
+Decrease the number of charges to be assigned to dark matter particles, $\psi_i$ below%\only<2>{}
+  \begin{align*}
+    \left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]\\
+    \text{\color{cyan} Secluded case: } \\
+    %\left[{\color{red}5,5, (\nu)}, {\color{blue} -3,-2 ,} {\color{Green}1,-6 } \right]
+  \end{align*}
+\begin{align*}
+  { \color{red}  \chi_1\to \nu_{R1},\cdots, \chi_{N_\nu}\to \nu_{R\, N_\nu},\qquad 2\le N_\nu\le 3\,,}
+\end{align*}
+  \begin{align*} 
+    \mathcal{L}_{\text{eff}} = h_{\nu}^{ij} \, {\color{red}\left( \nu_{R i}\right)^{\dagger}} \, \epsilon_{ab} \, {\color{blue} L_j^a }\,\only<1>{H^{b}}{\only<2>{\color{blue}H^b}} \left(\frac{{\color{Green}\phi^*}}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i,j=1,2,3$}\,,
+\end{align*}
+$\color{Green}\phi$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry and
+\setlength{\fboxrule}{3 pt}
+\fcolorbox{red}{yellow}{give mass to \emph{all} $\psi_a$}
+\begin{align*}
+     \label{eq:effcon}
+   {\color{Green} \phi}=-\frac{\color{red}\nu}{\delta}\,,
+\end{align*}
+
+\end{frame}
+
+
+
+
+
+
 
 % \begin{frame}
 %   \frametitle{\url{https://pypi.org/project/yukawa/}}
@@ -213,7 +215,7 @@ Any \emph{universal} local Abelian extension of the Standard Model can be reduce
 \begin{frame}
   \frametitle{Minimal secluded model with SM-singlet massive chiral fermions from SSB: $\operatorname{U}(1)_{\color{magenta}D}$}
 \begin{align}
-  \mathcal{L}=i \psi_{i}^{\dagger}\cancel{\mathcal{D}}\psi_{i}-\frac{1}{4}V_{\mu\nu} V^{ \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c}
+  \mathcal{L}=i \psi_{i}^{\dagger}\cancel{\mathcal{D}}\psi_{i}-\frac{1}{4}V_{\mu\nu} V^{ \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c} {\color{Green}-V(\phi)}\,.
 \end{align}
 {\color{blue} 96\,153 $\to$ 5\,196
 \setlength{\fboxrule}{3 pt}
@@ -328,33 +330,6 @@ Already found by Chi-Fong Wong in arXiv:2008.08573  (subset with $N\le 9$ and $z
 
 \section{Additional conditions to reduce multiplicity}
 %%%%%%%%%%%%%%%%%%
-\begin{frame}
-  \frametitle{Effective Dirac neutrino mass operator \hfill \tiny{arXiv:2112.09524}}
-Decrease the number of charges to be assigned to dark matter particles, $\psi_i$ below\only<2>{}
-  \begin{align*}
-    &\left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]&\\
-    \text{\color{cyan} Secluded case: } && \invisible<1>{\text{\color{magenta}Active case:}}\\
-    \left[{\color{red}\nu,\nu, (\nu)}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]&
-    &\invisible<1>{\left[{\color{red}\nu,\nu, (\nu)},{\color{blue}m,m,m}, \psi_{1},\psi_2,\cdots,\psi_{N'} \right]}
-  \end{align*}
-\begin{align}
-  { \color{red}  \chi_1\to \nu_{R1},\cdots, \chi_{N_\nu}\to \nu_{R\, N_\nu},\qquad 2\le N_\nu\le 3\,,}&&
-\invisible<1>{   \color{blue}X(L_{i})=-L\,,\ X(H)=h\qquad \to m=L-h }%-h=m-L → h=L-m
-\end{align}
-  \begin{align*} 
-    \mathcal{L}_{\text{eff}} = h_{\nu}^{\alpha i} \, {\color{red}\left( \nu_{R\alpha}\right)^{\dagger}} \, \epsilon_{ab} \, {\color{blue} L_i^a }\,\only<1>{H^{b}}{\only<2>{\color{blue}H^b}} \left(\frac{{\color{Green}\Phi^*}}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i=1,2,3$}\,,
-\end{align*}
-$\color{Green}\Phi$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry and
-\setlength{\fboxrule}{3 pt}
-\fcolorbox{red}{yellow}{give mass to \emph{all} $\psi_i$}
-\invisible<1>{$\to$
-$\cancel{[{\color{red}-4,-4},{\color{blue}1,1,1},5]}$}
-\begin{align}
-     \label{eq:effcon}
-   {\color{Green} \phi}=-\frac{\invisible<1>{(}{\color{red}\nu}\invisible<1>{+{\color{blue}m})}}{\delta}\,, %-\nu-L+h-\delta \phi=0 → \delta \phi= -\nu -L+L-m=-\nu-m
-\end{align}
-
-\end{frame}
 
 
 
@@ -701,7 +676,7 @@ which we thoroughly scan in an efficient way until $N=12$ and $\left| z_{\text{m
 Once the physical conditions are stablished, the full set of self-consistent models are found from a simple data-analysis procedure, providing enough freedom to solve several phenomenological problems.
 
 \end{frame}
-
+\end{document}
 %%%%%%%%%%%%%%%%
 
 \begin{frame}
