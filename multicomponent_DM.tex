@@ -1,5 +1,7 @@
 \documentclass[xcolor=dvipsnames,table]{beamer}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Ubuntu bug fix:
+\definecolor{RoyalBlue}{cmyk}{1, 0.50, 0, 0}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \usepackage{talk}
 \usepackage{soul}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -35,7 +37,7 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Secluded Abelian extensions of the SM}
+\title{Effective two-component and two-mediator dark matter}
 \subtitle{}
 
 
@@ -48,7 +50,7 @@
 %   affiliation.
 \institute{
   \begin{picture}(100,2)
-    \put(230,-90){ \includegraphics[scale=0.17]{albufera}
+    \put(230,-90){ \includegraphics[scale=0.17]{Nemo}
     }
 \end{picture}
   \affiliation{\tiny Instituto de Física\\
@@ -63,9 +65,8 @@ Phenomenology Group %\\
 %\arxiv{ ... %arXiv:2112.09524 [Frontiers in Physics]  arXiv:2205.05762 [PRD]
 %  arXiv:1812.05523 [PRD], 1906.09685 [PRD], 1907.11938, 1909.09574
 %}
-%\collaborators{%Leonardo Leite, Orlando Peres, William Novelo (UNICAMP), David Suárez (UdeA)
-%  Carlos Yaguna (UPTC), Julian Calle, Óscar Zapata, David Suárez
-%}
+\collaborators{Kimy Agudelo, Andrés Rivera and David Suárez (UdeA)
+}
 }
 
 \date{\tiny %December 3, 2019 - COMHEP
@@ -127,20 +128,47 @@ Phenomenology Group %\\
 
 %%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Anomaly cancellation of a gauge $U(1)_{\color{cyan}x}$ extension}
-  Any \emph{universal} local Abelian extension of the Standard Model can be reduced to a set of integers
+  \frametitle{Anomaly cancellation of a U(1) gauge symmetry with chiral fermions}
+  In a fundamental theory the elementary fermions are expected to be chiral, i.e, the their charges should not allow a mass term
+larger than the scale of spontaneous symmetry breaking. For
+  any set of chargues associted to a U(1) gauge symmetry
 \begin{align*}
-  \boldsymbol{{\color{blue}S}} = \left[z_1,z_2,\cdots,z_N\right]\,,
+  \boldsymbol{{\color{blue}Z}} = \left[Z_1,Z_2,\cdots,Z_N\right]\,,
 \end{align*}
-which must satisfy the gravitational anomaly, $\left[\operatorname{SO}(1,3)\right]^2\operatorname{U}(1)_Y$, and the cubic anomaly, $\left[\operatorname{U}(1)_X\right]^3$ conditions:
-
+The triangle anomaly with three U(1) gauge
+bosons on the external lines, i.e., the $[U(1)]^3$ anomaly, and with one
+U(1) gauge boson and two gravitons on the external lines
+should also be cancelled %\cite{1905.13729}
 
 \begin{align}
     \label{eq:Dcoond}
-    \sum_{\alpha=1}^{N} z_\alpha=&0\,,&
-    \sum_{\alpha=1}^{N} z_\alpha^3=&0\,,
+    \sum_{\alpha=1}^{N} Z_\alpha=&0\,,&
+    \sum_{\alpha=1}^{N} Z_\alpha^3=&0\,,
 \end{align}
 %
+\end{frame}
+
+\begin{frame}
+  \frametitle{$U(1)_Y$: no vector-like,  i.e., pairs of fields with `equal-but-opposite'
+charges}
+  The hypercharge for one generation in the standard model can be seen as gauge Abelian symmetry $U(1)_Y$ with 15 left-handed Weyl
+massless fermions with integer charges
+\begin{align*}
+  Y = [\color{red}1, 1,\color{blue} 1, 1, \color{Green} 1, 1, \color{red} -4, \color{blue} -4, \color{Green} \color{red}-4, 2,\color{blue} 2, \color{Green}2, \color{magenta} -3, -3, 6]
+\end{align*}
+which satisfy
+\begin{align*}
+  \sum_i Y_i =& 0\,, & \sum_i Y_i^3 =& 0\,.
+\end{align*}
+If we introduce an scalar, $\color{magenta}H$, of charge $\color{magenta}3$ we can form Yukawa couplings through the Dirac pairs
+\begin{align*}
+ u_\alpha=& \color{red}(1, -4), \color{blue}(1, -4), \color{Green}(1, -4),& d_\alpha = & \color{red}(1, 2), \color{blue}(1, 2), \color{Green}(1, 2),& e= & \color{magenta} (-3,6)
+\end{align*}
+and the \emph{chiral fermions} acquire Dirac masses after the EWSB. They are degenerate because the additional color symmetry. One remains massless, $\nu_L = \color{magenta} (-3)$.
+The renmant $\color{magenta}Z_3$ symmetry guarantees the stability of $e$ and the other lightest quark, $d_\alpha$ is accidentally stable.
+
+The two mediators of the interactions are $B_\mu$ and $\color{magenta}H$.
+
 \end{frame}
 
 
@@ -151,12 +179,12 @@ which must satisfy the gravitational anomaly, $\left[\operatorname{SO}(1,3)\righ
    \boldsymbol{{\color{blue}S}} =     \left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]
    \end{align*}
    \begin{itemize}%[4,4,-5,-1,-1,-1] like with a massles protected fermion which does not thermalize
-     \item \emph{\color{red}Higgs mechanism}: Singlet scalar $\color{Green}\phi$ acquires a vev and give mass to the dark photon
+     \item \emph{\color{red}Dark Higgs mechanism}: Singlet dark Higgs $\color{Green}\phi$ acquires a vev and give mass to the dark photon
        \begin{align}
   \mathcal{L}=i \psi_{a}^{\dagger}\overline{\sigma^\mu}\left(\partial_\mu -i g_D Z^D_\mu \right)\psi_{a}-\frac{1}{4}V_{\mu\nu} V^{ \mu\nu }+\color{blue} \sum_{a<b}h_{ab} \psi_{a}\psi_b {\color{Green}\phi^{(*)}} +\text{h.c} {\color{Green}-V(\phi)}\,.
        \end{align}
 
-   \item  $z_\alpha$  are the charges of SM-singlet left-handed chiral fermions with $N\ge 5$
+   \item  $z_\alpha$  are the charges of SM-singlet right-handed chiral fermions with $N\ge 5$
      \begin{itemize}
 
      \item $\chi_i$ \emph{\color{red}massless fermions} with $i=1,\cdots, N'$ with $N'\le N$ 
@@ -164,13 +192,13 @@ which must satisfy the gravitational anomaly, $\left[\operatorname{SO}(1,3)\righ
        the spontaneous symmetry breaking of $U(1)_{\color{magenta}D}$
        with $a=N'+1,\cdots, N$
      \end{itemize}
-   \item \emph{\color{red}Larger parameter space}:  Dark photon exclusions instead of $Z'$ 
+   \item \emph{\color{red}Larger parameter space}:  Dark photon, $Z_D$, exclusions instead of $Z'$ 
    \end{itemize}
 \end{frame}
 
 
 \begin{frame}
-  \frametitle{Effective Dirac neutrino mass operator \hfill \tiny{arXiv:2112.09524}}
+  \frametitle{{\color{cyan}Multi-component} DM through Effective Dirac neutrino mass operator \hfill \tiny{arXiv:2112.09524}}
 Decrease the number of charges to be assigned to dark matter particles, $\psi_i$ below%\only<2>{}
   \begin{align*}
     \left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]\\
@@ -183,13 +211,102 @@ Decrease the number of charges to be assigned to dark matter particles, $\psi_i$
   \begin{align*} 
     \mathcal{L}_{\text{eff}} = h_{\nu}^{ij} \, {\color{red}\left( \nu_{R i}\right)^{\dagger}} \, \epsilon_{ab} \, {\color{blue} L_j^a }\,\only<1>{H^{b}}{\only<2>{\color{blue}H^b}} \left(\frac{{\color{Green}\phi^*}}{\Lambda}\right)^\delta + \text{H.c.},\qquad \text{with $i,j=1,2,3$}\,,
 \end{align*}
-$\color{Green}\phi$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry and
+$\color{Green}\phi$ is dark Higgs responsible for the SSB of the anomaly-free gauge symmetry and
 \setlength{\fboxrule}{3 pt}
-\fcolorbox{red}{yellow}{give mass to \emph{all} $\psi_a$}
+\fcolorbox{red}{yellow}{give mass to \emph{all} $\psi_a$}. $\color{red}\nu_R$ remains massless
 \begin{align*}
      \label{eq:effcon}
    {\color{Green} \phi}=-\frac{\color{red}\nu}{\delta}\,,
 \end{align*}
+
+{\color{cyan}Multi-component} dark matter model with {\color{cyan}two-mediators}: $Z_D$ and $\color{Green}\phi$
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+    \frametitle{{\color{cyan}Two-component} DM through Effective Dirac neutrino mass operator \hfill \tiny{arXiv:2112.09524}}
+Decrease the number of charges to be assigned to dark matter particles, $\psi_i$ below%\only<2>{}
+  \begin{align*}
+    \left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]\\
+    \text{\color{cyan} Secluded case: } \\
+    \left[{\color{red}5,5}, {\color{blue} -3,-2 ,} {\color{Green}1,-6 } \right]
+  \end{align*}
+\begin{align*}
+  { \color{red}  \chi_1\to \nu_{R\,1},\ \chi_{2}\to \nu_{R\,2},\qquad N_\nu=2\,,}
+\end{align*}
+  \begin{align*} 
+    \mathcal{L}_{\text{eff}} = h_{\nu}^{aj} \, {\color{red}\left( \nu_{R a}\right)^{\dagger}} \, \epsilon_{bc} \, {\color{blue} L_j^b }\,\only<1>{H^{c}}{\only<2>{\color{blue}H^c}} \left(\frac{{\color{Green}\phi^*}}{\Lambda}\right) + \text{H.c.},\qquad \text{with $j=1,2,3$}\,,
+\end{align*}
+$\color{Green}\phi$ is dark Higgs responsible for the SSB of the anomaly-free gauge symmetry and
+\setlength{\fboxrule}{3 pt}
+\fcolorbox{red}{yellow}{give mass to \emph{all} $\psi_a$}. $\color{red}\nu_R$ remains massless
+\begin{align*}
+   {\color{Green} \phi}=\color{red}-\nu=-5\,,
+\end{align*}
+
+{\color{cyan}Two-component} dark matter model with {\color{cyan}two-mediators}: $Z_D$ and $\color{Green}\phi$
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Minimal secluded model with D-5 effective Dirac neutrino masses}
+  We assume decoupled inert scalar (vev-less) sector 
+\begin{align*}
+  \mathcal{L}=i \psi_{i}^{\dagger}\cancel{\mathcal{D}}\psi_{i}-\frac{1}{4}V_{\mu\nu} V^{ \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c} {\color{Green}-V(\phi)}\,.
+\end{align*}
+{\color{blue} %96\,153 $\to$ 5\,196
+\setlength{\fboxrule}{3 pt}
+\fcolorbox{red}{yellow}{two-component and two-mediator DM}
+ with two Dirac-fermion DM particles} \only<2-3>{}
+
+\invisible<1>{
+\begin{align*}
+  \boldsymbol{z}=[{\color{red}5,5}, {\color{blue} -3,-2 ,} {\color{Green}1,-6 }] \to {\color{Green}\phi}=-5 \to [{\color{red} (5, 5)},{\color{blue}(-3, -2)},{\color{Green}(1, -6)}] 
+\end{align*}
+
+\invisible<1-2>{
+\begin{align*}
+  \setlength{\fboxrule}{3 pt}
+  \mathcal{L}\subset
+  {\color{blue}h_{(-3,-2)}\psi_{-3}\psi_{-2}{\color{Green}\phi^*}}
+  +{\color{Green}h_{(1,-6)}\psi_1\psi_{-6}\phi^*}
+  +\text{h.c.}
+\end{align*}
+}
+}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Minimal secluded model with D-5 effective Dirac neutrino masses}
+  We assume \emph{\color{red}a minimal} decoupled inert scalar (vev-less) sector 
+\begin{align*}
+  \mathcal{L}=i \psi_{i}^{\dagger}\cancel{\mathcal{D}}\psi_{i}-\frac{1}{4}V_{\mu\nu} V^{ \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c} {\color{Green}-V(\phi)}\,.
+\end{align*}
+{\color{blue} %96\,153 $\to$ 5\,196
+\setlength{\fboxrule}{3 pt}
+\fcolorbox{red}{yellow}{two-component, two-mediator DM with two-flavor scotogenic sector}
+ } 
+
+
+\begin{align*}
+  \boldsymbol{z}=[{\color{red}-9,-9,-9}, {\color{blue} 10,10 ,-1,-1,} {\color{Green}4,5 }] \to {\color{Green}\phi}=9 \to [{\color{red} (-9, -9, -9)},{\color{blue}(10, -1),(10, -1)},{\color{Green}(4, 5)}] 
+\end{align*}
+
+
+\begin{align}
+  \setlength{\fboxrule}{3 pt}
+  \mathcal{L}\subset
+  {\color{blue}  \underbrace{\sum_{a,b=1}^{2}h_{(10a,-1b)}\psi_{10}\psi_{-1}\phi}_{\displaystyle\text{\fcolorbox{red}{yellow}{multi-flavor scotogenic DM}}}}
+  +{\color{Green}h_{(4,5)}\psi_4\psi_{5}\phi^{*} }
+  +\text{h.c.}
+\end{align}
+
+
 
 \end{frame}
 
@@ -212,11 +329,11 @@ $\color{Green}\phi$ is the complex singlet scalar responsible for the SSB of the
     \begin{tabular}{L|R|RRR|R|RRRR}
     %\begin{tabular}{l|ll|lll|l|llll}    
 \toprule
-                                    \text{Solution} & N  &\color{red} \nu & \delta &     \color{Green}  \phi  & N_D & N_M & G_D & G_M \\
+                                    \text{Solutions $\sim 1000$} & N  &\color{red} \nu & \delta &     \color{Green}  \phi  & N_D & N_M & G_D & G_M \\
 \midrule
 (\color{red}5,5,\color{blue}-2,-3,\color{Green}1,-6)&  6 &\color{red}   5 &      1 & \color{Green} -5 &   2 &   0 &   1 &   0 \\
-                    (1, -2, 3, 4, 6, -7, -7, -7, 9) &  9 &\color{red}  -7 &      1 &                7 &   3 &   0 &   1 &   0 \\
-                  (1, 1, -4, -5, 9, 9, 9, -10, -10) &  9 &\color{red}   9 &      1 &               -9 &   3 &   0 &   2 &   0 \\
+                  ({\color{red}-9,-9,-9}, {\color{blue} 10,10 ,-1,-1,} {\color{Green}4,5 }) &  9 &\color{red}   9 &      1 &               -9 &   3 &   0 &   2 &   0 \\
+      (1, -2, 3, 4, 6, -7, -7, -7, 9) &  9 &\color{red}  -7 &      1 &                7 &   3 &   0 &   1 &   0 \\
                 (1, -2, -2, 3, 3, -4, -4, 6, 6, -7) & 10 &\color{red}   6 &      1 &  \boldsymbol{-6} &   3 &   2 &   2 &   2 \\
                 (1, -2, -2, 3, 4, -5, -5, 7, 7, -8) & 10 &\color{red}  -5 &      1 &                5 &   4 &   0 &   2 &   0 \\
                 (1, -2, -2, 3, 5, -6, -6, 8, 8, -9) & 10 &\color{red}  -6 &      1 &   \boldsymbol{6} &   4 &   0 &   2 &   0 \\
@@ -248,72 +365,16 @@ $\color{Green}\phi$ is the complex singlet scalar responsible for the SSB of the
 
 
 
-
 \begin{frame}
-  \frametitle{Effective Dirac neutrino mass operator \hfill \tiny{arXiv:2112.09524}}
-Decrease the number of charges to be assigned to dark matter particles, $\psi_i$ below%\only<2>{}
-  \begin{align*}
-    \left[ \chi_1,\chi_2,\cdots,\psi_{1},\psi_2,\cdots,\psi_{N'}\right]\\
-    \text{\color{cyan} Secluded case: } \\
-    \left[{\color{red}5,5}, {\color{blue} -3,-2 ,} {\color{Green}1,-6 } \right]
-  \end{align*}
-\begin{align*}
-  { \color{red}  \chi_1\to \nu_{R\,1},\ \chi_{2}\to \nu_{R\,2},\qquad N_\nu=2\,,}
-\end{align*}
-  \begin{align*} 
-    \mathcal{L}_{\text{eff}} = h_{\nu}^{aj} \, {\color{red}\left( \nu_{R a}\right)^{\dagger}} \, \epsilon_{bc} \, {\color{blue} L_j^b }\,\only<1>{H^{c}}{\only<2>{\color{blue}H^c}} \left(\frac{{\color{Green}\phi^*}}{\Lambda}\right) + \text{H.c.},\qquad \text{with $j=1,2,3$}\,,
-\end{align*}
-$\color{Green}\phi$ is the complex singlet scalar responsible for the SSB of the anomaly-free gauge symmetry and
-\setlength{\fboxrule}{3 pt}
-\fcolorbox{red}{yellow}{give mass to \emph{all} $\psi_a$}
-\begin{align*}
-   {\color{Green} \phi}=\color{red}-\nu=-5\,,
-\end{align*}
-
-\end{frame}
-
-
-\begin{frame}
-  \frametitle{Minimal secluded model with D-5 effective Dirac neutrino masses}
-\begin{align}
-  \mathcal{L}=i \psi_{i}^{\dagger}\cancel{\mathcal{D}}\psi_{i}-\frac{1}{4}V_{\mu\nu} V^{ \mu\nu }+\color{blue} \sum_{i<j}h_{ij} \psi_{i}\psi_j \phi^{(*)} +\text{h.c} {\color{Green}-V(\phi)}\,.
-\end{align}
-{\color{blue} %96\,153 $\to$ 5\,196
-\setlength{\fboxrule}{3 pt}
-\fcolorbox{red}{yellow}{multi-component DM}
- with two Dirac-fermion DM particles} \only<2-3>{}
-
-\invisible<1>{
-\begin{align}
-  \boldsymbol{z}=[{\color{red}5,5}, {\color{blue} -3,-2 ,} {\color{Green}1,-6 }] \to {\color{Green}\phi}=-5 \to [{\color{red} (5, 5)},{\color{blue}(-3, -2)},{\color{Green}(1, -6)}] 
-\end{align}
-
-\invisible<1-2>{
-\begin{align}
-  \setlength{\fboxrule}{3 pt}
-  \mathcal{L}\subset
-  {\color{blue}h_{(-3,-2)}\psi_{-3}\psi_{-2}{\color{Green}\phi^*}}
-  +{\color{Green}h_{(1,-5)}\psi_1\psi_{-6}\phi^*}
-  +\text{h.c.}
-\end{align}
-}
-}
-
-\end{frame}
-
-
-\begin{frame}
-    \frametitle{$\operatorname{U}(1)_{\color{magenta}D}$: two dark matter candidates without kinetic mixing: $Z_D\to 
+    \frametitle{\small Effective two-component and two-mediator DM without kinetic mixing: $Z_D\to 
       \overline{\nu}\nu$\hfill \tiny{in progress...} }
 
-\includegraphics[scale=1]{relic_abundance_dark_symmetry_graph02}
-\hspace{1cm}\includegraphics[scale=1]{relic_abundance_dark_symmetry_graph01}
-\hspace{1cm}\includegraphics[scale=1]{dark_matter_conversion_graph}
 
-\vspace{-0.5cm}
+\centering
+\only<1>{\includegraphics[scale=0.4]{dmsectors}}
+\only<2>{\includegraphics[scale=0.2]{twomediator}}
 
-$M_{Z_D}<200\,,\text{GeV}$
-\includegraphics[scale=0.5]{parameter_space20}\hspace{-2cm} $M_2$ [GeV] \hfill (xBit scan)
+Decoupled inert scalar sector $\to \Delta N_{\text{eff}} = 0$
 \end{frame}
 
 \begin{frame}
@@ -322,8 +383,16 @@ $M_{Z_D}<200\,,\text{GeV}$
   \includegraphics[scale=0.5]{mZDvsM1}
 \end{frame}
 
+\begin{frame}
+  \frametitle{Conclusions}
+  \centering
+  
+  \includegraphics[scale=0.6]{DM}
+\end{frame}
 
+\end{document}
 
+\end{frame}
 \begin{frame}
   \frametitle{\invisible<1>{Scotogenic} Majorana neutrino masses and mixings \hfill \tiny{in progress}}
   
