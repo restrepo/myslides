@@ -788,8 +788,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4641868"
-     inkscape:cx="338.75459"
-     inkscape:cy="75.468513"
+     inkscape:cx="327.14405"
+     inkscape:cy="76.151486"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -826,14 +826,14 @@
        inkscape:original-d="M 12.009836,67.830805 H 27.37129 42.732744"
        sodipodi:nodetypes="ccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#marker2399)"
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#marker2399)"
        d="m 42.701522,67.830805 c 0,0 15.361454,0 15.361454,0 0,0 15.361454,0 15.361454,0"
        id="path2393"
        inkscape:path-effect="#path-effect2395"
        inkscape:original-d="M 42.701522,67.830805 H 58.062976 73.42443"
        sodipodi:nodetypes="ccc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#marker2017)"
+       style="fill:#0000ff;stroke:#0000ff;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-mid:url(#marker2017)"
        d="m 73.361978,67.830805 c 0,0 15.361454,0 15.361454,0 0,0 15.361478,0 15.361478,0"
        id="path2525"
        inkscape:path-effect="#path-effect2527"
@@ -1031,7 +1031,7 @@
        id="use1906"
        width="100%"
        height="100%"
-       style="fill:#000000;fill-opacity:1"
+       style="fill:#0000ff;fill-opacity:1;stroke:#0000ff"
        transform="matrix(0.71154457,0,0,0.71154457,-30.885642,16.093021)" />
     <use
        xlink:href="#symbol8827"
@@ -1040,7 +1040,7 @@
        id="use7455"
        width="100%"
        height="100%"
-       style="fill:#000000;fill-opacity:1"
+       style="fill:#0000ff;fill-opacity:1;stroke:#0000ff"
        transform="matrix(0.71154457,0,0,0.71154457,-9.1897956,16.093021)" />
     <use
        xlink:href="#symbol9187"
