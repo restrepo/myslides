@@ -173,19 +173,20 @@ Phenomenology Group %\\
 \end{frame}
 
 {
-  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{effectivenuMD}}
+  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{  effectivenuMD  }}%\only<2>{effectivenuMD}}}
   \begin{frame}
     \frametitle{\centering Effective neutrino masses \\
-    Majorana\hfill Dirac}
+    Majorana\hfill {Dirac}}
 
-  \vspace{{2cm}}
+  \vspace{1.3cm}
   
   \begin{center}
   \rowcolors{1}{RoyalBlue!20}{}
-  \begin{tabular}{lcc}
-    Name & $SU(2)_L$& $U(1)_Y$\\
-    $L$    & $\boldsymbol{2}$ & $-1/2$\\
-    $H$    & $\boldsymbol{2}$ & $1/2$\\                      
+  \begin{tabular}{lcccc}
+    Name & $SU(2)_L$& $U(1)_Y$ & $U(1)_L$ & $\only<1>{Z_2}\only<2>{\color{red}Z_2'}$\\
+    $L$    & $\boldsymbol{2}$ & $-1/2$ & $-1$ & $\only<1>{+}\only<2>{\color{red}+}$\\
+    $H$    & $\boldsymbol{2}$ & $1/2$ & $0$ & $\only<1>{+}\only<2>{\color{red}+}$\\
+   \invisible<1>{ $\color{red}\nu_R$    & $\boldsymbol{1}$ & $0$ & $-1$ & $\color{red}-$\\}
   \end{tabular}
     
   \end{center}
@@ -195,19 +196,19 @@ Phenomenology Group %\\
   \begin{columns}
     \begin{column}{0.5\textwidth}
       \begin{align*}
-   \mathcal{L}_{M} =     L \cdot H L \cdot H + \text{h.c}  
+   \mathcal{L}_{M} = \frac{y_M}{\Lambda}    L \cdot H L \cdot H + \text{h.c}  \to \Delta L = 2
       \end{align*}
     \end{column}
     \begin{column}{0.5\textwidth}
       \begin{align*}
-   \mathcal{L}_{D} =    \left(\nu_R\right)^\dagger L \cdot H  + \text{h.c}  
+   \invisible<1>{\mathcal{L}_{D} =   \cancel{y_D \left({\color{red} \nu_R}\right)^\dagger L \cdot H}  + \text{h.c}  }
       \end{align*}
     \end{column}
 
   \end{columns}
 
   \begin{center}
-\only<1>{Dark matter}\only<2>{} (radiative) realization $\to Z_2$
+\only<1>{Dark matter (radiative) realization $\to Z_2$}\only<2>{Avoids Higgs mechanism for {\color{red} $\nu_R\to Z_2'$} }
   \end{center}
 
 
@@ -217,7 +218,7 @@ Phenomenology Group %\\
     \end{column}
     \begin{column}{0.5\textwidth}
       \begin{align*}
-       \cancel{ M_N \nu_R \nu_R} \to U(1)
+       \invisible<1>{\cancel{ M_N {\color{red}\nu_R \nu_R}} \to U(1)}
       \end{align*}
     \end{column}
 
@@ -271,11 +272,11 @@ Phenomenology Group %\\
         \rowcolors{1}{RoyalBlue!20}{}
        \begin{tabular}{lcccc}
     Name & $SU(2)_L$& $U(1)_Y$& $Z_2$ & $U(1)_L$\\
-         $\nu_R$ & $\boldsymbol{1}$ & $0$ & $+$ & $-1$ \\
-         $\color{red}\psi_R$ & $\boldsymbol{1}$ & $0$ & $-$ & $-1$ \\
-         $\color{red}\psi_L$ & $\boldsymbol{1}$ & $0$ & $-$ & $-1$ \\
-         $\eta$ & $\boldsymbol{2}$ & $1/2$ & $-$ & $0$\\
-    $\sigma$ & $\boldsymbol{1}$ & $0$ & $-$ & $0$\\         
+         $\nu_R$ & $\boldsymbol{1}$ & $0$ & $-$ & $-1$ \\
+         $\color{red}\psi_R$ & $\boldsymbol{1}$ & $0$ & $+$ & $r-1$ \\
+         $\color{red}\psi_L$ & $\boldsymbol{1}$ & $0$ & $+$ & $r-1$ \\
+         $\eta$ & $\boldsymbol{2}$ & $1/2$ & $+$ & $r$\\
+    $\sigma$ & $\boldsymbol{1}$ & $0$ & $-$ & $r$\\         
   \end{tabular}
 \end{center}
     \end{column}
@@ -308,7 +309,7 @@ Phenomenology Group %\\
 
 
 \begin{frame}
-  \frametitle{Anomaly cancellation of a U(1) gauge symmetry with chiral fermions}
+  \frametitle{From $Z_2\times U(1)$ to a (secluded) U(1) gauge symmetry with chiral fermions}
   In a fundamental theory the elementary fermions are expected to be chiral, i.e, the their charges should not allow a mass term
 larger than the scale of spontaneous symmetry breaking. For
   any set of chargues associted to a U(1) gauge symmetry
