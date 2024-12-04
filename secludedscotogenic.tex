@@ -37,8 +37,8 @@
 \addtobeamertemplate{block example begin}{\pgfsetfillopacity{0.8}}{\pgfsetfillopacity{1}}
 
 
-\title{Neutrino masses and dark matter}
-\subtitle{Scotogenic models}
+\title{Secluded-Scotogenic (SS) models}
+\subtitle{}
 
 
 %\subtitle
@@ -50,7 +50,7 @@
 %   affiliation.
 \institute{
   \begin{picture}(100,2)
-    \put(230,-99){ \includegraphics[scale=0.32]{logosilafae}
+    \put(230,-99){ \includegraphics[scale=0.11]{comhep2024}
     }
 \end{picture}
   \affiliation{\tiny Instituto de Física\\
@@ -137,11 +137,21 @@ Phenomenology Group %\\
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
-\include{evidencesila}
-%%%%%%%%%%
+\begin{frame}
+  \frametitle{DM Zoo}
+\centering
+\includegraphics[scale=0.29]{dmzoo}
+\end{frame}
+\begin{frame}
+  \frametitle{DM Zoo}
+\centering
+\includegraphics[scale=0.29]{dmzoo2}
+\end{frame}
+
+%%%%%%%%%% 
 
 \begin{frame}
-  \frametitle{Example: Inert doublet model: \hfill \small Deshpande\&Ma'77}
+  \frametitle{Simple WIMP dark matter model: Inert doublet model: \hfill \small Deshpande\&Ma'77}
   SM + Inert Higgs doublet \hfill Lopez Honorez\&\emph{et al}'06
   \begin{columns}
     \begin{column}{0.3\textwidth}
@@ -352,7 +362,37 @@ The renmant $\color{magenta}Z_3$ symmetry guarantees the stability of  the light
 
 \end{frame}
 
+\begin{frame}
+  \frametitle{$SU(3)\times SU(2)$ \hfill  arXiv:2409.09008}
+  \small
+  \begin{align*}
+    Q'(3,2) =&
+               \begin{pmatrix}
+                 \color{red}\sqrt{3} a \lambda^8_{11} + b \lambda^3_{11} + 2 c \sigma^3_{11}\\
+                 \color{red} \sqrt{3} a \lambda^8_{11} + b \lambda^3_{11} - 2 c \sigma^3_{11}\\                 
+               \end{pmatrix},\quad
+    \begin{pmatrix}
+      \color{blue}\sqrt{3} a \lambda^8_{22} + b \lambda^3_{22} + 2 c \sigma^3_{22}\\
+      \color{blue}\sqrt{3} a \lambda^8_{22} + b \lambda^3_{22} - 2 c \sigma^3_{22},\\
+    \end{pmatrix},\quad
+    \begin{pmatrix}
+      \color{Green}\sqrt{3} a \lambda^8_{33} + b \lambda^3_{33} + 2 c \sigma^3_{33}\\
+     \color{Green} \sqrt{3} a \lambda^8_{33} + b \lambda^3_{33} - 2 c \sigma^3_{33},\\ 
+    \end{pmatrix}\\
+ \bar{u}(3^*,1)=  & \color{red}-\sqrt{3} a \lambda^8_{11} - b \lambda^3_{11},\quad
+    \color{blue}-\sqrt{3} a \lambda^8_{22} - b \lambda^3_{22},\quad
+    \color{Green}-\sqrt{3} a \lambda^8_{33} - b \lambda^3_{33}\\
+ \bar{d}(3^*,1)=   & \color{red}-\sqrt{3} a \lambda^8_{11} - b \lambda^3_{11},\quad
+    \color{blue}-\sqrt{3} a \lambda^8_{22} - b \lambda^3_{22},\quad
+    \color{Green}-\sqrt{3} a \lambda^8_{33} - b \lambda^3_{33}
+  \end{align*}
 
+  \begin{align*}
+      S = [\color{red}a + b + c, \color{blue}a + b - c, a - b + c, \color{Green}a - b - c, -2a + c, -2a - c,
+\color{red}-a - b,\color{blue} -a - b, \color{Green}-a + b,\color{red} -a + b, \color{blue}-2a,\color{Green} 2a]
+  \end{align*}
+
+\end{frame}
 
 \begin{frame}
    \frametitle{Secluded gauge $U(1)_{\color{magenta}D}$  without vector-like fermions:   }
@@ -672,13 +712,6 @@ In progress...
 
 
 
-{
-  \usebackgroundtemplate{\includegraphics[width=\paperwidth]{venues}}
-
-\begin{frame}
-\frametitle{Many other venues}
-\end{frame}
-}
 
 \begin{frame}
   \frametitle{Conclusions}
